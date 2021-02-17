@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Go Bills Mobile Legend - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Go Bills Mobile Legend",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/564x/bb/15/58/bb1558edc5805094b3533a6e0bf148ea.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=go+bills+mobile+legend",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Go Bills Mobile Legend</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">WIVB It doesnt matter how long its been since some guys played for the Bills they still pay attention to every game and even use the term we8221. Choose your favorite heroes and build the perfect. Real-time 5v5 battles against real opponents. <br>				
+			</p>
+										<a class="badge badge-success" href="/can-spouses-of-veterans-get-medical-benefits.html">can spouses of veterans get medical benefits</a>
+											<a class="badge badge-light" href="/can-i-use-my-post-911-gi-bill-for-real-estate-license.html">can i use my post 911 gi bill for real estate license</a>
+											<a class="badge badge-info" href="/can-gi-bill-bah-be-used-for-child-support.html">can gi bill bah be used for child support</a>
+											<a class="badge badge-light" href="/can-i-use-post-9-11-gi-bill-and-financial-aid.html">can i use post 9 11 gi bill and financial aid</a>
+											<a class="badge badge-info" href="/can-oth-discharge-get-va-loan.html">can oth discharge get va loan</a>
+											<a class="badge badge-success" href="/can-i-get-disability-for-ptsd-in-canada.html">can i get disability for ptsd in canada</a>
+											<a class="badge badge-info" href="/can-i-get-my-gi-bill-with-a-general-discharge.html">can i get my gi bill with a general discharge</a>
+											<a class="badge badge-danger" href="/can-i-get-gi-bill-with-a-general-discharge.html">can i get gi bill with a general discharge</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you've come to pay a visit to the ideal blog.  Our site gives you hints for seeing the maximum quality video and image content, search and locate more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, particularly Youtube, so we recommend this movie for you to view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/5d/39/c35d39a76b64bc83fa1a63f90935ce32.jpg" data-lightbox="roadtrip" data-title="How To Play Chou To Be Noob Mobile Legend Mobile Legends Alucard Mobile Legends Mobile Legend Wallpaper">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/5d/39/c35d39a76b64bc83fa1a63f90935ce32.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQegJ5TrNQSB116hLWLSqFlKbyLvx-g44ZRAw&amp;ec=45771800';" alt="How To Play Chou To Be Noob Mobile Legend Mobile Legends Alucard Mobile Legends Mobile Legend Wallpaper">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Play Chou To Be Noob Mobile Legend Mobile Legends Alucard Mobile Legends Mobile Legend Wallpaper</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/c5/fe/d6c5fefa46be70ec4eb40f2e5fa96d0e.jpg" data-lightbox="roadtrip" data-title="Leomord Frostborn Paladin By Makinig Mobile Legends Mobile Legend Wallpaper Alucard Mobile Legends">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/c5/fe/d6c5fefa46be70ec4eb40f2e5fa96d0e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhvldQcPYy3I-azuIfat2COTbMZ4eUCAQDQg&amp;ec=45771800';" alt="Leomord Frostborn Paladin By Makinig Mobile Legends Mobile Legend Wallpaper Alucard Mobile Legends">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Leomord Frostborn Paladin By Makinig Mobile Legends Mobile Legend Wallpaper Alucard Mobile Legends</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/b9/4a/dfb94a8b329da0b7240f0b072168cf33.jpg" data-lightbox="roadtrip" data-title="18 Mobile Legends Phone Wallpaper Hd Andriblog001 In 2020 Mobile Legends Mobile Legend Wallpaper Alucard Mobile Legends">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/b9/4a/dfb94a8b329da0b7240f0b072168cf33.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2eM7Qr-DHS1EMOegPO2NV3BiY9vFuLVwNLg&amp;ec=45771800';" alt="18 Mobile Legends Phone Wallpaper Hd Andriblog001 In 2020 Mobile Legends Mobile Legend Wallpaper Alucard Mobile Legends">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">18 Mobile Legends Phone Wallpaper Hd Andriblog001 In 2020 Mobile Legends Mobile Legend Wallpaper Alucard Mobile Legends</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/f5/ee/d0f5eec7d1658eb26ab0259a8320f871.jpg" data-lightbox="roadtrip" data-title="Download Lunox Mobile Legends Free Pure 4k Ultra Hd Mobile Wallpaper Animasi Gambar Manga Karakter Fantasi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/f5/ee/d0f5eec7d1658eb26ab0259a8320f871.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShUdKFIFTqSFo9ufGbpftfT00eQ_CxcjGygQ&amp;ec=45771800';" alt="Download Lunox Mobile Legends Free Pure 4k Ultra Hd Mobile Wallpaper Animasi Gambar Manga Karakter Fantasi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Download Lunox Mobile Legends Free Pure 4k Ultra Hd Mobile Wallpaper Animasi Gambar Manga Karakter Fantasi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1a/6d/b7/1a6db7578990a891e355be376d4f2292.jpg" data-lightbox="roadtrip" data-title="Chou Furious Tiger Mobile Legends Mobile Legend Wallpaper Alucard Mobile Legends">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1a/6d/b7/1a6db7578990a891e355be376d4f2292.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyktvggwEckLSM5ZvbB6a8MUxuvgkbSWWlKg&amp;ec=45771800';" alt="Chou Furious Tiger Mobile Legends Mobile Legend Wallpaper Alucard Mobile Legends">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chou Furious Tiger Mobile Legends Mobile Legend Wallpaper Alucard Mobile Legends</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/4f/08/e1/4f08e13da848cc257ea34d21712ae52b.jpg" data-lightbox="roadtrip" data-title="Savage Moment Hero Badang Mobile Legend Mobile Legends In This Moment Hero">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/4f/08/e1/4f08e13da848cc257ea34d21712ae52b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Via9hsa17ABNgr4Z_IS1ojpIQvWmAP5hVQ&amp;ec=45771800';" alt="Savage Moment Hero Badang Mobile Legend Mobile Legends In This Moment Hero">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Savage Moment Hero Badang Mobile Legend Mobile Legends In This Moment Hero</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/df/b9/4a/dfb94a8b329da0b7240f0b072168cf33.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Via9hsa17ABNgr4Z_IS1ojpIQvWmAP5hVQ&amp;ec=45771800';" alt="Savage Moment Hero Badang Mobile Legend Mobile Legends In This Moment Hero">
+										<div class="card-body">
+						<h3 class="h5"><b>Fight over 3 lanes to take the enemys tower.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Go bills mobile legend</strong>. 
+								
+																	Laning jungling tower rushing team battles all the fun of PC MOBAs and action games in the palm of your hand. 
+																	Fight over 3 lanes to take the enemys tower. 
+																	Complete reproductions of classic MOBA maps. 
+																	Palmer is a renowned offseason QB coach and Allen has worked with him over the past few years. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The official source of the latest Bills headlines news videos photos tickets rosters stats schedule and game day information. 
+																	Considering that Palmer knows the Bills well and was certainly paying attention in their AFC Championship loss. 
+																	Were serious about making the bill-payment process more intelligent. 
+																	NFL Network takes a look at how Bills Mafia has become a pillar in the Western New York community. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Back to terms and conditions home. 
+																	This was the Bills team that swept Bill Belichick. 
+																	All under one roof. 
+																	But why stop at the networks. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bang Bang is a mobile game with MOBA elements. 
+																	Compare our new pre-loved and finance deals alongside everything else we do. 
+																	Real-time 5v5 battles against real opponents. 
+																	I have multiple accounts linked in MyGO without Direct Debit can I enable DDM for all accounts at one go. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We are serious about having fun while working hard. 
+																	There are 19 heroes but not all of them are available. 
+																	And were proud to be honored by American Banker as. 
+																	Join your friends in the new 5v5 MOBA showdown against active opponents Mobile Legends. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Actually Go Mobile is the only place on the high street where you can compare across all four major UK networks to find a better deal. 
+																	Select Amount User information. 
+																	Full-on 5v5 Human vs. 
+																	Login to Razer Gold to view the best deals below and earn Razer Silver for your purchases. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bang Bang is a mobile game with MOBA elements. 
+																	So we created a B2B payment engine that pays bills in real timeall while maintaining the utmost in security. 
+																	How can I top up while roaming. 
+																	Verification code will be sent to your in-game mailboxvaild for 30 mins. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The best deals on Internet Mobile plans in Malta. 
+																	Complete reproductions of classic MOBA maps. 
+																	GO is the biggest name in Malta for fibre internet interactive TV and flexible mobile services with great offers on top-quality sport movie and TV packs. 
+																	There are 19 heroes but not all of them are available. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Choose your favorite heroes and build the perfect team with your comrades-in-arms. 
+																	Fight over 3 lanes to take the enemys tower. 
+																	Mobile Legends new update new heroes new skin. 
+																	What happens if I delete the Direct Debit Mandate. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Full-on 5v5 Human vs. 
+																	Full-on 5v5 Human vs. 
+																	Click on your avatar in the top left corner of the main game screen to find your User ID eg. 
+																	10-second matchmaking 10-minute battles. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are 19 heroes but not all of them are available. 
+																	Get Same Day Internet from just 25month. 
+																	Bang Bang is a mobile game with MOBA elements. 
+																	Join your friends in a brand new 5v5 MOBA showdown against real human opponents Mobile Legends. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It was the team that won the franchises first AFC East title since 1995 and hosted its first playoff game since 1996. 
+																	While the Bills hope to reach that game again in 2021 they want to go even further and hit the Super Bowl. 
+																	Join your friends in a brand new 5v5 MOBA showdown against real human opponents Mobile Legends. 
+																	Real-time 5v5 battles against real opponents. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	What are the rates applicable for mobile usage whilst I am roaming abroad. 
+																	Complete reproductions of classic MOBA maps. 
+																	Feed your eSports spirit. 
+																	Is Direct Debit effected immediately. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Benny the Butcher Del Reid Jim Kelly Josh Allen and others talk about the fans impact on the. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/04/3c/9c/043c9c4cab339699c00432f241c5fd7e.jpg" data-lightbox="roadtrip" data-title="Gusion Hairstylist Desain Karakter Game Animasi Princess Bubblegum">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/04/3c/9c/043c9c4cab339699c00432f241c5fd7e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ90bsaa3KT2_IKXQCAs_WUA-qIgP_RDw72RQ&amp;ec=45771800';" alt="Gusion Hairstylist Desain Karakter Game Animasi Princess Bubblegum">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gusion Hairstylist Desain Karakter Game Animasi Princess Bubblegum</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/67/3d/47/673d47b11579695e9f7c94e26eac2aec.jpg" data-lightbox="roadtrip" data-title="Pin By Bill Duncan On Scifi Mobile Legend Wallpaper Mobile Legends Alucard Mobile Legends">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/67/3d/47/673d47b11579695e9f7c94e26eac2aec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4YRHlPvjO4_3ws2vuiIOV2gLn0DW_YB_UVw&amp;ec=45771800';" alt="Pin By Bill Duncan On Scifi Mobile Legend Wallpaper Mobile Legends Alucard Mobile Legends">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Bill Duncan On Scifi Mobile Legend Wallpaper Mobile Legends Alucard Mobile Legends</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/64/c4/c5/64c4c570e683d8973ffa11a1bdcb0ead.jpg" data-lightbox="roadtrip" data-title="Hasil Gambar Untuk Mobile Legends Hayabusa Skin Hjhh Pinterest Https Ift Tt 2bo37vx Mobile Legend Wallpaper Mobile Legends Alucard Mobile Legends">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/64/c4/c5/64c4c570e683d8973ffa11a1bdcb0ead.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRKiFtD8QHeuDUCK6IIsrL_KEd6dW3z_doBg&amp;ec=45771800';" alt="Hasil Gambar Untuk Mobile Legends Hayabusa Skin Hjhh Pinterest Https Ift Tt 2bo37vx Mobile Legend Wallpaper Mobile Legends Alucard Mobile Legends">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hasil Gambar Untuk Mobile Legends Hayabusa Skin Hjhh Pinterest Https Ift Tt 2bo37vx Mobile Legend Wallpaper Mobile Legends Alucard Mobile Legends</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/13/29/de1329db67b69815934c889f6de5e653.jpg" data-lightbox="roadtrip" data-title="Lancelot Royal Matador Mobile Legend Wallpaper Mobile Legends Miya Mobile Legends">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/13/29/de1329db67b69815934c889f6de5e653.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk-JLzoRK9bSD-BHrnGV1ccMqPkRamI3PQ9w&amp;ec=45771800';" alt="Lancelot Royal Matador Mobile Legend Wallpaper Mobile Legends Miya Mobile Legends">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lancelot Royal Matador Mobile Legend Wallpaper Mobile Legends Miya Mobile Legends</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/bb/15/58/bb1558edc5805094b3533a6e0bf148ea.jpg" data-lightbox="roadtrip" data-title="Pin On Games">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/bb/15/58/bb1558edc5805094b3533a6e0bf148ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWDNXcvPEMvPPMtIoGqkZffNGxzoSzKyqsNA&amp;ec=45771800';" alt="Pin On Games">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Games</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/b5/42/df/b542df9bbbadbc1beaa48b4808666239.jpg" data-lightbox="roadtrip" data-title="Wallpaper Phone Dyroth Scalebore By Fachrifhr Mobile Legend Wallpaper Hero Wallpaper Phone Wallpaper">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/b5/42/df/b542df9bbbadbc1beaa48b4808666239.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQrg-UcSDt2usu_PrQnfef1xshZY_Z8oIOLw&amp;ec=45771800';" alt="Wallpaper Phone Dyroth Scalebore By Fachrifhr Mobile Legend Wallpaper Hero Wallpaper Phone Wallpaper">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wallpaper Phone Dyroth Scalebore By Fachrifhr Mobile Legend Wallpaper Hero Wallpaper Phone Wallpaper</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/a8/30/e3a83049d1eb6268ceb74ceca0503fc6.jpg" data-lightbox="roadtrip" data-title="43 Kumpulan Potret Epic Skin Mobile Legends List Paling Keren Wallpaper Game Hd Mobile Legends Mobile Legend Wallpaper The Legend Of Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/a8/30/e3a83049d1eb6268ceb74ceca0503fc6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp_3Jm1p28uTuJ1EcREc2mW4HZfJ1iAWbqug&amp;ec=45771800';" alt="43 Kumpulan Potret Epic Skin Mobile Legends List Paling Keren Wallpaper Game Hd Mobile Legends Mobile Legend Wallpaper The Legend Of Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">43 Kumpulan Potret Epic Skin Mobile Legends List Paling Keren Wallpaper Game Hd Mobile Legends Mobile Legend Wallpaper The Legend Of Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c3/71/95/c371955ad82f678df8bf63ba2e22a808.jpg" data-lightbox="roadtrip" data-title="Wallpaper Phone Lancelot Dark Earl By Fachrifhr Mobile Legend Wallpaper Mobile Legends Alucard Mobile Legends">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c3/71/95/c371955ad82f678df8bf63ba2e22a808.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcccbTcMXnn8gQBbTAoEbWDv18VoOtyYOgxg&amp;ec=45771800';" alt="Wallpaper Phone Lancelot Dark Earl By Fachrifhr Mobile Legend Wallpaper Mobile Legends Alucard Mobile Legends">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wallpaper Phone Lancelot Dark Earl By Fachrifhr Mobile Legend Wallpaper Mobile Legends Alucard Mobile Legends</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/3a/f1/0d3af146ee81f690b752c50b8871aa17.jpg" data-lightbox="roadtrip" data-title="Ruby Edelweiss Full Wallpaper Mlbb Mobile Legend Wallpaper Alucard Mobile Legends Mobile Legends">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/3a/f1/0d3af146ee81f690b752c50b8871aa17.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2KdhHSW0BfRt0xII56JYLscQ7eXXB23Ic2A&amp;ec=45771800';" alt="Ruby Edelweiss Full Wallpaper Mlbb Mobile Legend Wallpaper Alucard Mobile Legends Mobile Legends">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ruby Edelweiss Full Wallpaper Mlbb Mobile Legend Wallpaper Alucard Mobile Legends Mobile Legends</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/45/16/0c451690cb08460559a5536a16b669d9.jpg" data-lightbox="roadtrip" data-title="Thamuz Abyssal Reaper Mobile Legends Digital Artist Iphone Wallpaper">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/45/16/0c451690cb08460559a5536a16b669d9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHeISEZuAy-vcVEJY7iURUJzwBtWrscmx3sg&amp;ec=45771800';" alt="Thamuz Abyssal Reaper Mobile Legends Digital Artist Iphone Wallpaper">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thamuz Abyssal Reaper Mobile Legends Digital Artist Iphone Wallpaper</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/67/28/e36728db4057d3b17e939e631f580b2c.png" data-lightbox="roadtrip" data-title="Pin On Battle Emotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/67/28/e36728db4057d3b17e939e631f580b2c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwKgznlKVK_3_fabf7xQ2n1h-2tanwRwtGOw&amp;ec=45771800';" alt="Pin On Battle Emotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Battle Emotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/45/84/334584d71c3464e66bee376eee145632.jpg" data-lightbox="roadtrip" data-title="Pin On Sf">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/45/84/334584d71c3464e66bee376eee145632.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBav0_2gM8nStEiyQ6Qk0P9_Ta91FpCg23EQ&amp;ec=45771800';" alt="Pin On Sf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d0/6f/ce/d06fce5a50e1e6ad4659c422dfe9c370.jpg" data-lightbox="roadtrip" data-title="Wallpaper Phone Chang E Moonstruck By Https Fachrifhr Deviantart Com On Deviantart Mobile Legend Wallpaper Mobile Legends Alucard Mobile Legends">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d0/6f/ce/d06fce5a50e1e6ad4659c422dfe9c370.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmljSvdjPeAnPNxHRYTvYHJkhv7DLrBRlWkQ&amp;ec=45771800';" alt="Wallpaper Phone Chang E Moonstruck By Https Fachrifhr Deviantart Com On Deviantart Mobile Legend Wallpaper Mobile Legends Alucard Mobile Legends">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wallpaper Phone Chang E Moonstruck By Https Fachrifhr Deviantart Com On Deviantart Mobile Legend Wallpaper Mobile Legends Alucard Mobile Legends</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/transfer-my-gi-bill-to-my-child.html">Transfer My Gi Bill To My Child</a></li>
+													<li class="list-group-item"><a href="/usf-gi-bill.html">Usf Gi Bill</a></li>
+													<li class="list-group-item"><a href="/using-gi-bill-2-different-schools.html">Using Gi Bill 2 Different Schools</a></li>
+													<li class="list-group-item"><a href="/universities-that-give-free-laptops.html">Universities That Give Free Laptops</a></li>
+													<li class="list-group-item"><a href="/using-gi-bill-at-amu.html">Using Gi Bill At Amu</a></li>
+													<li class="list-group-item"><a href="/tricare-health-insurance-for-veterans.html">Tricare Health Insurance For Veterans</a></li>
+													<li class="list-group-item"><a href="/using-gi-bill-for-police-academy.html">Using Gi Bill For Police Academy</a></li>
+													<li class="list-group-item"><a href="/uh-gi-bill.html">Uh Gi Bill</a></li>
+													<li class="list-group-item"><a href="/transformation-30-guru-mann-pdf.html">Transformation 30 Guru Mann Pdf</a></li>
+													<li class="list-group-item"><a href="/using-gi-bill-and-tuition-assistance.html">Using Gi Bill And Tuition Assistance</a></li>
+													<li class="list-group-item"><a href="/ups-va-rating-vs-watts.html">Ups Va Rating Vs Watts</a></li>
+													<li class="list-group-item"><a href="/university-of-maryland-global-campus-gi-bill.html">University Of Maryland Global Campus Gi Bill</a></li>
+													<li class="list-group-item"><a href="/transformer-va-rating-explained.html">Transformer Va Rating Explained</a></li>
+													<li class="list-group-item"><a href="/transfer-gi-bill-to-dependants.html">Transfer Gi Bill To Dependants</a></li>
+													<li class="list-group-item"><a href="/tuition-cap-for-gi-bill.html">Tuition Cap For Gi Bill</a></li>
+													<li class="list-group-item"><a href="/using-gi-bill-in-mexico.html">Using Gi Bill In Mexico</a></li>
+													<li class="list-group-item"><a href="/us-department-of-veteran-affairs-education.html">Us Department Of Veteran Affairs Education</a></li>
+													<li class="list-group-item"><a href="/university-of-houston-post-911-gi-bill.html">University Of Houston Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/transferring-gi-bill-to-dependents.html">Transferring Gi Bill To Dependents</a></li>
+													<li class="list-group-item"><a href="/transferring-gi-bill.html">Transferring Gi Bill</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

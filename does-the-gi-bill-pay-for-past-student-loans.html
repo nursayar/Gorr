@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Does The Gi Bill Pay For Past Student Loans - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Does The Gi Bill Pay For Past Student Loans",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/736x/fd/c7/62/fdc762acb63f02d89b1d2b8f9c0c25d8.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=does+the+gi+bill+pay+for+past+student+loans",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Does The Gi Bill Pay For Past Student Loans</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">I have acquired 50000 in student loans. Do I get BAH while enrolled in distance learning. Generally VA can only pay retroactive benefits for training pursued no more than one year prior to the receipt of an application for benefits Jemison suggests. <br>				
+			</p>
+										<a class="badge badge-primary" href="/asu-gi-bill.html">asu gi bill</a>
+											<a class="badge badge-danger" href="/apc-ups-va-rating.html">apc ups va rating</a>
+											<a class="badge badge-warning" href="/asthma-secondary-to-allergic-rhinitis-va-disability.html">asthma secondary to allergic rhinitis va disability</a>
+											<a class="badge badge-success" href="/apply-for-montgomery-gi-bill-refund.html">apply for montgomery gi bill refund</a>
+											<a class="badge badge-success" href="/average-va-rating-for-hearing-loss.html">average va rating for hearing loss</a>
+											<a class="badge badge-danger" href="/average-water-bill-montgomery-county-md.html">average water bill montgomery county md</a>
+											<a class="badge badge-light" href="/allergic-rhinitis-with-polyps-va-disability.html">allergic rhinitis with polyps va disability</a>
+											<a class="badge badge-warning" href="/bah-for-online-gi-bill-2020.html">bah for online gi bill 2020</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you've come to pay a visit to the right blog.  Our site provides you with hints for viewing the maximum quality video and image content, hunt and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, especially Youtube, so we recommend this video that you see.  You can also contribute to supporting this website by sharing videos and graphics that you like on this site on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information you get on this website.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d3/00/cd/d300cd1734243a430aef5ac5bb36d2b2.jpg" data-lightbox="roadtrip" data-title="Making The Most Of Your Gi Bill Benefits Gi Bill Department Of Veterans Affairs Best Online Colleges">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d3/00/cd/d300cd1734243a430aef5ac5bb36d2b2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2QeHpAwT7QjDVpM1AC1wF9dXRoVJZ837qMQ';" alt="Making The Most Of Your Gi Bill Benefits Gi Bill Department Of Veterans Affairs Best Online Colleges">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Making The Most Of Your Gi Bill Benefits Gi Bill Department Of Veterans Affairs Best Online Colleges</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/9c/63/60/9c6360e13799caad518509fa6fbff35f.jpg" data-lightbox="roadtrip" data-title="Prospective Students And Their Parents Can Use This Comprehensive Guide To Learn About Student Loans Befor Student Loans College Degree Apply For Student Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/9c/63/60/9c6360e13799caad518509fa6fbff35f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwZwVMjsS6zkBHv6au9MWMDcgK52qNueUMSg';" alt="Prospective Students And Their Parents Can Use This Comprehensive Guide To Learn About Student Loans Befor Student Loans College Degree Apply For Student Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Prospective Students And Their Parents Can Use This Comprehensive Guide To Learn About Student Loans Befor Student Loans College Degree Apply For Student Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/e8/40/a5e840c223f62a67946e9963eaa87373.png" data-lightbox="roadtrip" data-title="The Guide To Military And Va Education Benefits To Pay For College Financial Aid For College Grants For College Scholarships For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/e8/40/a5e840c223f62a67946e9963eaa87373.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdINLWaGEcRo1qrV_MT1svRfYBuBgVr6fhDQ';" alt="The Guide To Military And Va Education Benefits To Pay For College Financial Aid For College Grants For College Scholarships For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Guide To Military And Va Education Benefits To Pay For College Financial Aid For College Grants For College Scholarships For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/7e/1d/d57e1d45c400d25d71cb453584a35ce6.png" data-lightbox="roadtrip" data-title="Fedloan Servicing The Worst Student Loan Servicer In 2020 Student Loans Student Loan Debt Payoff Student Loan Debt">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/7e/1d/d57e1d45c400d25d71cb453584a35ce6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3UgrL33RtZc8b72A3GBzGiyiwFVtDssEndw';" alt="Fedloan Servicing The Worst Student Loan Servicer In 2020 Student Loans Student Loan Debt Payoff Student Loan Debt">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fedloan Servicing The Worst Student Loan Servicer In 2020 Student Loans Student Loan Debt Payoff Student Loan Debt</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/10/2f/08/102f0871eb4039cff2f540f84538696a.jpg" data-lightbox="roadtrip" data-title="Infographic How Many Dollars U S Students Owe In Student Loan Debt And How It Compares To Other Kinds Of Debt Student Loan Debt Student Loans Student Debt">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/10/2f/08/102f0871eb4039cff2f540f84538696a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimFBlPIFrgKY9NOXw28yZq5BwJz3NZ3ETLA';" alt="Infographic How Many Dollars U S Students Owe In Student Loan Debt And How It Compares To Other Kinds Of Debt Student Loan Debt Student Loans Student Debt">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Infographic How Many Dollars U S Students Owe In Student Loan Debt And How It Compares To Other Kinds Of Debt Student Loan Debt Student Loans Student Debt</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/fd/c7/62/fdc762acb63f02d89b1d2b8f9c0c25d8.jpg" data-lightbox="roadtrip" data-title="Post 9 11 Gi Bill Benefits Right Now Are The Most Generous In The History Of The Gi Bill But In Some Cases It Does N Gi Bill Online College College Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/fd/c7/62/fdc762acb63f02d89b1d2b8f9c0c25d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrsr99i_yoPtQIYsc13iQemhKT22rwQygXAg';" alt="Post 9 11 Gi Bill Benefits Right Now Are The Most Generous In The History Of The Gi Bill But In Some Cases It Does N Gi Bill Online College College Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Post 9 11 Gi Bill Benefits Right Now Are The Most Generous In The History Of The Gi Bill But In Some Cases It Does N Gi Bill Online College College Resources</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/01/e7/be/01e7be07bf2db3608ffc133d544f9522.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrsr99i_yoPtQIYsc13iQemhKT22rwQygXAg';" alt="Post 9 11 Gi Bill Benefits Right Now Are The Most Generous In The History Of The Gi Bill But In Some Cases It Does N Gi Bill Online College College Resources">
+										<div class="card-body">
+						<h3 class="h5"><b>It may be offered to you at enlistment as a GI Bill alternative if you are enlisting for just three years or as an additional program if enlisting for six years.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Does the gi bill pay for past student loans</strong>. 
+								
+																	Under the Student Loan Repayment Program when you enlist the Army will pay back up to 65000 in qualified education loans up to 20000 for Reservists the Navy up to 65000 and the Air Force up to 10000. 
+																	Do I get a refund of the 120000 buy-in for the Montgomery GI Bill. 
+																	Are VA Education Benefits Taxable. 
+																	How do I Undelete students in VAOnce. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Not that there is no. 
+																	Im eligible for the 911 GI bill at the 100 rate and the school I will be attending participates in the Yellow Ribbon ProgramIve also applied for student loans. 
+																	The Post-911 GI bill will allow servicemembers who enlisted under the student loan repayment plan to qualify for the GI Bill benefits. 
+																	During the 3 years out I am about to finish my BA in Advertising. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is one or the other. 
+																	Tuition and fees must be over 200 percent of the monthly amount of educational assistance a Reservist would be eligible to receive otherwise while in the program. 
+																	Individuals eligible for GI Bill benefits. 
+																	How do I determine how much of my tuition and fees the VA will pay my school. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you opt for SLRP. 
+																	So your total monthly repayment will be. 
+																	If you signed up for a 3 year contract to qualify for Student Loan Repayment you will have to reenlist for at least 3 more years to be eligible for the GI Bill. 
+																	The GI Bill covers tuition books and housing for approved bootcamps. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	GI Bill and Military Education. 
+																	Learn more about how GI Bill Payment Rates work. 
+																	Will the school use the student loan funds for tuition fees before using the. 
+																	I am a former Marine who served for only 10 months and was honorably discharged for a medical reason. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Student Loan Repayment. 
+																	Do I get the full Post-911 GI Bill benefit I am eligible for if my state already has a free tuition and feesbooks program. 
+																	Can the GI Bill be used to pay off student loans. 
+																	As a matter-of-fact you cant get both the GI Bill and SLRP for the same three-year period of service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The GI Bill provides education benefits to veterans and their dependents. 
+																	However time spent satisfying the student loan repayment obligation does not count toward the active duty service necessary to qualify for the benefits. 
+																	Payments are limited to Reservists in a non-degree program of two years or less. 
+																	Each year 15 of the loan balance or 500 whichever is greater will be. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I believe that I am healthy enough to rejoin. 
+																	However if you are using the Montgomery GI Bill Selected Reserves MGIB-SR to go to school you can use that GI. 
+																	Im curious how student loans affect payment of the GI Bill. 
+																	Information About GI Bill Overpayments and Debts - Education and Training Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Can I pay this off with the GI Bill after I have served enough time. 
+																	Consider a student loan if the GI Bill grants and scholarships dont cover all of your college costs. 
+																	You will pay back 39 6 of 650 to your Postgraduate Loan and 16 9 of 186 to your Plan 2 loan. 
+																	Keep Up With Military Pay Updates. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	What happens if a work-study student received advance pay and terminates prior to working 50 hours. 
+																	No the GI Bill cant pay off student loans directly. 
+																	For example a full-time student using the Montgomery GI Bill will get up to 2122 while a half-time student will only get half that amount. 
+																	Because the Student Loan Repayment Program SLRP and the GI Bill are two completely separate programs you can not directly have student loans repaid from your Post 911 GI Bill entitlements. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Will taking out a student loans reduce the amount of tuition paid by the VA ie. 
+																	The law does not provide authority to allow GI Bill benefits to be used to pay down or pay off student loans says VA Spokesperson Terry Jemison. 
+																	So your total monthly repayment will be 55. 
+																	Bill money to pay for whatever you want including student loans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In addition to Veterans Public Law 110-181 authorized an accelerated payment option for Reserve GI Bill and REAP recipients. 
+																	The GI Bill does not work to pay off any student loans yours or your wifes. 
+																	STUDENT LOAN REPAYMENT Uncle Sam Wants to Help Repay Your Student Loans. 
+																	But veterans should use the VET TEC program first if they have the option. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	One program that does pay off certain federally-insured loans is the Student Loan Repayment. 
+																	The law does not provide authority to allow GI Bill benefits to be used to pay down or pay off student loans says VA Spokesperson Terry Jemison. 
+																	Individuals eligible for GI Bill benefits may use such benefits for training. 
+																	That is a separate program called the Student Loan Repayment Program SLRP. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Maximize federal loans before choosing a private lender because private loans tend to carry. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/50/08/da500893897605d70c09c09625948cc3.jpg" data-lightbox="roadtrip" data-title="Leslie H Tayne Esq Lesliehtayneesq Twitter Student Loan Payment School Loans Student Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/50/08/da500893897605d70c09c09625948cc3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwIDpMuqW89_jXwhQ8uoVd14Ug_p9qQ2tDFw';" alt="Leslie H Tayne Esq Lesliehtayneesq Twitter Student Loan Payment School Loans Student Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Leslie H Tayne Esq Lesliehtayneesq Twitter Student Loan Payment School Loans Student Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/01/e7/be/01e7be07bf2db3608ffc133d544f9522.jpg" data-lightbox="roadtrip" data-title="When You Stop To Think About Your Tackling Student Loan Debt Does It Make You Want To Curl Up In A Ba Student Loans Paying Off Student Loans Student Loan Debt">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/01/e7/be/01e7be07bf2db3608ffc133d544f9522.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1mR1hWxompxne10yztk8bkr20I3hAwCMHgQ';" alt="When You Stop To Think About Your Tackling Student Loan Debt Does It Make You Want To Curl Up In A Ba Student Loans Paying Off Student Loans Student Loan Debt">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When You Stop To Think About Your Tackling Student Loan Debt Does It Make You Want To Curl Up In A Ba Student Loans Paying Off Student Loans Student Loan Debt</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/83/74/49/83744934a4e2ee9f9bea48101810aa17.jpg" data-lightbox="roadtrip" data-title="How Student Loan Interested Added 30k To My Debt Student Loan Interest Student Loans Apply For Student Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/83/74/49/83744934a4e2ee9f9bea48101810aa17.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUqfmTyExMuXBcyJmOUgjW6yCt81NlhnKgPQ';" alt="How Student Loan Interested Added 30k To My Debt Student Loan Interest Student Loans Apply For Student Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Student Loan Interested Added 30k To My Debt Student Loan Interest Student Loans Apply For Student Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/45/67/cf/4567cfbc489ba5bbe3079a6de0b858ba.jpg" data-lightbox="roadtrip" data-title="Student Loan Debt Is A Burden To Some 44 Million People And Whether You Owe 20 000 Or Are Chippin Student Loan Repayment Student Loans Funny Student Loan Debt">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/45/67/cf/4567cfbc489ba5bbe3079a6de0b858ba.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Tr1eveNppmwpLVXsS6FKRcg8CkQrjVHIlQ';" alt="Student Loan Debt Is A Burden To Some 44 Million People And Whether You Owe 20 000 Or Are Chippin Student Loan Repayment Student Loans Funny Student Loan Debt">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Student Loan Debt Is A Burden To Some 44 Million People And Whether You Owe 20 000 Or Are Chippin Student Loan Repayment Student Loans Funny Student Loan Debt</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/8c/ed/b7/8cedb7b0d7027f45cc32bc2f2f95428a.jpg" data-lightbox="roadtrip" data-title="Student Loan Forgiveness Or Ten Years To Life A Responsible Visual Guide To Your Federal Student Loan Repayment Options Walmart Com In 2020 Student Loan Forgiveness Loan Forgiveness Federal Student Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/8c/ed/b7/8cedb7b0d7027f45cc32bc2f2f95428a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCbS80Mmv6A2Jze66Uvr5YP3DlESpA8196ww';" alt="Student Loan Forgiveness Or Ten Years To Life A Responsible Visual Guide To Your Federal Student Loan Repayment Options Walmart Com In 2020 Student Loan Forgiveness Loan Forgiveness Federal Student Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Student Loan Forgiveness Or Ten Years To Life A Responsible Visual Guide To Your Federal Student Loan Repayment Options Walmart Com In 2020 Student Loan Forgiveness Loan Forgiveness Federal Student Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/da/ac/57daacb93fa30922b154cb4d4ed66ab1.png" data-lightbox="roadtrip" data-title="These Are Good Reasons Why You Shouldn T Save Your Gi Bill For Your Kids Student Loan Repayment Student Loans Military Spouse Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/da/ac/57daacb93fa30922b154cb4d4ed66ab1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxxG_S5W4cK7NpkRBO_W_6wkbUvEOB9lRUhQ';" alt="These Are Good Reasons Why You Shouldn T Save Your Gi Bill For Your Kids Student Loan Repayment Student Loans Military Spouse Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">These Are Good Reasons Why You Shouldn T Save Your Gi Bill For Your Kids Student Loan Repayment Student Loans Military Spouse Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/47/79/2f4779bbeef0481e767cd9085d9480fb.jpg" data-lightbox="roadtrip" data-title="Here S Your Crisis Student Loan Debt Isn T A Myth Infographic By Chris Lewis Layla Zaidane Thurs Student Loan Debt Student Loans Federal Student Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/47/79/2f4779bbeef0481e767cd9085d9480fb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUVRW82z8_kYGvo9-5Csl0KWAhu2bmr5RfHw';" alt="Here S Your Crisis Student Loan Debt Isn T A Myth Infographic By Chris Lewis Layla Zaidane Thurs Student Loan Debt Student Loans Federal Student Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here S Your Crisis Student Loan Debt Isn T A Myth Infographic By Chris Lewis Layla Zaidane Thurs Student Loan Debt Student Loans Federal Student Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5c/6d/60/5c6d603a622cb673f532a61d857b2408.jpg" data-lightbox="roadtrip" data-title="Military Families Magazine By Ameriforce Media Military Education Saving For College Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5c/6d/60/5c6d603a622cb673f532a61d857b2408.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXGRWbV68At2GM8IS_fNMVLVbD1Na5L0bn6w';" alt="Military Families Magazine By Ameriforce Media Military Education Saving For College Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Families Magazine By Ameriforce Media Military Education Saving For College Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4d/27/87/4d2787579e44e2986820d8c8a38b5c34.png" data-lightbox="roadtrip" data-title="What S The Difference Between Va Loans Vs Physician Loans Va Loan Loan Student Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4d/27/87/4d2787579e44e2986820d8c8a38b5c34.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdUVcJGe0PakoupG9UGySIv5nx6VkzMk9N6g';" alt="What S The Difference Between Va Loans Vs Physician Loans Va Loan Loan Student Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What S The Difference Between Va Loans Vs Physician Loans Va Loan Loan Student Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/08/19/220819191b3d9221e6356fdb71bc08e0.jpg" data-lightbox="roadtrip" data-title="Veterans And Their Family Members Using The Gi Bill Could Be Eligible For In State Tuition Student Loan Repayment Student Loan Interest Apply For Student Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/08/19/220819191b3d9221e6356fdb71bc08e0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8zBP76C-dLc36Bdoqi5k9LViehbGB1TYgFg';" alt="Veterans And Their Family Members Using The Gi Bill Could Be Eligible For In State Tuition Student Loan Repayment Student Loan Interest Apply For Student Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans And Their Family Members Using The Gi Bill Could Be Eligible For In State Tuition Student Loan Repayment Student Loan Interest Apply For Student Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/94/73/9c/94739c76b535abcdea0dcb2cbbabe7fe.jpg" data-lightbox="roadtrip" data-title="When Determining How To Pay For A Computer Science Degree Some People Overlook Scholarships As A Way Of Scholarships Scholarships Application Computer Science">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/94/73/9c/94739c76b535abcdea0dcb2cbbabe7fe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJGY7og7LhsojRW7jaWeMBZFbc19O-6QWKYQ';" alt="When Determining How To Pay For A Computer Science Degree Some People Overlook Scholarships As A Way Of Scholarships Scholarships Application Computer Science">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When Determining How To Pay For A Computer Science Degree Some People Overlook Scholarships As A Way Of Scholarships Scholarships Application Computer Science</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/2c/a2/a52ca29cc135a4a8a417924bf3bcbc25.png" data-lightbox="roadtrip" data-title="5 Facts On Student Loan Forgiveness With Pslf Student Loan Forgiveness Public Service Loan Forgiveness Teacher Loan Forgiveness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/2c/a2/a52ca29cc135a4a8a417924bf3bcbc25.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR71XFpn8eyxHgclG_WxbF3BO54SPFDCn13xQ';" alt="5 Facts On Student Loan Forgiveness With Pslf Student Loan Forgiveness Public Service Loan Forgiveness Teacher Loan Forgiveness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Facts On Student Loan Forgiveness With Pslf Student Loan Forgiveness Public Service Loan Forgiveness Teacher Loan Forgiveness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/5e/37/b15e3737d6d72ab274d7f5d5b24b91b6.jpg" data-lightbox="roadtrip" data-title="Pell Grants To Cover Smallest Percentage Of Costs In Their History Pell Grant College Costs College Tuition">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/5e/37/b15e3737d6d72ab274d7f5d5b24b91b6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR60gKdBxCMDuhaEyHm6A0YEPyvXtm6UAEpdA';" alt="Pell Grants To Cover Smallest Percentage Of Costs In Their History Pell Grant College Costs College Tuition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pell Grants To Cover Smallest Percentage Of Costs In Their History Pell Grant College Costs College Tuition</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-rating-after-5-years.html">Va Rating After 5 Years</a></li>
+													<li class="list-group-item"><a href="/va-rating-code-for-acid-reflux.html">Va Rating Code For Acid Reflux</a></li>
+													<li class="list-group-item"><a href="/va-rating-flare-ups.html">Va Rating Flare Ups</a></li>
+													<li class="list-group-item"><a href="/va-rating-by-disability.html">Va Rating By Disability</a></li>
+													<li class="list-group-item"><a href="/va-quality-motors-reviews.html">Va Quality Motors Reviews</a></li>
+													<li class="list-group-item"><a href="/va-rating-criteria-for-knee.html">Va Rating Criteria For Knee</a></li>
+													<li class="list-group-item"><a href="/va-percentage-for-ptsd.html">Va Percentage For Ptsd</a></li>
+													<li class="list-group-item"><a href="/va-rating-5019.html">Va Rating 5019</a></li>
+													<li class="list-group-item"><a href="/va-rating-cervical-injury.html">Va Rating Cervical Injury</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-arthritis-in-lower-back.html">Va Rating For Arthritis In Lower Back</a></li>
+													<li class="list-group-item"><a href="/va-ptsd-100.html">Va Ptsd 100</a></li>
+													<li class="list-group-item"><a href="/va-rating-criteria-for-sciatica.html">Va Rating Criteria For Sciatica</a></li>
+													<li class="list-group-item"><a href="/va-percentage-table.html">Va Percentage Table</a></li>
+													<li class="list-group-item"><a href="/va-physician-pay-tables-2021.html">Va Physician Pay Tables 2021</a></li>
+													<li class="list-group-item"><a href="/va-post-9-11-gi-bill-application.html">Va Post 9 11 Gi Bill Application</a></li>
+													<li class="list-group-item"><a href="/va-ptsd-disability-ratings.html">Va Ptsd Disability Ratings</a></li>
+													<li class="list-group-item"><a href="/va-rating-20-percent.html">Va Rating 20 Percent</a></li>
+													<li class="list-group-item"><a href="/va-rating-combined.html">Va Rating Combined</a></li>
+													<li class="list-group-item"><a href="/va-rating-criteria-for-tbi.html">Va Rating Criteria For Tbi</a></li>
+													<li class="list-group-item"><a href="/va-percentages-for-back-injuries.html">Va Percentages For Back Injuries</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

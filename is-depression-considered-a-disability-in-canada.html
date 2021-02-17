@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Is Depression Considered A Disability In Canada - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Is Depression Considered A Disability In Canada",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/6c/70/42/6c704265b48dd592e57d4c50c5da13e7.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=is+depression+considered+a+disability+in+canada",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Is Depression Considered A Disability In Canada</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Is depression considered a disability under the ADA. Most commonly when the term depression is used to refer to a disability for the purposes of Canadian Disability Benefits it is actually referring to a psychiatric disorder properly known as Major Depressive Disorder MDD but may also refer to any of a number of mood disorders characterized by a depressed state. No amount of pulling up your sock true grit and determination positive self-talk love and support will lift the dark veil of depression. <br>				
+			</p>
+										<a class="badge badge-primary" href="/va-disability-percentage-for-anxiety.html">va disability percentage for anxiety</a>
+											<a class="badge badge-warning" href="/va-disability-knee-cartilage.html">va disability knee cartilage</a>
+											<a class="badge badge-info" href="/va-disability-ibs.html">va disability ibs</a>
+											<a class="badge badge-success" href="/va-disability-for-obesity.html">va disability for obesity</a>
+											<a class="badge badge-primary" href="/va-disability-percentage-for-cataracts.html">va disability percentage for cataracts</a>
+											<a class="badge badge-primary" href="/va-disability-headaches-rating.html">va disability headaches rating</a>
+											<a class="badge badge-info" href="/va-disability-percentage-determination.html">va disability percentage determination</a>
+											<a class="badge badge-danger" href="/va-disability-percentage-explained.html">va disability percentage explained</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you've come to pay a visit to the right blog.  Our website provides you with suggestions for viewing the maximum quality video and image content, hunt and locate more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this video for you to see.  It is also possible to contribute to supporting this website by sharing videos and images that you enjoy on this blog on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information that you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://embed-fastly.wistia.com/deliveries/fd1927a698c386e1c6c971185d8c212f.webp?image_crop_resized=960x540" data-lightbox="roadtrip" data-title="Depression Disability Benefits The Ultimate Guide Resolute Legal">
+											<img class="card-img v-image ads-img " src="https://embed-fastly.wistia.com/deliveries/fd1927a698c386e1c6c971185d8c212f.webp?image_crop_resized=960x540" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0LObeG44IfORVakMHYBT6qxJ2RAklnIlVSw';" alt="Depression Disability Benefits The Ultimate Guide Resolute Legal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Depression Disability Benefits The Ultimate Guide Resolute Legal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://canadiandisabilitybenefits.ca/wp-content/uploads/2014/11/canadian-disabilityi-benefits-logo7.png" data-lightbox="roadtrip" data-title="Types Of Disabilities Canadian Disability Benefits">
+											<img class="card-img v-image ads-img " src="https://canadiandisabilitybenefits.ca/wp-content/uploads/2014/11/canadian-disabilityi-benefits-logo7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS59uhS8SLl5uON_yWBN95jP_wqzPxWu7ORag';" alt="Types Of Disabilities Canadian Disability Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Types Of Disabilities Canadian Disability Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/89/05/6f8905f384f131ab3fd2be8b032185a2.png" data-lightbox="roadtrip" data-title="Pin On Awareness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/89/05/6f8905f384f131ab3fd2be8b032185a2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCeOxXqD7oWydPaCFw74qD2DQFr-NhmhNYug';" alt="Pin On Awareness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Awareness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.rbc.com/newsroom/_assets-custom/images/092518-rbc-ins-mental-health-info.jpg" data-lightbox="roadtrip" data-title="Mental Health Issues Are Less Likely To Be Seen As A Disability">
+											<img class="card-img v-image ads-img " src="http://www.rbc.com/newsroom/_assets-custom/images/092518-rbc-ins-mental-health-info.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb2snkRoKl_njAnp8IezuhSLhgfgPYeFAsrQ';" alt="Mental Health Issues Are Less Likely To Be Seen As A Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mental Health Issues Are Less Likely To Be Seen As A Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://economics.td.com/domains/economics.td.com/images/reports/bd/cwd-acc/chart-2.png" data-lightbox="roadtrip" data-title="Canadians With Disabilities">
+											<img class="card-img v-image ads-img " src="https://economics.td.com/domains/economics.td.com/images/reports/bd/cwd-acc/chart-2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8angHfvIFeSHtH0bgeq0KSyiClkBA8FxXhA';" alt="Canadians With Disabilities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Canadians With Disabilities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www150.statcan.gc.ca/n1/pub/89-654-x/2014002/c-g/c-g-2-eng.gif" data-lightbox="roadtrip" data-title="Mental Health Related Disabilities Among Canadians Aged 15 Years And Older 2012">
+											<img class="card-img v-image ads-img " src="https://www150.statcan.gc.ca/n1/pub/89-654-x/2014002/c-g/c-g-2-eng.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSItiX24qZvzDJzgUbXYCFMTb4qmCfQ4G1wUw';" alt="Mental Health Related Disabilities Among Canadians Aged 15 Years And Older 2012">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mental Health Related Disabilities Among Canadians Aged 15 Years And Older 2012</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://migrainecanada.org/wp-content/uploads/brizy/7560/assets/images/iW=948&amp;iH=661&amp;oX=18&amp;oY=0&amp;cW=912&amp;cH=661/WHO_GBD_disability_scale_weight.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSItiX24qZvzDJzgUbXYCFMTb4qmCfQ4G1wUw';" alt="Mental Health Related Disabilities Among Canadians Aged 15 Years And Older 2012">
+										<div class="card-body">
+						<h3 class="h5"><b>They go on to state than less the 37 of those suffering from anxiety will seek or receive treatment.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Is depression considered a disability in canada</strong>. 
+								
+																	Canadians whove experienced mental-health challenges or have taken time off for disabilities are more likely to view a mental-health illness as a disability according to a new survey by RBC. 
+																	How Does the Disability Tax Credit Work. 
+																	All disability benefits providers in Canada recognize depression as a disability. 
+																	However a diagnosis on its own wont qualify you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are many different types of mental health condition which can lead to a disability including. 
+																	Depression can last for years and without treatment can cause permanent disability. 
+																	The Disability Tax Credit is specifically offered to aid in situations such as these. 
+																	Left untreated depression can worsen into suicidal tendencies. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Disability Tax Credit for Depressionhelps those with depression and their loved ones cope with all the additional expenses. 
+																	The Canada Revenue Agency has ruled that depression can be considered a disability if it results in the marked restriction of one or more aspects of normal life for a period of 12 months or more. 
+																	Conditions like depression are one of the most common disabilities that The CDB Canadian Disability Benefits deals with. 
+																	According to the Canada Revenue Agency depression is a disability if you are markedly restricted in at least one of the basic activities of daily living for a prolonged period of time at least 12 months of almost constant impairment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Many people have the question Is depression a disability or Can you get disability for depression Depression and disability benefits are often very misunderstood and hiring the support of an experienced disability attorney in Ontario like those working for Diamond Diamond can give you the peace of mind necessary to pursue disability benefits if you are eligible to recover them. 
+																	This has been the case since the introduction of the Disability Discrimination 1995 DDA which has since been replaced by the Equality Act 2010 EqA. 
+																	The Canada Child Tax Benefit is a tax-free benefit for children diagnosed with a chronic disorder. 
+																	As most if not all employers will know employees with disabilities are protected in law in terms of their employment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A condition like depression can prevent suffers from getting out of bed in the morning and holding a full time job. 
+																	Depression in its various forms major depression dysthymia and persistent depressive disorder is a type of mood disorder characterized by gloom sadness and feelings of hopelessness and inadequacy. 
+																	Depression is the second most common medical condition listed on Social Security disability applications. 
+																	As a result employers cannot treat a disabled employee less favourably because of their disability or for a reason. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Is Anxiety Considered a Disability at Work. 
+																	Its a condition that can qualify for benefits. 
+																	Clinical depression that affects a persons ability to perform his or her job duties is one of the mental health conditions that the Ministry considers a disability. 
+																	Depression and other mental or emotional conditions can qualify as disabilities under the Americans with Disabilities Act ADA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A simple diagnosis of depression is not enough for the SSA to consider you disabled for the purposes of collecting disability. 
+																	Providers pay benefits to people who can prove their conditions keep them from working. 
+																	It is a profoundly painful distressing disorder that rarely can be overcome without external help. 
+																	According to the Anxiety and Depression Association of America ADAA anxiety disorders affects 181 of adults in the United States and is the most common mental illness issue. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Here it is important to note that your depression may be considered a disability by other definitions. 
+																	If depression substantially limits an employees ability to perform major life activities then it is a disability. 
+																	However there are many factors that determine whether your specific experience of depression is a disability. 
+																	With the potentially fatal nature of the disease depression has been classified as a disability by the Canadian government. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	What you are trying to qualify for or accomplish determines when and by whom your depression is considered a disability. 
+																	Filing for Social Security Disability with a Diagnosis of Depression While the Social Security Administration SSA does not have a separate listing for Depression in its Impairment Listing Manual or Blue Book the condition is considered under Section 1204 Affective Disorders. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ldac-acta.ca/wp-content/uploads/2019/03/download.jpg" data-lightbox="roadtrip" data-title="Canadian Survey On Disability Reports A Demographic Employment And Income Profile Of Canadians With Disabilities Aged 15 Years And Over 2017 Ldac Acta">
+											<img class="card-img v-image ads-img " src="https://www.ldac-acta.ca/wp-content/uploads/2019/03/download.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQJBg2-2HCAKUqrM_fl62t3pLxm1GdU1m4eQ';" alt="Canadian Survey On Disability Reports A Demographic Employment And Income Profile Of Canadians With Disabilities Aged 15 Years And Over 2017 Ldac Acta">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Canadian Survey On Disability Reports A Demographic Employment And Income Profile Of Canadians With Disabilities Aged 15 Years And Over 2017 Ldac Acta</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://4cgvb5ozt3k2ex4wa2xjuz1j-wpengine.netdna-ssl.com/wp-content/uploads/2014/10/depression-disability-300x198-300x198.jpg" data-lightbox="roadtrip" data-title="Is Depression Considered A Disability In Ontario Preszler Injury Lawyers">
+											<img class="card-img v-image ads-img " src="https://4cgvb5ozt3k2ex4wa2xjuz1j-wpengine.netdna-ssl.com/wp-content/uploads/2014/10/depression-disability-300x198-300x198.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDoaJA_jhYn3VRt8ZOZrl0TgEBtZifBUQOpQ';" alt="Is Depression Considered A Disability In Ontario Preszler Injury Lawyers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Is Depression Considered A Disability In Ontario Preszler Injury Lawyers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/07/ce/3207ce0a061f5fd59e0f097e2661a8ec.png" data-lightbox="roadtrip" data-title="Pin On Disability Tax Credit Canada">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/07/ce/3207ce0a061f5fd59e0f097e2661a8ec.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUgXT6gQj6YGsxSQBurdqxxhdLVhXF3E6k4g';" alt="Pin On Disability Tax Credit Canada">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Disability Tax Credit Canada</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://migrainecanada.org/wp-content/uploads/brizy/7560/assets/images/iW=948&amp;iH=661&amp;oX=18&amp;oY=0&amp;cW=912&amp;cH=661/WHO_GBD_disability_scale_weight.jpg" data-lightbox="roadtrip" data-title="Disability And Migraine Migraine Canada">
+											<img class="card-img v-image ads-img " src="https://migrainecanada.org/wp-content/uploads/brizy/7560/assets/images/iW=948&amp;iH=661&amp;oX=18&amp;oY=0&amp;cW=912&amp;cH=661/WHO_GBD_disability_scale_weight.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZUWfJTnsMmJMwcBjnwUoNqK7P5sl9w_VUlw';" alt="Disability And Migraine Migraine Canada">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Disability And Migraine Migraine Canada</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/d0/95/0cd095d156bd5c3390b95a9272411a3a.jpg" data-lightbox="roadtrip" data-title="Aac Safety Privacy Space By Communication Disabilities Access Canada Cdac Functional Life Skills Therapy Tools Dating Skills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/d0/95/0cd095d156bd5c3390b95a9272411a3a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBLKf8seaaS0_RXjj0uwrxJaAXZkOXqfN3XQ';" alt="Aac Safety Privacy Space By Communication Disabilities Access Canada Cdac Functional Life Skills Therapy Tools Dating Skills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Aac Safety Privacy Space By Communication Disabilities Access Canada Cdac Functional Life Skills Therapy Tools Dating Skills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/22/56/24225685687d99c4762805ffc54a3502.jpg" data-lightbox="roadtrip" data-title="Pin On Mental Health Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/22/56/24225685687d99c4762805ffc54a3502.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqtwoLaiyMk5zSnWgaxX8ZCupGi04jCoxOrQ';" alt="Pin On Mental Health Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mental Health Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.resolutelegal.ca/wp-content/uploads/2020/01/unnamed-file-1.jpg" data-lightbox="roadtrip" data-title="Medical Conditions That Qualify For Disability Benefits Resolute Legal">
+											<img class="card-img v-image ads-img " src="https://www.resolutelegal.ca/wp-content/uploads/2020/01/unnamed-file-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK1hFVasZtSIUeDNQpTpNKijQFhHYTjEBsMg';" alt="Medical Conditions That Qualify For Disability Benefits Resolute Legal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Medical Conditions That Qualify For Disability Benefits Resolute Legal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/70/42/6c704265b48dd592e57d4c50c5da13e7.jpg" data-lightbox="roadtrip" data-title="Pin On Canadian Health Care">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/70/42/6c704265b48dd592e57d4c50c5da13e7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSakgXW5i1zaUA1SkGh4B8y85tEYPswAnSsiw';" alt="Pin On Canadian Health Care">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Canadian Health Care</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/bd/0f/d4bd0f68765d9a564ef1d529c7a67542.jpg" data-lightbox="roadtrip" data-title="Pin On Public Health Around The World">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/bd/0f/d4bd0f68765d9a564ef1d529c7a67542.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBs9sCEwXa8MySSgVWbd-kjeN4rA_AgDihgg';" alt="Pin On Public Health Around The World">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Public Health Around The World</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://4cgvb5ozt3k2ex4wa2xjuz1j-wpengine.netdna-ssl.com/wp-content/uploads/2014/10/common-disability-claims-300x200-300x200.jpg" data-lightbox="roadtrip" data-title="Most Common Types Of Disability Claims In Canada Preszler Injury Lawyers">
+											<img class="card-img v-image ads-img " src="https://4cgvb5ozt3k2ex4wa2xjuz1j-wpengine.netdna-ssl.com/wp-content/uploads/2014/10/common-disability-claims-300x200-300x200.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTln1qDUd7MBPX6HQwQ6LR18bL5Q7DL3MwYbw';" alt="Most Common Types Of Disability Claims In Canada Preszler Injury Lawyers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Most Common Types Of Disability Claims In Canada Preszler Injury Lawyers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://4cgvb5ozt3k2ex4wa2xjuz1j-wpengine.netdna-ssl.com/wp-content/uploads/2020/04/canada-pension-plan-disability-can-you-collect-ltd-and-cpp-disability-at-the-same-time-300x193.jpg" data-lightbox="roadtrip" data-title="Can You Collect Ltd And Cpp Disability At The Same Time Canada Pension Plan Disability Preszler Injury Lawyers">
+											<img class="card-img v-image ads-img " src="https://4cgvb5ozt3k2ex4wa2xjuz1j-wpengine.netdna-ssl.com/wp-content/uploads/2020/04/canada-pension-plan-disability-can-you-collect-ltd-and-cpp-disability-at-the-same-time-300x193.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRgt6Yr4k4vh2Fksuo51ux43rHxTCFFXn8EA';" alt="Can You Collect Ltd And Cpp Disability At The Same Time Canada Pension Plan Disability Preszler Injury Lawyers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Can You Collect Ltd And Cpp Disability At The Same Time Canada Pension Plan Disability Preszler Injury Lawyers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.resolutelegal.ca/wp-content/uploads/2020/09/LTD-800x600-1.jpg" data-lightbox="roadtrip" data-title="Long Term Disability Benefits The Ultimate Guide Video Resolute Legal">
+											<img class="card-img v-image ads-img " src="https://www.resolutelegal.ca/wp-content/uploads/2020/09/LTD-800x600-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3HM9v-QncaFkOWFSOfh_l6SxFPCzSo0cqWQ';" alt="Long Term Disability Benefits The Ultimate Guide Video Resolute Legal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Long Term Disability Benefits The Ultimate Guide Video Resolute Legal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/dc/25/90dc25f21a22662571d048bc4b936d33.png" data-lightbox="roadtrip" data-title="Pin On Articles Infographics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/dc/25/90dc25f21a22662571d048bc4b936d33.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReyZEY037I1Yzgfwe9IMRFQ3GUC9U5Y7PZ_A';" alt="Pin On Articles Infographics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Articles Infographics</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/using-gi-bill-for-part-61-flight-training.html">Using Gi Bill For Part 61 Flight Training</a></li>
+													<li class="list-group-item"><a href="/tuition-payment-with-gi-bill.html">Tuition Payment With Gi Bill</a></li>
+													<li class="list-group-item"><a href="/ups-va-rating-vs-watts.html">Ups Va Rating Vs Watts</a></li>
+													<li class="list-group-item"><a href="/transferring-schools-post-911-gi-bill.html">Transferring Schools Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/ucla-gi-bill.html">Ucla Gi Bill</a></li>
+													<li class="list-group-item"><a href="/using-post-911-gi-bill-for-certification.html">Using Post 911 Gi Bill For Certification</a></li>
+													<li class="list-group-item"><a href="/transfer-of-post-911-gi-bill-benefits-to-dependents-teb.html">Transfer Of Post 911 Gi Bill Benefits To Dependents Teb</a></li>
+													<li class="list-group-item"><a href="/university-of-maryland-post-911-gi-bill.html">University Of Maryland Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/using-gi-bill-in-mexico.html">Using Gi Bill In Mexico</a></li>
+													<li class="list-group-item"><a href="/transfer-of-gi-bill-usmc.html">Transfer Of Gi Bill Usmc</a></li>
+													<li class="list-group-item"><a href="/university-of-phoenix-gi-bill-problems.html">University Of Phoenix Gi Bill Problems</a></li>
+													<li class="list-group-item"><a href="/transferring-gi-bill-to-family-members.html">Transferring Gi Bill To Family Members</a></li>
+													<li class="list-group-item"><a href="/using-gi-bill-at-foreign-schools.html">Using Gi Bill At Foreign Schools</a></li>
+													<li class="list-group-item"><a href="/using-a-parents-gi-bill-for-college.html">Using A Parents Gi Bill For College</a></li>
+													<li class="list-group-item"><a href="/university-of-washington-gi-bill.html">University Of Washington Gi Bill</a></li>
+													<li class="list-group-item"><a href="/usc-gi-bill.html">Usc Gi Bill</a></li>
+													<li class="list-group-item"><a href="/under-honorable-conditions-gi-bill.html">Under Honorable Conditions Gi Bill</a></li>
+													<li class="list-group-item"><a href="/using-gi-bill-in-australia.html">Using Gi Bill In Australia</a></li>
+													<li class="list-group-item"><a href="/transfer-post-911-gi-bill-to-family.html">Transfer Post 911 Gi Bill To Family</a></li>
+													<li class="list-group-item"><a href="/unemployment-percentage-in-va.html">Unemployment Percentage In Va</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

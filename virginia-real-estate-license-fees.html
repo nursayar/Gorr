@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Virginia Real Estate License Fees - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Virginia Real Estate License Fees",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/e9/dc/2e/e9dc2ef528aab2078f922585e1552527.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=virginia+real+estate+license+fees",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Virginia Real Estate License Fees</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Real Estate Practice Virginias Real Estate License Law 10 Flashcards. There is a 65 renewal fee to renew your Virginia real estate salespersons license. Then click Next. <br>				
+			</p>
+										<a class="badge badge-info" href="/switching-schools-with-gi-bill.html">switching schools with gi bill</a>
+											<a class="badge badge-secondary" href="/to-go-to-college-espanol.html">to go to college espanol</a>
+											<a class="badge badge-dark" href="/switch-my-montgomery-gi-bill-to-post-911.html">switch my montgomery gi bill to post 911</a>
+											<a class="badge badge-info" href="/statego-replace.html">statego replace</a>
+											<a class="badge badge-info" href="/the-health-bill-go-compare.html">the health bill go compare</a>
+											<a class="badge badge-primary" href="/temple-gi-bill.html">temple gi bill</a>
+											<a class="badge badge-success" href="/statego-reload-not-working.html">statego reload not working</a>
+											<a class="badge badge-primary" href="/teacher-va-salary.html">teacher va salary</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you have come to pay a visit to the ideal site.  Our site provides you with suggestions for seeing the maximum quality video and picture content, search and find more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, particularly Youtube, therefore we recommend this video for you to view.  You can also bring about supporting this site by sharing videos and images that you like on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/dc/2e/e9dc2ef528aab2078f922585e1552527.png" data-lightbox="roadtrip" data-title="How To Become A Real Estate Agent In Virginia Real Estate Exam Real Estate Agent Real Estate">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/dc/2e/e9dc2ef528aab2078f922585e1552527.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwRKYU2M4HBYyuchu5l60S89eYk4McMYY24Q';" alt="How To Become A Real Estate Agent In Virginia Real Estate Exam Real Estate Agent Real Estate">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Become A Real Estate Agent In Virginia Real Estate Exam Real Estate Agent Real Estate</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/d0/c1/a7d0c1789d99a4a17705b1bfd92c6917.png" data-lightbox="roadtrip" data-title="How To Become A Real Estate Agent Broker In Virginia Real Estate Exam Real Estate Agent Real Estate Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/d0/c1/a7d0c1789d99a4a17705b1bfd92c6917.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaTtCAwaUO08iHwbyerKwX19Yof9iav6LhsQ';" alt="How To Become A Real Estate Agent Broker In Virginia Real Estate Exam Real Estate Agent Real Estate Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Become A Real Estate Agent Broker In Virginia Real Estate Exam Real Estate Agent Real Estate Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/cb/6f/94cb6f77f6059dab9308c6872d9697da.jpg" data-lightbox="roadtrip" data-title="Va Funding Fee Table Refinance Mortgage Va Mortgages Home Improvement Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/cb/6f/94cb6f77f6059dab9308c6872d9697da.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6XsMOUgoVghvLnqRIm6EDC2HLtO7ad-cT4w';" alt="Va Funding Fee Table Refinance Mortgage Va Mortgages Home Improvement Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Funding Fee Table Refinance Mortgage Va Mortgages Home Improvement Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/e4/09/a1e4098b9bc8b5edb23b7b76679a548d.png" data-lightbox="roadtrip" data-title="How To Become A Real Estate Appraiser In Virginia How To Become Work Experience Real Estate">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/e4/09/a1e4098b9bc8b5edb23b7b76679a548d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHcpkHEHD0LcWvICuk7mkproZNhoZGq2skTw';" alt="How To Become A Real Estate Appraiser In Virginia How To Become Work Experience Real Estate">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Become A Real Estate Appraiser In Virginia How To Become Work Experience Real Estate</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/76/6b/a5766be47798a6278cb1e7f58f7f6dec.jpg" data-lightbox="roadtrip" data-title="Schedule Of Fees Lisa Fairlie Realtor Property Manager Relocation Specialist Narpm Member At Silver Creek Va Property Management Relocation Silver Creek">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/76/6b/a5766be47798a6278cb1e7f58f7f6dec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjbhLHXtQP3viS14GVX8boioceeO3ZVvnytQ';" alt="Schedule Of Fees Lisa Fairlie Realtor Property Manager Relocation Specialist Narpm Member At Silver Creek Va Property Management Relocation Silver Creek">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Schedule Of Fees Lisa Fairlie Realtor Property Manager Relocation Specialist Narpm Member At Silver Creek Va Property Management Relocation Silver Creek</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/22/d6/1822d6833c942585fceb796703881880.jpg" data-lightbox="roadtrip" data-title="Habesha Real Estate Ethiopian Realtors Eritrean Real Estate Agents Habesha Lenders In Dc Md Va Real Estate Agent Estate Agent Realtors">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/22/d6/1822d6833c942585fceb796703881880.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWDTjih7HMuAxo359hwTKeDyGEEkMeBpImKQ';" alt="Habesha Real Estate Ethiopian Realtors Eritrean Real Estate Agents Habesha Lenders In Dc Md Va Real Estate Agent Estate Agent Realtors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Habesha Real Estate Ethiopian Realtors Eritrean Real Estate Agents Habesha Lenders In Dc Md Va Real Estate Agent Estate Agent Realtors</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/b1/01/38/b1013833fad97363ee9cf79d8225dcbe.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWDTjih7HMuAxo359hwTKeDyGEEkMeBpImKQ';" alt="Habesha Real Estate Ethiopian Realtors Eritrean Real Estate Agents Habesha Lenders In Dc Md Va Real Estate Agent Estate Agent Realtors">
+										<div class="card-body">
+						<h3 class="h5"><b>Have a high school diploma or GED.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Virginia real estate license fees</strong>. 
+								
+																	If you renew your license online you can pay using a credit card. 
+																	Application fees are as follows. 
+																	In accordance with the requirements of 1109 of the Financial Institutions Reform Recovery and Enforcement Act of 1989 80 of the biennial renewal or reinstatement fee assessed for all certified general real estate appraisers certified residential and licensed residential real estate appraisers shall be submitted to the Appraisal Subcommittee. 
+																	Be at least 18 years old. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	No Yes If yes provide your license number and expiration date below. 
+																	Though a licensee has an inactive status he or she may still be able to collect referral fees. 
+																	License Renewal LATE Fees In Addition to the Standard Fee Late renewal fee - 5000 when postmarked between July 1 - September 30 Reinstatement fee - 7500 when postmarked between October 1 - December 31 Reinstatement fee -10000 when postmarked between January 1 - June 15. 
+																	These will cost about 100 altogether. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Do you hold an active or inactive Virginia Real Estate Salesperson License. 
+																	Study Guide Final Free Practice Test Instructions Choose your answer to the question and click Continue to see how you did. 
+																	Where the applicant completed 180 classroom hours of broker pre-licensing courses substantially equivalent to Virginias real estate education requirements and 4 submit letters of certification from other jurisdictions where licensed. 
+																	Department of Professional and Occupational Regulation 9960 Mayland Drive Suite 400 Richmond VA 23233-1463. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Take only the Virginia section if you have a valid real estate license from another state. 
+																	You will also have to pay for fingerprinting and a background check. 
+																	Pass the state and national portions of the examination. 
+																	X Type of License Fee Trans Broker license by examination 21000 1020 Broker license by reciprocity 21000 1020 VA Salesperson upgrading to Broker 8500 3055 Initial Fee includes Real Estate Transaction Recovery Fund Assessment 1. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The application fee for a Virginia real estate. 
+																	325 Your real estate license application fee will generally cost around 25. 
+																	Meet Virginia real estate license requirements as outlined by the Virginia Department of Professional and Occupational Regulation Real Estate Board. 
+																	Please note all renewal fees are non-refundable. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Enroll today and start your real estate career. 
+																	Actions resulting in an improper brokerage commission include. 
+																	A national real estate test and a Virginia test. 
+																	Take the Virginia Real Estate Exam. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Include your payment for the license application fee. 
+																	If you opt to mail in a Renewal Card issued by the Real Estate Board you should include a Credit Card Payment Form. 
+																	In order to become licensed as a real estate salesperson by the Real Estate Board applicants must. 
+																	Accepting a commission. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Successfully pass the Virginia real estate licensing examination by earning a score of 70 or higher. 
+																	Virginia Real Estate Board Licensing Regulations. 
+																	False 24 Regarding changes of a licensee changing from active to inactive status if the broker has not yet returned the license of the individual involved in the change the broker must do so by certified mail so that. 
+																	Salesperson by education and examination. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You wont have to pay another license fee for a couple of years so thats nice. 
+																	Complete 60 classclock hours of a Board-approved Principles of Real Estate Pre-License Courses PDF and. 
+																	All application fees for licenses are nonrefundable and the date of receipt by the board or its agent is the date that will be used to determine whether it is on time. 
+																	Real Estate Board Licensing Regulations PDF. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Unless otherwise indicated all payments for license application renewal examination and all other fees should be made payable in US. 
+																	Real Estate Express is the leading online school for aspiring Virginia real estate licensing education. 
+																	Virginia Real Estate Salesperson Licensing Exam. 
+																	Virginia Real Estate Board Licensing Regulations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Complete an approved 60-hour Virginia real estate pre-license course. 
+																	There will be two sections. 
+																	Offering to pay or paying a transaction-based fee fees or other valuable consideration to any person not licensed in this or any jurisdiction for services that require a real estate license. 
+																	Currency to the Treasurer of Virginia and mailed to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Expect about 120 questions which will need to be answered in about 25 hours. 
+																	You will need passing grades on both. 
+																	Also in order to apply through reciprocity the broker MUST hold a current broker license in another state. 
+																	Be mindful of your timing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The fee is 150 and its not refundable. 
+																	All real estate agent applicants need to apply for their license within one year of passing the examinations or re-examination will be required. 
+																	The state application fee for a Virginia real estate salesperson is 170 and 210 for qualifying broker candidates. 
+																	The exam fee is around 85 paid to PSI who administers the exam. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How much does it cost to get a Virginia real estate license. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/7d/ac/1d7dac0511fed36c9d2fd1c78ed8d326.jpg" data-lightbox="roadtrip" data-title="Real Estate Broker Va Tasks List To Delegate In A Nutshell An Expert Real Estate Virtual A Virtual Assistant Real Estate Assistant Virtual Assistant Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/7d/ac/1d7dac0511fed36c9d2fd1c78ed8d326.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuEMZYcNztxvmbB4W5HzvfvGjijPD5HISGfw';" alt="Real Estate Broker Va Tasks List To Delegate In A Nutshell An Expert Real Estate Virtual A Virtual Assistant Real Estate Assistant Virtual Assistant Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Real Estate Broker Va Tasks List To Delegate In A Nutshell An Expert Real Estate Virtual A Virtual Assistant Real Estate Assistant Virtual Assistant Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/15/c2/ea15c2b5c008d56cbf7cfb784e49a99c.png" data-lightbox="roadtrip" data-title="Buying Your First Home Loan Application Checklist Png Kentucky Fha Va Usda Rural Housing Khc And Fann Refinance Mortgage Mortgage Lenders Mortgage Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/15/c2/ea15c2b5c008d56cbf7cfb784e49a99c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSERrc04PbZRGrkKPksbw0cglaEBlfY0cwIWg';" alt="Buying Your First Home Loan Application Checklist Png Kentucky Fha Va Usda Rural Housing Khc And Fann Refinance Mortgage Mortgage Lenders Mortgage Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Buying Your First Home Loan Application Checklist Png Kentucky Fha Va Usda Rural Housing Khc And Fann Refinance Mortgage Mortgage Lenders Mortgage Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/3e/26/d23e2683c9821cfa0ae9db5589b27849.jpg" data-lightbox="roadtrip" data-title="Pin On Real Estate">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/3e/26/d23e2683c9821cfa0ae9db5589b27849.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBrfjWzkMxaeyMu4iodvKMpaYHORcIULpsVg';" alt="Pin On Real Estate">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Real Estate</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/85/76/6c8576a1128761b1b41e385a9b28de75.jpg" data-lightbox="roadtrip" data-title="Pin By Schuster Results Team On Buying Selling Homes Home Buying Process Home Loans Refinance Mortgage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/85/76/6c8576a1128761b1b41e385a9b28de75.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfl5L4VtCiBwpOKzSGsdFaAVhBHnx-CJ6PIw';" alt="Pin By Schuster Results Team On Buying Selling Homes Home Buying Process Home Loans Refinance Mortgage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Schuster Results Team On Buying Selling Homes Home Buying Process Home Loans Refinance Mortgage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/24/7a/f8247a22133183740111c9b40557d4e1.png" data-lightbox="roadtrip" data-title="Pin On Kentucky Fha Va Usda Khc Jumbo And Fannie Mae Mortgage Loans In Ky">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/24/7a/f8247a22133183740111c9b40557d4e1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm06Dmz00b68HliZN-hM0VYwXTnWKe-LmZbQ';" alt="Pin On Kentucky Fha Va Usda Khc Jumbo And Fannie Mae Mortgage Loans In Ky">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Kentucky Fha Va Usda Khc Jumbo And Fannie Mae Mortgage Loans In Ky</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/62/9c/58629c9cc0ea78b63d78a23f216320bf.jpg" data-lightbox="roadtrip" data-title="Pin By Marlen Araujo On Real Estate Agent In 2020 Dallas Realtor Real Estate Agent Realtors">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/62/9c/58629c9cc0ea78b63d78a23f216320bf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMzRxPyllD0fNjsehHKwqyoKG6ueNKAOZk6Q';" alt="Pin By Marlen Araujo On Real Estate Agent In 2020 Dallas Realtor Real Estate Agent Realtors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Marlen Araujo On Real Estate Agent In 2020 Dallas Realtor Real Estate Agent Realtors</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5c/8e/3b/5c8e3b5f275cbfd2f18210fa70b8aa1f.jpg" data-lightbox="roadtrip" data-title="Real Estate Terminology Pdf Real Estate Tips Real Estate Education Getting Into Real Estate">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5c/8e/3b/5c8e3b5f275cbfd2f18210fa70b8aa1f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU2CRJjk_h3seByPOlvq1-whAJQL0S-HpaWA';" alt="Real Estate Terminology Pdf Real Estate Tips Real Estate Education Getting Into Real Estate">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Real Estate Terminology Pdf Real Estate Tips Real Estate Education Getting Into Real Estate</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/01/38/b1013833fad97363ee9cf79d8225dcbe.png" data-lightbox="roadtrip" data-title="Pin On Best Insurance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/01/38/b1013833fad97363ee9cf79d8225dcbe.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_tSgYP_HfzlloZpJXL5yPGX-hrzmRCNMnag';" alt="Pin On Best Insurance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Best Insurance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/4e/31/484e31a9c9863248ea928140c98610bc.jpg" data-lightbox="roadtrip" data-title="The Importance Of A Home Warranty As A Seller Home Warranty Realtor License House System">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/4e/31/484e31a9c9863248ea928140c98610bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQFyxYrYCDOixxgBnmu2GXrq0Rcu_ppKFJlg';" alt="The Importance Of A Home Warranty As A Seller Home Warranty Realtor License House System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Importance Of A Home Warranty As A Seller Home Warranty Realtor License House System</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/1a/32/841a3280770b3191679f5c95ac99a748.jpg" data-lightbox="roadtrip" data-title="Who Pays What A Guide To Closing Costs Home Buying Process Real Estate Tips Buying First Home">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/1a/32/841a3280770b3191679f5c95ac99a748.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcpPZJpb1DI6CWOSyqPrBYUY_9LkQXZyMLXw';" alt="Who Pays What A Guide To Closing Costs Home Buying Process Real Estate Tips Buying First Home">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Who Pays What A Guide To Closing Costs Home Buying Process Real Estate Tips Buying First Home</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/2e/3b/ce/2e3bcec3258164e3156f269bca7848dc.jpg" data-lightbox="roadtrip" data-title="How To Become A Real Estate Appraiser In Virginia Real Estate How To Become Real Estate Career">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/2e/3b/ce/2e3bcec3258164e3156f269bca7848dc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWucjcav59MIFtuyT-4lshnL6-mek6JetQQ';" alt="How To Become A Real Estate Appraiser In Virginia Real Estate How To Become Real Estate Career">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Become A Real Estate Appraiser In Virginia Real Estate How To Become Real Estate Career</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/61/87/7d6187f251c1ab6bde7bfb06bdca53e0.jpg" data-lightbox="roadtrip" data-title="Champions School Of Real Estate Has Gone National And Now Offers Appraisers In 12 States License Renewal Package And Cou Appraisal Continuing Education School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/61/87/7d6187f251c1ab6bde7bfb06bdca53e0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS91RZcevQWrVNdT5Fd1UDfBloYh5prd-OSmw';" alt="Champions School Of Real Estate Has Gone National And Now Offers Appraisers In 12 States License Renewal Package And Cou Appraisal Continuing Education School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Champions School Of Real Estate Has Gone National And Now Offers Appraisers In 12 States License Renewal Package And Cou Appraisal Continuing Education School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/ca/41/c2ca41b21bc9ffa774419ee85f9504e0.jpg" data-lightbox="roadtrip" data-title="How To Get A Real Estate License In Virginia Coastal Decor Coastal Design Coastal Entryway">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/ca/41/c2ca41b21bc9ffa774419ee85f9504e0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCSXyLSJVyv9--C5_EszxB0-ddq_L9dHozxA';" alt="How To Get A Real Estate License In Virginia Coastal Decor Coastal Design Coastal Entryway">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Get A Real Estate License In Virginia Coastal Decor Coastal Design Coastal Entryway</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-couldn-t-fully-grant-your-appeal-meaning.html">Va Couldn T Fully Grant Your Appeal Meaning</a></li>
+													<li class="list-group-item"><a href="/va-disability-child-over-18.html">Va Disability Child Over 18</a></li>
+													<li class="list-group-item"><a href="/va-disability-100-and-working.html">Va Disability 100 And Working</a></li>
+													<li class="list-group-item"><a href="/va-disability-bilateral-knee.html">Va Disability Bilateral Knee</a></li>
+													<li class="list-group-item"><a href="/va-disability-benefit-of-the-doubt.html">Va Disability Benefit Of The Doubt</a></li>
+													<li class="list-group-item"><a href="/va-disability-and-rheumatoid-arthritis.html">Va Disability And Rheumatoid Arthritis</a></li>
+													<li class="list-group-item"><a href="/va-disability-code-sheet.html">Va Disability Code Sheet</a></li>
+													<li class="list-group-item"><a href="/va-disability-calculator-with-bilateral-factor.html">Va Disability Calculator With Bilateral Factor</a></li>
+													<li class="list-group-item"><a href="/va-depression-ratings.html">Va Depression Ratings</a></li>
+													<li class="list-group-item"><a href="/va-disability-calculator-ptsd.html">Va Disability Calculator Ptsd</a></li>
+													<li class="list-group-item"><a href="/va-disability-claims-gulf-war-syndrome.html">Va Disability Claims Gulf War Syndrome</a></li>
+													<li class="list-group-item"><a href="/va-disability-calculator-hill-and-ponton.html">Va Disability Calculator Hill And Ponton</a></li>
+													<li class="list-group-item"><a href="/va-diabetes-rating-calculator.html">Va Diabetes Rating Calculator</a></li>
+													<li class="list-group-item"><a href="/va-disability-calculator-for-multiple-disabilities.html">Va Disability Calculator For Multiple Disabilities</a></li>
+													<li class="list-group-item"><a href="/va-dept-of-education-sol-released-tests.html">Va Dept Of Education Sol Released Tests</a></li>
+													<li class="list-group-item"><a href="/va-covid-infection-rate.html">Va Covid Infection Rate</a></li>
+													<li class="list-group-item"><a href="/va-disability-compensation-and-medicaid.html">Va Disability Compensation And Medicaid</a></li>
+													<li class="list-group-item"><a href="/va-disability-calculator-by-condition.html">Va Disability Calculator By Condition</a></li>
+													<li class="list-group-item"><a href="/va-diabetes-rating-scale.html">Va Diabetes Rating Scale</a></li>
+													<li class="list-group-item"><a href="/va-dept-of-education-ged.html">Va Dept Of Education Ged</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

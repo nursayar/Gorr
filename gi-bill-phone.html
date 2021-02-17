@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Gi Bill Phone - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Gi Bill Phone",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/736x/1d/b5/3f/1db53f0cc60dfee536c9df4839fbe5d7.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=gi+bill+phone",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Gi Bill Phone</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Learn more about GI Bill benefits belowand how to apply for them. Enter the Ask a Question site. For other questions and further inquiries please us the contact form provided below. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/9-guys-using-5-senses.html">9 guys using 5 senses</a>
+											<a class="badge badge-danger" href="/air-force-1-x-g-dragon-stockx.html">air force 1 x g dragon stockx</a>
+											<a class="badge badge-dark" href="/9-gmt-to-philippine-time.html">9 gmt to philippine time</a>
+											<a class="badge badge-primary" href="/9gag-meme.html">9gag meme</a>
+											<a class="badge badge-warning" href="/air-force-gd-2.html">air force gd 2</a>
+											<a class="badge badge-success" href="/9-gi.html">9 gi</a>
+											<a class="badge badge-primary" href="/9-gigantic-attack-on-titan.html">9 gigantic attack on titan</a>
+											<a class="badge badge-warning" href="/9-inci-ke-cm.html">9 inci ke cm</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to visit the ideal site.  Our website gives you suggestions for seeing the highest quality video and picture content, search and locate more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this video that you view.  You can also bring about supporting this website by sharing videos and graphics that you enjoy on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this website.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/42/40/e7/4240e7de48603eebecc0b471bc05aa6c.png" data-lightbox="roadtrip" data-title="Pin By C21jerrybirdsong On Navy Gi Bill How To Plan Interactive">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/42/40/e7/4240e7de48603eebecc0b471bc05aa6c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7HmiMEs9in9eEqqqVdkKRedxAFQg9wRnyBw';" alt="Pin By C21jerrybirdsong On Navy Gi Bill How To Plan Interactive">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By C21jerrybirdsong On Navy Gi Bill How To Plan Interactive</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/d6/8b/85d68b63e32d76640baa434765a87be6.png" data-lightbox="roadtrip" data-title="Book Recommendation Combat To College By John H Davis Books Militaryeducation Reference In 2020 Military Education Book Recommendations Book Festival">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/d6/8b/85d68b63e32d76640baa434765a87be6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9LSia4JKEmdCbGUy2rXTWLPs98WqyOpJHlQ';" alt="Book Recommendation Combat To College By John H Davis Books Militaryeducation Reference In 2020 Military Education Book Recommendations Book Festival">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Book Recommendation Combat To College By John H Davis Books Militaryeducation Reference In 2020 Military Education Book Recommendations Book Festival</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/13/bf/5913bfba1129e4a85ee55b77a757143d.jpg" data-lightbox="roadtrip" data-title="Man Looks At Cellphone 600x400 Gi Bill How To Apply Bills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/13/bf/5913bfba1129e4a85ee55b77a757143d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7CtYhjcioy7nn3EKpEubrwjVMD8ApMtPsZQ';" alt="Man Looks At Cellphone 600x400 Gi Bill How To Apply Bills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Man Looks At Cellphone 600x400 Gi Bill How To Apply Bills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/b8/94/16b894e732eace32bafd6db66ffa7233.png" data-lightbox="roadtrip" data-title="Army Basic Training Phone Call Rules Jjheartblog Army Basic Training Military Spouse Support Army Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/b8/94/16b894e732eace32bafd6db66ffa7233.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfVOLgZ9JWc-28sJ-Pcdk1UOoY6kUqw6OGhQ';" alt="Army Basic Training Phone Call Rules Jjheartblog Army Basic Training Military Spouse Support Army Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Basic Training Phone Call Rules Jjheartblog Army Basic Training Military Spouse Support Army Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/90/6f/0e906fde946af4f4dae28530165d857d.jpg" data-lightbox="roadtrip" data-title="Pin By University Of Alaska Fairbanks On Funding Opportunities Gi Bill How To Plan Financial Aid">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/90/6f/0e906fde946af4f4dae28530165d857d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAgZWX1qc7-qLhkkTR2wNLhQikWBJEDhYmCg';" alt="Pin By University Of Alaska Fairbanks On Funding Opportunities Gi Bill How To Plan Financial Aid">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By University Of Alaska Fairbanks On Funding Opportunities Gi Bill How To Plan Financial Aid</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/08/26/3b/08263baff69064bfc6d62f31742889c0.jpg" data-lightbox="roadtrip" data-title="Smart Phone Smartphone Lg Mi Honor Jio Nokia Trustissues Graphing Calculator Pemdas Trust Issues">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/08/26/3b/08263baff69064bfc6d62f31742889c0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHFFV8on3A7WLmnRdO-ko2KADLe6xLVggEpw';" alt="Smart Phone Smartphone Lg Mi Honor Jio Nokia Trustissues Graphing Calculator Pemdas Trust Issues">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Smart Phone Smartphone Lg Mi Honor Jio Nokia Trustissues Graphing Calculator Pemdas Trust Issues</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/98/4c/ce/984cce1263c96598b23d91db91a051e4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHFFV8on3A7WLmnRdO-ko2KADLe6xLVggEpw';" alt="Smart Phone Smartphone Lg Mi Honor Jio Nokia Trustissues Graphing Calculator Pemdas Trust Issues">
+										<div class="card-body">
+						<h3 class="h5"><b>Youll need to request a new Certificate of Eligibility letter to check your GI Bill benefit status.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Gi bill phone</strong>. 
+								
+																	If a bank is reluctant to cash your GI Bill check on the spot have a bank manager call the number and speak to a VA representative. 
+																	Depending on your specific situation you may need to meet additional GI Bill eligibility requirements. 
+																	To request a COE please call the Education Call Center at 888-442-4551. 
+																	Were here Monday through Friday 800 am. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If youre not at Student Veterans of America NatCon2020 you can reach a GI Bill representative by contacting the Education Call Center at 1-888-GI-BILL-1 1-888-442-4551 inside the US or 001-918-781-5678 outside the US Monday-Friday 7 am. 
+																	Navy GI Bill Programs Contact Information Contact us in Writing. 
+																	Call Us From Overseas. 
+																	For general inquiries please click on our FAQ andor ABOUT tab above. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	GI Bill benefits help you pay for college graduate school and training programs. 
+																	Posted on October 8th 2009 If you have received an emergency GI Bill check from the VA and need to cash it at a bank bring this number with you 800827-2166. 
+																	VA emergency GI Bill phone number for banks. 
+																	EBenefits is a one-stop source for information on Department of Defense and Department of Veterans Affairs benefits and services. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can also search for answers to frequently asked questions. 
+																	To apply for additional benefits and view your benefit status open an eBenefits Premium account. 
+																	If you wish you can call us at 1-888-442-4551 1 888 GI BILL 1 from 7AM - 7PM Central Time. 
+																	Since 1944 the GI Bill has helped qualifying Veterans and their family members get money to cover all or some of the costs for school or training. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Call 1-888-GIBILL-1 1-888-442-4551 For TDDTYY use 711. 
+																	Contact Us Ask a Question and Get Answers. 
+																	This contact method is available worldwide 24 hours a day seven days a week. 
+																	You can also search for answers to frequently asked questions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This contact method is available worldwide 24 hours a day seven days a week. 
+																	Im sorry if this has been requested a million times but I was simply checking my bank account and noticed a VA education payment I actually wasnt expecting. 
+																	To call us please click on our OFFICES tab above to find the phone number for the office nearest your current or future location. 
+																	Some universities including Mason make additional funds available to pay education costs without charging it to your GI Bill entitlement. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Contact the Department of Veterans Affairs VA at 888-442-4551 if you have any questions about your eligibility for these education programs. 
+																	Commander Navy Personnel Command PERS-311 GI Bill Programs Branch 5720 Integrity Drive Millington TN 38055-2620. 
+																	If you wish you can call us at 1-888-442-4551 1 888 GI BILL 1 from 7AM - 7PM Central Time. 
+																	Call us at 888-GIBILL-1 888-442-4551 between 7 am. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How to Apply for GI Bill Benefits. 
+																	Special features related to the Post-911 GI Bill include the. 
+																	This is meant to offset the cost of out-of-state tuition. 
+																	Call between 7 am. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ask us a Question - Get an answer in four to five working days. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7b/e4/d4/7be4d4a6a8f58cb9c91c925b9980e196.jpg" data-lightbox="roadtrip" data-title="Pin By Maiko Geisha On School Supply Purchases Under Gi Bill F Iphone Icon Iphone Layout Homescreen Iphone">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7b/e4/d4/7be4d4a6a8f58cb9c91c925b9980e196.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_6uawSaSeMEuKlu5B3QIPj-2IUsPUku-lhw';" alt="Pin By Maiko Geisha On School Supply Purchases Under Gi Bill F Iphone Icon Iphone Layout Homescreen Iphone">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Maiko Geisha On School Supply Purchases Under Gi Bill F Iphone Icon Iphone Layout Homescreen Iphone</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/98/4c/ce/984cce1263c96598b23d91db91a051e4.png" data-lightbox="roadtrip" data-title="Is This You If So Checkout Www Unlimitedmobile1 Com Phone Cell Phone Reminder">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/98/4c/ce/984cce1263c96598b23d91db91a051e4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIj0wNuuLw0e3fGhYcXNB2UFc3JqcuzYOjBw';" alt="Is This You If So Checkout Www Unlimitedmobile1 Com Phone Cell Phone Reminder">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Is This You If So Checkout Www Unlimitedmobile1 Com Phone Cell Phone Reminder</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f6/2d/bb/f62dbb0fad4f9f61cb0ac15cc8d929ed.jpg" data-lightbox="roadtrip" data-title="Va Home Loans In Louisville Kentuckyunder The Gi Bill Active Military Person Va Home Loan Watch This Before Applying Va Loan Va Mortgage Loans Va Mortgages">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f6/2d/bb/f62dbb0fad4f9f61cb0ac15cc8d929ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiFq9j_dtmczCuCiwhZFnsrXcTeze2wkLVhw';" alt="Va Home Loans In Louisville Kentuckyunder The Gi Bill Active Military Person Va Home Loan Watch This Before Applying Va Loan Va Mortgage Loans Va Mortgages">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Home Loans In Louisville Kentuckyunder The Gi Bill Active Military Person Va Home Loan Watch This Before Applying Va Loan Va Mortgage Loans Va Mortgages</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/a0/32/b9a03263bb31e6c8d0b1358dedfdba1e.jpg" data-lightbox="roadtrip" data-title="A Video Explaining The Post 9 11 Gi Bill From The Veterans Health Administration Mcc Bedford Lowell Gi Bill Health Administration Human">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/a0/32/b9a03263bb31e6c8d0b1358dedfdba1e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAAJi-SfHBQbCqtiNTjHev_b9DzHSv9IuyeQ';" alt="A Video Explaining The Post 9 11 Gi Bill From The Veterans Health Administration Mcc Bedford Lowell Gi Bill Health Administration Human">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Video Explaining The Post 9 11 Gi Bill From The Veterans Health Administration Mcc Bedford Lowell Gi Bill Health Administration Human</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6c/14/cc/6c14cc805a058dac9d09a06a41c1cd63.jpg" data-lightbox="roadtrip" data-title="Pin On Holly Crap">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6c/14/cc/6c14cc805a058dac9d09a06a41c1cd63.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSartzWbQqDFhraGsT9kjn_4ItEPPtrYUDkBA';" alt="Pin On Holly Crap">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Holly Crap</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/e3/be/c8e3be40559bd64a9c39af8547296795.jpg" data-lightbox="roadtrip" data-title="Melvin Harrison Schools Early Gi Bill Recipient Harrison School Family Stories Gi Bill">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/e3/be/c8e3be40559bd64a9c39af8547296795.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRTCQtUD8uK-FrM-evQRPFLJI5gV8Gn6JCuA';" alt="Melvin Harrison Schools Early Gi Bill Recipient Harrison School Family Stories Gi Bill">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Melvin Harrison Schools Early Gi Bill Recipient Harrison School Family Stories Gi Bill</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/a2/9d/d4a29dd1abcbb423800b6bbb32e5ba49.jpg" data-lightbox="roadtrip" data-title="عاش محترم ومات محترم نهفات Phone Jokes Gag">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/a2/9d/d4a29dd1abcbb423800b6bbb32e5ba49.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlKDr3h_hml998g-q05_jfVDrVwT5kYe7tlw';" alt="عاش محترم ومات محترم نهفات Phone Jokes Gag">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">عاش محترم ومات محترم نهفات Phone Jokes Gag</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1d/b5/3f/1db53f0cc60dfee536c9df4839fbe5d7.jpg" data-lightbox="roadtrip" data-title="Pin On M4j Blog Fiches Formation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1d/b5/3f/1db53f0cc60dfee536c9df4839fbe5d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgxjaTnmpeVY54on8dfWzxJj3e5vrKZ1lQgA';" alt="Pin On M4j Blog Fiches Formation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On M4j Blog Fiches Formation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/f9/30/43f9300e0bca7fc77f1783e33c4b90d3.jpg" data-lightbox="roadtrip" data-title="The Pentagon Is Delaying A Change To Its Gi Bill Benefit Transfer Policy That Would Have Screwed Its Longest Serving Troops Gi Bill Education Department Of Veterans Affairs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/f9/30/43f9300e0bca7fc77f1783e33c4b90d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxkwg2t9KPcZeg2jeSX8aJNAHby5U8eONBFQ';" alt="The Pentagon Is Delaying A Change To Its Gi Bill Benefit Transfer Policy That Would Have Screwed Its Longest Serving Troops Gi Bill Education Department Of Veterans Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Pentagon Is Delaying A Change To Its Gi Bill Benefit Transfer Policy That Would Have Screwed Its Longest Serving Troops Gi Bill Education Department Of Veterans Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/49/38/6b/49386ba5b211dc53538dd36c60ebfe4d.jpg" data-lightbox="roadtrip" data-title="Best Commute And Transit Apps For Iphone In 2020 In 2020 Iphone Apps Ios App Development App">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/49/38/6b/49386ba5b211dc53538dd36c60ebfe4d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNKNe--BaY1OZX6zELcVOIxAOlrWMmzFIMLQ';" alt="Best Commute And Transit Apps For Iphone In 2020 In 2020 Iphone Apps Ios App Development App">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Commute And Transit Apps For Iphone In 2020 In 2020 Iphone Apps Ios App Development App</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/03/98/cf039827f45b648cf20290e7498a2eda.png" data-lightbox="roadtrip" data-title="Pin On Mobile Ui Examples">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/03/98/cf039827f45b648cf20290e7498a2eda.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRce04omdgx-CjGs4Vdk-TIQkzwXncQeYBgYA';" alt="Pin On Mobile Ui Examples">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mobile Ui Examples</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/a0/a4/13/a0a413712c6ea7eee254c46474d4a84f.jpg" data-lightbox="roadtrip" data-title="Top 2 Recent Launched Mobile Comparison Asus Zenfone Pegasus 3 Vs Lg G5 Asus Zenfone Asus Mobile">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/a0/a4/13/a0a413712c6ea7eee254c46474d4a84f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUScDReXGxZxsIVZ3bha9gddaHcOIy3JdgSw';" alt="Top 2 Recent Launched Mobile Comparison Asus Zenfone Pegasus 3 Vs Lg G5 Asus Zenfone Asus Mobile">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 2 Recent Launched Mobile Comparison Asus Zenfone Pegasus 3 Vs Lg G5 Asus Zenfone Asus Mobile</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/13/45/dd/1345dd91658be926578421277764ab41.jpg" data-lightbox="roadtrip" data-title="Provide 100 Offer Udemy Course Only For You Get Free Udemy Course For Every Single Day Sign Up And Then Focus To Learn Best Used Macbook Pro Computer Coder">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/13/45/dd/1345dd91658be926578421277764ab41.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi4dmDOI92azxTcGrkkxlv30X79jU5EcwG8A';" alt="Provide 100 Offer Udemy Course Only For You Get Free Udemy Course For Every Single Day Sign Up And Then Focus To Learn Best Used Macbook Pro Computer Coder">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Provide 100 Offer Udemy Course Only For You Get Free Udemy Course For Every Single Day Sign Up And Then Focus To Learn Best Used Macbook Pro Computer Coder</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-rating-for-prediabetes.html">Va Rating For Prediabetes</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-vision.html">Va Rating For Vision</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-disability.html">Va Rating For Disability</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-bilateral-neuropathy.html">Va Rating For Bilateral Neuropathy</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-shoulder-sprain.html">Va Rating For Shoulder Sprain</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-shoulder.html">Va Rating For Shoulder</a></li>
+													<li class="list-group-item"><a href="/va-rating-hearing.html">Va Rating Hearing</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-extremity-radiculopathy.html">Va Rating For Extremity Radiculopathy</a></li>
+													<li class="list-group-item"><a href="/va-rating-in-transformer.html">Va Rating In Transformer</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-mild-obstructive-sleep-apnea.html">Va Rating For Mild Obstructive Sleep Apnea</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-sinus.html">Va Rating For Sinus</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-internal-hemorrhoids.html">Va Rating For Internal Hemorrhoids</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-lumbosacral-strain.html">Va Rating For Lumbosacral Strain</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-sacroiliac-joint-dysfunction.html">Va Rating For Sacroiliac Joint Dysfunction</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-hearing-loss.html">Va Rating For Hearing Loss</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-urge-incontinence.html">Va Rating For Urge Incontinence</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-degenerative-disc-disease.html">Va Rating For Degenerative Disc Disease</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-leg-radiculopathy.html">Va Rating For Leg Radiculopathy</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-transformer.html">Va Rating For Transformer</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-degenerative-arthritis-of-the-spine.html">Va Rating For Degenerative Arthritis Of The Spine</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Using Gi Bill For Helicopter Training - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Using Gi Bill For Helicopter Training",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/81/7f/cf/817fcfb9c71f16eb8b917d2eb04e1d3c.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=using+gi+bill+for+helicopter+training",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Using Gi Bill For Helicopter Training</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">If you use the Post-911 GI Bill. Veterans who have opted to receive the Montgomery GI Bill may use those benefits for vocational training as well. The VA is very clear that the GI Bill benefits are only to be utilized in support of education and training that leads to a paying job. <br>				
+			</p>
+										<a class="badge badge-success" href="/is-joint-pain-a-va-disability.html">is joint pain a va disability</a>
+											<a class="badge badge-secondary" href="/is-the-vva-picking-up-donations-during-coronavirus.html">is the vva picking up donations during coronavirus</a>
+											<a class="badge badge-danger" href="/kenyon-college-gifts.html">kenyon college gifts</a>
+											<a class="badge badge-light" href="/is-there-a-va-rating-for-carpal-tunnel-syndrome.html">is there a va rating for carpal tunnel syndrome</a>
+											<a class="badge badge-light" href="/kill-bill-bikes.html">kill bill bikes</a>
+											<a class="badge badge-primary" href="/is-there-a-w2-for-va-disability.html">is there a w2 for va disability</a>
+											<a class="badge badge-primary" href="/is-anyone-picking-up-donations.html">is anyone picking up donations</a>
+											<a class="badge badge-info" href="/kill-bill-death-list.html">kill bill death list</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you've come to pay a visit to the right site.  Our website provides you with suggestions for seeing the maximum quality video and image content, search and locate more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, especially Youtube, so we recommend this video that you see.  You can also contribute to supporting this website by sharing videos and graphics that you like on this site on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://milversity.com/wp-content/uploads/2019/07/using-gi-bill-for-helicopter-school-training-2-1024x341.png" data-lightbox="roadtrip" data-title="Using The Gi Bill For Helicopter Training Ultimate Guide 2020">
+											<img class="card-img v-image ads-img " src="https://milversity.com/wp-content/uploads/2019/07/using-gi-bill-for-helicopter-school-training-2-1024x341.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7CHYtaG438VNI8LkGBXj2pHiekXuF0CBz1Q';" alt="Using The Gi Bill For Helicopter Training Ultimate Guide 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Using The Gi Bill For Helicopter Training Ultimate Guide 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/67/53/bf675380365c9bdc82bfea3b20625e39.jpg" data-lightbox="roadtrip" data-title="Helicopter Flight Training At Www Guidance Aero Photo By Gregory Lucas Outdoor Outdoor Decor Flight Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/67/53/bf675380365c9bdc82bfea3b20625e39.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7a_GBQhCIORCskfMzBdkI__mQgp4rXU7c5g';" alt="Helicopter Flight Training At Www Guidance Aero Photo By Gregory Lucas Outdoor Outdoor Decor Flight Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Helicopter Flight Training At Www Guidance Aero Photo By Gregory Lucas Outdoor Outdoor Decor Flight Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/d5/24/79d5240f6eff4f026cd7eb9356c15f45.jpg" data-lightbox="roadtrip" data-title="Prepping For Private Pilot Checkride Helicopters C Campbell Us Air Force Veteran And Guidance Aviation Student Ww Helicopter Flight Training Private Pilot">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/d5/24/79d5240f6eff4f026cd7eb9356c15f45.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToznXRkwVm_Wvj3566WAhZMewD92DEwVrf4A';" alt="Prepping For Private Pilot Checkride Helicopters C Campbell Us Air Force Veteran And Guidance Aviation Student Ww Helicopter Flight Training Private Pilot">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Prepping For Private Pilot Checkride Helicopters C Campbell Us Air Force Veteran And Guidance Aviation Student Ww Helicopter Flight Training Private Pilot</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://4d0q7u11k31p1qnkosal8q2e-wpengine.netdna-ssl.com/wp-content/uploads/2016/01/Helos-landing-US-Army-photo.png" data-lightbox="roadtrip" data-title="The Ups And Downs Of Using Your Gi Bill To Pay For Flight Training Clearancejobs">
+											<img class="card-img v-image ads-img " src="https://4d0q7u11k31p1qnkosal8q2e-wpengine.netdna-ssl.com/wp-content/uploads/2016/01/Helos-landing-US-Army-photo.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGiJpwPA2716tU-BmIMe9mPfNm9Vn-T6B2zg';" alt="The Ups And Downs Of Using Your Gi Bill To Pay For Flight Training Clearancejobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Ups And Downs Of Using Your Gi Bill To Pay For Flight Training Clearancejobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/e4/6f/32e46f0ed128d639cbcb81e25853e165.png" data-lightbox="roadtrip" data-title="Jeremy Hartt Congrats On Earning Your Cfi Rating Helicopters Helicopter Flight Training Train">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/e4/6f/32e46f0ed128d639cbcb81e25853e165.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPpoGZUGUE3-aBrw4HHaKWHKzJs1wnXjH4SQ';" alt="Jeremy Hartt Congrats On Earning Your Cfi Rating Helicopters Helicopter Flight Training Train">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jeremy Hartt Congrats On Earning Your Cfi Rating Helicopters Helicopter Flight Training Train</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/1b/f1/a11bf1d4b473a69ece52d13846a6b39c.jpg" data-lightbox="roadtrip" data-title="Andrew Park S Private Pilot Checkride Http Www Guidance Aero Private Pilot Flight Training Pilot">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/1b/f1/a11bf1d4b473a69ece52d13846a6b39c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_CTJ1AHFL7lqEK_419clAdNYj7TAufDxaUw';" alt="Andrew Park S Private Pilot Checkride Http Www Guidance Aero Private Pilot Flight Training Pilot">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Andrew Park S Private Pilot Checkride Http Www Guidance Aero Private Pilot Flight Training Pilot</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://flyhaa.com/wp-content/uploads/2015/09/Heli-financing-hero2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_CTJ1AHFL7lqEK_419clAdNYj7TAufDxaUw';" alt="Andrew Park S Private Pilot Checkride Http Www Guidance Aero Private Pilot Flight Training Pilot">
+										<div class="card-body">
+						<h3 class="h5"><b>Under the bill which has a number of perks such as 100 coverage of helicopter flight training expenses.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Using gi bill for helicopter training</strong>. 
+								
+																	Helicopter schools had been struggling financially and the. 
+																	Your payment depends on 3 factors. 
+																	Learn about MGIB-AD View the current payment rates for MGIB-AD. 
+																	View payment information by benefit program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This amount represents the 100 annual benefit level for the Post-911 GI Bill for vocational flight. 
+																	This depends on the VA benefit program you use and other factors. 
+																	First of all your Chapter 30 GI Bill benefits do not cover any expenses at any flight training school for your private pilot license the initial step toward a helicopter pilot career. 
+																	This chapter provides a set amount per academic year but you need to have your Private Pilot Certificate first. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Armed Forces Veteran CJ Schneider discusses how he received help with the VA paperwork in order to use his GI Bill benefits for helicopter flight trai. 
+																	3 Things to Consider When Using Post 911 GI Bill Benefits to Pay for Helicopter Flight Training. 
+																	Armed Forces Veteran CJ Schneider discusses how he received help with the VA paperwork in order to use his GI Bill benefits for helicopter flight trai. 
+																	This partnership allows students to obtain an associates degree while completing your flight training with us. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Post 911 Gi Bill Chapter 33 can be used for Part 141 accredited flight training to get your Commercial Pilot License CPL or Airline Transport Pilot ATP certificate and can pay for flights tuition housing allowance books fees and supplies. 
+																	Under the Forces to Flyers program flight schools must deduct 13526 from the cost of training. 
+																	If you use the Montgomery GI Bill Active Duty MGIB-AD Well pay you back for 60 of the approved fees your flight school charges. 
+																	GI Bill benefits may not be used for any portion of training for the Private Pilot Certificate because obtaining that certification alone does not allow pilots to earn money. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Post 911 GI Bill offers to pay the actual net costs for tuition and fees or 10970. 
+																	Since Corporate Helicopters is not associated with an institute of higher learning veterans will not receive a housing allowance or the books and supplies stipend. 
+																	FREE FLIGHT TRAINING using FAFSA Post 911 GI Bill Montgomery GI Bill MilTA tuition assistance tuition reimbursement and other veteran employee and stu. 
+																	Thanks to the Post 911 GI Bill a new avenue of funding is available to many veterans seeking to pay for their helicopter flight training. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Any costs accrued over the approved amount will not be reimbursed. 
+																	Attend a public university flight program for 100 tuition coverage. 
+																	Whichever is less per academic year. 
+																	The GI Bill is an excellent way to earn your helicopter pilots license. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Payment Amounts Under the Montgomery GI Bill If you are training under the Montgomery GI Bill we will reimburse you for 60 percent of the approved charges. 
+																	The Post 911 GI Bill may be used for vocational training. 
+																	Hear what veterans are saying about helicopter flight training and using Veterans Post 911 GI Bill benefits at Guidance Aviation. 
+																	Vocational Flight Training Direct Funding Hillsboro Aero Academy is approved for direct limited funding for flight training under the Post-911 GI Bill using the Vocational Flight Training option. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Youve earned your benefits. 
+																	Precision Aviation Training contracts with Klamath Community College to provide the helicopter and airplane flight training for their aviation degree program so you can use your Post-911 GI Bill directly through the college. 
+																	For some flight schools that train helicopter pilots the GI Bill that took effect in 2009 was a windfall the government never intended. 
+																	Participation requirements are the same for all GI Bill programs but the payment amount varies depending on the GI Bill program and flight school. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However Chapter 33 VA Benefits do cover the cost of your Private Pilots license training. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/7f/cf/817fcfb9c71f16eb8b917d2eb04e1d3c.jpg" data-lightbox="roadtrip" data-title="Nick Monroe Commercial Checkride Congrats Http Www Guidance Aero Flight Training Helicopter Train">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/7f/cf/817fcfb9c71f16eb8b917d2eb04e1d3c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDwPUllF-kl3S8A19_tr-RrCWrkZk0eeoH_A';" alt="Nick Monroe Commercial Checkride Congrats Http Www Guidance Aero Flight Training Helicopter Train">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nick Monroe Commercial Checkride Congrats Http Www Guidance Aero Flight Training Helicopter Train</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/eb/6a/33/eb6a3378d74febad95199a5e5aeff4ca.jpg" data-lightbox="roadtrip" data-title="Pin On 3 3 4 Needed">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/eb/6a/33/eb6a3378d74febad95199a5e5aeff4ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgTNXM_9Tw0FZtCzgI7ij4esKzVW_JFMnz3w';" alt="Pin On 3 3 4 Needed">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On 3 3 4 Needed</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/52/5a/cf525a72913fe928e081d9fa82f955b7.jpg" data-lightbox="roadtrip" data-title="Pin On Brave Rifles Desert Storm">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/52/5a/cf525a72913fe928e081d9fa82f955b7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDKdtTCA1Zr3EEum7CZdi7LX6zkeTv665AZg';" alt="Pin On Brave Rifles Desert Storm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Brave Rifles Desert Storm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://flyhaa.com/wp-content/uploads/2015/09/helicopter-courses-hero1.jpg" data-lightbox="roadtrip" data-title="Helicopter Lessons Pilot Training Hillsboro Aero Academy">
+											<img class="card-img v-image ads-img " src="https://flyhaa.com/wp-content/uploads/2015/09/helicopter-courses-hero1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdPb41jFW1-wFvlk8FjQ9MRdisR5YVjUczmA';" alt="Helicopter Lessons Pilot Training Hillsboro Aero Academy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Helicopter Lessons Pilot Training Hillsboro Aero Academy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://heliflighttraining.com/wp-content/uploads/2020/08/chfta_schema_default_1200x768.jpg" data-lightbox="roadtrip" data-title="Helicopter Pilot Training Courses">
+											<img class="card-img v-image ads-img " src="https://heliflighttraining.com/wp-content/uploads/2020/08/chfta_schema_default_1200x768.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD6kYYzFtTP2_FabDRWysOFQsyOz_goubdhQ';" alt="Helicopter Pilot Training Courses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Helicopter Pilot Training Courses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://flyhaa.com/wp-content/uploads/2015/09/Helicopter-costs-hero.jpg" data-lightbox="roadtrip" data-title="Helicopter License Training Costs Hillsboro Aero Academy">
+											<img class="card-img v-image ads-img " src="https://flyhaa.com/wp-content/uploads/2015/09/Helicopter-costs-hero.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSDJNzYroobgKS_ueBJ97KKIaNjrPzeeydCg';" alt="Helicopter License Training Costs Hillsboro Aero Academy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Helicopter License Training Costs Hillsboro Aero Academy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://flyhaa.com/wp-content/uploads/2015/09/Heli-financing-hero2.jpg" data-lightbox="roadtrip" data-title="Helicopter Flight School Financing Hillsboroaeroacademy">
+											<img class="card-img v-image ads-img " src="https://flyhaa.com/wp-content/uploads/2015/09/Heli-financing-hero2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0mz4RKe6CylUm5Ng-I6qv2ALBTnt0WHWa4g';" alt="Helicopter Flight School Financing Hillsboroaeroacademy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Helicopter Flight School Financing Hillsboroaeroacademy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://helistream.com/wp-content/uploads/2017/11/IMG_2663_8.jpg" data-lightbox="roadtrip" data-title="Va Approved Flight Training Under The Post 9 11 Gi Bill">
+											<img class="card-img v-image ads-img " src="https://helistream.com/wp-content/uploads/2017/11/IMG_2663_8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7tlCJ6Jwfl0RL72c0v_PqtdaAUQzkAqmtyw';" alt="Va Approved Flight Training Under The Post 9 11 Gi Bill">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Approved Flight Training Under The Post 9 11 Gi Bill</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://tampabayaviation.com/wp-content/uploads/2016/09/helicopter-training-tampa.jpg" data-lightbox="roadtrip" data-title="Helicopter Flight Training Tampa Bay Aviation">
+											<img class="card-img v-image ads-img " src="https://tampabayaviation.com/wp-content/uploads/2016/09/helicopter-training-tampa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfygjaKLns1yep3LY0eE9uDevbw3G93gAm4Q';" alt="Helicopter Flight Training Tampa Bay Aviation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Helicopter Flight Training Tampa Bay Aviation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e9/9d/33/e99d33e800ce78e6b8124a0cfe2c0272--helicopter-pilots-training-school.jpg" data-lightbox="roadtrip" data-title="Both My Future Toys That S Me In The Chopper About To Land On My Boat With Heli Pad Boat Flight Training Helicopter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e9/9d/33/e99d33e800ce78e6b8124a0cfe2c0272--helicopter-pilots-training-school.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmjrrbat1pYmLn1VlSRqKJ8JCa_9qWKAuzFQ';" alt="Both My Future Toys That S Me In The Chopper About To Land On My Boat With Heli Pad Boat Flight Training Helicopter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Both My Future Toys That S Me In The Chopper About To Land On My Boat With Heli Pad Boat Flight Training Helicopter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://suu.edu/blog/images/aviation/2020-01-aviation-helicopter-pilot-license-cost.jpg" data-lightbox="roadtrip" data-title="How Much Does It Cost To Get A Helicopter Pilot S License Suu">
+											<img class="card-img v-image ads-img " src="https://suu.edu/blog/images/aviation/2020-01-aviation-helicopter-pilot-license-cost.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREquib2pDj-siv8f0jdC9Xgg-iVfj9XQBL3w';" alt="How Much Does It Cost To Get A Helicopter Pilot S License Suu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Much Does It Cost To Get A Helicopter Pilot S License Suu</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/c0/37/0dc037dd5893b4e860b98645a892b3be.png" data-lightbox="roadtrip" data-title="Pin On Airplane And Helicopters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/c0/37/0dc037dd5893b4e860b98645a892b3be.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyl1Be69iLAMv9DVSxHE5kMPWuFcLBoc3SbQ';" alt="Pin On Airplane And Helicopters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Airplane And Helicopters</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/a3/33/24/a33324766b9481e36285c22c567e30ca.jpg" data-lightbox="roadtrip" data-title="Airbus Helicopters Opens New Training Academy In Donauworth Airbus Helicopters Helicopter Airbus">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/a3/33/24/a33324766b9481e36285c22c567e30ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2ze97cJ3yy4TcN1rcqPIMd5ip41qTf3gEuw';" alt="Airbus Helicopters Opens New Training Academy In Donauworth Airbus Helicopters Helicopter Airbus">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Airbus Helicopters Opens New Training Academy In Donauworth Airbus Helicopters Helicopter Airbus</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/compensation-issue-va.html">Compensation Issue Va</a></li>
+													<li class="list-group-item"><a href="/did-hannah-go-back-on-the-bachelor.html">Did Hannah Go Back On The Bachelor</a></li>
+													<li class="list-group-item"><a href="/did-guy-penrod-have-a-heart-attack.html">Did Guy Penrod Have A Heart Attack</a></li>
+													<li class="list-group-item"><a href="/did-gintama-manga-end.html">Did Gintama Manga End</a></li>
+													<li class="list-group-item"><a href="/crohns-disease-american-college-of-gastroenterology.html">Crohns Disease American College Of Gastroenterology</a></li>
+													<li class="list-group-item"><a href="/did-gino-win-im-a-celeb.html">Did Gino Win Im A Celeb</a></li>
+													<li class="list-group-item"><a href="/deadline-to-transfer-post-911-gi-bill.html">Deadline To Transfer Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/dacre-montgomery-as-billy-hargrove.html">Dacre Montgomery As Billy Hargrove</a></li>
+													<li class="list-group-item"><a href="/dea-gi-bill.html">Dea Gi Bill</a></li>
+													<li class="list-group-item"><a href="/diabetes-insipidus-va-rating.html">Diabetes Insipidus Va Rating</a></li>
+													<li class="list-group-item"><a href="/did-gideon-leave-criminal-minds.html">Did Gideon Leave Criminal Minds</a></li>
+													<li class="list-group-item"><a href="/depression-va-rating-reddit.html">Depression Va Rating Reddit</a></li>
+													<li class="list-group-item"><a href="/dav-thrift-store-smithfield.html">Dav Thrift Store Smithfield</a></li>
+													<li class="list-group-item"><a href="/did-bill-belichick-go-to-the-naval-academy.html">Did Bill Belichick Go To The Naval Academy</a></li>
+													<li class="list-group-item"><a href="/did-fpsrussia-go-to-jail.html">Did Fpsrussia Go To Jail</a></li>
+													<li class="list-group-item"><a href="/did-i-go-wrong-and-lost-a-friend.html">Did I Go Wrong And Lost A Friend</a></li>
+													<li class="list-group-item"><a href="/did-gino-change-his-name.html">Did Gino Change His Name</a></li>
+													<li class="list-group-item"><a href="/did-gideon-test-god.html">Did Gideon Test God</a></li>
+													<li class="list-group-item"><a href="/did-gimli-go-to-the-undying-lands.html">Did Gimli Go To The Undying Lands</a></li>
+													<li class="list-group-item"><a href="/deadline-to-transfer-gi-bill-benefits.html">Deadline To Transfer Gi Bill Benefits</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

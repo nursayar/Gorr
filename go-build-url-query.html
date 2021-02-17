@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Go Build Url Query - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Go Build Url Query",
+  "datePublished": "2021-02-17",
+  "image": "https://knowledge.hubspot.com/hs-fs/hubfs/Knowledge_Base_Images/Reports/Ads_Add-On/refresh-property-internal-name.png?width=700&amp;height=508&amp;name=refresh-property-internal-name.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=go+build+url+query",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Go Build Url Query</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">So first Ill create a new query based on a web source pointing at my web request and Ill select the HTML table and choose Edit. If you arent signed in click the Sign in button in the top right corner. Its the URL you want to add the query string to. <br>				
+			</p>
+										<a class="badge badge-light" href="/difference-between-gi-bills.html">difference between gi bills</a>
+											<a class="badge badge-dark" href="/didi-games-make-up.html">didi games make up</a>
+											<a class="badge badge-danger" href="/digi-xbee-mesh-kit.html">digi xbee mesh kit</a>
+											<a class="badge badge-light" href="/didi-gunadi.html">didi gunadi</a>
+											<a class="badge badge-danger" href="/disabled-american-veterans-furniture-donation.html">disabled american veterans furniture donation</a>
+											<a class="badge badge-primary" href="/disabled-american-vets-fresno.html">disabled american vets fresno</a>
+											<a class="badge badge-success" href="/direct-deposit-for-post-911-gi-bill.html">direct deposit for post 911 gi bill</a>
+											<a class="badge badge-secondary" href="/did-zoe-go-to-jail.html">did zoe go to jail</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to visit the right blog.  Our website provides you with hints for seeing the highest quality video and picture content, hunt and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, particularly Youtube, so we recommend this video that you view.  You can also bring about supporting this website by sharing videos and graphics that you like on this site on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this website.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://sitebulb.com/media/1828/url-example.png" data-lightbox="roadtrip" data-title="Query String Contains A Question Mark Sitebulb">
+											<img class="card-img v-image ads-img " src="https://sitebulb.com/media/1828/url-example.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToVlK9vwb-ofj0srr966Vh9V_x7IqVsZk7kg';" alt="Query String Contains A Question Mark Sitebulb">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Query String Contains A Question Mark Sitebulb</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/df/0e/8ddf0e5c4ed3943b0cdb5bad1502fb1f.png" data-lightbox="roadtrip" data-title="Pin On The Office">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/df/0e/8ddf0e5c4ed3943b0cdb5bad1502fb1f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcOQh1Fn8ta0ObyEOYvAMcApttEIF4yjiYJg';" alt="Pin On The Office">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On The Office</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://howto.caspio.com/wp-content/uploads/2016/12/creating_query_strings1.png" data-lightbox="roadtrip" data-title="Parameters As Query String Values Caspio Online Help">
+											<img class="card-img v-image ads-img " src="https://howto.caspio.com/wp-content/uploads/2016/12/creating_query_strings1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ3rQaoQ207H7puxTFhxEHKrObIK0gY6IqeA';" alt="Parameters As Query String Values Caspio Online Help">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Parameters As Query String Values Caspio Online Help</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/17/b8/d1/17b8d166cf7c35504007489366b65f41.jpg" data-lightbox="roadtrip" data-title="Pin On Random Things">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/17/b8/d1/17b8d166cf7c35504007489366b65f41.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFUMyLRF1cnL_X4UbowjAW6YYsp1GDPg_-Cg';" alt="Pin On Random Things">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Random Things</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://html-online.com/articles/wp-content/uploads/2017/11/get-url-parameter-javascript.jpg" data-lightbox="roadtrip" data-title="How To Get Url Parameters With Javascript The Easiest Way">
+											<img class="card-img v-image ads-img " src="https://html-online.com/articles/wp-content/uploads/2017/11/get-url-parameter-javascript.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuzm7MuAgBn5YaLZzpETVJpYFx-_Bw0RStGw';" alt="How To Get Url Parameters With Javascript The Easiest Way">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Get Url Parameters With Javascript The Easiest Way</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lh3.googleusercontent.com/cOu14BxjYeQTRHyGlQwVjVqi1eBkPWM2E5c1EPfTD7y04zxe-x9mybrrE3Flfu2XnA=w895-rwa" data-lightbox="roadtrip" data-title="Query Parameter Targeting Optimize Resource Hub">
+											<img class="card-img v-image ads-img " src="https://lh3.googleusercontent.com/cOu14BxjYeQTRHyGlQwVjVqi1eBkPWM2E5c1EPfTD7y04zxe-x9mybrrE3Flfu2XnA=w895-rwa" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoIG4qlXg9EtW2jmPIeHfqKUyrCTSsqKzp3A';" alt="Query Parameter Targeting Optimize Resource Hub">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Query Parameter Targeting Optimize Resource Hub</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/47/4a/6d/474a6d4f13155f38018625c91b084369.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoIG4qlXg9EtW2jmPIeHfqKUyrCTSsqKzp3A';" alt="Query Parameter Targeting Optimize Resource Hub">
+										<div class="card-body">
+						<h3 class="h5"><b>When using the http_build_query function to create a URL query from an array for use in something like curl_setoptch CURLOPT_POSTFIELDS post_url be careful about the url encoding.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Go build url query</strong>. 
+								
+																	Ill do my transformations for a single web call then go back and parameterize it. 
+																	Were a place where coders share stay up-to-date and grow their careers. 
+																	When all else fails this is the traditional way to create a query string Manually. 
+																	Create a shortened URL. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Write or paste your URL in the Paste your long URL. 
+																	You can also parse query params into a map. 
+																	Please note using Query Builder we can only query the information stored in the CMS database not from the File repository files. 
+																	Added in Go 17 RawQuery string encoded query values without. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you want to build a web server with Go the best place to get started is with Gos nethttp package. 
+																	First lets import urlencode and set up the constants ie. 
+																	It would be awesome to have a straight forward mapping from the standard library URLQuery to an struct. 
+																	Just take a moment to understand the syntax. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Query returns a map like. 
+																	FmtPrintlnuRawQuery m _ urlParseQueryuRawQuery fmtPrintlnm fmtPrintlnmk 0. 
+																	So remove that value and then append the results of http_build_query to it. 
+																	In the Select a query list choose a query by selecting a result source. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To create my function Im going to let Power Query do most of the work for me. 
+																	Add the Share widget in the app and click Link Options. 
+																	Now there is a way to construct URL parameters interactively. 
+																	By reading through examples using the nethttp package I was able to create my own web server. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Search Result Preview pane on the right hand side automatically displays the search results. 
+																	Package main import nethttp func main getProductsHandler httpHandlerFuncgetProducts httpHandleproducts getProductsHandler httpListenAndServe8080 nil func getProductsw httpResponseWriter r httpRequest query rURLQuery filters queryGetfilters filterscolor wWriteHeader200 wWritebytefilters. 
+																	Visit the Google URL shortener site at googl. 
+																	Your first array value is not a parameter. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The query package exports a single Values function. 
+																	Query Builder can be found at the below URL httpMyServerPortAdminTools. 
+																	In my case I simply wanted to pass on the received _POST data to a CURLs POST data which requires it to be in the URL format. 
+																	So you want to send data from one place to another and need to create a URL string with parameters. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Go-querystring is designed to assist in scenarios where you want to construct a URL using a struct that represents the URL query parameters. 
+																	You can easily build a query by selecting options on the Basics tab. 
+																	The variables that wont change. 
+																	Copy the URL in Link preview that contains the URL parameters you specified. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mapaaaaa bbbbb ccccc The struct looks like. 
+																	Type Thing struct A string B string C string Ive no idea why URLQuery returns a map with array elements inside tough. 
+																	Programmatically create query strings for Google Static Maps API. 
+																	To do this you can create a new query by navigating to the Home tab in the Query Editor then New Source Other Sources and choosing Blank Query. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Choose the Query a feature and zoom to it option and select the layer field and field value you want to query against. 
+																	Type URL struct Scheme string Opaque string encoded opaque data User Userinfo username and password information Host string host or hostport Path string path relative paths may omit leading slash RawPath string encoded path hint see EscapedPath method. 
+																	Make sure you are using a user credentials that is part of Administrator user group in order to gain access to all the repository objects. 
+																	DEV Community is a community of 553065 amazing developers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In Go a simple web server can be put together with a few lines of code. 
+																	Parameters array REQUEST_TYPE2 MID5. 
+																	An easy way to build a query string in Javascript is to use a URLSearchParams object. 
+																	Result sources specify what content to get search results from. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Then enter the following formula in the formula bar. 
+																	Import nethttp func handlerw httpResponseWriter r httpRequest name rURLQueryGetname the value of name is john For more information about how to access the query string see neturl package. 
+																	The parsed query param maps are from strings to slices of strings so index into 0 if you only want the first value. 
+																	Added in Go 15 ForceQuery bool append a query even if RawQuery is empty. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You might do this to enforce the type safety of your parameters for example as is done in the go-github library. 
+																	To get query params in a string of kv format use RawQuery. 
+																	Http_build_query builds query strings not entire URLs. 
+																	OK now that weve seen how to do things the painful and old-fashioned way lets use the urllibparseurlencode method to do the painful work of creating the URL query strings. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dont panic this is not as hard as it might sound. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/95/03/1995036920fb2716c3ab96f9d621f437.png" data-lightbox="roadtrip" data-title="How To Rank For Featured Snippets The Sem Rush Study Read This Informative Blog Post On The Steps To Follow To Rank For Writing Blog Posts Study Informative">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/95/03/1995036920fb2716c3ab96f9d621f437.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDg2p1VUIXMV8qWE6FV0Kq0Kh56rYKdc_9zA';" alt="How To Rank For Featured Snippets The Sem Rush Study Read This Informative Blog Post On The Steps To Follow To Rank For Writing Blog Posts Study Informative">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Rank For Featured Snippets The Sem Rush Study Read This Informative Blog Post On The Steps To Follow To Rank For Writing Blog Posts Study Informative</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/87/07/4787079f616fcc48d5cd613f6f08bd97.jpg" data-lightbox="roadtrip" data-title="Pin On Learn To Code">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/87/07/4787079f616fcc48d5cd613f6f08bd97.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNZVzwB-QsUs8cvWL20g3ZuWN4HIH_4XqCZw';" alt="Pin On Learn To Code">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Learn To Code</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/21/0b/91210b65f54aac65c9e2763e65555012.jpg" data-lightbox="roadtrip" data-title="Webanalytics Analytics شركة اشارات Most Projects Have One Or More Conversion Go Infographic Marketing Social Media Analytics Digital Marketing Infographics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/21/0b/91210b65f54aac65c9e2763e65555012.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuC-_FlID1gnAH2Ni1Z_ntZW68e6eXt0Fdrg';" alt="Webanalytics Analytics شركة اشارات Most Projects Have One Or More Conversion Go Infographic Marketing Social Media Analytics Digital Marketing Infographics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Webanalytics Analytics شركة اشارات Most Projects Have One Or More Conversion Go Infographic Marketing Social Media Analytics Digital Marketing Infographics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://knowledge.hubspot.com/hs-fs/hubfs/Knowledge_Base_Images/Reports/Ads_Add-On/refresh-property-internal-name.png?width=700&amp;height=508&amp;name=refresh-property-internal-name.png" data-lightbox="roadtrip" data-title="Auto Populate Form Fields With A Query String">
+											<img class="card-img v-image ads-img " src="https://knowledge.hubspot.com/hs-fs/hubfs/Knowledge_Base_Images/Reports/Ads_Add-On/refresh-property-internal-name.png?width=700&amp;height=508&amp;name=refresh-property-internal-name.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpBfQkAQWeorfV25xhlCywWQ6BZd4-gFRyWA';" alt="Auto Populate Form Fields With A Query String">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Auto Populate Form Fields With A Query String</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.stack.imgur.com/gDzTC.png" data-lightbox="roadtrip" data-title="How To Get To Request Parameters In Postman Stack Overflow">
+											<img class="card-img v-image ads-img " src="https://i.stack.imgur.com/gDzTC.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhcJVf565YiVyy8vzLqfzIz-CcaJL9fTRrrQ';" alt="How To Get To Request Parameters In Postman Stack Overflow">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Get To Request Parameters In Postman Stack Overflow</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.urlencoder.io/static/a3b5a6c0690b551d1d550518a9f4817a/c94d3/how-to-do-url-encoding-in-golang.jpg" data-lightbox="roadtrip" data-title="How To Url Encode A String In Golang Urlencoder">
+											<img class="card-img v-image ads-img " src="https://www.urlencoder.io/static/a3b5a6c0690b551d1d550518a9f4817a/c94d3/how-to-do-url-encoding-in-golang.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmtNu5r0cRnmYf2ekKEobjUJuoM0ROyFJ9Vw';" alt="How To Url Encode A String In Golang Urlencoder">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Url Encode A String In Golang Urlencoder</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn-anlbg.nitrocdn.com/dKKErbUyoNysjatCgltCzbTJJilTMwLi/assets/static/optimized/rev-4f664c4/wp-content/gallery/restapi/Query-Parameter.png" data-lightbox="roadtrip" data-title="How To Pass Query Parameters In Http Get Request Using Rest Assured">
+											<img class="card-img v-image ads-img " src="https://cdn-anlbg.nitrocdn.com/dKKErbUyoNysjatCgltCzbTJJilTMwLi/assets/static/optimized/rev-4f664c4/wp-content/gallery/restapi/Query-Parameter.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPZLNrTvMgCPkZ3iTLjEmavfOINUXbQCqgnA';" alt="How To Pass Query Parameters In Http Get Request Using Rest Assured">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Pass Query Parameters In Http Get Request Using Rest Assured</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/4a/6d/474a6d4f13155f38018625c91b084369.png" data-lightbox="roadtrip" data-title="How To Move Documents Using Workflow In Sharepoint 2013 And Office 365 Plumsail Sharepoint Office 365 Workflow">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/4a/6d/474a6d4f13155f38018625c91b084369.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6txAzX4QjfaZs_pfd7jJDusut203aPhEo8g';" alt="How To Move Documents Using Workflow In Sharepoint 2013 And Office 365 Plumsail Sharepoint Office 365 Workflow">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Move Documents Using Workflow In Sharepoint 2013 And Office 365 Plumsail Sharepoint Office 365 Workflow</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/b4/9c/c3b49cf3abd131437f8d95c4fbd918fd.png" data-lightbox="roadtrip" data-title="How To Encourage Your Readers To Write Book Reviews Writing A Book Book Marketing Promote Book">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/b4/9c/c3b49cf3abd131437f8d95c4fbd918fd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSukM3uL9PoWN0kx6OAeYR83zrQEmMem0XpIQ';" alt="How To Encourage Your Readers To Write Book Reviews Writing A Book Book Marketing Promote Book">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Encourage Your Readers To Write Book Reviews Writing A Book Book Marketing Promote Book</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/e6/85/b3/e685b378c29b44c53a20c1922ac59726.jpg" data-lightbox="roadtrip" data-title="Ssrs Navigation Link With Javascript To Render The Same Report To A Different Format Shown Here Is Xml Don T Forget To Add Your U Sql Data Feed Sharepoint">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/e6/85/b3/e685b378c29b44c53a20c1922ac59726.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmdVoBliRIdWPKFrC2eBWL7v8I5KK__DgXNw';" alt="Ssrs Navigation Link With Javascript To Render The Same Report To A Different Format Shown Here Is Xml Don T Forget To Add Your U Sql Data Feed Sharepoint">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ssrs Navigation Link With Javascript To Render The Same Report To A Different Format Shown Here Is Xml Don T Forget To Add Your U Sql Data Feed Sharepoint</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.analyticsmania.com/wp-content/uploads/2019/07/image-2019-07-01T152636.875.jpg" data-lightbox="roadtrip" data-title="How To Extract A Query Parameter With Google Tag Manager Analytics Mania">
+											<img class="card-img v-image ads-img " src="https://www.analyticsmania.com/wp-content/uploads/2019/07/image-2019-07-01T152636.875.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn_ELYhmQYmm31Zm7D8pPNct8G9eMGrS1CZA';" alt="How To Extract A Query Parameter With Google Tag Manager Analytics Mania">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Extract A Query Parameter With Google Tag Manager Analytics Mania</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.stack.imgur.com/UnQZc.png" data-lightbox="roadtrip" data-title="How To Pass A Querystring Or Route Parameter To Aws Lambda From Amazon Api Gateway Stack Overflow">
+											<img class="card-img v-image ads-img " src="https://i.stack.imgur.com/UnQZc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAbmxThz-L_knWq0EJKqoC_aq6wUccpYmQNg';" alt="How To Pass A Querystring Or Route Parameter To Aws Lambda From Amazon Api Gateway Stack Overflow">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Pass A Querystring Or Route Parameter To Aws Lambda From Amazon Api Gateway Stack Overflow</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/15/6a/d8/156ad83ec0912f08fd733677259da2ca.jpg" data-lightbox="roadtrip" data-title="Start A Fire Google Adwords Infographic Infographic Marketing Adwords">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/15/6a/d8/156ad83ec0912f08fd733677259da2ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4qJkZhnJr2GTYBqBJILDgI-N_D6rrkeAIEA';" alt="Start A Fire Google Adwords Infographic Infographic Marketing Adwords">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Start A Fire Google Adwords Infographic Infographic Marketing Adwords</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/is-allergic-rhinitis-a-va-disability.html">Is Allergic Rhinitis A Va Disability</a></li>
+													<li class="list-group-item"><a href="/how-to-use-post-911-gi-bill.html">How To Use Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-to-transfer-your-post-911-gi-bill.html">How To Transfer Your Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-to-transfer-gi-bill-to-family.html">How To Transfer Gi Bill To Family</a></li>
+													<li class="list-group-item"><a href="/i-want-to-go-to-college.html">I Want To Go To College</a></li>
+													<li class="list-group-item"><a href="/how-to-use-montgomery-gi-bill-and-post-9-11.html">How To Use Montgomery Gi Bill And Post 9 11</a></li>
+													<li class="list-group-item"><a href="/inflammatory-arthritis-va-disability.html">Inflammatory Arthritis Va Disability</a></li>
+													<li class="list-group-item"><a href="/how-to-treat-ptsd-in-veterans.html">How To Treat Ptsd In Veterans</a></li>
+													<li class="list-group-item"><a href="/how-to-tell-if-va-disability-is-static.html">How To Tell If Va Disability Is Static</a></li>
+													<li class="list-group-item"><a href="/how-to-transfer-gi-bill-to-your-spouse.html">How To Transfer Gi Bill To Your Spouse</a></li>
+													<li class="list-group-item"><a href="/i-post-it-because-i-like-it.html">I Post It Because I Like It</a></li>
+													<li class="list-group-item"><a href="/how-to-stop-va-benefits.html">How To Stop Va Benefits</a></li>
+													<li class="list-group-item"><a href="/i-dont-know-what-college-to-go-to.html">I Dont Know What College To Go To</a></li>
+													<li class="list-group-item"><a href="/how-to-qualify-for-veterans-nursing-home.html">How To Qualify For Veterans Nursing Home</a></li>
+													<li class="list-group-item"><a href="/icd-9-gi-bleed.html">Icd 9 Gi Bleed</a></li>
+													<li class="list-group-item"><a href="/how-to-transfer-gi-bill-to-wife.html">How To Transfer Gi Bill To Wife</a></li>
+													<li class="list-group-item"><a href="/how-to-stop-va-disability-benefits.html">How To Stop Va Disability Benefits</a></li>
+													<li class="list-group-item"><a href="/i-dont-want-to-go-to-college.html">I Dont Want To Go To College</a></li>
+													<li class="list-group-item"><a href="/in-order-for-a-bill-to-go-to-the-governors-desk.html">In Order For A Bill To Go To The Governors Desk</a></li>
+													<li class="list-group-item"><a href="/in-state-tuition-for-post-911-gi-bill.html">In State Tuition For Post 911 Gi Bill</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

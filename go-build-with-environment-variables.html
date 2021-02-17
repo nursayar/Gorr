@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Go Build With Environment Variables - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Go Build With Environment Variables",
+  "datePublished": "2021-02-17",
+  "image": "https://i.ytimg.com/vi/bEroNNzqlF4/maxresdefault.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=go+build+with+environment+variables",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Go Build With Environment Variables</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Installing and Setting Go environment. Creates a Go workspace in a subdirectory named gopath with child directories bin pkg and src. The Go path is used to resolve import statements. <br>				
+			</p>
+										<a class="badge badge-success" href="/va-disability-for-heart-issues.html">va disability for heart issues</a>
+											<a class="badge badge-secondary" href="/va-disability-compensation-timeline.html">va disability compensation timeline</a>
+											<a class="badge badge-light" href="/va-disability-compensation-pension-exam.html">va disability compensation pension exam</a>
+											<a class="badge badge-info" href="/va-disability-compensation-dollar-amounts.html">va disability compensation dollar amounts</a>
+											<a class="badge badge-warning" href="/va-disability-compensation-for-spouses-and-dependents.html">va disability compensation for spouses and dependents</a>
+											<a class="badge badge-success" href="/va-disability-costochondritis.html">va disability costochondritis</a>
+											<a class="badge badge-warning" href="/va-disability-compensation-reevaluation.html">va disability compensation reevaluation</a>
+											<a class="badge badge-light" href="/va-disability-compensation-kidney-disease.html">va disability compensation kidney disease</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you've come to pay a visit to the ideal site.  Our site provides you with hints for viewing the maximum quality video and picture content, search and find more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, so we recommend this video that you view.  You can also bring about supporting this site by sharing videos and images that you like on this site on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/28/62/8a2862d5d8011ccc25dbf60416ad0dc0.png" data-lightbox="roadtrip" data-title="Persistent Path Variable Variables Linux Learning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/28/62/8a2862d5d8011ccc25dbf60416ad0dc0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZDzdPSmH8LnbaJ66eCOi8eL3KVuPEM8HjOg';" alt="Persistent Path Variable Variables Linux Learning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Persistent Path Variable Variables Linux Learning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5a/5b/35/5a5b3554ce9fa4aa2026ab1ebbfea42f.png" data-lightbox="roadtrip" data-title="Gorilla X2f Websocket A Websocket Implementation For Go Gorilla">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5a/5b/35/5a5b3554ce9fa4aa2026ab1ebbfea42f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNfknF0X46KEs0bM1FETBojwExHbVlz9-GjA';" alt="Gorilla X2f Websocket A Websocket Implementation For Go Gorilla">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gorilla X2f Websocket A Websocket Implementation For Go Gorilla</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a4/fb/94/a4fb94e17d5e789df8bd635f51a0f289.jpg" data-lightbox="roadtrip" data-title="Aws Environment Variables With Keys In 2020 Web Hosting Hosting How To Get">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a4/fb/94/a4fb94e17d5e789df8bd635f51a0f289.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDKM1ozIqAqjxqUxu2l4Bz9Gs5swomO8_crQ';" alt="Aws Environment Variables With Keys In 2020 Web Hosting Hosting How To Get">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Aws Environment Variables With Keys In 2020 Web Hosting Hosting How To Get</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://miro.medium.com/max/10944/1*qCEMqr6hnylxa0oB-2H_mw.jpeg" data-lightbox="roadtrip" data-title="Use Environment Variable In Your Next Golang Project By Shubham Chadokar Towards Data Science">
+											<img class="card-img v-image ads-img " src="https://miro.medium.com/max/10944/1*qCEMqr6hnylxa0oB-2H_mw.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlnUkWveYWpWMlCg-NKT-eNgO7oCu0mhvYLQ';" alt="Use Environment Variable In Your Next Golang Project By Shubham Chadokar Towards Data Science">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Use Environment Variable In Your Next Golang Project By Shubham Chadokar Towards Data Science</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.freecodecamp.org/news/content/images/2020/04/using-environment-variable-gatsby.jpg" data-lightbox="roadtrip" data-title="What Are Environment Variables And How Can I Use Them With Gatsby And Netlify">
+											<img class="card-img v-image ads-img " src="https://www.freecodecamp.org/news/content/images/2020/04/using-environment-variable-gatsby.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrHZcBFGu34zZdPG-jhryMMB3awdFnhiRwww';" alt="What Are Environment Variables And How Can I Use Them With Gatsby And Netlify">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Are Environment Variables And How Can I Use Them With Gatsby And Netlify</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://miro.medium.com/max/3370/1*0PqScJbFmMvcJ0CRYA_dcw.png" data-lightbox="roadtrip" data-title="Reading Configuration Files And Environment Variables In Go Golang By Balakrishnan Nalin Prashanth Medium">
+											<img class="card-img v-image ads-img " src="https://miro.medium.com/max/3370/1*0PqScJbFmMvcJ0CRYA_dcw.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwBOgQasDt2QbjCTuvQGR4fPadqLRhzFoTWw';" alt="Reading Configuration Files And Environment Variables In Go Golang By Balakrishnan Nalin Prashanth Medium">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reading Configuration Files And Environment Variables In Go Golang By Balakrishnan Nalin Prashanth Medium</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.freecodecamp.org/news/content/images/2020/04/using-environment-variable-gatsby.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwBOgQasDt2QbjCTuvQGR4fPadqLRhzFoTWw';" alt="Reading Configuration Files And Environment Variables In Go Golang By Balakrishnan Nalin Prashanth Medium">
+										<div class="card-body">
+						<h3 class="h5"><b>On Plan 9 a list.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Go build with environment variables</strong>. 
+								
+																	This variable is available in TFS 20154. 
+																	Then you can supply the values with either a command line option or an environment variabledevGO go run dummygo You seem to prefer 3000 devGO go run dummygo -port1234 You seem to prefer 1234 devGO PORT4321 go run dummygo You seem to prefer 4321 devGO PORT4321 go run dummygo -port5555 You seem to prefer 5555. 
+																	The examples above mention a custom environment variable set at the job level. 
+																	On Windows the value is a semicolon-separated string. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Moves code that was fetched from the remote repository into the workspaces src directory. 
+																	You could have a variable set to one value on your development machine and another in your production environment without having if -statements or special config files. 
+																	The default path is the value of the GOPATH environment variable interpreted as a path list appropriate to the operating system on Unix the variable is a colon-separated string. 
+																	The GOPATH environment variable lists places to look for Go code. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Go build and other commands no longer support binary-only-packages. 
+																	In the Environment Variables window pictured below highlight the Path variable in the System variables section and click the Edit button. 
+																	In the System Properties window click the Advanced tab then click the Environment Variables button near the bottom of that tab. 
+																	It is implemented by and documented in the gobuild package. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Setting Environmental Variables on macOS and other UNIX systems. 
+																	Edit your bash_profile to add the following line. 
+																	Aside from built-in variables we also have the opportunity to define our own environment variables. 
+																	Add or modify the path lines with the paths you want the computer to access. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is one of the principles of the Twelve-Factor App methodology and enables applications to be built with portability. 
+																	Structurally environment and shell variables are the same both are a key-value pair separated by an equal sign. 
+																	Click the Environment Variables button at the bottom. 
+																	Generally autodetecting the shell environment is sufficient for most users with a standard Go environment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Lets set an environment variable called DATABASE_PASS on our machine which we can then read in our application and use that to connect to a database should we wish. 
+																	Type Cgotown into the Variable value field. 
+																	With Go we can read environment variables using the os package and by calling osGetenv passing in the string name of our environment variable. 
+																	Environment variables are variables that contain values necessary to set up a shell environment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Use current revision in a. 
+																	Click New from the User variables section. 
+																	Type GOPATH into the Variable name field. 
+																	Adds the version of Go and the workspaces bin directory to the path. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In this article well go over how to find and set your environment variables in Windows 10. 
+																	C calling between Go and C buildmode description of build modes filetype file types gopath GOPATH environment variable environment environment variables importpath import path syntax packages description of package lists testflag description of testing flags testfunc description of testing functions Use go help topic for more information about that topic. 
+																	Go solves this problem by building support for multiple platforms directly into the go build tool as well as the rest of the Go toolchain. 
+																	The PATH environment variable allows users to quickly launch programs without having to know where those programs live on the hard drive. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Since they are bound to our environment they are great for things such as API access tokens. 
+																	Standard GoCD environment variables. 
+																	Install dependencies go get. 
+																	Using Environment Variables in GoCD Accessing environment variables in tasks. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On Plan 9 the value is a list. 
+																	Import and ImportDir will. 
+																	Contrary to shell variables environment variables persist in the shells child processes. 
+																	On Windows a semicolon-separated string. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By default Golang Build tries to detect all of your Go configuration by invoking your login shell. 
+																	Setting environment variables is very useful and fortunately very simple. 
+																	Every task in GoCD is provided with a set of environment variables as a part. 
+																	The Go binaries can be downloaded from Golang Downloads page by choosing suitable OS and architecture. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It will pull in your PATH GOPATH and any other environment variables you have set. 
+																	Sets other well-known Go environment variables to their proper values. 
+																	On Unix the value is a colon-separated string. 
+																	A key aspect in setting up Golang environment is to set the GOPATH environment variable. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To list all of the available environment variables in a build environment you can run the printenv command for Linux-based build environment or Get-ChildItem Env for Windows-based build environments during a build. 
+																	Environment variables are the best way to set configuration values for your software application as they can be defined at system-level independently of the software. 
+																	By using environment variables and build tags you can control which OS and architecture your final binary is built for in addition to putting together a workflow that can quickly toggle the inclusion of platform-dependent code without changing your codebase. 
+																	This variable is agent-scoped and can be used as an environment variable in a script and as a parameter in a build task but not as part of the build number or as a version control tag. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hopefully a brief on how to set up dev environment and a few aspects around using it would be helpful as you do it. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/27/3c/ed273ccdebb24b79854bc0c8b69eff61.png" data-lightbox="roadtrip" data-title="Advanced Golang Tutorials Introduction To Concurrency Codemio A Software Developer S Blog Software Development Tutorial Programming Languages">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/27/3c/ed273ccdebb24b79854bc0c8b69eff61.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyRaAxtgGDnbqHJnivjHzutXY7L8yTBref_w';" alt="Advanced Golang Tutorials Introduction To Concurrency Codemio A Software Developer S Blog Software Development Tutorial Programming Languages">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Advanced Golang Tutorials Introduction To Concurrency Codemio A Software Developer S Blog Software Development Tutorial Programming Languages</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/f1/e5/7ff1e5ddead99fb956441dc130ff3147.jpg" data-lightbox="roadtrip" data-title="Pin On Javascript">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/f1/e5/7ff1e5ddead99fb956441dc130ff3147.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp_RDJt16WwcX5ijUwp6qAEQpSmNmGH1-5LQ';" alt="Pin On Javascript">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Javascript</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/85/08/4885082a776015a67386c7cf9b92b91c.jpg" data-lightbox="roadtrip" data-title="Experimenting With Go Playground Experiments Microsoft Corporation Coding">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/85/08/4885082a776015a67386c7cf9b92b91c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2czPydMmjDgDsHAXCNNhAm2MN5y_GX3mxHw';" alt="Experimenting With Go Playground Experiments Microsoft Corporation Coding">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Experimenting With Go Playground Experiments Microsoft Corporation Coding</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/bEroNNzqlF4/maxresdefault.jpg" data-lightbox="roadtrip" data-title="How To Set Environment Variables In Windows Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/bEroNNzqlF4/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTVn8zNC34v377i49aRJ_Ww6P2PXLPqlk6aA';" alt="How To Set Environment Variables In Windows Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Set Environment Variables In Windows Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://miro.medium.com/max/4324/1*1N46Ek_ZZO-VS7ab_C4GoA.png" data-lightbox="roadtrip" data-title="Anatomy Of Modules In Go Modules Are A New Way To Manage By Uday Hiwarale Rungo Medium">
+											<img class="card-img v-image ads-img " src="https://miro.medium.com/max/4324/1*1N46Ek_ZZO-VS7ab_C4GoA.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm46V_iY2EL8cz0beh8D7i96LlF9AFaYROyQ';" alt="Anatomy Of Modules In Go Modules Are A New Way To Manage By Uday Hiwarale Rungo Medium">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Anatomy Of Modules In Go Modules Are A New Way To Manage By Uday Hiwarale Rungo Medium</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn-media-1.freecodecamp.org/images/1*ErNq0vYJQeTJadnJZczBtw.png" data-lightbox="roadtrip" data-title="How To Set Up Go For Windows A Quick And Easy Guide">
+											<img class="card-img v-image ads-img " src="https://cdn-media-1.freecodecamp.org/images/1*ErNq0vYJQeTJadnJZczBtw.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiG8elVIj7g5Koe0gVO4B3ReDsJw8b14_NTg';" alt="How To Set Up Go For Windows A Quick And Easy Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Set Up Go For Windows A Quick And Easy Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://d33wubrfki0l68.cloudfront.net/ddd49a4a70021f707e8d89223f6f10ea817292e2/bfaa5/images/configure-builds-sensitive-variable-policy.png" data-lightbox="roadtrip" data-title="Build Environment Variables Netlify Docs">
+											<img class="card-img v-image ads-img " src="https://d33wubrfki0l68.cloudfront.net/ddd49a4a70021f707e8d89223f6f10ea817292e2/bfaa5/images/configure-builds-sensitive-variable-policy.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO-VHBvDVX4OGxH6LuFmv4fU4imKAVeokIfA';" alt="Build Environment Variables Netlify Docs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Build Environment Variables Netlify Docs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/cd/10/e0/cd10e032a7c63e866e41272757c7ee73.jpg" data-lightbox="roadtrip" data-title="Mitchellh Go Server Timing Go Golang Library For Creating And Consuming Http Server Timing Headers Network Performance Browser Support Server">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/cd/10/e0/cd10e032a7c63e866e41272757c7ee73.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTomwlGyIyPr9VgP1dg7o9zxTSFH0QiYe2IDA';" alt="Mitchellh Go Server Timing Go Golang Library For Creating And Consuming Http Server Timing Headers Network Performance Browser Support Server">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mitchellh Go Server Timing Go Golang Library For Creating And Consuming Http Server Timing Headers Network Performance Browser Support Server</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/bb/67/e2bb67b02daef8c577869cf71d258970.jpg" data-lightbox="roadtrip" data-title="Introduction To Variables And Variable Expressions Variable Expression Math Videos Expressions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/bb/67/e2bb67b02daef8c577869cf71d258970.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOdg6st8fqifaVslGKEtZj8U1J7Z20QmG4tA';" alt="Introduction To Variables And Variable Expressions Variable Expression Math Videos Expressions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Introduction To Variables And Variable Expressions Variable Expression Math Videos Expressions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/83/4a/2b834a145764670c13709886f588f138.png" data-lightbox="roadtrip" data-title="Python Environment Variables Vs Secrets Computer Coding For Kids Coding Tutorials Learn Programming">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/83/4a/2b834a145764670c13709886f588f138.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQel0ZmpEDALNVNvEFdBUn-YaRMX3siTrxeKQ';" alt="Python Environment Variables Vs Secrets Computer Coding For Kids Coding Tutorials Learn Programming">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Python Environment Variables Vs Secrets Computer Coding For Kids Coding Tutorials Learn Programming</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8f/bf/9b/8fbf9bde3bc52785d1988da31e8c11e5.png" data-lightbox="roadtrip" data-title="Launch Arguments Environment Variables Argument Secret Menu Fast Food Secret Menus">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8f/bf/9b/8fbf9bde3bc52785d1988da31e8c11e5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWxzfNS41zOgyvIY4orHLI0vKkz46wammVOw';" alt="Launch Arguments Environment Variables Argument Secret Menu Fast Food Secret Menus">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Launch Arguments Environment Variables Argument Secret Menu Fast Food Secret Menus</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/88/25/3f8825ec5021f4e691ec6fe1d93683e5.png" data-lightbox="roadtrip" data-title="Building A Ci System For Go With Jenkins Pipeline Jobs Syntax System">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/88/25/3f8825ec5021f4e691ec6fe1d93683e5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmNkMy0tOpEaJvPXMRjKC0o4FnZQ4hmApkEw';" alt="Building A Ci System For Go With Jenkins Pipeline Jobs Syntax System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Building A Ci System For Go With Jenkins Pipeline Jobs Syntax System</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/95/54/e9/9554e9776cf70ce37460c160ed14fb39.jpg" data-lightbox="roadtrip" data-title="Windows 10 Preview Build Comes With Microsoft Edge And Wifi Windows 10 Microsoft Windows">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/95/54/e9/9554e9776cf70ce37460c160ed14fb39.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl0JfPxEjbkZ6ovSkmytvahpc5l4p2x9sPrA';" alt="Windows 10 Preview Build Comes With Microsoft Edge And Wifi Windows 10 Microsoft Windows">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Windows 10 Preview Build Comes With Microsoft Edge And Wifi Windows 10 Microsoft Windows</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/can-i-put-my-mom-on-my-military-health-insurance.html">Can I Put My Mom On My Military Health Insurance</a></li>
+													<li class="list-group-item"><a href="/can-i-transfer-my-post-911-gi-bill-to-my-daughter.html">Can I Transfer My Post 911 Gi Bill To My Daughter</a></li>
+													<li class="list-group-item"><a href="/can-i-use-my-gi-bill-in-australia.html">Can I Use My Gi Bill In Australia</a></li>
+													<li class="list-group-item"><a href="/can-i-get-va-disability-for-kidney-stones.html">Can I Get Va Disability For Kidney Stones</a></li>
+													<li class="list-group-item"><a href="/can-i-get-va-benefits-with-a-other-than-honorable-discharge.html">Can I Get Va Benefits With A Other Than Honorable Discharge</a></li>
+													<li class="list-group-item"><a href="/can-i-get-my-va-disability-in-a-lump-sum.html">Can I Get My Va Disability In A Lump Sum</a></li>
+													<li class="list-group-item"><a href="/can-va-disability-be-used-in-divorce.html">Can Va Disability Be Used In Divorce</a></li>
+													<li class="list-group-item"><a href="/can-i-use-my-dads-gi-bill-for-college.html">Can I Use My Dads Gi Bill For College</a></li>
+													<li class="list-group-item"><a href="/can-bipolar-qualify-for-disability.html">Can Bipolar Qualify For Disability</a></li>
+													<li class="list-group-item"><a href="/can-the-montgomery-gi-bill-be-transferred-to-a-spouse.html">Can The Montgomery Gi Bill Be Transferred To A Spouse</a></li>
+													<li class="list-group-item"><a href="/can-i-get-disability-for-ptsd-in-canada.html">Can I Get Disability For Ptsd In Canada</a></li>
+													<li class="list-group-item"><a href="/can-post-911-gi-bill-be-transferred-to-a-child.html">Can Post 911 Gi Bill Be Transferred To A Child</a></li>
+													<li class="list-group-item"><a href="/can-my-spouse-use-my-montgomery-gi-bill.html">Can My Spouse Use My Montgomery Gi Bill</a></li>
+													<li class="list-group-item"><a href="/can-i-change-schools-with-gi-bill.html">Can I Change Schools With Gi Bill</a></li>
+													<li class="list-group-item"><a href="/can-i-give-my-post-911-gi-bill-to-my-spouse.html">Can I Give My Post 911 Gi Bill To My Spouse</a></li>
+													<li class="list-group-item"><a href="/can-i-transfer-gi-bill-to-wife.html">Can I Transfer Gi Bill To Wife</a></li>
+													<li class="list-group-item"><a href="/can-my-spouse-use-my-post-9-11-gi-bill.html">Can My Spouse Use My Post 9 11 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/can-va-rating-be-reduced.html">Can Va Rating Be Reduced</a></li>
+													<li class="list-group-item"><a href="/can-va-disability-be-taken-in-a-divorce.html">Can Va Disability Be Taken In A Divorce</a></li>
+													<li class="list-group-item"><a href="/can-i-transfer-my-post-911-gi-bill-to-my-wife.html">Can I Transfer My Post 911 Gi Bill To My Wife</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

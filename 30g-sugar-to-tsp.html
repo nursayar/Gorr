@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>30g Sugar To Tsp - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "30g Sugar To Tsp",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/71/7d/42/717d427f5239644f642cc2763670e1f4.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=30g+sugar+to+tsp",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>30g Sugar To Tsp</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Wondering how many calories are in a teaspoon of sugar. Some cereals of well-known brand names contain up to 11g of sugar in a 30g serving. Heres a handy chart of frequently used sugar measurements to help you get started. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/go-navia-benefits.html">go navia benefits</a>
+											<a class="badge badge-info" href="/go-compare-bills.html">go compare bills</a>
+											<a class="badge badge-primary" href="/go-order-education.html">go order education</a>
+											<a class="badge badge-dark" href="/go-north-education.html">go north education</a>
+											<a class="badge badge-dark" href="/go-flex-post-malone-lyrics.html">go flex post malone lyrics</a>
+											<a class="badge badge-secondary" href="/go-education-hcss.html">go education hcss</a>
+											<a class="badge badge-success" href="/go-higher-education.html">go higher education</a>
+											<a class="badge badge-dark" href="/go-gst-bill-offline.html">go gst bill offline</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you have come to pay a visit to the ideal blog.  Our website provides you with suggestions for viewing the highest quality video and image content, hunt and locate more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, particularly Youtube, therefore we recommend this video that you view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/d6/db/28d6dba1a91e078fc52176780c71e3a2.png" data-lightbox="roadtrip" data-title="Weight Conversion Chart For Baking Ingredients Gemma S Bigger Bolder Baking Baking Conversion Chart Baking Conversions Baking Chart">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/d6/db/28d6dba1a91e078fc52176780c71e3a2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSZjafljWlRPH_Ovm2x0Xv0Qs-GVJI6CgMcg';" alt="Weight Conversion Chart For Baking Ingredients Gemma S Bigger Bolder Baking Baking Conversion Chart Baking Conversions Baking Chart">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Weight Conversion Chart For Baking Ingredients Gemma S Bigger Bolder Baking Baking Conversion Chart Baking Conversions Baking Chart</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/2b/dd/fc2bddda67a3ed34effd3c829c195930.png" data-lightbox="roadtrip" data-title="Weight Conversion Chart From Noopur S Kitchen Weight Conversion Chart Baking Conversion Chart Weight Conversion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/2b/dd/fc2bddda67a3ed34effd3c829c195930.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC_YhC8xyHYZngZ9K91-GOGMT8imYoqEDaFg';" alt="Weight Conversion Chart From Noopur S Kitchen Weight Conversion Chart Baking Conversion Chart Weight Conversion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Weight Conversion Chart From Noopur S Kitchen Weight Conversion Chart Baking Conversion Chart Weight Conversion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/92/ac/16/92ac160692c59fe1d5620578d7ca8945.jpg" data-lightbox="roadtrip" data-title="The Ultimate Cups To Grams Conversion Sheet Tablespoon Conversion Workout Food Protein Pow">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/92/ac/16/92ac160692c59fe1d5620578d7ca8945.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkXXu2btpPUnMeZRJ3x_REU4n8BozNgimbig';" alt="The Ultimate Cups To Grams Conversion Sheet Tablespoon Conversion Workout Food Protein Pow">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Ultimate Cups To Grams Conversion Sheet Tablespoon Conversion Workout Food Protein Pow</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/1f/3b/b91f3b6233b928a35863ba66c270733d.jpg" data-lightbox="roadtrip" data-title="Pin Di Jeannie Tay Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/1f/3b/b91f3b6233b928a35863ba66c270733d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsshKV-k9nZnNNqCNZaVd5wmymI16oZ2UygA';" alt="Pin Di Jeannie Tay Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Di Jeannie Tay Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/45/88/30458809417c9179dd35a0096a04de89.jpg" data-lightbox="roadtrip" data-title="Pin On Party Food">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/45/88/30458809417c9179dd35a0096a04de89.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNnYTTeIAK8V3CU1IuzT44GGBzPgFD3WWeTQ';" alt="Pin On Party Food">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Party Food</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/96/ef/c8/96efc85218f20c6ad9c1c67f2197543d.jpg" data-lightbox="roadtrip" data-title="Nutrition Facts Organic Traditions Organic Coconut Palm Sugar Ingredients Certified Organic Co Sugar Ingredients Organic Sweetener Organic Coconut Sugar">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/96/ef/c8/96efc85218f20c6ad9c1c67f2197543d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9gDtvdJYhni57XQTMu3fGKfAoKssvZpdGwQ';" alt="Nutrition Facts Organic Traditions Organic Coconut Palm Sugar Ingredients Certified Organic Co Sugar Ingredients Organic Sweetener Organic Coconut Sugar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nutrition Facts Organic Traditions Organic Coconut Palm Sugar Ingredients Certified Organic Co Sugar Ingredients Organic Sweetener Organic Coconut Sugar</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/71/7d/42/717d427f5239644f642cc2763670e1f4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9gDtvdJYhni57XQTMu3fGKfAoKssvZpdGwQ';" alt="Nutrition Facts Organic Traditions Organic Coconut Palm Sugar Ingredients Certified Organic Co Sugar Ingredients Organic Sweetener Organic Coconut Sugar">
+										<div class="card-body">
+						<h3 class="h5"><b>Then click the Convert grams to tsp button and youll instantly get the measurement in teaspoons.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>30g sugar to tsp</strong>. 
+								
+																	42 grams of sugar would be equal to 1 teaspoon instead of the general 5 grams per teaspoon. 
+																	Volume of 30 Grams of Sugar. 
+																	The current World Health Organisation guidelines concerning added sugar now recommend no more than seven teaspoons or cubes 30g a day. 
+																	Grams to Teaspoons Conversion Table Sugar Grams Teaspoons Grams Teaspoons. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you are healthy lean and active these seem like reasonable amounts. 
+																	Cereal also features in our article on surprising sources of salt so it really does pay to read the label on such commonplace foods. 
+																	This is estimated to be 30g or roughly 7 sugar cubes 7 tsp per day for those aged 11 and over. 
+																	You can view more details on each measurement unit. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1 gram g of granulated sugar mass equals to 00793664791 tablespoon tbsp of granulated sugar. 
+																	Teaspoon metric teaspoon US teaspoon UK More information from the unit converter. 
+																	For example lets look at a teaspoon of sugar. 
+																	For a person eating 2000 calories per day this would equal 50 grams of sugar or about 125 teaspoons. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The added sugar is less dense so it takes less grams to equal a teaspoon. 
+																	Tablespoon tbsp is a unit of Volume used in Cooking system. 
+																	Figures are rounded to 2 decimal places. 
+																	Here is a list of common ingredients with measurement in volume and their gram to teaspoon conversion tables. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1 cubic meter is equal to 85211336848478 gram sugar or 200000 teaspoons. 
+																	Red high more than 225g of sugar per 100g or more than 27g per portion amber medium more than 5g but less than or equal to 225g of sugar per 100g green low less than or equal to 5g of sugar per 100g Some labels on the front of packaging will display the amount of sugar in the food as a percentage of the RI. 
+																	1 cubic meter is equal to 1000000 grams. 
+																	How big is 30 grams of sugar. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The majority of our cereals now have 10g about 25 teaspoons or less of sugar per 30g serving and by 2020 90 of our Kelloggs cereals will have 10g of sugar or less per 30g serving. 
+																	The change of 1 g gram unit in a granulated sugar measure equals into 024 tsp teaspoon as per the equivalent measure and for the same granulated sugar type. 
+																	Its estimated that one teaspoon of sugar contains 16 calories and one tablespoon contains 48 calories. 
+																	G is an abbreviation of gram. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Gram g is a unit of Weight used in Metric system. 
+																	To be precise 42 grams equals a teaspoon but the nutrition facts rounds this number down to four grams. 
+																	How many grams in 1 teaspoons. 
+																	How much is 30 grams of sugar. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	4 grams 1 teaspoon of sugar 6 grams 1 12 teaspoons of sugar 8 grams 2 teaspoons of sugar. 
+																	Teaspoon is US teaspoon level not heaped. 
+																	We assume you are converting between gram water and teaspoon metric. 
+																	Please note that converting 30 grams of sugar to tablespoons can vary slightly by room temperature quality of sugar etc. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But by using 30 grams of sugar instead of 2 38 tablespoons you cant go wrong. 
+																	Note that rounding errors may occur so always check the results. 
+																	Please note this is volume to weight conversion this conversion is valid only for granulated sugar. 
+																	Taking your metric volume of a teaspoon being 5 mL that is a level teaspoon and multiplying that by the bulk density of white household sugar as 84535 mgmL not to be confused with the density of dry sugar which takes into account the air between the crystals and that is about 159 gmL the answer is a staggering 423g which we could generously round to 4g. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Thanks to the grams to teaspoons calculator and table youve discovered that a spoon of sugar weights around 42 grams. 
+																	Gram sugar or teaspoons The SI derived unit for volume is the cubic meter. 
+																	That equates to nearly 3 tsp of sugar just in your breakfast cereal. 
+																	3 tips to reading packaging Nutrition labels do not provide information about added sugar just. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This 30 grams sugar to tablespoons conversion is based on 1 tablespoon of white sugar equals 125 grams. 
+																	This page will convert 30 grams of sugar to units of volume such as teaspoons tablespoons cups and milliliters. 
+																	Four grams of sugar is equal to one teaspoon. 
+																	4167 grams of white sugar equal 1 teaspoon. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Grams or teaspoons The SI derived unit for volume is the cubic meter. 
+																	It wont come as a surprise that chocolate contains a high amount of sugar. 
+																	Online white sugar grams to teaspoons calculator Simply type in the grams g measurement of your sugar that you want to convert to teaspoons. 
+																	A 44g bar of milk. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Quick conversion chart of grams to teaspoons 1 grams to teaspoons 023471 teaspoons. 
+																	A single teaspoon of sugar is roughly 4g so you can see how easy it is to reach that amount. 
+																	30 Grams of Sugar 240. 
+																	How many teaspoons is 30 grams of sugar. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The answer is 5. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3b/db/f3/3bdbf37ea15f6e1bd42e46c259d61889.jpg" data-lightbox="roadtrip" data-title="How Much Sugar Is In Your Kids Favourites How Much Sugar Kids Meals Food">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3b/db/f3/3bdbf37ea15f6e1bd42e46c259d61889.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy75IivCXe4q9ijdeqe-Gu3kPs6FQBNiIzgQ';" alt="How Much Sugar Is In Your Kids Favourites How Much Sugar Kids Meals Food">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Much Sugar Is In Your Kids Favourites How Much Sugar Kids Meals Food</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/a1/f5/7ea1f5f2236f0fcbcf193a60341c0302.jpg" data-lightbox="roadtrip" data-title="This Is My Kind Of Friday Night 150g Milk Chocolate 150g Unsalted Butter 100g Light Brown White Chocolate Chips Soft Sugar Dark Chocolate Chips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/a1/f5/7ea1f5f2236f0fcbcf193a60341c0302.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeUTEo2Y_6XWES3WDYe9vhkamu30Qk0VNa_g';" alt="This Is My Kind Of Friday Night 150g Milk Chocolate 150g Unsalted Butter 100g Light Brown White Chocolate Chips Soft Sugar Dark Chocolate Chips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is My Kind Of Friday Night 150g Milk Chocolate 150g Unsalted Butter 100g Light Brown White Chocolate Chips Soft Sugar Dark Chocolate Chips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/9b/92/e39b925f37a665a2361216530234fa0c.jpg" data-lightbox="roadtrip" data-title="Ingredients 100g Unsalted Butter 50g Icing Sugar Tsp Salt Tsp Vanilla Essence Vanilla Extract 30g Egg Approx Large Cake Flour Egg Wash Butter Cookies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/9b/92/e39b925f37a665a2361216530234fa0c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRroHI4rLMmT3gBSPkxU5dSYnOv_RBPy_cIbQ';" alt="Ingredients 100g Unsalted Butter 50g Icing Sugar Tsp Salt Tsp Vanilla Essence Vanilla Extract 30g Egg Approx Large Cake Flour Egg Wash Butter Cookies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ingredients 100g Unsalted Butter 50g Icing Sugar Tsp Salt Tsp Vanilla Essence Vanilla Extract 30g Egg Approx Large Cake Flour Egg Wash Butter Cookies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/aa/d5/63/aad5637dfd94fce25a24fb8ced914206.jpg" data-lightbox="roadtrip" data-title="Pin On Food">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/aa/d5/63/aad5637dfd94fce25a24fb8ced914206.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5cGYyl9UAlJHRYeg1WC3P8QFix89etdwV8Q';" alt="Pin On Food">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Food</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/23/fc/f923fc92409b80204b4133a59f6c9238.jpg" data-lightbox="roadtrip" data-title="Pin On Chiffon Cake">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/23/fc/f923fc92409b80204b4133a59f6c9238.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUrEybKsjsqTyuZohYHh7eY-439TzZP2LaBQ';" alt="Pin On Chiffon Cake">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Chiffon Cake</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/29/c6/8529c619480e24289ea4f191144dbb14.jpg" data-lightbox="roadtrip" data-title="Healthy Quick Oatmel Biscuits In 2020 Healthy Biscuits Almond Flavor Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/29/c6/8529c619480e24289ea4f191144dbb14.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_GivWntdNgn79DBfkWTB3I1qlTFyDqOZPjA';" alt="Healthy Quick Oatmel Biscuits In 2020 Healthy Biscuits Almond Flavor Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Healthy Quick Oatmel Biscuits In 2020 Healthy Biscuits Almond Flavor Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/94/b2/7a94b2d208d66433abbf66189776630d.jpg" data-lightbox="roadtrip" data-title="Pin On Best Bread Recipe">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/94/b2/7a94b2d208d66433abbf66189776630d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe1r4oeQONH8hbDQt8a6ASI1ACtIS2Gjwm2A';" alt="Pin On Best Bread Recipe">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Best Bread Recipe</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/54/dd/bd/54ddbd1a3f940a344beb5976954557dd.png" data-lightbox="roadtrip" data-title="Pin By Sharon Gibbons On Recipes Baking Soda Corn Starch Granulated Sugar">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/54/dd/bd/54ddbd1a3f940a344beb5976954557dd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNyruiAUD80dAhXOm1uJbJNKAFLx7wi5YsHg';" alt="Pin By Sharon Gibbons On Recipes Baking Soda Corn Starch Granulated Sugar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sharon Gibbons On Recipes Baking Soda Corn Starch Granulated Sugar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/01/29/e90129732fb28bfce514e46482f5dc85.jpg" data-lightbox="roadtrip" data-title="Pin On Pastries And Cakes Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/01/29/e90129732fb28bfce514e46482f5dc85.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmfGl6F-_FnyMDyq8T8Xsk6fgEBmiPT-2QOQ';" alt="Pin On Pastries And Cakes Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Pastries And Cakes Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/c5/28/b4c5281c58c9f418e0b04213d85f5a40.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/c5/28/b4c5281c58c9f418e0b04213d85f5a40.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj7vgWweffsbuQcU2EfqiEcqVnN0IUrzlmKA';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e8/90/1e/e8901e4ba88644c1d932c4f0b0a3dcdc.jpg" data-lightbox="roadtrip" data-title="Seeded Br Brd 2 Beer Bread Buckwheat Flour Coconut Sugar">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e8/90/1e/e8901e4ba88644c1d932c4f0b0a3dcdc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtwlR4MgEhr621Yc4U1VE5oacXDCo-BGOVHQ';" alt="Seeded Br Brd 2 Beer Bread Buckwheat Flour Coconut Sugar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Seeded Br Brd 2 Beer Bread Buckwheat Flour Coconut Sugar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/71/7d/42/717d427f5239644f642cc2763670e1f4.jpg" data-lightbox="roadtrip" data-title="Ingredients Caramel 1 Tsp Water 40g Sugar 1 Tsp Water Cream Cheese Pudding 150g Cream Cheese 50g Suga Deserts With Cream Cheese Custard Pudding Cake Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/71/7d/42/717d427f5239644f642cc2763670e1f4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ_pW_MmT2eKnHtw55TahqHRDSmLpqQm_66Q';" alt="Ingredients Caramel 1 Tsp Water 40g Sugar 1 Tsp Water Cream Cheese Pudding 150g Cream Cheese 50g Suga Deserts With Cream Cheese Custard Pudding Cake Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ingredients Caramel 1 Tsp Water 40g Sugar 1 Tsp Water Cream Cheese Pudding 150g Cream Cheese 50g Suga Deserts With Cream Cheese Custard Pudding Cake Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/07/80/46/0780463cbe177821879f96f79eb1b251.jpg" data-lightbox="roadtrip" data-title="Vanilla Raisins Chiffon Cake Raisin Recipes Chiffon Cake Sponge Cake Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/07/80/46/0780463cbe177821879f96f79eb1b251.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJmxgrqpp77VU4b5r_8IDsQ8f3CIxL9SHlEw';" alt="Vanilla Raisins Chiffon Cake Raisin Recipes Chiffon Cake Sponge Cake Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vanilla Raisins Chiffon Cake Raisin Recipes Chiffon Cake Sponge Cake Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-disability-calculator-multiple-disabilities.html">Va Disability Calculator Multiple Disabilities</a></li>
+													<li class="list-group-item"><a href="/va-disability-calculator-with-ptsd.html">Va Disability Calculator With Ptsd</a></li>
+													<li class="list-group-item"><a href="/va-disability-calculator-hill-and-ponton.html">Va Disability Calculator Hill And Ponton</a></li>
+													<li class="list-group-item"><a href="/va-dept-of-higher-education.html">Va Dept Of Higher Education</a></li>
+													<li class="list-group-item"><a href="/va-custody-factors.html">Va Custody Factors</a></li>
+													<li class="list-group-item"><a href="/va-covid-percent-positive.html">Va Covid Percent Positive</a></li>
+													<li class="list-group-item"><a href="/va-disability-calculator-vagov.html">Va Disability Calculator Vagov</a></li>
+													<li class="list-group-item"><a href="/va-disability-calculator-microhealth.html">Va Disability Calculator Microhealth</a></li>
+													<li class="list-group-item"><a href="/va-disability-chart-pay-2019.html">Va Disability Chart Pay 2019</a></li>
+													<li class="list-group-item"><a href="/va-covid-infection-rate.html">Va Covid Infection Rate</a></li>
+													<li class="list-group-item"><a href="/va-disability-calculator-made-easy.html">Va Disability Calculator Made Easy</a></li>
+													<li class="list-group-item"><a href="/va-disability-claim-questions.html">Va Disability Claim Questions</a></li>
+													<li class="list-group-item"><a href="/va-department-of-corrections-teaching-jobs.html">Va Department Of Corrections Teaching Jobs</a></li>
+													<li class="list-group-item"><a href="/va-disability-appeal.html">Va Disability Appeal</a></li>
+													<li class="list-group-item"><a href="/va-dept-of-education-sol-released-tests.html">Va Dept Of Education Sol Released Tests</a></li>
+													<li class="list-group-item"><a href="/va-disability-chronic-knee-pain.html">Va Disability Chronic Knee Pain</a></li>
+													<li class="list-group-item"><a href="/va-disability-appeal-deadline.html">Va Disability Appeal Deadline</a></li>
+													<li class="list-group-item"><a href="/va-disability-calculator-app.html">Va Disability Calculator App</a></li>
+													<li class="list-group-item"><a href="/va-disability-appeal-decisions.html">Va Disability Appeal Decisions</a></li>
+													<li class="list-group-item"><a href="/va-depression-rating-schedule.html">Va Depression Rating Schedule</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

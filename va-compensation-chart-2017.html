@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Compensation Chart 2017 - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Compensation Chart 2017",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/736x/1b/cd/37/1bcd37083ad527308aceb80c883e4448.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+compensation+chart+2017",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Compensation Chart 2017</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">In 2017 however the VA disability rates saw a small increase of 03. This small rate increase follows 2016 a year in which there was no cost of living increase. The Department of Veterans Affairs VA recently updated the 2017 disability compensation rates to include the cost-of-living adjustment COLA for 2017 the first increase since December 2014. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/montgomery-county-water-bill.html">montgomery county water bill</a>
+											<a class="badge badge-danger" href="/montgomery-gi-bill-expiration-date.html">montgomery gi bill expiration date</a>
+											<a class="badge badge-secondary" href="/montgomery-gi-bill-changes.html">montgomery gi bill changes</a>
+											<a class="badge badge-light" href="/minnesota-gi-bill-online-application.html">minnesota gi bill online application</a>
+											<a class="badge badge-dark" href="/montgomery-county-texas-tax-bill-lookup.html">montgomery county texas tax bill lookup</a>
+											<a class="badge badge-success" href="/montgomery-county-tn-tax-bill-lookup.html">montgomery county tn tax bill lookup</a>
+											<a class="badge badge-secondary" href="/montgomery-gi-bill-for-flight-training.html">montgomery gi bill for flight training</a>
+											<a class="badge badge-success" href="/montgomery-county-ky-tax-bill-search.html">montgomery county ky tax bill search</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you've come to pay a visit to the ideal blog.  Our site gives you hints for viewing the highest quality video and picture content, hunt and locate more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, so we recommend this video for you to see.  You can also bring about supporting this website by sharing videos and images that you like on this blog on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this site.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1b/cd/37/1bcd37083ad527308aceb80c883e4448.jpg" data-lightbox="roadtrip" data-title="Perfect Va Compensation Rates 2017 Table And View Va Disability Disability Payments Va Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1b/cd/37/1bcd37083ad527308aceb80c883e4448.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrw1YnTnvH0zrdL657VuBpi4IWoP9-V3fybw';" alt="Perfect Va Compensation Rates 2017 Table And View Va Disability Disability Payments Va Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Perfect Va Compensation Rates 2017 Table And View Va Disability Disability Payments Va Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/f2/7c/cbf27ca2d21116e86f68cf5b1e90b1df.png" data-lightbox="roadtrip" data-title="Investor Relations Holding Company Exp Revenue Growth">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/f2/7c/cbf27ca2d21116e86f68cf5b1e90b1df.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKfWtzFe3Gi-OWvt3OB-awUj4spSpN8qpP6w';" alt="Investor Relations Holding Company Exp Revenue Growth">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Investor Relations Holding Company Exp Revenue Growth</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/f1/90/75f1903e473c86e0f2041e9f81630e15.jpg" data-lightbox="roadtrip" data-title="Pin On Needlepoint">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/f1/90/75f1903e473c86e0f2041e9f81630e15.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS568cW6hNW0pGZ7phfi2tAnHlc8n-u0V_RtA';" alt="Pin On Needlepoint">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Needlepoint</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/32/ac/5532ac7da2bf104ff6c08a38ef3b71d9.jpg" data-lightbox="roadtrip" data-title="Image Result For Lehman Brothers Chart Bloomberg Financial Charts Chart Fiscal">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/32/ac/5532ac7da2bf104ff6c08a38ef3b71d9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA3RfXUkanm7TXPSN0Fnf5cDM-x4UmHvf8aw';" alt="Image Result For Lehman Brothers Chart Bloomberg Financial Charts Chart Fiscal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Image Result For Lehman Brothers Chart Bloomberg Financial Charts Chart Fiscal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a4/9a/3d/a49a3dde73f15fb5e36d992641fada6f.jpg" data-lightbox="roadtrip" data-title="5 Prepaid Insurance Journal Entry Manual Journal Journal Entries Journal Insurance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a4/9a/3d/a49a3dde73f15fb5e36d992641fada6f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjt7Vr1GS1xXJLvnPDvAsfID1a4yx6wag9VQ';" alt="5 Prepaid Insurance Journal Entry Manual Journal Journal Entries Journal Insurance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Prepaid Insurance Journal Entry Manual Journal Journal Entries Journal Insurance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/fa/ce/8e/face8ed2271259fbf37d62065199c681.jpg" data-lightbox="roadtrip" data-title="Prepaid Expenses Being A Landlord Sample Resume Expensive">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/fa/ce/8e/face8ed2271259fbf37d62065199c681.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3gPdBMRn7PXaTV5lGacqja0MEcef0WR9e3A';" alt="Prepaid Expenses Being A Landlord Sample Resume Expensive">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Prepaid Expenses Being A Landlord Sample Resume Expensive</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/dd/1e/13/dd1e137f32d536a038bc58a776db437e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3gPdBMRn7PXaTV5lGacqja0MEcef0WR9e3A';" alt="Prepaid Expenses Being A Landlord Sample Resume Expensive">
+										<div class="card-body">
+						<h3 class="h5"><b>Veterans Compensation Benefits Rate Tables - Effective 12117.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va compensation chart 2017</strong>. 
+								
+																	Eligible veterans can receive up to 345806 per month as a tax-free disability benefit. 
+																	Department of Veterans Affairs website. 
+																	Veteran with Two Parents. 
+																	Find the amount for children under age 18 6100. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Below weve listed these rates source. 
+																	Close pensation s in the atlanta pensation s in the atlanta workers pensation rates by state how to increase va disability from 70. 
+																	Additional for AA spouse see footnote b 11100. 
+																	Other changes have taken longer to move from proposed to final. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2017 VA Disability Compensation Rate Increase 03. 
+																	If youre a Veteran with a 70 disability rating and you have a spouse plus 3 dependent children under the age of 18 you would start with the basic rate of 165671 for a Veteran with a spouse and 1 child. 
+																	Next look at the Added amounts table. 
+																	Veteran Pay Chart 2017 Zoskin. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veteran with One Parent. 
+																	Public Law 114-197 requires the VA to increase the benefit payable under the Disability Compensation Program by the same percentage and effective the same date as the increases in the benefit payable under Social Security. 
+																	However your disability rating and other factors will determine the actual amount you will receive. 
+																	If youre a Veteran with a 70 disability rating and you have a spouse plus 3 dependent children under the age of 18 you would start with the basic rate of 163617 for a Veteran with a spouse and 1 child. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Next look at the Added amounts table. 
+																	Currently 186 or 883629 of the 4743108 veterans receiving VA disability compensation benefits have a 10 combined VA rating. 
+																	Va Pensation Chart 2017. 
+																	Basic Rates - 10-100 Combined Degree Only Effective 12117. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veteran with Spouse and One Parent. 
+																	Va decision ready claims program va benefit chart 2017 hoskin special monthly pensation rates tableVa Disability Rates 2020 S Updated Pay ChartVa Benefits Percene Pay Chart HoskinVa Disability Pensation Pay Chart Hoskin2020 Va Disability Pay Chart Claims Insider2020 Va Disability Pay Rates Veterans Guardian Claim Consulting2020 Va Disability Rates The Plete Claims InsiderVa Benefits Pensation. 
+																	Va pension rate chart raurau 2021 va service connected disability veterans affairs in brief 2017 2017 pay chart gallery of 2019 diabetes care measuring blood sugar Va Disability Rates 2020 S Updated Pay ChartVa Pension Rate Chart RaurauVa Pension Rate Chart RaurauVa Pension Rate Chart RaurauHow To Calculate The Value Of A Guard Reserve Retirement Read More. 
+																	This is insanely low and according to our data 810 80 of veterans deserve a higher VA disability rating by law. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find the amount for children under age 18 6000. 
+																	2014 was the first year the VA has included amounts above a flat dollar amount. 
+																	Va Disability Rates 2020 S Updated Pay Chart. 
+																	Written by Kupis on September 11 2017 in Chart. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veteran with Spouse and Two Parents. 
+																	The previous rate increase was in 2015 when VA Disability rates increased by 17. 
+																	For example the proposed change to the endocrine system was published in July 2015 but the final rule was not published until November 2017 and became effective in December 2017. 
+																	There was a small increase for disability compensation rates for 2017. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Go to our How to Read Compensation Benefits Rate Tables to learn how to use the table. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/94/3c/5f943cac1eb38bb7148898ec2df4afca.jpg" data-lightbox="roadtrip" data-title="The Obstacles In Collecting Disability Benefits Disability Benefit Medicare Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/94/3c/5f943cac1eb38bb7148898ec2df4afca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm9aS7Rikd0ZNonHlHelunyGktoOgTJk3y_Q';" alt="The Obstacles In Collecting Disability Benefits Disability Benefit Medicare Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Obstacles In Collecting Disability Benefits Disability Benefit Medicare Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/1e/13/dd1e137f32d536a038bc58a776db437e.jpg" data-lightbox="roadtrip" data-title="How To Unlock An Excel Spreadsheet Excel Spreadsheets Budget Spreadsheet Spreadsheet">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/1e/13/dd1e137f32d536a038bc58a776db437e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWHIjOblui0XfODxp7vRFgoNK-W6Y90w4FQg';" alt="How To Unlock An Excel Spreadsheet Excel Spreadsheets Budget Spreadsheet Spreadsheet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Unlock An Excel Spreadsheet Excel Spreadsheets Budget Spreadsheet Spreadsheet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/97/dd/ac/97ddace35a5498e60f04dd22de8c2054.jpg" data-lightbox="roadtrip" data-title="Hr Magazine Hr Articles News And Updates For Hr Professionals Inspirational Technology Quotes World Economic Forum Quotes About New Year">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/97/dd/ac/97ddace35a5498e60f04dd22de8c2054.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6JdKOL7d0wt1J3rFES98UX_Rq8q8McoC5Iw';" alt="Hr Magazine Hr Articles News And Updates For Hr Professionals Inspirational Technology Quotes World Economic Forum Quotes About New Year">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hr Magazine Hr Articles News And Updates For Hr Professionals Inspirational Technology Quotes World Economic Forum Quotes About New Year</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/24/d1/cf/24d1cf9b440e8c781762b668a4619672.jpg" data-lightbox="roadtrip" data-title="Are You Using The Best Insurance Company In South Africa Best Insurance Insurance Company Insurance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/24/d1/cf/24d1cf9b440e8c781762b668a4619672.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm3vIrU1tAAxSkpGK0vUMh4NWTYmlnGEgGsA';" alt="Are You Using The Best Insurance Company In South Africa Best Insurance Insurance Company Insurance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are You Using The Best Insurance Company In South Africa Best Insurance Insurance Company Insurance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/33/a5/7933a53bc73ad965994376473cd00c8b.jpg" data-lightbox="roadtrip" data-title="Daftar Harga Promo Minggu Ini Dp Murah Angsuran Ringan Update Price List Promo Kredit Motor Yamaha September 2017 Daftar Price List Motor Yamaha Motor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/33/a5/7933a53bc73ad965994376473cd00c8b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFv0QVfjGRwgu-yZLTJ_FQMF2GY66WXfYqRA';" alt="Daftar Harga Promo Minggu Ini Dp Murah Angsuran Ringan Update Price List Promo Kredit Motor Yamaha September 2017 Daftar Price List Motor Yamaha Motor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Daftar Harga Promo Minggu Ini Dp Murah Angsuran Ringan Update Price List Promo Kredit Motor Yamaha September 2017 Daftar Price List Motor Yamaha Motor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/41/79/04/417904c65b5974690fcfdb1d5cd49ce9.jpg" data-lightbox="roadtrip" data-title="Nse Ambuja Equity Cash Target 1 Equity Analysis Trading">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/41/79/04/417904c65b5974690fcfdb1d5cd49ce9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0bmVF5aMP1upkWnKBduDmcTKT9jx9X0WilQ';" alt="Nse Ambuja Equity Cash Target 1 Equity Analysis Trading">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nse Ambuja Equity Cash Target 1 Equity Analysis Trading</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/12/0c/c3/120cc313826b4fc34e514fa76598287b.gif" data-lightbox="roadtrip" data-title="Willstrustsestates Prof Blogattorney Stole Mentally Estate Planning How To Plan Probate">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/12/0c/c3/120cc313826b4fc34e514fa76598287b.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK4JSvTzCMeMBo5p5dXXD47fUwmsaSxxG2-w';" alt="Willstrustsestates Prof Blogattorney Stole Mentally Estate Planning How To Plan Probate">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Willstrustsestates Prof Blogattorney Stole Mentally Estate Planning How To Plan Probate</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/e4/9a/c4e49a5f21494463bf008a2c65d2a452.png" data-lightbox="roadtrip" data-title="Pin On This That">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/e4/9a/c4e49a5f21494463bf008a2c65d2a452.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDw7JX87bdrMatinPsMNI6TtcHIJ_HhhmQAA';" alt="Pin On This That">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On This That</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/40/05/f540057705169e8268accea44f568090.jpg" data-lightbox="roadtrip" data-title="Rative Creative Cyber Punk Business Powerpoint Template In 2020 Business Powerpoint Templates Keynote Template Free Keynote Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/40/05/f540057705169e8268accea44f568090.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwpnruTnvUMT9OA177Lwb9n_C1YloGLlPuQQ';" alt="Rative Creative Cyber Punk Business Powerpoint Template In 2020 Business Powerpoint Templates Keynote Template Free Keynote Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rative Creative Cyber Punk Business Powerpoint Template In 2020 Business Powerpoint Templates Keynote Template Free Keynote Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/58/f9/2c58f9c4db5faa64b28548c25d7cab9d.jpg" data-lightbox="roadtrip" data-title="Falling Stock Index Dax In German Newspaper Affiliate Index Stock Falling Newspaper German Ad Stock Index Small Caps Investors">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/58/f9/2c58f9c4db5faa64b28548c25d7cab9d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqBdYJOnJNlpZCeLxhtrbbnVfgD9EB_35Z_w';" alt="Falling Stock Index Dax In German Newspaper Affiliate Index Stock Falling Newspaper German Ad Stock Index Small Caps Investors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Falling Stock Index Dax In German Newspaper Affiliate Index Stock Falling Newspaper German Ad Stock Index Small Caps Investors</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/c8/9b/7f/c89b7f59fbbd34450f615933c555f20d--animation-reference-d-animation.jpg" data-lightbox="roadtrip" data-title="Rigtip Constraint And Animation Layer Hacks Animation Tutorial Animation Animation Reference">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/c8/9b/7f/c89b7f59fbbd34450f615933c555f20d--animation-reference-d-animation.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdCy8vlBZnszaXw-3Ehev66ewNVEZeBtwI0A';" alt="Rigtip Constraint And Animation Layer Hacks Animation Tutorial Animation Animation Reference">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rigtip Constraint And Animation Layer Hacks Animation Tutorial Animation Animation Reference</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8c/f9/bb/8cf9bb39d9891148be03f775e4517aa0.png" data-lightbox="roadtrip" data-title="Linkedin Takes On Glassdoor And Comparably With Salary Comparison Tool Digital Content Marketing Online Digital Marketing Top Paying Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8c/f9/bb/8cf9bb39d9891148be03f775e4517aa0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtVPuHNuynyoY96VF3Ayca12zc-kB9aNgH-w';" alt="Linkedin Takes On Glassdoor And Comparably With Salary Comparison Tool Digital Content Marketing Online Digital Marketing Top Paying Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Linkedin Takes On Glassdoor And Comparably With Salary Comparison Tool Digital Content Marketing Online Digital Marketing Top Paying Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/97/9a/4b/979a4b0f3284d03d14954ee4b30f05f9.jpg" data-lightbox="roadtrip" data-title="List Of Auto Insurance Companies General Auto Insurance Auto Insurance Companies Homeowners Insurance Car Insurance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/97/9a/4b/979a4b0f3284d03d14954ee4b30f05f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxyYa6f-HUNWalUc8-l-lwY2Zd7_fWdo-lVA';" alt="List Of Auto Insurance Companies General Auto Insurance Auto Insurance Companies Homeowners Insurance Car Insurance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">List Of Auto Insurance Companies General Auto Insurance Auto Insurance Companies Homeowners Insurance Car Insurance</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-hearing-disability-ratings.html">Va Hearing Disability Ratings</a></li>
+													<li class="list-group-item"><a href="/va-gi-bill-monthly-stipend.html">Va Gi Bill Monthly Stipend</a></li>
+													<li class="list-group-item"><a href="/va-gi-bill-restoration.html">Va Gi Bill Restoration</a></li>
+													<li class="list-group-item"><a href="/va-jumbo-loan-interest-rates-today.html">Va Jumbo Loan Interest Rates Today</a></li>
+													<li class="list-group-item"><a href="/va-loan-interest-rate-navy-federal.html">Va Loan Interest Rate Navy Federal</a></li>
+													<li class="list-group-item"><a href="/va-interest-rate-refinance.html">Va Interest Rate Refinance</a></li>
+													<li class="list-group-item"><a href="/va-guaranty-percentage-calculator.html">Va Guaranty Percentage Calculator</a></li>
+													<li class="list-group-item"><a href="/va-loan-interest-rate-reduction.html">Va Loan Interest Rate Reduction</a></li>
+													<li class="list-group-item"><a href="/va-gi-bill-transfer-to-dependents.html">Va Gi Bill Transfer To Dependents</a></li>
+													<li class="list-group-item"><a href="/va-loan-interest-rate-with-bad-credit.html">Va Loan Interest Rate With Bad Credit</a></li>
+													<li class="list-group-item"><a href="/va-gio-djay-toi-muon-khoc-that-lon.html">Va Gio Djay Toi Muon Khoc That Lon</a></li>
+													<li class="list-group-item"><a href="/va-go-direct.html">Va Go Direct</a></li>
+													<li class="list-group-item"><a href="/va-gross-benefit-amount.html">Va Gross Benefit Amount</a></li>
+													<li class="list-group-item"><a href="/va-gi-bill-yellow-ribbon-schools.html">Va Gi Bill Yellow Ribbon Schools</a></li>
+													<li class="list-group-item"><a href="/va-jobs-reviews.html">Va Jobs Reviews</a></li>
+													<li class="list-group-item"><a href="/va-loan-comp-factors.html">Va Loan Comp Factors</a></li>
+													<li class="list-group-item"><a href="/va-knee-disability-increase.html">Va Knee Disability Increase</a></li>
+													<li class="list-group-item"><a href="/va-hearing-claim.html">Va Hearing Claim</a></li>
+													<li class="list-group-item"><a href="/va-hospital-ratings-2019.html">Va Hospital Ratings 2019</a></li>
+													<li class="list-group-item"><a href="/va-gi-bill-transfer-status.html">Va Gi Bill Transfer Status</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

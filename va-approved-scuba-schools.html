@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Approved Scuba Schools - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Approved Scuba Schools",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/736x/dc/75/bd/dc75bd991c939819dd3ed9d91feaf64a.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+approved+scuba+schools",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Approved Scuba Schools</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">APPROVED FOR VA EDUCATIONAL BENEFITS If you are looking to immerse yourself in the scuba diving lifestyle this is the program for you. We are approved for vocational rehabilitation through the State of Florida as well. Sea Experience Diving Schools is approved for VA educational benefits and is licensed by the State of Floridas Commission for Independent Education as required by law. <br>				
+			</p>
+										<a class="badge badge-dark" href="/gi-joe-bill.html">gi joe bill</a>
+											<a class="badge badge-dark" href="/gi-bill-scholarship.html">gi bill scholarship</a>
+											<a class="badge badge-success" href="/gi-bill-transfer-payments.html">gi bill transfer payments</a>
+											<a class="badge badge-info" href="/gi-build.html">gi build</a>
+											<a class="badge badge-primary" href="/gi-bill-phone-verification.html">gi bill phone verification</a>
+											<a class="badge badge-secondary" href="/gi-poso.html">gi poso</a>
+											<a class="badge badge-secondary" href="/gi-bill-question-help.html">gi bill question help</a>
+											<a class="badge badge-success" href="/gi-housing.html">gi housing</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you've come to pay a visit to the ideal blog.  Our website gives you suggestions for viewing the maximum quality video and picture content, hunt and find more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, particularly Youtube, therefore we recommend this video that you view.  It is also possible to bring about supporting this website by sharing videos and images that you enjoy on this blog on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information that you get on this site.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8b/e5/35/8be535565b5b3b5ad9152cd3a4ffba44.jpg" data-lightbox="roadtrip" data-title="Learning To Scuba Dive Sidemount Learn To Scuba Dive Best Scuba Diving Scuba Diving Tank">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8b/e5/35/8be535565b5b3b5ad9152cd3a4ffba44.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdTsKeVS4s6r09qz_biNdjW6oTxFlz6-WZsA';" alt="Learning To Scuba Dive Sidemount Learn To Scuba Dive Best Scuba Diving Scuba Diving Tank">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Learning To Scuba Dive Sidemount Learn To Scuba Dive Best Scuba Diving Scuba Diving Tank</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/b7/32/60b7321d0de4ec333f0cdc5e1f0a0824.jpg" data-lightbox="roadtrip" data-title="5 Reasons Every Woman Should Get Certified To Scuba Dive Ready Set Jet Set Scuba Diving Diving Scuba">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/b7/32/60b7321d0de4ec333f0cdc5e1f0a0824.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPWRBTcLP55VuDES7Mgr0NvpyTwLgyYBfDSw';" alt="5 Reasons Every Woman Should Get Certified To Scuba Dive Ready Set Jet Set Scuba Diving Diving Scuba">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Reasons Every Woman Should Get Certified To Scuba Dive Ready Set Jet Set Scuba Diving Diving Scuba</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/12/f8/08/12f808a4ae3284269c67158bc51a5909.png" data-lightbox="roadtrip" data-title="Pin On Travel Asia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/12/f8/08/12f808a4ae3284269c67158bc51a5909.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQbk6_FtC0PauR-ibU-5sDUKshW9j21a69iw';" alt="Pin On Travel Asia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Travel Asia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/e7/29/32/e729322ee93988b9a29348c351d344ec.jpg" data-lightbox="roadtrip" data-title="Try Scuba For One Or Two At Lynnhaven Dive Center Up To 35 Off In 2020 Scuba Diving Diving Course Diving Pool">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/e7/29/32/e729322ee93988b9a29348c351d344ec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv02VgZSxR69kIWcB_Qr1iOOjYpb_lQ4ebcQ';" alt="Try Scuba For One Or Two At Lynnhaven Dive Center Up To 35 Off In 2020 Scuba Diving Diving Course Diving Pool">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Try Scuba For One Or Two At Lynnhaven Dive Center Up To 35 Off In 2020 Scuba Diving Diving Course Diving Pool</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/dc/75/bd/dc75bd991c939819dd3ed9d91feaf64a.jpg" data-lightbox="roadtrip" data-title="What Is Technical Diving Scuba Diver Life Technical Diving Diving Olympic Diving">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/dc/75/bd/dc75bd991c939819dd3ed9d91feaf64a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8Dg4aJNl2FnWxIyvkcISKbfZ8-i8Q1auhIw';" alt="What Is Technical Diving Scuba Diver Life Technical Diving Diving Olympic Diving">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Technical Diving Scuba Diver Life Technical Diving Diving Olympic Diving</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/22/dc/6b22dcfca485ce939e367db392ab6a95.jpg" data-lightbox="roadtrip" data-title="Dive Connections Charlottesville Virginia Scuba Certification Dive Shop Scuba Diving">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/22/dc/6b22dcfca485ce939e367db392ab6a95.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlfNOX_i9yweZUx9sxtcU_3ABqh-RVo5snvw';" alt="Dive Connections Charlottesville Virginia Scuba Certification Dive Shop Scuba Diving">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dive Connections Charlottesville Virginia Scuba Certification Dive Shop Scuba Diving</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/72/34/66/7234663cb1126da4bdb135727589f361.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlfNOX_i9yweZUx9sxtcU_3ABqh-RVo5snvw';" alt="Dive Connections Charlottesville Virginia Scuba Certification Dive Shop Scuba Diving">
+										<div class="card-body">
+						<h3 class="h5"><b>Suite H I Richmond VA 23294 804-270-0700 - Email.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va approved scuba schools</strong>. 
+								
+																	This can all be done online at VONAPP. 
+																	Contact the school VA Representative for more info or CALL 843 740-1124. 
+																	With all our courses accepted by the Veterans Administration a candidate can enter our program at any level of experience. 
+																	If you are not a certified diver yet not a problem you can start our program as a beginner and continue on through the PADI Instructor Course. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	DAN Diving Emergency Management Provider. 
+																	As a military friendly and VA-approved school where more than half of our staff are veterans we understand the sacrifices you have made to better our country. 
+																	As the leading education professionals in the diving industry Pacific Diving Academy can schedule a program to meet the needs of every Veteran. 
+																	We offer premier daily boat charters to shipwrecks. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is what we do. 
+																	EASE Is A VA-Approved GI-Bill Vocational Rehab Scuba Diving School Proud To Serve Those Who Served Us For Post 911 GI Bill Ch 33 students and VA Vocational Rehabilitation and Employment Ch 31. 
+																	Their programs are approved for Veterans Education Benefits and the classes are of the most modern instructional design and incorporate reinforced learning and practical experiences at every level. 
+																	There are many career opportunities available for those using veterans benefits for scuba training. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Use VAs WEAMS Institution Search tool to locate the colleges and universities vocational institutions flight schools and other educational facilities with programs that are approved for VA benefits. 
+																	Additional fees for PADI application membership and certification will be required. 
+																	Become a technical diving instructor dive medical instructor a public safety diver or establish a career as. 
+																	You can also locate institutions of higher education participating in the Yellow Ribbon Program which. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Additional fees for PADI application membership and certification will be required. 
+																	You can start with your open water certification or advance the training you already have. 
+																	We are one of the biggest dive centers in Oahu and have been serving Oahus dive community for over 25 years. 
+																	CONNECT WITH US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	EASE is a VA-approved PADI Career Development Center offering free meals and accommodations for the Instructor Development Course and other scuba instructor courses. 
+																	VETERANS DIVE TRAINING Designed for veterans by veterans the International Diving Career Institute at Halls training programs are approved for veterans training using GI Bill benefits. 
+																	Emergency First Responder EFR Course. 
+																	VA Funding with MiraCosta College Scuba Center Temecula is happy to partner with Mira Costa College Community Education Workforce Development. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When applying the name of the school is Discovery Diving Co Inc. 
+																	We could start by telling you about how great wreck-diving deep diving Nitrox and exotic travel are and yes they are all awesome but lets simply get you not only certified but qualified as a comfortable diver first and then let the other cool things take care of themselves as you gain experience. 
+																	Our VA Course includes all coursework boat dives materials scuba gear. 
+																	Odyssey Scuba 573 774-3483. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	PADI Advanced Open Water Diver Course. 
+																	These fees are the responsibility of the student and are to be paid directly to PADI or the certifying agency. 
+																	Previous How to Prepare for a Career in Diving Next Opening Your Own Dive Business. 
+																	A PADI Dive Center that offers scuba diving training equipment and dive travel in Waynesville MO and the surrounding areas to include Fort Leonard Wood. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA Funding includes all coursework boat dives materials scuba gear. 
+																	Welcome to Odyssey for all your. 
+																	And the name of the program is Open Water SCUBA Instructor Certificate. 
+																	Enter search terms and then click on the map to generate results by state. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We have packaged our most popular courses from beginner to entry level professional not only to save you money but to assist you in reaching your goals efficiently. 
+																	The Dive Shop - Richmonds Best Scuba Diving Destination 9320 West Broad St. 
+																	Veterans you can use Chapters 30 31 33 and 35 under the GI Bill. 
+																	The International Diving Career Institute at Halls is a great place for veterans to prepare for a career in scuba diving. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All of Dive Oahus instructors are PADI licensed and insured. 
+																	Look for a training facility that is approved by the VA and your state education commission. 
+																	Dive Oahu has developed a reputation for excellence and has earned several awards from PADI. 
+																	Start with the PADI Open Water Diver course. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As a PADI Instructor you can also continue on and gain additional experience in our post IDC courses and work towards the. 
+																	Dreaming of Scuba Diving in Hawaii beautiful wrecks reefs and marine life. 
+																	Course Length Students have one year to complete this program although. 
+																	GI Bill approved for the full package deal. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veteran Staff Since 1968 The Divers Institute of Technology has been a Veteran Owned and Veteran Operated School. 
+																	If you have already used some of your benefits youll need to transfer the remanding funds to us and can do this by downloading and filling out VA Form 22-1995. 
+																	International Diving Institute is approved for VA Educational Benefit Programs. 
+																	Search the website for more info on classes to become a divemaster boatmaster instructor or something else. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Welcome to Odyssey for all your scuba diving training and equipment needs. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/29/f8/39/29f8397e8ab558fbdcbc21037b250007.jpg" data-lightbox="roadtrip" data-title="Pin On Amazing Scuba Diving Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/29/f8/39/29f8397e8ab558fbdcbc21037b250007.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTN_clasrKCgMhexStHQTU0ivFaO1VWlythA';" alt="Pin On Amazing Scuba Diving Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Amazing Scuba Diving Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/1f/38/491f3822d2bce1089fcc7c28010ac1f7.gif" data-lightbox="roadtrip" data-title="Lynnhaven Dive Center Scuba Scuba Certification My Adventure Book">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/1f/38/491f3822d2bce1089fcc7c28010ac1f7.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI5Gijjj2OA8ModvpbUfXZeFvY27L4s8qq5A';" alt="Lynnhaven Dive Center Scuba Scuba Certification My Adventure Book">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lynnhaven Dive Center Scuba Scuba Certification My Adventure Book</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/17/a7/b117a761e660106ea50b64ca93dd79a5.png" data-lightbox="roadtrip" data-title="Beginners Guide To Diving With Nitrox Benefits Risks More Nitrox Diving Diving Scuba Diving Tank">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/17/a7/b117a761e660106ea50b64ca93dd79a5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHZYFwL4HmwwM7QZsnO3x-2ILiduMB6Yxd2Q';" alt="Beginners Guide To Diving With Nitrox Benefits Risks More Nitrox Diving Diving Scuba Diving Tank">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Beginners Guide To Diving With Nitrox Benefits Risks More Nitrox Diving Diving Scuba Diving Tank</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/15/e0/5f/15e05fa8d34936c9b6222f4f85e53f15.jpg" data-lightbox="roadtrip" data-title="Divemaster Deep End Ceramic Ornament Zazzle Com In 2020 Diver Down Diving Scuba Diver">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/15/e0/5f/15e05fa8d34936c9b6222f4f85e53f15.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXStwlLkPkNRCkRi1SY-DYs2IoR6fNn1GSHA';" alt="Divemaster Deep End Ceramic Ornament Zazzle Com In 2020 Diver Down Diving Scuba Diver">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Divemaster Deep End Ceramic Ornament Zazzle Com In 2020 Diver Down Diving Scuba Diver</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/21/7c/ab/217cab9c72a5c07e4613414623d10add.jpg" data-lightbox="roadtrip" data-title="Packing List An Indonesia Scuba Trip Scuba Gear Trip Scuba">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/21/7c/ab/217cab9c72a5c07e4613414623d10add.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoB_EvHNjo5IluIPq7quDvObpWEiCYfPs7dg';" alt="Packing List An Indonesia Scuba Trip Scuba Gear Trip Scuba">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Packing List An Indonesia Scuba Trip Scuba Gear Trip Scuba</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/15/93/94/1593944afc5d7f3845ccc379489f50d0.jpg" data-lightbox="roadtrip" data-title="Blue Octopus Scuba Dive Center Alexandria Va In 2020 Scuba Girl Diving Diving Wetsuits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/15/93/94/1593944afc5d7f3845ccc379489f50d0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgTRDRrhAr4NxG8yRQdVAY-yIXlQflOf24Fw';" alt="Blue Octopus Scuba Dive Center Alexandria Va In 2020 Scuba Girl Diving Diving Wetsuits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Blue Octopus Scuba Dive Center Alexandria Va In 2020 Scuba Girl Diving Diving Wetsuits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/6b/29/a96b29a04f67d4074f1e63cd20f15e0d.png" data-lightbox="roadtrip" data-title="Diving Dolphin Logo Dolphin Logo Animal Logo Inspiration Sea Logo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/6b/29/a96b29a04f67d4074f1e63cd20f15e0d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbromacx-o8r_JQELrrWHizM7-NV3o0oLabA';" alt="Diving Dolphin Logo Dolphin Logo Animal Logo Inspiration Sea Logo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Diving Dolphin Logo Dolphin Logo Animal Logo Inspiration Sea Logo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/8d/1d/d7/8d1dd7a7c33a867516f55d46645201d5.jpg" data-lightbox="roadtrip" data-title="Not All Classrooms Have Four Walls Scuba Diving Scuba Quote Scuba Diving Quotes Diving Quotes Scuba Diving">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/8d/1d/d7/8d1dd7a7c33a867516f55d46645201d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5j2YFKUcfE5ldAvq3BFpLf7MHOK6bJb2RMg';" alt="Not All Classrooms Have Four Walls Scuba Diving Scuba Quote Scuba Diving Quotes Diving Quotes Scuba Diving">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Not All Classrooms Have Four Walls Scuba Diving Scuba Quote Scuba Diving Quotes Diving Quotes Scuba Diving</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/72/34/66/7234663cb1126da4bdb135727589f361.jpg" data-lightbox="roadtrip" data-title="Best Liveaboard Destinations To Go In December Best Scuba Diving Destinations Diving Bucket List Adventure Va Best Scuba Diving Scuba Diving Scuba Travel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/72/34/66/7234663cb1126da4bdb135727589f361.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi3O5OTlUY6oY5QVH8yreXhkuetMci0SdqeA';" alt="Best Liveaboard Destinations To Go In December Best Scuba Diving Destinations Diving Bucket List Adventure Va Best Scuba Diving Scuba Diving Scuba Travel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Liveaboard Destinations To Go In December Best Scuba Diving Destinations Diving Bucket List Adventure Va Best Scuba Diving Scuba Diving Scuba Travel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/6f/44/2c6f448acf660faf2184fa5a8a312373.jpg" data-lightbox="roadtrip" data-title="Scuba Diving Lake Rawlings In Rawlings Va Diving Scuba Diving Certification Scuba Diving Courses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/6f/44/2c6f448acf660faf2184fa5a8a312373.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9B5k63ClfSMbOAy7NzwLT91E14f6nwv2lGg';" alt="Scuba Diving Lake Rawlings In Rawlings Va Diving Scuba Diving Certification Scuba Diving Courses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Scuba Diving Lake Rawlings In Rawlings Va Diving Scuba Diving Certification Scuba Diving Courses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/d6/68/a0/d668a002e0d2b8319853219dc8444060.jpg" data-lightbox="roadtrip" data-title="Freediving Courses Dubai Apnea Pirates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/d6/68/a0/d668a002e0d2b8319853219dc8444060.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHTLTn5hiUYvYcAmfVkawunNPnNIuAOzodgQ';" alt="Freediving Courses Dubai Apnea Pirates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Freediving Courses Dubai Apnea Pirates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/bc/ef/b5/bcefb5aa78cea86acc955e23cb3b630a.jpg" data-lightbox="roadtrip" data-title="Pin By Jumago Judith Blogging E On Svareni Scuba Diving Photography Diving Sea Diving">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/bc/ef/b5/bcefb5aa78cea86acc955e23cb3b630a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5eHEGJFh5ehkFNqvWQo68sFqz8Hc1fXtmxg';" alt="Pin By Jumago Judith Blogging E On Svareni Scuba Diving Photography Diving Sea Diving">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Jumago Judith Blogging E On Svareni Scuba Diving Photography Diving Sea Diving</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/0a/57/2d0a57b1f569155414fcb51c0bfc45b6.jpg" data-lightbox="roadtrip" data-title="Pin On Nieuwe Oke">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/0a/57/2d0a57b1f569155414fcb51c0bfc45b6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-3BM-4OQBmzkY8VT22KN_9EJaIy2cHWy6_w';" alt="Pin On Nieuwe Oke">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Nieuwe Oke</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/baptist-health-montgomery-al-bill-pay.html">Baptist Health Montgomery Al Bill Pay</a></li>
+													<li class="list-group-item"><a href="/bankrate-va-loan.html">Bankrate Va Loan</a></li>
+													<li class="list-group-item"><a href="/air-force-reserve-post-9-11-gi-bill.html">Air Force Reserve Post 9 11 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-acute-pancreatitis.html">American College Of Gastroenterology Acute Pancreatitis</a></li>
+													<li class="list-group-item"><a href="/benefits-available-to-disabled-veterans.html">Benefits Available To Disabled Veterans</a></li>
+													<li class="list-group-item"><a href="/air-force-x-g-dragon.html">Air Force X G Dragon</a></li>
+													<li class="list-group-item"><a href="/are-va-disability-ratings-cumulative.html">Are Va Disability Ratings Cumulative</a></li>
+													<li class="list-group-item"><a href="/amu-gi-bill.html">Amu Gi Bill</a></li>
+													<li class="list-group-item"><a href="/are-veterans-eligible-for-nursing-home-care.html">Are Veterans Eligible For Nursing Home Care</a></li>
+													<li class="list-group-item"><a href="/allergic-rhinitis-disability-rating.html">Allergic Rhinitis Disability Rating</a></li>
+													<li class="list-group-item"><a href="/bellagio-sidoarjo.html">Bellagio Sidoarjo</a></li>
+													<li class="list-group-item"><a href="/are-va-loan-rates-higher-than-conventional.html">Are Va Loan Rates Higher Than Conventional</a></li>
+													<li class="list-group-item"><a href="/air-force-one-go-sport.html">Air Force One Go Sport</a></li>
+													<li class="list-group-item"><a href="/are-the-vietnam-veterans-still-picking-up-donations.html">Are The Vietnam Veterans Still Picking Up Donations</a></li>
+													<li class="list-group-item"><a href="/atp-gi-bill.html">Atp Gi Bill</a></li>
+													<li class="list-group-item"><a href="/army-regulation-post-911-gi-bill.html">Army Regulation Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/army-gi-bill.html">Army Gi Bill</a></li>
+													<li class="list-group-item"><a href="/benefits-of-amazon-go-store.html">Benefits Of Amazon Go Store</a></li>
+													<li class="list-group-item"><a href="/benefits-of-100-percent-disability-va.html">Benefits Of 100 Percent Disability Va</a></li>
+													<li class="list-group-item"><a href="/average-va-disability-rating-for-gulf-war-syndrome.html">Average Va Disability Rating For Gulf War Syndrome</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

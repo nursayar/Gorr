@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Did Hertz Go Out Of Business - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Did Hertz Go Out Of Business",
+  "datePublished": "2021-02-17",
+  "image": "https://etimg.etb2bimg.com/thumb/msid-75910857,imgsize-65165,width-800,height-434,overlay-etauto/hertz-files-for-u-s-bankruptcy-protection-as-car-rentals-evaporate-in-pandemic.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=did+hertz+go+out+of+business",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Did Hertz Go Out Of Business</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">In June 2020 the company announced that it would be permanently closing 170 locations in 2020 a higher number than they originally planned. Hertz Global Probability Of Bankruptcy is currently at 4926. Global pandemic obliterates the travel business and lands an iconic 102-year-old company in court to. <br>				
+			</p>
+										<a class="badge badge-dark" href="/does-bipolar-disorder-count-as-a-disability.html">does bipolar disorder count as a disability</a>
+											<a class="badge badge-info" href="/do-you-have-to-verify-enrollment-for-post-911-gi-bill.html">do you have to verify enrollment for post 911 gi bill</a>
+											<a class="badge badge-secondary" href="/does-a-bill-go-to-the-house-or-senate-first.html">does a bill go to the house or senate first</a>
+											<a class="badge badge-primary" href="/does-disability-increase-with-dependents.html">does disability increase with dependents</a>
+											<a class="badge badge-dark" href="/do-veterans-make-good-money.html">do veterans make good money</a>
+											<a class="badge badge-success" href="/does-military-give-you-health-insurance.html">does military give you health insurance</a>
+											<a class="badge badge-primary" href="/does-occipital-neuralgia-qualify-for-disability.html">does occipital neuralgia qualify for disability</a>
+											<a class="badge badge-success" href="/does-amvets-accept-furniture-donations.html">does amvets accept furniture donations</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you've come to pay a visit to the right blog.  Our site gives you suggestions for viewing the highest quality video and picture content, hunt and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, especially Youtube, so we recommend this video that you view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://specials-images.forbesimg.com/imageserve/672508194/960x0.jpg?fit=scale" data-lightbox="roadtrip" data-title="Hertz Car Rental Suffers Massive Layoffs Stock Drop From Covid 19 Pandemic">
+											<img class="card-img v-image ads-img " src="https://specials-images.forbesimg.com/imageserve/672508194/960x0.jpg?fit=scale" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoaZZl1_BtoWPRjdPiJyaA1xXAa_WZJQ9MXA';" alt="Hertz Car Rental Suffers Massive Layoffs Stock Drop From Covid 19 Pandemic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hertz Car Rental Suffers Massive Layoffs Stock Drop From Covid 19 Pandemic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/77/85/9977855708b1853e349752e71fcde8c9.jpg" data-lightbox="roadtrip" data-title="Hertz Files For Bankruptcy Raises Fears It May Flood Market With Hundreds Of Thousands Of Used Cars Carscoops In 2020 Car Rental Company Car Rental Hertz Car Rental">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/77/85/9977855708b1853e349752e71fcde8c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnF4d3DomYMSoeSMWLXHLna5gX3HFZ07KEsw';" alt="Hertz Files For Bankruptcy Raises Fears It May Flood Market With Hundreds Of Thousands Of Used Cars Carscoops In 2020 Car Rental Company Car Rental Hertz Car Rental">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hertz Files For Bankruptcy Raises Fears It May Flood Market With Hundreds Of Thousands Of Used Cars Carscoops In 2020 Car Rental Company Car Rental Hertz Car Rental</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://etimg.etb2bimg.com/photo/74874151.cms" data-lightbox="roadtrip" data-title="Hertz Car Rental Company Hertz In Talks With Banks For New Financing Amid Travel Bans Auto News Et Auto">
+											<img class="card-img v-image ads-img " src="https://etimg.etb2bimg.com/photo/74874151.cms" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWzh6BPl0VvxRc1tASz-ZzW_Kolp20x8th3A';" alt="Hertz Car Rental Company Hertz In Talks With Banks For New Financing Amid Travel Bans Auto News Et Auto">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hertz Car Rental Company Hertz In Talks With Banks For New Financing Amid Travel Bans Auto News Et Auto</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/b4/04/3db40437deb72e75fdf14d869c8fd026.jpg" data-lightbox="roadtrip" data-title="Hertz Car Rental Top 5 Reasons Why The Company Is Your Best Option Hertz Car Rental Hertz Car Hertz Car Sales">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/b4/04/3db40437deb72e75fdf14d869c8fd026.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8nOusu07J2RFwQ-ZGQ1NJYHN1dmcjTItgVw';" alt="Hertz Car Rental Top 5 Reasons Why The Company Is Your Best Option Hertz Car Rental Hertz Car Hertz Car Sales">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hertz Car Rental Top 5 Reasons Why The Company Is Your Best Option Hertz Car Rental Hertz Car Hertz Car Sales</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/28/b5/9b28b57e06fa021fe1153f26e64f165d.jpg" data-lightbox="roadtrip" data-title="Hertz Rent A Car Car Advertising Vintage Ads Vintage Advertisements">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/28/b5/9b28b57e06fa021fe1153f26e64f165d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-TDZWOtes1CdQwUOhI13SA4XsE7a7StbC1w';" alt="Hertz Rent A Car Car Advertising Vintage Ads Vintage Advertisements">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hertz Rent A Car Car Advertising Vintage Ads Vintage Advertisements</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pyxis.nymag.com/v1/imgs/076/8c9/5bbd038f4ff97043b3737ca2ec6fce772e-hertz.rsquare.w1200.jpg" data-lightbox="roadtrip" data-title="The Strange Case Of Hertz S Bankruptcy">
+											<img class="card-img v-image ads-img " src="https://pyxis.nymag.com/v1/imgs/076/8c9/5bbd038f4ff97043b3737ca2ec6fce772e-hertz.rsquare.w1200.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbQ9Sm9jLoIqGS-C2QgVtqNVtBdCiwHeqjiA';" alt="The Strange Case Of Hertz S Bankruptcy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Strange Case Of Hertz S Bankruptcy</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fa00a789a-967f-49bb-8c0e-730a80e7dfb9.jpg?fit=scale-down&amp;source=next&amp;width=700" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbQ9Sm9jLoIqGS-C2QgVtqNVtBdCiwHeqjiA';" alt="The Strange Case Of Hertz S Bankruptcy">
+										<div class="card-body">
+						<h3 class="h5"><b>Then in a class of absurdity by itself is whats happening at Hertz the nations second-largest car-rental agency.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Did hertz go out of business</strong>. 
+								
+																	Starting in mid-March the company. 
+																	HERTZ car rental has filed for bankruptcy as the business giant becomes the latest to collapse under the strain of the coronavirus pandemic. 
+																	Hertz Global Holdings racked up more than 24 billion in debt by the end of March according to its bankruptcy filing with only 1 billion in available cash. 
+																	The retailer operates more than 5000 stores worldwide. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 102-year-old companys lenders were unwilling to. 
+																	The 102-year-old car rental firm Hertz has filed for bankruptcy protection after its business all but vanished during the coronavirus pandemic. 
+																	Travel has been selling its rental cars at significant discounts since filing for. 
+																	Rental car agency Hertz slammed by the steep drop in demand after the coronavirus pandemic shut down most US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Are among companies that have seen their shares more than double in recent trading sessions. 
+																	The score is used to predict the probability of a firm or a fund experiencing financial distress within the next 24 months. 
+																	Hertz one of the largest car rental companies in the US filed for bankruptcy Friday after the coronavirus devastated its business making it another major company that has filed for bankruptcy. 
+																	After 100 years in business Hertz filed for bankruptcy on Friday. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Halting car purchases selling off cars from fleets Hertz HTZ which filed for bankruptcy late Friday night had already said it doesnt intend to buy any more cars this year. 
+																	Unlike Z-Score Probability Of Bankruptcy is the. 
+																	As a whole slew of used rental cars. 
+																	Now that the rental-car giant Hertz has filed for Chapter 11 bankruptcy the company has to unload 200000 cars by the end of the year as part of the deal. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	S bankruptcy story goes something like this. 
+																	For stocks Probability Of Bankruptcy is the normalized value of Z-Score. 
+																	Hertz said in a US court filing on Friday that it had. 
+																	Shares opened lower on the news on May 26 at 41 cents hitting a low of 40 cents. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In October 2020 the company announced that it would be permanently closing another 250 locations in 2021. 
+																	But such a deal is still likely to involve the liquidation of a substantial portion of those 400000 vehicles as Hertz prepares to continue doing business amid an extended decline in leisure. 
+																	Since then shares surged as much as 825. 
+																	Hertz already abandoned part of its fleet selling 54000 cars in March - but the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hertz is slated to receive 165 billion in financing as the iconic car rental company navigates bankruptcy during the coronavirus pandemic which has pummeled the travel industry. 
+																	The short version of Hertz Global Holdings Inc. 
+																	For funds and ETFs it is derived from a multi-factor model developed by Macroaxis. 
+																	On May 22 Hertz filed for bankruptcy protection after the combination of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By declaring bankruptcy Hertz says it intends to stay in business while restructuring its debts and emerging a financially healthier company. 
+																	While Covid-19 has had an impact on the car-rental company Hertz had been suffering long before the pandemic. 
+																	The impact of Covid-19 on travel demand was sudden. 
+																	Car renter Hertz Global Holdings Inc oil driller Whiting Petroleum Corp. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To be clear bankruptcy is a restructuring - not a declaration that the company is going out of business. 
+																	Hertz announced its bankruptcy filing on the evening of Friday May 22. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/86/33/23/86332367311a39c85e15cf4c91e03e77.jpg" data-lightbox="roadtrip" data-title="1951 Hertz Rental Car Ad Abraham Lincoln S Cabin Golden Etsy Car Rental Car Ads Travel Ads">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/86/33/23/86332367311a39c85e15cf4c91e03e77.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1YN4aROwfie4LzvKd-BzHi2azrdhWMoAnMw';" alt="1951 Hertz Rental Car Ad Abraham Lincoln S Cabin Golden Etsy Car Rental Car Ads Travel Ads">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1951 Hertz Rental Car Ad Abraham Lincoln S Cabin Golden Etsy Car Rental Car Ads Travel Ads</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://specials-images.forbesimg.com/imageserve/9aff6f7955e34853a70c79f8ab22f1fd/960x0.jpg?fit=scale" data-lightbox="roadtrip" data-title="How Hertz Fooled Amateur Investors">
+											<img class="card-img v-image ads-img " src="https://specials-images.forbesimg.com/imageserve/9aff6f7955e34853a70c79f8ab22f1fd/960x0.jpg?fit=scale" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiZKLkf7kdU2sS5ITYPc2um8sjheR2Y5t7Pg';" alt="How Hertz Fooled Amateur Investors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Hertz Fooled Amateur Investors</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/d0/13/16d013a05500b5790d034748b7c428da.jpg" data-lightbox="roadtrip" data-title="We Know What Its Like Looking For A Car Rental Rent Me A Car Shows You 8 Ways To Save Money On Car Rentals Car Rental Saving Money Travel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/d0/13/16d013a05500b5790d034748b7c428da.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS66jsW3D_QQUyoTjGkEIlDLpCfAVKv3oos1A';" alt="We Know What Its Like Looking For A Car Rental Rent Me A Car Shows You 8 Ways To Save Money On Car Rentals Car Rental Saving Money Travel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Know What Its Like Looking For A Car Rental Rent Me A Car Shows You 8 Ways To Save Money On Car Rentals Car Rental Saving Money Travel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/ff/58/5d/ff585d206ea2855c1564cb1dae3c2ad3--travel-hacks-travel-advice.jpg" data-lightbox="roadtrip" data-title="How I Rent Cars For Under 10 A Day Car Rental Deals Cheap Car Rental Rental Car Discounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/ff/58/5d/ff585d206ea2855c1564cb1dae3c2ad3--travel-hacks-travel-advice.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGOaP9fLfV-IWyo-WuxOdBt5EDIxRdCro_Uw';" alt="How I Rent Cars For Under 10 A Day Car Rental Deals Cheap Car Rental Rental Car Discounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How I Rent Cars For Under 10 A Day Car Rental Deals Cheap Car Rental Rental Car Discounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/a7/f3/afa7f33cfe53483b59b23818523b42dc.png" data-lightbox="roadtrip" data-title="Hertz Dollar Thrifty Car Rental Email Marketing Countdown Timers Personalized Images Email Examples Email Marketing Email Campaign Living Social">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/a7/f3/afa7f33cfe53483b59b23818523b42dc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA6-bYit8O5cs-Qf9Q2bGSwkuS_VJp0b1U5g';" alt="Hertz Dollar Thrifty Car Rental Email Marketing Countdown Timers Personalized Images Email Examples Email Marketing Email Campaign Living Social">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hertz Dollar Thrifty Car Rental Email Marketing Countdown Timers Personalized Images Email Examples Email Marketing Email Campaign Living Social</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fa00a789a-967f-49bb-8c0e-730a80e7dfb9.jpg?fit=scale-down&amp;source=next&amp;width=700" data-lightbox="roadtrip" data-title="Car Rental Group Hertz Files For Bankruptcy Financial Times">
+											<img class="card-img v-image ads-img " src="https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fa00a789a-967f-49bb-8c0e-730a80e7dfb9.jpg?fit=scale-down&amp;source=next&amp;width=700" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgbjgnqN7kcJQb9oyKypLMK5hHDKtfRBCjlg';" alt="Car Rental Group Hertz Files For Bankruptcy Financial Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Car Rental Group Hertz Files For Bankruptcy Financial Times</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/ny/api/res/1.2/mEuqeEeqnONjtdQn6EqN8Q--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTUyNy40NzI1Mjc0NzI1Mjc0/https://s.yimg.com/uu/api/res/1.2/wlBAiBD4963vohwGGcsCEw--~B/aD00MDA7dz03Mjg7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en-US/investorplace_417/ac0156e7faffd04443fac724af3745d8" data-lightbox="roadtrip" data-title="Do Not Buy The Dip In Hertz Stock">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/ny/api/res/1.2/mEuqeEeqnONjtdQn6EqN8Q--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTUyNy40NzI1Mjc0NzI1Mjc0/https://s.yimg.com/uu/api/res/1.2/wlBAiBD4963vohwGGcsCEw--~B/aD00MDA7dz03Mjg7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en-US/investorplace_417/ac0156e7faffd04443fac724af3745d8" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb4YsXm2VEAIipgqaJoLuQHiuOp-W3ADIFiQ';" alt="Do Not Buy The Dip In Hertz Stock">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Do Not Buy The Dip In Hertz Stock</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://specials-images.forbesimg.com/imageserve/1209597766/960x0.jpg?fit=scale" data-lightbox="roadtrip" data-title="Car Rental Company Hertz Files For Bankruptcy">
+											<img class="card-img v-image ads-img " src="https://specials-images.forbesimg.com/imageserve/1209597766/960x0.jpg?fit=scale" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXtWdpY_OXXaoC_tfoxAhZhKiZX1aEdvNzHA';" alt="Car Rental Company Hertz Files For Bankruptcy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Car Rental Company Hertz Files For Bankruptcy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://etimg.etb2bimg.com/thumb/msid-75910857,imgsize-65165,width-800,height-434,overlay-etauto/hertz-files-for-u-s-bankruptcy-protection-as-car-rentals-evaporate-in-pandemic.jpg" data-lightbox="roadtrip" data-title="Coronavirus Impact On Car Rental Companies Hertz Files For U S Bankruptcy Protection As Car Rentals Evaporate In Pandemic Auto News Et Auto">
+											<img class="card-img v-image ads-img " src="https://etimg.etb2bimg.com/thumb/msid-75910857,imgsize-65165,width-800,height-434,overlay-etauto/hertz-files-for-u-s-bankruptcy-protection-as-car-rentals-evaporate-in-pandemic.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS14j37x1pnR7xBw0FqxPCbQBzzYECNPwJCtw';" alt="Coronavirus Impact On Car Rental Companies Hertz Files For U S Bankruptcy Protection As Car Rentals Evaporate In Pandemic Auto News Et Auto">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coronavirus Impact On Car Rental Companies Hertz Files For U S Bankruptcy Protection As Car Rentals Evaporate In Pandemic Auto News Et Auto</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/12/1e/c3/121ec33de6eac1b5d9a06b8a68dc03ce.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/12/1e/c3/121ec33de6eac1b5d9a06b8a68dc03ce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRVGfZO3RM491S21-LHz2z9RvPFWhCLFp81Q';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/0d/9d/780d9dc065fcd1b3c6bf52308752052d.jpg" data-lightbox="roadtrip" data-title="1957 Magazine Print Advertisement Ad Hertz Rent A Car Fast Worker Fast Workers Fast Cars Rent A Car">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/0d/9d/780d9dc065fcd1b3c6bf52308752052d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTzQwFXyziQBfftVMuXi0hoEyInBkUYXEEvQ';" alt="1957 Magazine Print Advertisement Ad Hertz Rent A Car Fast Worker Fast Workers Fast Cars Rent A Car">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1957 Magazine Print Advertisement Ad Hertz Rent A Car Fast Worker Fast Workers Fast Cars Rent A Car</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/b7/0d/c7b70df722fbc23f6a6ff931999062b7.jpg" data-lightbox="roadtrip" data-title="1955 Hertz Rent A Car Ad Al Moore Vintage Ads Misc Vintage Car Rental Car Ads Hertz Car Rental">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/b7/0d/c7b70df722fbc23f6a6ff931999062b7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDbYMFq4fD4HKZGK8eAj440VKqBH_4VPN--g';" alt="1955 Hertz Rent A Car Ad Al Moore Vintage Ads Misc Vintage Car Rental Car Ads Hertz Car Rental">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1955 Hertz Rent A Car Ad Al Moore Vintage Ads Misc Vintage Car Rental Car Ads Hertz Car Rental</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/4c/92/d94c92687acafb014470bf6a797e4a18.jpg" data-lightbox="roadtrip" data-title="How To Rent A Cheap Car Car Rental Company Car Rental Online Car Rental">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/4c/92/d94c92687acafb014470bf6a797e4a18.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX-SXBumvVaOeHTpvOuRdsa7J6HGGDGxEdrg';" alt="How To Rent A Cheap Car Car Rental Company Car Rental Online Car Rental">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Rent A Cheap Car Car Rental Company Car Rental Online Car Rental</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/go-build-trim-path.html">Go Build Trim Path</a></li>
+													<li class="list-group-item"><a href="/go-build-library.html">Go Build Library</a></li>
+													<li class="list-group-item"><a href="/go-build-vscode.html">Go Build Vscode</a></li>
+													<li class="list-group-item"><a href="/go-build-macos.html">Go Build Macos</a></li>
+													<li class="list-group-item"><a href="/go-build-mod.html">Go Build Mod</a></li>
+													<li class="list-group-item"><a href="/go-build-run.html">Go Build Run</a></li>
+													<li class="list-group-item"><a href="/go-build-unknown-revision.html">Go Build Unknown Revision</a></li>
+													<li class="list-group-item"><a href="/go-build-custom-name.html">Go Build Custom Name</a></li>
+													<li class="list-group-item"><a href="/go-build-binary-for-linux-on-mac.html">Go Build Binary For Linux On Mac</a></li>
+													<li class="list-group-item"><a href="/go-build-for-mac.html">Go Build For Mac</a></li>
+													<li class="list-group-item"><a href="/go-build-url-query.html">Go Build Url Query</a></li>
+													<li class="list-group-item"><a href="/go-build-not-working.html">Go Build Not Working</a></li>
+													<li class="list-group-item"><a href="/go-build-windows.html">Go Build Windows</a></li>
+													<li class="list-group-item"><a href="/go-build-hello-world.html">Go Build Hello World</a></li>
+													<li class="list-group-item"><a href="/go-build-output-file.html">Go Build Output File</a></li>
+													<li class="list-group-item"><a href="/go-build-arm.html">Go Build Arm</a></li>
+													<li class="list-group-item"><a href="/go-build-visual-studio-code.html">Go Build Visual Studio Code</a></li>
+													<li class="list-group-item"><a href="/go-build-your-future.html">Go Build Your Future</a></li>
+													<li class="list-group-item"><a href="/go-build-release.html">Go Build Release</a></li>
+													<li class="list-group-item"><a href="/go-build-for-linux.html">Go Build For Linux</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

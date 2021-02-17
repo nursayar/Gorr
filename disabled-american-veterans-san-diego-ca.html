@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Disabled American Veterans San Diego Ca - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Disabled American Veterans San Diego Ca",
+  "datePublished": "2021-02-17",
+  "image": "https://media-exp1.licdn.com/dms/image/C560BAQFptbZvl5LrNw/company-logo_200_200/0/1601007097659?e=2159024400&amp;v=beta&amp;t=liM-fZvitVMxWMsA3nOK_Y3v81MBGwSsF--XNh0sA1w",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=disabled+american+veterans+san+diego+ca",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Disabled American Veterans San Diego Ca</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Your donations are sold at our four stores and turned into cash to benefit Disabled American Veterans. 32 reviews of Disabled American Veterans I disagree with the previous two ratings. Hours may change under current circumstances. <br>				
+			</p>
+										<a class="badge badge-warning" href="/9-guyra-avenue-burleigh-heads-qld-4220.html">9 guyra avenue burleigh heads qld 4220</a>
+											<a class="badge badge-info" href="/acid-rating-scale.html">acid rating scale</a>
+											<a class="badge badge-info" href="/9-gmt-to-my-time.html">9 gmt to my time</a>
+											<a class="badge badge-danger" href="/af-reserve-post-911-gi-bill.html">af reserve post 911 gi bill</a>
+											<a class="badge badge-light" href="/air-force-1-x-g-dragon-stockx.html">air force 1 x g dragon stockx</a>
+											<a class="badge badge-danger" href="/9-gimnazija-bodovi.html">9 gimnazija bodovi</a>
+											<a class="badge badge-danger" href="/a-bill-goes-to-select-committee.html">a bill goes to select committee</a>
+											<a class="badge badge-warning" href="/a-bill-goes-to-the-floor-for-quizlet.html">a bill goes to the floor for quizlet</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you've come to pay a visit to the ideal blog.  Our site gives you hints for seeing the maximum quality video and picture content, search and locate more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, especially Youtube, so we recommend this video for you to see.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-exp1.licdn.com/dms/image/C560BAQFptbZvl5LrNw/company-logo_200_200/0/1601007097659?e=2159024400&amp;v=beta&amp;t=liM-fZvitVMxWMsA3nOK_Y3v81MBGwSsF--XNh0sA1w" data-lightbox="roadtrip" data-title="Dav Disabled American Veterans Linkedin">
+											<img class="card-img v-image ads-img " src="https://media-exp1.licdn.com/dms/image/C560BAQFptbZvl5LrNw/company-logo_200_200/0/1601007097659?e=2159024400&amp;v=beta&amp;t=liM-fZvitVMxWMsA3nOK_Y3v81MBGwSsF--XNh0sA1w" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFUAr8uu-uxoly3CWwJTbupn59Y15U_Or9LA';" alt="Dav Disabled American Veterans Linkedin">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dav Disabled American Veterans Linkedin</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.donatedav.org/assets/images/donate-dav-logo-3.0-white.gif" data-lightbox="roadtrip" data-title="Home">
+											<img class="card-img v-image ads-img " src="https://www.donatedav.org/assets/images/donate-dav-logo-3.0-white.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk7l7c4vr5TKPp7Bn313n9cLyGHBBsrdccdg';" alt="Home">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/64/fa/d8/64fad88a12a42469fd49d8bdbd286b75.jpg" data-lightbox="roadtrip" data-title="Dav Recruitmilitary San Diego Career Fair Veteran Jobs Job Fair Marketing Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/64/fa/d8/64fad88a12a42469fd49d8bdbd286b75.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHMx_yePpJRrB67eBiOklhOOCrXxED4lp9Lg';" alt="Dav Recruitmilitary San Diego Career Fair Veteran Jobs Job Fair Marketing Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dav Recruitmilitary San Diego Career Fair Veteran Jobs Job Fair Marketing Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://visitoceanside.org/wp-content/uploads/2013/01/DAV.jpg" data-lightbox="roadtrip" data-title="D A V Industries Disabled American Veterans Visit Oceanside">
+											<img class="card-img v-image ads-img " src="https://visitoceanside.org/wp-content/uploads/2013/01/DAV.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO0oGPkQj4b61H-JVt9kVx-ujaFW7S0Uhjeg';" alt="D A V Industries Disabled American Veterans Visit Oceanside">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">D A V Industries Disabled American Veterans Visit Oceanside</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.website.thryv.com/c2b284543445425f83add5a40bdb23aa/dms3rep/multi/Trucks.jpg" data-lightbox="roadtrip" data-title="Schedule Free Donation Pickup Veterans Thrift Store Disabled American Veteran D A V Industries Inc San Diego California">
+											<img class="card-img v-image ads-img " src="https://cdn.website.thryv.com/c2b284543445425f83add5a40bdb23aa/dms3rep/multi/Trucks.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0PQGGics_C3SU2k2U068zlaQnnij-UDdlow';" alt="Schedule Free Donation Pickup Veterans Thrift Store Disabled American Veteran D A V Industries Inc San Diego California">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Schedule Free Donation Pickup Veterans Thrift Store Disabled American Veteran D A V Industries Inc San Diego California</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/17/95/4117952eee40fb6dfe3a078009c3f9d5.jpg" data-lightbox="roadtrip" data-title="Pin On Empowering Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/17/95/4117952eee40fb6dfe3a078009c3f9d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT6BhrK_oYk3AjyLIkKCehq8uDzhXXFcktDQ';" alt="Pin On Empowering Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Empowering Veterans</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/564x/64/fa/d8/64fad88a12a42469fd49d8bdbd286b75.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT6BhrK_oYk3AjyLIkKCehq8uDzhXXFcktDQ';" alt="Pin On Empowering Veterans">
+										<div class="card-body">
+						<h3 class="h5"><b>Your membership will help ensure that DAVs future will be vibrant and strong.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Disabled american veterans san diego ca</strong>. 
+								
+																	Apply to Project Coordinator Laborer Training Instructor and more. 
+																	DAV assists Veterans in San Diego including surrounding areas of Spring Valley El Cajon Chula Vista and Oceanside Escondido Poway and many other areas DAVs help is needed. 
+																	Veterans Military Organizations Clubs. 
+																	Honoring Veterans Serving Veterans Humana is proud to serve as DAVs national Medicare Advantage Prescription Drug Plan and Medicare Supplement sponsor. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Schedule Free Donation Pickup. 
+																	DAV membership means more than you might imagine. 
+																	8810 Rio San Diego Dr San Diego CA 92108. 
+																	On behalf of the exceptional leaders and staff of the CA Department of the Disabled American Veterans I welcome you to our great department and encourage you to explore the many things we have to offer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Disabled American Veterans 1534 5th Ave San Rafael CA 94901 Disabled American Veterans 4637 Chabot Dr Pleasanton CA 94588 Disabled American Veterans 8810 Rio San Diego Dr San Diego CA 92108 Disabled American Veterans Hall 6543 Corbin Ave Woodland Hills CA 91367. 
+																	The Disabled American Veterans located in Escondido CA provides support for veterans of the US Armed Forces. 
+																	The Disabled American Veterans located in San Diego CA provides support for veterans of the US Armed Forces. 
+																	Each member strengthens our ability to generate grassroots support for legislative issues that are important to disabled veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Between Qualcomm Way and Rio Bonito Way. 
+																	In San Diego CA. 
+																	Veterans Military Organizations Membership Organizations 858-689-9617 or 1 8586899617 phone number is from San Diego California. 
+																	It is registered to Disabled American Veterans 5305 Miramar Way San Diego CA 92145-2005 USA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In my case I reluctantly contacted DAV at the urging of my retired Warrant Officer neighbor after I. 
+																	Home Veterans Find Your Local Office ANNOUNCEMENT DAV Service Office locations are closed to the public until further notice in an effort to implement social distancing and reduce the transmission risk of COVID-19 Coronavirus. 
+																	Community ServiceNon-Profit in San Diego CA. 
+																	And I dont think that my DAV life membership was a waste of money either. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These services include veteran benefits assistance services for veterans with disabilities and information about medical care insurance and education benefits. 
+																	Free Donation pickup including vehicles running or not to support American Veterans. 
+																	You can reach a service officer online by sending an email at anytime to the office in the state where you. 
+																	Veteran Services connects veterans with several government agencies and nonprofit organizations at the federal California state and Escondido level. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Disabled Veterans Exemption reduces the property tax liability on the principal place of residence of qualified veterans who due to a service-connected injury or disease have been rated 100 disabled or are being compensated at the 100 rate due to unemployability. 
+																	Is this your business. 
+																	DAV Industries provides relief and assistance to Disabled American Veterans or their dependents. 
+																	San Diego CA 92161. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veteran Services connects veterans with several government agencies and nonprofit organizations at the federal California state and San Diego level. 
+																	3350 La Jolla Village Dr. 
+																	We refuse to leave our disabled veterans behind. 
+																	These services include veteran benefits assistance services for veterans with disabilities and information about medical care insurance and education benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Although I certainly do think that the Service Organizations in San Diego are overwhelmed I do think that they are very helpful to me. 
+																	San Diego CA 92145. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1171555859572490" data-lightbox="roadtrip" data-title="Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1171555859572490" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo_oIlF1FIpZgy4FlGLZwcdi4tUaFiDXOYJg';" alt="Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/12/c1/bf12c1251aeb1113cfe423df14f6e7bd.jpg" data-lightbox="roadtrip" data-title="Helping Disabled Veterans Help Just One Disabled American Veteran Hero Military Heroes Hero Wounded Warrior">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/12/c1/bf12c1251aeb1113cfe423df14f6e7bd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWxWWuvnB9TkQieMKBw2UARCR7AL7a3lCCSg';" alt="Helping Disabled Veterans Help Just One Disabled American Veteran Hero Military Heroes Hero Wounded Warrior">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Helping Disabled Veterans Help Just One Disabled American Veteran Hero Military Heroes Hero Wounded Warrior</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/c2/ff/5ec2ff0d4b9feb9000b5c04f77f42b75.jpg" data-lightbox="roadtrip" data-title="We Proudly Welcome Disabled Veterans Scuba Project Veteran Owned Businesses News Vobeacon Disabled Veterans Veteran Veteran Owned Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/c2/ff/5ec2ff0d4b9feb9000b5c04f77f42b75.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9wKlSUzkJpTHqIb73ejReG162-m4i17Wfag';" alt="We Proudly Welcome Disabled Veterans Scuba Project Veteran Owned Businesses News Vobeacon Disabled Veterans Veteran Veteran Owned Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Proudly Welcome Disabled Veterans Scuba Project Veteran Owned Businesses News Vobeacon Disabled Veterans Veteran Veteran Owned Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/08/85/be0885a2f1a669e8b079b16a0b4b321d.jpg" data-lightbox="roadtrip" data-title="Pin On Support Our Troops">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/08/85/be0885a2f1a669e8b079b16a0b4b321d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1y5KunSat6hwRzWuSwXaa1kseiq7MWT-J3A';" alt="Pin On Support Our Troops">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Support Our Troops</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.sandiego.edu/uploads/da96afe868e8b80d984c952046409cc7.png" data-lightbox="roadtrip" data-title="Donate Unwanted Items To Help Veterans University Of San Diego">
+											<img class="card-img v-image ads-img " src="https://www.sandiego.edu/uploads/da96afe868e8b80d984c952046409cc7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWVfWv0gbv8853Q04PbNvoq_wrdrzW896dtg';" alt="Donate Unwanted Items To Help Veterans University Of San Diego">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Donate Unwanted Items To Help Veterans University Of San Diego</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/f1/98/63f19849a42ef8764a3a854c17965f8e.jpg" data-lightbox="roadtrip" data-title="Veterans Career Fair In Fort Hood Texas Veteran Jobs Job Fair Work Experience">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/f1/98/63f19849a42ef8764a3a854c17965f8e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx5uJk3fNOWEX8ZyhjcquiArThLxY8JosgJw';" alt="Veterans Career Fair In Fort Hood Texas Veteran Jobs Job Fair Work Experience">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Career Fair In Fort Hood Texas Veteran Jobs Job Fair Work Experience</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.dav95ca.com/s/cc_images/cache_935305526.png?t=1385626032" data-lightbox="roadtrip" data-title="Disabled American Veterans Tri Cities Chapter 95 Home">
+											<img class="card-img v-image ads-img " src="https://www.dav95ca.com/s/cc_images/cache_935305526.png?t=1385626032" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv84PuYL-jy9VHKRmV5plsh4OnUcIAHV4Wcg';" alt="Disabled American Veterans Tri Cities Chapter 95 Home">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Disabled American Veterans Tri Cities Chapter 95 Home</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/b0/4f/3ab04fcd2d24cd8c4f0992832c91c617.jpg" data-lightbox="roadtrip" data-title="Pin On World War Ii North Africa Mediterranean Italy European Campaign Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/b0/4f/3ab04fcd2d24cd8c4f0992832c91c617.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp9SwmJnCrv08oMWTbvjdc_TTPPtJO3PLNHA';" alt="Pin On World War Ii North Africa Mediterranean Italy European Campaign Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On World War Ii North Africa Mediterranean Italy European Campaign Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://assets.donordrive.com/dav/images/$event511$/logoImage.png" data-lightbox="roadtrip" data-title="Elizabeth Romero Lipscomb Fundraising For Disabled American Veterans">
+											<img class="card-img v-image ads-img " src="https://assets.donordrive.com/dav/images/$event511$/logoImage.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8bFahhbhISuviZcdPH4_0jzZzjVFeSaFSdQ';" alt="Elizabeth Romero Lipscomb Fundraising For Disabled American Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Elizabeth Romero Lipscomb Fundraising For Disabled American Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://nebula.wsimg.com/63f51967f52692628088844fca29bf92?AccessKeyId=78F0EB3ACB640A649A8E&amp;disposition=0&amp;alloworigin=1" data-lightbox="roadtrip" data-title="Veterans Military Id Card">
+											<img class="card-img v-image ads-img " src="http://nebula.wsimg.com/63f51967f52692628088844fca29bf92?AccessKeyId=78F0EB3ACB640A649A8E&amp;disposition=0&amp;alloworigin=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIdKWqYraJD7d9EBjG-mctfPymNPjaxyTeLw';" alt="Veterans Military Id Card">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Military Id Card</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/0f/67/750f67c7f8dd069110a1db2315d0773f.jpg" data-lightbox="roadtrip" data-title="Veteran Owned Business Directory Military Veterans Businesses Sdvosb Vob Dvbe Veteran Owned Business Military Veterans Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/0f/67/750f67c7f8dd069110a1db2315d0773f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZQA5KQ07oAYlAZYGYUc-JXh7EFZaeEvn4fw';" alt="Veteran Owned Business Directory Military Veterans Businesses Sdvosb Vob Dvbe Veteran Owned Business Military Veterans Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Owned Business Directory Military Veterans Businesses Sdvosb Vob Dvbe Veteran Owned Business Military Veterans Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1214310432047065" data-lightbox="roadtrip" data-title="Donate Dav Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1214310432047065" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXYVUtvImLZBul9mfG-_1aIRgjdyY-wRLNcg';" alt="Donate Dav Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Donate Dav Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://davfl70.org/Service%20Officer&#039;s%20Guide/DAV4Life27b.jpg" data-lightbox="roadtrip" data-title="Disabled American Veterans Dav Service Officer S Guide List Of Veterans Affairs Regional Benefits Offices">
+											<img class="card-img v-image ads-img " src="http://davfl70.org/Service%20Officer&#039;s%20Guide/DAV4Life27b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKWhVmhnLKSqDHWCfHSSt40ao-bAiuDsE-iQ';" alt="Disabled American Veterans Dav Service Officer S Guide List Of Veterans Affairs Regional Benefits Offices">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Disabled American Veterans Dav Service Officer S Guide List Of Veterans Affairs Regional Benefits Offices</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-was-the-gi-bill-and-how-did-it-help-veterans.html">What Was The Gi Bill And How Did It Help Veterans</a></li>
+													<li class="list-group-item"><a href="/what-was-the-role-of-the-gi-bill-quizlet.html">What Was The Role Of The Gi Bill Quizlet</a></li>
+													<li class="list-group-item"><a href="/when-does-gi-bill-money-come-in.html">When Does Gi Bill Money Come In</a></li>
+													<li class="list-group-item"><a href="/where-can-i-get-va-forms.html">Where Can I Get Va Forms</a></li>
+													<li class="list-group-item"><a href="/who-can-transfer-post-911-gi-bill.html">Who Can Transfer Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/when-does-the-montgomery-gi-bill-pay.html">When Does The Montgomery Gi Bill Pay</a></li>
+													<li class="list-group-item"><a href="/what-were-the-benefits-of-the-gi-bill-of-rights.html">What Were The Benefits Of The Gi Bill Of Rights</a></li>
+													<li class="list-group-item"><a href="/what-were-the-gi-bill-of-rights.html">What Were The Gi Bill Of Rights</a></li>
+													<li class="list-group-item"><a href="/where-do-i-send-va-form-21-4138.html">Where Do I Send Va Form 21 4138</a></li>
+													<li class="list-group-item"><a href="/when-will-i-receive-book-stipend-from-post-9-11-gi-bill.html">When Will I Receive Book Stipend From Post 9 11 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/when-do-you-get-post-911-gi-bill-bah.html">When Do You Get Post 911 Gi Bill Bah</a></li>
+													<li class="list-group-item"><a href="/when-does-the-brexit-bill-go-to-the-lords.html">When Does The Brexit Bill Go To The Lords</a></li>
+													<li class="list-group-item"><a href="/when-was-post-911-gi-bill-passed.html">When Was Post 911 Gi Bill Passed</a></li>
+													<li class="list-group-item"><a href="/when-does-a-bill-go-to-conference-committee.html">When Does A Bill Go To Conference Committee</a></li>
+													<li class="list-group-item"><a href="/what-va-rating-is-sleep-apnea.html">What Va Rating Is Sleep Apnea</a></li>
+													<li class="list-group-item"><a href="/when-do-you-get-paid-for-post-911-gi-bill.html">When Do You Get Paid For Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/when-will-the-new-bill-go-to-senate.html">When Will The New Bill Go To Senate</a></li>
+													<li class="list-group-item"><a href="/when-does-the-bill-go-to-the-upper-house.html">When Does The Bill Go To The Upper House</a></li>
+													<li class="list-group-item"><a href="/what-va-percentage-for-sleep-apnea.html">What Va Percentage For Sleep Apnea</a></li>
+													<li class="list-group-item"><a href="/when-can-you-transfer-gi-bill-to-spouse.html">When Can You Transfer Gi Bill To Spouse</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

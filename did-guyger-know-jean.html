@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Did Guyger Know Jean - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Did Guyger Know Jean",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/236x/32/c7/9b/32c79baf01a9623d37d757ccaf29c4cb.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=did+guyger+know+jean",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Did Guyger Know Jean</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Im the same Guyger wrote back about the dog just days before she fatally shot 26-year-old Botham Jean in his Dallas apartment on Sept. 6 2018 -- Botham Jean an accountant at the international auditing firm PriceWaterhouseCoopers is in his apartment eating ice cream when Guyger who has just capped off a 13 12-hour shift as a Dallas police officer by helping a SWAT team arrest three suspected robbers enters through his unlocked door and fatally shoots him in the chest after mistaking him for a burglar. Guyger fatally shot Botham Shem Jean 26 in his apartment then claimed she mistook his apartment for her ownwhich was located one floor below. <br>				
+			</p>
+										<a class="badge badge-primary" href="/what-percent-of-va-disability-claims-are-denied.html">what percent of va disability claims are denied</a>
+											<a class="badge badge-danger" href="/what-is-ups-va-rating.html">what is ups va rating</a>
+											<a class="badge badge-dark" href="/what-percentage-of-va-disability-is-ptsd.html">what percentage of va disability is ptsd</a>
+											<a class="badge badge-success" href="/what-qualifies-as-a-dependent-for-va-disability.html">what qualifies as a dependent for va disability</a>
+											<a class="badge badge-dark" href="/what-is-va-disability-rating-for-diabetes.html">what is va disability rating for diabetes</a>
+											<a class="badge badge-info" href="/what-percent-of-war-veterans-have-ptsd.html">what percent of war veterans have ptsd</a>
+											<a class="badge badge-success" href="/what-percentage-of-vietnam-vets-have-ptsd.html">what percentage of vietnam vets have ptsd</a>
+											<a class="badge badge-danger" href="/what-va-disability-rating-for-chronic-osteoarthritis.html">what va disability rating for chronic osteoarthritis</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you've come to pay a visit to the ideal blog.  Our website gives you suggestions for viewing the highest quality video and picture content, hunt and find more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, especially Youtube, therefore we recommend this movie that you view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/fb/06/dffb0606e9cf23fe8d8e988b8b8b693f.png" data-lightbox="roadtrip" data-title="Pin On Omg Wtf">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/fb/06/dffb0606e9cf23fe8d8e988b8b8b693f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwQQpa_cp4F2vXJmOiW-Nn-Y4ZwiaCjJRcpg';" alt="Pin On Omg Wtf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Omg Wtf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/06/f0/4506f08970f1c7fae7a79b502b4d33c9.jpg" data-lightbox="roadtrip" data-title="Amber Guyger 5 Fast Facts You Need To Nbsp Know Fast Facts Amber Dallas Police Officers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/06/f0/4506f08970f1c7fae7a79b502b4d33c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1d0XSXMvWDhRj8X3kiWLKVvOBHaa-zMl_3w';" alt="Amber Guyger 5 Fast Facts You Need To Nbsp Know Fast Facts Amber Dallas Police Officers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Amber Guyger 5 Fast Facts You Need To Nbsp Know Fast Facts Amber Dallas Police Officers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/07/eb/c4/07ebc494346a9838d5a76ff9bdf1b659.jpg" data-lightbox="roadtrip" data-title="Brandt Jean And Amber Guyger We Have Seen This Before Innovation Challenge Legal Services Class Action Lawsuits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/07/eb/c4/07ebc494346a9838d5a76ff9bdf1b659.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJAjW4l2IL5aeqzMfnoZ2IKtq-7sajUowmkA';" alt="Brandt Jean And Amber Guyger We Have Seen This Before Innovation Challenge Legal Services Class Action Lawsuits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Brandt Jean And Amber Guyger We Have Seen This Before Innovation Challenge Legal Services Class Action Lawsuits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/51/5b/fb/515bfb3aa61bd5dc9c137fc12fbb2817.jpg" data-lightbox="roadtrip" data-title="Pin On Pamalafay Fizer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/51/5b/fb/515bfb3aa61bd5dc9c137fc12fbb2817.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGA8i_VyAIaa_6oT5iJlyactaxeN97MNnHwg';" alt="Pin On Pamalafay Fizer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Pamalafay Fizer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/04/cb/3e/04cb3ea90255404466ad2979ca507932.jpg" data-lightbox="roadtrip" data-title="Amber Guyger Testifies About The Night She Killed Botham Jean In His Home I Was Scared Innocent Person Dallas Police Dallas Police Officers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/04/cb/3e/04cb3ea90255404466ad2979ca507932.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ5SWp55uQrI3cpudGQDg5GuwamqzvMw4gDQ';" alt="Amber Guyger Testifies About The Night She Killed Botham Jean In His Home I Was Scared Innocent Person Dallas Police Dallas Police Officers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Amber Guyger Testifies About The Night She Killed Botham Jean In His Home I Was Scared Innocent Person Dallas Police Dallas Police Officers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/0e/22/a6/0e22a67f540490e4a5d092e0f28bc39b.jpg" data-lightbox="roadtrip" data-title="What We Know And What We Don T A Week After Dallas Officer Amber Guyger Killed Botham Jean Dallas Police Officers Dallas Police Black Lives">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/0e/22/a6/0e22a67f540490e4a5d092e0f28bc39b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTErpsuHCwFacITujf_QYrdrcEnpVfkEpDuiw';" alt="What We Know And What We Don T A Week After Dallas Officer Amber Guyger Killed Botham Jean Dallas Police Officers Dallas Police Black Lives">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What We Know And What We Don T A Week After Dallas Officer Amber Guyger Killed Botham Jean Dallas Police Officers Dallas Police Black Lives</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/e4/71/fc/e471fcbf1e00c62fa3166ea5b8e14cdb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTErpsuHCwFacITujf_QYrdrcEnpVfkEpDuiw';" alt="What We Know And What We Don T A Week After Dallas Officer Amber Guyger Killed Botham Jean Dallas Police Officers Dallas Police Black Lives">
+										<div class="card-body">
+						<h3 class="h5"><b>Amber Guyger is accused of killing 26-year-old Botham Jean last Thursday.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Did guyger know jean</strong>. 
+								
+																	She testified during direct examination that she shot Jean while believing he was a threat to her. 
+																	Guyger said that she went to Jeans apartment which is located one floor above hers believing that it was her residence. 
+																	A source close to Guyger in the Dallas Police Department said Guyger and Jean had never met. 
+																	Officer Amber Guyger 30 said she. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Her defense is trying to show that what she did was a reasonable mistake under the law. 
+																	Amber Guyger 31 the former Dallas police officer convicted Tuesday of murdering an unarmed man in his own homelast year was sentenced Wednesday to 10 years behind bars. 
+																	Flowers were placed at the front door apartment of Botham Jean on Sept. 
+																	The death of Botham Jean has sparked outrage and questions over what happened the night the 26-year-old was killed in his apartment by a Dallas police officer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Guyger a former Dallas police officer told 9-1-1 dispatchers and investigators that she mistakingly entered Jeans apartment thinking it was her own after ending a lengthy work shift. 
+																	Heres what we know about Botham Jeans death and Amber Guyger the officer charged with manslaughter in the shooting. 
+																	The man killed by a Dallas police officer at. 
+																	Rumors have been swirling that Guyger was dating Jean. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	One minute later she texted again. 
+																	Guyger testified at trial that she thought she was entering her own apartment when she shot Jean and claimed he was coming. 
+																	The former Dallas police officer fatally shot the unarmed black man in his own apartment. 
+																	Noise complaints reportedly preceded the incident in which Dallas cop Amber Guyger 30 shot and killed a young Black professional male in his own apartment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Both WFAA-TV and The Dallas Morning News reported that sources whom they did not name said that Botham Jean and Amber Guyger did not know each other. 
+																	The story of Jean and Guyger was revisited in Investigation Discoverys The Ballad of Botham Jean in season two of Impact Of Murder which premiered on September 10 from 9-11 pm. 
+																	Amber Guyger 30 who has been a police officer for 4 years entered Jeans apartment first claiming she thought it was her own home before she started shooting. 
+																	Also Guyger was not one of the people with Jean in a picture that has. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Amber Guyger Sentenced To 10 Years For Murder Of Botham Jean. 
+																	She said that the door was ajar and the lights were off and she believed that Jean was a burglar. 
+																	Botham Jeans family says he did not know or have a relationship with Officer Amber Guyger The family of a black man who was fatally shot inside his own apartment by an off-duty white cop in. 
+																	Even after she was convicted last year of murdering Botham Shem Jean after mistaking his apartment for hers and thinking he was a burglar the nation remains divided over whether former Dallas police officer Amber Guyger was guilty of intentionally killing a Black man. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	She told police she confused his apartment for hers and opened fire thinking. 
+																	YouTube Brandt Jean Botham Jeans brother hugs Amber Guyger in court. 
+																	Jean was Guygers upstairs neighbor at the South Side Flats apartments when she entered his home and fatally shot him. 
+																	Guyger killed Jean after accidentally entering his apartment while believing it was hers and mistaking him for an intruder said the defense. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Now the Texas Ranger are helping this white woman craft a story so convoluted that soon folks will start to question why victim Botham Jean was even inside his own damn home in the first place. 
+																	Now she has claimed she gave Jean. 
+																	But the two did not know each other a law enforcement official with knowledge of the investigation told The Dallas Morning News on Sunday. 
+																	Contrary to rumors swirling on social media Jean did not know Guyger a source with knowledge of the investigation told WFAA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Guyger moved into the South Side Flats complex about a month before the shooting he said. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/03/42/b2/0342b2bf40e23b807b2cc473996acf20.jpg" data-lightbox="roadtrip" data-title="Funeral Held For Botham Shem Jean Who Was Killed By Dallas Police Officer Amber Guyger When She Entered Wrong Apar Dallas Police Dallas Police Officers Police">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/03/42/b2/0342b2bf40e23b807b2cc473996acf20.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOwxmk4MK4m5lM-7wHJ1CYkN3EW9teoD4iXA';" alt="Funeral Held For Botham Shem Jean Who Was Killed By Dallas Police Officer Amber Guyger When She Entered Wrong Apar Dallas Police Dallas Police Officers Police">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Funeral Held For Botham Shem Jean Who Was Killed By Dallas Police Officer Amber Guyger When She Entered Wrong Apar Dallas Police Dallas Police Officers Police</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/b1/95/b6b1954d99a5e2d8964d0e6df7aebd83.jpg" data-lightbox="roadtrip" data-title="Pin On Human Interest Stories">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/b1/95/b6b1954d99a5e2d8964d0e6df7aebd83.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg_wNB_W78hfab8YaOHd2Z1kJcbepGlzk4bw';" alt="Pin On Human Interest Stories">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Human Interest Stories</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/83/be/7f83bed50489951b135d91a2b52a27f0.jpg" data-lightbox="roadtrip" data-title="Pin On Current News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/83/be/7f83bed50489951b135d91a2b52a27f0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgAkEfLTR69-r_THRbHWV2SwnsKRjmLXWHKA';" alt="Pin On Current News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Current News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/71/fc/e471fcbf1e00c62fa3166ea5b8e14cdb.jpg" data-lightbox="roadtrip" data-title="Pin On Moewvo Fuibyi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/71/fc/e471fcbf1e00c62fa3166ea5b8e14cdb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiIj9vkQqlt9P7V2QfZco9tyn4ywP7bNX4gA';" alt="Pin On Moewvo Fuibyi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Moewvo Fuibyi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/2e/09/f02e09b679cc9686b50a044d53a86991.jpg" data-lightbox="roadtrip" data-title="Ex Dallas Police Officer Sentenced To 10 Years For Murdering Her Neighbor Dallas Police Dallas Police Officers Dallas Police Department">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/2e/09/f02e09b679cc9686b50a044d53a86991.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwmfSRImJzzvv6Va2Os6AnkowZUckROUBkgQ';" alt="Ex Dallas Police Officer Sentenced To 10 Years For Murdering Her Neighbor Dallas Police Dallas Police Officers Dallas Police Department">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ex Dallas Police Officer Sentenced To 10 Years For Murdering Her Neighbor Dallas Police Dallas Police Officers Dallas Police Department</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/e4/5b/bee45bf4c400e50b67c4ffe262ed5c27.png" data-lightbox="roadtrip" data-title="Pin On Trending Now">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/e4/5b/bee45bf4c400e50b67c4ffe262ed5c27.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAwkh7CuzIIhuS9zBUtIvVy-SQrmpgk1hdmw';" alt="Pin On Trending Now">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Trending Now</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/32/c7/9b/32c79baf01a9623d37d757ccaf29c4cb.jpg" data-lightbox="roadtrip" data-title="Newstoter Com Black News And Entertainment Portal Black Lives Matter Black Lives News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/32/c7/9b/32c79baf01a9623d37d757ccaf29c4cb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHMcIk5YawbKPXmw1THo1g2WcVlHjf3qRGkg';" alt="Newstoter Com Black News And Entertainment Portal Black Lives Matter Black Lives News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Newstoter Com Black News And Entertainment Portal Black Lives Matter Black Lives News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/24/28/2b24283cf10a37823457fa04677838fc.png" data-lightbox="roadtrip" data-title="Pin On Amazing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/24/28/2b24283cf10a37823457fa04677838fc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW1VY1CvrBpgZLnNJ9ko2RpM5ZrPQr7R4lqg';" alt="Pin On Amazing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Amazing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/06/52/22/0652225ca030fe461f3bb1feea8d5f68.jpg" data-lightbox="roadtrip" data-title="Rant Amber Guyger Botham Jean Story My Book Answers Your Gematria Q S Youtube Dallas Police Dallas Police Officers Police Association">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/06/52/22/0652225ca030fe461f3bb1feea8d5f68.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThdVLLy1-gD6r-EBCZMwm5gMjXO-sYQZ6ecA';" alt="Rant Amber Guyger Botham Jean Story My Book Answers Your Gematria Q S Youtube Dallas Police Dallas Police Officers Police Association">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rant Amber Guyger Botham Jean Story My Book Answers Your Gematria Q S Youtube Dallas Police Dallas Police Officers Police Association</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/8a/c0/ec8ac0e6631ef72c9dfabd98f533db95.jpg" data-lightbox="roadtrip" data-title="Pin On Informing The Ignorant Inside The Mind Hollow Heads">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/8a/c0/ec8ac0e6631ef72c9dfabd98f533db95.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaSjASBsmfK-9Q_P0jUbpwbakw3StyZWQ96w';" alt="Pin On Informing The Ignorant Inside The Mind Hollow Heads">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Informing The Ignorant Inside The Mind Hollow Heads</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/77/74/bc7774402f780975ee7345dbac0d083f.jpg" data-lightbox="roadtrip" data-title="10 Year Sentence For Amber Guyger Triggers Chants Of Protest And A Hug Of Forgiveness Restorative Justice Victims Dallas Police">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/77/74/bc7774402f780975ee7345dbac0d083f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Sx9hDHrONa6qzw9IAjkp6WTu2vswTkTjFw';" alt="10 Year Sentence For Amber Guyger Triggers Chants Of Protest And A Hug Of Forgiveness Restorative Justice Victims Dallas Police">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Year Sentence For Amber Guyger Triggers Chants Of Protest And A Hug Of Forgiveness Restorative Justice Victims Dallas Police</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/1f/68/001f68ae124894282720a4b1d25f2bd6.png" data-lightbox="roadtrip" data-title="Pin On People">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/1f/68/001f68ae124894282720a4b1d25f2bd6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyuANw-9JiO6_JriuANWYO33sm9WuTkYYAVQ';" alt="Pin On People">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On People</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/fe/11/9dfe1191593ab0c08e1dc08753a3ab31.jpg" data-lightbox="roadtrip" data-title="Pin On African Origins">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/fe/11/9dfe1191593ab0c08e1dc08753a3ab31.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Fs9oxpdpwXjYqiZ9Msosw6RSfOY2KKBBCw';" alt="Pin On African Origins">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On African Origins</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/gm-military-discount-for-veterans.html">Gm Military Discount For Veterans</a></li>
+													<li class="list-group-item"><a href="/gic-housing-finance-vacancies.html">Gic Housing Finance Vacancies</a></li>
+													<li class="list-group-item"><a href="/go-benefits-honeywell.html">Go Benefits Honeywell</a></li>
+													<li class="list-group-item"><a href="/go-bills-fight-song.html">Go Bills Fight Song</a></li>
+													<li class="list-group-item"><a href="/go-bills-poster.html">Go Bills Poster</a></li>
+													<li class="list-group-item"><a href="/gis-poster-crossword.html">Gis Poster Crossword</a></li>
+													<li class="list-group-item"><a href="/gic-housing-virar-west.html">Gic Housing Virar West</a></li>
+													<li class="list-group-item"><a href="/go-bill-lee.html">Go Bill Lee</a></li>
+													<li class="list-group-item"><a href="/go-20-with-bill-nye-nike.html">Go 20 With Bill Nye Nike</a></li>
+													<li class="list-group-item"><a href="/gifts-of-college.html">Gifts Of College</a></li>
+													<li class="list-group-item"><a href="/go-bills-images.html">Go Bills Images</a></li>
+													<li class="list-group-item"><a href="/gm-military-discount-qualifications.html">Gm Military Discount Qualifications</a></li>
+													<li class="list-group-item"><a href="/go-bills-gojek.html">Go Bills Gojek</a></li>
+													<li class="list-group-item"><a href="/go-bills-marv-levy-song.html">Go Bills Marv Levy Song</a></li>
+													<li class="list-group-item"><a href="/gi-vs-kimono.html">Gi Vs Kimono</a></li>
+													<li class="list-group-item"><a href="/go-bills-emoji.html">Go Bills Emoji</a></li>
+													<li class="list-group-item"><a href="/gifts-to-college-students.html">Gifts To College Students</a></li>
+													<li class="list-group-item"><a href="/gm-military-discountcom.html">Gm Military Discountcom</a></li>
+													<li class="list-group-item"><a href="/gi-vs-glycemic-load.html">Gi Vs Glycemic Load</a></li>
+													<li class="list-group-item"><a href="/gil-bill.html">Gil Bill</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

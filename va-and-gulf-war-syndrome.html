@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va And Gulf War Syndrome - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va And Gulf War Syndrome",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/8a/65/9a/8a659a0f842b92dd92caf1fe3bdb63a0.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+and+gulf+war+syndrome",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va And Gulf War Syndrome</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Gulf War Syndrome is believed to be caused by exposure to biological and environmental hazards. You may qualify for VA disability compensation if you have an illness linked to Gulf War serviceoften called Gulf War Syndromein Southwest Asia including Iraq Kuwait Saudi Arabia. VA offers eligible Veterans a free Gulf War Registry health exam to find possible long-term health problems related to Gulf War service. <br>				
+			</p>
+										<a class="badge badge-primary" href="/va-disability-calculator-multiple-disabilities.html">va disability calculator multiple disabilities</a>
+											<a class="badge badge-secondary" href="/va-dept-of-education-contact-number.html">va dept of education contact number</a>
+											<a class="badge badge-warning" href="/va-disability-benefits-table.html">va disability benefits table</a>
+											<a class="badge badge-primary" href="/va-covid-infection-rate.html">va covid infection rate</a>
+											<a class="badge badge-light" href="/va-disability-calculator-ptsd.html">va disability calculator ptsd</a>
+											<a class="badge badge-light" href="/va-dept-of-education-sol-released-tests.html">va dept of education sol released tests</a>
+											<a class="badge badge-secondary" href="/va-department-of-education-license-renewal.html">va department of education license renewal</a>
+											<a class="badge badge-dark" href="/va-compensation-waiver-form.html">va compensation waiver form</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you've come to visit the ideal blog.  Our website gives you suggestions for seeing the maximum quality video and image content, search and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this video that you see.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/d6/7a/61d67abf87a678c2280d64cd814ff07f.jpg" data-lightbox="roadtrip" data-title="Va Accused Of Covering Up The Causes Of Gulf War Syndrome Female Marines Women In Combat Female Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/d6/7a/61d67abf87a678c2280d64cd814ff07f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSofDjTDP647xNHoYR7usRRmD3-uqUgedDNJA';" alt="Va Accused Of Covering Up The Causes Of Gulf War Syndrome Female Marines Women In Combat Female Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Accused Of Covering Up The Causes Of Gulf War Syndrome Female Marines Women In Combat Female Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/f8/64/84f864fa55debb2a9b9f1e1a97b6530e.jpg" data-lightbox="roadtrip" data-title="Va Steps Up Efforts On Gulf War Syndrome War Iraq Veterans Us Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/f8/64/84f864fa55debb2a9b9f1e1a97b6530e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi3yUKVRklojqbIp-4zrtmX5KnonFGZNvLXw';" alt="Va Steps Up Efforts On Gulf War Syndrome War Iraq Veterans Us Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Steps Up Efforts On Gulf War Syndrome War Iraq Veterans Us Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/80/e3/6880e32583893cdec3fce166cd4495e5.png" data-lightbox="roadtrip" data-title="Getting Va Disability Benefits For Gulf War Syndrome Va Disability Va Disability Benefits Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/80/e3/6880e32583893cdec3fce166cd4495e5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxYDskY1lzynkzHGRhEbTwfcq0vSEyVxYpkg';" alt="Getting Va Disability Benefits For Gulf War Syndrome Va Disability Va Disability Benefits Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Getting Va Disability Benefits For Gulf War Syndrome Va Disability Va Disability Benefits Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/4e/84/7f4e84ae7e55050a610df609d6f98264.jpg" data-lightbox="roadtrip" data-title="How Real Is Gulf War Syndrome War Veterans War History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/4e/84/7f4e84ae7e55050a610df609d6f98264.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu3f_rVKw1rDWl7J4It69Wj-2sp5uwjQczrg';" alt="How Real Is Gulf War Syndrome War Veterans War History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Real Is Gulf War Syndrome War Veterans War History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/c0/eb/b0c0eb27cdde7434ffe5a8c6c72203d8.png" data-lightbox="roadtrip" data-title="Red Beans And Rice In The Instant Pot Recipe Red Beans Instant Pot Recipes Red Bean And Rice Recipe">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/c0/eb/b0c0eb27cdde7434ffe5a8c6c72203d8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH3SaX1wNmXp3BKl_asaymd800EzA905veTg';" alt="Red Beans And Rice In The Instant Pot Recipe Red Beans Instant Pot Recipes Red Bean And Rice Recipe">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Red Beans And Rice In The Instant Pot Recipe Red Beans Instant Pot Recipes Red Bean And Rice Recipe</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/06/45/370645d9db8c98b87ab32f7bf37772e7.jpg" data-lightbox="roadtrip" data-title="Coffman Va Gulf War Illness Treatment Embarrassing Coffman Va Gulf War Illness Treatment Embarrassing The American Legion March 14 2013 3 240 178">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/06/45/370645d9db8c98b87ab32f7bf37772e7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSdi8dB75u1paHkCR1EbUyimbC_T4kpuROdg';" alt="Coffman Va Gulf War Illness Treatment Embarrassing Coffman Va Gulf War Illness Treatment Embarrassing The American Legion March 14 2013 3 240 178">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coffman Va Gulf War Illness Treatment Embarrassing Coffman Va Gulf War Illness Treatment Embarrassing The American Legion March 14 2013 3 240 178</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/00/1e/3c/001e3c989ec0ab81e8c0b6b8b530e1bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSdi8dB75u1paHkCR1EbUyimbC_T4kpuROdg';" alt="Coffman Va Gulf War Illness Treatment Embarrassing Coffman Va Gulf War Illness Treatment Embarrassing The American Legion March 14 2013 3 240 178">
+										<div class="card-body">
+						<h3 class="h5"><b>Medically unexplained illnesses popularly called Gulf War Syndrome.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va and gulf war syndrome</strong>. 
+								
+																	Gulf War Syndrome is not an actual condition just a catch-all term for various symptoms. 
+																	Getting Veterans VA Disability for Gulf War Syndrome Since 1990 Gulf War veterans have demonstrated a higher-than-average rate of developing certain symptoms not explained by any specific medical condition often referred to as Gulf War Syndrome These symptoms include but are not limited to the following. 
+																	Military veterans press and government employees of the first Gulf War as early as August 1990. 
+																	A prominent condition affecting Gulf War Veterans is a cluster of medically unexplained chronic symptoms that can include fatigue headaches joint pain indigestion insomnia dizziness. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VASRD does not give a VASRD Code or Military Disability Rating for Gulf War Syndrome. 
+																	VA also offers health care disability compensation and other benefits to eligible Veterans. 
+																	For Gulf War Veterans these presumptive diseases include. 
+																	Gulf War syndrome GWS is the name given to a variety of psychological and physical symptoms including increases in the rate of immune system disorders and birth defects reported by veterans of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Instead the individual symptoms that are classified as Gulf War Syndrome are rated separately. 
+																	A wide range of acute and chronic symptoms have been linked to it including fatigue muscle pain cognitive problems insomnia rashes and diarrhea. 
+																	Their dependents and survivors may also be eligible for benefits. 
+																	A prominent condition affecting Gulf War Veterans is a cluster of medically unexplained chronic symptoms that can include fatigue headaches joint pain indigestion insomnia dizziness respiratory disorders and memory problems. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To get the presumption of service connection for Gulf War syndrome a veteran must prove that he has a qualifying chronic disability. 
+																	British forces veterans suffering Gulf War Syndrome may have given it to their children. 
+																	Gulf War Syndrome is a term used to classify a group of seemingly unrelated symptoms that many veterans experienced after serving in the Gulf War. 
+																	This means that the VA assumes certain disabilities were caused by military service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	New medical research has revealed troops who served in Iraq are more likely to have damage to DNA that could. 
+																	Gulf War Syndrome GWS is also known as Desert Storm Diseases or simply Gulf War Illness This condition includes symptoms that have been reported by US. 
+																	Gulf War Veterans Illnesses Certain illnesses and diseases are presumed by VA to be related to your military service in designated areas of Southwest Asia and may entitle you to VA disability compensation benefits. 
+																	Veterans discharged under conditions other than dishonorable who served in the Southwest Asia theater of military operations which includes the areas specified by regulation but not Afghanistan may be entitled to disability compensation for certain undiagnosed illnesses certain diagnosable chronic disability patterns and certain presumptive diseases as described below even though these disorders did not become manifest during qualifying service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The good news is that the VA recognizes Gulf War Syndrome as a presumptive service disability. 
+																	The tribunal also stated that Gulf War Syndrome was a useful umbrella term to cover accepted conditions which are causally linked to the 19901991 Gulf Conflict. 
+																	A Written Statement was published. 
+																	From Wikipedia the free encyclopedia Gulf War syndrome or Gulf War illness is a chronic and multi-symptomatic disorder affecting returning military veterans of the 19901991 Persian Gulf War. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	April 17 2018 Gulf War Syndrome is the name for the multi-symptom undiagnosed illness that many Gulf War Era veterans Persian Gulf War Operation Enduring Freedom and Operation Iraqi Freedom suffer from. 
+																	Veterans from every country that made up the Coalition forces have been affected. 
+																	Nicholas Simpson Attorney Updated. 
+																	Veterans who served in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Keep in mind that the VA recognizes Gulf War Syndrome as Medically Unexplained Illnesses and symptoms must be chronic existing for six months or more. 
+																	VA refers to these illnesses as chronic multisymptom illness and undiagnosed illnesses. 
+																	Sun 29 Jul 2001 2111 EDT 471 The illness known as Gulf war syndrome looks likely to have been caused by an illegal vaccine booster given by the Ministry of Defence to protect soldiers against. 
+																	If you are a veteran experiencing Gulf War Syndrome symptoms you may be experiencing a combination of two or more of the symptoms listed below. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Medically unexplained illnesses also commonly referred to as Gulf War illness or Chronic Multi-symptom illness are a significant concern for some Veterans who served during the Gulf War. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/bf/ee/08bfee5ee82902fda59f351639e71516.jpg" data-lightbox="roadtrip" data-title="Gulf War Syndrome Cells May Have Answers Military Videos Falklands War Us Special Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/bf/ee/08bfee5ee82902fda59f351639e71516.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3_hvewACJoGZkATWYl4TO4fYvdsLSw4j1xw';" alt="Gulf War Syndrome Cells May Have Answers Military Videos Falklands War Us Special Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gulf War Syndrome Cells May Have Answers Military Videos Falklands War Us Special Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d1/2f/8d/d12f8d8adfa5b23e8ef1224263d80ec8.jpg" data-lightbox="roadtrip" data-title="Gulf War Syndrome Other Illnesses Among Veterans May Be Due To Toxic Environments Huffpost War War Veterans Afghanistan War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d1/2f/8d/d12f8d8adfa5b23e8ef1224263d80ec8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFRG8aa5xE3verG_ozXHwYpErCg5LetXQZbA';" alt="Gulf War Syndrome Other Illnesses Among Veterans May Be Due To Toxic Environments Huffpost War War Veterans Afghanistan War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gulf War Syndrome Other Illnesses Among Veterans May Be Due To Toxic Environments Huffpost War War Veterans Afghanistan War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/1e/3c/001e3c989ec0ab81e8c0b6b8b530e1bc.jpg" data-lightbox="roadtrip" data-title="Va Rejects Link Between Gulf War Service And Cancers War Vet War War Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/1e/3c/001e3c989ec0ab81e8c0b6b8b530e1bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr1_D-bNI6zJ03_WX9SwnyQkvX2QW113Ty7w';" alt="Va Rejects Link Between Gulf War Service And Cancers War Vet War War Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Rejects Link Between Gulf War Service And Cancers War Vet War War Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fe/17/10/fe1710ac8fd241dd032486bdd6225f30.jpg" data-lightbox="roadtrip" data-title="Gulf War Illness Not In Veterans Heads But In Their Mitochondria Soldier Images Mitochondria War Vet">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fe/17/10/fe1710ac8fd241dd032486bdd6225f30.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHbt6uH4R0ip5OiV8pcvFYtQDEXolja3Eg5Q';" alt="Gulf War Illness Not In Veterans Heads But In Their Mitochondria Soldier Images Mitochondria War Vet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gulf War Illness Not In Veterans Heads But In Their Mitochondria Soldier Images Mitochondria War Vet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a2/be/57/a2be5723bf324164cf929ad239e6e673.jpg" data-lightbox="roadtrip" data-title="Pin By Maryam Ali On Army American Soldiers Military Pictures Army Basic Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a2/be/57/a2be5723bf324164cf929ad239e6e673.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV3UZQUW9tIy58w4qsohFNHEIUsdT3J_fCDg';" alt="Pin By Maryam Ali On Army American Soldiers Military Pictures Army Basic Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Maryam Ali On Army American Soldiers Military Pictures Army Basic Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/4a/09/70/4a0970d04d67b1bca2d5f558d52ab7c1.jpg" data-lightbox="roadtrip" data-title="Pin By Qpatriot4life On Gulf War Illness Syndrome War Veterans Military Action Figures Military Medals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/4a/09/70/4a0970d04d67b1bca2d5f558d52ab7c1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZT20JzQ-uZGg5pdjXhvYuUn8f8FBf9hPY1Q';" alt="Pin By Qpatriot4life On Gulf War Illness Syndrome War Veterans Military Action Figures Military Medals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Qpatriot4life On Gulf War Illness Syndrome War Veterans Military Action Figures Military Medals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/04/65/47046593017102103042a02414fcd9d5.jpg" data-lightbox="roadtrip" data-title="Gulf War Syndrome War Syndrome Iraq War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/04/65/47046593017102103042a02414fcd9d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsW7R9rB8NL2TvXbz5w6fiKoiW154pmP6JFA';" alt="Gulf War Syndrome War Syndrome Iraq War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gulf War Syndrome War Syndrome Iraq War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/30/32/37303256e652e8f7ba3dd791f3dcca67.jpg" data-lightbox="roadtrip" data-title="Pin On Patriotic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/30/32/37303256e652e8f7ba3dd791f3dcca67.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPjgPZHJc9z13jbfNy7WWTK61k7iJajMKgpA';" alt="Pin On Patriotic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Patriotic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5a/96/70/5a967044bfcf7b56ad885bbd47d52fb8.jpg" data-lightbox="roadtrip" data-title="The Gulf War Ground Assault 20 Years Later Vantage Point History 20th Century Military Heroes Modern War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5a/96/70/5a967044bfcf7b56ad885bbd47d52fb8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsekeRzlJgk4_oUn2kjCyMpunsdic6V2W1Gg';" alt="The Gulf War Ground Assault 20 Years Later Vantage Point History 20th Century Military Heroes Modern War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Gulf War Ground Assault 20 Years Later Vantage Point History 20th Century Military Heroes Modern War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/66/5a/3e/665a3e773b2d3b7e29f77ab150396d27.jpg" data-lightbox="roadtrip" data-title="The Gulf War 25 Year Anniversary Stripes War Veterans Iraq War War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/66/5a/3e/665a3e773b2d3b7e29f77ab150396d27.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAs7sM_pZ6kRJmyJVjXDaSqh2-Tb9iGjz-bQ';" alt="The Gulf War 25 Year Anniversary Stripes War Veterans Iraq War War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Gulf War 25 Year Anniversary Stripes War Veterans Iraq War War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/65/9a/8a659a0f842b92dd92caf1fe3bdb63a0.jpg" data-lightbox="roadtrip" data-title="New Research For Gulf War Syndrome Approved War Vet War Va Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/65/9a/8a659a0f842b92dd92caf1fe3bdb63a0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKV6fyDB9ESkYxBD_nIAGMUjUlNqrljxsyvA';" alt="New Research For Gulf War Syndrome Approved War Vet War Va Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Research For Gulf War Syndrome Approved War Vet War Va Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/72/87/5e728731e78a8b13bed6adf3b717909a.jpg" data-lightbox="roadtrip" data-title="Peoria Researcher Looking Into Causes Effects Of Gulf War Syndrome Combat Uniforms War Iraq War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/72/87/5e728731e78a8b13bed6adf3b717909a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlOJPqVnF6lu7zDVMAUtBinsTQEJ2yi7QlUQ';" alt="Peoria Researcher Looking Into Causes Effects Of Gulf War Syndrome Combat Uniforms War Iraq War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Peoria Researcher Looking Into Causes Effects Of Gulf War Syndrome Combat Uniforms War Iraq War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/cc/44/35cc44e5a37489096bdf78c899c412f7.jpg" data-lightbox="roadtrip" data-title="Gulf War Pictures Operation Desert Storm Shield Album On Imgur War Vet Military War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/cc/44/35cc44e5a37489096bdf78c899c412f7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeoxca8J_d4_BLBAEv6tnnO2ijMB99n1O-fA';" alt="Gulf War Pictures Operation Desert Storm Shield Album On Imgur War Vet Military War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gulf War Pictures Operation Desert Storm Shield Album On Imgur War Vet Military War</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/30-gb-tri.html">30 Gb Tri</a></li>
+													<li class="list-group-item"><a href="/1800-gi-bill.html">1800 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/30-gym-workout-plan.html">30 Gym Workout Plan</a></li>
+													<li class="list-group-item"><a href="/100-percent-va-refinance.html">100 Percent Va Refinance</a></li>
+													<li class="list-group-item"><a href="/10-reasons-to-go-to-college.html">10 Reasons To Go To College</a></li>
+													<li class="list-group-item"><a href="/30-gift-card-amazon.html">30 Gift Card Amazon</a></li>
+													<li class="list-group-item"><a href="/30-gb.html">30 Gb</a></li>
+													<li class="list-group-item"><a href="/40-percent-va-disability.html">40 Percent Va Disability</a></li>
+													<li class="list-group-item"><a href="/30-gym-membership.html">30 Gym Membership</a></li>
+													<li class="list-group-item"><a href="/40-va-disability-with-dependents.html">40 Va Disability With Dependents</a></li>
+													<li class="list-group-item"><a href="/100-disabled-veteran-pay-2020.html">100 Disabled Veteran Pay 2020</a></li>
+													<li class="list-group-item"><a href="/30-inchi-berapa-cm.html">30 Inchi Berapa Cm</a></li>
+													<li class="list-group-item"><a href="/100-va-disability-criteria.html">100 Va Disability Criteria</a></li>
+													<li class="list-group-item"><a href="/30g-silver-price.html">30g Silver Price</a></li>
+													<li class="list-group-item"><a href="/30-go-en-minutes.html">30 Go En Minutes</a></li>
+													<li class="list-group-item"><a href="/30-inch-brp-cm.html">30 Inch Brp Cm</a></li>
+													<li class="list-group-item"><a href="/30-go-en-mb.html">30 Go En Mb</a></li>
+													<li class="list-group-item"><a href="/25-too-late-to-go-to-college.html">25 Too Late To Go To College</a></li>
+													<li class="list-group-item"><a href="/30-gtt-to-ml.html">30 Gtt To Ml</a></li>
+													<li class="list-group-item"><a href="/40-va-benefits.html">40 Va Benefits</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

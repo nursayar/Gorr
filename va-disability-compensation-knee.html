@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Disability Compensation Knee - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Disability Compensation Knee",
+  "datePublished": "2021-02-17",
+  "image": "https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/AdobeStock_198669548-768x512.jpeg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+disability+compensation+knee",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Disability Compensation Knee</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">For Reservists the condition must have occurred in or resulted from an injury in the Line of Duty to qualify. However many veterans end up with a disability rating thats less than adequate to reflect the severity of their knee injuries. IF YOU HAVE A TOTAL KNEE REPLACEMENT IN 2012 AND THE VA RATED YOU AT 30 AND THEN 5 YEARS LATER IN 2017 YOU HAVE TO HAVE ANOTHER TKR ON THE SAME KNEE DOES THE VA RAISE YOUR DISABILITY RATING OR DOES IT STAY THE SAME. <br>				
+			</p>
+										<a class="badge badge-primary" href="/does-the-va-offer-covid-testing.html">does the va offer covid testing</a>
+											<a class="badge badge-danger" href="/does-va-disability-reduce-military-retirement-pay.html">does va disability reduce military retirement pay</a>
+											<a class="badge badge-primary" href="/does-va-disability-have-to-be-service-related.html">does va disability have to be service related</a>
+											<a class="badge badge-success" href="/education-go-get-it-week-2019.html">education go get it week 2019</a>
+											<a class="badge badge-success" href="/does-the-gi-bill-pay-for-private-colleges.html">does the gi bill pay for private colleges</a>
+											<a class="badge badge-primary" href="/does-the-gi-bill-pay-for-housing-for-online-classes.html">does the gi bill pay for housing for online classes</a>
+											<a class="badge badge-primary" href="/donate-to-disabled-veterans-of-america.html">donate to disabled veterans of america</a>
+											<a class="badge badge-secondary" href="/duke-university-post-911-gi-bill.html">duke university post 911 gi bill</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you have come to pay a visit to the right site.  Our site gives you suggestions for seeing the highest quality video and picture content, hunt and find more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, particularly Youtube, therefore we recommend this movie for you to see.  You can also bring about supporting this website by sharing videos and images that you enjoy on this site on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this website.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i0.wp.com/www.woodslawyers.com/wp-content/uploads/Knee-Pain-VA-Benefits-Lawyer.jpg?fit=1200%2C629&amp;ssl=1" data-lightbox="roadtrip" data-title="Knee Pain Ratings For Va Disability And Other Knee Injury Claims">
+											<img class="card-img v-image ads-img " src="https://i0.wp.com/www.woodslawyers.com/wp-content/uploads/Knee-Pain-VA-Benefits-Lawyer.jpg?fit=1200%2C629&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTEFT_lNWtqVdPImTS6z62nEmG0c-PBTVv8A';" alt="Knee Pain Ratings For Va Disability And Other Knee Injury Claims">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Knee Pain Ratings For Va Disability And Other Knee Injury Claims</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.wp.com/www.woodslawyers.com/wp-content/uploads/VA-Range-Of-Motion-Legs-Hips.jpg?resize=1006%2C896&amp;ssl=1" data-lightbox="roadtrip" data-title="How To Get A Higher Rating For Knee Disability From The Va">
+											<img class="card-img v-image ads-img " src="https://i1.wp.com/www.woodslawyers.com/wp-content/uploads/VA-Range-Of-Motion-Legs-Hips.jpg?resize=1006%2C896&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSURku2ioNFgbToTyIbHObQ4JPh2hd8-dXnYA';" alt="How To Get A Higher Rating For Knee Disability From The Va">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Get A Higher Rating For Knee Disability From The Va</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.danaise.com/images/knee%201a.jpg" data-lightbox="roadtrip" data-title="Understanding Knee Injury Disability Rating">
+											<img class="card-img v-image ads-img " src="http://www.danaise.com/images/knee%201a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD6DAsPD3By_tqV8-6VTWYabnzVsr8WTE19Q';" alt="Understanding Knee Injury Disability Rating">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Understanding Knee Injury Disability Rating</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ptsdlawyers.com/wp-content/uploads/2019/06/Range-of-motion.png" data-lightbox="roadtrip" data-title="Range Of Motion In Va Disability Claims Ptsd Lawyers">
+											<img class="card-img v-image ads-img " src="https://ptsdlawyers.com/wp-content/uploads/2019/06/Range-of-motion.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU6S5N20sI5GmcSl2zKuGpIfyzyJkha4WRuw';" alt="Range Of Motion In Va Disability Claims Ptsd Lawyers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Range Of Motion In Va Disability Claims Ptsd Lawyers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/blog-Copy-32-768x512.jpg" data-lightbox="roadtrip" data-title="Knee Problems And Your Va Disability Claim Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/blog-Copy-32-768x512.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Sx40jpNjv2ZaO0nz9U2VE6u2YjNASdVuMQ';" alt="Knee Problems And Your Va Disability Claim Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Knee Problems And Your Va Disability Claim Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.veteranslawblog.org/wp-content/uploads/2016/06/Screenshot-2016-06-30-06.33.40-300x207-2.png" data-lightbox="roadtrip" data-title="Va Disability Compensation Knee Replacement Ratings Partial And Total Veterans Law Blog">
+											<img class="card-img v-image ads-img " src="https://www.veteranslawblog.org/wp-content/uploads/2016/06/Screenshot-2016-06-30-06.33.40-300x207-2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmhsr3mggPOeg2_2ps8Gfcx7duI834QcZexA';" alt="Va Disability Compensation Knee Replacement Ratings Partial And Total Veterans Law Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Compensation Knee Replacement Ratings Partial And Total Veterans Law Blog</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://ptsdlawyers.com/wp-content/uploads/2019/06/Range-of-motion.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmhsr3mggPOeg2_2ps8Gfcx7duI834QcZexA';" alt="Va Disability Compensation Knee Replacement Ratings Partial And Total Veterans Law Blog">
+										<div class="card-body">
+						<h3 class="h5"><b>Plantar Fasciitis is most often rated analogous to CFR 38 Part 4 VA Schedule of Ratings Diagnostic Code 5276 Flatfoot Acquired.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va disability compensation knee</strong>. 
+								
+																	Special benefit allowances rates View current compensation rates that may apply to you if you qualify for an automobile or clothing allowance or a Medal of Honor pension. 
+																	One of the often-overlooked disability claims that a Veteran can file is for osteoarthritis. 
+																	Notice above in DC 5055 that there is NO 10 rating level for a partial or total knee replacement. 
+																	The VA awards disability compensation for each Knee and Lower Leg condition that is service-connected. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If the VA rates you at 10 following a partial or total knee replacement they are wrong and you should consider challenging that rating with a Notice of Disagreement. 
+																	As you compensate for your knee pain your opposite hip might be doing extra work. 
+																	Knee pain problems are commonly-claimed conditions for VA disability benefits. 
+																	If you can show that your knee injury is service related the VA will give you a disability rating for the condition. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Secondary Disabilities can also be amplified by a knee injury so if you are already working on your VA Disability claim make sure you include your knee pain in the application. 
+																	Due to the high psychical demands of military service many veterans experience knee injuries or dysfunction. 
+																	If you have a 10 to 20 disability rating you wont receive a higher rate even if you have a dependent spouse child or parent. 
+																	Disabling knee injuries can qualify you for VA benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Entitlement to an apportionment of the Veterans VA disability compensation benefits on behalf of JRY. 
+																	However limitation of flexion of the knee is just one type of knee condition that can receive service-connected compensation. 
+																	Fortunately knee pain is often an indicator of an underlying illness or chronic condition that will qualify for a disability rating through the United States Department of Veterans Affairs. 
+																	According to VAs Annual Benefits Report for Fiscal Year 2018 limitation of flexion of the knee was the fifth most commonly-claimed disability with over 80000 veterans receiving service-connected compensation for this issue. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This Level of VA disability compensation for a Knee Replacement is ALWAYS Wrong. 
+																	Compensation rates for Veterans with a 10 to 20 disability rating Effective December 1 2020 Note. 
+																	For A Complete Guide To VA Disability Claims and to find out more about your potential VA disability case and how to obtain favorable VA Rating Decision. 
+																	Even if your knee pain has NO impact on the knees range of motion you can get the minimum 10 VA disability rating for knee pain alone when accompanied with a diagnosis pain alone is a disability but it must relate to a functional impairment of earning capacity. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you are experiencing knee pain a knee injury or functional loss of the knee relating to your military service you may be eligible for disability compensation based on a variety of factors. 
+																	Pain like functional loss is measured by its impact on the range of motion. 
+																	Read the Guide to Knee Injuries and Knee Pain Ratings here. 
+																	Yes Plantar Fasciitis is a VA disability and can be rated at 0 10 20 30 or 50 depending upon unilateral one foot versus bilateral both feet and the severity of your symptoms. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In total nearly 658000 veterans receive service-connected compensation for limited knee flexion. 
+																	Veterans that have current disabilities that were a result of their military service are entitled to compensation and there is a long list of disabilities that a Veteran could claim disability benefits for. 
+																	View current compensation rates that may apply to you if you qualify for special monthly compensation based on the severity of your disability. 
+																	VA disability compensation pay offers a monthly tax-free payment to Veterans who got sick or injured while serving in the military and to Veterans whose service made an existing condition worse. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A right ankle injury and a left knee injury change the calculation of your rating. 
+																	When they leave the service they apply for disability compensation for their knee problems through the VA only to find their debilitating condition rated at 10 percent or lower. 
+																	According to the VA 2015 Annual Benefits Report limitation of knee flexion was the fourth most commonly-claimed disability during that fiscal year with over 80000 veterans receiving disability benefits for this condition. 
+																	Whether your knee injury was caused by wear and tear or an incident that occurred during your military service you may be eligible for compensation from the VA for your disability. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	471a Code 5055 disability ratings range from 100 percent to 30 percent disabling. 
+																	The DoD will also rate service-connected conditions as long as they also make the service member Unfit fo r Duty. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://veterans-disability-lawyers.com/wp-content/uploads/2019/05/Knee-Impairments-in-Disabled-Veterans.jpg?x16905" data-lightbox="roadtrip" data-title="Knee And Leg Impairments Veterans Disability Lawyer Friedman Disability">
+											<img class="card-img v-image ads-img " src="https://veterans-disability-lawyers.com/wp-content/uploads/2019/05/Knee-Impairments-in-Disabled-Veterans.jpg?x16905" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM6M84kTFUUAuUm1kpEiuNnggGEOJEfaezrA';" alt="Knee And Leg Impairments Veterans Disability Lawyer Friedman Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Knee And Leg Impairments Veterans Disability Lawyer Friedman Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/AdobeStock_198669548-768x512.jpeg" data-lightbox="roadtrip" data-title="Va Disability Benefits For Knee Pain Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/AdobeStock_198669548-768x512.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2j5BdXKSO__-h3g4Dtx9_Jg9FfVMGrStuKA';" alt="Va Disability Benefits For Knee Pain Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Benefits For Knee Pain Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vaclaimsinsider.com/wp-content/uploads/2019/12/Most-Common-Disability-Claims-for-Peactime-Veterans.png" data-lightbox="roadtrip" data-title="We Analyzed 4 7 Million Veterans With A Va Rating Here S What We Learned About The Average Va Disability Rating For Ptsd Va Claims Insider">
+											<img class="card-img v-image ads-img " src="https://vaclaimsinsider.com/wp-content/uploads/2019/12/Most-Common-Disability-Claims-for-Peactime-Veterans.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpLmwze_Y0LxvHwno-ew8FQ3EfQelOyGC0Gg';" alt="We Analyzed 4 7 Million Veterans With A Va Rating Here S What We Learned About The Average Va Disability Rating For Ptsd Va Claims Insider">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Analyzed 4 7 Million Veterans With A Va Rating Here S What We Learned About The Average Va Disability Rating For Ptsd Va Claims Insider</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/09/AdobeStock_250225954-768x405.jpeg" data-lightbox="roadtrip" data-title="Va Disability Compensation For Torn Meniscus Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/09/AdobeStock_250225954-768x405.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwxzhwqidX8MUwRsORcW-iPfAzMk8BFvP_AA';" alt="Va Disability Compensation For Torn Meniscus Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Compensation For Torn Meniscus Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://embed-fastly.wistia.com/deliveries/fcfb4074a0d7ad56e63d4770448873e5.webp?image_crop_resized=1280x720" data-lightbox="roadtrip" data-title="Va Disability For Knee Conditions And Pain Cck Law">
+											<img class="card-img v-image ads-img " src="https://embed-fastly.wistia.com/deliveries/fcfb4074a0d7ad56e63d4770448873e5.webp?image_crop_resized=1280x720" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPn_OLsYkaWNLrLJTlKAdywdd9zd-SdE3SmQ';" alt="Va Disability For Knee Conditions And Pain Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability For Knee Conditions And Pain Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/09/AdobeStock_247082849-1-768x512.jpeg" data-lightbox="roadtrip" data-title="Va Disability Ratings For Knee Tendonitis Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/09/AdobeStock_247082849-1-768x512.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeC-b0_Sb626c7zugciucI8FaegfriER0t9g';" alt="Va Disability Ratings For Knee Tendonitis Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Ratings For Knee Tendonitis Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/MENISCUS-THUMBNAIL-1280x720.jpg" data-lightbox="roadtrip" data-title="Rating Knee Disabilities The Meniscus Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/MENISCUS-THUMBNAIL-1280x720.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiZ0sttfTghRaMe_OVcMF-zOCJR44jgeY7Yw';" alt="Rating Knee Disabilities The Meniscus Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rating Knee Disabilities The Meniscus Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hillandponton.com/wp-content/uploads/2020/04/tendonitis.jpg" data-lightbox="roadtrip" data-title="Va Disability Rating For Tendonitis Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://www.hillandponton.com/wp-content/uploads/2020/04/tendonitis.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm9Di1QyGT0yKrKH_RxCCz3tCrrQZDBiEwYw';" alt="Va Disability Rating For Tendonitis Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Rating For Tendonitis Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2016/06/BILATERAL-FACTOR-RATING-THUMBNAIL-1280x720.jpg" data-lightbox="roadtrip" data-title="The Bilateral Factor Your Va Disability Rating Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2016/06/BILATERAL-FACTOR-RATING-THUMBNAIL-1280x720.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0DFBtX8nAHkL6htKJ9qIvMaUO0qL0L3Faxw';" alt="The Bilateral Factor Your Va Disability Rating Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Bilateral Factor Your Va Disability Rating Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/95/ee/a795ee8a9c3c03e9a77c579d3ef811a3.png" data-lightbox="roadtrip" data-title="Knee Range Of Motion And Movements Is An Article About Movements Of Knee Joint And T Knee Replacement Exercises Knee Replacement Recovery Knee Surgery Recovery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/95/ee/a795ee8a9c3c03e9a77c579d3ef811a3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkVc_kweMFuS8zAkZ8SugOnf_7O29yoGBLUQ';" alt="Knee Range Of Motion And Movements Is An Article About Movements Of Knee Joint And T Knee Replacement Exercises Knee Replacement Recovery Knee Surgery Recovery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Knee Range Of Motion And Movements Is An Article About Movements Of Knee Joint And T Knee Replacement Exercises Knee Replacement Recovery Knee Surgery Recovery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vaclaimsinsider.com/wp-content/uploads/2019/08/Knee-Pain-VA-Claim-1024x683.jpg" data-lightbox="roadtrip" data-title="Top 10 Most Common Va Disability Claims Va Claims Insider">
+											<img class="card-img v-image ads-img " src="https://vaclaimsinsider.com/wp-content/uploads/2019/08/Knee-Pain-VA-Claim-1024x683.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNF8airBUTyau2XkiiN0j_ksMpUjw-po40tg';" alt="Top 10 Most Common Va Disability Claims Va Claims Insider">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 10 Most Common Va Disability Claims Va Claims Insider</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/09/Back-Rating-Infographic-1.jpg" data-lightbox="roadtrip" data-title="Back Range Of Motion For Va Benefits Explained Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/09/Back-Rating-Infographic-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-DkBspiWdLJtS25fVco9QdjnOCsuD3XM7HQ';" alt="Back Range Of Motion For Va Benefits Explained Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Back Range Of Motion For Va Benefits Explained Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/UHKygFTD9x8/maxresdefault.jpg" data-lightbox="roadtrip" data-title="A Vet Might Get Va Disability Benefits For Knee Pain From A Variety Of Different Conditions Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/UHKygFTD9x8/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy_lZnYM3GnmwECacUEGxL3zX7tCwrBGH2Dg';" alt="A Vet Might Get Va Disability Benefits For Knee Pain From A Variety Of Different Conditions Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Vet Might Get Va Disability Benefits For Knee Pain From A Variety Of Different Conditions Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/is-joint-pain-a-va-disability.html">Is Joint Pain A Va Disability</a></li>
+													<li class="list-group-item"><a href="/is-major-depressive-disorder-a-disability-under-the-ada.html">Is Major Depressive Disorder A Disability Under The Ada</a></li>
+													<li class="list-group-item"><a href="/is-money-received-from-the-gi-bill-taxable.html">Is Money Received From The Gi Bill Taxable</a></li>
+													<li class="list-group-item"><a href="/is-covid-increasing-in-virginia.html">Is Covid Increasing In Virginia</a></li>
+													<li class="list-group-item"><a href="/is-money-from-the-gi-bill-taxable.html">Is Money From The Gi Bill Taxable</a></li>
+													<li class="list-group-item"><a href="/is-major-depressive-disorder-an-ada-disability.html">Is Major Depressive Disorder An Ada Disability</a></li>
+													<li class="list-group-item"><a href="/kill-bill-cast-1.html">Kill Bill Cast 1</a></li>
+													<li class="list-group-item"><a href="/kill-bill-franchise.html">Kill Bill Franchise</a></li>
+													<li class="list-group-item"><a href="/is-the-vva-picking-up-donations-during-coronavirus.html">Is The Vva Picking Up Donations During Coronavirus</a></li>
+													<li class="list-group-item"><a href="/is-sciatica-a-va-disability.html">Is Sciatica A Va Disability</a></li>
+													<li class="list-group-item"><a href="/is-the-post-9-11-gi-bill-considered-a-scholarship.html">Is The Post 9 11 Gi Bill Considered A Scholarship</a></li>
+													<li class="list-group-item"><a href="/is-depression-a-disability-in-australia.html">Is Depression A Disability In Australia</a></li>
+													<li class="list-group-item"><a href="/is-recurrent-major-depressive-disorder-a-disability.html">Is Recurrent Major Depressive Disorder A Disability</a></li>
+													<li class="list-group-item"><a href="/is-there-a-va-rating-for-carpal-tunnel-syndrome.html">Is There A Va Rating For Carpal Tunnel Syndrome</a></li>
+													<li class="list-group-item"><a href="/kill-bill-all-movies.html">Kill Bill All Movies</a></li>
+													<li class="list-group-item"><a href="/is-open-angle-glaucoma-a-disability.html">Is Open Angle Glaucoma A Disability</a></li>
+													<li class="list-group-item"><a href="/is-va-disability-compensation-tax-free.html">Is Va Disability Compensation Tax Free</a></li>
+													<li class="list-group-item"><a href="/kill-bill-director.html">Kill Bill Director</a></li>
+													<li class="list-group-item"><a href="/is-major-depression-a-disability.html">Is Major Depression A Disability</a></li>
+													<li class="list-group-item"><a href="/is-there-a-w2-for-va-disability.html">Is There A W2 For Va Disability</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

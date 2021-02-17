@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Disability Compensation Pre Existing Condition - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Disability Compensation Pre Existing Condition",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/58/5e/30/585e3029abe8d93c791934de033e1243.gif",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+disability+compensation+pre+existing+condition",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Disability Compensation Pre Existing Condition</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Both of these must be true. While some pre-existing conditions preclude you from military service many more do not. The veteran shows usually through medical evidence or expert opinions that his or her preexisting condition worsened during service. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/va-compensation-issues-meaning.html">va compensation issues meaning</a>
+											<a class="badge badge-secondary" href="/va-compensation-for-sensorineural-hearing-loss.html">va compensation for sensorineural hearing loss</a>
+											<a class="badge badge-danger" href="/va-compensation-for-back-injuries.html">va compensation for back injuries</a>
+											<a class="badge badge-success" href="/va-compensation-medical-exam.html">va compensation medical exam</a>
+											<a class="badge badge-info" href="/va-compensation-rates-for-dependents.html">va compensation rates for dependents</a>
+											<a class="badge badge-primary" href="/va-compensation-shoulder-injury.html">va compensation shoulder injury</a>
+											<a class="badge badge-info" href="/va-compensation-depression-anxiety.html">va compensation depression anxiety</a>
+											<a class="badge badge-danger" href="/va-compensation-peripheral-neuropathy.html">va compensation peripheral neuropathy</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to visit the ideal blog.  Our website gives you suggestions for viewing the highest quality video and picture content, search and find more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, so we recommend this video for you to see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/24/9d/06249d5dcac3481cc5d00f2629c4c281.png" data-lightbox="roadtrip" data-title="Medigap Pre Existing Condition Waiting Period Conditioner Medicare Supplement Medicare">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/24/9d/06249d5dcac3481cc5d00f2629c4c281.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Fdbzg3jTi6uT8CtOhzLPqXJUjA1mL8q7MA';" alt="Medigap Pre Existing Condition Waiting Period Conditioner Medicare Supplement Medicare">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Medigap Pre Existing Condition Waiting Period Conditioner Medicare Supplement Medicare</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/99/4e/c3994e9685b081349aa226d4f82c8d27.jpg" data-lightbox="roadtrip" data-title="What Happens To Your Social Security Disability Claim If You Die Before Approval Social Security Disability Disability Social Security">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/99/4e/c3994e9685b081349aa226d4f82c8d27.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEAy53teY2E4VW3eU7rsVNbAYRl8yHzw5jng';" alt="What Happens To Your Social Security Disability Claim If You Die Before Approval Social Security Disability Disability Social Security">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Happens To Your Social Security Disability Claim If You Die Before Approval Social Security Disability Disability Social Security</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b6/a2/75/b6a275fe7dbc78ab0ed6e412a4a99c8d.jpg" data-lightbox="roadtrip" data-title="Distinction Between Short Term Incapacity And Fmla Graphic Disability Medical Billing And Coding Human Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b6/a2/75/b6a275fe7dbc78ab0ed6e412a4a99c8d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbA6HKZGGghVZ37_7IV_8foF4tW4kxYoD0kA';" alt="Distinction Between Short Term Incapacity And Fmla Graphic Disability Medical Billing And Coding Human Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Distinction Between Short Term Incapacity And Fmla Graphic Disability Medical Billing And Coding Human Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/d7/f6/8ad7f62f81e853a703938ec4c512bfe7.png" data-lightbox="roadtrip" data-title="Pin On Fibro">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/d7/f6/8ad7f62f81e853a703938ec4c512bfe7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtJS48dxoqI2y2UsAiOA85KfnnMTMF9WLAdg';" alt="Pin On Fibro">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Fibro</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/ae/8f/7cae8faa24072108dcdca44ed67c345d.png" data-lightbox="roadtrip" data-title="Medicare Q A Boomerbenefits Link Creditable Coverage Have More Medicare Questions Join Our Free Medicare Medicare Employee Health Medicare Supplement Plans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/ae/8f/7cae8faa24072108dcdca44ed67c345d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAZ16IneizHCOT7tV1hlUhl8iNotjMU1mEdA';" alt="Medicare Q A Boomerbenefits Link Creditable Coverage Have More Medicare Questions Join Our Free Medicare Medicare Employee Health Medicare Supplement Plans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Medicare Q A Boomerbenefits Link Creditable Coverage Have More Medicare Questions Join Our Free Medicare Medicare Employee Health Medicare Supplement Plans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/82/c2/8b/82c28ba9533bbced58f49ce0cff29c21.jpg" data-lightbox="roadtrip" data-title="6 Things You Should Do In Retired Military Dental Insurance Retired Military Dental Insurance In 2020 Dental Insurance Plans Dental Discount Plans Dental Coverage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/82/c2/8b/82c28ba9533bbced58f49ce0cff29c21.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5brvorg_SfSxx2Q-hdOc814m4uVtCxEsRpw';" alt="6 Things You Should Do In Retired Military Dental Insurance Retired Military Dental Insurance In 2020 Dental Insurance Plans Dental Discount Plans Dental Coverage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 Things You Should Do In Retired Military Dental Insurance Retired Military Dental Insurance In 2020 Dental Insurance Plans Dental Discount Plans Dental Coverage</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/b6/a2/75/b6a275fe7dbc78ab0ed6e412a4a99c8d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5brvorg_SfSxx2Q-hdOc814m4uVtCxEsRpw';" alt="6 Things You Should Do In Retired Military Dental Insurance Retired Military Dental Insurance In 2020 Dental Insurance Plans Dental Discount Plans Dental Coverage">
+										<div class="card-body">
+						<h3 class="h5"><b>Under normal circumstances the VA wont provide compensation for your pre-existing conditions Theres negativity surrounding the term pre-existing condition for many because insurance companies rarely provide coverage for them.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va disability compensation pre existing condition</strong>. 
+								
+																	Served on active duty active duty for training or inactive duty training and. 
+																	Sometimes a veterans condition is preexisting and as long as it was not aggravated by the veterans time in service the VA is well within the letter of the law to deny that claim. 
+																	When the presence of a preexisting disability and an increase in that disability are established VA will presume that the increase is due to aggravation by service under the following conditions. 
+																	If you had the medical condition before you served in the military and your condition worsened during your military service you can be eligible for service-connected disability compensation based on aggravation of a preservice disability. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However conditions such as asthma certain mental health concerns and joint damage may not necessarily disqualify a recruit from service. 
+																	However the law is written in favor of granting the benefits and denying for preexisting conditions is not an easy case for the VA to make. 
+																	You may qualify for VA disability benefits for physical conditions like a chronic illness or injury and mental health conditions like PTSD that developed before during or after service. 
+																	Direct service-connected claims require that the veteran or the survivor on behalf of the veteran must provide evidence that a particular injury exposure or disease resulting in a current disability or disease was incurred while serving in the Armed Forces OR if that condition was pre-existing to entry in the service it was aggravated through service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can sometimes get veterans disability compensation benefits for a pre-existing condition though it can be more difficult than proving that military duty caused a new service-connected injury. 
+																	Also there must be proof of an incident or event in service that made the disability worse. 
+																	The VA denied his claim saying this condition clearly and unmistakably was a pre-existing condition. 
+																	No pre-existing conditions which means that the bilateral knee condition for which the veteran was medically discharged was incurred in service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If your pre-existing condition isnt mentioned in the entrance medical exam you will need to submit medical evidence of a pre-service diagnosis and treatment. 
+																	A veteran is entitled to disability compensation if he or she were 1 discharged or released from the military under conditions other than dishonorable 2 their disease or injury was incurred or aggravated in the line of duty and 3 the disease or injury was not the result of the their own willful misconduct or abuse of drugs. 
+																	Many disability insurance policies contain language that classifies mental impairments such as bipolar disorder as a mental nervous condition. 
+																	If a presumed condition is diagnosed in a Veteran in a certain group they can be awarded disability compensation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Defined as such typically only 24 months compensation is allowed. 
+																	But this isnt something that can be done lightly. 
+																	VA compensation may be available for those who entered military service with a pre-existing condition but the VA must calculate the level of aggravation of the condition due to service. 
+																	What are Presumptive Conditions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Workers Compensation Law Regarding Pre-existing Conditions in Virginia If you prove that you suffered a compensable injury by accident arising out of and in the course of your employment and that this injury worsened your preexisting condition then you may be entitled to workers compensation benefits in Virginia. 
+																	However this may not be accurate if the bipolar disorder is a biologically based illness. 
+																	If you are diagnosed with a chronic disease within one year of active duty release you should apply for disability compensation. 
+																	The VA is perfectly within its rights to deny service connection if a disease or disability actually did exist prior to entry into the military sometimes this is noted in the file as EPTEexisting prior to entrance and was not worsened by the veterans service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Showing a pre-existing condition Before receiving VA benefits for a pre-existing disability you must prove that you had the condition before you entered the service. 
+																	When a persons pre-existing conditions become worse as a result of active duty service they may be eligible for disability compensation benefits offered by the Department of Veterans Affairs VA. 
+																	You may be eligible for VA disability benefits or compensation if you have a current illness or injury known as a condition that affects your body or mind and you meet at least one of the requirements listed below. 
+																	If the VA used your pre-existing condition as a reason to deny disability benefits contact us for a free consultation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If they do premiums are through the roof. 
+																	VA disability compensation pay offers a monthly tax-free payment to Veterans who got sick or injured while serving in the military and to Veterans whose service made an existing condition worse. 
+																	There are two ways to verify your pre-existing condition starting with your entrance exam. 
+																	Secondary Service Connection for Preexisting Conditions If your pre-existing condition results in a secondary injury that secondary injury can also be claimed for disability benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For military veterans dealing with the VA theres also the. 
+																	That level is what determines the VA percentage. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/b4/c9/81b4c92ab8fc225debee5a99469ed7ed.jpg" data-lightbox="roadtrip" data-title="Pin On Health">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/b4/c9/81b4c92ab8fc225debee5a99469ed7ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA6_rS8gBOH3okwNxajlzw3BXiQhnDngkItA';" alt="Pin On Health">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Health</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/5e/30/585e3029abe8d93c791934de033e1243.gif" data-lightbox="roadtrip" data-title="What Is Workers Compensation How Do I File A Claim Read On To Learn More About Californi Personal Injury Lawyer Workers Compensation Insurance Compensation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/5e/30/585e3029abe8d93c791934de033e1243.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq5NQse1hkt1LtqYpPpRpM3SHbazGaS9dEuQ';" alt="What Is Workers Compensation How Do I File A Claim Read On To Learn More About Californi Personal Injury Lawyer Workers Compensation Insurance Compensation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Workers Compensation How Do I File A Claim Read On To Learn More About Californi Personal Injury Lawyer Workers Compensation Insurance Compensation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/17/d1/67/17d16753182be1397b5b79a50a413034.jpg" data-lightbox="roadtrip" data-title="Pin On Health Insurance Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/17/d1/67/17d16753182be1397b5b79a50a413034.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp66KhNEncte8TD0G9lO0asgRUrDaonGYs6A';" alt="Pin On Health Insurance Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Health Insurance Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/74/27/0174279c43b72a78fe364be563f6a963.jpg" data-lightbox="roadtrip" data-title="Things Are Heating Up Around Kentuckiana Who S At More Risk Of A Heat Stroke And Why Alee Solutions Heat Stroke Solutions Aging In Place">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/74/27/0174279c43b72a78fe364be563f6a963.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDaY3-xrtdbH6aovPhEJleFWtZ8mt564ILYQ';" alt="Things Are Heating Up Around Kentuckiana Who S At More Risk Of A Heat Stroke And Why Alee Solutions Heat Stroke Solutions Aging In Place">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Things Are Heating Up Around Kentuckiana Who S At More Risk Of A Heat Stroke And Why Alee Solutions Heat Stroke Solutions Aging In Place</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/32/59/cd3259c90ae62e8292e54e48005a904b.png" data-lightbox="roadtrip" data-title="Understanding Priority Health Insurance During Open Enrollment Health Insurance Health Insurance Options Free Health Insurance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/32/59/cd3259c90ae62e8292e54e48005a904b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMPmHWzvCLJwNtkd4-raHo2DfIzDCvJ71SRw';" alt="Understanding Priority Health Insurance During Open Enrollment Health Insurance Health Insurance Options Free Health Insurance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Understanding Priority Health Insurance During Open Enrollment Health Insurance Health Insurance Options Free Health Insurance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/d7/0d/57d70dc534de43ff49c0c5fb4cee412b.png" data-lightbox="roadtrip" data-title="Employee Reinstatement Notice Letter Lettering Contract Template Letter Writing Format">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/d7/0d/57d70dc534de43ff49c0c5fb4cee412b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE7wrY_g6_-00KaN4uF6eAB3KqASeNtA83FA';" alt="Employee Reinstatement Notice Letter Lettering Contract Template Letter Writing Format">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Employee Reinstatement Notice Letter Lettering Contract Template Letter Writing Format</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/96/f4/c296f4e2c9df88cd6f9352a74461af30.jpg" data-lightbox="roadtrip" data-title="Cartoonish Health Insurance Flowchart Health Insurance Healthcare Humor Health">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/96/f4/c296f4e2c9df88cd6f9352a74461af30.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh6JqqY7s4aMWNjO91G-Z4-4TuCNGPC7Ls7w';" alt="Cartoonish Health Insurance Flowchart Health Insurance Healthcare Humor Health">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cartoonish Health Insurance Flowchart Health Insurance Healthcare Humor Health</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/6c/b4/db/6cb4db005c0969d940a65956c22d97ea.jpg" data-lightbox="roadtrip" data-title="Clam Rattlin Blade Spoon Lure Glow Chartreuse Tiger Private Health Care Marketplace Health Insurance Health Insurance Companies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/6c/b4/db/6cb4db005c0969d940a65956c22d97ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRehYgkYx10gznlhHT0yLQUUp3v2ggbIdtmZA';" alt="Clam Rattlin Blade Spoon Lure Glow Chartreuse Tiger Private Health Care Marketplace Health Insurance Health Insurance Companies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Clam Rattlin Blade Spoon Lure Glow Chartreuse Tiger Private Health Care Marketplace Health Insurance Health Insurance Companies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/23/d4/0f23d43021dab4b83d8e7efcf7c7dea8.jpg" data-lightbox="roadtrip" data-title="How Many People Has Obamacare Helped Millions And Millions Preventative Health Health Care Services Obamacare">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/23/d4/0f23d43021dab4b83d8e7efcf7c7dea8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSpDQqubGjH_Ec5NfUiY920yTgDaV61wQc-Q';" alt="How Many People Has Obamacare Helped Millions And Millions Preventative Health Health Care Services Obamacare">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Many People Has Obamacare Helped Millions And Millions Preventative Health Health Care Services Obamacare</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/dc/0f/31/dc0f313ed31409f4c90cfd4e8f2c7543.jpg" data-lightbox="roadtrip" data-title="Residents Of New Hampshire Can Get Life Insurance Even If They Have Diabetes Or Other Preexisting Condit Affordable Life Insurance Life Insurance New Hampshire">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/dc/0f/31/dc0f313ed31409f4c90cfd4e8f2c7543.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSndgHJu0ZmvPgMghwRnwgbYPqTtLdFHKXS-g';" alt="Residents Of New Hampshire Can Get Life Insurance Even If They Have Diabetes Or Other Preexisting Condit Affordable Life Insurance Life Insurance New Hampshire">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Residents Of New Hampshire Can Get Life Insurance Even If They Have Diabetes Or Other Preexisting Condit Affordable Life Insurance Life Insurance New Hampshire</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/b9/e3/7fb9e3b246623b23053c87620c356063.jpg" data-lightbox="roadtrip" data-title="Pin On Road To Recovery Physical And Occupational Therapy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/b9/e3/7fb9e3b246623b23053c87620c356063.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnrKozhwUh-Juv7oxR_xMgtWHgIS8EjTySjQ';" alt="Pin On Road To Recovery Physical And Occupational Therapy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Road To Recovery Physical And Occupational Therapy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/8c/34/9f8c34cb1355a6145f65f3ff55b4298f.jpg" data-lightbox="roadtrip" data-title="If You Got Injured In Any Kind Of An Accident Or Because Of A Doctor S Malpractice Y Workers Compensation Insurance Personal Injury Lawyer Personal Injury Law">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/8c/34/9f8c34cb1355a6145f65f3ff55b4298f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpqcpmYP18KRvWZBUt4tXtpqWTEiM1calwbA';" alt="If You Got Injured In Any Kind Of An Accident Or Because Of A Doctor S Malpractice Y Workers Compensation Insurance Personal Injury Lawyer Personal Injury Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Got Injured In Any Kind Of An Accident Or Because Of A Doctor S Malpractice Y Workers Compensation Insurance Personal Injury Lawyer Personal Injury Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/46/93/23/4693235a84931991e6c8c829808fda0e.jpg" data-lightbox="roadtrip" data-title="Veterans Disability Vs Social Security Disability The Bishop Law Firm Social Security Disability Social Security Disability Benefits Social Security">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/46/93/23/4693235a84931991e6c8c829808fda0e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNvZtwQL1wvuA9qP2ycifUIgdqeimkQQ1LAw';" alt="Veterans Disability Vs Social Security Disability The Bishop Law Firm Social Security Disability Social Security Disability Benefits Social Security">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Disability Vs Social Security Disability The Bishop Law Firm Social Security Disability Social Security Disability Benefits Social Security</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/gi-bill-real-estate.html">Gi Bill Real Estate</a></li>
+													<li class="list-group-item"><a href="/gi-bill-rights.html">Gi Bill Rights</a></li>
+													<li class="list-group-item"><a href="/gi-bill-servicemens-readjustment-act-of-1944.html">Gi Bill Servicemens Readjustment Act Of 1944</a></li>
+													<li class="list-group-item"><a href="/gi-bill-worth.html">Gi Bill Worth</a></li>
+													<li class="list-group-item"><a href="/gi-bill-summer-semester.html">Gi Bill Summer Semester</a></li>
+													<li class="list-group-item"><a href="/gi-bill-programs.html">Gi Bill Programs</a></li>
+													<li class="list-group-item"><a href="/gi-broom-benefits.html">Gi Broom Benefits</a></li>
+													<li class="list-group-item"><a href="/gi-bill-transfer-benefits-to-spouse.html">Gi Bill Transfer Benefits To Spouse</a></li>
+													<li class="list-group-item"><a href="/gi-bill-remaining.html">Gi Bill Remaining</a></li>
+													<li class="list-group-item"><a href="/gi-bill-to-kids.html">Gi Bill To Kids</a></li>
+													<li class="list-group-item"><a href="/gi-bill-wgu.html">Gi Bill Wgu</a></li>
+													<li class="list-group-item"><a href="/gi-bill-pay-for-credit-hours.html">Gi Bill Pay For Credit Hours</a></li>
+													<li class="list-group-item"><a href="/gi-education.html">Gi Education</a></li>
+													<li class="list-group-item"><a href="/gi-bill-required-credit-hours.html">Gi Bill Required Credit Hours</a></li>
+													<li class="list-group-item"><a href="/gi-bill-pay-okinawa-phone-number.html">Gi Bill Pay Okinawa Phone Number</a></li>
+													<li class="list-group-item"><a href="/gi-bill-transfer-to-child.html">Gi Bill Transfer To Child</a></li>
+													<li class="list-group-item"><a href="/gi-bill-transfer-reserve.html">Gi Bill Transfer Reserve</a></li>
+													<li class="list-group-item"><a href="/gi-bill-transfer-schools-form.html">Gi Bill Transfer Schools Form</a></li>
+													<li class="list-group-item"><a href="/gi-bill-rotc.html">Gi Bill Rotc</a></li>
+													<li class="list-group-item"><a href="/gi-joe-classic-vol-9.html">Gi Joe Classic Vol 9</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

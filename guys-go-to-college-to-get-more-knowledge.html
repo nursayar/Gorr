@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Guys Go To College To Get More Knowledge - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Guys Go To College To Get More Knowledge",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/736x/a9/a4/a0/a9a4a07eecfec4341947b70ccd4e44f9.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=guys+go+to+college+to+get+more+knowledge",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Guys Go To College To Get More Knowledge</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">There need to be more male role models for children in early years education the school leaders union NAHT says as only 3 of teachers in this field are men. Recommended tracks Mining Away by YungVodka published on 2017-06-01T234314Z Mo Bamba Bass Boosted by Bass Boosted Classics published on 2019-01-21T170920Z Ayo And Teo Im So Lit Right Now LYRICS by anniemccarthy. Girls go to college to get more knowledge but I just got a screaming deal on a one-way ticket to Jupiter so fuck them. <br>				
+			</p>
+										<a class="badge badge-warning" href="/how-does-va-dmv-point-system-work.html">how does va dmv point system work</a>
+											<a class="badge badge-primary" href="/how-does-gi-bill-housing-allowance-work.html">how does gi bill housing allowance work</a>
+											<a class="badge badge-secondary" href="/how-do-i-get-my-gi-bill-certificate-of-eligibility-online.html">how do i get my gi bill certificate of eligibility online</a>
+											<a class="badge badge-dark" href="/how-long-does-a-va-appeal-take-2019.html">how long does a va appeal take 2019</a>
+											<a class="badge badge-info" href="/how-do-i-transfer-my-montgomery-gi-bill-to-post-9-11.html">how do i transfer my montgomery gi bill to post 9 11</a>
+											<a class="badge badge-success" href="/how-are-va-disability-percentages-determined.html">how are va disability percentages determined</a>
+											<a class="badge badge-info" href="/how-does-the-va-rate-wrist-pain.html">how does the va rate wrist pain</a>
+											<a class="badge badge-success" href="/how-does-the-va-rate-type-2-diabetes.html">how does the va rate type 2 diabetes</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to pay a visit to the ideal blog.  Our website gives you hints for viewing the maximum quality video and picture content, hunt and locate more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, particularly Youtube, so we recommend this video for you to view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/30/4e/40304ef36ce2cbdd34ae24df12363415.jpg" data-lightbox="roadtrip" data-title="I M Not Jealous My Childhood Memories Im Jealous Childhood Memories">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/30/4e/40304ef36ce2cbdd34ae24df12363415.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdcVPAeQzFBeSvIIWrpYUHpBzI4wbhB9hdmw';" alt="I M Not Jealous My Childhood Memories Im Jealous Childhood Memories">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I M Not Jealous My Childhood Memories Im Jealous Childhood Memories</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/2d/43/142d436fe691a36ef9bd52560ca52585.png" data-lightbox="roadtrip" data-title="Girls Go To College To Get More Knowledge Boys Go To Jupiter Witty Profiles Funny Quotes How To Get">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/2d/43/142d436fe691a36ef9bd52560ca52585.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShZiyD0lDFBIKjtZauQYI-Hb2YCKHDZCn11g';" alt="Girls Go To College To Get More Knowledge Boys Go To Jupiter Witty Profiles Funny Quotes How To Get">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Girls Go To College To Get More Knowledge Boys Go To Jupiter Witty Profiles Funny Quotes How To Get</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/52/20/b9/5220b997bce8173ca46daae834b9e685.jpg" data-lightbox="roadtrip" data-title="Pin By Emma On Same Funny Memes Memes Funny Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/52/20/b9/5220b997bce8173ca46daae834b9e685.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qFqk6OrloBAtsh25NoohO5PhriO7Kd0cWQ';" alt="Pin By Emma On Same Funny Memes Memes Funny Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Emma On Same Funny Memes Memes Funny Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ad/0a/8d/ad0a8d71afb8b02eac5196dd5524850d.png" data-lightbox="roadtrip" data-title="Text These Guys Back And We Ll Tell You What Emoji You Are Inside Told You So Guys Emoji">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ad/0a/8d/ad0a8d71afb8b02eac5196dd5524850d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREDRMPx7z2_cNmhh_4s9BCt4KVZ06iEeR1Zw';" alt="Text These Guys Back And We Ll Tell You What Emoji You Are Inside Told You So Guys Emoji">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Text These Guys Back And We Ll Tell You What Emoji You Are Inside Told You So Guys Emoji</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/da/8d/81da8d4531a427b307e492cb61e16f00.jpg" data-lightbox="roadtrip" data-title="Answer This Guys For More Such Logon Www Qwizwiz Com History Quiz Daily Trivia Challenge Instaquiz Knowledge This Or That Questions Trivia Challenges">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/da/8d/81da8d4531a427b307e492cb61e16f00.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSFFIR8beGqjn0UsMZNotJNiT0TvhxyQ2tCw';" alt="Answer This Guys For More Such Logon Www Qwizwiz Com History Quiz Daily Trivia Challenge Instaquiz Knowledge This Or That Questions Trivia Challenges">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Answer This Guys For More Such Logon Www Qwizwiz Com History Quiz Daily Trivia Challenge Instaquiz Knowledge This Or That Questions Trivia Challenges</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/da/aa/d5daaa7d33f927855adb360f8462a5eb.png" data-lightbox="roadtrip" data-title="Pin On Giggles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/da/aa/d5daaa7d33f927855adb360f8462a5eb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcBJYxjYJZOap5IQFj6QnEhYzPhOpK4Hs2Aw';" alt="Pin On Giggles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Giggles</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/40/30/4e/40304ef36ce2cbdd34ae24df12363415.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcBJYxjYJZOap5IQFj6QnEhYzPhOpK4Hs2Aw';" alt="Pin On Giggles">
+										<div class="card-body">
+						<h3 class="h5"><b>Boys go to Jupiter to get more stupider girls go to college to get more knowledge but I go to my moms house because she lets me drink soda and play Xbox.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Guys go to college to get more knowledge</strong>. 
+								
+																	Maybe its the singsong taunt that goes Girls go to college to get more knowledge boys go to Jupiter to get more stupider Or the romantic standby about two lovebirds sitting in a tree K-I-S-S-I-N-G. 
+																	Boys go to Jupiter to get more stupider By this time Ive already forgotten about the whole. 
+																	Boys go to Jupiter because they already have knowledge and are capable of developing interplanetary travel. 
+																	Want to get updates on new answers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This thread is archived. 
+																	The comic subverts the original rhyme by having both girls Megan and boys Cueball go to college to gain knowledge and then using that knowledge to go to Jupiter as part of a space program working in cooperation with other men another Cueball-like guy and women Ponytail. 
+																	Once someone is upset they will try to make some sort of comeback to relieve their anger and transfer it to someone else its a normal thing people do. 
+																	Gabby crazy hair has pink hair and she sings girls go to college to get more knowledge. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jun 30 2020 - Girls go to college to get more knowledge but also just to grow up Hopefully youll learn just as many life lessons in your four years of college as you will facts from your textbooks To guide you Her Campus has a checklist of everything you should know how to do before graduation day. 
+																	Click to remove this tagging. 
+																	Girls go to college to get more knowledge. 
+																	Overall British campuses are 56 percent female and at 20 universitiesand in once-male-dominated majors. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get more answers from the people in your networks. 
+																	1 Answer from this member. 
+																	But the little poem Girls go to college to get more knowledge boys go to Jupiter to get more stupider is annoying to boys like me. 
+																	You may have to register before you can post. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Girls Go To College To Get More Knowledge Boys Go To Jupiter To Get More Stupider by Ninjaswarrior17 published on 2018-10-31T061336Z. 
+																	Discover more posts about girls-go-to-college-to-get-more-knowledge-boys-go-to-queuepiter-to-get-more-stupider. 
+																	132 points 2 years ago. 
+																	Girls go to college to get more knowledge boys go to Jupiter to get more stupider - See more jupiter slogans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This one is better. 
+																	Stream Girls Go To College To Get More Knowledge Boys Go To Jupiter To Get More Stupider by Ninjaswarrior17 from desktop or your mobile device. 
+																	One-third more girls than boys in Britain go to college government statistics show. 
+																	Weebs go to pluto to get killed by Naruto. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Girls go to college to get more knowledge Boys go to Jupiter to get more stupider - as sung by our girls walking in front of the Boy Scouts Report This by Eve Higdon. 
+																	If this is your first visit be sure to check out the FAQ by clicking the link above. 
+																	Girls go to college to get more knowledge. 
+																	Click the register link above to proceed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	New comments cannot be posted and votes cannot be cast. 
+																	Girls go to college to get more knowledge. 
+																	Boys go to Jupiter to get more stupider. 
+																	By AesopRockyBalBoaConstrictor October 26 2020 in New Catchphrase Suggestions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By AesopRockyBalBoaConstrictor October 26 in New Catchphrase Suggestions. 
+																	Some playground chants are rude others are crude and many involve figuring out that whole business about the birds and the bees. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a9/a4/a0/a9a4a07eecfec4341947b70ccd4e44f9.jpg" data-lightbox="roadtrip" data-title="Pin On College Dorm Rooms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a9/a4/a0/a9a4a07eecfec4341947b70ccd4e44f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS81Xyo-lRXRvDVzqTRPtyShicaH8zu52eQlg';" alt="Pin On College Dorm Rooms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On College Dorm Rooms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/96/45/7c9645544af28e764c9ef15f2d1bbe63.png" data-lightbox="roadtrip" data-title="15 Home Quora Fun Facts Baseball Cards Trinity College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/96/45/7c9645544af28e764c9ef15f2d1bbe63.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ27B1DxjBX4yKd_lq_9FQgKhLpR8GaX-6YGQ';" alt="15 Home Quora Fun Facts Baseball Cards Trinity College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">15 Home Quora Fun Facts Baseball Cards Trinity College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/b5/c4/f0b5c4c71ad305852d96eaefaa9283ba.png" data-lightbox="roadtrip" data-title="College Essay Guy Step By Step Guides Courses And Resources For Writing Amazing College Essays College Essay Essay Help Essay">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/b5/c4/f0b5c4c71ad305852d96eaefaa9283ba.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw3Oh4hIoGPrik5Lg6rcJRshF7G3as1nX6pQ';" alt="College Essay Guy Step By Step Guides Courses And Resources For Writing Amazing College Essays College Essay Essay Help Essay">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Essay Guy Step By Step Guides Courses And Resources For Writing Amazing College Essays College Essay Essay Help Essay</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/12/cf/7c/12cf7c8a954006553d3d876eb70975f9.jpg" data-lightbox="roadtrip" data-title="Pin On Math Goodies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/12/cf/7c/12cf7c8a954006553d3d876eb70975f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQVkLrf4I_5yHWptZoSktM8lZ4r-Sh3Nrk1A';" alt="Pin On Math Goodies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Math Goodies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ea/12/1c/ea121c3a0cb1c42f184f2d06e73b0958.jpg" data-lightbox="roadtrip" data-title="Pin By Hemanth Sai On Knowledge In 2020 Family Guy Fictional Characters Guys">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ea/12/1c/ea121c3a0cb1c42f184f2d06e73b0958.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHOq0QnVGLnd6fO7y1Qjo-OhBixsAcI3A0Hw';" alt="Pin By Hemanth Sai On Knowledge In 2020 Family Guy Fictional Characters Guys">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Hemanth Sai On Knowledge In 2020 Family Guy Fictional Characters Guys</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b1/83/a0/b183a0a24eacccd05d33637a1408ba56.jpg" data-lightbox="roadtrip" data-title="Life Transitions Are Hard Whether It S High School To College College To Work Or Something Else There Will Alw Freshman Year College Freshman Year Freshman">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b1/83/a0/b183a0a24eacccd05d33637a1408ba56.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKbHSQrRbq_DdvVEOcJa3V_YDBd9NG22nyrQ';" alt="Life Transitions Are Hard Whether It S High School To College College To Work Or Something Else There Will Alw Freshman Year College Freshman Year Freshman">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Life Transitions Are Hard Whether It S High School To College College To Work Or Something Else There Will Alw Freshman Year College Freshman Year Freshman</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/92/35/c1/9235c18d60fe01ed1031b645d6948e25.jpg" data-lightbox="roadtrip" data-title="Pin By Hilgs On E Stupid Girl Just Go You Meme">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/92/35/c1/9235c18d60fe01ed1031b645d6948e25.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiwuZMvVyW1snRKrYMxfoqbKN2er02eTzuhg';" alt="Pin By Hilgs On E Stupid Girl Just Go You Meme">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Hilgs On E Stupid Girl Just Go You Meme</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/1e/43/411e430f6683d080ea4103973380c041.png" data-lightbox="roadtrip" data-title="How Not To Write A Scholarship Essay And What To Do Instead The Scholarship Guy Scholarship Essay Scholarships Essay">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/1e/43/411e430f6683d080ea4103973380c041.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0JQpNiHsKuMVAKG_QFl8aPIvel-JEuZh6g';" alt="How Not To Write A Scholarship Essay And What To Do Instead The Scholarship Guy Scholarship Essay Scholarships Essay">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Not To Write A Scholarship Essay And What To Do Instead The Scholarship Guy Scholarship Essay Scholarships Essay</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/dd/cb/54/ddcb54ed26dae5574ec1e5dad7966a8a.jpg" data-lightbox="roadtrip" data-title="17 Things That Women Find Attractive In Men Men Style Tips Guys Grooming Best Hobbies For Men">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/dd/cb/54/ddcb54ed26dae5574ec1e5dad7966a8a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnKcy2KQpEELzsRDbDjoTOjSjfep-B3clH6Q';" alt="17 Things That Women Find Attractive In Men Men Style Tips Guys Grooming Best Hobbies For Men">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">17 Things That Women Find Attractive In Men Men Style Tips Guys Grooming Best Hobbies For Men</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/7c/52/f8/7c52f835440a986f92020714443385a2.jpg" data-lightbox="roadtrip" data-title="Hey Guys I Found 8 Awesome Ways And Tricks That I Use In My Everyday Life To Dress Like Fas How To Look Handsome How To Look Expensive How To Look Attractive">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/7c/52/f8/7c52f835440a986f92020714443385a2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcKMDqsXO90A0z1CbaUKJIZiynDkNS0t-qnQ';" alt="Hey Guys I Found 8 Awesome Ways And Tricks That I Use In My Everyday Life To Dress Like Fas How To Look Handsome How To Look Expensive How To Look Attractive">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hey Guys I Found 8 Awesome Ways And Tricks That I Use In My Everyday Life To Dress Like Fas How To Look Handsome How To Look Expensive How To Look Attractive</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/42/9d/ce/429dce0dd0a1354d7d654e13ab67550b.jpg" data-lightbox="roadtrip" data-title="10 College Dorm Room Essentials Every Guy Needs In 2020 College Dorm Room Essentials Dorm Room Essentials Dorm Essentials">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/42/9d/ce/429dce0dd0a1354d7d654e13ab67550b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ZdySX6EbuxOVG5_daZU4dNVQwPIKaS39VA';" alt="10 College Dorm Room Essentials Every Guy Needs In 2020 College Dorm Room Essentials Dorm Room Essentials Dorm Essentials">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 College Dorm Room Essentials Every Guy Needs In 2020 College Dorm Room Essentials Dorm Room Essentials Dorm Essentials</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3e/fb/fc/3efbfcf9bd54aa46012ec094c5cb7e38.jpg" data-lightbox="roadtrip" data-title="Pin On Funny">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3e/fb/fc/3efbfcf9bd54aa46012ec094c5cb7e38.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5F5jX2UeqYZK_UR0N0dvIN9lPgA4ImiD9GA';" alt="Pin On Funny">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Funny</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e9/3b/19/e93b1944cdb0fddd24cc6a856060a775.jpg" data-lightbox="roadtrip" data-title="They Share Amazing Knowledge These Tricks Are Awesome I Apply These Tricks For 7 Days And People Start To Re How To Start Conversations Alpha Male Traits Men">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e9/3b/19/e93b1944cdb0fddd24cc6a856060a775.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDfJGIg6zutcJbF7-jW-bEV9HiT-Ld7-6GGA';" alt="They Share Amazing Knowledge These Tricks Are Awesome I Apply These Tricks For 7 Days And People Start To Re How To Start Conversations Alpha Male Traits Men">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">They Share Amazing Knowledge These Tricks Are Awesome I Apply These Tricks For 7 Days And People Start To Re How To Start Conversations Alpha Male Traits Men</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-disability-for-vision-loss.html">Va Disability For Vision Loss</a></li>
+													<li class="list-group-item"><a href="/va-disability-jobs.html">Va Disability Jobs</a></li>
+													<li class="list-group-item"><a href="/va-disability-for-knee-injections.html">Va Disability For Knee Injections</a></li>
+													<li class="list-group-item"><a href="/va-disability-injury-percentages.html">Va Disability Injury Percentages</a></li>
+													<li class="list-group-item"><a href="/va-disability-left-knee.html">Va Disability Left Knee</a></li>
+													<li class="list-group-item"><a href="/va-disability-for-rhinitis.html">Va Disability For Rhinitis</a></li>
+													<li class="list-group-item"><a href="/va-disability-for-knee-pain.html">Va Disability For Knee Pain</a></li>
+													<li class="list-group-item"><a href="/va-disability-knee-arthroscopy.html">Va Disability Knee Arthroscopy</a></li>
+													<li class="list-group-item"><a href="/va-disability-not-service-connected.html">Va Disability Not Service Connected</a></li>
+													<li class="list-group-item"><a href="/va-disability-knee-exam.html">Va Disability Knee Exam</a></li>
+													<li class="list-group-item"><a href="/va-disability-math-chart.html">Va Disability Math Chart</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-chart-2019.html">Va Disability Percentage Chart 2019</a></li>
+													<li class="list-group-item"><a href="/va-disability-partial-knee-replacement.html">Va Disability Partial Knee Replacement</a></li>
+													<li class="list-group-item"><a href="/va-disability-lumbar-spondylosis.html">Va Disability Lumbar Spondylosis</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-for-cataracts.html">Va Disability Percentage For Cataracts</a></li>
+													<li class="list-group-item"><a href="/va-disability-k-rate.html">Va Disability K Rate</a></li>
+													<li class="list-group-item"><a href="/va-disability-payback-calculator.html">Va Disability Payback Calculator</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-benefits.html">Va Disability Percentage Benefits</a></li>
+													<li class="list-group-item"><a href="/va-disability-knee-dislocation.html">Va Disability Knee Dislocation</a></li>
+													<li class="list-group-item"><a href="/va-disability-knee-strain.html">Va Disability Knee Strain</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

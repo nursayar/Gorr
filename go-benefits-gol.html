@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Go Benefits Gol - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Go Benefits Gol",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/95/19/8f/95198f34c3f039ef2f573e78170c8e81.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=go+benefits+gol",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Go Benefits Gol</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Gold Elite Member Benefits. Inspires all kids to be active and mindful with a wide range of offerings that appeal to kids different ages interests skills and abilities. Benefits of the GOLO Diet The GOLO Diet is based on several solid nutrition principles such as increasing exercise and eliminating processed foods both of which may promote weight loss and. <br>				
+			</p>
+										<a class="badge badge-info" href="/do-veterans-spouses-get-medical-benefits.html">do veterans spouses get medical benefits</a>
+											<a class="badge badge-light" href="/dod-vs-va-rating.html">dod vs va rating</a>
+											<a class="badge badge-danger" href="/does-gi-bill-pay-for-trade-schools.html">does gi bill pay for trade schools</a>
+											<a class="badge badge-danger" href="/do-reserve-get-gi-bill.html">do reserve get gi bill</a>
+											<a class="badge badge-success" href="/does-severe-depression-qualify-for-short-term-disability.html">does severe depression qualify for short term disability</a>
+											<a class="badge badge-info" href="/does-gm-offer-a-military-discount.html">does gm offer a military discount</a>
+											<a class="badge badge-dark" href="/does-occipital-neuralgia-qualify-for-disability.html">does occipital neuralgia qualify for disability</a>
+											<a class="badge badge-success" href="/does-disabled-american-veterans-pick-up-furniture.html">does disabled american veterans pick up furniture</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you have come to visit the ideal blog.  Our site provides you with suggestions for seeing the highest quality video and picture content, search and locate more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie that you view.  It is also possible to contribute to supporting this site by sharing videos and images that you enjoy on this blog on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a4/2a/63/a42a63fda5f945df02b2cc1b8474697a.jpg" data-lightbox="roadtrip" data-title="Gol 17 In 2020 Coconut Health Benefits Fruit Health Benefits Celery Benefits Health">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a4/2a/63/a42a63fda5f945df02b2cc1b8474697a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvM0DcwsJtK6N2F5ba0OM1-jiWizq3ebsz1w';" alt="Gol 17 In 2020 Coconut Health Benefits Fruit Health Benefits Celery Benefits Health">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gol 17 In 2020 Coconut Health Benefits Fruit Health Benefits Celery Benefits Health</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/d1/a7/03d1a79dd20b5980f0097b14e42c5265.jpg" data-lightbox="roadtrip" data-title="Pin On Health">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/d1/a7/03d1a79dd20b5980f0097b14e42c5265.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbP1flqHk6Kj06fw3pxRjdXRmU7WpTv8x1WQ';" alt="Pin On Health">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Health</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/09/bd/a9/09bda914bd9c527b71432c040901ce4f.jpg" data-lightbox="roadtrip" data-title="5 Ways Gardening Is Underrated Gardening Love Gardening Health Gardening For Beginners Benefits Of Gardening">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/09/bd/a9/09bda914bd9c527b71432c040901ce4f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOGOGS8Z2gy-xml4x2HWe29NBaCwmK62uQQg';" alt="5 Ways Gardening Is Underrated Gardening Love Gardening Health Gardening For Beginners Benefits Of Gardening">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Ways Gardening Is Underrated Gardening Love Gardening Health Gardening For Beginners Benefits Of Gardening</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/6e/7e/f46e7ee6f3ea13af9f0ac090cdd6a7f7.jpg" data-lightbox="roadtrip" data-title="Pin On Health Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/6e/7e/f46e7ee6f3ea13af9f0ac090cdd6a7f7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScLRWWhDgyY33tTFJ26SNfkMnVWZLf2kCfIA';" alt="Pin On Health Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Health Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/12/4c/b3/124cb37bd78d8ba14ce02660cb93d0c9.png" data-lightbox="roadtrip" data-title="Brand New In Box Benefits 3 Best Selling Mascaras In 2020 Benefit Makeup Brand New Things To Sell">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/12/4c/b3/124cb37bd78d8ba14ce02660cb93d0c9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_i0HZDuQN4yn1_-lFTOTdyAEhCvTGaofpdQ';" alt="Brand New In Box Benefits 3 Best Selling Mascaras In 2020 Benefit Makeup Brand New Things To Sell">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Brand New In Box Benefits 3 Best Selling Mascaras In 2020 Benefit Makeup Brand New Things To Sell</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/80/f1/d480f12c3db6ff4e9222257be85a0a7e.jpg" data-lightbox="roadtrip" data-title="Goli Nutrition World S First Apple Cider Vinegar Apple Cider Benefits Cider Vinegar Apple Cider">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/80/f1/d480f12c3db6ff4e9222257be85a0a7e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8aOLMjugmNdDl68tMw5QWoC0bj0-FS7B6Jw';" alt="Goli Nutrition World S First Apple Cider Vinegar Apple Cider Benefits Cider Vinegar Apple Cider">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Goli Nutrition World S First Apple Cider Vinegar Apple Cider Benefits Cider Vinegar Apple Cider</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/d4/1e/b0/d41eb079f928464c42d4e848177c730d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8aOLMjugmNdDl68tMw5QWoC0bj0-FS7B6Jw';" alt="Goli Nutrition World S First Apple Cider Vinegar Apple Cider Benefits Cider Vinegar Apple Cider">
+										<div class="card-body">
+						<h3 class="h5"><b>Exclusive discounts for all RYA members including up to 25 off Crewsaver Watersports range Atacama drysuits Fusion 3D buoyancy aids and Liferafts.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Go benefits gol</strong>. 
+								
+																	Beside a competitive base salary you will enjoy a wide range of extra benefits including a valuable pension scheme private healthcare and car purchase schemes. 
+																	Get an overview of Gold Member benefits for AA Members including perks like European Breakdown Cover free breakdown cover for under 17s and free Key Insurance all included with AA membership. 
+																	To hold gold in an IRA you need to create a self-directed account administered by a specialist custodian who handles and stores the metal. 
+																	To your Toyota Go Benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Benefit calculators how payments work changes of circumstance benefit fraud and appeals. 
+																	Choose your room and customize your stay from your mobile device up to 24 hours in advance. 
+																	Applying signing into your account and help. 
+																	Trainers have reported receiving up to 30 items from a gym on their seven day streak because they obtained their Gold badge. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Members with Gold status receive all the benefits in the lower tiers. 
+																	Go-To-Market offers give you access to exclusive sales and marketing resources that can help you accelerate your time to market generate leads and expand your business. 
+																	I have a cluster of 3 gyms near my home that can be looped around in 5 minutes. 
+																	GoBenefits is a free employee benefits quoting enrollment and administration platform for medical dental and vision plans through a defined contribution approach. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The loop produces 69 items depending on color from the gyms with no badge and 1521 with gold badge. 
+																	While others are reporting that Raids conducted at gyms with Gold badges are giving more Rare Candies or TMs. 
+																	Hilton Honors Go Hilton. 
+																	Benefits kids physical wellness academic success and social-emotional health. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Free Play Days events. 
+																	For information regarding the benefits available to you please login using your individual name and password. 
+																	While convenient keeping gold in an IRA carries high. 
+																	Availability period for each game may vary. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Access full games across a variety of genres for free every month on select weekends. 
+																	Upgrade Gold go Ultimate. 
+																	Privacy Policy Terms Conditions. 
+																	A discounted changeable refundable rate is exclusively available for Hilton Honors members. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The reward of extra items is pretty good honestly. 
+																	When consumed daily over a longer period lowers blood pressure reduces triglycerides and slows the development of plaque in the arteries. 
+																	Toyota Go Benefits - Login. 
+																	If you have forgotten your authentication answer please call us on 0800 999 2016. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Now we have established that its safe to consume gold we can now detail some of the health benefits of eating gold these are listed below. 
+																	Go-To-Market with Microsoft resources offers and programs are among the many benefits you receive as a Microsoft Partner Network member. 
+																	Anti-inflammatory gold salts are well-known for their use in rheumatoid arthritis treatment and in similar applications Cancer treatment gold isotope 198 is used in some forms of cancer treatment. 
+																	I would go with 1 for silver 2 for gold bronze is so easy to get it doesnt need a reward. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Join Xbox Game Pass Ultimate and enjoy all the benefits of Xbox Live Gold plus over 100 high-quality console and PC games. 
+																	Gobi Gold Daily Balancer supports the healthy function of your heart and cardiovascular system. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/61/22/dd/6122dd7ccdec40579aa518417fba8248.jpg" data-lightbox="roadtrip" data-title="Tiger Eye Healing Properties Benefits Crystalmeanings Tiger Eye Is A Shimmery Gol Tiger Eye Healing Properties Crystal Healing Stones Spiritual Crystals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/61/22/dd/6122dd7ccdec40579aa518417fba8248.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhjgED7aPYVVf_hDRuu3t2_DJY-ldtV96cGg';" alt="Tiger Eye Healing Properties Benefits Crystalmeanings Tiger Eye Is A Shimmery Gol Tiger Eye Healing Properties Crystal Healing Stones Spiritual Crystals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tiger Eye Healing Properties Benefits Crystalmeanings Tiger Eye Is A Shimmery Gol Tiger Eye Healing Properties Crystal Healing Stones Spiritual Crystals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/95/19/8f/95198f34c3f039ef2f573e78170c8e81.jpg" data-lightbox="roadtrip" data-title="Collagen Benefits How To Cook Bake And Drink It Collagen Collagen Recipes Collagen Powder">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/95/19/8f/95198f34c3f039ef2f573e78170c8e81.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFo3w34ArYAPAf2VYEa00GgvtI_i694hHWLQ';" alt="Collagen Benefits How To Cook Bake And Drink It Collagen Collagen Recipes Collagen Powder">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Collagen Benefits How To Cook Bake And Drink It Collagen Collagen Recipes Collagen Powder</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/ef/a2/e6efa23c2a795d7feca84a3a70d3c524.jpg" data-lightbox="roadtrip" data-title="Fruit To Go Dog Food Recipes Fruit Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/ef/a2/e6efa23c2a795d7feca84a3a70d3c524.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl1iNenZBY2AxxpV3eotEJCXR5_g4Pq6ILug';" alt="Fruit To Go Dog Food Recipes Fruit Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fruit To Go Dog Food Recipes Fruit Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5b/5c/05/5b5c05574c055a14d9d14967878983cf.jpg" data-lightbox="roadtrip" data-title="Amazing Acv Gummies In 2020 Apple Cider Benefits Apple Benefits Apple Cider">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5b/5c/05/5b5c05574c055a14d9d14967878983cf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4yy_A3FLgfvqwNzZR2qgmOBu94VI-md64Cw';" alt="Amazing Acv Gummies In 2020 Apple Cider Benefits Apple Benefits Apple Cider">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Amazing Acv Gummies In 2020 Apple Cider Benefits Apple Benefits Apple Cider</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/1e/b0/d41eb079f928464c42d4e848177c730d.png" data-lightbox="roadtrip" data-title="Pin On Fiercely His Warriors For Christ Blog Board">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/1e/b0/d41eb079f928464c42d4e848177c730d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQToTEUCsQSHrjEjigbwzunl03dWJyhY7X_mQ';" alt="Pin On Fiercely His Warriors For Christ Blog Board">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Fiercely His Warriors For Christ Blog Board</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/7b/d9/f17bd90551c51bef24689a71f8702cdc.png" data-lightbox="roadtrip" data-title="Health Benefits Of Curry Leaveskari Pata Also Known As Meetha Neem Healthy Work Snacks Health Benefits Health">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/7b/d9/f17bd90551c51bef24689a71f8702cdc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStOZOa_rFUHUuCe3orWDKzyDq_rXYmkInwVQ';" alt="Health Benefits Of Curry Leaveskari Pata Also Known As Meetha Neem Healthy Work Snacks Health Benefits Health">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Health Benefits Of Curry Leaveskari Pata Also Known As Meetha Neem Healthy Work Snacks Health Benefits Health</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/4d/cb/bc4dcb2ea7d0d8649a4b77525a5f0416.jpg" data-lightbox="roadtrip" data-title="Bhune Hue Chane Ke Fayde In Urdu Roasted Chana Benefits In Urdu Youtube Health And Beauty Tips Hacks Every Girl Should Know Roast">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/4d/cb/bc4dcb2ea7d0d8649a4b77525a5f0416.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRpmGQhIUiGKpaOdJXIDkI0WjA-tHIvSDKRQ';" alt="Bhune Hue Chane Ke Fayde In Urdu Roasted Chana Benefits In Urdu Youtube Health And Beauty Tips Hacks Every Girl Should Know Roast">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bhune Hue Chane Ke Fayde In Urdu Roasted Chana Benefits In Urdu Youtube Health And Beauty Tips Hacks Every Girl Should Know Roast</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/78/8c/33788ca64f42f28672537885fda622bf.jpg" data-lightbox="roadtrip" data-title="Mktg 522 Week 3 Thread 1 Brand Benefits Week Benefit Thread">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/78/8c/33788ca64f42f28672537885fda622bf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXqmhgFECYqwBf6yWPUNltA8wdoz0b72G1mA';" alt="Mktg 522 Week 3 Thread 1 Brand Benefits Week Benefit Thread">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mktg 522 Week 3 Thread 1 Brand Benefits Week Benefit Thread</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/66/32/9e/66329eebbb0ac13de80dce992a92bd6c.jpg" data-lightbox="roadtrip" data-title="Let Go Based On Your Sensory Learning Style Dawning Perspective Self Awareness Quotes Awareness Quotes Letting Go">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/66/32/9e/66329eebbb0ac13de80dce992a92bd6c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfppWNDfE9wtnf3jz4x1W8ec1rf37QMC5VXg';" alt="Let Go Based On Your Sensory Learning Style Dawning Perspective Self Awareness Quotes Awareness Quotes Letting Go">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Let Go Based On Your Sensory Learning Style Dawning Perspective Self Awareness Quotes Awareness Quotes Letting Go</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/59/9c/0d/599c0d673cd738d0565c7549d0b23741--old-fashion-credit-cards.jpg" data-lightbox="roadtrip" data-title="Spg Elite Status Benefits Chart Status Credit Card Elite">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/59/9c/0d/599c0d673cd738d0565c7549d0b23741--old-fashion-credit-cards.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0mNepfTEVhqbsy7iOUMsQh5mwjjeyYbH43w';" alt="Spg Elite Status Benefits Chart Status Credit Card Elite">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Spg Elite Status Benefits Chart Status Credit Card Elite</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/ce/aa/7b/ceaa7b4c9fc9770db2da407d3ef084b3.jpg" data-lightbox="roadtrip" data-title="First 100 Customers This Particular Thing For Benefits Of Survival Skills Appea Zombie Apocalypse Survival Apocalypse Survival Zombies Apocalypse Survival">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/ce/aa/7b/ceaa7b4c9fc9770db2da407d3ef084b3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSgcOst1Y9aG9ygztIiMeELYvOwBVsxubJfQ';" alt="First 100 Customers This Particular Thing For Benefits Of Survival Skills Appea Zombie Apocalypse Survival Apocalypse Survival Zombies Apocalypse Survival">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">First 100 Customers This Particular Thing For Benefits Of Survival Skills Appea Zombie Apocalypse Survival Apocalypse Survival Zombies Apocalypse Survival</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/cd/32/a4/cd32a4a7220314dd168f83ab91166822.jpg" data-lightbox="roadtrip" data-title="The 2 Types Of Messy Play And How To Deal Aka 7 Phrases To Get Your Child To Clean Up The Playful Learner Stubborn Child Messy Play Messy Kids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/cd/32/a4/cd32a4a7220314dd168f83ab91166822.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzIlh3QJ65ohQXTNIzTxXrcGMHmYdmDS3ZXw';" alt="The 2 Types Of Messy Play And How To Deal Aka 7 Phrases To Get Your Child To Clean Up The Playful Learner Stubborn Child Messy Play Messy Kids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 2 Types Of Messy Play And How To Deal Aka 7 Phrases To Get Your Child To Clean Up The Playful Learner Stubborn Child Messy Play Messy Kids</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/7a/16/657a16f284cfe8fd37997613205d1e0b.jpg" data-lightbox="roadtrip" data-title="Forever Living Products Recruiting Now Choose Your Hours Your Customers And Your Team Nothing To Dislike About That At All Check Out Www Yvonnegoss Flp Com">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/7a/16/657a16f284cfe8fd37997613205d1e0b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbo8ck5cizNlfd3pwwtmpkfymlCpDOYAG-xw';" alt="Forever Living Products Recruiting Now Choose Your Hours Your Customers And Your Team Nothing To Dislike About That At All Check Out Www Yvonnegoss Flp Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Forever Living Products Recruiting Now Choose Your Hours Your Customers And Your Team Nothing To Dislike About That At All Check Out Www Yvonnegoss Flp Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-gift-tax.html">Va Gift Tax</a></li>
+													<li class="list-group-item"><a href="/va-gi-bill-mitigating.html">Va Gi Bill Mitigating</a></li>
+													<li class="list-group-item"><a href="/va-jumbo-rate.html">Va Jumbo Rate</a></li>
+													<li class="list-group-item"><a href="/va-loan-interest-rate-buy-down.html">Va Loan Interest Rate Buy Down</a></li>
+													<li class="list-group-item"><a href="/va-hearing.html">Va Hearing</a></li>
+													<li class="list-group-item"><a href="/va-gi-bill-transfer-form.html">Va Gi Bill Transfer Form</a></li>
+													<li class="list-group-item"><a href="/va-gi-bill-office-locations.html">Va Gi Bill Office Locations</a></li>
+													<li class="list-group-item"><a href="/va-interest-rate-usaa.html">Va Interest Rate Usaa</a></li>
+													<li class="list-group-item"><a href="/va-hearing-loss-compensation-chart.html">Va Hearing Loss Compensation Chart</a></li>
+													<li class="list-group-item"><a href="/va-loan-interest-rate-reduction.html">Va Loan Interest Rate Reduction</a></li>
+													<li class="list-group-item"><a href="/va-gi-bill-percentage.html">Va Gi Bill Percentage</a></li>
+													<li class="list-group-item"><a href="/va-health-care-percentage.html">Va Health Care Percentage</a></li>
+													<li class="list-group-item"><a href="/va-loan-after-chapter-7.html">Va Loan After Chapter 7</a></li>
+													<li class="list-group-item"><a href="/va-gi-bill-monthly-stipend.html">Va Gi Bill Monthly Stipend</a></li>
+													<li class="list-group-item"><a href="/va-gi-bill-yellow-ribbon-program.html">Va Gi Bill Yellow Ribbon Program</a></li>
+													<li class="list-group-item"><a href="/va-gov-ptsd-rating.html">Va Gov Ptsd Rating</a></li>
+													<li class="list-group-item"><a href="/va-loan-interest-rate-usaa.html">Va Loan Interest Rate Usaa</a></li>
+													<li class="list-group-item"><a href="/va-interest-rate-and-discount-disclosure.html">Va Interest Rate And Discount Disclosure</a></li>
+													<li class="list-group-item"><a href="/va-gi-bill-yellow-ribbon-schools.html">Va Gi Bill Yellow Ribbon Schools</a></li>
+													<li class="list-group-item"><a href="/va-loan-down-payment-percentage.html">Va Loan Down Payment Percentage</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

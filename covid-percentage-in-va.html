@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Covid Percentage In Va - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Covid Percentage In Va",
+  "datePublished": "2021-02-17",
+  "image": "http://news.vcu.edu/image/15900/600",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=covid+percentage+in+va",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Covid Percentage In Va</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">According to the Bloomberg Covid-19 Vaccine Tracker West Virginia has administered 718 of the vaccine doses its received. Doses distributed to state. Surveillance system upgrades occurring on Saturday January 30 2021 will affect the data on the COVID-19 Cases Testing Dashboards on January 31 and February 1 2021. <br>				
+			</p>
+										<a class="badge badge-warning" href="/30-gt-berapa-ton.html">30 gt berapa ton</a>
+											<a class="badge badge-info" href="/30g-sugar-to-cups.html">30g sugar to cups</a>
+											<a class="badge badge-success" href="/100-percent-va-refinance.html">100 percent va refinance</a>
+											<a class="badge badge-dark" href="/100-percent-cash-out-va-refinance.html">100 percent cash out va refinance</a>
+											<a class="badge badge-danger" href="/40-percent-va-disability-benefits.html">40 percent va disability benefits</a>
+											<a class="badge badge-dark" href="/2020-va-comp-rates.html">2020 va comp rates</a>
+											<a class="badge badge-success" href="/30-gram-berapa-kg.html">30 gram berapa kg</a>
+											<a class="badge badge-success" href="/2020-gi-bill.html">2020 gi bill</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to pay a visit to the right blog.  Our website gives you suggestions for viewing the highest quality video and picture content, search and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, particularly Youtube, so we recommend this video for you to view.  You can also bring about supporting this site by sharing videos and graphics that you enjoy on this blog on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.nbc12.com/resizer/REGnKkwrATtJzMMrNP-wJztm81k=/1200x600/cloudfront-us-east-1.images.arcpublishing.com/raycom/ZUZBUM2QKJBKDG3C6IQVFZH54Y.png" data-lightbox="roadtrip" data-title="Vo2mqul64vfw6m">
+											<img class="card-img v-image ads-img " src="https://www.nbc12.com/resizer/REGnKkwrATtJzMMrNP-wJztm81k=/1200x600/cloudfront-us-east-1.images.arcpublishing.com/raycom/ZUZBUM2QKJBKDG3C6IQVFZH54Y.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFxUY09272fjQcjZ_Wv5gOx7Y37Jp8xophCA';" alt="Vo2mqul64vfw6m">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vo2mqul64vfw6m</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/commons/3/37/2020-03-27_18_23_57_Sign_reading_%22In_order_to_prevent_the_spread_of_COVID-19%2C_this_facility_is_CLOSED_to_the_public_until_further_notice%22_at_Franklin_Farm_Park_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg" data-lightbox="roadtrip" data-title="Covid 19 Pandemic In Virginia Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/commons/3/37/2020-03-27_18_23_57_Sign_reading_%22In_order_to_prevent_the_spread_of_COVID-19%2C_this_facility_is_CLOSED_to_the_public_until_further_notice%22_at_Franklin_Farm_Park_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPLfdWXuuQKrKsn5i5oPBf9orc6t9-4AU1Ug';" alt="Covid 19 Pandemic In Virginia Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Covid 19 Pandemic In Virginia Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://news.vcu.edu/image/15900/600" data-lightbox="roadtrip" data-title="Early Face Mask Policies Curbed Covid 19 S Spread According To 198 Country Analysis">
+											<img class="card-img v-image ads-img " src="http://news.vcu.edu/image/15900/600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt82EB6my8z1oOKC4XkrsLvBbgSWkUmTObAw';" alt="Early Face Mask Policies Curbed Covid 19 S Spread According To 198 Country Analysis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Early Face Mask Policies Curbed Covid 19 S Spread According To 198 Country Analysis</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="UzPZoB9YrZ05VM" data-lightbox="roadtrip" data-title="Https Www Va Gov Health Docs Vha Covid 19 Response Report Pdf">
+											<img class="card-img v-image ads-img " src="UzPZoB9YrZ05VM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEms-rADxTx21FOSz98hkbVraBxJsAagUsiA';" alt="Https Www Va Gov Health Docs Vha Covid 19 Response Report Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Va Gov Health Docs Vha Covid 19 Response Report Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.sanity.io/images/0vv8moc6/psychtimes/38d724636cbdf96b9eb4ea702cb3d2f5b83c9b81-1068x657.jpg?auto=format" data-lightbox="roadtrip" data-title="Covid 19 Has The Mortality Rate Declined Psychiatric Times">
+											<img class="card-img v-image ads-img " src="https://cdn.sanity.io/images/0vv8moc6/psychtimes/38d724636cbdf96b9eb4ea702cb3d2f5b83c9b81-1068x657.jpg?auto=format" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROaNiw89fZz-fhNnLzOAgLx_OokjxO15tcRA';" alt="Covid 19 Has The Mortality Rate Declined Psychiatric Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Covid 19 Has The Mortality Rate Declined Psychiatric Times</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://static01.nyt.com/images/2020/03/29/us/west-virginia-coronavirus-cases-promo-1585539566313/west-virginia-coronavirus-cases-promo-1585539566313-facebookJumbo-v155.png" data-lightbox="roadtrip" data-title="West Virginia Coronavirus Map And Case Count The New York Times">
+											<img class="card-img v-image ads-img " src="https://static01.nyt.com/images/2020/03/29/us/west-virginia-coronavirus-cases-promo-1585539566313/west-virginia-coronavirus-cases-promo-1585539566313-facebookJumbo-v155.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBDhD4aXRHU-EXOyned7lBVRXyx0_W_uOWFQ';" alt="West Virginia Coronavirus Map And Case Count The New York Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">West Virginia Coronavirus Map And Case Count The New York Times</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="UzPZoB9YrZ05VM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBDhD4aXRHU-EXOyned7lBVRXyx0_W_uOWFQ';" alt="West Virginia Coronavirus Map And Case Count The New York Times">
+										<div class="card-body">
+						<h3 class="h5"><b>VDH is reporting that a total of 697914 COVID-19 vaccines have been administered as of Jan.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Covid percentage in va</strong>. 
+								
+																	As of Thursday there are. 
+																	4220943 PCR polymerase chain reaction tests have been conducted in Virginia as of Wednesday with a 127 positivity rate over the last week up from the 122 reported Tuesday. 
+																	Vaccine summary for Virginia. 
+																	WDBJ - The Virginia Department of Health is reporting 516398 total cases of COVID-19 across the commonwealth as of Thursday February 4 2021 dating to the beginning of the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The data below includes the total number of COVID-19 PCR testing encounters total positive PCR tests and the PCR percent positivity for each locality in Virginia by the two most recent 14-day periods based on the lab report date. 
+																	ARLINGTON VA The positivity rate for COVID-19 the illness associated with the new coronavirus in Arlington dipped below 8 percent for the first time since Christmas Day according to the. 
+																	Spanish speakers are available. 
+																	A decrease in the number of cases and tests. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	3600741 PCR polymerase chain reaction tests have been conducted with an 11-percent positive rate over the last week higher than the 109 percent reported Wednesday. 
+																	New-case count drops percentage of positive tests ticks down slightly RICHMOND Va. 
+																	Percentage of distributed vaccines that have been administered. 
+																	Doses distributed to state. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	North Dakota has administered the highest percentage of COVID-19 vaccines it has received according to the CDCs COVID-19 vaccine distribution and administration data tracker. 
+																	The total number of deaths has reached 6650. 
+																	WRIC Heres the latest coronavirus update from the Virginia Department of Health for Thursday February 4 2021. 
+																	That ranks first among the 50 states according to Bloomberg with. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2130 eastern shore district. 
+																	The Virginia Department of Health is reporting 3059 new COVID-19 cases bringing the total number of cases to 516398. 
+																	Su informacion ayudara a mantener acceso y distribucion equitativa de la vacuna de COVID 19 a todas las comunidades en Virginia. 
+																	4878157 PCR polymerase chain reaction tests have been conducted in Virginia as of Tuesday with a 136 positivity rate from those tests over the last week down from 14 reported Monday. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The coronavirus first most impacted people aged 50 to 69 which currently accounts for nearly 25 percent of cases in Virginia. 
+																	Virginia COVID-19 14-Day Percent Positivity. 
+																	WDBJ - The Virginia Department of Health is reporting 463751 total cases of COVID-19 across the commonwealth as of Friday January 22 2021 dating to the beginning of the. 
+																	Nearly 600000 people in the state have been vaccinated with at least. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Visualizations graphs and data in one easy-to-use website. 
+																	4191183 PCR polymerase chain reaction tests have been conducted in Virginia as of Tuesday with a 122 positivity rate over the last week down from the 123 reported Monday. 
+																	CDCs home for COVID-19 data. 
+																	7-day avg percent positivity. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	WDBJ - The Virginia Department of Health is reporting 281909 total cases of COVID-19. 
+																	Anyone experiencing anxiety or stress related to COVID-19 may call or text VA COPES a free and confidential COVID-19 response warmline at 877-349-6428 Mon-Fri 900am to 900pm and Sat - Sun. 
+																	However people aged 30 to 49 now account for nearly 32 percent of. 
+																	Percentage of distributed vaccines that have been administered. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These data are not exclusive to nursing homes and can be utilized by any setting type. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/COVID-19_In_West_Virginia_County_Map.svg/220px-COVID-19_In_West_Virginia_County_Map.svg.png" data-lightbox="roadtrip" data-title="Covid 19 Pandemic In West Virginia Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/COVID-19_In_West_Virginia_County_Map.svg/220px-COVID-19_In_West_Virginia_County_Map.svg.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe5n8gyBqqAc4_YSD3EbIIoXyu3tOFlTQ_-A';" alt="Covid 19 Pandemic In West Virginia Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Covid 19 Pandemic In West Virginia Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://public.tableau.com/static/images/co/covid19-atlas-hrr-growth/CasesGrowthRate/1_rss.png" data-lightbox="roadtrip" data-title="4vdtbs2a73zmdm">
+											<img class="card-img v-image ads-img " src="https://public.tableau.com/static/images/co/covid19-atlas-hrr-growth/CasesGrowthRate/1_rss.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaeL9Mvr9Nqw5PIMm8hI3d3hrUlo-nk6ePBw';" alt="4vdtbs2a73zmdm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4vdtbs2a73zmdm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.chesterfield.gov/ImageRepository/Document?documentID=15220" data-lightbox="roadtrip" data-title="County Response To Covid 19 Chesterfield County Va">
+											<img class="card-img v-image ads-img " src="https://www.chesterfield.gov/ImageRepository/Document?documentID=15220" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6aVXltWjc6WobxlhwjqmhmEACkiJ9HgkJHQ';" alt="County Response To Covid 19 Chesterfield County Va">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">County Response To Covid 19 Chesterfield County Va</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fig.ft.com%2Fautograph%2Fgraphics%2Fcoronavirus-map-united-states.svg%3Fframe%3DwebM?source=google-amp&amp;fit=scale-down&amp;width=500" data-lightbox="roadtrip" data-title="Ist Nzmofo8w M">
+											<img class="card-img v-image ads-img " src="https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fig.ft.com%2Fautograph%2Fgraphics%2Fcoronavirus-map-united-states.svg%3Fframe%3DwebM?source=google-amp&amp;fit=scale-down&amp;width=500" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaJT7JINl7OUrvsCmZaXCrMOPRqzwmSOUeXg';" alt="Ist Nzmofo8w M">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ist Nzmofo8w M</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.nbc29.com/resizer/QDFWMUvsgUHM3368Xyk-sVW4Wvo=/1400x0/cloudfront-us-east-1.images.arcpublishing.com/raycom/IR6V45IZXBCKVBEO5CJ2UP5J4M.jpg" data-lightbox="roadtrip" data-title="Tkxzvtiqqih20m">
+											<img class="card-img v-image ads-img " src="https://www.nbc29.com/resizer/QDFWMUvsgUHM3368Xyk-sVW4Wvo=/1400x0/cloudfront-us-east-1.images.arcpublishing.com/raycom/IR6V45IZXBCKVBEO5CJ2UP5J4M.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdVnI7FRq0iyzpCdxpAgked1p4fYW2bvm5ZQ';" alt="Tkxzvtiqqih20m">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tkxzvtiqqih20m</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bloximages.chicago2.vip.townnews.com/insidenova.com/content/tncms/assets/v3/editorial/3/94/3943dd88-4d1a-11eb-8020-876b57fbaa5a/5ff0a3da4fcf3.image.png?resize=200%2C137" data-lightbox="roadtrip" data-title="Coronavirus Latest Insidenova Com">
+											<img class="card-img v-image ads-img " src="https://bloximages.chicago2.vip.townnews.com/insidenova.com/content/tncms/assets/v3/editorial/3/94/3943dd88-4d1a-11eb-8020-876b57fbaa5a/5ff0a3da4fcf3.image.png?resize=200%2C137" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoWu-pC0ROqYJQ7bbgjN48Zk7XGTG6vYEimg';" alt="Coronavirus Latest Insidenova Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coronavirus Latest Insidenova Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.mwcllc.com/-/media/mwc/richmond_virginia_capitol.jpg?h=513&amp;la=en&amp;w=480&amp;hash=F160902CDCF66E01CE2B0A338AA0E32B7F036456" data-lightbox="roadtrip" data-title="Mcguirewoods Consulting Virginia State And Local Action On Covid 19">
+											<img class="card-img v-image ads-img " src="https://www.mwcllc.com/-/media/mwc/richmond_virginia_capitol.jpg?h=513&amp;la=en&amp;w=480&amp;hash=F160902CDCF66E01CE2B0A338AA0E32B7F036456" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXYMOuKOqMQ937droMww8z2o-96yctsRmvGg';" alt="Mcguirewoods Consulting Virginia State And Local Action On Covid 19">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mcguirewoods Consulting Virginia State And Local Action On Covid 19</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://newseu.cgtn.com/news/2020-09-26/How-lethal-is-COVID-19-compared-to-cancer-flu-and-other-death-causes--U4LJxzQlA4/img/5a2d481601f04074849305e755cd1392/5a2d481601f04074849305e755cd1392.png" data-lightbox="roadtrip" data-title="How Lethal Is Covid 19 Compared To Cancer Flu And Other Death Causes Cgtn">
+											<img class="card-img v-image ads-img " src="https://newseu.cgtn.com/news/2020-09-26/How-lethal-is-COVID-19-compared-to-cancer-flu-and-other-death-causes--U4LJxzQlA4/img/5a2d481601f04074849305e755cd1392/5a2d481601f04074849305e755cd1392.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6JtUnFsJUv3MWn1fBGakGDEXIOENEngFR2g';" alt="How Lethal Is Covid 19 Compared To Cancer Flu And Other Death Causes Cgtn">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Lethal Is Covid 19 Compared To Cancer Flu And Other Death Causes Cgtn</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.suffolkva.us/ImageRepository/Document?documentId=5347" data-lightbox="roadtrip" data-title="Trbs0bswflvibm">
+											<img class="card-img v-image ads-img " src="https://www.suffolkva.us/ImageRepository/Document?documentId=5347" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROKTRGVGUAyRUi-e53kcviIuR80MlXMUgDOA';" alt="Trbs0bswflvibm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trbs0bswflvibm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.vdh.virginia.gov/content/uploads/sites/128/2020/08/RCAHD-Coronavirus-espa%C3%B1ol.png" data-lightbox="roadtrip" data-title="Covid 19 Rcahd Local Data Resources Roanoke Health District">
+											<img class="card-img v-image ads-img " src="https://www.vdh.virginia.gov/content/uploads/sites/128/2020/08/RCAHD-Coronavirus-espa%C3%B1ol.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRETrSLkSopplJpPa6KeV6OzPdaNoyqrOHqEw';" alt="Covid 19 Rcahd Local Data Resources Roanoke Health District">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Covid 19 Rcahd Local Data Resources Roanoke Health District</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.vdh.virginia.gov/content/uploads/sites/113/2020/03/wash-your-hands.jpg" data-lightbox="roadtrip" data-title="Novel Coronavirus 2019 Covid 19 Peninsula Health District">
+											<img class="card-img v-image ads-img " src="https://www.vdh.virginia.gov/content/uploads/sites/113/2020/03/wash-your-hands.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8e63bh9t2C7y4HEU74I2EKFdtm4f9ZcYgjQ';" alt="Novel Coronavirus 2019 Covid 19 Peninsula Health District">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Novel Coronavirus 2019 Covid 19 Peninsula Health District</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.spotsylvania.va.us/ImageRepository/Document?documentId=11134" data-lightbox="roadtrip" data-title="Coronavirus Information Spotsylvania County Va">
+											<img class="card-img v-image ads-img " src="https://www.spotsylvania.va.us/ImageRepository/Document?documentId=11134" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwtTaG3VjvniXVzapy5pkmsxrn10fPlnAMTw';" alt="Coronavirus Information Spotsylvania County Va">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coronavirus Information Spotsylvania County Va</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.loudoun.gov/ImageRepository/Document?documentID=161089" data-lightbox="roadtrip" data-title="Covid 19 Reopening Loudoun County Loudoun County Va Official Website">
+											<img class="card-img v-image ads-img " src="https://www.loudoun.gov/ImageRepository/Document?documentID=161089" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmquzoe0VJUULKdNxuVuyqS-WK4ZMeQmhfOA';" alt="Covid 19 Reopening Loudoun County Loudoun County Va Official Website">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Covid 19 Reopening Loudoun County Loudoun County Va Official Website</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-disability-hiatal-hernia.html">Va Disability Hiatal Hernia</a></li>
+													<li class="list-group-item"><a href="/va-disability-lower-back-pain-rating.html">Va Disability Lower Back Pain Rating</a></li>
+													<li class="list-group-item"><a href="/va-disability-pay-taxable-income.html">Va Disability Pay Taxable Income</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-chart-2018.html">Va Disability Percentage Chart 2018</a></li>
+													<li class="list-group-item"><a href="/va-disability-for-ra.html">Va Disability For Ra</a></li>
+													<li class="list-group-item"><a href="/va-disability-math-chart.html">Va Disability Math Chart</a></li>
+													<li class="list-group-item"><a href="/va-disability-gout-rating.html">Va Disability Gout Rating</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-asthma.html">Va Disability Percentage Asthma</a></li>
+													<li class="list-group-item"><a href="/va-disability-narcolepsy.html">Va Disability Narcolepsy</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-for-back-pain.html">Va Disability Percentage For Back Pain</a></li>
+													<li class="list-group-item"><a href="/va-disability-for-knee-pain.html">Va Disability For Knee Pain</a></li>
+													<li class="list-group-item"><a href="/va-disability-for-knee-injections.html">Va Disability For Knee Injections</a></li>
+													<li class="list-group-item"><a href="/va-disability-not-service-connected.html">Va Disability Not Service Connected</a></li>
+													<li class="list-group-item"><a href="/va-disability-hearing-loss-compensation.html">Va Disability Hearing Loss Compensation</a></li>
+													<li class="list-group-item"><a href="/va-disability-gulf-war-syndrome-presumptive.html">Va Disability Gulf War Syndrome Presumptive</a></li>
+													<li class="list-group-item"><a href="/va-disability-knee-increased-citation.html">Va Disability Knee Increased Citation</a></li>
+													<li class="list-group-item"><a href="/va-disability-hypertension-rating.html">Va Disability Hypertension Rating</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-for-bulging-disc.html">Va Disability Percentage For Bulging Disc</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-calculator-chart.html">Va Disability Percentage Calculator Chart</a></li>
+													<li class="list-group-item"><a href="/va-disability-hearing-loss-percentage.html">Va Disability Hearing Loss Percentage</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

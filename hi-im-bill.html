@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Hi Im Bill - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Hi Im Bill",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/50/bc/db/50bcdba77cbb73d13594d2d27e43e692.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=hi+im+bill",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Hi Im Bill</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The first one he caught was an Abra. Hi im steve is a short video made by Bill Wurtz and released on YouTube on July 6 2017. Operation Claim My Stuff. <br>				
+			</p>
+										<a class="badge badge-light" href="/get-paid-to-go-to-college-online.html">get paid to go to college online</a>
+											<a class="badge badge-light" href="/fdr-gi-bill.html">fdr gi bill</a>
+											<a class="badge badge-info" href="/extend-gi-bill-12-months.html">extend gi bill 12 months</a>
+											<a class="badge badge-info" href="/forever-god-forever-love-lyrics.html">forever god forever love lyrics</a>
+											<a class="badge badge-danger" href="/elizabeth-montgomery-william-asher.html">elizabeth montgomery william asher</a>
+											<a class="badge badge-info" href="/federal-pay-rates-2020.html">federal pay rates 2020</a>
+											<a class="badge badge-primary" href="/film-billu-shahrukh-khan-deepika-padukone.html">film billu shahrukh khan deepika padukone</a>
+											<a class="badge badge-success" href="/ge-9-ext-wpl.html">ge 9 ext wpl</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you've come to pay a visit to the right site.  Our site gives you suggestions for seeing the highest quality video and image content, hunt and find more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, particularly Youtube, so we recommend this movie that you view.  It is also possible to contribute to supporting this site by sharing videos and graphics that you like on this site on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this site.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/75/04/577504bf5183a236dce5c2c3dffca556.png" data-lightbox="roadtrip" data-title="Hi I M Bill And You Re Watching Disney Channel Disney Channel Fall Memes Disney">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/75/04/577504bf5183a236dce5c2c3dffca556.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl4CHj5J4_kaJbO7E_TqUoT3HK_PALbJ7KrQ';" alt="Hi I M Bill And You Re Watching Disney Channel Disney Channel Fall Memes Disney">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hi I M Bill And You Re Watching Disney Channel Disney Channel Fall Memes Disney</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7f/1d/a9/7f1da9b1690d50e13ac4e05a2d7f003a.jpg" data-lightbox="roadtrip" data-title="Meet Your Posher Bill Meet You Bills Things To Sell">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7f/1d/a9/7f1da9b1690d50e13ac4e05a2d7f003a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6OYrxiIuUi5MsRWMF_HmFmh2dgrRknxwcBw';" alt="Meet Your Posher Bill Meet You Bills Things To Sell">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meet Your Posher Bill Meet You Bills Things To Sell</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/db/94/cddb94fa75bfddd8e30094c69154c785.png" data-lightbox="roadtrip" data-title="Pin On Horror Is Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/db/94/cddb94fa75bfddd8e30094c69154c785.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpyfrSezrPtOHB6RWKrKxskGCWQnJIXFmsUw';" alt="Pin On Horror Is Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Horror Is Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3a/be/17/3abe178ac13ae64cc6b54d120eca0f40.jpg" data-lightbox="roadtrip" data-title="Meet Your Posher Bill Hi I M Bill I M Here To Give You Some Really Good Deals On Some Items I Ride A Harley Davidson As Well A Meet You Posh To">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3a/be/17/3abe178ac13ae64cc6b54d120eca0f40.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAtqpjHE7vZm0eam9hXQuNYnynZTb84Oi8yg';" alt="Meet Your Posher Bill Hi I M Bill I M Here To Give You Some Really Good Deals On Some Items I Ride A Harley Davidson As Well A Meet You Posh To">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meet Your Posher Bill Hi I M Bill I M Here To Give You Some Really Good Deals On Some Items I Ride A Harley Davidson As Well A Meet You Posh To</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/f6/06/19f60643bf5d0433ecca39d33350520a.jpg" data-lightbox="roadtrip" data-title="Hello I M Bill Gates Chairman Of Microsoft Youtube Bill Gates Geek Life Bills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/f6/06/19f60643bf5d0433ecca39d33350520a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYr0ehNoTVFrMO_EOBNSJYKN7SQO06kRAHdA';" alt="Hello I M Bill Gates Chairman Of Microsoft Youtube Bill Gates Geek Life Bills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hello I M Bill Gates Chairman Of Microsoft Youtube Bill Gates Geek Life Bills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d8/5c/c8/d85cc8fd8474896e12a200fab44daaac.jpg" data-lightbox="roadtrip" data-title="Meet Your Posher Bill Meet You Bills Meet">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d8/5c/c8/d85cc8fd8474896e12a200fab44daaac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxSk3M74ooCYezbFAJpeoME1pZzNDiwMd0xg';" alt="Meet Your Posher Bill Meet You Bills Meet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meet Your Posher Bill Meet You Bills Meet</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/24/68/7a/24687a17cf93439d553c5145e00b0b9f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxSk3M74ooCYezbFAJpeoME1pZzNDiwMd0xg';" alt="Meet Your Posher Bill Meet You Bills Meet">
+										<div class="card-body">
+						<h3 class="h5"><b>Im one of the founders of Chase and Speakman and Im very excited to have the chance to share some behind the scenes peeks into what were up to.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Hi im bill</strong>. 
+								
+																	We are among a small team of people helping Mr. 
+																	People including himself call him a PokeManiac because of his large collection of both common and rare Pokemon. 
+																	Hi Im Bill Gottlin. 
+																	However his favorite Pokemon are Eevee and its evolutions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This post was constructed by Daniel Burke Burke4Senate independent candidate for US Senate and Jose Vega josbtrigga political activist. 
+																	Bill just laughed and then about ten of us in unison said He IS Bill Gates The golfer was floored and eagerly shook his hand. 
+																	We run our clients HR departments for them bringing the benefits of large company HR to small businesses in an affordable and professional way. 
+																	As that site continues to expand and firmly find its place in the news world I look forward to putting my full efforts into it. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With one foot planted in the principles of AA and the other in his ever-evolving personal spiritual journey blending Eastern and Western traditions Hi Im Bill and Im Old helps people in recovery embrace the unique challenges that come with age as lessons for reinventing their own sobrietyWilliam Alexander is a writer storyteller and teacher who leads sobriety workshops at such venues as Union Theological Seminary the Esalen Institute and Hazelden Foundation. 
+																	The Russians never hacked the DNC and I have proof --Ask me anything. 
+																	Hi Im Bill Selak Hi there Im Bill. 
+																	Hi Im Bill Ben The Flowerpot Men. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With James Woods JoBeth Williams James Garner Gary Sinise. 
+																	The story of Bill Wilson and the founding of Alcoholics Anonymous. 
+																	Hi Im Bill Binney NSA whistleblower. 
+																	Hi Im Bill Palmer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	William Sanderson born January 10 1944 is an American actor known for his work in such feature films as Blade Runner 1982 and in such television series as Newhart 19821990 Deadwood 20042006 2019 and True Blood 20082010 2012. 
+																	They can be a bit timid at first but given time and patience they will come out of their shells. 
+																	Its in a tree Just kidding my names not Steve Im filing for an extension for my taxes. 
+																	Bill Wurtz Hi im steve Lyrics. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	New York Giants fan. 
+																	Everyone has a bad roommate story Im five weeks BTW SHOOOOT its already been five weeks. 
+																	Dorm life sucks at least the first time you experience it. 
+																	Hi Im Bill Palmer and Im the publisher of Palmer Report. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bill and Ben are very energetic rabbits who love to explore. 
+																	His friend then blurted out Yeah and you just pissed on his shoesEveryone looked down at Bills loafers and sure enough the golfer had marked his territory. 
+																	Male 11 months old Lop Dwarf. 
+																	As Tim Chevalier has written about me at least a little bit in an article series entitled The Christians and the Pagans 1 2 3 I hope I may be permitted a short response. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bill and Ben are looking for an outdoor home. 
+																	Hi Im Bill A place to rant rave reflect and plan. 
+																	Aspire HR Consulting LLC. 
+																	So I thought Id take a moment to introduce myself. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Meet Bill and Ben a pair of 11 month old neutered male rabbits. 
+																	I help my clients solve their HR problems. 
+																	Thursday September 23 2010. 
+																	Time is going by super fast into classes and already have mine. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Binney with the AMA. 
+																	My professional background in political journalism is that I covered the entire 2016 election cycle from start to finish on an independent news site called Daily News Bin. 
+																	Hello its Bill Gates Chairman of Microsoft in a 60 second introduction to a cheesy 3-hour video tutorial VHS tape on Windows 31. 
+																	Sorry about that What first struck me as I read Tims three articles is the number of things we agree on. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It was pretty obvious that lots of things were done to influence the election by the media first and foremost and Russia - not so much. 
+																	Hi Im Bill and Ill be your cruise ship director on Tumblr here for the foreseeable future. 
+																	I am an ISTE Kay L. 
+																	I drive a car. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Directed by Daniel Petrie. 
+																	Full video here Its an outlandish foray into the wondrous life of an oddball character who. 
+																	I have the good fortune of being able to report on politics and elections and I have the greatest audience in the world. 
+																	Yes its taken a while. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bill is a talented and famous inventor who invented the original Pokemon Storage System and Time Capsule. 
+																	Theres a ton of cool stuff to share already and lots more on the way. 
+																	Thats when I first heard of Bill Binney - did not make the connection honestly as I have not been following anything about Russiagate which never passed the smell test for me. 
+																	Bitter Vision Award winner ISTE Emerging Leader Google Certified Innovator Apple Distinguished Educator Google Certified Educator Level 2 Apple Teacher ISTE Certified Educator and Im Leading Edge Certified in Online Blended Teaching the Digital Educator and Professional Developer certifications. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you know me at all its likely from my role as the founder and publisher of the news site Daily News Bin. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/fe/93/60fe93a5adcbd507522e685adc6194bc.jpg" data-lightbox="roadtrip" data-title="Hi I M Bill Jasper A Freelance Self Proclaimed Digital Artist D I Also Design Mobile Wallpapers C Paradise Wallpaper Summer Paradise Beautiful Wallpapers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/fe/93/60fe93a5adcbd507522e685adc6194bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVCPN0XChhOTplW1xg5vWASx81qYgJdsLrYg';" alt="Hi I M Bill Jasper A Freelance Self Proclaimed Digital Artist D I Also Design Mobile Wallpapers C Paradise Wallpaper Summer Paradise Beautiful Wallpapers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hi I M Bill Jasper A Freelance Self Proclaimed Digital Artist D I Also Design Mobile Wallpapers C Paradise Wallpaper Summer Paradise Beautiful Wallpapers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/64/e9/da/64e9da6996d314e40c5287623c31e8bc.jpg" data-lightbox="roadtrip" data-title="Meet Your Posher Bill Meet You Bills Under Armour">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/64/e9/da/64e9da6996d314e40c5287623c31e8bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlZnON-ug_-TG1nK_VaDbguE9MOWz51P1_Kw';" alt="Meet Your Posher Bill Meet You Bills Under Armour">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meet Your Posher Bill Meet You Bills Under Armour</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/24/68/7a/24687a17cf93439d553c5145e00b0b9f.jpg" data-lightbox="roadtrip" data-title="Meet Your Posher Bill Meet You Posh The North Face">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/24/68/7a/24687a17cf93439d553c5145e00b0b9f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkBihw38xEBtBZdd0RFt9DZ6VA3nP6AdqMbA';" alt="Meet Your Posher Bill Meet You Posh The North Face">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meet Your Posher Bill Meet You Posh The North Face</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7d/82/1e/7d821e1edfa45482b5321fa2bd07f936.jpg" data-lightbox="roadtrip" data-title="Meet Your Posher Bill Meet You Posh Things To Sell">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7d/82/1e/7d821e1edfa45482b5321fa2bd07f936.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCnJqWsnA4TsLiRcWPo_-KPdEPJM2WIIs4yQ';" alt="Meet Your Posher Bill Meet You Posh Things To Sell">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meet Your Posher Bill Meet You Posh Things To Sell</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/f9/e8/0c/f9e80cd4627a0a893ccdc88f643d5621.jpg" data-lightbox="roadtrip" data-title="Meet Your Posher Bill Hi I M Bill Some Of My Favorite Brands Are Calvin Klein Chaps Columbia Dockers And H Harley Davidson Merchandise Harley Davidson Harley">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/f9/e8/0c/f9e80cd4627a0a893ccdc88f643d5621.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3w4iz_u2JXrWuB7RxcVe3KtocRs6W0dXptg';" alt="Meet Your Posher Bill Hi I M Bill Some Of My Favorite Brands Are Calvin Klein Chaps Columbia Dockers And H Harley Davidson Merchandise Harley Davidson Harley">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meet Your Posher Bill Hi I M Bill Some Of My Favorite Brands Are Calvin Klein Chaps Columbia Dockers And H Harley Davidson Merchandise Harley Davidson Harley</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/05/96/040596da69ba402977c060849ec0a0a1.jpg" data-lightbox="roadtrip" data-title="Meet Your Posher Bonnie Hi I M Bonnie Thanks For Stopping By Feel Free To Leave Me A Comment So That I Can Check Out Your Closet T In 2020 Meet You">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/05/96/040596da69ba402977c060849ec0a0a1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK16VyykfgcG9N56V_KjhGn8l5U7kCHJqjwg';" alt="Meet Your Posher Bonnie Hi I M Bonnie Thanks For Stopping By Feel Free To Leave Me A Comment So That I Can Check Out Your Closet T In 2020 Meet You">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meet Your Posher Bonnie Hi I M Bonnie Thanks For Stopping By Feel Free To Leave Me A Comment So That I Can Check Out Your Closet T In 2020 Meet You</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/d9/e6/06d9e68a63d622c8f2b05903fc04eec3.png" data-lightbox="roadtrip" data-title="Hi I M Bill Of Caloriesproper Com I Have A Ph D In Nutritional Biochemistry And Physiology With A Focus On Obesity Insulin Phd Biochemistry Life Science">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/d9/e6/06d9e68a63d622c8f2b05903fc04eec3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOAzQA_Xkd7hV5zwrXwNdhdCsMjkISN3JgHA';" alt="Hi I M Bill Of Caloriesproper Com I Have A Ph D In Nutritional Biochemistry And Physiology With A Focus On Obesity Insulin Phd Biochemistry Life Science">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hi I M Bill Of Caloriesproper Com I Have A Ph D In Nutritional Biochemistry And Physiology With A Focus On Obesity Insulin Phd Biochemistry Life Science</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/bc/db/50bcdba77cbb73d13594d2d27e43e692.jpg" data-lightbox="roadtrip" data-title="Im Bill Hicks And Im Dead Now Bill Hicks Quotes Bill Hicks Inspirational Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/bc/db/50bcdba77cbb73d13594d2d27e43e692.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHro6BmxVXFnBgAXy6mknYn1LniIAp_29Ccw';" alt="Im Bill Hicks And Im Dead Now Bill Hicks Quotes Bill Hicks Inspirational Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Im Bill Hicks And Im Dead Now Bill Hicks Quotes Bill Hicks Inspirational Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/a0/6f/7aa06f6cf4c918f00700afc73286905c.jpg" data-lightbox="roadtrip" data-title="Pin On Gravity Falls">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/a0/6f/7aa06f6cf4c918f00700afc73286905c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTumcXNPdPBKxaK65OMkkCwdemWu29MoDye4w';" alt="Pin On Gravity Falls">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Gravity Falls</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f0/e5/6e/f0e56e0a2e34139b65e1021b9f4cd13c.jpg" data-lightbox="roadtrip" data-title="Meet Your Posher Bill Meet You Posh Things To Sell">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f0/e5/6e/f0e56e0a2e34139b65e1021b9f4cd13c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3EJ7bSFDkSY-Gzd7VCPxgjqYNB3YFA3MJvw';" alt="Meet Your Posher Bill Meet You Posh Things To Sell">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meet Your Posher Bill Meet You Posh Things To Sell</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/10/c8/8e10c82632b930ae8f77322b31e57f7f.png" data-lightbox="roadtrip" data-title="Hi I M Mootsie Cat And I Live Stream On Twitch Every Tuesday And Thursday At 10 00 Pm Est Horror Deadbydaylight Mootisecat Cats Cat Work Twitch Tv">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/10/c8/8e10c82632b930ae8f77322b31e57f7f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ7cR0XhTw25ukqQS2WM7Kl06ttPQmaKaryA';" alt="Hi I M Mootsie Cat And I Live Stream On Twitch Every Tuesday And Thursday At 10 00 Pm Est Horror Deadbydaylight Mootisecat Cats Cat Work Twitch Tv">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hi I M Mootsie Cat And I Live Stream On Twitch Every Tuesday And Thursday At 10 00 Pm Est Horror Deadbydaylight Mootisecat Cats Cat Work Twitch Tv</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/72/63/b67263bd19de5a7c23cd6a68025c53da.png" data-lightbox="roadtrip" data-title="Bill Gates On His Life Regrets Learn How To Speak More Languages Billgates Reddit Ama Iama Microsoft I Feel Stupid This Or That Questions I Wish I Knew">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/72/63/b67263bd19de5a7c23cd6a68025c53da.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaRQ83biQL41TYpdCjv5Hw9Nx6bHs74UPdOg';" alt="Bill Gates On His Life Regrets Learn How To Speak More Languages Billgates Reddit Ama Iama Microsoft I Feel Stupid This Or That Questions I Wish I Knew">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Gates On His Life Regrets Learn How To Speak More Languages Billgates Reddit Ama Iama Microsoft I Feel Stupid This Or That Questions I Wish I Knew</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/65/c6/a2/65c6a2dcedbae60ded25450493bb5ae4.jpg" data-lightbox="roadtrip" data-title="Magickfunnels Honest Review Stop Don T Start Without Our Custom Bonuses Magick Funnels Review Https W Best Survey Sites Money Online Money Online Free">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/65/c6/a2/65c6a2dcedbae60ded25450493bb5ae4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3l8r3PL11FG67gg7vR3EwzMhHXwstz1xkyw';" alt="Magickfunnels Honest Review Stop Don T Start Without Our Custom Bonuses Magick Funnels Review Https W Best Survey Sites Money Online Money Online Free">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Magickfunnels Honest Review Stop Don T Start Without Our Custom Bonuses Magick Funnels Review Https W Best Survey Sites Money Online Money Online Free</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/go-buffalo-bills-images.html">Go Buffalo Bills Images</a></li>
+													<li class="list-group-item"><a href="/gi-vs-glycemic-load.html">Gi Vs Glycemic Load</a></li>
+													<li class="list-group-item"><a href="/go-benefits-website-for-toyota.html">Go Benefits Website For Toyota</a></li>
+													<li class="list-group-item"><a href="/go-bills-funny.html">Go Bills Funny</a></li>
+													<li class="list-group-item"><a href="/go-bills-oktober.html">Go Bills Oktober</a></li>
+													<li class="list-group-item"><a href="/gi-vs-gu.html">Gi Vs Gu</a></li>
+													<li class="list-group-item"><a href="/gifts-college-students.html">Gifts College Students</a></li>
+													<li class="list-group-item"><a href="/go-buffalo-bills-gif.html">Go Buffalo Bills Gif</a></li>
+													<li class="list-group-item"><a href="/ginseng-benefits.html">Ginseng Benefits</a></li>
+													<li class="list-group-item"><a href="/go-art-35.html">Go Art 35</a></li>
+													<li class="list-group-item"><a href="/gi-vs-lchf.html">Gi Vs Lchf</a></li>
+													<li class="list-group-item"><a href="/giving-your-gi-bill-to-your-child.html">Giving Your Gi Bill To Your Child</a></li>
+													<li class="list-group-item"><a href="/go-bills-gojek.html">Go Bills Gojek</a></li>
+													<li class="list-group-item"><a href="/gm-military-discount-sign-up.html">Gm Military Discount Sign Up</a></li>
+													<li class="list-group-item"><a href="/gm-military-lease-discount.html">Gm Military Lease Discount</a></li>
+													<li class="list-group-item"><a href="/gi-vs-kimono.html">Gi Vs Kimono</a></li>
+													<li class="list-group-item"><a href="/gm-military-discount-id-me.html">Gm Military Discount Id Me</a></li>
+													<li class="list-group-item"><a href="/go-bills-adalah.html">Go Bills Adalah</a></li>
+													<li class="list-group-item"><a href="/go-benefits-icpna.html">Go Benefits Icpna</a></li>
+													<li class="list-group-item"><a href="/go-9-simrad.html">Go 9 Simrad</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

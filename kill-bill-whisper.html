@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Kill Bill Whisper - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Kill Bill Whisper",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/2f/ee/80/2fee80bdeea263c2687cc7a707fb1788.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=kill+bill+whisper",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Kill Bill Whisper</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Someone from posted a whisper which reads Kill bill. Below is the most popular video breakdown. Ryunosuke Oki teenager The Taste of Tea. <br>				
+			</p>
+										<a class="badge badge-warning" href="/billy-talley-montgomery-al.html">billy talley montgomery al</a>
+											<a class="badge badge-secondary" href="/buying-a-house-while-using-gi-bill.html">buying a house while using gi bill</a>
+											<a class="badge badge-secondary" href="/billing-rate-inkindo-2020.html">billing rate inkindo 2020</a>
+											<a class="badge badge-light" href="/billy-syahputra-dan-amanda-manopo.html">billy syahputra dan amanda manopo</a>
+											<a class="badge badge-success" href="/build-go-kart-frame.html">build go kart frame</a>
+											<a class="badge badge-danger" href="/can-a-spouse-use-the-post-9-11-gi-bill.html">can a spouse use the post 9 11 gi bill</a>
+											<a class="badge badge-primary" href="/bva-appeal-decisions.html">bva appeal decisions</a>
+											<a class="badge badge-primary" href="/billkin-freaking-special-lyrics.html">billkin freaking special lyrics</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you've come to visit the right blog.  Our site gives you hints for viewing the highest quality video and picture content, hunt and locate more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, therefore we recommend this movie for you to view.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a3/34/94/a33494ea4691bb9d023dc4e00509e118.jpg" data-lightbox="roadtrip" data-title="Pin On Inspirations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a3/34/94/a33494ea4691bb9d023dc4e00509e118.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzbJi-L8grgPJrJr02OSVISkgAcEhAa6PySw';" alt="Pin On Inspirations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Inspirations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/c8/e2/0ac8e2f67bd0d067b9e74ebdfb7a44fd.jpg" data-lightbox="roadtrip" data-title="Pin On Blackbear">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/c8/e2/0ac8e2f67bd0d067b9e74ebdfb7a44fd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJm18sXMjqsYgXtlAZ6XRbMM-c7fsZFcGszA';" alt="Pin On Blackbear">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Blackbear</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/d4/92/1dd492585d53375faee1ea68e7dbe5cf.jpg" data-lightbox="roadtrip" data-title="Kill Bill Vol 1 Kill Bill Kill Bill Quotes Badass Movie">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/d4/92/1dd492585d53375faee1ea68e7dbe5cf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwWIcsNpsVdkN_Q8LONrZBZF7E7RpVl0pLXw';" alt="Kill Bill Vol 1 Kill Bill Kill Bill Quotes Badass Movie">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kill Bill Vol 1 Kill Bill Kill Bill Quotes Badass Movie</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/ee/80/2fee80bdeea263c2687cc7a707fb1788.jpg" data-lightbox="roadtrip" data-title="Kill Bill Vol 2 Movie Posters From Movie Poster Shop Kill Bill Kill Bill 2 Quentin Tarantino">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/ee/80/2fee80bdeea263c2687cc7a707fb1788.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWvrHvoV_vnPXw8XxhobU1fKrlCBUmbMvmKA';" alt="Kill Bill Vol 2 Movie Posters From Movie Poster Shop Kill Bill Kill Bill 2 Quentin Tarantino">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kill Bill Vol 2 Movie Posters From Movie Poster Shop Kill Bill Kill Bill 2 Quentin Tarantino</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/6c/f5/2f6cf509ef5b0cb88d1129665c3a80a2.jpg" data-lightbox="roadtrip" data-title="Rugmi Popular Images Of The Now As An Asian Participating In No Shave November Here Is What I M Expecting Funny Songs Kill Bill Hooray For Hollywood">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/6c/f5/2f6cf509ef5b0cb88d1129665c3a80a2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKp70E7IHudW7QTp72MWDcX56aEGkfYskpTA';" alt="Rugmi Popular Images Of The Now As An Asian Participating In No Shave November Here Is What I M Expecting Funny Songs Kill Bill Hooray For Hollywood">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rugmi Popular Images Of The Now As An Asian Participating In No Shave November Here Is What I M Expecting Funny Songs Kill Bill Hooray For Hollywood</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/aa/8f/c8aa8f18dc5f4180b99bc4d69c59c5db.jpg" data-lightbox="roadtrip" data-title="Pin On Whisper Words Of Wisdom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/aa/8f/c8aa8f18dc5f4180b99bc4d69c59c5db.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTImtkK99Ax-3th7KEP05JOeqN8tRJmEcRw1A';" alt="Pin On Whisper Words Of Wisdom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Whisper Words Of Wisdom</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/0a/c8/e2/0ac8e2f67bd0d067b9e74ebdfb7a44fd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTImtkK99Ax-3th7KEP05JOeqN8tRJmEcRw1A';" alt="Pin On Whisper Words Of Wisdom">
+										<div class="card-body">
+						<h3 class="h5"><b>Bill is very likely topping the public vote.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Kill bill whisper</strong>. 
+								
+																	Smug their glasses so the wont see it coming lololol. 
+																	While Bond is paying Whisper for the champagne a poisonous snake appears in the bathroom but Bond later kills it with the help of a cigar and deodorant. 
+																	Produced by Evil Needle. 
+																	177 m 5 ft 10 in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Whisper on the sofa while it inflates. 
+																	Senate Inspired by an Iowa victim the measure includes tougher child sex offender penalties. 
+																	3 would follow the adult daughter of Vernita Green played by Fox in Kill Bill Vol. 
+																	Issey Takahashi was born on December 9 1980 in Tokyo Japan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jetsetas Bill OKd by panel in US. 
+																	1 2003 Whisper of the Heart 1995 and Kill Bill. 
+																	First heres the original scene the whisper tantalizingly low in the mix. 
+																	Sanga High School concert band director. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	He has campaigned for justice for his lawyer Sergei Magnitsky and is considered persona non grata in Moscow. 
+																	Someone from Palos Verdes Peninsula posted a whisper which reads Kill Bill Vol. 
+																	Someone from Seinaejoki Etelae-Pohjanmaan maakunta FI posted a whisper which reads Go watch kill bill on netflix right now. 
+																	The characters are always more than one dimentional never used as just a piece of eye candy and the films never include a rape scene or talk of rape. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sofia Coppola is the daughter of filmmaker Francis Ford Coppola The Godfather and she launched her career appearing in a number of his project as an actress including Rumble Fish and Peggy Sue Got Married in addition to appearing in Tim Burtons short. 
+																	1 as she seeks revenge against The Bride Uma Thurman for. 
+																	Apr 4 2015 - O-ren under the bed Kill bill O-ren whisper. 
+																	The ending of Lost In Translation is widely lauded but what does Bill Murray whisper into Scarlett Johanssons ear in the final scene. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In obvious ways like Kill Bill and subtle ways like The Hatefeul Eight Tarantinos films and his characters should be feminist-approved. 
+																	Its not well liked by friends. 
+																	Bond that Whisper is not on the hotel payroll. 
+																	Summertime The Overflow Lyrics Verse 1 I know this bad girl with a scooter She flipped my shit sideways summers off a fire. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Crying Out Love in the Center of the World. 
+																	Forgive us for disappearing completely down the rabbit hole but whisper it yes the Strictly producers could be contemplating killing off Bill in the semi-final and heres the reasoning why. 
+																	Someone from Muscogee posted a whisper which reads I created a game from the movie Kill Bill where youre a spy that throws plastic cards aimed at friends neck. 
+																	1 2003 The Wu-Tang Clans RZA worked with director Quentin Tarantino on the collection of music that would accompany Uma Thurmans character The Bride on her bloody quest for. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bond is then warned by Rosie Carver pretending to be Mrs. 
+																	Tarantino has long stated that a Kill Bill Vol. 
+																	Bill Browder ran the Hermitage Investment Fund and was Russias largest foreign investor. 
+																	Its hard to know for sure if its right but it definitely has the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Whisper of the Heart. 
+																	He is known for his work on Kill Bill. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/fd/6b/4bfd6b9cbf39de8dd4e5a6abb5c2a7b8.jpg" data-lightbox="roadtrip" data-title="Kill Bill Backstage Kill Bill Scenes Behind The Scenes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/fd/6b/4bfd6b9cbf39de8dd4e5a6abb5c2a7b8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbmSxewr4n77oqgos7CQ-rHjZ5cMde7dvtA';" alt="Kill Bill Backstage Kill Bill Scenes Behind The Scenes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kill Bill Backstage Kill Bill Scenes Behind The Scenes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/62/a4/b362a4c9008ecd2e3dffcecab24383f5.jpg" data-lightbox="roadtrip" data-title="Tarantino Ain T Too Good For Split Screen Kill Bill Film Posters Vintage Beautiful Film">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/62/a4/b362a4c9008ecd2e3dffcecab24383f5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0lyCfR1AcY8QqlYbFD5h9ngd2uVA5DYk1vw';" alt="Tarantino Ain T Too Good For Split Screen Kill Bill Film Posters Vintage Beautiful Film">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tarantino Ain T Too Good For Split Screen Kill Bill Film Posters Vintage Beautiful Film</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/63/81/816381f345cd12efb7d123e28a6d917e.jpg" data-lightbox="roadtrip" data-title="Fromthefloatingworld Kuriyama Hair Color For Black Hair Gothic Rock">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/63/81/816381f345cd12efb7d123e28a6d917e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLUSiIRBd9yA7U4zxuz6zi7YUmk9T39-TD8w';" alt="Fromthefloatingworld Kuriyama Hair Color For Black Hair Gothic Rock">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fromthefloatingworld Kuriyama Hair Color For Black Hair Gothic Rock</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/ec/75/5dec7541c0dfef65e56c35b56f262345.jpg" data-lightbox="roadtrip" data-title="Kill Bill Vol 2 Wedding Movies Tv Weddings Chicago Wedding Venues">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/ec/75/5dec7541c0dfef65e56c35b56f262345.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9V-bx5assaHW8VjQKpy0DfmPQMOV0fX_F7w';" alt="Kill Bill Vol 2 Wedding Movies Tv Weddings Chicago Wedding Venues">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kill Bill Vol 2 Wedding Movies Tv Weddings Chicago Wedding Venues</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/65/e0/5365e03f6c8428a2d1442d9a0a994333.jpg" data-lightbox="roadtrip" data-title="Hattori Hanzo The Legendary Sword Maker Scene From Kill Bill Vol 1 Kill Bill Good Movies Sonny Chiba">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/65/e0/5365e03f6c8428a2d1442d9a0a994333.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp91HuB2YnAI0GHr95eHv_7eRHUT6MQWvC8w';" alt="Hattori Hanzo The Legendary Sword Maker Scene From Kill Bill Vol 1 Kill Bill Good Movies Sonny Chiba">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hattori Hanzo The Legendary Sword Maker Scene From Kill Bill Vol 1 Kill Bill Good Movies Sonny Chiba</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/88/81/308881e3020a25194e3a4467abec0496.jpg" data-lightbox="roadtrip" data-title="Pin On Retr2">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/88/81/308881e3020a25194e3a4467abec0496.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL-NZnVWMExCOIcBvYmRGkJm1Rk2M1QKm0vQ';" alt="Pin On Retr2">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Retr2</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/aa/15/7aaa15775a8238655ca9882da0f424f1.jpg" data-lightbox="roadtrip" data-title="Pin By Sakeena Theresa On Tarantino S Best Characters Kill Bill Funny Pictures Quentin Tarantino">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/aa/15/7aaa15775a8238655ca9882da0f424f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfrNvYj9v7n_59sXGDHnwvQ-86b0EQilWIzQ';" alt="Pin By Sakeena Theresa On Tarantino S Best Characters Kill Bill Funny Pictures Quentin Tarantino">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sakeena Theresa On Tarantino S Best Characters Kill Bill Funny Pictures Quentin Tarantino</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/d5/f9/ccd5f924e908ed98df6ffc716b4502f4.gif" data-lightbox="roadtrip" data-title="Kill Bill Kill Bill Lucy Liu Kill Bill Quentin Tarantino Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/d5/f9/ccd5f924e908ed98df6ffc716b4502f4.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTIbvgVCmhWxHOd8FtvANCxYkBpwIfyRPCvA';" alt="Kill Bill Kill Bill Lucy Liu Kill Bill Quentin Tarantino Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kill Bill Kill Bill Lucy Liu Kill Bill Quentin Tarantino Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/af/8f/c6/af8fc6fcdff4f9fc5aa5261b9acb4176--kill-bill-bill-obrien.jpg" data-lightbox="roadtrip" data-title="Kill Bill 2 Soundtrack Malaguena Salerosa Kill Bill Kill Bill 2 Soundtrack">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/af/8f/c6/af8fc6fcdff4f9fc5aa5261b9acb4176--kill-bill-bill-obrien.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs3YaMqIU-yyqHiwFKb60XDm8DzEUlz4dsJg';" alt="Kill Bill 2 Soundtrack Malaguena Salerosa Kill Bill Kill Bill 2 Soundtrack">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kill Bill 2 Soundtrack Malaguena Salerosa Kill Bill Kill Bill 2 Soundtrack</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b8/67/65/b86765485cb0075d7ac8ff0e7f186c2a.jpg" data-lightbox="roadtrip" data-title="Pin On Chiaki">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b8/67/65/b86765485cb0075d7ac8ff0e7f186c2a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCKkoCP_c5ylmofWB77uBajm5xSUXtDA_z_g';" alt="Pin On Chiaki">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Chiaki</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/16/c6/e716c64c2a306a3379e8182a3678d2d2.jpg" data-lightbox="roadtrip" data-title="Youtube She S Not There Bessie Smith Featuring The Zombies Kill Bill Volume Ii Kill Bill Uma Thurman Kill Bill Kill Bill Soundtrack">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/16/c6/e716c64c2a306a3379e8182a3678d2d2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReGzM056OO1uZW3BS-V7oFL2tIqBTPZJb-uw';" alt="Youtube She S Not There Bessie Smith Featuring The Zombies Kill Bill Volume Ii Kill Bill Uma Thurman Kill Bill Kill Bill Soundtrack">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Youtube She S Not There Bessie Smith Featuring The Zombies Kill Bill Volume Ii Kill Bill Uma Thurman Kill Bill Kill Bill Soundtrack</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/2d/21/672d217fdb005c4e7a551a0cbc997455.jpg" data-lightbox="roadtrip" data-title="Kill Bill Lift Guerrilla Advertising Guerilla Marketing Best Ads">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/2d/21/672d217fdb005c4e7a551a0cbc997455.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnS3KkQWLJUnyDaulgUlDRv_IpHKrDrnjmXw';" alt="Kill Bill Lift Guerrilla Advertising Guerilla Marketing Best Ads">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kill Bill Lift Guerrilla Advertising Guerilla Marketing Best Ads</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/82/2d/28822dc0ced886d8c97ba6ea76e16e56.jpg" data-lightbox="roadtrip" data-title="Whisper Of The Heart In 2020 Movie Posters Minimalist Anime Wallpaper Live Film Prints">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/82/2d/28822dc0ced886d8c97ba6ea76e16e56.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4WNFNWw-xJ2H6WVgV6QVyG95ph8whndQubA';" alt="Whisper Of The Heart In 2020 Movie Posters Minimalist Anime Wallpaper Live Film Prints">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Whisper Of The Heart In 2020 Movie Posters Minimalist Anime Wallpaper Live Film Prints</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-compensation-migraine-headaches.html">Va Compensation Migraine Headaches</a></li>
+													<li class="list-group-item"><a href="/va-compensation-for-disabled-child.html">Va Compensation For Disabled Child</a></li>
+													<li class="list-group-item"><a href="/va-compensation-for-kidneys.html">Va Compensation For Kidneys</a></li>
+													<li class="list-group-item"><a href="/va-compensation-for-knee-osteoarthritis.html">Va Compensation For Knee Osteoarthritis</a></li>
+													<li class="list-group-item"><a href="/va-compensation-hemorrhoids.html">Va Compensation Hemorrhoids</a></li>
+													<li class="list-group-item"><a href="/va-compensation-letter-example.html">Va Compensation Letter Example</a></li>
+													<li class="list-group-item"><a href="/va-compensation-rules.html">Va Compensation Rules</a></li>
+													<li class="list-group-item"><a href="/va-compensation-issues-meaning.html">Va Compensation Issues Meaning</a></li>
+													<li class="list-group-item"><a href="/va-compensation-hearing-test.html">Va Compensation Hearing Test</a></li>
+													<li class="list-group-item"><a href="/va-compensation-for-dependents.html">Va Compensation For Dependents</a></li>
+													<li class="list-group-item"><a href="/va-compensation-for-vision-loss.html">Va Compensation For Vision Loss</a></li>
+													<li class="list-group-item"><a href="/va-compensation-major-depression.html">Va Compensation Major Depression</a></li>
+													<li class="list-group-item"><a href="/va-compensation-table-2017.html">Va Compensation Table 2017</a></li>
+													<li class="list-group-item"><a href="/va-compensation-seasonal-allergies.html">Va Compensation Seasonal Allergies</a></li>
+													<li class="list-group-item"><a href="/va-compensation-for-heart-attack.html">Va Compensation For Heart Attack</a></li>
+													<li class="list-group-item"><a href="/va-compensation-for-service-connected-disability.html">Va Compensation For Service Connected Disability</a></li>
+													<li class="list-group-item"><a href="/va-compensation-for-shoulder-injury-requiring-surgery.html">Va Compensation For Shoulder Injury Requiring Surgery</a></li>
+													<li class="list-group-item"><a href="/va-compensation-rates-for-2019.html">Va Compensation Rates For 2019</a></li>
+													<li class="list-group-item"><a href="/va-compensation-for-injuries.html">Va Compensation For Injuries</a></li>
+													<li class="list-group-item"><a href="/va-compensation-table-2018.html">Va Compensation Table 2018</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Go Of Education Department In Tamilnadu - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Go Of Education Department In Tamilnadu",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/1b/ee/30/1bee30da4e9c70aee6cd6569f7e3012e.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=go+of+education+department+in+tamilnadu",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Go Of Education Department In Tamilnadu</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The major focus is on QualityThe mission is to provide world class quality education while opening the portals of higher education to students from rural and backward areas and marginalized families. Micro Small and Medium Enterprises Department. George Chennai 600 009 Tamil Nadu India Designed Developed by National Informatics Centre E-Mail. <br>				
+			</p>
+										<a class="badge badge-primary" href="/how-to-get-disability-for-ptsd-and-anxiety.html">how to get disability for ptsd and anxiety</a>
+											<a class="badge badge-primary" href="/how-to-get-100-percent-from-va.html">how to get 100 percent from va</a>
+											<a class="badge badge-primary" href="/how-to-help-a-combat-veteran-with-ptsd.html">how to help a combat veteran with ptsd</a>
+											<a class="badge badge-secondary" href="/how-to-change-from-montgomery-gi-bill-to-post-911-gi-bill.html">how to change from montgomery gi bill to post 911 gi bill</a>
+											<a class="badge badge-danger" href="/how-to-check-va-education-payments.html">how to check va education payments</a>
+											<a class="badge badge-dark" href="/how-to-check-va-disability-rating-online.html">how to check va disability rating online</a>
+											<a class="badge badge-info" href="/how-to-get-a-permanent-va-rating.html">how to get a permanent va rating</a>
+											<a class="badge badge-dark" href="/how-to-get-started-with-gi-bill.html">how to get started with gi bill</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you've come to pay a visit to the right blog.  Our website provides you with hints for seeing the maximum quality video and picture content, search and find more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, especially Youtube, therefore we recommend this video for you to see.  It is also possible to contribute to supporting this site by sharing videos and graphics that you like on this site on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/70/b6/62/70b6625184b27af838fb0e829f0c5ac4.jpg" data-lightbox="roadtrip" data-title="Go No 177 School Education Incentive Go For Physical Education Teacher Date 13 10 2016 Kalvikural Ka Physical Education Teacher Physical Education Teacher">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/70/b6/62/70b6625184b27af838fb0e829f0c5ac4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVlWgv2pmgl4GiIMXr9nER6vqK1VptZd8Z_Q&amp;ec=45771800';" alt="Go No 177 School Education Incentive Go For Physical Education Teacher Date 13 10 2016 Kalvikural Ka Physical Education Teacher Physical Education Teacher">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Go No 177 School Education Incentive Go For Physical Education Teacher Date 13 10 2016 Kalvikural Ka Physical Education Teacher Physical Education Teacher</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/08/4d/82084de2f175a7d5d538892ecfe6abe2.png" data-lightbox="roadtrip" data-title="Tamilnadu Government Partnered With Act Fibernet And Successfully Launched Daisy A Digitally Accessible Information Technology Technology Smart Technologies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/08/4d/82084de2f175a7d5d538892ecfe6abe2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkfXKEW3Zyb6L_n5LC6LYoAw7rf9zpZzcig&amp;ec=45771800';" alt="Tamilnadu Government Partnered With Act Fibernet And Successfully Launched Daisy A Digitally Accessible Information Technology Technology Smart Technologies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tamilnadu Government Partnered With Act Fibernet And Successfully Launched Daisy A Digitally Accessible Information Technology Technology Smart Technologies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/0d/94/da/0d94dacc89d19c94772f19da25eea94a.jpg" data-lightbox="roadtrip" data-title="Pin On Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/0d/94/da/0d94dacc89d19c94772f19da25eea94a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQylkAM8BEeHP3BcV0omNgEFNxaUWv445TAvA&amp;ec=45771800';" alt="Pin On Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/bd/ad/c5/bdadc5ebde81e94e082868a6eefea419.jpg" data-lightbox="roadtrip" data-title="Tn 11th Result 2019 Tamil Nadu Board Released Class 11 Results At Tnresults Nic In How To Check Class 12 Result Exam Results University Result">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/bd/ad/c5/bdadc5ebde81e94e082868a6eefea419.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwxvV3y0kl64-oN1yeU7vC9QRFMDhLlj0REA&amp;ec=45771800';" alt="Tn 11th Result 2019 Tamil Nadu Board Released Class 11 Results At Tnresults Nic In How To Check Class 12 Result Exam Results University Result">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tn 11th Result 2019 Tamil Nadu Board Released Class 11 Results At Tnresults Nic In How To Check Class 12 Result Exam Results University Result</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/29/3b/dd293b03fbddd335c717e6207e21886c.jpg" data-lightbox="roadtrip" data-title="12 000 Hindu Temples In Tamil Nadu Can T Afford To Do Pujas In 2020 Hindu Temple Tamil Nadu Hindu">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/29/3b/dd293b03fbddd335c717e6207e21886c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx1KUM6dy5FOVxSfFaKj5xYmdIzi51YYsing&amp;ec=45771800';" alt="12 000 Hindu Temples In Tamil Nadu Can T Afford To Do Pujas In 2020 Hindu Temple Tamil Nadu Hindu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">12 000 Hindu Temples In Tamil Nadu Can T Afford To Do Pujas In 2020 Hindu Temple Tamil Nadu Hindu</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/c0/6d/a6c06d6c56886ba1f73ea07b46f4991e.jpg" data-lightbox="roadtrip" data-title="Ams Bring With It A Reputation That Has Been Earned Through Years Of Serving The Career Needs Of The Student S Community It Is A Reputat Jam Academy College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/c0/6d/a6c06d6c56886ba1f73ea07b46f4991e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb4q1Z-98JhBmzHVq7ziTgbOSr7UlElmhYBg&amp;ec=45771800';" alt="Ams Bring With It A Reputation That Has Been Earned Through Years Of Serving The Career Needs Of The Student S Community It Is A Reputat Jam Academy College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ams Bring With It A Reputation That Has Been Earned Through Years Of Serving The Career Needs Of The Student S Community It Is A Reputat Jam Academy College</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/474x/70/b6/62/70b6625184b27af838fb0e829f0c5ac4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb4q1Z-98JhBmzHVq7ziTgbOSr7UlElmhYBg&amp;ec=45771800';" alt="Ams Bring With It A Reputation That Has Been Earned Through Years Of Serving The Career Needs Of The Student S Community It Is A Reputat Jam Academy College">
+										<div class="card-body">
+						<h3 class="h5"><b>This Department is functioning under the control of Higher Education Department of Government of Tamil Nadu.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Go of education department in tamilnadu</strong>. 
+								
+																	The Right of Children to Free and Compulsory Education Act -2009 aims that no child is left without attending the school. 
+																	School Education Department Back. 
+																	22POLICE Home Prohibition and Excise Department 23FIRE AND RESCUE SERVICES Home Prohibition and Excise Department 24PRISONS Home Prohibition and Excise Department 25MOTOR VEHICLES ACTS-ADMINISTRATION Home Prohibition and Excise Department. 
+																	91-44-2567 2790O 91-44-2567 6388Fax Emailschsectngovin. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Social Welfare and Nutritious Meal Programme Department. 
+																	 
+																	The vision of the Government of Tamil Nadu in the realm of Higher Education is to make institutions of higher education emerge as centres of innovation excellence and development. 
+																	School Education Department - Temporary posts Original Sanctioned Government Orders - Click Here Photos Allowed in Government Offices Schools GO No. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Policy Note of School Education Department - 2020-2021 2MB Archive 2020-2021 2019-2020 2018-2019 2017-2018 2016-2017 2015-2016. 
+																	In Tamil Nadu the beneficiaries for the year 2013-14 2014-15 and 2015-16 is shown in the table below. 
+																	Find the list of top 300 Education colleges in Tamil Nadu based on 2021 ranking with fees. 
+																	January 22 2021 136KB Provident Fund General Provident Fund Tamil Nadu Rate of interest for the financial year 2020-2021 With effect from 01012021 to 31032021 - Orders Issued. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	09122011-School Education Announcement made by the Honble Chief Minister in the Tamil Nadu Legislative Assembly under rule 110 of TNLA on 2682011 Introduction of Trimester Pattern in all Schools in Tamil Nadu from the academic year 2012-13 for classes I to VIII orders issued. 
+																	Higher Education Department GO Tamil Nadu. 
+																	Main objective of the Department of Government Examination is the assessment of Scholastic attainment of academic students and skilled attainments by conducting X and XII Board Examinations Government Technical Examinations Diploma in Elementary Education NMMS TRUSTS National Talent Search Examinations and releasing of results in time and issuing certificates therefore under the authority of Government of Tamil Nadu. 
+																	July 13 2018 3MB School Education - Vocational Education - Introduction of Vocational Education at Secondary Level initially in the 67 schools as a pilot project from the year 2018-19 - Orders - Issued. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	July 17 2018 6MB School Education - Tamil Nadu Recognised Private Schools Regulation Rules - 1974 - Amendment - Orders - Issued. 
+																	Get details info on courses placements college admissions cutoffs address contact latest news and updates. 
+																	George Chennai 600 009 Tamil Nadu India Designed Developed by National Informatics Centre E-Mail. 
+																	Tamil Nadu Government Orders-GOs - This page will display all the Government GOs issued by the Tamil Nadu Government. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Tamil Nadu Board of Secondary Education established in 1910 is under the purview of the Department of Education Government of Tamil Nadu India. 
+																	The basic objective of the Department is to formulate policies laws regulations and various programmes based on the needs of the society now and then for achieving the following goals of the Government in the field of Higher Education in Tamil Nadu. 
+																	It will display Department wise. 
+																	Government of Tamil Nadu School Education Department Secretariat Chennai - 600 009. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	January 07 2016 2MB University of Madras Constitution of Search Committee to recommend a Panel of three names to the Chancellor for appointment of Vice-Chancellor to the University of Madras Notified. 
+																	113 Dt-1809201- Click Here. 
+																	21HIGHWAYS AND MINOR PORTS DEPARTMENT. 
+																	4-6-2006 - Click Here GPF DCRG Pension Eligible For 142003 Employees GO No. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Tamil Nadu State Board of School Examination evaluates students progress by conducting three board examinations-one at the end of class 10 and the others at the end of class 11 12. 
+																	The Department for Education is responsible for childrens services and education including early years schools higher and further education policy apprenticeships and wider skills in England. 
+																	To provide Higher and Technical Education. 
+																	Developed and hosted by. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Government of Tamil Nadu has taken efforts to promote quality education in the field of Technical Education at Degree and Diploma level. 
+																	National Informatics Centre Email webadmintnnicin. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/ee/30/1bee30da4e9c70aee6cd6569f7e3012e.jpg" data-lightbox="roadtrip" data-title="Gp Rating Engineering Colleges In India Career Planning Academy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/ee/30/1bee30da4e9c70aee6cd6569f7e3012e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAXXY5o3K17Pyq9WP5LTKga2DzYbOqJOxQmg&amp;ec=45771800';" alt="Gp Rating Engineering Colleges In India Career Planning Academy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gp Rating Engineering Colleges In India Career Planning Academy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/d5/7f/47d57f186ae15940e67add126887c0a7.jpg" data-lightbox="roadtrip" data-title="Tamil Nadu Government Upsc Civils Coaching To Be Start Ias Academies Coaching Government Academy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/d5/7f/47d57f186ae15940e67add126887c0a7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE_Sbp4DabE_h3DXQyJLXBG_ORFBPf4zHwkQ&amp;ec=45771800';" alt="Tamil Nadu Government Upsc Civils Coaching To Be Start Ias Academies Coaching Government Academy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tamil Nadu Government Upsc Civils Coaching To Be Start Ias Academies Coaching Government Academy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/f1/2d/c7f12d9fbbab199be56cd4125069b3ba.png" data-lightbox="roadtrip" data-title="The Ucchi Pillayar Temple Is Built Atop The Rockfort Hill In Tiruchirappalli Tamil Nadu Dedicated To Lord Ganesh This 7t Hindu Temple Japanese Temple Temple">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/f1/2d/c7f12d9fbbab199be56cd4125069b3ba.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREmQ3T3u9Wk74fbzd60h7lmUaEVjDdADmrKg&amp;ec=45771800';" alt="The Ucchi Pillayar Temple Is Built Atop The Rockfort Hill In Tiruchirappalli Tamil Nadu Dedicated To Lord Ganesh This 7t Hindu Temple Japanese Temple Temple">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Ucchi Pillayar Temple Is Built Atop The Rockfort Hill In Tiruchirappalli Tamil Nadu Dedicated To Lord Ganesh This 7t Hindu Temple Japanese Temple Temple</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/84/8a/20/848a200116974357cef99ce44bf20a76.jpg" data-lightbox="roadtrip" data-title="Pin On Best Marine College In Tutucorin">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/84/8a/20/848a200116974357cef99ce44bf20a76.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkS_IDzExvlYTWV8ja2b2f5poDtox_yQziag&amp;ec=45771800';" alt="Pin On Best Marine College In Tutucorin">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Best Marine College In Tutucorin</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/60/93/c7/6093c7e8b87aab1bdaeb80df9f0b96db.jpg" data-lightbox="roadtrip" data-title="Assistant Professors Position In Tamil Nadu Total Vacancies 2340 Phd Life Teacher Recruitment Professor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/60/93/c7/6093c7e8b87aab1bdaeb80df9f0b96db.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf3mXUTM0uhgTzDeaf0d-3nxaT_Exiq83J3g&amp;ec=45771800';" alt="Assistant Professors Position In Tamil Nadu Total Vacancies 2340 Phd Life Teacher Recruitment Professor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Assistant Professors Position In Tamil Nadu Total Vacancies 2340 Phd Life Teacher Recruitment Professor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/0f/6a/d40f6aaea626c21929a1b09657346bf1.jpg" data-lightbox="roadtrip" data-title="Map Of Tamil Nadu India World Map Map India Map">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/0f/6a/d40f6aaea626c21929a1b09657346bf1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0bYKLAQfIDwhvtCtRAwP_v-BlTn2ie75bqw&amp;ec=45771800';" alt="Map Of Tamil Nadu India World Map Map India Map">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Map Of Tamil Nadu India World Map Map India Map</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/ea/5b/1aea5b69f951109039abb2f4d097c0f4.jpg" data-lightbox="roadtrip" data-title="Map Of Tamil Nadu Tamil Nadu Map Political Map">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/ea/5b/1aea5b69f951109039abb2f4d097c0f4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhBJuvq9GwylqwoU9Y9sBoEGFUe60DqTYmfQ&amp;ec=45771800';" alt="Map Of Tamil Nadu Tamil Nadu Map Political Map">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Map Of Tamil Nadu Tamil Nadu Map Political Map</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/17/1d/54/171d54a3a84ca959ac74f370699bf90a.png" data-lightbox="roadtrip" data-title="Pin On Elcot">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/17/1d/54/171d54a3a84ca959ac74f370699bf90a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS67t2zY0Cg75aP5fymjQb4581CEqyNuvCYKw&amp;ec=45771800';" alt="Pin On Elcot">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Elcot</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/9f/21/029f21f039ceb97103f8ebfc112b0d38.jpg" data-lightbox="roadtrip" data-title="The Ministry Of Human Resources And Development S Department Of Higher Education Issued An Order On Sunday Nove Education Issues Higher Education Higher Power">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/9f/21/029f21f039ceb97103f8ebfc112b0d38.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-KDh5C0uyJLToDjO58KCMGrQbkKR5WrAemQ&amp;ec=45771800';" alt="The Ministry Of Human Resources And Development S Department Of Higher Education Issued An Order On Sunday Nove Education Issues Higher Education Higher Power">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Ministry Of Human Resources And Development S Department Of Higher Education Issued An Order On Sunday Nove Education Issues Higher Education Higher Power</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.tn.gov.in/tcp/images/dtcp3.jpg" data-lightbox="roadtrip" data-title="Directorate Of Town And Country Planning Government Of Tamil Nadu">
+											<img class="card-img v-image ads-img " src="https://www.tn.gov.in/tcp/images/dtcp3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTX8LhFqrrvJITAhanhPLU3T7kyV7rHXqOqg&amp;ec=45771800';" alt="Directorate Of Town And Country Planning Government Of Tamil Nadu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Directorate Of Town And Country Planning Government Of Tamil Nadu</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/62/4a/b0/624ab00edeff2fd91bb6f9a9988f0b40.jpg" data-lightbox="roadtrip" data-title="Pin On Best Marine Academy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/62/4a/b0/624ab00edeff2fd91bb6f9a9988f0b40.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcQIYXAAmjW_Z-W3cf-h3YGp2bXoM42nG46g&amp;ec=45771800';" alt="Pin On Best Marine Academy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Best Marine Academy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/de/c2/81dec22c0019f1f54f70b37bd4b9d7b2.jpg" data-lightbox="roadtrip" data-title="Top 10 Icse Schools In Salem Tamil Nadu 2018 Top 10 Icse Schools In Salem Tamil Nadu 2018 1 Sai Kutty Th Amazon Education Cambridge School International School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/de/c2/81dec22c0019f1f54f70b37bd4b9d7b2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDJGga4Wcg6wnD4NM9jeWOvjxzm4utTffbVA&amp;ec=45771800';" alt="Top 10 Icse Schools In Salem Tamil Nadu 2018 Top 10 Icse Schools In Salem Tamil Nadu 2018 1 Sai Kutty Th Amazon Education Cambridge School International School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 10 Icse Schools In Salem Tamil Nadu 2018 Top 10 Icse Schools In Salem Tamil Nadu 2018 1 Sai Kutty Th Amazon Education Cambridge School International School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/07/67/0d07675ac2b8b86cbf9571ce36ff1295.png" data-lightbox="roadtrip" data-title="Tn Board 10th And 12th Result 2015 Exam Answer School Leaving Certificate Secondary School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/07/67/0d07675ac2b8b86cbf9571ce36ff1295.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFBKuvQrhxTIbjCN8ewX3RQrYG49ZH9lgwUw&amp;ec=45771800';" alt="Tn Board 10th And 12th Result 2015 Exam Answer School Leaving Certificate Secondary School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tn Board 10th And 12th Result 2015 Exam Answer School Leaving Certificate Secondary School</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-disability-income-calculator.html">Va Disability Income Calculator</a></li>
+													<li class="list-group-item"><a href="/va-disability-neuralgia.html">Va Disability Neuralgia</a></li>
+													<li class="list-group-item"><a href="/va-disability-non-taxable.html">Va Disability Non Taxable</a></li>
+													<li class="list-group-item"><a href="/va-disability-knee-ratings.html">Va Disability Knee Ratings</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-for-allergies.html">Va Disability Percentage For Allergies</a></li>
+													<li class="list-group-item"><a href="/va-disability-for-menieres-disease.html">Va Disability For Menieres Disease</a></li>
+													<li class="list-group-item"><a href="/va-disability-jaw-pain.html">Va Disability Jaw Pain</a></li>
+													<li class="list-group-item"><a href="/va-disability-narcolepsy.html">Va Disability Narcolepsy</a></li>
+													<li class="list-group-item"><a href="/va-disability-musculoskeletal-system.html">Va Disability Musculoskeletal System</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-calculator-chart.html">Va Disability Percentage Calculator Chart</a></li>
+													<li class="list-group-item"><a href="/va-disability-for-knee-and-back-pain.html">Va Disability For Knee And Back Pain</a></li>
+													<li class="list-group-item"><a href="/va-disability-knee-functional-loss.html">Va Disability Knee Functional Loss</a></li>
+													<li class="list-group-item"><a href="/va-disability-increases.html">Va Disability Increases</a></li>
+													<li class="list-group-item"><a href="/va-disability-knee-increased-citation.html">Va Disability Knee Increased Citation</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-benefits.html">Va Disability Percentage Benefits</a></li>
+													<li class="list-group-item"><a href="/va-disability-kidney.html">Va Disability Kidney</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-estimator.html">Va Disability Percentage Estimator</a></li>
+													<li class="list-group-item"><a href="/va-disability-for-stomach-problems.html">Va Disability For Stomach Problems</a></li>
+													<li class="list-group-item"><a href="/va-disability-knee-brace.html">Va Disability Knee Brace</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-for-arthritis.html">Va Disability Percentage For Arthritis</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

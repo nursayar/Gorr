@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Disability Lumbar Radiculopathy - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Disability Lumbar Radiculopathy",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/29/0b/7d/290b7d81e646a0b77b55d8bce0e6ac20.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+disability+lumbar+radiculopathy",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Disability Lumbar Radiculopathy</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Since your brain and spinal cord connect to your entire body through your nerves any part of your body can have pain or go numb when a nerve in your back in pinched. Severe with marked muscular atrophy. Lumbar radiculopathy is a common condition among veterans. <br>				
+			</p>
+										<a class="badge badge-success" href="/30-gram-mentega-berapa-sendok-makan.html">30 gram mentega berapa sendok makan</a>
+											<a class="badge badge-secondary" href="/30-gift-ideas-for-guys.html">30 gift ideas for guys</a>
+											<a class="badge badge-warning" href="/30-gigas-movistar.html">30 gigas movistar</a>
+											<a class="badge badge-primary" href="/40-va-disability-benefits.html">40 va disability benefits</a>
+											<a class="badge badge-warning" href="/30-la-gi.html">30 la gi</a>
+											<a class="badge badge-secondary" href="/30-inch-brp-cm.html">30 inch brp cm</a>
+											<a class="badge badge-secondary" href="/10-reasons-to-go-to-college.html">10 reasons to go to college</a>
+											<a class="badge badge-primary" href="/1800-gi-bill.html">1800 gi bill</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you have come to visit the right blog.  Our site provides you with suggestions for viewing the maximum quality video and picture content, search and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, especially Youtube, therefore we recommend this video for you to view.  It is also possible to contribute to supporting this website by sharing videos and graphics that you like on this site on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information that you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2e/9b/9c/2e9b9c4ae9d94d7ad6152537a30ecef0.jpg" data-lightbox="roadtrip" data-title="Pin On Va Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2e/9b/9c/2e9b9c4ae9d94d7ad6152537a30ecef0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREfr4V52kUiGbxOF-jcrYNSM4fugOjT1-g1Q';" alt="Pin On Va Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Va Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/29/0b/7d/290b7d81e646a0b77b55d8bce0e6ac20.png" data-lightbox="roadtrip" data-title="Pin On Si Joint Sciatica Low Back Hips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/29/0b/7d/290b7d81e646a0b77b55d8bce0e6ac20.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnPdcVp6uy6-L1EJKG_LtugyW09ZVa5UOpDQ';" alt="Pin On Si Joint Sciatica Low Back Hips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Si Joint Sciatica Low Back Hips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8c/29/2a/8c292ab7fed5cbd5f6dc6c27a5321c5d.png" data-lightbox="roadtrip" data-title="Pin On Hip Problems">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8c/29/2a/8c292ab7fed5cbd5f6dc6c27a5321c5d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaBeYinncpweCFAwWf5oS8wffIAZUb73Qgkw';" alt="Pin On Hip Problems">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Hip Problems</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/85/ff/9b/85ff9b51021f07ad43f8d5be40b99a8f.jpg" data-lightbox="roadtrip" data-title="Pin On Idiopathic Neuropathy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/85/ff/9b/85ff9b51021f07ad43f8d5be40b99a8f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfg8lbgzmWMcLkLrEgp8WgnNPrd9344A3RAg';" alt="Pin On Idiopathic Neuropathy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Idiopathic Neuropathy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/13/15/be/1315be9a66817a8fa62aa4b77039fcf4.jpg" data-lightbox="roadtrip" data-title="Pin On Back Pain Remedies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/13/15/be/1315be9a66817a8fa62aa4b77039fcf4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCNeA-RL-a0jkxB9wgTe-c96x14FcM56v4BA';" alt="Pin On Back Pain Remedies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Back Pain Remedies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/55/d0/fd/55d0fd939b300dec78681a00f599cc10.jpg" data-lightbox="roadtrip" data-title="Pin On Side Effects Of Acupuncture">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/55/d0/fd/55d0fd939b300dec78681a00f599cc10.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS99xIyPGLzv6zdI56D0oms5DnemURq_StHuA';" alt="Pin On Side Effects Of Acupuncture">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Side Effects Of Acupuncture</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/06/50/c1/0650c17b7e460a5fe54660ed1476de14.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS99xIyPGLzv6zdI56D0oms5DnemURq_StHuA';" alt="Pin On Side Effects Of Acupuncture">
+										<div class="card-body">
+						<h3 class="h5"><b>Degenerative joint disease of the spine is one of the most common claims made by Veterans for service-connected disability.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va disability lumbar radiculopathy</strong>. 
+								
+																	How Cervical or Lumbar Radiculopathy Can Affect Your Work. 
+																	Lumbar radiculopathy is a common condition among veterans. 
+																	Radiculopathy or a pinched nerve can cause major discomfort and problems with a range of motion during everyday activities. 
+																	Incontinence can also occur as a result. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Arthritis of the Back Secondary to Back Pain. 
+																	The DoD will also rate service-connected conditions as long as they also make the service member Unfit for Duty. 
+																	The foot dangles and drops no active movement possible of muscles below the knee flexion of knee weakened or very rarely lost. 
+																	Breathing limited to diaphragmatic. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Contrast this with other conditions such as cardiac conditions which rarely affect young soldiers. 
+																	This occurs when a nerve in the lower portion of the back is pinched and it can cause numbness and tingling in the hips and legs. 
+																	20 Mild. 
+																	VA Disability Claims General VA CP Exams Lumbar and Cervical Radiculopathy Share. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Radiculopathy Disability for Veterans. 
+																	Radiculopathy is commonly known as a pinched nerve. 
+																	10 posts VA CP Exams Lumbar and Cervical Radiculopathy VA CP Exams Lumbar and Cervical Radiculopathy dcmd124. 
+																	Restricted opening of the mouth and chewing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	So spinal disabilities focus on the lack of mobility or range of motion. 
+																	Incontinence can also occur as a result. 
+																	I also as well have IVDS DDD Spinal Stenosis and Lumbosacral Strain. 
+																	The VA diagnostic codes for disabilities of the spine primarily focus on ankylosis. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VA disability rating system for spinal stenosis is the same general formula as for other similar spinal conditions including. 
+																	You can get disability for your radiculopathy if you show that the symptoms from your radiculopathy along with any other health conditions you have would make you unemployable. 
+																	40 Moderate. 
+																	Radiculopathy is commonly rated as a secondary VA disability claim for secondary service connection due to one or more service connected back conditions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mine is rated as bilateral radiculopathies of the lower extremities in my VA printout it is rated as moderate damage of the Moderate Sciatic and each extremity is rated separately of lower left and lower right depending on the seveirty mild moderate or severe. 
+																	Ankylosis basically means that the joint is stiff or will not move. 
+																	They will also consider all of your other health conditions in. 
+																	The Veterans service-connected lumbar spine disability is rated as noncompensable from July 1 1987 and is rated at 10 percent disabling from December 21 1992 to October 1 2015 under DC 5243. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Applying for your Veterans Administration VA disability rating is often challenging. 
+																	For Reservists the condition must have occurred in or resulted from an injury in the Line of Duty to qualify. 
+																	Post Mar 11 2014 1 2014-03-11T1307. 
+																	That is because back injury is so common during military service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Method 2 No Jobs You Can Do. 
+																	Social Security will consider more than just your radiculopathy. 
+																	For VA compensation purposes unfavorable ankylosis is a condition in which the entire cervical spine the entire thoracolumbar spine or the entire spine is fixed in flexion or extension and the ankylosis results in one or more of the following. 
+																	If you experienced radiculopathy during military service you may be eligible for VA benefits for your disability. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Technically the highest VA rating for a thoracolumbar spinal disability is 50 percent. 
+																	Difficulty walking because of a limited line of vision. 
+																	As you will read in this article you dont have to go through this alone. 
+																	This may also apply if you had existing radiculopathy that was made worse during your time in the service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The pain of cervical or lumbar radiculopathy is not like a simple backache or stiff neck. 
+																	Cervical or Lumbar Radiculopathy Disability Claims Cervical or lumbar radiculopathy is the clinical term used to describe the condition when the nerves in the spine are compressed or pinched. 
+																	When the bones in your back lose their cushioning they rub together and may pinch a nerve. 
+																	Note that a veteran is eligible to be rated for both a back condition and Radiculopathy secondary to lower back pain. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA Disability Ratings for Lumbar Radiculopathy. 
+																	Lumbosacral radiculopathy is a disease of the lumbar spinal nerve root and can compress the spinal nerve root. 
+																	This occurs when a nerve in the lower portion of the back is pinched and it can cause numbness and tingling in the hips and legs. 
+																	The VA awards disability compensation for each Back and Spine condition that is service-connected. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you have both a service-connected back condition and radiculopathy you may be entitled disability benefits for your radiculopathy. 
+																	It can cause sharp pain weakness loss of reflexes or numbness throughout your spine and extremities. 
+																	Lumbosacral or cervical strain diagnostic code 5237 used to refer to neck or back pain. 
+																	60 Moderately severe. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	His lumbar spine disability is rated 20 percent disabling from October 1 2015 under DC 5237. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/88/81/b68881ae6545690db44a9f13afa34f87.jpg" data-lightbox="roadtrip" data-title="What Is Ulnar Nerve Compression At The Elbow Ulnar Nerve Ulnar Nerve Entrapment Median Nerve">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/88/81/b68881ae6545690db44a9f13afa34f87.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbT2N2JDvL6E8P-9XDZ5T5aDceUbe5r-xgDg';" alt="What Is Ulnar Nerve Compression At The Elbow Ulnar Nerve Ulnar Nerve Entrapment Median Nerve">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Ulnar Nerve Compression At The Elbow Ulnar Nerve Ulnar Nerve Entrapment Median Nerve</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/77/cd/da77cd1d5b164b0999e603968ce7e283.jpg" data-lightbox="roadtrip" data-title="Sohrab Gollogly Author At Sohrab Gollogly Md In 2020 Physical Therapy Cervical Radiculopathy Physical Therapy Assistant">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/77/cd/da77cd1d5b164b0999e603968ce7e283.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBBU-W7N0V3GfBqcGU0uNY0PFTeYIGpDNtIA';" alt="Sohrab Gollogly Author At Sohrab Gollogly Md In 2020 Physical Therapy Cervical Radiculopathy Physical Therapy Assistant">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sohrab Gollogly Author At Sohrab Gollogly Md In 2020 Physical Therapy Cervical Radiculopathy Physical Therapy Assistant</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/a6/36/a9a6369f8604a92c7c3de5aa2d48b58c.png" data-lightbox="roadtrip" data-title="File Grant 1962 663 Png Wikipedia The Free Encyclopedia Spinal Nerve Radiculopathy Nerve">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/a6/36/a9a6369f8604a92c7c3de5aa2d48b58c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5KwSl-L5RlutGV6svx3J-Ykr3bHS74YvT4Q';" alt="File Grant 1962 663 Png Wikipedia The Free Encyclopedia Spinal Nerve Radiculopathy Nerve">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">File Grant 1962 663 Png Wikipedia The Free Encyclopedia Spinal Nerve Radiculopathy Nerve</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/c3/91/0cc3913aaa9a65776f42263c13e31527.jpg" data-lightbox="roadtrip" data-title="Pin On Anatomy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/c3/91/0cc3913aaa9a65776f42263c13e31527.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkoSKNPNDH-4qKgRyJU05l8u36Eljj3StH9w';" alt="Pin On Anatomy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Anatomy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/f6/fe/57/f6fe5753a75bf0fac434a64e1ef114ff.jpg" data-lightbox="roadtrip" data-title="Pin On Neuropathy Pain Relief">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/f6/fe/57/f6fe5753a75bf0fac434a64e1ef114ff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYYOIjQF8RN6FLoN9sTfmsbsXbpzD7rGEktw';" alt="Pin On Neuropathy Pain Relief">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Neuropathy Pain Relief</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/5b/8c/4f/5b8c4fd5dec572ea7d44a6240860d418.jpg" data-lightbox="roadtrip" data-title="Epingle Sur Neuropathy Remedies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/5b/8c/4f/5b8c4fd5dec572ea7d44a6240860d418.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGjVrpQMta8j-5hxqLPljt1XVVg0UiyzBc-A';" alt="Epingle Sur Neuropathy Remedies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Epingle Sur Neuropathy Remedies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/52/1d/d7/521dd78581e06280c7bfe85a22ddef7d.jpg" data-lightbox="roadtrip" data-title="Pin On Spinal L1 To L5">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/52/1d/d7/521dd78581e06280c7bfe85a22ddef7d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRECirK09GxWHQQpzNkvLN8sYL678NvYbr07A';" alt="Pin On Spinal L1 To L5">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Spinal L1 To L5</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/80/1a/d2/801ad271d5191bbc668272e102f44163.jpg" data-lightbox="roadtrip" data-title="Pin On Acetabular Fracture">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/80/1a/d2/801ad271d5191bbc668272e102f44163.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSJiL3_1D7Pb37VG9po-qN95FTKzSOYJJckg';" alt="Pin On Acetabular Fracture">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Acetabular Fracture</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/50/c1/0650c17b7e460a5fe54660ed1476de14.jpg" data-lightbox="roadtrip" data-title="Nerves Of The Lumbar Spine Nerve Anatomy Human Anatomy And Physiology Anatomy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/50/c1/0650c17b7e460a5fe54660ed1476de14.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk9xbMnjCRtLieEKCvQNmTnzl2YOYN80sLKQ';" alt="Nerves Of The Lumbar Spine Nerve Anatomy Human Anatomy And Physiology Anatomy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nerves Of The Lumbar Spine Nerve Anatomy Human Anatomy And Physiology Anatomy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/fc/0d/7b/fc0d7b68414f0bb3b4156baae2437f24.jpg" data-lightbox="roadtrip" data-title="Pin On Radiculopathy Vs Neuropathy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/fc/0d/7b/fc0d7b68414f0bb3b4156baae2437f24.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK8ApKYmejV5kJP8b_i1m5y-Mz-P_iLfaBSA';" alt="Pin On Radiculopathy Vs Neuropathy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Radiculopathy Vs Neuropathy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/66/bb/c8/66bbc8fd6491caa7772151051658ad35.png" data-lightbox="roadtrip" data-title="Pin On Chris Back">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/66/bb/c8/66bbc8fd6491caa7772151051658ad35.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9CoCIzlytLPqjl2gqguOTJbQotJBDlUFRBg';" alt="Pin On Chris Back">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Chris Back</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/59/48/13/594813277af1a825b88c1d11d1649948.jpg" data-lightbox="roadtrip" data-title="Pin On Benefits Of Yoga Easing Back Pain">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/59/48/13/594813277af1a825b88c1d11d1649948.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP-K_Ny9K09h6m_i-14VaZIYZj31emjC6hwg';" alt="Pin On Benefits Of Yoga Easing Back Pain">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Benefits Of Yoga Easing Back Pain</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/49/c0/43/49c043c8f9838913bb9d365ca35bcad5.jpg" data-lightbox="roadtrip" data-title="Pin On Multifocal Motor Neuropathy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/49/c0/43/49c043c8f9838913bb9d365ca35bcad5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1hxdtslKj3Ylzezts7QiTQviv-32To7tnlQ';" alt="Pin On Multifocal Motor Neuropathy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Multifocal Motor Neuropathy</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/gi-bill-in-foreign-schools.html">Gi Bill In Foreign Schools</a></li>
+													<li class="list-group-item"><a href="/gi-bill-house.html">Gi Bill House</a></li>
+													<li class="list-group-item"><a href="/gi-bill-credit-hours-vs-distance-hours.html">Gi Bill Credit Hours Vs Distance Hours</a></li>
+													<li class="list-group-item"><a href="/gi-bill-customer-help-login.html">Gi Bill Customer Help Login</a></li>
+													<li class="list-group-item"><a href="/gi-bill-kicker-bonus.html">Gi Bill Kicker Bonus</a></li>
+													<li class="list-group-item"><a href="/gi-bill-customer-help-va.html">Gi Bill Customer Help Va</a></li>
+													<li class="list-group-item"><a href="/gi-bill-help-portal.html">Gi Bill Help Portal</a></li>
+													<li class="list-group-item"><a href="/gi-bill-flight-training-helicopter.html">Gi Bill Flight Training Helicopter</a></li>
+													<li class="list-group-item"><a href="/gi-bill-history-channel.html">Gi Bill History Channel</a></li>
+													<li class="list-group-item"><a href="/gi-bill-flight-training-part-61.html">Gi Bill Flight Training Part 61</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-new-recruits.html">Gi Bill For New Recruits</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing-allowance-payment-schedule.html">Gi Bill Housing Allowance Payment Schedule</a></li>
+													<li class="list-group-item"><a href="/gi-bill-chapter-33-rates.html">Gi Bill Chapter 33 Rates</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing-allowance-california.html">Gi Bill Housing Allowance California</a></li>
+													<li class="list-group-item"><a href="/gi-bill-help-center.html">Gi Bill Help Center</a></li>
+													<li class="list-group-item"><a href="/gi-bill-kicker-navy.html">Gi Bill Kicker Navy</a></li>
+													<li class="list-group-item"><a href="/gi-bill-history-timeline.html">Gi Bill History Timeline</a></li>
+													<li class="list-group-item"><a href="/gi-bill-mha-online.html">Gi Bill Mha Online</a></li>
+													<li class="list-group-item"><a href="/gi-bill-flight-training-near-me.html">Gi Bill Flight Training Near Me</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-flight-schools.html">Gi Bill For Flight Schools</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

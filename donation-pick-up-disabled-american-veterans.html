@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Donation Pick Up Disabled American Veterans - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Donation Pick Up Disabled American Veterans",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/600x315/f5/b8/87/f5b887fd07596a378a7d59b06414db27.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=donation+pick+up+disabled+american+veterans",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Donation Pick Up Disabled American Veterans</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">All charity donations are tax deductible. Donate Now contribute to our mission Donate Well Pick It Up Schedule Now Come in and Shop Find Location. Our number one goal is to help donors connect with charities in their local communities. <br>				
+			</p>
+										<a class="badge badge-danger" href="/view-va-compensation-online.html">view va compensation online</a>
+											<a class="badge badge-info" href="/va-workmans-comp-login.html">va workmans comp login</a>
+											<a class="badge badge-dark" href="/virginia-approved-online-real-estate-schools.html">virginia approved online real estate schools</a>
+											<a class="badge badge-info" href="/vet-tech-programs-gi-bill.html">vet tech programs gi bill</a>
+											<a class="badge badge-info" href="/virginia-court-approved-driving-schools.html">virginia court approved driving schools</a>
+											<a class="badge badge-warning" href="/virginia-department-of-education-algebra-1-sol.html">virginia department of education algebra 1 sol</a>
+											<a class="badge badge-dark" href="/veterans-affairs-education-office.html">veterans affairs education office</a>
+											<a class="badge badge-danger" href="/veterans-disability-percentage-table.html">veterans disability percentage table</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you've come to pay a visit to the right blog.  Our site provides you with hints for viewing the maximum quality video and picture content, search and find more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, particularly Youtube, therefore we recommend this movie that you view.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/01/64/830164cbd22ec649eff9e169253734b5.png" data-lightbox="roadtrip" data-title="Schedule Free Donation Pickup Veterans Thrift Store Disabled American Veteran D A V Industries Inc San Diego Californ American Veterans Thrifting Pick Up">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/01/64/830164cbd22ec649eff9e169253734b5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr9rZK3VZz_XEnodCG0y_EVDQbux-rSshhfJRpaDVjCuX6rWqqfFcxhKL5-V1Ma8REip58ww&amp;ec=45771803';" alt="Schedule Free Donation Pickup Veterans Thrift Store Disabled American Veteran D A V Industries Inc San Diego Californ American Veterans Thrifting Pick Up">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Schedule Free Donation Pickup Veterans Thrift Store Disabled American Veteran D A V Industries Inc San Diego Californ American Veterans Thrifting Pick Up</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/f5/b8/87/f5b887fd07596a378a7d59b06414db27.jpg" data-lightbox="roadtrip" data-title="Pin By Marina Mackowiak On Did You Know American Veterans Veteran Thrifting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/f5/b8/87/f5b887fd07596a378a7d59b06414db27.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnIyCeXoTZ5OjHo30h4URkHp1WgEb0QsHqvxT9IRvBX5mM9cxrBIV6WHTXi3vQjA8StkDfkA&amp;ec=45771803';" alt="Pin By Marina Mackowiak On Did You Know American Veterans Veteran Thrifting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Marina Mackowiak On Did You Know American Veterans Veteran Thrifting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/7b/dd/a8/7bdda8e829bcc9a39d1cb2b48829cdc9.jpg" data-lightbox="roadtrip" data-title="Free Donation Pick Up Thrift Store For Veterans Solana Beach Rancho Santa Fe Encinitas Thrifting American Veterans Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/7b/dd/a8/7bdda8e829bcc9a39d1cb2b48829cdc9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR7Dg3ujrCf5BBFcW9yaDY1hQ2YI__Oy1tHZ1ZxvqyNh8ARlshxYK6nBA8sTPr2I4Q0If52Q&amp;ec=45771803';" alt="Free Donation Pick Up Thrift Store For Veterans Solana Beach Rancho Santa Fe Encinitas Thrifting American Veterans Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Donation Pick Up Thrift Store For Veterans Solana Beach Rancho Santa Fe Encinitas Thrifting American Veterans Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/87/6f/c8876f8891efa8e6a60201b91bcea46a.png" data-lightbox="roadtrip" data-title="Donate Baby Clothes With A Free Donation Pickup In 2020 Veterans Of America Vietnam Veterans Vietnam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/87/6f/c8876f8891efa8e6a60201b91bcea46a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPAahF4BbDVA0GdvFuAbKYlNkAM-eCDbO4kZXdoD9_NENxheCwLj5jQfqdarEOJGrHl1J9Tw&amp;ec=45771803';" alt="Donate Baby Clothes With A Free Donation Pickup In 2020 Veterans Of America Vietnam Veterans Vietnam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Donate Baby Clothes With A Free Donation Pickup In 2020 Veterans Of America Vietnam Veterans Vietnam</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/ec/51/afec51c61e45c06e2c0b33119af36f7f.png" data-lightbox="roadtrip" data-title="This Is A Link To A Free Card You Can Print Out Everytime You Pick Up A Prescription And Present The Card 50 Cents Will Be Don American Veterans Cards Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/ec/51/afec51c61e45c06e2c0b33119af36f7f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFgn3ybwGmPHo81CfNVS_Gz1jIgUj5frxOJJV2xqWyd9rwrDGT8kn18hSUNkdvnIowsG5H&amp;ec=45771803';" alt="This Is A Link To A Free Card You Can Print Out Everytime You Pick Up A Prescription And Present The Card 50 Cents Will Be Don American Veterans Cards Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is A Link To A Free Card You Can Print Out Everytime You Pick Up A Prescription And Present The Card 50 Cents Will Be Don American Veterans Cards Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/5f/1e/4a5f1ec14f2d2250afb69ff5c0310411.png" data-lightbox="roadtrip" data-title="This Was A Great And Free Way To Get Rid Of Clutter And Went To A Good Cause Veterans Of America Vietnam Veterans Vietnam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/5f/1e/4a5f1ec14f2d2250afb69ff5c0310411.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHwFkkb5NjeZ1wR738aTQhdSKSDea8hsrPBlPNcTXjNeVElyrjcaH400TFM_bJWDJTqiTBSw&amp;ec=45771803';" alt="This Was A Great And Free Way To Get Rid Of Clutter And Went To A Good Cause Veterans Of America Vietnam Veterans Vietnam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Was A Great And Free Way To Get Rid Of Clutter And Went To A Good Cause Veterans Of America Vietnam Veterans Vietnam</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/8a/ad/9b/8aad9b67a322e1a819a759b994596b2b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHwFkkb5NjeZ1wR738aTQhdSKSDea8hsrPBlPNcTXjNeVElyrjcaH400TFM_bJWDJTqiTBSw&amp;ec=45771803';" alt="This Was A Great And Free Way To Get Rid Of Clutter And Went To A Good Cause Veterans Of America Vietnam Veterans Vietnam">
+										<div class="card-body">
+						<h3 class="h5"><b>Find a DAV Office or Volunteer to Help Veterans and the Disabled American Veterans Charity.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Donation pick up disabled american veterans</strong>. 
+								
+																	Leave your items on the curb before we arrive and well take it from there. 
+																	Empowering veterans to lead high-quality lives with respect and dignity. 
+																	All of this is made possible with the help of you and your donations. 
+																	Since we know that many of you including DAV employees have written in to DonationTown in the past and have asked us to include Disabled American Veterans in our charity donation pick up directory we wanted to make sure to let you know that we. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For items you donate at our Community Donation Center Savers pays Disabled American Veterans of Minnesota 93 cents per pound of clothing and other soft goods 52 cents per pound of miscellaneous household goods and 52 cents per item of furniture or other large items. 
+																	Its easier than ever to donate your clothes shoes and household items. 
+																	Free Donation pickup including vehicles running or not to support American Veterans. 
+																	Your contributions are tax deductible to the extent permitted by law. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your contributions are tax deductible to the extent permitted by law. 
+																	2020 Disabled American Veterans Thrift Store of Louisville. 
+																	Set your items out on the curb or another convenient spot 3. 
+																	Click here for a list of the items we can take and ones that we cant. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	DAV Thrift Stores Inc. 
+																	The Military Order of the Purple Heart Service Foundation Inc without stock and not for profit was Incorporated in the State of Wisconsin in 1957. 
+																	FREE and easy way to schedule a donation pickup just a few clicks away. 
+																	SCHEDULE A PICK-UP - Click Here. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Is a non profit organization that serves the local disabled American veterans with services jobs and support. 
+																	501 C 3 Corporation. 
+																	All Donations are Tax Deductible Contributions DAV Industries provides relief and assistance to Disabled American Veterans or their dependents. 
+																	We take your donations and sell them in one of our 4 thrift stores located here in Wichita. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Nevertheless we will respect the wishes of the lawyers at Disabled American Veterans and not include DAV donation pickup scheduling information on our website. 
+																	By donating your unwanted clothing household items kitchenware books and toys you can also join Chapters 1071 1106 in their efforts to reach out to veterans. 
+																	Your donation of clothing and household items to the Vietnam Veterans of America VVA generates over 50 percent of the funding for programs to help all veterans throughout the country. 
+																	Schedule a free donation pickup today and help veterans in your Colorado area. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your generous donations of clothing and other household goods make a big difference in the lives of Americas Veterans and their families. 
+																	Improving the general welfare and hospital care of all veterans especially homeless and disabled veterans. 
+																	We invite everyone veterans and civilian men and women young and old to join us. 
+																	We pick up donations in San Diego County North County Ramona Oceanside Vista San Marcos Escondido Camp Pendleton Fallbrook and Bonsall. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Simply let us know where to come and pick a time that works for you. 
+																	Thanks for your interest in supporting the men and women who have been injured in the service of our nation. 
+																	Thank you for choosing to donate a car to Disabled American Veterans. 
+																	That money is used to help with transportation to medical appointments at the VA and many other services for our disabled veterans right here in the Wichita area. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	YOU WILL BE ADDED TO A LIST AND CALLED WHEN WE ARE COMING TO YOUR AREA NEXT. 
+																	For items you donate at our Community Donation Center Savers pays Disabled American Veterans of Minnesota 93 cents per pound of clothing and other soft goods 52 cents per pound of miscellaneous household goods and 52 cents per item of furniture or other large items. 
+																	DAV assists Veterans in San Diego including surrounding areas of Spring Valley El Cajon Chula Vista and Oceanside Escondido Poway and many other areas DAVs help is needed. 
+																	The DAV is dedicated to a single purpose. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VVA supports local state and national service programs dedicated to. 
+																	Choose a day that works for you 2. 
+																	Well send a truck to get them and leave you a tax deductible receipt. 
+																	Schedule a Pick Up Well send a truck to pick up your unwanted items for free. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	WE ESPECIALLY NEED CLOTHES. 
+																	Donate Volunteer Your help will improve the lives of Minnesotas disabled veterans. 
+																	Matresses paint chemicals solvents cleaning products and toxic waste. 
+																	All Donations are Tax Deductible Contributions and can be used as a tax write off. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Due to covid-19 all donations must be left outside for pickup ATTENTION WE CURRENTLY DO NOT HAVE THE ABILITY TO SCHEDULE IMMEDIATE PICKUPS OF CLOTHING ITEMS. 
+																	The proceeds from your car truck boat van RV or other vehicle allow the DAV to continue providing lifetime support for veterans of all generations and their families. 
+																	Every donations help Veterans and their families. 
+																	With our online donation pick up scheduler you can donate your used items to charity in three simple steps. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It qualified with the Internal Revenue Service as an. 
+																	There are 4 easy ways to make a donation to the Disabled American Veterans Thrift Stores. 
+																	Whether you volunteer or make a donation your contribution is important. 
+																	We provide free pick up and proceeds benefit combat wounded and disabled veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The items you donate generate the majority of the funding to support local state and national programs of the Vietnam Veterans of America. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/ad/9b/8aad9b67a322e1a819a759b994596b2b.jpg" data-lightbox="roadtrip" data-title="Old Disabled American Veterans Commercial Featuring Actor Paul Newman Veterans Woundedwarrior American Veterans Veteran Hero">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/ad/9b/8aad9b67a322e1a819a759b994596b2b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUecmLe572ZxqSkWE5RHWaL_1RziB3g8YZvv168tOQMjO8NPY01uw5oyQNi8l8Jch8DCV_6Q&amp;ec=45771803';" alt="Old Disabled American Veterans Commercial Featuring Actor Paul Newman Veterans Woundedwarrior American Veterans Veteran Hero">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Old Disabled American Veterans Commercial Featuring Actor Paul Newman Veterans Woundedwarrior American Veterans Veteran Hero</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/74/bd/10/74bd10b600d7e3dbc08b6ffba1feb10e.jpg" data-lightbox="roadtrip" data-title="Vietnam Veterans Of America Ocean City Chapter 1091 Ocean City Cool Veterans Of America Vietnam Veterans Vietnam Vets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/74/bd/10/74bd10b600d7e3dbc08b6ffba1feb10e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjGDLJUpwzCdgrkW8ehaR7xmMYRRA3pqIEyv8wjJCM2YC3l5qTFKGm74uU58NjWiQZrQ1EDQ&amp;ec=45771803';" alt="Vietnam Veterans Of America Ocean City Chapter 1091 Ocean City Cool Veterans Of America Vietnam Veterans Vietnam Vets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vietnam Veterans Of America Ocean City Chapter 1091 Ocean City Cool Veterans Of America Vietnam Veterans Vietnam Vets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5c/44/68/5c44686aa56e07a0df1ba92eaca52329.jpg" data-lightbox="roadtrip" data-title="Pin On Tricks Of The Trade">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5c/44/68/5c44686aa56e07a0df1ba92eaca52329.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbFcWXHEVl7UU-ftA2jyGw9_8Agiukg40hx-Nj7-r6Mxp8vFXAeBgprKvt5_VGZrQwe4w15g&amp;ec=45771803';" alt="Pin On Tricks Of The Trade">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Tricks Of The Trade</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/0d/e6/fc0de6daa4377babb0d2804ddfdaa155.jpg" data-lightbox="roadtrip" data-title="Only 2 Weeks Til Rootbeerfloatday Root Beer A W Root Beer Root Beer Float">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/0d/e6/fc0de6daa4377babb0d2804ddfdaa155.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDVCdZHc2tiw2Oj9I8GSLRu3mkGQqh46F9KjZ1-gTCS7MGMIq2Sh5oXVr4z3fVIgBLXxk9kg&amp;ec=45771803';" alt="Only 2 Weeks Til Rootbeerfloatday Root Beer A W Root Beer Root Beer Float">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Only 2 Weeks Til Rootbeerfloatday Root Beer A W Root Beer Root Beer Float</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/f8/b1/caf8b13526b4ec18df6d06be1bebff17.jpg" data-lightbox="roadtrip" data-title="Disabled Veterans Pickup Bahn Mi Please Dont Bahn Mi From Making Bread Puns Vietnam 11oz 15o In 2020 Black Coffee Mug Black Coffee Grandfather Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/f8/b1/caf8b13526b4ec18df6d06be1bebff17.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdlxpkV24aJBxtjV90YHKvDv7rCokYMUkKUN-yZmZPEiigiTWzewrEgBUOoa_BdppVKnh7qA&amp;ec=45771803';" alt="Disabled Veterans Pickup Bahn Mi Please Dont Bahn Mi From Making Bread Puns Vietnam 11oz 15o In 2020 Black Coffee Mug Black Coffee Grandfather Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Disabled Veterans Pickup Bahn Mi Please Dont Bahn Mi From Making Bread Puns Vietnam 11oz 15o In 2020 Black Coffee Mug Black Coffee Grandfather Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/f2/9c/57f29c498f9842d57f9b79848d4d0114.jpg" data-lightbox="roadtrip" data-title="Patriotic Pickup Being Auctioned To Benefit Disabled Vets Ford Raptor 2014 Ford Raptor Lifted Ford Trucks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/f2/9c/57f29c498f9842d57f9b79848d4d0114.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj7tp2b1LAPpNh29M5lcYcEHr8TLV0yf7spR-6UOYaNoukIWMJNVP_TyuUVIrCWhkI7BZE-A&amp;ec=45771803';" alt="Patriotic Pickup Being Auctioned To Benefit Disabled Vets Ford Raptor 2014 Ford Raptor Lifted Ford Trucks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Patriotic Pickup Being Auctioned To Benefit Disabled Vets Ford Raptor 2014 Ford Raptor Lifted Ford Trucks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/ff/5e/b4ff5ea535c94b2fe05ed64e4ba9eed3.jpg" data-lightbox="roadtrip" data-title="Charity Navigator United Way Charity Navigator Catchy Names">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/ff/5e/b4ff5ea535c94b2fe05ed64e4ba9eed3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS-h3gQfO6hAOFHSy2YyB0SyE7SZxkjpfy4hi_qKD_fkKxmOgUghr2M1dUGHbDjhR04tQh0Q&amp;ec=45771803';" alt="Charity Navigator United Way Charity Navigator Catchy Names">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Charity Navigator United Way Charity Navigator Catchy Names</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/eb/bd/e1ebbd2a1da1ba5fd2ad0059e2ebef31.png" data-lightbox="roadtrip" data-title="Donate Clothing And Household Goods Donate Clothes American Veterans Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/eb/bd/e1ebbd2a1da1ba5fd2ad0059e2ebef31.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwfyOKYdnvE7zx5YpEK_sSiuV2lGgHppW5YVPv33xXLITHFGs2mZq7xS6I5Wiy5QRdFeGvfg&amp;ec=45771803';" alt="Donate Clothing And Household Goods Donate Clothes American Veterans Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Donate Clothing And Household Goods Donate Clothes American Veterans Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/98/dd/82/98dd820086cf5ca2e7079ff505d6789f.jpg" data-lightbox="roadtrip" data-title="This Is How To Say Thank You To The Veterans Of Our Country American Legion Auxiliary Memorial Day Patriotic Holidays">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/98/dd/82/98dd820086cf5ca2e7079ff505d6789f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbtsXfjgBMiAKyT-LKrBBYSrK6cL6-oTWqqigAWjDH6y-Gmi9I73sZVE1NSHkNrkjwEZvZ6w&amp;ec=45771803';" alt="This Is How To Say Thank You To The Veterans Of Our Country American Legion Auxiliary Memorial Day Patriotic Holidays">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is How To Say Thank You To The Veterans Of Our Country American Legion Auxiliary Memorial Day Patriotic Holidays</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/f9/d1/e0f9d1612652a88c0fe272e89a987bdf.jpg" data-lightbox="roadtrip" data-title="Idk How Accurate This Is But I Thought It Was Interesting Charity Navigator United Way Helpful Hints">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/f9/d1/e0f9d1612652a88c0fe272e89a987bdf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDYGuZ4gW9Bx8KSKqEvwXRPvov0RpxsEagtqTaWNOVBZm3_dcUnXlGXqabaVWAjP-lQDLICA&amp;ec=45771803';" alt="Idk How Accurate This Is But I Thought It Was Interesting Charity Navigator United Way Helpful Hints">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Idk How Accurate This Is But I Thought It Was Interesting Charity Navigator United Way Helpful Hints</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/24/5e/a2245e9eb2da5f59e8001b3d23518506.jpg" data-lightbox="roadtrip" data-title="Air Force Times Air Force Us Veterans American Flag Gift For Men Women Kids Face Mask Gift Familyloves Com In 2020 Flag Gift Mens Gifts Veteran Hats">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/24/5e/a2245e9eb2da5f59e8001b3d23518506.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpYnfVpwXwSI41Rtfqs4d2UAD5V-_0bFjS7iGFL5AE4PPeiOG2BNofyOGLLHllc6NFkVA8QA&amp;ec=45771803';" alt="Air Force Times Air Force Us Veterans American Flag Gift For Men Women Kids Face Mask Gift Familyloves Com In 2020 Flag Gift Mens Gifts Veteran Hats">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Times Air Force Us Veterans American Flag Gift For Men Women Kids Face Mask Gift Familyloves Com In 2020 Flag Gift Mens Gifts Veteran Hats</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/e9/ea/0d/e9ea0d1ee8e4761eceb70720aade2342.jpg" data-lightbox="roadtrip" data-title="Wedding Favors Presentation 9954108987 Creatively Exquisite Wedding Favor Steps To Kick Donation Wedding Favors Charity Wedding Favors Simple Wedding Favors">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/e9/ea/0d/e9ea0d1ee8e4761eceb70720aade2342.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_STV5NXqPiq2YbwfdZNWqWgPWrA8rvlm58VTV2lsmcQEElOkDQMGoIrfNPN9oUcDKsPt2kQ&amp;ec=45771803';" alt="Wedding Favors Presentation 9954108987 Creatively Exquisite Wedding Favor Steps To Kick Donation Wedding Favors Charity Wedding Favors Simple Wedding Favors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wedding Favors Presentation 9954108987 Creatively Exquisite Wedding Favor Steps To Kick Donation Wedding Favors Charity Wedding Favors Simple Wedding Favors</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/c7/cc/eac7cca01a150fbe646159c36b6b376c.jpg" data-lightbox="roadtrip" data-title="Kia Motors America Partners With Wounded Warrior Project To Donate 2012 Kia Soul To Disabled Veteran Army Corpor Kia Motors America Kia Wounded Warrior Project">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/c7/cc/eac7cca01a150fbe646159c36b6b376c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfUqWWMIVZ76kkrFcXyDaYTDDBGhVU6SSxP3xkQWy3_US_X3OUmYGFOwWJx6ejqDGr-pWRfA&amp;ec=45771803';" alt="Kia Motors America Partners With Wounded Warrior Project To Donate 2012 Kia Soul To Disabled Veteran Army Corpor Kia Motors America Kia Wounded Warrior Project">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kia Motors America Partners With Wounded Warrior Project To Donate 2012 Kia Soul To Disabled Veteran Army Corpor Kia Motors America Kia Wounded Warrior Project</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-disability-ratings-back-pain.html">Va Disability Ratings Back Pain</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-traumatic-arthritis.html">Va Disability Rating For Traumatic Arthritis</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-herniated-disc.html">Va Disability Rating Herniated Disc</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-polycystic-kidney-disease.html">Va Disability Rating For Polycystic Kidney Disease</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating.html">Va Disability Rating</a></li>
+													<li class="list-group-item"><a href="/va-disability-ratings-diabetes.html">Va Disability Ratings Diabetes</a></li>
+													<li class="list-group-item"><a href="/va-disability-ratings-money.html">Va Disability Ratings Money</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-vision-loss.html">Va Disability Rating For Vision Loss</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-peripheral-vision-loss.html">Va Disability Rating For Peripheral Vision Loss</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-respiratory-issues.html">Va Disability Rating For Respiratory Issues</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-form.html">Va Disability Rating Form</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-postherpetic-neuralgia.html">Va Disability Rating For Postherpetic Neuralgia</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-mild-sleep-apnea-with-cpap.html">Va Disability Rating For Mild Sleep Apnea With Cpap</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-wrist.html">Va Disability Rating For Wrist</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-obstructive-sleep-apnea.html">Va Disability Rating Obstructive Sleep Apnea</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-seizures.html">Va Disability Rating For Seizures</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-systemic-lupus.html">Va Disability Rating For Systemic Lupus</a></li>
+													<li class="list-group-item"><a href="/va-disability-ratings-heart-disease.html">Va Disability Ratings Heart Disease</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-renal-failure.html">Va Disability Rating For Renal Failure</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-stomach-problems.html">Va Disability Rating For Stomach Problems</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

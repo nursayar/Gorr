@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>How To Help A Veteran With Ptsd - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "How To Help A Veteran With Ptsd",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/736x/04/3e/3e/043e3e58a71f8188dabad138009b19c6.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+to+help+a+veteran+with+ptsd",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>How To Help A Veteran With Ptsd</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">If you have PTSD that requires treatment psychological therapies are usually recommended first. Veterans with PTSD often become physically inactive which can worsen their mental health and increase certain symptoms. If you have a friend or family member you know or believe has PTSD here are some ways you can help them. <br>				
+			</p>
+										<a class="badge badge-dark" href="/muskogee-va-education-office-fax-number.html">muskogee va education office fax number</a>
+											<a class="badge badge-success" href="/montgomery-gi-bill-payments.html">montgomery gi bill payments</a>
+											<a class="badge badge-dark" href="/most-common-snakes-in-northern-virginia.html">most common snakes in northern virginia</a>
+											<a class="badge badge-dark" href="/montgomery-ward-online-bill-pay.html">montgomery ward online bill pay</a>
+											<a class="badge badge-light" href="/montgomery-ward-pay-my-bill.html">montgomery ward pay my bill</a>
+											<a class="badge badge-warning" href="/montgomery-gi-bill-vs-gi-bill.html">montgomery gi bill vs gi bill</a>
+											<a class="badge badge-primary" href="/my-va-education-benefits.html">my va education benefits</a>
+											<a class="badge badge-success" href="/montgomery-gi-bill-pay-scale.html">montgomery gi bill pay scale</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you have come to pay a visit to the right site.  Our website gives you suggestions for seeing the highest quality video and picture content, hunt and locate more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, particularly Youtube, therefore we recommend this video that you see.  It is also possible to bring about supporting this website by sharing videos and images that you enjoy on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/3c/43/ce3c43f794d9c926a974b1bac1f1ee54.jpg" data-lightbox="roadtrip" data-title="Pin On Marijuana Effects">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/3c/43/ce3c43f794d9c926a974b1bac1f1ee54.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp3NN9A5vptQHi4Yn_6GGiANlOdUWahH5-RQ';" alt="Pin On Marijuana Effects">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Marijuana Effects</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a3/7c/e7/a37ce76570665b8ab9e305b7c30b0e0c.jpg" data-lightbox="roadtrip" data-title="Pin On Ptsd Statistics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a3/7c/e7/a37ce76570665b8ab9e305b7c30b0e0c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_os-fjfnE3h7P-Q1ihNP_b9Vw33pqj9mKiA';" alt="Pin On Ptsd Statistics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ptsd Statistics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/6d/58/a96d58db7d8812b2b9109651d2a4954e.jpg" data-lightbox="roadtrip" data-title="Asdec Is Also Helping Veterans With Post Traumatic Stress Disorder The Need For Service Dogs To Aid War Veterans Service Dogs Military Working Dogs Dog Hero">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/6d/58/a96d58db7d8812b2b9109651d2a4954e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzeuqvUusW2_8nD2yjUdB0CHiqSfYUoFa-FA';" alt="Asdec Is Also Helping Veterans With Post Traumatic Stress Disorder The Need For Service Dogs To Aid War Veterans Service Dogs Military Working Dogs Dog Hero">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Asdec Is Also Helping Veterans With Post Traumatic Stress Disorder The Need For Service Dogs To Aid War Veterans Service Dogs Military Working Dogs Dog Hero</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/5e/ef/e55eef309f9498399b88ac05ae545982.jpg" data-lightbox="roadtrip" data-title="Pin On Ptsd Tbi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/5e/ef/e55eef309f9498399b88ac05ae545982.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz-LfsScSU6SbrhCL7ZCIK4mALYKNbhjyJGg';" alt="Pin On Ptsd Tbi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ptsd Tbi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/fb/89/3ffb8936bf24f5afc39f7c5a74801875.jpg" data-lightbox="roadtrip" data-title="Pin On Homeless Military Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/fb/89/3ffb8936bf24f5afc39f7c5a74801875.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6zfel0lhod_1UYAw63aXwRjQhBggXZwF7hg';" alt="Pin On Homeless Military Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Homeless Military Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/11/66/ae11661a115c98747db96dca64c26080.jpg" data-lightbox="roadtrip" data-title="Pin On Head Space And Timing Blog Posts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/11/66/ae11661a115c98747db96dca64c26080.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaD0H11n6_kENkCF9v1Pa_hI6EJuRXymZ3vQ';" alt="Pin On Head Space And Timing Blog Posts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Head Space And Timing Blog Posts</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ce/b1/cd/ceb1cde4418c52bb9746ca7c67861210.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaD0H11n6_kENkCF9v1Pa_hI6EJuRXymZ3vQ';" alt="Pin On Head Space And Timing Blog Posts">
+										<div class="card-body">
+						<h3 class="h5"><b>One way to help these veterans is by encouraging them to seek counseling or treatment.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How to help a veteran with ptsd</strong>. 
+								
+																	Saying thank you is one of the most. 
+																	Help a veteran to seek mental health treatment One of the first and most difficult tasks in treating a veteran with PTSD is getting the veteran to acknowledge there is a mental health condition in the first place. 
+																	Helping Them Get Treatment. 
+																	Give the person space. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Vet CentersFind a Vet Centers near you. 
+																	During an emotional outburst try your best to stay calm. 
+																	Helping During TreatmentCognitive Processing Therapy CPT is an evidence-based therapy. 
+																	How to Help Veterans with PTSD Method 1of 3. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Appropriate social support can help prevent someone with PTSD from using unhealthy coping mechanisms such as drugs or alcohol. 
+																	Help for Veterans PTSD Treatment ProgramsAll Department of Veterans Affairs Medical Centers provide PTSD treatment and many locations. 
+																	Its also a way for people to manage the. 
+																	To quickly calm yourself in any situation simply take 60 breaths focusing your attention on each. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Medication for veterans with PTSD could help alleviate or control some of your symptoms. 
+																	If you or a loved one is a veteran suffering from PTSD the veteran staff at Heroes Mile would be honored to help them find help. 
+																	This can make a traumatized person feel threatened. 
+																	Your GP can refer you to a clinic that specialises in treating PTSD if theres one in your area. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Support from friends and family however is also essential for helping veterans with PTSD. 
+																	Treatment from a licensed provider is an important step in healing from PTSD recovery. 
+																	Help for Veterans with PTSD Is Never Far No matter where you are there is always a way to help veterans with PTSD. 
+																	Some veterans drink or do drugs to try to regain some kind of control in their lives. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The call is free and confidential private. 
+																	Avoid crowding or grabbing the person. 
+																	Care for Women VeteransMany VA Medical Centers offer mental health programs specifically for women Veterans. 
+																	One-third of veterans with PTSD fit the criteria for problem drinking even though alcohol can get in the way of treatment make some symptoms of PTSD worse and set the stage for more trauma such as car accidents fights and sexual assault. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Show gratitude for their service. 
+																	A combination of a psychological therapy and medication may be recommended if you have severe or persistent PTSD. 
+																	Department of Veterans Affairs and Department of Defense recommend the use of specific medications to treat PTSD namely paroxetine and sertraline which are antidepressants known as SSRIs or selective serotonin reuptake inhibitors. 
+																	Foster relationships with family friends and others to stay connected and get support. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Encourage your loved one to talk with other Veterans who have experienced trauma or mental health challenges. 
+																	Be aware that PTSD can leave sufferers believing the world is fundamentally unsafe and that they can trust almost no one. 
+																	Its an amazing tool in many situations from calming fretful toddlers to helping adults though the ravages of chronic anxiety. 
+																	Show concern if they arent getting treatment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Self-regulate your nervous system Mindful breathing. 
+																	This will communicate to your loved one. 
+																	Five Ways You Can Support a Veteran Living With PTSD 1. 
+																	Learn coping skills to manage stigma sometimes associated with mental health disorders. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The psychotherapy technique is based on the idea that if people think about a traumatic image while watching an object move back and forth distressing feelings will reduce in intensity. 
+																	Call or visit your local VA Community Resource and Referral Center. 
+																	Deal with volatility and anger Try to remain calm. 
+																	Have a forthright and tactful. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Physical activity can help the veteran use up excess adrenaline allowing them to calm down and will release endorphins and boost the veterans mood. 
+																	Pay attention to warning signs of a potential relapse including an increase in symptoms or other changes in behavior. 
+																	Two types of treatment have been shown to be effective for treating. 
+																	A Veteran with PTSD will have good days and bad days. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Changes in one person often greatly impact other. 
+																	Helping a Loved One Helping a Family Member Who Has PTSDPTSD can be hard on families. 
+																	How fidget spinners can help PTSD sufferers The power of distraction. 
+																	PTSD alters people in significant ways that affect behavior. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They behave out of character. 
+																	Contact the National Call Center for Homeless Veterans at 877-424-3838 for help 24 hours a day 7 days a week. 
+																	Familiarize yourself with PTSD treatment options. 
+																	A trained VA counselor will offer information about VA homeless programs health care and other services in your area. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Just as loud noises certain smells or the feel of sand in your clothes can instantly transport you. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/11/93/de1193daf026bde172d7a7788d1ed34d.jpg" data-lightbox="roadtrip" data-title="Pin On Books Worth Reading">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/11/93/de1193daf026bde172d7a7788d1ed34d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLl2yjkhi0J9XgQPLwLC_AnBa3H7QJ6vXX8w';" alt="Pin On Books Worth Reading">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Books Worth Reading</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a9/53/1c/a9531c681873529faca4edb54c4dde84.jpg" data-lightbox="roadtrip" data-title="Pin Auf Food Heaven">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a9/53/1c/a9531c681873529faca4edb54c4dde84.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnwKMB1sfPQ7wyZw8MweEvlJVLukCK2ynNuA';" alt="Pin Auf Food Heaven">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Auf Food Heaven</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/f3/7b/94f37b4275023918d535d88718ae222a.png" data-lightbox="roadtrip" data-title="Pin On Inspirational Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/f3/7b/94f37b4275023918d535d88718ae222a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy71cQDxV_EZKDEf3unwZwLwJ1TSwlsZMNfA';" alt="Pin On Inspirational Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Inspirational Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/b1/cd/ceb1cde4418c52bb9746ca7c67861210.jpg" data-lightbox="roadtrip" data-title="War And The Soul Healing Our Nation S Veterans From Post Traumatic Stress Disorder By Ed Post Traumatic Stress Disorder Stress Disorders Post Traumatic Stress">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/b1/cd/ceb1cde4418c52bb9746ca7c67861210.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4QdVGgRY_JN-mnJI10TcWdV8G5eRplMBOVQ';" alt="War And The Soul Healing Our Nation S Veterans From Post Traumatic Stress Disorder By Ed Post Traumatic Stress Disorder Stress Disorders Post Traumatic Stress">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">War And The Soul Healing Our Nation S Veterans From Post Traumatic Stress Disorder By Ed Post Traumatic Stress Disorder Stress Disorders Post Traumatic Stress</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/07/ba/33/07ba338eafcfdf61e75b96862d771a53.jpg" data-lightbox="roadtrip" data-title="Pin On Military Dogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/07/ba/33/07ba338eafcfdf61e75b96862d771a53.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxiWMcOR1XOGLCueT73d0I3pyHcIghUdcIvA';" alt="Pin On Military Dogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Dogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/f6/70/f8f6703ba4237eb5bd4ca27bf89b9347.jpg" data-lightbox="roadtrip" data-title="Pin On Praying To God">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/f6/70/f8f6703ba4237eb5bd4ca27bf89b9347.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnzdP99OTwQkS2X1wrHQegYzmwyVMiiNS7cQ';" alt="Pin On Praying To God">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Praying To God</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/0c/59/8a0c5973aed3a8dc1fdf1c34c68442ef.jpg" data-lightbox="roadtrip" data-title="Pin On It S Political Alright">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/0c/59/8a0c5973aed3a8dc1fdf1c34c68442ef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJmGA_CfvNc42TDUnJqi3pn0xAAdISQggc3Q';" alt="Pin On It S Political Alright">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On It S Political Alright</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/47/2e/4b472e161113e49cb6f7645f835d193f.png" data-lightbox="roadtrip" data-title="Coaching To Help Student Veterans Make The Transition To College Veteran Student Coaching">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/47/2e/4b472e161113e49cb6f7645f835d193f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDp5OrV_K9hYG_K0WpyTzCKAj7TiV31RNdUg';" alt="Coaching To Help Student Veterans Make The Transition To College Veteran Student Coaching">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coaching To Help Student Veterans Make The Transition To College Veteran Student Coaching</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/74/5e/79/745e793d09ecf9b82ad56d17a266982b.jpg" data-lightbox="roadtrip" data-title="Pin On Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/74/5e/79/745e793d09ecf9b82ad56d17a266982b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2t7pGgYdlYCqYdpjl_L3xLOozUg7LGQeaOw';" alt="Pin On Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/04/3e/3e/043e3e58a71f8188dabad138009b19c6.jpg" data-lightbox="roadtrip" data-title="Pin On My Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/04/3e/3e/043e3e58a71f8188dabad138009b19c6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSepIg3aVP_06ML2LeEpU2MKmcgPuhmwodM9g';" alt="Pin On My Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/ff/65/3fff65b422ff12a70be5330523872a18.png" data-lightbox="roadtrip" data-title="Pin On Bible Verses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/ff/65/3fff65b422ff12a70be5330523872a18.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqnI3WTwbR4ED8rLVjRakzBOFHIsUrANpR8A';" alt="Pin On Bible Verses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Bible Verses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/fe/4a/e4fe4a780dd674a5d33ab19d270e2863.jpg" data-lightbox="roadtrip" data-title="Pin On Education Ideas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/fe/4a/e4fe4a780dd674a5d33ab19d270e2863.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCrJdfYw06q-EDnOMYKrW8ZlpATFJc7QzFug';" alt="Pin On Education Ideas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Education Ideas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/10/80/65108013ce5f133331937a7291617e85.png" data-lightbox="roadtrip" data-title="Pin On My Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/10/80/65108013ce5f133331937a7291617e85.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2rjC-xM0MtpRdrPkCvy-pum923oDwHqE9bA';" alt="Pin On My Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/whats-the-difference-between-the-montgomery-gi-bill-and-post-911.html">Whats The Difference Between The Montgomery Gi Bill And Post 911</a></li>
+													<li class="list-group-item"><a href="/which-gi-bill-is-right-for-me.html">Which Gi Bill Is Right For Me</a></li>
+													<li class="list-group-item"><a href="/what-va-rating-is-sleep-apnea.html">What Va Rating Is Sleep Apnea</a></li>
+													<li class="list-group-item"><a href="/when-does-the-gi-bill-pay-each-month.html">When Does The Gi Bill Pay Each Month</a></li>
+													<li class="list-group-item"><a href="/when-does-the-gi-bill-pay-for-books.html">When Does The Gi Bill Pay For Books</a></li>
+													<li class="list-group-item"><a href="/whats-the-montgomery-gi-bill.html">Whats The Montgomery Gi Bill</a></li>
+													<li class="list-group-item"><a href="/when-did-congress-pass-the-gi-bill-of-rights.html">When Did Congress Pass The Gi Bill Of Rights</a></li>
+													<li class="list-group-item"><a href="/when-to-use-montgomery-gi-bill.html">When To Use Montgomery Gi Bill</a></li>
+													<li class="list-group-item"><a href="/when-do-new-bills-go-into-effect.html">When Do New Bills Go Into Effect</a></li>
+													<li class="list-group-item"><a href="/when-can-you-start-using-your-gi-bill.html">When Can You Start Using Your Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-will-the-post-911-gi-bill-pay-for.html">What Will The Post 911 Gi Bill Pay For</a></li>
+													<li class="list-group-item"><a href="/when-was-post-911-gi-bill-passed.html">When Was Post 911 Gi Bill Passed</a></li>
+													<li class="list-group-item"><a href="/which-is-better-the-montgomery-gi-bill-or-post-911.html">Which Is Better The Montgomery Gi Bill Or Post 911</a></li>
+													<li class="list-group-item"><a href="/which-program-provides-health-care-benefits-for-dependents-of-permanently-disabled-veterans.html">Which Program Provides Health Care Benefits For Dependents Of Permanently Disabled Veterans</a></li>
+													<li class="list-group-item"><a href="/when-do-you-get-paid-with-the-post-911-gi-bill.html">When Do You Get Paid With The Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/when-does-your-gi-bill-kick-in.html">When Does Your Gi Bill Kick In</a></li>
+													<li class="list-group-item"><a href="/when-does-the-gi-bill-expire.html">When Does The Gi Bill Expire</a></li>
+													<li class="list-group-item"><a href="/when-does-the-gi-bill-pay-tuition.html">When Does The Gi Bill Pay Tuition</a></li>
+													<li class="list-group-item"><a href="/when-does-a-bill-go-to-collections.html">When Does A Bill Go To Collections</a></li>
+													<li class="list-group-item"><a href="/what-was-the-gi-bill-and-how-did-it-help-veterans.html">What Was The Gi Bill And How Did It Help Veterans</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

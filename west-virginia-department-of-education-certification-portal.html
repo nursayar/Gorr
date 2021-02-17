@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>West Virginia Department Of Education Certification Portal - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "West Virginia Department Of Education Certification Portal",
+  "datePublished": "2021-02-17",
+  "image": "https://wvde.us/wp-content/uploads/2021/01/Roadmap-to-Recovery-Thumbnail-2.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=west+virginia+department+of+education+certification+portal",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>West Virginia Department Of Education Certification Portal</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">LogOn - West Virginia. The WVDE Webtop is the West Virginia PK-12 Single Sign-On SSO platform developed and maintained in-house by the West Virginia Department of Educations Office of Education Information Systems. Our goal is to provide a statewide system of education that ensures all students graduate from high school prepared for success in college andor careers. <br>				
+			</p>
+										<a class="badge badge-dark" href="/can-your-spouse-use-your-montgomery-gi-bill.html">can your spouse use your montgomery gi bill</a>
+											<a class="badge badge-dark" href="/can-you-get-disability-for-major-depression.html">can you get disability for major depression</a>
+											<a class="badge badge-dark" href="/can-you-refinance-with-va-loan.html">can you refinance with va loan</a>
+											<a class="badge badge-light" href="/can-you-get-financial-aid-and-post-911-gi-bill.html">can you get financial aid and post 911 gi bill</a>
+											<a class="badge badge-success" href="/can-you-use-your-gi-bill-overseas.html">can you use your gi bill overseas</a>
+											<a class="badge badge-success" href="/can-you-use-gi-bill-to-pay-back-student-loans.html">can you use gi bill to pay back student loans</a>
+											<a class="badge badge-danger" href="/chapter-31-gi-bill.html">chapter 31 gi bill</a>
+											<a class="badge badge-danger" href="/can-you-use-both-montgomery-gi-bill-and-post-9-11.html">can you use both montgomery gi bill and post 9 11</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you've come to pay a visit to the ideal site.  Our site gives you suggestions for seeing the maximum quality video and picture content, hunt and locate more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, so we recommend this video that you see.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wvde.us/wp-content/uploads/2018/01/wvdelogo_header.png" data-lightbox="roadtrip" data-title="Certification West Virginia Department Of Education">
+											<img class="card-img v-image ads-img " src="https://wvde.us/wp-content/uploads/2018/01/wvdelogo_header.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJKZhPpTjFHSbLTmCaSWId-Woj80kuj_NnGQ';" alt="Certification West Virginia Department Of Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Certification West Virginia Department Of Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wvde.us/wp-content/uploads/2019/07/DHHR_Logo.jpg" data-lightbox="roadtrip" data-title="About Us West Virginia Department Of Education">
+											<img class="card-img v-image ads-img " src="https://wvde.us/wp-content/uploads/2019/07/DHHR_Logo.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUk5JglvDRAEN0hmw9pb_wjGFqw4KcO0kkyw';" alt="About Us West Virginia Department Of Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">About Us West Virginia Department Of Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/8L2lp-GdhDE/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Families West Virginia Department Of Education">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/8L2lp-GdhDE/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLtpG5E-Dm8WKqzGJRuQbjPFyJCys0wAM5ow';" alt="Families West Virginia Department Of Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Families West Virginia Department Of Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="2mygGERiDZgyjM" data-lightbox="roadtrip" data-title="Http Www Harcoboe Net File 2bc6c65ffd">
+											<img class="card-img v-image ads-img " src="2mygGERiDZgyjM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTwIdYjUiBl6jKswEyxIabcH1JFYuQs7Mc-g';" alt="Http Www Harcoboe Net File 2bc6c65ffd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Harcoboe Net File 2bc6c65ffd</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wvde.us/wp-content/uploads/2020/01/LoveMyWVSchool_LOGO.gif" data-lightbox="roadtrip" data-title="Lovemywvschool West Virginia Department Of Education">
+											<img class="card-img v-image ads-img " src="https://wvde.us/wp-content/uploads/2020/01/LoveMyWVSchool_LOGO.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJsg2cmVMq4B4ayneqdCq4_Vtg1K18M5WjDA';" alt="Lovemywvschool West Virginia Department Of Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lovemywvschool West Virginia Department Of Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wvde.us/wp-content/uploads/2021/01/Roadmap-to-Recovery-Thumbnail-2.png" data-lightbox="roadtrip" data-title="School System Re Entry West Virginia Department Of Education">
+											<img class="card-img v-image ads-img " src="https://wvde.us/wp-content/uploads/2021/01/Roadmap-to-Recovery-Thumbnail-2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhrDe9D0QAc0iAA5SR6FG91dBIw2nSTrcEng';" alt="School System Re Entry West Virginia Department Of Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">School System Re Entry West Virginia Department Of Education</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://wvde.us/wp-content/uploads/2021/02/012921-KeepingConnected.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhrDe9D0QAc0iAA5SR6FG91dBIw2nSTrcEng';" alt="School System Re Entry West Virginia Department Of Education">
+										<div class="card-body">
+						<h3 class="h5"><b>West Virginia Department of Education 1900 Kanawha Boulevard East Charleston West Virginia Phone.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>West virginia department of education certification portal</strong>. 
+								
+																	West Virginia Department of Education 1900 Kanawha Boulevard East Charleston West Virginia Phone. 
+																	Code 18A-3-1 effective June 12 2015 has created the opportunities below for school districts to recruit individuals who hold a bachelors degree or higher and meet the eligibility criteria to fill. 
+																	The West Virginia Department of Education is a government agency that oversees the public school system in West Virginia which is responsible for the education of more than 273000 students in more than 700 schools with 20000 teachers. 
+																	CONTACT INFO West Virginia Department of Education 1900 Kanawha Boulevard East Charleston West Virginia 25305 Phone. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The WVDEs e-Learning for Educators portal provides virtual teacher training. 
+																	The West Virginia Department of Education DOE requires potential teachers to complete approved teacher preparation programs before applying for certification. 
+																	Currently provisional is among the credentials requested via paper application. 
+																	Certification The Office of Certification and Professional Preparation at the West Virginia Department of Education is tasked with the approval of all permits authorizations and certifications for licensure. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Teacher certification is required in Virginia if you wish to teach in the K-12 public school system across the state. 
+																	You may contact the Office of Certification at. 
+																	Hall President West Virginia Board of Education Contact Info. 
+																	Clayton Burch State Superintendent of Schools Miller L. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	West Virginia Department of Education 1900 Kanawha Boulevard East Charleston West Virginia Phone. 
+																	The West Virginia Department of Education offers certification in special education to those who meet the proficiency score on required state competency exams in special education content and the state exam in pedagogy Praxis Principles of Learning and Teaching for the levels in which the applicant wishes to teach. 
+																	Clayton Burch State Superintendent of Schools Miller L. 
+																	Industry Credentials for Endorsements in Career and Technical Education Section 221-2981 of the Code of Virginia requires that every teacher seeking an initial license in the Commonwealth with an endorsement in the area of career and technical education shall have an industry certification credential in the area in which the teacher seeks endorsement. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It provides an identity for faculty staff and students across the state of West Virginia. 
+																	West Virginia uses applicants social security numbers to check the clearinghouse maintained by the National Association of State Directors of Teacher Education and Certification NASDTEC for license revocation cancellation suspension denial and reinstatement in other states. 
+																	The Office of Certification at the West Virginia Department of Education provides for the approval of all permits authorizations and certifications for licensure for educators who wish to work in West Virginias public schools. 
+																	West Virginia uses applicants social security numbers to check the clearinghouse maintained by the National Association of State Directors of Teacher Education and Certification NASDTEC for license revocation cancellation suspension denial and reinstatement in other states. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The West Virginia Department of Education WVDE continuously strives to assist school districts in their efforts to promote recruit and retain a highly effective and diverse workforce. 
+																	The Department of Education has provided links to applications and to the online portal httpswvdestatewvuscertificationforms. 
+																	CONTACT INFO West Virginia Department of Education 1900 Kanawha Boulevard East Charleston West Virginia 25305 Phone. 
+																	The Department of Special Education at West Virginia University maintains a diverse roster of department- and state agency-sponsored courses for special educators. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The WVDEs Model Classrooms Project provides video clips showing best practices in action. 
+																	Hall President West Virginia Board of Education Contact Info. 
+																	Clayton Burch State Superintendent of Schools Miller L. 
+																	If you are a West Virginia educator or school staff member with a valid license from the Office of Certification it is important to review the most up-to-date and complete WVBE Policy 5202 renewal criteria in advance of the licenses expiration as found at httpwvdestatewvuspolicies. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	West Virginia has an online certification portal but some submissions must be made by mail. 
+																	Hall President West Virginia Board of Education Contact Info. 
+																	Teacher preparation programs are offered by accredited colleges or universities and give candidates the knowledge and experience to become successful teachers one day. 
+																	This certification is overseen and administered by the West Virginia Department of Education which ensures that all those in charge of educating minors in the state are not only qualified and have the skills and knowledge to do so but are ready for the challenges of educating. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	WVBE Policy 5202 provides official guidance and requirements for licensure. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="-8tSH_m5hZ_U8M" data-lightbox="roadtrip" data-title="Http Wvde State Wv Us Abe Tcher Handbook Pdf Section1 Pdf">
+											<img class="card-img v-image ads-img " src="-8tSH_m5hZ_U8M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbunGS6W3IHwY4I5zYxItYROHmPS_2C2tFbA';" alt="Http Wvde State Wv Us Abe Tcher Handbook Pdf Section1 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Wvde State Wv Us Abe Tcher Handbook Pdf Section1 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://nebula.wsimg.com/a50fed05acb47a679c2f18ed4b2797c6?AccessKeyId=E9DE303BF627355D2457&amp;disposition=0&amp;alloworigin=1" data-lightbox="roadtrip" data-title="Home">
+											<img class="card-img v-image ads-img " src="http://nebula.wsimg.com/a50fed05acb47a679c2f18ed4b2797c6?AccessKeyId=E9DE303BF627355D2457&amp;disposition=0&amp;alloworigin=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4JMxV9iQg0mOYgvM9FW3KaVt1N35iLXHfAA';" alt="Home">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wvde.us/wp-content/uploads/2019/02/WV-Student-Maps-logo.png" data-lightbox="roadtrip" data-title="Gis West Virginia Department Of Education">
+											<img class="card-img v-image ads-img " src="https://wvde.us/wp-content/uploads/2019/02/WV-Student-Maps-logo.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFtO3IZNpkZtC0JOVs9Duh6x3aigAeXJ4rLw';" alt="Gis West Virginia Department Of Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gis West Virginia Department Of Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.state.wv.us/admin/purchase/Images/swcbanner2.png" data-lightbox="roadtrip" data-title="West Virginia Purchasing Division">
+											<img class="card-img v-image ads-img " src="http://www.state.wv.us/admin/purchase/Images/swcbanner2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT10hv9REB6iESMM6usDjEDZHk_z_CJby5bzw';" alt="West Virginia Purchasing Division">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">West Virginia Purchasing Division</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/EX5dKUJN0Sc/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Hero Of Education Story Tiffany Barnett West Virginia Department Of Education">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/EX5dKUJN0Sc/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1rjm08bMnjsJOT7Bka1O_jQwER3tV0-lD9A';" alt="Hero Of Education Story Tiffany Barnett West Virginia Department Of Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hero Of Education Story Tiffany Barnett West Virginia Department Of Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wvde.us/wp-content/uploads/2019/06/5Steps-Infographic.jpg" data-lightbox="roadtrip" data-title="Body Safety Education Toolkit West Virginia Department Of Education">
+											<img class="card-img v-image ads-img " src="https://wvde.us/wp-content/uploads/2019/06/5Steps-Infographic.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2fzi210DPOE_l4PbVm7Yegspsx2j0JPsLQw';" alt="Body Safety Education Toolkit West Virginia Department Of Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Body Safety Education Toolkit West Virginia Department Of Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wvde.us/wp-content/uploads/2021/01/WVDE-SchoolRecovery_PPT-Slide-1024x576.jpg" data-lightbox="roadtrip" data-title="School Recovery Protocols West Virginia Department Of Education">
+											<img class="card-img v-image ads-img " src="https://wvde.us/wp-content/uploads/2021/01/WVDE-SchoolRecovery_PPT-Slide-1024x576.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdF7iD1KUfy0HrN8S4yivHg19h3_15ds4jWQ';" alt="School Recovery Protocols West Virginia Department Of Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">School Recovery Protocols West Virginia Department Of Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wvde.us/wp-content/uploads/2020/04/SAT-DateSocialGraphic2.jpg" data-lightbox="roadtrip" data-title="West Virginia To Offer Free Sat School Day To Seniors This Fall West Virginia Department Of Education">
+											<img class="card-img v-image ads-img " src="https://wvde.us/wp-content/uploads/2020/04/SAT-DateSocialGraphic2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9GfDTK0Bc1Hso7z7Co-pTh_I3Kk20K00TOQ';" alt="West Virginia To Offer Free Sat School Day To Seniors This Fall West Virginia Department Of Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">West Virginia To Offer Free Sat School Day To Seniors This Fall West Virginia Department Of Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wvde.us/wp-content/uploads/2020/06/wvheat-logo.png" data-lightbox="roadtrip" data-title="Wv Hospitality Education And Training West Virginia Department Of Education">
+											<img class="card-img v-image ads-img " src="https://wvde.us/wp-content/uploads/2020/06/wvheat-logo.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmERPg8ibSmZaz_BW0JBcTmoWGXKxMnDzgIg';" alt="Wv Hospitality Education And Training West Virginia Department Of Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wv Hospitality Education And Training West Virginia Department Of Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wvde.us/wp-content/uploads/2021/01/Return2InPerson.jpg" data-lightbox="roadtrip" data-title="Wv Board Of Education President And State Superintendent Speak About The Return To In Person Instruction West Virginia Department Of Education">
+											<img class="card-img v-image ads-img " src="https://wvde.us/wp-content/uploads/2021/01/Return2InPerson.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCMuuW5J782tYmS8pwZFC_umOfuD6bUGnccA';" alt="Wv Board Of Education President And State Superintendent Speak About The Return To In Person Instruction West Virginia Department Of Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wv Board Of Education President And State Superintendent Speak About The Return To In Person Instruction West Virginia Department Of Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/02/67/6a02679c89d10aff0abafca54fcca5cc.jpg" data-lightbox="roadtrip" data-title="Newstoter Com Black News And Entertainment Portal College Fund State College Colleges And Universities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/02/67/6a02679c89d10aff0abafca54fcca5cc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQnyJLPoZ8VDn7fJN0_FwHFuczu_6ikCF6bw';" alt="Newstoter Com Black News And Entertainment Portal College Fund State College Colleges And Universities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Newstoter Com Black News And Entertainment Portal College Fund State College Colleges And Universities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wvde.us/wp-content/uploads/2021/02/012921-KeepingConnected.jpg" data-lightbox="roadtrip" data-title="Sfmavx8irxjx9m">
+											<img class="card-img v-image ads-img " src="https://wvde.us/wp-content/uploads/2021/02/012921-KeepingConnected.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3V0-WKLJ6fWnsLxc8vvbhrzN1K0ayNWdSjQ';" alt="Sfmavx8irxjx9m">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sfmavx8irxjx9m</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wboy.com/wp-content/uploads/sites/43/2019/12/DHHR_1517275095121_32838684_ver1.0.jpg?w=900" data-lightbox="roadtrip" data-title="Update Deadline Extended To Apply For Low Income Energy Assistance Program Wboy Com">
+											<img class="card-img v-image ads-img " src="https://www.wboy.com/wp-content/uploads/sites/43/2019/12/DHHR_1517275095121_32838684_ver1.0.jpg?w=900" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjPCGkdWUvjQ-NFU_vnlOJ94WrLj3LflYlQQ';" alt="Update Deadline Extended To Apply For Low Income Energy Assistance Program Wboy Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Update Deadline Extended To Apply For Low Income Energy Assistance Program Wboy Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-was-one-result-of-the-gi-bill-quizlet.html">What Was One Result Of The Gi Bill Quizlet</a></li>
+													<li class="list-group-item"><a href="/where-can-i-get-va-forms.html">Where Can I Get Va Forms</a></li>
+													<li class="list-group-item"><a href="/when-to-use-montgomery-gi-bill.html">When To Use Montgomery Gi Bill</a></li>
+													<li class="list-group-item"><a href="/where-was-the-gi-bill-signed.html">Where Was The Gi Bill Signed</a></li>
+													<li class="list-group-item"><a href="/where-do-i-find-my-va-decision-letter.html">Where Do I Find My Va Decision Letter</a></li>
+													<li class="list-group-item"><a href="/who-is-bill-montgomery-turning-point-usa.html">Who Is Bill Montgomery Turning Point Usa</a></li>
+													<li class="list-group-item"><a href="/which-is-better-va-loan-or-conventional.html">Which Is Better Va Loan Or Conventional</a></li>
+													<li class="list-group-item"><a href="/who-can-transfer-post-911-gi-bill.html">Who Can Transfer Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/when-does-the-bill-go-to-the-upper-house.html">When Does The Bill Go To The Upper House</a></li>
+													<li class="list-group-item"><a href="/whats-the-difference-between-montgomery-gi-bill-and-post-911.html">Whats The Difference Between Montgomery Gi Bill And Post 911</a></li>
+													<li class="list-group-item"><a href="/who-is-considered-a-dependent-for-va-disability.html">Who Is Considered A Dependent For Va Disability</a></li>
+													<li class="list-group-item"><a href="/where-to-go-to-college-for-video-game-design.html">Where To Go To College For Video Game Design</a></li>
+													<li class="list-group-item"><a href="/where-to-hike-in-virginia.html">Where To Hike In Virginia</a></li>
+													<li class="list-group-item"><a href="/when-does-the-gi-bill-book-stipend-come.html">When Does The Gi Bill Book Stipend Come</a></li>
+													<li class="list-group-item"><a href="/when-can-spouse-use-gi-bill.html">When Can Spouse Use Gi Bill</a></li>
+													<li class="list-group-item"><a href="/when-does-the-bill-go-to-senate.html">When Does The Bill Go To Senate</a></li>
+													<li class="list-group-item"><a href="/where-to-send-va-form-21-674.html">Where To Send Va Form 21 674</a></li>
+													<li class="list-group-item"><a href="/when-do-you-receive-gi-bill-housing-allowance.html">When Do You Receive Gi Bill Housing Allowance</a></li>
+													<li class="list-group-item"><a href="/what-was-a-major-limitation-of-the-gi-bill-of-rights-in-1944.html">What Was A Major Limitation Of The Gi Bill Of Rights In 1944</a></li>
+													<li class="list-group-item"><a href="/what-were-the-gi-bill-of-rights.html">What Were The Gi Bill Of Rights</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

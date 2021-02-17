@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Can I Use My Gi Bill For My Son - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Can I Use My Gi Bill For My Son",
+  "datePublished": "2021-02-17",
+  "image": "https://militarybenefits.info/wp-content/uploads/2020/07/gi-bill-of-rights-mb.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=can+i+use+my+gi+bill+for+my+son",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Can I Use My Gi Bill For My Son</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Dont do something now that you will regret later although you could revoke your sons benefits now and give them back to him later but he only has up to age 26 to use them or he loses them. From Our Benefits Blog. November 20th 2014 090028. <br>				
+			</p>
+										<a class="badge badge-info" href="/va-disability-compensation-offset.html">va disability compensation offset</a>
+											<a class="badge badge-info" href="/va-disability-compensation-national-guard.html">va disability compensation national guard</a>
+											<a class="badge badge-primary" href="/va-disability-for-arthritis.html">va disability for arthritis</a>
+											<a class="badge badge-warning" href="/va-disability-compensation-rates-2010.html">va disability compensation rates 2010</a>
+											<a class="badge badge-dark" href="/va-disability-for-heart.html">va disability for heart</a>
+											<a class="badge badge-light" href="/va-disability-compensation-for-alcohol-abuse.html">va disability compensation for alcohol abuse</a>
+											<a class="badge badge-warning" href="/va-disability-compensation-for-gulf-war-syndrome.html">va disability compensation for gulf war syndrome</a>
+											<a class="badge badge-light" href="/va-disability-for-bilateral-knee-pain.html">va disability for bilateral knee pain</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you've come to pay a visit to the ideal site.  Our site provides you with suggestions for viewing the maximum quality video and picture content, search and find more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, especially Youtube, therefore we recommend this movie that you see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://themilitarywallet.com/wp-content/uploads/2016/03/pay-childrens-college-gi-bill.jpg" data-lightbox="roadtrip" data-title="Use Gi Bill Benefits To Pay For Children S College Education">
+											<img class="card-img v-image ads-img " src="https://themilitarywallet.com/wp-content/uploads/2016/03/pay-childrens-college-gi-bill.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVnGsZzOf2XSfsc5Id5mY5kCq8VQZ1AafmKg';" alt="Use Gi Bill Benefits To Pay For Children S College Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Use Gi Bill Benefits To Pay For Children S College Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/05/forever-gi-bill-benefits.jpg" data-lightbox="roadtrip" data-title="Forever Gi Bill Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/05/forever-gi-bill-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMBqsI2e8rCCcgigcq4_7Jv7ak5FTGG_b0zA';" alt="Forever Gi Bill Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Forever Gi Bill Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images01.military.com/sites/default/files/styles/full/public/2020-07/Top%2010%20Things%20to%20Know%20About%20Using%20Your%20GI%20Bill%20in%202020.jpg?itok=i7iQisYI" data-lightbox="roadtrip" data-title="Top 10 Things To Know About Using Your Gi Bill In 2021 Military Com">
+											<img class="card-img v-image ads-img " src="https://images01.military.com/sites/default/files/styles/full/public/2020-07/Top%2010%20Things%20to%20Know%20About%20Using%20Your%20GI%20Bill%20in%202020.jpg?itok=i7iQisYI" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYMxDuOtkCzPBeyxVlfVafdkae2S-uzE8FCg';" alt="Top 10 Things To Know About Using Your Gi Bill In 2021 Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 10 Things To Know About Using Your Gi Bill In 2021 Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/05/how-to-use-your-gi-bill-for-grad-school.jpg" data-lightbox="roadtrip" data-title="How To Use Your Gi Bill For Grad School Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/05/how-to-use-your-gi-bill-for-grad-school.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWqo7MjnKovciFZ7nizjn8f2jUvwuYO7_ToQ';" alt="How To Use Your Gi Bill For Grad School Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Use Your Gi Bill For Grad School Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/10/transfer-post-911-gi-bill-benefits-to-spouses-and-dependents.jpg" data-lightbox="roadtrip" data-title="Post 9 11 Gi Bill Transfer Benefits To Spouse Or Dependents Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/10/transfer-post-911-gi-bill-benefits-to-spouses-and-dependents.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJnkhqBYrGesMi5tYV-hGWPlck_wjrpkFeDg';" alt="Post 9 11 Gi Bill Transfer Benefits To Spouse Or Dependents Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Post 9 11 Gi Bill Transfer Benefits To Spouse Or Dependents Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/07/which-gi-bill-is-better-mb.jpg" data-lightbox="roadtrip" data-title="Which Gi Bill Is Better Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/07/which-gi-bill-is-better-mb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLt4H7E_NNQtBiBV2FNtH5sNUJScJHIcG_7Q';" alt="Which Gi Bill Is Better Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Which Gi Bill Is Better Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://images01.military.com/sites/default/files/styles/full/public/2020-08/mil-college-books-18.jpg?itok=2dRy_WKY" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLt4H7E_NNQtBiBV2FNtH5sNUJScJHIcG_7Q';" alt="Which Gi Bill Is Better Military Benefits">
+										<div class="card-body">
+						<h3 class="h5"><b>Find out if you can get help paying for school or job training through the Post-911 GI Bill Chapter 33.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Can i use my gi bill for my son</strong>. 
+								
+																	Your parent must meet service requirements and make the transfer to you while still in the armed forces. 
+																	You may qualify if you served on active duty after September 10 2001 or if youre the qualified spouse or dependent child of a Veteran who meets these service requirements. 
+																	The request to transfer unused GI Bill benefits to eligible dependents must be completed while serving as an active member of the Armed Forces. 
+																	You may be eligible to transfer education benefits if youre on active duty or in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Can use the benefits while the service. 
+																	May still use the benefits after a divorce if the military member agrees. 
+																	It really depends on which GI bill your parent qualified for. 
+																	Can use benefits after the service member completes at least 10 years of service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In order to give Post 9-11 GI Bill Benefits either all of it or only a portion of the allotted 36 months to a qualified dependent the service member must currently be on active duty status. 
+																	You can use your GI Bill benefits in many ways including paying for college or graduate tuition funding your training for a specific trade or job or to start your own business paying for fees to take licensing tests and more. 
+																	Simply plug in your military status service history and a few details about your desired institution into this GI Bill calculator and youll find a list of eligible programs near you. 
+																	Can You Answer Them. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Post 911 GI Bill which is the only GI Bill having a dependent transfer option covers sons but not. 
+																	Bill for you to be able to use it. 
+																	The GI Bill lists the following requirements for your children to be able to use your GI Bill source. 
+																	GI Bill housing stipends and other payments are often received approximately 30 days after the first month the students GI Bill benefits begin. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	One good reason to revoke benefits from him would be if he is approaching age 26 and has not or will not use up his Post 911 GI Bill transferred benefits. 
+																	Benefits CANNOT be transferred after retirement. 
+																	Youll be able to view this benefit statement only if you were awarded education benefits. 
+																	You can then check out information such as. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Learn more about GI Bill benefits belowand how to apply for them. 
+																	May start to use the benefit only after the individual making the transfer has completed at least 10 years of service in the armed forces. 
+																	These education benefits can help cover some or all of the costs for school or training. 
+																	Posted in Post 911 GI Bill Transferred Benefits Comments Off on Can I Transfer My GI Bill to My Children After Im Retired. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Three none of the GI Bills were eligible for grandsons to use. 
+																	In addition all of the following facts must be true. 
+																	The only GI Bill that can be handed down to a dependent is the 911 GI Bill and if your spouse hasnt deployed or has been on active duty in one shot more than 36months he wont be eligible. 
+																	How to Use a Parents GI Bill for College Your parent must have the Post 911 GI. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The GI Bill Comparison Tool can help you find schools training programs and even apprenticeships and should be your first stop in your journey toward graduation. 
+																	If your husband was active duty there are a few programs for. 
+																	The Department of Defense DoD decides whether you can transfer GI Bill benefits to your family. 
+																	Find out how to use GI Bill benefits to advance your education and training. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is the only one that has the transferability option. 
+																	I Have Three Questions Concerning My Montgomery and Post 911 GI Bills. 
+																	Still even if your husband had qualified for the Post-911 GI Bill he wouldve. 
+																	Find out if you can transfer any of your unused Post-911 GI Bill benefits to your spouse or dependent children. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Does My Time as an AGR Recruiter Count Toward. 
+																	The GI Bills of today the Montgomery and Post 911 have expiration dates of 10 years and 15 years respectively so your fathers GI Bill was even before these. 
+																	Then no you dont have any educational benefits you can use. 
+																	Spouses will not receive a monthly housing or book stipend while member is on active duty. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If he or she came into the military in 1984 or later it was the Montgomery GI Bill. 
+																	The only thing he could really do with it is use it himself. 
+																	And unfortunately unlike the Post-911 GI Bill the Montgomery GI Bill was not transferable to family members. 
+																	First it depends on which GI Bill your father has. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As far as any school benefits from your father NONE if he didnt use his GI Bill and did not contribute to it he lost it when he got out. 
+																	Since 1944 the GI Bill has helped qualifying Veterans and their family members get money to cover all or some of the costs for school or training. 
+																	It can take a month or longer for the Department of Veterans Affairs to process GI Bill benefit applications which is why its best to begin the process as soon as possible. 
+																	The transferability option under the Post-911 GI Bill allows Servicemembers to transfer all or some unused benefits to their spouse or dependent children. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Can use GI Bill benefits for up to 15 years after the service member separates from active duty. 
+																	The Department of Defense DoD determines whether or not you can transfer benefits to your. 
+																	If you were awarded Post-911 GI Bill education benefits your GI Bill Statement of Benefits will show you how much of your benefits youve used and how much you have left to use for your education or training. 
+																	If he has the Montgomery GI Bill MGIB he would not have been able to transfer benefits to you because it never had a transfer-to-dependents option to it. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	GI Bill benefits help you pay for college graduate school and training programs. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/500_GIBill2.jpg?itok=LcH_lCLE" data-lightbox="roadtrip" data-title="Post 9 11 Gi Bill Benefits In A Divorce Military Divorce Guide">
+											<img class="card-img v-image ads-img " src="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/500_GIBill2.jpg?itok=LcH_lCLE" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnuphAxmRLzjNgcIdD5_084KqUB34qjo-b4w';" alt="Post 9 11 Gi Bill Benefits In A Divorce Military Divorce Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Post 9 11 Gi Bill Benefits In A Divorce Military Divorce Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images05.military.com/sites/default/files/styles/full/public/media/veteran-jobs/content-images/2013/07/graduatediplomasmile.jpg?itok=crEVlITx" data-lightbox="roadtrip" data-title="Gi Bill Explained Military Com">
+											<img class="card-img v-image ads-img " src="https://images05.military.com/sites/default/files/styles/full/public/media/veteran-jobs/content-images/2013/07/graduatediplomasmile.jpg?itok=crEVlITx" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAKkPbHtx6BdJoBTXSAkIhkOQwrvZnxEt8tQ';" alt="Gi Bill Explained Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gi Bill Explained Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/07/gi-bill-of-rights-mb.jpg" data-lightbox="roadtrip" data-title="Gi Bill Of Rights Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/07/gi-bill-of-rights-mb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhdLUPGqPFNVOOnpLxOSZL2z6wcFLWg3A4qw';" alt="Gi Bill Of Rights Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gi Bill Of Rights Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2021/01/gi-bill-history.jpg" data-lightbox="roadtrip" data-title="Zjjduqshanzvdm">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2021/01/gi-bill-history.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiRn36oLv-TahjbxEQZ9_oCAHvUpRmr-mtyw';" alt="Zjjduqshanzvdm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Zjjduqshanzvdm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/f8/cf/50f8cf8ccbd9f1b7ed275cf50b6692d7.png" data-lightbox="roadtrip" data-title="Maynard Weighted Whorsies Chomping Bittie Bits Spilled Spoiled Klax Jars Cans Of Economic Empowerment A Gi Bill Scholarships For College Education And Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/f8/cf/50f8cf8ccbd9f1b7ed275cf50b6692d7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL-dWHfUApd311MPzA0OKihpfNkco9OjXFmQ';" alt="Maynard Weighted Whorsies Chomping Bittie Bits Spilled Spoiled Klax Jars Cans Of Economic Empowerment A Gi Bill Scholarships For College Education And Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Maynard Weighted Whorsies Chomping Bittie Bits Spilled Spoiled Klax Jars Cans Of Economic Empowerment A Gi Bill Scholarships For College Education And Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.vahomeloancenters.org/wp-content/uploads/2010/11/GI-Bill-DOD-Study1.jpg" data-lightbox="roadtrip" data-title="Can I Use My Gi Bill Education Housing Income For A Loan">
+											<img class="card-img v-image ads-img " src="https://www.vahomeloancenters.org/wp-content/uploads/2010/11/GI-Bill-DOD-Study1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSTp8ymut6-at4l35oOyPzmtCJwL1_ZqxVNg';" alt="Can I Use My Gi Bill Education Housing Income For A Loan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Can I Use My Gi Bill Education Housing Income For A Loan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2012/09/are-post-911-gi-bill-benefits-taxable.jpg" data-lightbox="roadtrip" data-title="Are My Post 911 Gi Bill Benefits Taxable Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2012/09/are-post-911-gi-bill-benefits-taxable.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTLRnO80e1yp9eVYXvUHmxJZU8GcpE1V6XkA';" alt="Are My Post 911 Gi Bill Benefits Taxable Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are My Post 911 Gi Bill Benefits Taxable Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.purdueglobal.edu/blog/military/military03.jpg" data-lightbox="roadtrip" data-title="The Gi Bill Explained A Guide To Military Education Benefits">
+											<img class="card-img v-image ads-img " src="https://www.purdueglobal.edu/blog/military/military03.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5qDd9YGyQ1x9QtyUQT2LJR32oWTI9GfgGew';" alt="The Gi Bill Explained A Guide To Military Education Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Gi Bill Explained A Guide To Military Education Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mortgagesolutions.net/wp-content/uploads/applying-va-loan-gi-bill-income.jpg" data-lightbox="roadtrip" data-title="Applying For A Va Loan Can I Use My Gi Bill As Income Mortgage Solutions Financial">
+											<img class="card-img v-image ads-img " src="https://mortgagesolutions.net/wp-content/uploads/applying-va-loan-gi-bill-income.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiuBseSK42ncs_m6ZNLU1ag_u2s3NKVZ9YUw';" alt="Applying For A Va Loan Can I Use My Gi Bill As Income Mortgage Solutions Financial">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Applying For A Va Loan Can I Use My Gi Bill As Income Mortgage Solutions Financial</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images01.military.com/sites/default/files/styles/full/public/2020-08/mil-college-books-18.jpg?itok=2dRy_WKY" data-lightbox="roadtrip" data-title="Gi Bill Overview Military Com">
+											<img class="card-img v-image ads-img " src="https://images01.military.com/sites/default/files/styles/full/public/2020-08/mil-college-books-18.jpg?itok=2dRy_WKY" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSna-tDMDR6W7v1kGmSQzbHsWxO0im1CZYCOg';" alt="Gi Bill Overview Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gi Bill Overview Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/04/gi-bill-payment-rates-mb.jpg" data-lightbox="roadtrip" data-title="Gi Bill 2020 2021 Payment Rates Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/04/gi-bill-payment-rates-mb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR7dueaVSDH9-1Md-F_ZVpl8nSJGVtNt0drg';" alt="Gi Bill 2020 2021 Payment Rates Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gi Bill 2020 2021 Payment Rates Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.legion.org/images/legion/education/shrinkinggibill.jpg" data-lightbox="roadtrip" data-title="Gi Bill History The American Legion">
+											<img class="card-img v-image ads-img " src="https://www.legion.org/images/legion/education/shrinkinggibill.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZjKTRHrlkkPPL2VYt7XxEdE1Wlff71e1HEw';" alt="Gi Bill History The American Legion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gi Bill History The American Legion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/a0/0b/34a00b9b7fb7244c21ae79a177486d7b.png" data-lightbox="roadtrip" data-title="Professional By Joining The Air Force I Will Obtain The G I Bill Since I Will Have Already Graduated From College I Can Gi Bill Bills College Life Hacks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/a0/0b/34a00b9b7fb7244c21ae79a177486d7b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuaBRpkVvsp91V2IaVSB3OjVZw112N5NuqJA';" alt="Professional By Joining The Air Force I Will Obtain The G I Bill Since I Will Have Already Graduated From College I Can Gi Bill Bills College Life Hacks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Professional By Joining The Air Force I Will Obtain The G I Bill Since I Will Have Already Graduated From College I Can Gi Bill Bills College Life Hacks</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/using-the-gi-bill-for-on-the-job-training.html">Using The Gi Bill For On The Job Training</a></li>
+													<li class="list-group-item"><a href="/va-approved-scuba-schools.html">Va Approved Scuba Schools</a></li>
+													<li class="list-group-item"><a href="/va-approved-scuba-diving-schools-california.html">Va Approved Scuba Diving Schools California</a></li>
+													<li class="list-group-item"><a href="/ut-gi-bill.html">Ut Gi Bill</a></li>
+													<li class="list-group-item"><a href="/va-benefits-for-heart-disease-agent-orange.html">Va Benefits For Heart Disease Agent Orange</a></li>
+													<li class="list-group-item"><a href="/va-benefits-other-than-honorable.html">Va Benefits Other Than Honorable</a></li>
+													<li class="list-group-item"><a href="/usmc-reservist-gi-bill.html">Usmc Reservist Gi Bill</a></li>
+													<li class="list-group-item"><a href="/va-approved-schools-for-gi-bill.html">Va Approved Schools For Gi Bill</a></li>
+													<li class="list-group-item"><a href="/va-appeal-remanded.html">Va Appeal Remanded</a></li>
+													<li class="list-group-item"><a href="/va-approved-online-trade-schools.html">Va Approved Online Trade Schools</a></li>
+													<li class="list-group-item"><a href="/va-approved-condos-san-diego-ca.html">Va Approved Condos San Diego Ca</a></li>
+													<li class="list-group-item"><a href="/va-60-percent-disability-benefits.html">Va 60 Percent Disability Benefits</a></li>
+													<li class="list-group-item"><a href="/va-100-ptsd.html">Va 100 Ptsd</a></li>
+													<li class="list-group-item"><a href="/va-appeal-decision.html">Va Appeal Decision</a></li>
+													<li class="list-group-item"><a href="/va-appeal-status-compensation-issue.html">Va Appeal Status Compensation Issue</a></li>
+													<li class="list-group-item"><a href="/va-approved-flight-schools-in-texas.html">Va Approved Flight Schools In Texas</a></li>
+													<li class="list-group-item"><a href="/va-approved-helicopter-flight-schools.html">Va Approved Helicopter Flight Schools</a></li>
+													<li class="list-group-item"><a href="/va-approved-colleges-and-universities.html">Va Approved Colleges And Universities</a></li>
+													<li class="list-group-item"><a href="/va-approved-art-schools.html">Va Approved Art Schools</a></li>
+													<li class="list-group-item"><a href="/va-100-disabled.html">Va 100 Disabled</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

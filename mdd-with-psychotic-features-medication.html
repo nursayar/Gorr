@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Mdd With Psychotic Features Medication - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Mdd With Psychotic Features Medication",
+  "datePublished": "2021-02-17",
+  "image": "https://cdn.sanity.io/images/0vv8moc6/psychtimes/02cdf0b64945b3bba901a4c80e2651d73787e0ba-469x600.png?auto=format",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=mdd+with+psychotic+features+medication",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Mdd With Psychotic Features Medication</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Some antidepressant and antipsychotic combination treatments include. Many professionals also consider antidepressants for treatment of depression with psychosis and this does seem to work for some patients but for others a combination of an antidepressant and antipsychotic is necessary. Psychotic depression is a subtype of major depression that occurs when a severe depressive illness includes some form of psychosisThe psychosis could be hallucinations such as hearing a voice. <br>				
+			</p>
+										<a class="badge badge-dark" href="/sinusitis-secondary-to-allergic-rhinitis-va-disability.html">sinusitis secondary to allergic rhinitis va disability</a>
+											<a class="badge badge-secondary" href="/state-go-with-params-angularjs.html">state go with params angularjs</a>
+											<a class="badge badge-primary" href="/reasons-to-go-to-college.html">reasons to go to college</a>
+											<a class="badge badge-dark" href="/que-et-vagi-be-txarango.html">que et vagi be txarango</a>
+											<a class="badge badge-success" href="/so-house-bill-la-gi.html">so house bill la gi</a>
+											<a class="badge badge-secondary" href="/schools-that-accept-gi-bill-near-me.html">schools that accept gi bill near me</a>
+											<a class="badge badge-primary" href="/reservist-gi-bill-benefits.html">reservist gi bill benefits</a>
+											<a class="badge badge-danger" href="/spouse-gi-bill-bah.html">spouse gi bill bah</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you have come to pay a visit to the right blog.  Our site gives you suggestions for viewing the highest quality video and image content, search and find more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, particularly Youtube, so we recommend this movie for you to view.  You can also bring about supporting this website by sharing videos and graphics that you like on this site on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this site.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/bc/14/79bc145181cb58c441e6ea519b7a235d.jpg" data-lightbox="roadtrip" data-title="Pin On Ptsd">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/bc/14/79bc145181cb58c441e6ea519b7a235d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpzSi6DsJ2X8ZZ9RnuSnmnGqIRTzmcOTSc7Q';" alt="Pin On Ptsd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ptsd</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.mdedge.com/files/s3fs-public/Image/October-2017/CP01611021_t1.PNG" data-lightbox="roadtrip" data-title="Prescribing Antipsychotics In Geriatric Patients Focus On Major Depressive Disorder Mdedge Psychiatry">
+											<img class="card-img v-image ads-img " src="https://cdn.mdedge.com/files/s3fs-public/Image/October-2017/CP01611021_t1.PNG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRO_dVOoMMHjqqmuekLDdUsSpBPukBEiHPNQ';" alt="Prescribing Antipsychotics In Geriatric Patients Focus On Major Depressive Disorder Mdedge Psychiatry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Prescribing Antipsychotics In Geriatric Patients Focus On Major Depressive Disorder Mdedge Psychiatry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.mdedge.com/files/s3fs-public/Image/October-2017/CP01611021_t2.PNG" data-lightbox="roadtrip" data-title="Prescribing Antipsychotics In Geriatric Patients Focus On Major Depressive Disorder Mdedge Psychiatry">
+											<img class="card-img v-image ads-img " src="https://cdn.mdedge.com/files/s3fs-public/Image/October-2017/CP01611021_t2.PNG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaOU9AJ4kVLzgg7lyunsY0aQ5jznD1JHYimw';" alt="Prescribing Antipsychotics In Geriatric Patients Focus On Major Depressive Disorder Mdedge Psychiatry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Prescribing Antipsychotics In Geriatric Patients Focus On Major Depressive Disorder Mdedge Psychiatry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://maiop.net/psychotic-features-of-major-depressive-disorder-1.jpg" data-lightbox="roadtrip" data-title="Major Depressive Disorder With Psychotic Features Psychotic Features Of Major Depressive Disorder">
+											<img class="card-img v-image ads-img " src="https://maiop.net/psychotic-features-of-major-depressive-disorder-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAUq6HvOUQxYQ1KjLW61IeNYBbBbHLit48cA';" alt="Major Depressive Disorder With Psychotic Features Psychotic Features Of Major Depressive Disorder">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Major Depressive Disorder With Psychotic Features Psychotic Features Of Major Depressive Disorder</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.sanity.io/images/0vv8moc6/psychtimes/974e0c022e2e20d23090bbddcf8894f21f062427-1823x921.jpg?auto=format" data-lightbox="roadtrip" data-title="Management Of Treatment Resistant Depression In The Elderly Psychiatric Times">
+											<img class="card-img v-image ads-img " src="https://cdn.sanity.io/images/0vv8moc6/psychtimes/974e0c022e2e20d23090bbddcf8894f21f062427-1823x921.jpg?auto=format" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx2a4FUJ9ep-XkLXziOOVT16_1Q03oJ9ULow';" alt="Management Of Treatment Resistant Depression In The Elderly Psychiatric Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Management Of Treatment Resistant Depression In The Elderly Psychiatric Times</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.sanity.io/images/0vv8moc6/psychtimes/cce3ffd97307aeefd8d1dac596739a66eb45c2fa-399x356.jpg?auto=format" data-lightbox="roadtrip" data-title="Discontinuing Medications When Why And How To Psychiatric Times">
+											<img class="card-img v-image ads-img " src="https://cdn.sanity.io/images/0vv8moc6/psychtimes/cce3ffd97307aeefd8d1dac596739a66eb45c2fa-399x356.jpg?auto=format" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf6NgGumCT-4mWeEYupT2r7sC9DnkQex8nsg';" alt="Discontinuing Medications When Why And How To Psychiatric Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Discontinuing Medications When Why And How To Psychiatric Times</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.uspharmacist.com/CMSImagesContent/2019/11/_PharmFocus-T1.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf6NgGumCT-4mWeEYupT2r7sC9DnkQex8nsg';" alt="Discontinuing Medications When Why And How To Psychiatric Times">
+										<div class="card-body">
+						<h3 class="h5"><b>Major depressive disorder with psychotic features affects approximately 20 of adults with MDD with higher percentages reported in younger and older populations.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Mdd with psychotic features medication</strong>. 
+								
+																	That is a decision to make with the family and it depends on the situation. 
+																	A person experiences delusions or hallucinations alongside other symptoms of depression. 
+																	Risperdal risperidone Zyprexa olanzapine Seroquel quetiapine Abilify aripiprazole. 
+																	This may be combined with an atypical antipsychotic such as. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You may only need antipsychotic medicine for a short period of time. 
+																	Psychological therapies the 1-to-1 talking therapy cognitive behavioural therapy CBT has proved effective in helping some people with psychosis. 
+																	Treatment usually involves antidepressant and antipsychotic medicine. 
+																	Wijkstra and colleagues 89 reported on a 4-month open-label follow-up of 59 patients with DSM-IV-TR major depressive disorder with psychotic features aged 1865 years who had completed as responders an acute double-blind 7-week trial with imipramine venlafaxine or venlafaxine plus quetiapine. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sufferers experience the devastating lows of depression along with the frightening delusions and hallucinations of psychosis and the symptoms this potent combination produces are highly debilitating. 
+																	Some potential antipsychotic medications that may be used include. 
+																	Symptoms and diagnosis by age The type length and. 
+																	Due to the frequency and prominence of side effects amitriptyline is generally considered a second-line therapy for these indications. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Olanzapine Zyprexa quetiapine Seroquel risperidone Risperdal. 
+																	For most patients antidepressants may be enough to treat depression that isnt accompanied by psychosis. 
+																	Major Depression with Psychotic Features. 
+																	Relapse rate was low 38. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Treatment for Psychotic Depression There are two modalities of treatment for psychotic depression Dr. 
+																	Treatment for psychotic depression involves. 
+																	Major depressive disorder MDD with psychotic features is relatively frequent in patients with greater depressive symptom severity and is associated with a poorer course of illness and greater functional impairment than MDD without psychotic features. 
+																	Major depression with psychotic features or psychotic depression is an extremely serious mental health condition that can have significant consequences if left untreated. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Major depressive disorder with psychotic features. 
+																	Medicine a combination of antipsychotics and antidepressants can help relieve the symptoms of psychosis. 
+																	Unipolar major depression with psychotic features is a severe subtype of unipolar major depression major depressive disorder The psychotic symptoms are delusions andor hallucinations that are frequently consistent with depressive themes of guilt and worthlessness Psychotic depression and nonpsychotic depression differ in their diagnosis treatment and prognosis. 
+																	Today we will start looking at the subtypes or specifiers beginning with Psychotic Features. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The best available evidence supports combining antidepressants with antipsychotics or electroconvulsive therapy as the treatment of choice for MDD with psychosis. 
+																	Amitriptyline sold under the brand name Elavil among others is a tricyclic antidepressant primarily used to treat major depressive disorder and a variety of pain syndromes from neuropathic pain to fibromyalgia to migraine and tension headaches. 
+																	However medicine is usually tried first. 
+																	Psychotic depression requires immediate medical care and treatment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To elucidate the impact of the presence of psychotic features in patients diagnosed with major depressive disorder MDD on sociodemographic psychosocial clinical and response characteristics. 
+																	Electroconvulsive therapy can help treat depression with psychotic symptoms. 
+																	Psychotic depression also known as major depressive disorder with psychotic features is a serious condition that requires immediate treatment and close monitoring by a medical or mental health. 
+																	The combination of an antidepressant with an antipsychotic is one and electroconvulsive therapy ECT is the other he says. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Yesterday we got reacquainted with Major Depressive Disorder MDD in general. 
+																	Venlafxine Effexor and Quetiapine Seroquel Sertraline Zoloft and Zyprexa Olanzapine Fluoxetine Prozac and Zyprexa Olanzapine. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/49/8f/3e498ff76c2c8fe3d8a7eb8265845d96.jpg" data-lightbox="roadtrip" data-title="Pin On Latest Infographics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/49/8f/3e498ff76c2c8fe3d8a7eb8265845d96.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdqi0dUOWfuTqj8vbTC98vlGsno4s3-GGHeg';" alt="Pin On Latest Infographics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Latest Infographics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://psychscenehub.com/wp-content/uploads/2020/07/Management-of-Psychotic-Depression.jpg" data-lightbox="roadtrip" data-title="Melancholic And Psychotic Depression Diagnosis And Management">
+											<img class="card-img v-image ads-img " src="https://psychscenehub.com/wp-content/uploads/2020/07/Management-of-Psychotic-Depression.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXTHhVjFurh-XvTxNEGIWONe_mycF6qIkoRg';" alt="Melancholic And Psychotic Depression Diagnosis And Management">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Melancholic And Psychotic Depression Diagnosis And Management</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/4e/30/e24e30d54de31879de892126f3a66274.jpg" data-lightbox="roadtrip" data-title="Robot Check Psychology Studies Clinical Social Work Psychology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/4e/30/e24e30d54de31879de892126f3a66274.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa208pciC4iRiGLJkWQb1f8L0ZzqxvLahC7w';" alt="Robot Check Psychology Studies Clinical Social Work Psychology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Robot Check Psychology Studies Clinical Social Work Psychology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/e6/db/2de6db631abe1bbb29c4073b23f27180.png" data-lightbox="roadtrip" data-title="Pin On Health Promotion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/e6/db/2de6db631abe1bbb29c4073b23f27180.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDmaIKHUrWqFZGpR3nbXicOB7mKOm97BaiGQ';" alt="Pin On Health Promotion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Health Promotion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/58/dc/d558dcbe2bf4eaf4f170ed6d8f4b34e7.jpg" data-lightbox="roadtrip" data-title="Tia Mowry S Health Selfie Printable Helps You Get Real With Your Habits Health Coach Business Health Coach Health Quiz">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/58/dc/d558dcbe2bf4eaf4f170ed6d8f4b34e7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr2gL1LapkEH7C1njE-su61jR4J-2epC16uQ';" alt="Tia Mowry S Health Selfie Printable Helps You Get Real With Your Habits Health Coach Business Health Coach Health Quiz">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tia Mowry S Health Selfie Printable Helps You Get Real With Your Habits Health Coach Business Health Coach Health Quiz</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.uspharmacist.com/CMSImagesContent/2019/11/_PharmFocus-T1.gif" data-lightbox="roadtrip" data-title="An Overview Of Schizoaffective Disorder">
+											<img class="card-img v-image ads-img " src="https://www.uspharmacist.com/CMSImagesContent/2019/11/_PharmFocus-T1.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5XyNFtgo8FgeB4RjNblTXxKUbDfrZoftjBg';" alt="An Overview Of Schizoaffective Disorder">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">An Overview Of Schizoaffective Disorder</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.researchgate.net/publication/319254867/figure/tbl2/AS:614033124245506@1523408313680/Initial-strategies-for-pharmacological-treatment-for-major-depressive-disorder-across.png" data-lightbox="roadtrip" data-title="Initial Strategies For Pharmacological Treatment For Major Depressive Download Table">
+											<img class="card-img v-image ads-img " src="https://www.researchgate.net/publication/319254867/figure/tbl2/AS:614033124245506@1523408313680/Initial-strategies-for-pharmacological-treatment-for-major-depressive-disorder-across.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG2H8lQ3Im3HSXoea7SNyLsknZidBchRXm8g';" alt="Initial Strategies For Pharmacological Treatment For Major Depressive Download Table">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Initial Strategies For Pharmacological Treatment For Major Depressive Download Table</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.sanity.io/images/0vv8moc6/psychtimes/c4940b8adead95dcf236218ddd867ff1e4935639-600x383.jpg?auto=format" data-lightbox="roadtrip" data-title="Lamotrigine For Major Depressive Disorder Is Inappropriate Psychiatric Times">
+											<img class="card-img v-image ads-img " src="https://cdn.sanity.io/images/0vv8moc6/psychtimes/c4940b8adead95dcf236218ddd867ff1e4935639-600x383.jpg?auto=format" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROTzIqKwajx-_p2sDss8GWHVSy5d0rM4y5-A';" alt="Lamotrigine For Major Depressive Disorder Is Inappropriate Psychiatric Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lamotrigine For Major Depressive Disorder Is Inappropriate Psychiatric Times</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://xpic.x-mol.com/20200227%2F10.1001_jamapsychiatry.2020.0036.jpg" data-lightbox="roadtrip" data-title="Effects Of Antipsychotic Medication On Brain Structure In Patients With Major Depressive Disorder And Psychotic Features Neuroimaging Findings In The Context Of A Randomized Placebo Controlled Clinical Trial Jama Psychiatry X Mol">
+											<img class="card-img v-image ads-img " src="https://xpic.x-mol.com/20200227%2F10.1001_jamapsychiatry.2020.0036.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZVw8PEQ6KFkpoKIclLwyW7_SvMkkbkJj8zA';" alt="Effects Of Antipsychotic Medication On Brain Structure In Patients With Major Depressive Disorder And Psychotic Features Neuroimaging Findings In The Context Of A Randomized Placebo Controlled Clinical Trial Jama Psychiatry X Mol">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Effects Of Antipsychotic Medication On Brain Structure In Patients With Major Depressive Disorder And Psychotic Features Neuroimaging Findings In The Context Of A Randomized Placebo Controlled Clinical Trial Jama Psychiatry X Mol</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.sanity.io/images/0vv8moc6/psychtimes/2fd92c2a444123cbdb58c4acec0450fe19b8e656-674x600.png?auto=format" data-lightbox="roadtrip" data-title="Factors That Predispose Patients To Treatment Resistant Depression Psychiatric Times">
+											<img class="card-img v-image ads-img " src="https://cdn.sanity.io/images/0vv8moc6/psychtimes/2fd92c2a444123cbdb58c4acec0450fe19b8e656-674x600.png?auto=format" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6lZTmuzktaF3Aukw7rUvUExXj_IDJ-mHM7Q';" alt="Factors That Predispose Patients To Treatment Resistant Depression Psychiatric Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Factors That Predispose Patients To Treatment Resistant Depression Psychiatric Times</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.sanity.io/images/0vv8moc6/psychtimes/02cdf0b64945b3bba901a4c80e2651d73787e0ba-469x600.png?auto=format" data-lightbox="roadtrip" data-title="Postpartum Psychosis Updates And Clinical Issues Psychiatric Times">
+											<img class="card-img v-image ads-img " src="https://cdn.sanity.io/images/0vv8moc6/psychtimes/02cdf0b64945b3bba901a4c80e2651d73787e0ba-469x600.png?auto=format" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrCjoxZhUOpP_Q3kx_oJhHEma5P9CBek9jkw';" alt="Postpartum Psychosis Updates And Clinical Issues Psychiatric Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Postpartum Psychosis Updates And Clinical Issues Psychiatric Times</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.sanity.io/images/0vv8moc6/psychtimes/78765404d2fd6021ac995074de3557d1505ef3a0-1000x337.jpg?auto=format" data-lightbox="roadtrip" data-title="Exploring The Psychosis Depression Interface Clinical Implications Psychiatric Times">
+											<img class="card-img v-image ads-img " src="https://cdn.sanity.io/images/0vv8moc6/psychtimes/78765404d2fd6021ac995074de3557d1505ef3a0-1000x337.jpg?auto=format" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH8wgErcVWEurl64wd-GdVYc5Vwo_FKJZ17g';" alt="Exploring The Psychosis Depression Interface Clinical Implications Psychiatric Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Exploring The Psychosis Depression Interface Clinical Implications Psychiatric Times</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/d2/96/75d2967862ba8107935181b5776eb194.jpg" data-lightbox="roadtrip" data-title="Images Are Credited To Nursing Education Consultants Inc Pharmacology Nursing Nursing Mnemonics Nursing Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/d2/96/75d2967862ba8107935181b5776eb194.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSETW0sRe2DCaPkjMGCQ2NkTHvFy_nSiyw2ug';" alt="Images Are Credited To Nursing Education Consultants Inc Pharmacology Nursing Nursing Mnemonics Nursing Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Images Are Credited To Nursing Education Consultants Inc Pharmacology Nursing Nursing Mnemonics Nursing Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-compensation-for-autonomic-neuropathy.html">Va Compensation For Autonomic Neuropathy</a></li>
+													<li class="list-group-item"><a href="/va-compensation-for-hip-injury.html">Va Compensation For Hip Injury</a></li>
+													<li class="list-group-item"><a href="/va-compensation-table-2014.html">Va Compensation Table 2014</a></li>
+													<li class="list-group-item"><a href="/va-compensation-rates-table-2019.html">Va Compensation Rates Table 2019</a></li>
+													<li class="list-group-item"><a href="/va-compensation-department.html">Va Compensation Department</a></li>
+													<li class="list-group-item"><a href="/va-compensation-insomnia.html">Va Compensation Insomnia</a></li>
+													<li class="list-group-item"><a href="/va-compensation-for-chronic-kidney-disease.html">Va Compensation For Chronic Kidney Disease</a></li>
+													<li class="list-group-item"><a href="/va-compensation-issues.html">Va Compensation Issues</a></li>
+													<li class="list-group-item"><a href="/va-compensation-gastroesophageal-reflux.html">Va Compensation Gastroesophageal Reflux</a></li>
+													<li class="list-group-item"><a href="/va-compensation-examiner.html">Va Compensation Examiner</a></li>
+													<li class="list-group-item"><a href="/va-compensation-denial-letter.html">Va Compensation Denial Letter</a></li>
+													<li class="list-group-item"><a href="/va-compensation-for-neck-injury.html">Va Compensation For Neck Injury</a></li>
+													<li class="list-group-item"><a href="/va-compensation-shoulder-injury.html">Va Compensation Shoulder Injury</a></li>
+													<li class="list-group-item"><a href="/va-compensation-hearing-loss-rating.html">Va Compensation Hearing Loss Rating</a></li>
+													<li class="list-group-item"><a href="/va-compensation-dependent-requirements.html">Va Compensation Dependent Requirements</a></li>
+													<li class="list-group-item"><a href="/va-compensation-hemorrhoids.html">Va Compensation Hemorrhoids</a></li>
+													<li class="list-group-item"><a href="/va-compensation-form-21-8940.html">Va Compensation Form 21 8940</a></li>
+													<li class="list-group-item"><a href="/va-compensation-for-unemployability.html">Va Compensation For Unemployability</a></li>
+													<li class="list-group-item"><a href="/va-compensation-secondary-condition.html">Va Compensation Secondary Condition</a></li>
+													<li class="list-group-item"><a href="/va-compensation-for-helpless-child.html">Va Compensation For Helpless Child</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

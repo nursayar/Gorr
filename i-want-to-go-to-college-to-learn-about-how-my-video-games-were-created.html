@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>I Want To Go To College To Learn About How My Video Games Were Created - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "I Want To Go To College To Learn About How My Video Games Were Created",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/bf/f4/84/bff48428c85b72a62a55b7c1c45aad32.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=i+want+to+go+to+college+to+learn+about+how+my+video+games+were+created",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>I Want To Go To College To Learn About How My Video Games Were Created</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Think about how hard you work to do well in your games. If you do go to school you should be learning stuff that isnt related directly to games so I suggest going to a school where you can get that experience. Unless you are that guy one in a million who has connections You go for four years of college for your bachelors. <br>				
+			</p>
+										<a class="badge badge-warning" href="/va-gi-bill-mitigating.html">va gi bill mitigating</a>
+											<a class="badge badge-info" href="/va-loan-400k.html">va loan 400k</a>
+											<a class="badge badge-primary" href="/va-gift-baskets.html">va gift baskets</a>
+											<a class="badge badge-light" href="/va-hearing.html">va hearing</a>
+											<a class="badge badge-secondary" href="/va-kidney-disease.html">va kidney disease</a>
+											<a class="badge badge-dark" href="/va-letter-showing-disability-rating.html">va letter showing disability rating</a>
+											<a class="badge badge-info" href="/va-interest-rate-as-of-today.html">va interest rate as of today</a>
+											<a class="badge badge-warning" href="/va-gi-bill-restoration.html">va gi bill restoration</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you've come to pay a visit to the ideal blog.  Our website gives you suggestions for viewing the highest quality video and picture content, search and find more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, especially Youtube, therefore we recommend this video for you to view.  You can also bring about supporting this website by sharing videos and images that you enjoy on this site on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information that you get on this site.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/38/89/8e38898940ac3ce3cf2d8cab61777872.jpg" data-lightbox="roadtrip" data-title="Dorkly Comic Excuses We Make Up To Play Video Games Over Time Dorkly Comics Funny Games Video Games Funny">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/38/89/8e38898940ac3ce3cf2d8cab61777872.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGs61cKuBHjmrhaARtkIr-nG1XnL6KlJ4Z8w';" alt="Dorkly Comic Excuses We Make Up To Play Video Games Over Time Dorkly Comics Funny Games Video Games Funny">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dorkly Comic Excuses We Make Up To Play Video Games Over Time Dorkly Comics Funny Games Video Games Funny</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/d3/4d/60d34d80b50bdd4f767595ad760137a0.png" data-lightbox="roadtrip" data-title="Create A Digital Final Exam For Your College Course In 2020 Teaching College College Problems College Courses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/d3/4d/60d34d80b50bdd4f767595ad760137a0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyw2-mb22qnR8l_bbsNHDuKciMyxpUYrv8fg';" alt="Create A Digital Final Exam For Your College Course In 2020 Teaching College College Problems College Courses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Create A Digital Final Exam For Your College Course In 2020 Teaching College College Problems College Courses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/6a/74/896a74eda3f61c0c60672160732cc4d0.png" data-lightbox="roadtrip" data-title="This Time Of Year It Can Be Hard To Be Organized I Know It S Still January And You Want To Think That You School Study Tips Study Notes Life Hacks For">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/6a/74/896a74eda3f61c0c60672160732cc4d0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZuraJAEY-fDu8hTMq9SvZ-g9YYUUEOqHNsw';" alt="This Time Of Year It Can Be Hard To Be Organized I Know It S Still January And You Want To Think That You School Study Tips Study Notes Life Hacks For">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Time Of Year It Can Be Hard To Be Organized I Know It S Still January And You Want To Think That You School Study Tips Study Notes Life Hacks For</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/a9/81/ffa981b0881f310c63056319f5bd7473.gif" data-lightbox="roadtrip" data-title="Videogames Vs Real Life Funny Games Video Games Funny Video Game Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/a9/81/ffa981b0881f310c63056319f5bd7473.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAcbCEu1vQUbDSI_YY17FVrg6Yf2n9lZ_m7Q';" alt="Videogames Vs Real Life Funny Games Video Games Funny Video Game Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Videogames Vs Real Life Funny Games Video Games Funny Video Game Memes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/c8/e3/edc8e364a25df4d19719339a6660b17d.png" data-lightbox="roadtrip" data-title="Pin On Best Choices 4 You">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/c8/e3/edc8e364a25df4d19719339a6660b17d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgCkPfi_eSBOu7FnLsOetVOhg9JYR2SAgcMQ';" alt="Pin On Best Choices 4 You">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Best Choices 4 You</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/95/c1/dd95c1c8e3e655add5d62afe0d1bb7dc.jpg" data-lightbox="roadtrip" data-title="10 Study Tips To Be Productive In 2019 Ics Learn Study Tips Study Skills School Study Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/95/c1/dd95c1c8e3e655add5d62afe0d1bb7dc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjnzCGjwwYfBqNMdfDUmKNTUWHgCYep9-R-w';" alt="10 Study Tips To Be Productive In 2019 Ics Learn Study Tips Study Skills School Study Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Study Tips To Be Productive In 2019 Ics Learn Study Tips Study Skills School Study Tips</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/75/8f/ae/758fae5d4df41f45a18e19dddeae5848.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjnzCGjwwYfBqNMdfDUmKNTUWHgCYep9-R-w';" alt="10 Study Tips To Be Productive In 2019 Ics Learn Study Tips Study Skills School Study Tips">
+										<div class="card-body">
+						<h3 class="h5"><b>College was good for debauchery experimenting and surprisingly video games.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>I want to go to college to learn about how my video games were created</strong>. 
+								
+																	This struggle happened enough times for me to come up with a conclusion. 
+																	Like uncontrolled access to guns violent video games are. 
+																	If youre concerned about your sons video game habits spinning out of control when he goes to college youre right to be. 
+																	I feel value that can be added through video game related classes and I think that there would be a lot of students who would be interested Hayse says his Understanding Video Games course is set up. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	And at a New. 
+																	Video games have become a leading reason for academic failure in college. 
+																	In Just By EE. 
+																	Choose the definition of frantic that best. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Lots of kids in college play video games. 
+																	The first thing that college and RPGs role-playing games 1 have in common is the arduous amount of grinding involved in this case grinding 2 refers to working to complete repetitive tasks to gain experience or improve a skill. 
+																	Video games have been in the news a lot over the past six months and often for the wrong reasons. 
+																	New questions in English. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Well outline it quickly below. 
+																	Favorite Answer Yes you have to go to college to make video games. 
+																	The toss up is mostly between Full Sail and ECPI. 
+																	The pressure of needing to be efficient with my time allied with the feeling of mindlessness let me to see video games as an unnecessary and expendable activity. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I like in Oklahoma and REALLY want to make games and hopefully end up running my own business like Bethesda Help please. 
+																	In Just spring when the world is mud- luscious the little lame balloonman whistles far and wee and eddieandbill come running from marbles and piracies and its spring when the world is puddle-wonderful the queer old balloonman whistles far and wee and. 
+																	Add your answer and earn points. 
+																	Like I said earlier the secret to making sure you continue to succeed in college while playing video games is by treating them like a reward for your hard work. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A game designer is responsible for the majority of a games cohesion. 
+																	I need to know what college to go to to make video games. 
+																	In-case you dont want to read all of what is below --Summary-- I need advice n where to go to college for a good education in Game Development Ive been looking at colleges to attend to get into the game development career. 
+																	Last month scientists revealed that those who play action games have better motor skills. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I went to college to create video games even though I didnt even have any ideas. 
+																	Imagine what you could accomplish if you were to put in the same amount of effort with school and your career. 
+																	Hayse currently teaches Understanding Video Games and Games as Learning Systems I wish that there was an interdisciplinary program about video game design adds Hayse. 
+																	To answer your question unless youre playing 8 hours of WoW a day Im sure youll be fine balancing video games and school work. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As a game designer you are responsible for figuring out the games makeup. 
+																	In the video game its Go kill 20 wolves. 
+																	Its just a skill I got so I could come to college for free and even then I regret even doing that. 
+																	Read the following prompt and type your response in the space provided. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I feel like an idiot. 
+																	I want to go to college to learn about how my video games were created - 17677682 sandy012578 sandy012578 09172020 Advanced Placement AP High School I want to go to college to learn about how my video games were created 1 See answer sandy012578 is waiting for your help. 
+																	Then just last week a scientist in the US found zero links between violence in video games and in real lifeNow researchers at the University of Rochester in the US. 
+																	Go somewhere that feels really. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I am 13 and have really good game ideas but I dont know how to make them. 
+																	If you want to learn even more about it Udemy offers a course that serves as a quick introduction to what game design really is. 
+																	While the negative influences of video games have long been discussed and debated other studies have shown that playing video games can result in improved fine motor thinking and problem-solving skills. 
+																	Its more games like Halo and Mario Kart where you play with friends but its not like all those XBoxes adn Wiis get thrown in the trash. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I love video games too damn much. 
+																	I guess I learned some things too but eh. 
+																	Academics was the least interesting part of college for me. 
+																	I am a BaritoneEuphonium player that has been playing for around 5 years and thats it. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Consider the poem In Just by EE. 
+																	Okay now hunt 70 Orcs. 
+																	Okay now kill 40 Owlbears. 
+																	The Sandy Hook school shooting in December 2012 was a tragic event that sparked a high-profile political debate about gun control in the US but it also caused a considerable amount of soul-searching in the international gaming community. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Arizona State University professor James Gee an expert on video games and learning states that video games are inherent to problem-solving decision-making and collaboration. 
+																	So I stopped playing video gamesand then I restartedand then I stopped. 
+																	The impact of video games on young people has gotten a lot of criticism but more studies are finding that they could have some benefits. 
+																	Find an answer to your question I want to go to college to learn about how my video games were Thakidv Thakidv 03012019 English Middle School I want to go to college to learn about how my video games were 2 See answers angxe angxe Answer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I dont know what to do with my life now. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/52/0c/35/520c353f0c4f9bafd4741e8fae8a360c.jpg" data-lightbox="roadtrip" data-title="Practice Then Play Free Multiplication Worksheets And Games For Fact Fluency Math Multiplication Math Lessons Multiplication">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/52/0c/35/520c353f0c4f9bafd4741e8fae8a360c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrtsU3dP1PlF5V3vxP1KFGW8FYaXPHPaXRRw';" alt="Practice Then Play Free Multiplication Worksheets And Games For Fact Fluency Math Multiplication Math Lessons Multiplication">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Practice Then Play Free Multiplication Worksheets And Games For Fact Fluency Math Multiplication Math Lessons Multiplication</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8c/43/52/8c43524d0c37b0fde52c91f56f1499c2.jpg" data-lightbox="roadtrip" data-title="Pin On Baby S Acid Trip">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8c/43/52/8c43524d0c37b0fde52c91f56f1499c2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtkrdsI3Vjyq_tlQB5_LFVN5WNFrnlKA6YrQ';" alt="Pin On Baby S Acid Trip">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Baby S Acid Trip</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/16/72/e9/1672e997f0fb4f5fe99cd5f8177650c4.jpg" data-lightbox="roadtrip" data-title="Are You Using Zoom Or Google Meet For Distance Learning Do You Want To Try Something Fun With Your Student Student Games Distance Learning Homeschool Learning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/16/72/e9/1672e997f0fb4f5fe99cd5f8177650c4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZKXNKeN5oOyAMzKym7-V1RzWjr4HbVCEu1A';" alt="Are You Using Zoom Or Google Meet For Distance Learning Do You Want To Try Something Fun With Your Student Student Games Distance Learning Homeschool Learning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are You Using Zoom Or Google Meet For Distance Learning Do You Want To Try Something Fun With Your Student Student Games Distance Learning Homeschool Learning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/5d/d5/015dd51011fb75250b5d9f764f6497fe.png" data-lightbox="roadtrip" data-title="5 Argument Games For Creating Arguments Counter Arguments Evaluating Evidence And Reasoning Teachingargumen Teaching Middle School Writing Teaching Writing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/5d/d5/015dd51011fb75250b5d9f764f6497fe.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVkCG3gySOdCSCLUBwJ-lHKe5a_BR3ZDxaFA';" alt="5 Argument Games For Creating Arguments Counter Arguments Evaluating Evidence And Reasoning Teachingargumen Teaching Middle School Writing Teaching Writing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Argument Games For Creating Arguments Counter Arguments Evaluating Evidence And Reasoning Teachingargumen Teaching Middle School Writing Teaching Writing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/16/e3/f9/16e3f93d7158972dfc029c759dd3d52a--games-to-play-playing-games.jpg" data-lightbox="roadtrip" data-title="Do You Want Your Kids To Learn Coding Did You Know You Can Teach Kids To Code By Playing Games Offline 14 Easy Teaching Coding Coding For Kids Learn To Code">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/16/e3/f9/16e3f93d7158972dfc029c759dd3d52a--games-to-play-playing-games.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReMm6HWPIDGcSUOZaRKO_AcyZ4DFBhHs2Nyg';" alt="Do You Want Your Kids To Learn Coding Did You Know You Can Teach Kids To Code By Playing Games Offline 14 Easy Teaching Coding Coding For Kids Learn To Code">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Do You Want Your Kids To Learn Coding Did You Know You Can Teach Kids To Code By Playing Games Offline 14 Easy Teaching Coding Coding For Kids Learn To Code</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/f4/84/bff48428c85b72a62a55b7c1c45aad32.png" data-lightbox="roadtrip" data-title="The Educational Hashtag And Twitter Chat Database Education Education Success Special Education Behavior">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/f4/84/bff48428c85b72a62a55b7c1c45aad32.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpjK7YvkDKv2VmKHFL4iUtT6XRGWeTX1t9Kg';" alt="The Educational Hashtag And Twitter Chat Database Education Education Success Special Education Behavior">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Educational Hashtag And Twitter Chat Database Education Education Success Special Education Behavior</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/29/c1/1a/29c11a598091636748b312d7182d0fe2.png" data-lightbox="roadtrip" data-title="Here Have This Oddly Well Put Together Post About Life Video Games Post Video Game Quotes Game Quotes Video Game Facts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/29/c1/1a/29c11a598091636748b312d7182d0fe2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0LhyZ0yJc4GnGahhGIm2PavxrmWvRdJJACg';" alt="Here Have This Oddly Well Put Together Post About Life Video Games Post Video Game Quotes Game Quotes Video Game Facts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here Have This Oddly Well Put Together Post About Life Video Games Post Video Game Quotes Game Quotes Video Game Facts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/84/18/3d841878d89a4f1ef16f4a878527aa0d.jpg" data-lightbox="roadtrip" data-title="12 Of The Best Tools And Apps For Creating Educational Games Educational Games Educational Technology Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/84/18/3d841878d89a4f1ef16f4a878527aa0d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSItja3-qWGkDC2krSubFLp2R22s7pnRjjbIA';" alt="12 Of The Best Tools And Apps For Creating Educational Games Educational Games Educational Technology Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">12 Of The Best Tools And Apps For Creating Educational Games Educational Games Educational Technology Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/5b/3f/595b3febd84d1b93e47e7bcf57219f12.jpg" data-lightbox="roadtrip" data-title="Persuasive Writing Prompt Should Kids Play Video Games Persuasive Writing 6th Grade Writing Prompts Writing Traits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/5b/3f/595b3febd84d1b93e47e7bcf57219f12.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqEQeH7gCyIvtTkEC8y8QPiZVzUN-nDtcf-Q';" alt="Persuasive Writing Prompt Should Kids Play Video Games Persuasive Writing 6th Grade Writing Prompts Writing Traits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Persuasive Writing Prompt Should Kids Play Video Games Persuasive Writing 6th Grade Writing Prompts Writing Traits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/8f/ae/758fae5d4df41f45a18e19dddeae5848.png" data-lightbox="roadtrip" data-title="Parents Read Up This Article By Madeleine Muzdakis On The My Modern Met Says Playing Video Games As A Child M Playing Video Games When You Were Young Smart">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/8f/ae/758fae5d4df41f45a18e19dddeae5848.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjM5ISy3QfrYrqhf2M4gJ_47PVop9SZ3ETWQ';" alt="Parents Read Up This Article By Madeleine Muzdakis On The My Modern Met Says Playing Video Games As A Child M Playing Video Games When You Were Young Smart">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Parents Read Up This Article By Madeleine Muzdakis On The My Modern Met Says Playing Video Games As A Child M Playing Video Games When You Were Young Smart</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/10/45/9910456b7fd215a02570fc365e715b98.jpg" data-lightbox="roadtrip" data-title="The Video Game Project An End Of Year Ela Activity For Upper Elementary Ela Activities Middle School Reading Middle School Language Arts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/10/45/9910456b7fd215a02570fc365e715b98.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiqU13GfMvdjYEav5TAZWJ8_DBl7azRxL6Iw';" alt="The Video Game Project An End Of Year Ela Activity For Upper Elementary Ela Activities Middle School Reading Middle School Language Arts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Video Game Project An End Of Year Ela Activity For Upper Elementary Ela Activities Middle School Reading Middle School Language Arts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/ec/11/90ec1120576cffbf570dc24fd8d07866.png" data-lightbox="roadtrip" data-title="Diy Classroom Board Game Classroom Games Diy Classroom Math Board Games">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/ec/11/90ec1120576cffbf570dc24fd8d07866.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4WvhlLoxepHHov_7zLtd-dPJ4vtg9wbuNTw';" alt="Diy Classroom Board Game Classroom Games Diy Classroom Math Board Games">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Diy Classroom Board Game Classroom Games Diy Classroom Math Board Games</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ef/2b/9b/ef2b9b8a4b03d1fd8264215a2da9e941.jpg" data-lightbox="roadtrip" data-title="5 Examples Of Smart Goals For College Students Smart Goals Smart Goals Examples Smart Goals Worksheet">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ef/2b/9b/ef2b9b8a4b03d1fd8264215a2da9e941.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrAT6uzefLl_nCjz8eCf-orBNmZjBtLtGLiw';" alt="5 Examples Of Smart Goals For College Students Smart Goals Smart Goals Examples Smart Goals Worksheet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Examples Of Smart Goals For College Students Smart Goals Smart Goals Examples Smart Goals Worksheet</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-va-percentage-is-anxiety.html">What Va Percentage Is Anxiety</a></li>
+													<li class="list-group-item"><a href="/when-can-you-transfer-gi-bill-to-spouse.html">When Can You Transfer Gi Bill To Spouse</a></li>
+													<li class="list-group-item"><a href="/when-does-the-gi-bill-pay-housing.html">When Does The Gi Bill Pay Housing</a></li>
+													<li class="list-group-item"><a href="/who-is-eligible-for-military-health-insurance.html">Who Is Eligible For Military Health Insurance</a></li>
+													<li class="list-group-item"><a href="/when-does-the-brexit-bill-go-to-parliament.html">When Does The Brexit Bill Go To Parliament</a></li>
+													<li class="list-group-item"><a href="/who-are-the-bills-going-to-draft.html">Who Are The Bills Going To Draft</a></li>
+													<li class="list-group-item"><a href="/when-can-you-start-using-your-gi-bill.html">When Can You Start Using Your Gi Bill</a></li>
+													<li class="list-group-item"><a href="/where-do-i-send-va-form-21-4138.html">Where Do I Send Va Form 21 4138</a></li>
+													<li class="list-group-item"><a href="/which-is-better-the-montgomery-gi-bill-or-post-911.html">Which Is Better The Montgomery Gi Bill Or Post 911</a></li>
+													<li class="list-group-item"><a href="/where-to-send-va-form-21-4138.html">Where To Send Va Form 21 4138</a></li>
+													<li class="list-group-item"><a href="/when-can-your-spouse-use-your-gi-bill.html">When Can Your Spouse Use Your Gi Bill</a></li>
+													<li class="list-group-item"><a href="/when-does-gi-bill-pay-tuition.html">When Does Gi Bill Pay Tuition</a></li>
+													<li class="list-group-item"><a href="/when-does-the-gi-bill-pay-tuition.html">When Does The Gi Bill Pay Tuition</a></li>
+													<li class="list-group-item"><a href="/what-was-the-gi-bill-of-rights-quizlet.html">What Was The Gi Bill Of Rights Quizlet</a></li>
+													<li class="list-group-item"><a href="/when-does-va-gi-bill-payment-get-deposited.html">When Does Va Gi Bill Payment Get Deposited</a></li>
+													<li class="list-group-item"><a href="/where-can-i-get-va-forms.html">Where Can I Get Va Forms</a></li>
+													<li class="list-group-item"><a href="/where-do-i-send-va-claims.html">Where Do I Send Va Claims</a></li>
+													<li class="list-group-item"><a href="/where-to-file-va-form-21-4138.html">Where To File Va Form 21 4138</a></li>
+													<li class="list-group-item"><a href="/what-va-percentage-is-depression.html">What Va Percentage Is Depression</a></li>
+													<li class="list-group-item"><a href="/when-do-i-get-my-montgomery-gi-bill-refund.html">When Do I Get My Montgomery Gi Bill Refund</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

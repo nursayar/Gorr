@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Go Build Dockerfile - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Go Build Dockerfile",
+  "datePublished": "2021-02-17",
+  "image": "https://miro.medium.com/max/5496/1*E33brkN6zivLSb-D9i-CdQ.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=go+build+dockerfile",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Go Build Dockerfile</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">This has only been tested on Linux and depends on Docker to build. In this instance we will need to add a step within our Dockerfile which does the job of downloading our dependencies prior to the go build command executing. It uses a Makefile to drive the build the universal API to software projects and a Dockerfile to build a docker image. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/pay-va-tax-bill-online.html">pay va tax bill online</a>
+											<a class="badge badge-info" href="/nys-montgomery-bill-passed.html">nys montgomery bill passed</a>
+											<a class="badge badge-info" href="/post-9-11-gi-bill-60-percentage.html">post 9 11 gi bill 60 percentage</a>
+											<a class="badge badge-info" href="/nike-air-force-x-g-dragon.html">nike air force x g dragon</a>
+											<a class="badge badge-success" href="/new-gi-bill-transfer.html">new gi bill transfer</a>
+											<a class="badge badge-success" href="/permanent-disability-rating-chart-california.html">permanent disability rating chart california</a>
+											<a class="badge badge-primary" href="/original-gi-bill.html">original gi bill</a>
+											<a class="badge badge-success" href="/new-horizons-gi-bill.html">new horizons gi bill</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you have come to visit the right blog.  Our site provides you with suggestions for seeing the highest quality video and picture content, search and find more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, therefore we recommend this video that you see.  You can also bring about supporting this website by sharing videos and images that you like on this site on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://miro.medium.com/max/5496/1*E33brkN6zivLSb-D9i-CdQ.png" data-lightbox="roadtrip" data-title="Go Build A Minimal Docker Image In Just Three Steps By Ivan Dlugos Medium">
+											<img class="card-img v-image ads-img " src="https://miro.medium.com/max/5496/1*E33brkN6zivLSb-D9i-CdQ.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6lc1CN80CliIMYWO8H0GHFKyJJwB_89UFTg';" alt="Go Build A Minimal Docker Image In Just Three Steps By Ivan Dlugos Medium">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Go Build A Minimal Docker Image In Just Three Steps By Ivan Dlugos Medium</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.squarespace-cdn.com/content/v1/5e10bdc20efb8f0d169f85f9/1587218110826-HRVDFC1SJ2DHOCWNQP93/ke17ZwdGBToddI8pDm48kDCvHzy1Ls8TFFe6vZ9I5J1Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIr82f8YZzXq4Td-s1NmlWAp73zP4zTXbAy1RAOfwA42k/PinClipart.com_shipping-container-clip-art_3317140.png" data-lightbox="roadtrip" data-title="Building A Golang Docker Image Bitfield Consulting">
+											<img class="card-img v-image ads-img " src="https://images.squarespace-cdn.com/content/v1/5e10bdc20efb8f0d169f85f9/1587218110826-HRVDFC1SJ2DHOCWNQP93/ke17ZwdGBToddI8pDm48kDCvHzy1Ls8TFFe6vZ9I5J1Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIr82f8YZzXq4Td-s1NmlWAp73zP4zTXbAy1RAOfwA42k/PinClipart.com_shipping-container-clip-art_3317140.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6FSwlNAjOWQ0kP1_BKdvCP9_rdPaaL_egTQ';" alt="Building A Golang Docker Image Bitfield Consulting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Building A Golang Docker Image Bitfield Consulting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.callicoder.com/assets/images/post/large/docker-golang-image-container-example.jpg" data-lightbox="roadtrip" data-title="Building Docker Containers For Go Applications Callicoder">
+											<img class="card-img v-image ads-img " src="https://www.callicoder.com/assets/images/post/large/docker-golang-image-container-example.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWtaN0PYC_1OvE0drGE5xYOQD1ONaXdZYdDg';" alt="Building Docker Containers For Go Applications Callicoder">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Building Docker Containers For Go Applications Callicoder</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.getwrecked.com/wp-content/uploads/2016/08/Pasted-image-at-2016_08_29-03_22-PM.png" data-lightbox="roadtrip" data-title="Self Compiling Go Docker Container Wrecking Ball Studio Labs">
+											<img class="card-img v-image ads-img " src="https://www.getwrecked.com/wp-content/uploads/2016/08/Pasted-image-at-2016_08_29-03_22-PM.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWY7mvpo6JEwPBD_Tb6npFZKkKA7O0sbrzDg';" alt="Self Compiling Go Docker Container Wrecking Ball Studio Labs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Self Compiling Go Docker Container Wrecking Ball Studio Labs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://miro.medium.com/max/4516/1*yZmWmTa3zFgX078wSwXpdA.png" data-lightbox="roadtrip" data-title="Docker For Go Development With Hot Reload By Dirk Hoekstra Level Up Coding">
+											<img class="card-img v-image ads-img " src="https://miro.medium.com/max/4516/1*yZmWmTa3zFgX078wSwXpdA.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6wNZPANp_sn3nec3V-NgISjN2qE9nlNLFfw';" alt="Docker For Go Development With Hot Reload By Dirk Hoekstra Level Up Coding">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Docker For Go Development With Hot Reload By Dirk Hoekstra Level Up Coding</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://miro.medium.com/max/2600/1*XxhLcQkalmwvuRTH5HXn1A@2x.jpeg" data-lightbox="roadtrip" data-title="Docker For Go Application Development And Deployment Monstar Lab Bangladesh Engineering">
+											<img class="card-img v-image ads-img " src="https://miro.medium.com/max/2600/1*XxhLcQkalmwvuRTH5HXn1A@2x.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNeU63C_jEFw4_JGgPPLaJ5lxAHYXVtpiBxA';" alt="Docker For Go Application Development And Deployment Monstar Lab Bangladesh Engineering">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Docker For Go Application Development And Deployment Monstar Lab Bangladesh Engineering</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.getwrecked.com/wp-content/uploads/2016/08/Pasted-image-at-2016_08_29-03_22-PM.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNeU63C_jEFw4_JGgPPLaJ5lxAHYXVtpiBxA';" alt="Docker For Go Application Development And Deployment Monstar Lab Bangladesh Engineering">
+										<div class="card-body">
+						<h3 class="h5"><b>Dockerfile is a file that uses as the script with a defined set of instructions to build a docker image.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Go build dockerfile</strong>. 
+								
+																	We do that straightforwardly enough using the go build command. 
+																	Lets now run the image. 
+																	With the onbuild variant the Dockerfile is much simpler. 
+																	Docker official docs describe Dockerfile as a text document that contains all the commands a user could call on the command line to assemble an image. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Its not too unexpected as Im 99 sure that if you would just create a tarball of your build context and send it to the daemon simplified version on how the API works it would fail with any version of the builder. 
+																	Now we are going to go one step further and learn how to add dependencies to make the project more realistic caching to make the builds faster and unit tests. 
+																	Go app template build environment. 
+																	How to build image from Dockerfil. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Id is the identifier to pass into the docker build --secret. 
+																	Notice how we mount a directory of the Host OS to the volume specified by the docker container - mkdir -p logsgo-docker docker run -d -p 80808080 -v logsgo-dockerapplogs go-docker-volume. 
+																	Go app template build environment This is a skeleton project for a Go application which captures the best build techniques I have learned to date. 
+																	It uses a Makefile to drive the build the universal API to software projects and a Dockerfile to build a docker image. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It uses a Makefile to drive the build the universal API to software projects and a Dockerfile to build a docker image. 
+																	This has only been tested on Linux and depends on Docker to build. 
+																	App WORKDIR app Add this go mod download command to pull in any dependencies RUN go mod download Our project will now successfully build with the necessary go libraries included. 
+																	This has only been tested on Linux and depends on Docker to build. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The new --secret flag for docker build allows the user to pass secret information to be used in the Dockerfile for building docker images in a safe way that will not end up stored in the final image. 
+																	This is a skeleton project for a Go application which captures the best build techniques I have learned to date. 
+																	Docker build is the command to build a Docker image from a Dockerfile -t takacsmarkalpine-smarter10 defines the tag hence -t of the image which will be basically the name of the image. 
+																	This identifier is associated with the RUN --mount identifier to use in the Dockerfile. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In part 1 we explained how to start a containerized development environment for local Go development building an example CLI tool for different platforms and shrinking the build context to speed up builds. 
+																	How to create Dockerfile3. 
+																	The ADD RUN and ENTRYPOINT steps are common tasks for any Go project. 
+																	Start a Go instance in your app. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In your Dockerfile writing something along the lines of the following will compile and run your project. 
+																	The most straightforward way to use this image is to use a Go container as both the build and runtime environment. 
+																	I dont know if its a regression from old build but I would say that its highly unexpected for dockerfile and Dockerfile to behave differently on a typical Windows machine. 
+																	To simplify this there is an onbuild variant of the golang image that automatically copies the package source fetches the application dependencies builds the program and configures it to run on startup. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	FROM golang114 WORKDIR gosrcapp COPY. 
+																	Docker build -t go-docker-volume -f Dockerfilevolume. 
+																	Dockerfile FROM golang1120-alpine39 RUN mkdir app ADD. 
+																	As the first part I put my own name takacsmark because Im the maintainer of the image then I gave it a human readable name alpine-smarter and provided a version number 10. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Go app template build environment This is a skeleton project for a Go application which captures the best build techniques I have learned to date. 
+																	Go is a compiled language which means that we need to build compile our program in order to turn it into a binary file which you can run. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.morioh.com/2343c2078f.png" data-lightbox="roadtrip" data-title="Building Small Docker Images With Golang">
+											<img class="card-img v-image ads-img " src="https://i.morioh.com/2343c2078f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwM3gH9SgDruqItINtpzFUNkiOhPFz1fU-PQ';" alt="Building Small Docker Images With Golang">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Building Small Docker Images With Golang</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://miro.medium.com/max/3840/1*djC36ws7JcuMt04_bYM4AA.jpeg" data-lightbox="roadtrip" data-title="How To Build A Smaller Docker Image Of The Golang Application By Peradon Charoenchainetr Medium">
+											<img class="card-img v-image ads-img " src="https://miro.medium.com/max/3840/1*djC36ws7JcuMt04_bYM4AA.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvW_NswMlHRlAx89D4qdfmJpozyK1fp9Nd7w';" alt="How To Build A Smaller Docker Image Of The Golang Application By Peradon Charoenchainetr Medium">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Build A Smaller Docker Image Of The Golang Application By Peradon Charoenchainetr Medium</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://miro.medium.com/max/2600/1*HeYkLXfPu1uA-xFuW2n5zA.png" data-lightbox="roadtrip" data-title="Multi Stage Docker Builds In Golang With Go Modules By Niraj Fonseka Level Up Coding">
+											<img class="card-img v-image ads-img " src="https://miro.medium.com/max/2600/1*HeYkLXfPu1uA-xFuW2n5zA.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSki8_5gFQtO534E9daYx5Jj44cIlSE9RfO9g';" alt="Multi Stage Docker Builds In Golang With Go Modules By Niraj Fonseka Level Up Coding">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Multi Stage Docker Builds In Golang With Go Modules By Niraj Fonseka Level Up Coding</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://miro.medium.com/max/960/1*SBepmXPvwiTbXAa9TN-h9Q.png" data-lightbox="roadtrip" data-title="How To Build Docker Images On The Go By Dhanush Gopinath Faun Medium">
+											<img class="card-img v-image ads-img " src="https://miro.medium.com/max/960/1*SBepmXPvwiTbXAa9TN-h9Q.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTanOG6M0xOi-nJBDyxvGmIBwQBKhXavjoQwA';" alt="How To Build Docker Images On The Go By Dhanush Gopinath Faun Medium">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Build Docker Images On The Go By Dhanush Gopinath Faun Medium</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://miro.medium.com/max/3282/1*idtbh2LwfwGI9Xa5eorO0A.png" data-lightbox="roadtrip" data-title="Building A Go Web App From Scratch To Deploying On Google Cloud Part 4b Containerizing Our Go App Using Docker The Dockerfile By Martin Ombura Jr Martin Ombura Jr Medium">
+											<img class="card-img v-image ads-img " src="https://miro.medium.com/max/3282/1*idtbh2LwfwGI9Xa5eorO0A.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_p2yjcmfC4D1NfVob4hoRjCCFgv7sG-PpYA';" alt="Building A Go Web App From Scratch To Deploying On Google Cloud Part 4b Containerizing Our Go App Using Docker The Dockerfile By Martin Ombura Jr Martin Ombura Jr Medium">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Building A Go Web App From Scratch To Deploying On Google Cloud Part 4b Containerizing Our Go App Using Docker The Dockerfile By Martin Ombura Jr Martin Ombura Jr Medium</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://user-images.githubusercontent.com/567298/55478904-236e9200-561d-11e9-9382-f31b25a9ae03.png" data-lightbox="roadtrip" data-title="Build Small Golang Docker Containers">
+											<img class="card-img v-image ads-img " src="https://user-images.githubusercontent.com/567298/55478904-236e9200-561d-11e9-9382-f31b25a9ae03.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHONcOe7i36uTs0HsAuSAk_FGUh6Werh9E6Q';" alt="Build Small Golang Docker Containers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Build Small Golang Docker Containers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://miro.medium.com/max/3284/1*0NVql0UcFLTIDAEb9ucG9A.png" data-lightbox="roadtrip" data-title="Building A Go Web App From Scratch To Deploying On Google Cloud Part 5 Applying A Multistage Builder Pattern To Shrink Our Go Image By Martin Ombura Jr Martin Ombura Jr Medium">
+											<img class="card-img v-image ads-img " src="https://miro.medium.com/max/3284/1*0NVql0UcFLTIDAEb9ucG9A.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWYG2QoYFDtLl1BEUzCIPuYvj6b88zDp6KUA';" alt="Building A Go Web App From Scratch To Deploying On Google Cloud Part 5 Applying A Multistage Builder Pattern To Shrink Our Go Image By Martin Ombura Jr Martin Ombura Jr Medium">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Building A Go Web App From Scratch To Deploying On Google Cloud Part 5 Applying A Multistage Builder Pattern To Shrink Our Go Image By Martin Ombura Jr Martin Ombura Jr Medium</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://miro.medium.com/max/640/1*dPjCoYd2LD6PUj8qtIjvlA.jpeg" data-lightbox="roadtrip" data-title="Docker Multi Stage Build For Go In A Modern Software World Almost By Ekin Yucel Faun Medium">
+											<img class="card-img v-image ads-img " src="https://miro.medium.com/max/640/1*dPjCoYd2LD6PUj8qtIjvlA.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-3ULifRJuoeb2hg_zJMqX3XE2ZrIX8atJFQ';" alt="Docker Multi Stage Build For Go In A Modern Software World Almost By Ekin Yucel Faun Medium">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Docker Multi Stage Build For Go In A Modern Software World Almost By Ekin Yucel Faun Medium</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://miro.medium.com/max/961/1*h8JAJtS7_rKOrm8B-czR5g.png" data-lightbox="roadtrip" data-title="How To Build Tiny Golang Docker Images With Gitlab Ci By Sergey Nuzhdin Medium">
+											<img class="card-img v-image ads-img " src="https://miro.medium.com/max/961/1*h8JAJtS7_rKOrm8B-czR5g.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPl1n94uvprivXVkYmcEGUZgmTBLGXyy-LlQ';" alt="How To Build Tiny Golang Docker Images With Gitlab Ci By Sergey Nuzhdin Medium">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Build Tiny Golang Docker Images With Gitlab Ci By Sergey Nuzhdin Medium</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://miro.medium.com/max/1172/1*jHZRnzYdATLjJXa4Hrp1XA.png" data-lightbox="roadtrip" data-title="Docker Container As An Executable To Process Images Using Go Golang By Uday Hiwarale System Failure Dec 2020 Medium">
+											<img class="card-img v-image ads-img " src="https://miro.medium.com/max/1172/1*jHZRnzYdATLjJXa4Hrp1XA.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQupCWWK_9xr3fsmNcXfsTgfJrRLid9nzRw0Q';" alt="Docker Container As An Executable To Process Images Using Go Golang By Uday Hiwarale System Failure Dec 2020 Medium">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Docker Container As An Executable To Process Images Using Go Golang By Uday Hiwarale System Failure Dec 2020 Medium</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.wp.com/torbenp.com/wp-content/uploads/2020/09/goDockerfileFinal.png?resize=584%2C253&amp;ssl=1" data-lightbox="roadtrip" data-title="Go Docker Hello Go With Multi Stage Build Torben Pedersen">
+											<img class="card-img v-image ads-img " src="https://i1.wp.com/torbenp.com/wp-content/uploads/2020/09/goDockerfileFinal.png?resize=584%2C253&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqMPPJ4O-jGZgm0O60XB3VF_3ssChsiLEgBw';" alt="Go Docker Hello Go With Multi Stage Build Torben Pedersen">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Go Docker Hello Go With Multi Stage Build Torben Pedersen</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://tachingchen.com/img/docker-multi-stage-builds/docker-multi-stage-builds.jpg" data-lightbox="roadtrip" data-title="Use Multi Stage Builds To Improve Continuous Delivery Pipeline Docker">
+											<img class="card-img v-image ads-img " src="https://tachingchen.com/img/docker-multi-stage-builds/docker-multi-stage-builds.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXOIN8DstHlyfP27cxGnHrToak1QoqTIBJTw';" alt="Use Multi Stage Builds To Improve Continuous Delivery Pipeline Docker">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Use Multi Stage Builds To Improve Continuous Delivery Pipeline Docker</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://songrgg.github.io/images/docker-build.webp" data-lightbox="roadtrip" data-title="How To Build The Smallest Docker Image As Fast As You Can Blog Songrgg">
+											<img class="card-img v-image ads-img " src="http://songrgg.github.io/images/docker-build.webp" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt-kv2x1NtkaryxzrZA5H_YCz29ZjeaBGlBA';" alt="How To Build The Smallest Docker Image As Fast As You Can Blog Songrgg">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Build The Smallest Docker Image As Fast As You Can Blog Songrgg</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-was-the-gi-bill.html">What Was The Gi Bill</a></li>
+													<li class="list-group-item"><a href="/which-gi-bill-is-right-for-me.html">Which Gi Bill Is Right For Me</a></li>
+													<li class="list-group-item"><a href="/what-was-the-purpose-of-the-gi-bill-quizlet.html">What Was The Purpose Of The Gi Bill Quizlet</a></li>
+													<li class="list-group-item"><a href="/when-does-the-gi-bill-book-stipend-come.html">When Does The Gi Bill Book Stipend Come</a></li>
+													<li class="list-group-item"><a href="/which-state-has-the-best-benefits-for-100-disabled-veterans.html">Which State Has The Best Benefits For 100 Disabled Veterans</a></li>
+													<li class="list-group-item"><a href="/what-were-the-gi-bill-of-rights.html">What Were The Gi Bill Of Rights</a></li>
+													<li class="list-group-item"><a href="/which-is-better-the-montgomery-gi-bill-or-post-911.html">Which Is Better The Montgomery Gi Bill Or Post 911</a></li>
+													<li class="list-group-item"><a href="/what-were-the-benefits-of-the-gi-bill-of-rights-quizlet.html">What Were The Benefits Of The Gi Bill Of Rights Quizlet</a></li>
+													<li class="list-group-item"><a href="/when-are-post-9-11-gi-bill-bah-payments-made.html">When Are Post 9 11 Gi Bill Bah Payments Made</a></li>
+													<li class="list-group-item"><a href="/when-was-the-gi-bill-created.html">When Was The Gi Bill Created</a></li>
+													<li class="list-group-item"><a href="/when-does-the-gi-bill-pay-housing.html">When Does The Gi Bill Pay Housing</a></li>
+													<li class="list-group-item"><a href="/when-does-a-bill-go-to-the-rules-committee.html">When Does A Bill Go To The Rules Committee</a></li>
+													<li class="list-group-item"><a href="/where-can-i-get-virginia-tax-forms.html">Where Can I Get Virginia Tax Forms</a></li>
+													<li class="list-group-item"><a href="/when-does-a-bill-go-to-the-supreme-court.html">When Does A Bill Go To The Supreme Court</a></li>
+													<li class="list-group-item"><a href="/when-does-the-montgomery-gi-bill-expire.html">When Does The Montgomery Gi Bill Expire</a></li>
+													<li class="list-group-item"><a href="/where-to-send-va-form-21-674.html">Where To Send Va Form 21 674</a></li>
+													<li class="list-group-item"><a href="/where-to-get-va-tax-forms.html">Where To Get Va Tax Forms</a></li>
+													<li class="list-group-item"><a href="/what-were-the-effects-of-the-gi-bill-quizlet.html">What Were The Effects Of The Gi Bill Quizlet</a></li>
+													<li class="list-group-item"><a href="/when-will-the-bill-go-to-the-house.html">When Will The Bill Go To The House</a></li>
+													<li class="list-group-item"><a href="/when-do-i-get-gi-bill-housing-allowance.html">When Do I Get Gi Bill Housing Allowance</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

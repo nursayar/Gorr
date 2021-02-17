@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>West Virginia Department Of Education Certification - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "West Virginia Department Of Education Certification",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/08/a2/de/08a2de25c66235a1a084833245f2d857.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=west+virginia+department+of+education+certification",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>West Virginia Department Of Education Certification</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Career Technical Education CTE programs are changing evolving and innovating to better serve West Virginias needs by preparing students to help drive our success and vitality. West Virginia uses applicants social security numbers to check the clearinghouse maintained by the National Association of State Directors of Teacher Education and Certification NASDTEC for license revocation cancellation suspension denial and reinstatement in other states. Visit the Safe and Supportive Schools section of the Safe Schools Toolkit website to review information about mental health services drug prevention bullying prevention suicide prevention and other important crisis assistance services. <br>				
+			</p>
+										<a class="badge badge-success" href="/how-to-use-montgomery-gi-bill-and-post-9-11.html">how to use montgomery gi bill and post 9 11</a>
+											<a class="badge badge-danger" href="/i-dont-know-what-college-to-go-to-reddit.html">i dont know what college to go to reddit</a>
+											<a class="badge badge-primary" href="/inpost-infolinia.html">inpost infolinia</a>
+											<a class="badge badge-secondary" href="/inflammatory-arthritis-va-disability.html">inflammatory arthritis va disability</a>
+											<a class="badge badge-secondary" href="/how-to-use-your-montgomery-gi-bill.html">how to use your montgomery gi bill</a>
+											<a class="badge badge-danger" href="/ibs-symptoms-va-rating.html">ibs symptoms va rating</a>
+											<a class="badge badge-warning" href="/how-to-use-your-gi-bill-for-college.html">how to use your gi bill for college</a>
+											<a class="badge badge-secondary" href="/i-am-100-disabled-veteran.html">i am 100 disabled veteran</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you've come to visit the ideal site.  Our site provides you with suggestions for viewing the maximum quality video and image content, hunt and locate more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, so we recommend this movie that you see.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/3e/82/d1/3e82d1623dcd31056ae71acfdad6c428.jpg" data-lightbox="roadtrip" data-title="Try The Following Exam Which Was Given In 1931 By The West Virginia Department Of Education To Students Seeki School Testing Teacher Discounts Education Today">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/3e/82/d1/3e82d1623dcd31056ae71acfdad6c428.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtsglBsWYbBbNrlcOjykZO2TTkWWxGEGf49A';" alt="Try The Following Exam Which Was Given In 1931 By The West Virginia Department Of Education To Students Seeki School Testing Teacher Discounts Education Today">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Try The Following Exam Which Was Given In 1931 By The West Virginia Department Of Education To Students Seeki School Testing Teacher Discounts Education Today</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/8c/fb/83/8cfb83ee28b9957eaf160c05852c1fd5.jpg" data-lightbox="roadtrip" data-title="We Make You A High Quality Faux Professional License Card Or Membership Card Can Be For Professional License Certificate Of Completion Template Doctors Note">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/8c/fb/83/8cfb83ee28b9957eaf160c05852c1fd5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX7d75Nm-DDpfsnWEEHhgYTe7g_cQ-BnNDSg';" alt="We Make You A High Quality Faux Professional License Card Or Membership Card Can Be For Professional License Certificate Of Completion Template Doctors Note">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Make You A High Quality Faux Professional License Card Or Membership Card Can Be For Professional License Certificate Of Completion Template Doctors Note</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c5/c8/7b/c5c87b74baee580c295cae6e0cad2bbc.jpg" data-lightbox="roadtrip" data-title="Ged Certificate Template Degree Template Christmas Intended For Ged Certifi Certificate Templates Christmas Templates Certificate Of Participation Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c5/c8/7b/c5c87b74baee580c295cae6e0cad2bbc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj4K3Y5P0IY0Qq-mXLt31YLHH-Jup9HP73RQ';" alt="Ged Certificate Template Degree Template Christmas Intended For Ged Certifi Certificate Templates Christmas Templates Certificate Of Participation Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ged Certificate Template Degree Template Christmas Intended For Ged Certifi Certificate Templates Christmas Templates Certificate Of Participation Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ad/7d/0b/ad7d0bd995eb88fdb04a3779c9f1d04c.png" data-lightbox="roadtrip" data-title="Pin On Fake United States Degree">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ad/7d/0b/ad7d0bd995eb88fdb04a3779c9f1d04c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuiWCvLHGOEEbD02LWgdxUTfl64MMmgL6lrg';" alt="Pin On Fake United States Degree">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Fake United States Degree</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/ac/ac/50acacd273bb1b399acb3f3f64550f03.png" data-lightbox="roadtrip" data-title="Fake Ged Diploma Sample Fakeadiploma Com Diploma High School Equivalency High School Diploma">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/ac/ac/50acacd273bb1b399acb3f3f64550f03.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLAP-0ea1OlBuBDW-1ET11R-JzPc1HtWWliw';" alt="Fake Ged Diploma Sample Fakeadiploma Com Diploma High School Equivalency High School Diploma">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fake Ged Diploma Sample Fakeadiploma Com Diploma High School Equivalency High School Diploma</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8f/f8/da/8ff8da796eff2003fa42b7d243694c8f.png" data-lightbox="roadtrip" data-title="How To Get A Fake Temple University Diploma In A Week Fakeadiploma Com University Diploma Temple University Clinical Psychology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8f/f8/da/8ff8da796eff2003fa42b7d243694c8f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY1a8E-HAjrzY_j3carYl8KIIyo9A1YO7ykA';" alt="How To Get A Fake Temple University Diploma In A Week Fakeadiploma Com University Diploma Temple University Clinical Psychology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Get A Fake Temple University Diploma In A Week Fakeadiploma Com University Diploma Temple University Clinical Psychology</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/cc/19/45/cc194505e72c68ec1fcfa1f4d79cf625.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY1a8E-HAjrzY_j3carYl8KIIyo9A1YO7ykA';" alt="How To Get A Fake Temple University Diploma In A Week Fakeadiploma Com University Diploma Temple University Clinical Psychology">
+										<div class="card-body">
+						<h3 class="h5"><b>Please mail this form to the Office of Licensure Department of Education P.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>West virginia department of education certification</strong>. 
+								
+																	Our goal is to provide a statewide system of education that ensures all students graduate from high school prepared for success in college andor careers. 
+																	Advanced Career Education ACE offers credentials certifications and licenses in growing industries across the state to make you more valuable in todays job market. 
+																	This certification is overseen and administered by the West Virginia Department of Education which ensures that all those in charge of educating minors in the state are not only qualified and have the skills and knowledge to do so but are ready for the challenges of educating the future of our nation. 
+																	Certification The Office of Certification and Professional Preparation at the West Virginia Department of Education is tasked with the approval of all permits authorizations and certifications for licensure. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Further CTE is creating an educational environment that integrates core academics with real-world relevance. 
+																	Box 2120 Richmond VA 23218-2120. 
+																	3 With an estimated 19356 teachers this gave West Virginia a student-to-teacher ratio of 141. 
+																	The Department of Education prepares teachers in Early Childhood Special Education grades PreK-K Elementary Education grades K-6 Special Education Multi-Categorical excluding Autism grades K-Adult and Secondary Education content specializations grades 5-adult and PreK-Adult. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Clayton Burch State Superintendent of Schools Miller L. 
+																	Your Future Your Career Your Way Are you looking for the skills to get a high-demand high-wage high-tech job in West Virginia. 
+																	Original certification is for 3 years. 
+																	Alternative certification is an alternate pathway to teacher certification that is only available to fill critical need and shortage areas in West Virginia public schools. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	School districts with approved alternative certification programs may offer employment to eligible individuals for positions that have been posted at least twice for a minimal ten-day period and for which no fully. 
+																	Please do not send other documents with the request. 
+																	Start your career today. 
+																	The West Virginia Department of Education offers a variety of resources aimed at supporting the safety and well-being of students. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	An annual 8 hour refresher course maintains certification. 
+																	West Virginia uses applicants social security numbers to check the clearinghouse maintained by the National Association of State Directors of Teacher Education and Certification NASDTEC for license revocation cancellation suspension denial and reinstatement in other states. 
+																	Teacher preparation programs are offered by accredited colleges or universities and give candidates the knowledge and experience to become successful teachers one day. 
+																	The Office of Certification at the West Virginia Department of Education provides for the approval of all permits authorizations and certifications for licensure for educators who wish to work in West Virginias public schools. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You may contact the Office of Certification at. 
+																	Visit the Department of Education for further details on West Virginia teacher certification. 
+																	The West Virginia Department of Education offers certification in special education to those who meet the proficiency score on required state competency exams in special education content and the state exam in pedagogy Praxis Principles of Learning and Teaching for the levels in which the applicant wishes to teach. 
+																	West Virginia Teacher Outlook Salary and Jobs During the 2016-2017 academic year there were an estimated 273855 students enrolled in West Virginias 739 K-12 public schools. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	West Virginia Department of Education 1900 Kanawha Boulevard East Charleston West Virginia Phone. 
+																	State-Approved Alternative Teacher Certification Programs The West Virginia Department of Education WVDE continuously strives to assist school districts in their efforts to promote recruit and retain a highly effective and diverse workforce. 
+																	The WVDE also approves several additional masters degree and certification programs offered by West Virginia Universitys Department of Special Education in areas including autism spectrum disorders gifted education early childhood special education severemultiple disabilities and low visionblindness. 
+																	WVBE Policy 5202 provides official guidance and requirements for licensure. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The West Virginia Department of Education is a government agency that oversees the public school system in West Virginia which is responsible for the education of more than 273000 students in more than 700 schools with 20000 teachers. 
+																	No fee is required. 
+																	The West Virginia Department of Education DOE requires potential teachers to complete approved teacher preparation programs before applying for certification. 
+																	Participants receive certification through the West Virginia Office of Miners Health Safety and Training. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Only this form is required. 
+																	Hall President West Virginia Board of Education Contact Info. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/90/8b/18908b7639160fd41c9fec41d50151bf.png" data-lightbox="roadtrip" data-title="Get A Carnegie Mellon University Fake Diploma Quickly Copy Fake Cm Materials Science And Engineering Advanced Mathematics Department Of Mechanical Engineering">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/90/8b/18908b7639160fd41c9fec41d50151bf.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg4uCGmxIcVSMtfWC8GutFwJWyjYAbD6H7PQ';" alt="Get A Carnegie Mellon University Fake Diploma Quickly Copy Fake Cm Materials Science And Engineering Advanced Mathematics Department Of Mechanical Engineering">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get A Carnegie Mellon University Fake Diploma Quickly Copy Fake Cm Materials Science And Engineering Advanced Mathematics Department Of Mechanical Engineering</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/b0/81/b8b081f47af0db5d77146f575d249429.jpg" data-lightbox="roadtrip" data-title="Rosemarie Lacoursiere Real Estate Broker Management Post Licensing Boca Raton Fl 1997 For Real Estate Education Education Certificate Florida Real Estate">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/b0/81/b8b081f47af0db5d77146f575d249429.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwGy9CnXWPJOnhzuBUoNaXW_PUNYCGrI35Zg';" alt="Rosemarie Lacoursiere Real Estate Broker Management Post Licensing Boca Raton Fl 1997 For Real Estate Education Education Certificate Florida Real Estate">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rosemarie Lacoursiere Real Estate Broker Management Post Licensing Boca Raton Fl 1997 For Real Estate Education Education Certificate Florida Real Estate</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ee/d6/9d/eed69d245d5006734ef982664390c54c.jpg" data-lightbox="roadtrip" data-title="Pin On Hbcus Midatlantic Ohio West Virginia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ee/d6/9d/eed69d245d5006734ef982664390c54c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRca7THmbNh-1qobG-aaPHuC8KcejGReYQQgA';" alt="Pin On Hbcus Midatlantic Ohio West Virginia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Hbcus Midatlantic Ohio West Virginia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/7b/d7/697bd71cf2e451a74d0f95bb79bb4664.jpg" data-lightbox="roadtrip" data-title="Va Boaters Safety Online Course Online Safety Safety Courses Boat Safety">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/7b/d7/697bd71cf2e451a74d0f95bb79bb4664.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZKemxbSdiaWC5CMN3ZTIMXkoZLFkg0pD3MA';" alt="Va Boaters Safety Online Course Online Safety Safety Courses Boat Safety">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Boaters Safety Online Course Online Safety Safety Courses Boat Safety</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/a2/de/08a2de25c66235a1a084833245f2d857.jpg" data-lightbox="roadtrip" data-title="Virginia Department Of Motor Vehicles Drivers License Learners Permit Drivers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/a2/de/08a2de25c66235a1a084833245f2d857.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFtqoMvd6k9JtSnlbc8LARET_YOQ10Rskfsg';" alt="Virginia Department Of Motor Vehicles Drivers License Learners Permit Drivers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Department Of Motor Vehicles Drivers License Learners Permit Drivers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/f6/45/cbf64573d920f6cbae1e72a0872dd23d.png" data-lightbox="roadtrip" data-title="Alumni Authors West Virginia State University Virginia State University West Virginia West Virginia University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/f6/45/cbf64573d920f6cbae1e72a0872dd23d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMxPGWIckGOoi2dcgDUWEGuoSjYr_V1MzpaQ';" alt="Alumni Authors West Virginia State University Virginia State University West Virginia West Virginia University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alumni Authors West Virginia State University Virginia State University West Virginia West Virginia University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/7d/3c/5d7d3cde255d898134c00b239baf9f34.png" data-lightbox="roadtrip" data-title="But What About Where To Buy Fake Vcu Diploma Fakeadiploma Com University Diploma College Rankings Virginia Commonwealth University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/7d/3c/5d7d3cde255d898134c00b239baf9f34.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqCwFbQXLNZq9ATy4DagR5ncSTdIDUxbT52w';" alt="But What About Where To Buy Fake Vcu Diploma Fakeadiploma Com University Diploma College Rankings Virginia Commonwealth University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">But What About Where To Buy Fake Vcu Diploma Fakeadiploma Com University Diploma College Rankings Virginia Commonwealth University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/fc/c6/9dfcc67af650d8f2df42ccdf37e7f411.png" data-lightbox="roadtrip" data-title="Printing The University Of Texas At Arlington Fake Degree Online Copy Fake Uta Diploma Fakeadipl School Of Engineering University Degree Engineering Colleges">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/fc/c6/9dfcc67af650d8f2df42ccdf37e7f411.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrenYzPiXtmnFr-XJ-qkOELljp-2KLMO_4mA';" alt="Printing The University Of Texas At Arlington Fake Degree Online Copy Fake Uta Diploma Fakeadipl School Of Engineering University Degree Engineering Colleges">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Printing The University Of Texas At Arlington Fake Degree Online Copy Fake Uta Diploma Fakeadipl School Of Engineering University Degree Engineering Colleges</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/92/f4/c692f4b2bacb8e8fcd6a6bc8a929a2c8.png" data-lightbox="roadtrip" data-title="Pin On Usa University Diploma Transcript">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/92/f4/c692f4b2bacb8e8fcd6a6bc8a929a2c8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUpHbLsHrLAUQBoi7bLhdJhASb8ryVhoSpvQ';" alt="Pin On Usa University Diploma Transcript">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Usa University Diploma Transcript</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/09/67/6a/09676a63dced7cc7504841c55fb74685.gif" data-lightbox="roadtrip" data-title="Mary Brewer Canterbury 1862 1931 Find A Grave Photos West Virginia Grave Memorials Virginia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/09/67/6a/09676a63dced7cc7504841c55fb74685.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqopDvfy8D-P81TLmZMB_99HwZZLQxoilaWg';" alt="Mary Brewer Canterbury 1862 1931 Find A Grave Photos West Virginia Grave Memorials Virginia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mary Brewer Canterbury 1862 1931 Find A Grave Photos West Virginia Grave Memorials Virginia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/e0/76/c9e076c1027a255bf1e5890309ba34dd.png" data-lightbox="roadtrip" data-title="Buy A Fake Miami University Diploma Online Fakeadiploma Com University Of Miami University Diploma Diploma Online">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/e0/76/c9e076c1027a255bf1e5890309ba34dd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmYSf6YdWDjPAuZI0WsC5xmdB1HLwLMZMINQ';" alt="Buy A Fake Miami University Diploma Online Fakeadiploma Com University Of Miami University Diploma Diploma Online">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Buy A Fake Miami University Diploma Online Fakeadiploma Com University Of Miami University Diploma Diploma Online</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/19/45/cc194505e72c68ec1fcfa1f4d79cf625.jpg" data-lightbox="roadtrip" data-title="Interpreting Your Ancestor S Civil War Pension File The Pension Certificate Civil War Pensions War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/19/45/cc194505e72c68ec1fcfa1f4d79cf625.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSogOEkItVU174eLUst7hxpVsRmbc2CYgKKgw';" alt="Interpreting Your Ancestor S Civil War Pension File The Pension Certificate Civil War Pensions War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Interpreting Your Ancestor S Civil War Pension File The Pension Certificate Civil War Pensions War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/1c/e0/501ce03c1659371614442d3ea532c8ec.png" data-lightbox="roadtrip" data-title="What Is The Cost Of The University Of The Free State Fake Degree In South Africa Buy Certificate Buy University Diploma College Diploma High School Diploma">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/1c/e0/501ce03c1659371614442d3ea532c8ec.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyCuu175nAPWyFqIlnQREULTIGj0p-yIBiCg';" alt="What Is The Cost Of The University Of The Free State Fake Degree In South Africa Buy Certificate Buy University Diploma College Diploma High School Diploma">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is The Cost Of The University Of The Free State Fake Degree In South Africa Buy Certificate Buy University Diploma College Diploma High School Diploma</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-long-do-veterans-get-health-insurance.html">How Long Do Veterans Get Health Insurance</a></li>
+													<li class="list-group-item"><a href="/how-does-the-gi-bill-kicker-work.html">How Does The Gi Bill Kicker Work</a></li>
+													<li class="list-group-item"><a href="/how-do-i-get-my-montgomery-gi-bill-money-back.html">How Do I Get My Montgomery Gi Bill Money Back</a></li>
+													<li class="list-group-item"><a href="/how-do-i-get-gi-bill-certificate-of-eligibility.html">How Do I Get Gi Bill Certificate Of Eligibility</a></li>
+													<li class="list-group-item"><a href="/how-do-i-apply-for-the-gi-bill-benefits.html">How Do I Apply For The Gi Bill Benefits</a></li>
+													<li class="list-group-item"><a href="/how-does-va-rate-hypertension.html">How Does Va Rate Hypertension</a></li>
+													<li class="list-group-item"><a href="/how-do-i-switch-from-montgomery-gi-bill-to-post-9-11.html">How Do I Switch From Montgomery Gi Bill To Post 9 11</a></li>
+													<li class="list-group-item"><a href="/how-does-the-gi-bill-pay-you.html">How Does The Gi Bill Pay You</a></li>
+													<li class="list-group-item"><a href="/how-does-bah-work-with-gi-bill.html">How Does Bah Work With Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-does-gi-bill-work-for-reserves.html">How Does Gi Bill Work For Reserves</a></li>
+													<li class="list-group-item"><a href="/how-do-i-check-my-va-disability-rating-online.html">How Do I Check My Va Disability Rating Online</a></li>
+													<li class="list-group-item"><a href="/how-long-after-medical-exam-for-va-disability.html">How Long After Medical Exam For Va Disability</a></li>
+													<li class="list-group-item"><a href="/how-is-the-post-9-11-gi-bill-book-stipend-paid.html">How Is The Post 9 11 Gi Bill Book Stipend Paid</a></li>
+													<li class="list-group-item"><a href="/how-does-va-disability-rating-work.html">How Does Va Disability Rating Work</a></li>
+													<li class="list-group-item"><a href="/how-do-you-transfer-your-post-9-11-gi-bill.html">How Do You Transfer Your Post 9 11 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-do-i-switch-from-montgomery-gi-bill-to-post-911.html">How Do I Switch From Montgomery Gi Bill To Post 911</a></li>
+													<li class="list-group-item"><a href="/how-long-does-a-va-appeal-take-2018.html">How Long Does A Va Appeal Take 2018</a></li>
+													<li class="list-group-item"><a href="/how-do-i-transfer-post-911-gi-bill.html">How Do I Transfer Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-do-i-transfer-my-montgomery-gi-bill-to-post-9-11.html">How Do I Transfer My Montgomery Gi Bill To Post 9 11</a></li>
+													<li class="list-group-item"><a href="/how-do-i-get-the-gi-bill.html">How Do I Get The Gi Bill</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

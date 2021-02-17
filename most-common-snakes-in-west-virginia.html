@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Most Common Snakes In West Virginia - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Most Common Snakes In West Virginia",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/db/1b/ac/db1bac6ba4dd9012a3a30c2fd746f374.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=most+common+snakes+in+west+virginia",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Most Common Snakes In West Virginia</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">A study done between 2000 and 2013 found the most venomous snakes reside in Georgia Louisiana North Carolina Oklahoma West Virginia Florida and Texas. Instead the tend to build the flat orb webs in the yard and remain stationary most of the day. If you can find wetlands and woodlands preferably a happy combination of the two close together. <br>				
+			</p>
+										<a class="badge badge-dark" href="/gi-bill-new-york-city.html">gi bill new york city</a>
+											<a class="badge badge-dark" href="/gi-bill-top-up-application.html">gi bill top up application</a>
+											<a class="badge badge-dark" href="/gi-bill-summer.html">gi bill summer</a>
+											<a class="badge badge-success" href="/gi-bill-mha-rates-calculator.html">gi bill mha rates calculator</a>
+											<a class="badge badge-dark" href="/gi-bill-student-housing-allowance.html">gi bill student housing allowance</a>
+											<a class="badge badge-secondary" href="/gi-bill-verify-attendance.html">gi bill verify attendance</a>
+											<a class="badge badge-success" href="/gi-bill-stipend-for-online-students.html">gi bill stipend for online students</a>
+											<a class="badge badge-primary" href="/gi-poso.html">gi poso</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to visit the ideal site.  Our website provides you with suggestions for viewing the highest quality video and picture content, hunt and locate more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, especially Youtube, therefore we recommend this movie that you view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7b/4e/44/7b4e44f0141934b8d9dcb0a4a696e039.jpg" data-lightbox="roadtrip" data-title="Copper Head Snake In Wv West Virginia History West Virginia Snake">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7b/4e/44/7b4e44f0141934b8d9dcb0a4a696e039.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl9vjrondyg9yoRpneSYWE33IBjJhidnAGmQ';" alt="Copper Head Snake In Wv West Virginia History West Virginia Snake">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Copper Head Snake In Wv West Virginia History West Virginia Snake</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/3c/0f/703c0f5fa75d2dfa5524aa1380136ae4.jpg" data-lightbox="roadtrip" data-title="Northern Copperhead Snake In Morgan County West Virginia Snake Poisonous Snakes Reptiles And Amphibians">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/3c/0f/703c0f5fa75d2dfa5524aa1380136ae4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuoeuvgBdIxfI88yL9hFh3vXQ5ZyX2RcR8HQ';" alt="Northern Copperhead Snake In Morgan County West Virginia Snake Poisonous Snakes Reptiles And Amphibians">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Northern Copperhead Snake In Morgan County West Virginia Snake Poisonous Snakes Reptiles And Amphibians</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/3a/2b/063a2bd205f01980244fc9bd12ff8c20.jpg" data-lightbox="roadtrip" data-title="Copper Head Snake In Wv West Virginia History Virginia Mountains West Virginia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/3a/2b/063a2bd205f01980244fc9bd12ff8c20.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNHliQxB7ALBMwbptNZAtgDMYABtxQUhEIUg';" alt="Copper Head Snake In Wv West Virginia History Virginia Mountains West Virginia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Copper Head Snake In Wv West Virginia History Virginia Mountains West Virginia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/2e/4f/a62e4fc37e15010424360a3ce5fea093.jpg" data-lightbox="roadtrip" data-title="Access Denied Garden Snakes Reptiles And Amphibians Forest Girl">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/2e/4f/a62e4fc37e15010424360a3ce5fea093.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR21djupfJsLEgtD_7Q4yf60EgmZ2R3CfbEvw';" alt="Access Denied Garden Snakes Reptiles And Amphibians Forest Girl">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Access Denied Garden Snakes Reptiles And Amphibians Forest Girl</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/3e/3e/7f3e3ec830db2a6e5edd97f78e1c6814.jpg" data-lightbox="roadtrip" data-title="West Virginia S State Reptile The Timber Rattlesnake North American Wildlife Animals West Virginia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/3e/3e/7f3e3ec830db2a6e5edd97f78e1c6814.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG9P38nqVCRm7pDNWCy8awQ9_i4JExtd1TfA';" alt="West Virginia S State Reptile The Timber Rattlesnake North American Wildlife Animals West Virginia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">West Virginia S State Reptile The Timber Rattlesnake North American Wildlife Animals West Virginia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/d2/8e/75d28e8dcaa01d3602f4835164dbb002.jpg" data-lightbox="roadtrip" data-title="Clay County Snake West Virginia History West Virginia Mountains West Virginia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/d2/8e/75d28e8dcaa01d3602f4835164dbb002.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Ez4PVXq44E2n_NtJqW0eliPOj_t72nKfhg';" alt="Clay County Snake West Virginia History West Virginia Mountains West Virginia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Clay County Snake West Virginia History West Virginia Mountains West Virginia</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/75/d2/8e/75d28e8dcaa01d3602f4835164dbb002.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Ez4PVXq44E2n_NtJqW0eliPOj_t72nKfhg';" alt="Clay County Snake West Virginia History West Virginia Mountains West Virginia">
+										<div class="card-body">
+						<h3 class="h5"><b>Always be on the lookout in case one shows up in your area.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Most common snakes in west virginia</strong>. 
+								
+																	Up to 80 young approximately three inches in length may be produced. 
+																	Our most common one the northern watersnake lives along rivers streams and suburban ponds across Virginia. 
+																	The eastern smooth green snake adult is from 12-24 long. 
+																	Pictures and Identification Help Racers and Whipsnakes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The copperhead is the venomous snake that tends to bite the most people. 
+																	Ratsnakes are very common in West Virginia and are found statewide. 
+																	Common Spiders of West Virginia Of all the spiders presented the orbweavers are least likely to wander into the house. 
+																	Others such as the Cornsnake and Northern Pinesnake have only been documented a few times over the years. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In this state most common venomous snakes are rattlesnakes 7 out of 8 and there is one venomous coral snake. 
+																	The Northern Copperhead boasts hourglass-like banding patterns on its body and a copper-colored head. 
+																	Click the names or pictures below to see detailed information about the. 
+																	Today my son drove me out to an area with tin so I can try flipping for snakes today. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This one looks a. 
+																	Kingsnakes and Milk Snakes. 
+																	More commonly known as the Black Rat Snake this snake is Virginias longest native snake capable of reaching up to 8 feet in length. 
+																	Sipedon C Northern brown snake Storeria d. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They may attain a length of four feet and are frequently encountered in meadows marshes hillsides and city lots or buildings where they feed on any small animal they can catch. 
+																	They have been observed from the lowest elevations up to 3760 feet Green and Pauley 1987. 
+																	Three types of spiders in the orbweaver category frequent back yards in west Virginia during the late spring and early summer. 
+																	Order Squamata scaled reptiles Queen snake Regina septemvittata C Northern water snake Nerodia s. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Timber Rattlesnake and the Northern Copperhead. 
+																	It is one of the most commonly encountered snakes on the East Coast and can regularly be found in close proximity to humans and their homes. 
+																	The Black Ratsnake is nonvenomous. 
+																	It gets its name from ridges on the back scales. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Smooth Green Rough. 
+																	Black Racer Coluber constrictor is the general name for one of the most widespread of all the. 
+																	Avoiding Snake Encounters Of the roughly 20 species of snakes found in West Virginia only two species are venomous. 
+																	Eastern Kingsnakes Lampropeltis getula in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dekayi U Northern redbelly snake Storeria o. 
+																	Its been a little cold so tune in next time. 
+																	West Virginia is home to two families of snakes Colubridae and ViperidaeIn West Virginia these two families represent some 20-21 species in total of these only two the Timber Rattlesnake and Northern Copperhead are considered to pose a serious risk to humans. 
+																	Northern Copperheads and Timber Rattlesnakes can be found in the Appalachian Mountains running through West Virginia and are sometimes encountered by hikers on the trail. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The good news is that its venom is the least toxic and so youre likely to survive the encounter. 
+																	804-621-7450 Northern Brown Snake. 
+																	Venomous snakes in West Virginia. 
+																	They are green and have smooth scales all over. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This subspecies of brown snake is one that eats snails slugs and earthworms as well as other bugs. 
+																	Watersnakes are nonvenomous swimming serpents. 
+																	If its not swimming its basking on a. 
+																	A program aimed to keep citizens informed about the inner workings and various duties and issues facing the West Virginia Department of Natural Resources. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In com - parison the rough green snake is from 2 to nearly 4 long. 
+																	The eastern smooth green snake is found in the more. 
+																	Red Venomous Yellow Mildly Venomous Green Non-Venomous. 
+																	Some of West Virginias snakes are very common such as the Eastern Gartersnake and Black Ratsnake and can be found all over even in backyards. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ratsnakes have round pupils and pronounced labial lines around the mouth. 
+																	ThreeLampropeltis species inhabit West Virginia. 
+																	When it comes to the rate of snake bites per million it is 3039 in New Mexico. 
+																	Sauritus U Eastern garter snake. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	West Virginia has two species of green snakes. 
+																	Occipitomaculata C Eastern ribbon snake Thamnophis s. 
+																	Of the two types of venomous snakes found in West Virginia Northern Copperheads are more common. 
+																	Gartersnakes are common in West Virginia. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Its perhaps most frequently seen of West Virginias snakes and loves to climb. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/81/b9/d581b92317062a05164741c430dcc33e.jpg" data-lightbox="roadtrip" data-title="How To Identify The Copperhead Ehow Snake Venom Snake Poisonous Snakes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/81/b9/d581b92317062a05164741c430dcc33e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYIOx-6gvlhZFF0Yecgjqn8so4NNRpMM518Q';" alt="How To Identify The Copperhead Ehow Snake Venom Snake Poisonous Snakes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Identify The Copperhead Ehow Snake Venom Snake Poisonous Snakes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/1b/ac/db1bac6ba4dd9012a3a30c2fd746f374.jpg" data-lightbox="roadtrip" data-title="Pin On Snakes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/1b/ac/db1bac6ba4dd9012a3a30c2fd746f374.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRII9Tu0cwPv3G-SJ0kus15UioLQ8I0KTC2tw';" alt="Pin On Snakes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Snakes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/29/03/ac2903398dadc6d76883b2823ed6b8fd.jpg" data-lightbox="roadtrip" data-title="Kentucky Snake Identification Site Rat Snake Snake Kentucky">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/29/03/ac2903398dadc6d76883b2823ed6b8fd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwWhEnAm4GoTb4K88kzjCxyZ3IjdxHK-FhGw';" alt="Kentucky Snake Identification Site Rat Snake Snake Kentucky">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kentucky Snake Identification Site Rat Snake Snake Kentucky</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c0/52/96/c052967881637bf515cb2bf033608b37.jpg" data-lightbox="roadtrip" data-title="Eastern Hognose Snake Hognose Snake Snake West Virginia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c0/52/96/c052967881637bf515cb2bf033608b37.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLA0wGelFMbIvb86UpftBdJIGKMoe_upNSng';" alt="Eastern Hognose Snake Hognose Snake Snake West Virginia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Eastern Hognose Snake Hognose Snake Snake West Virginia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/e7/57/6fe757e98c6736831a2c1ff2b96f4e4f.jpg" data-lightbox="roadtrip" data-title="Common Kentucky Snakes Red Milk Snake In Rock Fissure Milk Snake Beautiful Snakes Reptiles And Amphibians">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/e7/57/6fe757e98c6736831a2c1ff2b96f4e4f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ42bCw83Ev9cAmz4F6ntIRxlKFGJOdYVLyjQ';" alt="Common Kentucky Snakes Red Milk Snake In Rock Fissure Milk Snake Beautiful Snakes Reptiles And Amphibians">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Common Kentucky Snakes Red Milk Snake In Rock Fissure Milk Snake Beautiful Snakes Reptiles And Amphibians</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/cd/28/bf/cd28bf10e480f865de91da5d2aa5dfa4.jpg" data-lightbox="roadtrip" data-title="Meet New Jersey S 22 Snake Species West Virginia Snake Species">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/cd/28/bf/cd28bf10e480f865de91da5d2aa5dfa4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRScdcIc3c3fQ9DWpJcGzQg_4AwcEKqquf4Cw';" alt="Meet New Jersey S 22 Snake Species West Virginia Snake Species">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meet New Jersey S 22 Snake Species West Virginia Snake Species</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/61/ec/4d/61ec4d04d0bc76d5492c14d458da640b.jpg" data-lightbox="roadtrip" data-title="10 Species Of Snakes Commonly Spotted In West Virginia And What To Do If You See Them West Virginia West Virginia Mountains Types Of Snake">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/61/ec/4d/61ec4d04d0bc76d5492c14d458da640b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS02oz832onwziPDlwMeGSpi8otZd8XjLRdog';" alt="10 Species Of Snakes Commonly Spotted In West Virginia And What To Do If You See Them West Virginia West Virginia Mountains Types Of Snake">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Species Of Snakes Commonly Spotted In West Virginia And What To Do If You See Them West Virginia West Virginia Mountains Types Of Snake</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b6/67/d3/b667d39ca625bddc9771f8d10a9e533b.jpg" data-lightbox="roadtrip" data-title="Northern Copperhead In 2020 West Virginia Pit Viper Lizard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b6/67/d3/b667d39ca625bddc9771f8d10a9e533b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSylWd4B_mtmF9rgEEUwdpH1QqNoRvvrWdxkA';" alt="Northern Copperhead In 2020 West Virginia Pit Viper Lizard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Northern Copperhead In 2020 West Virginia Pit Viper Lizard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/29/d1/e8/29d1e8456e726a21bb66c07546dffae9.jpg" data-lightbox="roadtrip" data-title="Pin On Almost Heaven Wv">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/29/d1/e8/29d1e8456e726a21bb66c07546dffae9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPIrWwPMU3RKcz73lulHvAracdFXWjYVesIw';" alt="Pin On Almost Heaven Wv">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Almost Heaven Wv</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/d9/70/4cd9705a1bd6cafd9a6ae2aa1f9102cb.jpg" data-lightbox="roadtrip" data-title="Fauna Black Or Dark Phase Timber Rattlesnake Crotalus Reptiles And Amphibians Beautiful Snakes Rattlesnake">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/d9/70/4cd9705a1bd6cafd9a6ae2aa1f9102cb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ96QyBnhdZcZWjS5SAy62AqQkIdzKwzcUdtg';" alt="Fauna Black Or Dark Phase Timber Rattlesnake Crotalus Reptiles And Amphibians Beautiful Snakes Rattlesnake">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fauna Black Or Dark Phase Timber Rattlesnake Crotalus Reptiles And Amphibians Beautiful Snakes Rattlesnake</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a2/1f/ba/a21fbab743aa13e0ca842d8364c0009d.jpg" data-lightbox="roadtrip" data-title="If You Do See A Snake Whether Harmless Or Venomous Your Best Course Of Action Is To Leave It Be Snake West Virginia Virginia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a2/1f/ba/a21fbab743aa13e0ca842d8364c0009d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUJkQ_H-2S18Vgs1GbOYRT_OV_DOfv-rGPOA';" alt="If You Do See A Snake Whether Harmless Or Venomous Your Best Course Of Action Is To Leave It Be Snake West Virginia Virginia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Do See A Snake Whether Harmless Or Venomous Your Best Course Of Action Is To Leave It Be Snake West Virginia Virginia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/71/5e/4e/715e4e0b386f7707b4fc3ab58e1ca5e4.jpg" data-lightbox="roadtrip" data-title="Storeria Occipitomaculata Redbelly Snake Snake West Virginia Reptiles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/71/5e/4e/715e4e0b386f7707b4fc3ab58e1ca5e4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5n_BJtjC6TvJB96XeZvYImbetQL2ZX7Eaqw';" alt="Storeria Occipitomaculata Redbelly Snake Snake West Virginia Reptiles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Storeria Occipitomaculata Redbelly Snake Snake West Virginia Reptiles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/38/3a/50383af78e3e617f7f0f4bbc7f856047.jpg" data-lightbox="roadtrip" data-title="Kentucky Snake Identification Site Pet Snake Rat Snake Snake">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/38/3a/50383af78e3e617f7f0f4bbc7f856047.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIWzkTCSk74Bmghz50Xhy1hmvYWtoJ0rCrzA';" alt="Kentucky Snake Identification Site Pet Snake Rat Snake Snake">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kentucky Snake Identification Site Pet Snake Rat Snake Snake</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-compensation-vs-va-pension.html">Va Compensation Vs Va Pension</a></li>
+													<li class="list-group-item"><a href="/va-disability-and-gi-bill-bah.html">Va Disability And Gi Bill Bah</a></li>
+													<li class="list-group-item"><a href="/va-disability-100-and-working.html">Va Disability 100 And Working</a></li>
+													<li class="list-group-item"><a href="/va-disability-chart-math.html">Va Disability Chart Math</a></li>
+													<li class="list-group-item"><a href="/va-cp-exam-for-increase.html">Va Cp Exam For Increase</a></li>
+													<li class="list-group-item"><a href="/va-covid-percent-positive.html">Va Covid Percent Positive</a></li>
+													<li class="list-group-item"><a href="/va-department-of-education-sols.html">Va Department Of Education Sols</a></li>
+													<li class="list-group-item"><a href="/va-dept-of-education-sols.html">Va Dept Of Education Sols</a></li>
+													<li class="list-group-item"><a href="/va-disability-calculator-by-condition.html">Va Disability Calculator By Condition</a></li>
+													<li class="list-group-item"><a href="/va-disability-calculator-excel.html">Va Disability Calculator Excel</a></li>
+													<li class="list-group-item"><a href="/va-covid-rate-of-infection.html">Va Covid Rate Of Infection</a></li>
+													<li class="list-group-item"><a href="/va-disability-compensation-and-food-stamps.html">Va Disability Compensation And Food Stamps</a></li>
+													<li class="list-group-item"><a href="/va-disability-calculator-2020.html">Va Disability Calculator 2020</a></li>
+													<li class="list-group-item"><a href="/va-diabetes-rating-guidelines.html">Va Diabetes Rating Guidelines</a></li>
+													<li class="list-group-item"><a href="/va-disability-allergies.html">Va Disability Allergies</a></li>
+													<li class="list-group-item"><a href="/va-disability-calculator-made-easy.html">Va Disability Calculator Made Easy</a></li>
+													<li class="list-group-item"><a href="/va-department-of-correctional-education.html">Va Department Of Correctional Education</a></li>
+													<li class="list-group-item"><a href="/va-dept-of-education-covid.html">Va Dept Of Education Covid</a></li>
+													<li class="list-group-item"><a href="/va-compensation-tension-headaches.html">Va Compensation Tension Headaches</a></li>
+													<li class="list-group-item"><a href="/va-disability-ankle-rating.html">Va Disability Ankle Rating</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

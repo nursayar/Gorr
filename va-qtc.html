@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Qtc - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Qtc",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/d5/2a/d6/d52ad6fb7ff4371bbc248b2515c67eb3.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+qtc",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Qtc</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">It is our utmost mission to ensure your individual and collective health and safety. Call 1-800-682-9701 if you need further assistance. Periodic Health Assessment PHA Post-Deployment Health Reassessment PDHRA Individual Medical Readiness IMR services. <br>				
+			</p>
+										<a class="badge badge-danger" href="/air-force-gd-pilot-test-2020.html">air force gd pilot test 2020</a>
+											<a class="badge badge-light" href="/9-gmt-to-wib.html">9 gmt to wib</a>
+											<a class="badge badge-primary" href="/888-gibill-1.html">888 gibill 1</a>
+											<a class="badge badge-danger" href="/9-game-store.html">9 game store</a>
+											<a class="badge badge-primary" href="/9-gbp.html">9 gbp</a>
+											<a class="badge badge-dark" href="/9-gipsy-lane-kettering.html">9 gipsy lane kettering</a>
+											<a class="badge badge-primary" href="/80-rating-from-va.html">80 rating from va</a>
+											<a class="badge badge-secondary" href="/air-force-adls-go-learn.html">air force adls go learn</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you have come to pay a visit to the right blog.  Our website gives you suggestions for viewing the highest quality video and image content, search and find more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, particularly Youtube, therefore we recommend this video for you to see.  It is also possible to bring about supporting this site by sharing videos and images that you enjoy on this site on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/2a/d6/d52ad6fb7ff4371bbc248b2515c67eb3.jpg" data-lightbox="roadtrip" data-title="Camera Ban Cầu Chống Va đập Questek Qtc 301c Sắt">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/2a/d6/d52ad6fb7ff4371bbc248b2515c67eb3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuX1ftNujJJZZ3SnycnbV-JFXvADpwkNBkjQ';" alt="Camera Ban Cầu Chống Va đập Questek Qtc 301c Sắt">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Camera Ban Cầu Chống Va đập Questek Qtc 301c Sắt</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/a0/6e/e2/a06ee2c7069f466a2fb949e433ef636c.jpg" data-lightbox="roadtrip" data-title="8 Magnificent Tips And Tricks Yogasana To Stop Snoring How To Get Rid Of Sleep Apnea Child Snoring Home Remedies Va Disability Asthma And Sleep Apnea What To D">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/a0/6e/e2/a06ee2c7069f466a2fb949e433ef636c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQg0-02Cviv4x_CesmVRaixpOh44bpgF4ihQ';" alt="8 Magnificent Tips And Tricks Yogasana To Stop Snoring How To Get Rid Of Sleep Apnea Child Snoring Home Remedies Va Disability Asthma And Sleep Apnea What To D">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">8 Magnificent Tips And Tricks Yogasana To Stop Snoring How To Get Rid Of Sleep Apnea Child Snoring Home Remedies Va Disability Asthma And Sleep Apnea What To D</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/15/76/d4/1576d45f707e33002ea2238b08359561.jpg" data-lightbox="roadtrip" data-title="9 Smart Cool Tips The Machine To Stop Snoring Snoring Even When Sleeping On Side Qtc Sleep Apnea Exam Guaranteed Stop Snoring Just Started Snoring What Causes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/15/76/d4/1576d45f707e33002ea2238b08359561.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLoUQcIz5H3DAq5wtgpndSvj3KpfmsK_4CWA';" alt="9 Smart Cool Tips The Machine To Stop Snoring Snoring Even When Sleeping On Side Qtc Sleep Apnea Exam Guaranteed Stop Snoring Just Started Snoring What Causes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">9 Smart Cool Tips The Machine To Stop Snoring Snoring Even When Sleeping On Side Qtc Sleep Apnea Exam Guaranteed Stop Snoring Just Started Snoring What Causes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/89/ca/f189cafd515a4560d3558e4586c3a693.png" data-lightbox="roadtrip" data-title="Pin En Cardiologia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/89/ca/f189cafd515a4560d3558e4586c3a693.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnPN8cqA1ic6XcXf-4XkYO_a3K13dj9COmg';" alt="Pin En Cardiologia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin En Cardiologia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/cf/6d/f2cf6d156d1053be4dc31ed35311c603.jpg" data-lightbox="roadtrip" data-title="Pin On Ob Nursing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/cf/6d/f2cf6d156d1053be4dc31ed35311c603.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_f0hZChPEUD4c2aTTxjh2d7dn_Sg3r5-ADQ';" alt="Pin On Ob Nursing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ob Nursing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2e/9d/3f/2e9d3f540af9056284eb0c0a05e28d74.jpg" data-lightbox="roadtrip" data-title="10 Best Motivational Quotes In Sanskrit Sanskrit Quotes Best Motivational Quotes Gita Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2e/9d/3f/2e9d3f540af9056284eb0c0a05e28d74.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROFtQaAB1Tvf01d375Vv3YLDrqmleNO8HWFQ';" alt="10 Best Motivational Quotes In Sanskrit Sanskrit Quotes Best Motivational Quotes Gita Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Best Motivational Quotes In Sanskrit Sanskrit Quotes Best Motivational Quotes Gita Quotes</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/474x/f3/0b/05/f30b050a9096b8f06474c6f400e7d383.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROFtQaAB1Tvf01d375Vv3YLDrqmleNO8HWFQ';" alt="10 Best Motivational Quotes In Sanskrit Sanskrit Quotes Best Motivational Quotes Gita Quotes">
+										<div class="card-body">
+						<h3 class="h5"><b>QTC uses its customized systematic operational workflow to manage operations and help VA achieve efficiency and accuracy goals.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va qtc</strong>. 
+								
+																	Department of Veterans Affairs VA to continue to provide medical disability examinations for the Veterans Benefits Administration VBA. 
+																	Order Online Tickets Tickets See Availability Directions locationtagLinevaluetext Sponsored Topics. 
+																	So to that extent if you have a claim that is being appealed and a VA CP exam is needed a QTC doctor will likely do the exam if the VAMC and VARO in that area have a contract with QTC. 
+																	If you havent received an email please contact one of our QTC representatives. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Any delay in that process means veterans must wait additional daysor even weeks for their much-needed benefits. 
+																	Every day this process seems like a cat and mouse chase. 
+																	Get directions reviews and information for QTC Medical Group in Virginia Beach VA. 
+																	QTC a Leidos NYSELDOS company was awarded its second prime contract by the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	QTC is nothing more than a company that VA contracts with to do medical examinations that are needed by VA. 
+																	Approved Medical Abbreviations. 
+																	We have conducted more than 9 million exams in our more than 35-year history meeting and exceeding customer quality measures. 
+																	There are local doctors here in this town that work for QTC doing VA exams - along with handling their own patients. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Join Our Team As a Provider. 
+																	It represents the time taken for ventricular depolarisation and repolarisation effectively the period of ventricular systole from ventricular isovolumetric contraction to isovolumetric relaxation The QT interval is inversely proportional to heart rate. 
+																	QTC was originally founded in 1981 to provide injury and disability services for various government and private agencies giving us unmatched experience. 
+																	Menu Reservations Make Reservations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	He didnt go off script of the DBQ questionnaire at all. 
+																	QTC Medical Group 3145 Virginia Beach Blvd Ste 202 Virginia Beach VA 23452. 
+																	Licensure Exam for March 2018. 
+																	How do I contact a QTC representative. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It doesnt really help much in trying to make a. 
+																	I dont want to burst anyones bubble but I had a CP exam with QTC in Tacoma as well and I would suggest you get a copy of the QTC medical exam report that gets returned to the VA before you sigh with relief. 
+																	QTC and its parent company Leidos have been actively enhancing our business continuity plan to mitigate the potential impact of the COVID-19 illness. 
+																	The QT interval is the time from the start of the Q wave to the end of the T wave. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	My opinion is QTC is a terrible company for VA to be in business with. 
+																	Diamond Bar Calif August 7 2017 QTC Medical Services Inc. 
+																	Their rep says they have 7-10 days to have the reports in. 
+																	I was expecting what you all went through. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Va Qtc Medical Exam Secrets. 
+																	Dental including treatment Optometry. 
+																	247 support for Mental Health Assessments and Post-Deployment Health Reassessments. 
+																	The various types of injury and disability examination services offered include. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	At a QTC clinic or network of individual provider offices. 
+																	Mine was through a Doctor in Lakewood who doesnt work for QTC but contracts to them so I wasnt at the actual QTC facility. 
+																	Post Dec 27 2017 6 2017-12-27T2203. 
+																	1217 QTC DBQ for endometriosis hysterectomy melasma in my favor 0118 VA Decision letter denying disability THE BELOW IS WHY I AM SO PISSED. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	QTC is a sort of subcontractor that VA uses to make some of the claim exams for VA - just like a building contractor might hire a separate electrician to do the wiring in the buildings he is erecting. 
+																	Sorry you didnt have the same experience as I did with QTC. 
+																	QTC is a contractor for the VA that performs medical examinations for the VA. 
+																	More than 13 774 examinees out of 58 323 takers let exam results march 2018 list of passers the united states medical licensing examination usmle is a three step examination for medical licensure in the united states and is sponsored by the federation of state medical boards fsmb and the national board. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To create an account you will receive an email with a link to create an account. 
+																	Veterans injured during their service rely on QTC and the VA to perform the medical exams necessary to receive benefits. 
+																	From there they could send it over to the VA. 
+																	QTCs quality of service is a top priority to ensure reliable medical reports. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1 Reviews 757 306-8912 Website. 
+																	Our Veterans deserve an expedient efficient and reliable system to. 
+																	Ive dialed into QTC a few times due to my need to make sure their isnt anything being left behind and they were as of yesterday still waiting on my last exam to go over to their QA. 
+																	Our extensive network of physicians undergoes a rigorous training and credentialing program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Likely included with your exam notice in the mail from QTC is a questionnaire or set of questionnaires asking questions about the conditions you claimed. 
+																	QTC is a legit company that has been around for quite some time Other known companies are LHI and VES It is essential to the success of your claim that you attend the appointment s. 
+																	While I was very impressed with the doctor I think. 
+																	The VA examiner conducted a comprehensive evaluation in conjunction with the evidence of record and opined that this condition is less likely as not incurred in or caused by the claimed in service injury event or illness. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	He was able to calm me down and assure me everything is going to. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/f3/0b/05/f30b050a9096b8f06474c6f400e7d383.jpg" data-lightbox="roadtrip" data-title="3 Desirable Tricks How To Deal With Snoring Awake When Snoring Nora Smart Snoring Solution Reviews Operation To Stop Snoring Living With Sleep Apnea">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/f3/0b/05/f30b050a9096b8f06474c6f400e7d383.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8u7EGW-iz1-GbRA5PI31sEZP5OWGvWNqApg';" alt="3 Desirable Tricks How To Deal With Snoring Awake When Snoring Nora Smart Snoring Solution Reviews Operation To Stop Snoring Living With Sleep Apnea">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">3 Desirable Tricks How To Deal With Snoring Awake When Snoring Nora Smart Snoring Solution Reviews Operation To Stop Snoring Living With Sleep Apnea</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/c1/90/a6/c190a6fa303783340cf853e50d6a9f2a.jpg" data-lightbox="roadtrip" data-title="Pin On Home Surveillance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/c1/90/a6/c190a6fa303783340cf853e50d6a9f2a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCvNf1CouNBa7OVFN4DmomXwkOpOys045O-Q';" alt="Pin On Home Surveillance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Home Surveillance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/c6/c9/4cc6c99c56c5c8615de7ec17e9366b46.png" data-lightbox="roadtrip" data-title="Ecg Normal 17 Onda T Repolarizacion Ventricular Cardiologia Cardiopatias Electrocardiograma">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/c6/c9/4cc6c99c56c5c8615de7ec17e9366b46.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJnvsyEr890UZU7bFU_WUqZGfg4lwNeziCoQ';" alt="Ecg Normal 17 Onda T Repolarizacion Ventricular Cardiologia Cardiopatias Electrocardiograma">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ecg Normal 17 Onda T Repolarizacion Ventricular Cardiologia Cardiopatias Electrocardiograma</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/63/11/db631158e2c6cedb2cfe1383732c4e87.jpg" data-lightbox="roadtrip" data-title="Panasonic Bts Wv Sw395 Dome Camera Ptz Camera Surveillance Camera">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/63/11/db631158e2c6cedb2cfe1383732c4e87.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL34btGqVHiauk8jghYdHaxWfGyN0OGOXLag';" alt="Panasonic Bts Wv Sw395 Dome Camera Ptz Camera Surveillance Camera">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Panasonic Bts Wv Sw395 Dome Camera Ptz Camera Surveillance Camera</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/04/5f/7a045f3ab5f48867eb02df5ed2fe57d9.jpg" data-lightbox="roadtrip" data-title="Plan Associates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/04/5f/7a045f3ab5f48867eb02df5ed2fe57d9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXYsWlmonjCSQLxbEbf3vm9qf3x4CirgDhlA';" alt="Plan Associates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Plan Associates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/aa/0f/3daa0ff3c920cfc18cd06c3e9e2ce7c3.png" data-lightbox="roadtrip" data-title="Me Encanta Escribir En Espanol Letras Para Ninos Sopa De Letras Sopa De Letras Para Ninos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/aa/0f/3daa0ff3c920cfc18cd06c3e9e2ce7c3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj-ptdbTAtPvw_J_ngcQtWscgSW2mSdnQqPQ';" alt="Me Encanta Escribir En Espanol Letras Para Ninos Sopa De Letras Sopa De Letras Para Ninos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Me Encanta Escribir En Espanol Letras Para Ninos Sopa De Letras Sopa De Letras Para Ninos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/36/66/1936661908fd135127d231f127e0aea9.jpg" data-lightbox="roadtrip" data-title="El Medio Ambiente Vocabulario Google Search Letras Para Ninos Sopa De Letras Sopa De Letras Para Ninos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/36/66/1936661908fd135127d231f127e0aea9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2-u9e2-jnB7V3VirE7G9D-1Be8K4Srm3-vQ';" alt="El Medio Ambiente Vocabulario Google Search Letras Para Ninos Sopa De Letras Sopa De Letras Para Ninos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">El Medio Ambiente Vocabulario Google Search Letras Para Ninos Sopa De Letras Sopa De Letras Para Ninos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/64/8a/35/648a3534e34620165b461c04b3e88d5e.jpg" data-lightbox="roadtrip" data-title="Wind Speed Gauges Celestron 48021 Windguide Black Continue To The Product At The Image Link This Is An Amazon Affiliat Celestron Anemometer Anemometers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/64/8a/35/648a3534e34620165b461c04b3e88d5e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTJjNrKAxclTgelE2Cz02GAG9qsBNVBtb6Bg';" alt="Wind Speed Gauges Celestron 48021 Windguide Black Continue To The Product At The Image Link This Is An Amazon Affiliat Celestron Anemometer Anemometers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wind Speed Gauges Celestron 48021 Windguide Black Continue To The Product At The Image Link This Is An Amazon Affiliat Celestron Anemometer Anemometers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/66/89/a1/6689a1093c423f34b89ab6bb069f33d7.jpg" data-lightbox="roadtrip" data-title="Products Deneka Horiden Japanese Tattoo Koi Tattoo Sleeve Japanese Sleeve Tattoos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/66/89/a1/6689a1093c423f34b89ab6bb069f33d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw2j4wJq9JlYCeWFEN8k4lGEf2yozneXHxpA';" alt="Products Deneka Horiden Japanese Tattoo Koi Tattoo Sleeve Japanese Sleeve Tattoos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Products Deneka Horiden Japanese Tattoo Koi Tattoo Sleeve Japanese Sleeve Tattoos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/f2/81/bbf2815f8a633f2672584c3b752b60f3.jpg" data-lightbox="roadtrip" data-title="4 Security Camera System Security Camera System Home Security Systems Security Camera">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/f2/81/bbf2815f8a633f2672584c3b752b60f3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL-8xRYEelKOT1cuzpiIooor0mj03ugmthTg';" alt="4 Security Camera System Security Camera System Home Security Systems Security Camera">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4 Security Camera System Security Camera System Home Security Systems Security Camera</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/b1/18/a0/b118a0bc9f511239357dd808c2c68e1c.jpg" data-lightbox="roadtrip" data-title="Title Asonic As 4108cvr S3 Posted By Ikahana Com Content Asonic As 4108cvr S3 8ch Hd Cvi Support 6tb Hdd Main Stream Up To 720p Contact Us For Price Url">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/b1/18/a0/b118a0bc9f511239357dd808c2c68e1c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNbYQDlag89Yhmml_OlpiQwtXQ-kepJ5xNfg';" alt="Title Asonic As 4108cvr S3 Posted By Ikahana Com Content Asonic As 4108cvr S3 8ch Hd Cvi Support 6tb Hdd Main Stream Up To 720p Contact Us For Price Url">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Title Asonic As 4108cvr S3 Posted By Ikahana Com Content Asonic As 4108cvr S3 8ch Hd Cvi Support 6tb Hdd Main Stream Up To 720p Contact Us For Price Url</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/26/27/e32627d20ec6ecd262e6735f514d2d87.jpg" data-lightbox="roadtrip" data-title="Life Is A Book Puntos De Libro Qtc Artesanias De Tela Cosas De Manualidades Etiquetas De Tela">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/26/27/e32627d20ec6ecd262e6735f514d2d87.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNBlh5236YKzjM6cs3ccaL65pXdNH0Gd7T3Q';" alt="Life Is A Book Puntos De Libro Qtc Artesanias De Tela Cosas De Manualidades Etiquetas De Tela">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Life Is A Book Puntos De Libro Qtc Artesanias De Tela Cosas De Manualidades Etiquetas De Tela</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/10/01/81/1001815d56552bebce9767252017644d.jpg" data-lightbox="roadtrip" data-title="Aovape Como Wax Pen Replacement Coils Ceramic Dual Quartz Wax Vape Pen Dry Herb Vape Pen Wax Vape">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/10/01/81/1001815d56552bebce9767252017644d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZU9YLB8UssNw6vsbFyeByhvqzJIb7jPwlGg';" alt="Aovape Como Wax Pen Replacement Coils Ceramic Dual Quartz Wax Vape Pen Dry Herb Vape Pen Wax Vape">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Aovape Como Wax Pen Replacement Coils Ceramic Dual Quartz Wax Vape Pen Dry Herb Vape Pen Wax Vape</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/sdsu-gi-bill.html">Sdsu Gi Bill</a></li>
+													<li class="list-group-item"><a href="/requirements-for-the-montgomery-gi-bill.html">Requirements For The Montgomery Gi Bill</a></li>
+													<li class="list-group-item"><a href="/stanford-university-post-911-gi-bill.html">Stanford University Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/significance-of-gi-bill-of-rights.html">Significance Of Gi Bill Of Rights</a></li>
+													<li class="list-group-item"><a href="/rating-letter-from-va.html">Rating Letter From Va</a></li>
+													<li class="list-group-item"><a href="/spouse-eligibility-for-gi-bill.html">Spouse Eligibility For Gi Bill</a></li>
+													<li class="list-group-item"><a href="/social-security-disability-benefits-for-veterans.html">Social Security Disability Benefits For Veterans</a></li>
+													<li class="list-group-item"><a href="/requirements-for-post-911-gi-bill.html">Requirements For Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/rated-disability-not-service-connected.html">Rated Disability Not Service Connected</a></li>
+													<li class="list-group-item"><a href="/si-joint-dysfunction-va-rating.html">Si Joint Dysfunction Va Rating</a></li>
+													<li class="list-group-item"><a href="/quantico-gs-pay-scale.html">Quantico Gs Pay Scale</a></li>
+													<li class="list-group-item"><a href="/pudendal-neuralgia-va-rating.html">Pudendal Neuralgia Va Rating</a></li>
+													<li class="list-group-item"><a href="/requirements-to-transfer-gi-bill-benefits.html">Requirements To Transfer Gi Bill Benefits</a></li>
+													<li class="list-group-item"><a href="/state-go-and-reload.html">State Go And Reload</a></li>
+													<li class="list-group-item"><a href="/state-go-bonds.html">State Go Bonds</a></li>
+													<li class="list-group-item"><a href="/seung-gi-va-yoona.html">Seung Gi Va Yoona</a></li>
+													<li class="list-group-item"><a href="/schools-approved-by-gi-bill.html">Schools Approved By Gi Bill</a></li>
+													<li class="list-group-item"><a href="/split-the-bill-go-dutch.html">Split The Bill Go Dutch</a></li>
+													<li class="list-group-item"><a href="/state-go-angularjs-with-params.html">State Go Angularjs With Params</a></li>
+													<li class="list-group-item"><a href="/que-tot-vagi-be-txarango.html">Que Tot Vagi Be Txarango</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Gi Bill Contact Phone Number - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Gi Bill Contact Phone Number",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/8a/38/b6/8a38b6db9f6b501e5d38ad5b992c1057.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=gi+bill+contact+phone+number",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Gi Bill Contact Phone Number</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">However this wont work for all VA databasesyet. Call between 7 am. First Time Users - Please review the WAVE User Guide. <br>				
+			</p>
+										<a class="badge badge-warning" href="/using-gi-bill-for-flight-training.html">using gi bill for flight training</a>
+											<a class="badge badge-info" href="/transfer-gi-bill-to-spouse.html">transfer gi bill to spouse</a>
+											<a class="badge badge-success" href="/using-financial-aid-and-gi-bill.html">using financial aid and gi bill</a>
+											<a class="badge badge-info" href="/transfer-montgomery-gi-bill-to-spouse.html">transfer montgomery gi bill to spouse</a>
+											<a class="badge badge-secondary" href="/using-montgomery-gi-bill.html">using montgomery gi bill</a>
+											<a class="badge badge-dark" href="/using-gi-bill-for-loans.html">using gi bill for loans</a>
+											<a class="badge badge-primary" href="/using-gi-bill.html">using gi bill</a>
+											<a class="badge badge-success" href="/using-gi-bill-in-different-state.html">using gi bill in different state</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you've come to pay a visit to the ideal blog.  Our website gives you hints for viewing the maximum quality video and image content, search and find more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, especially Youtube, therefore we recommend this movie for you to see.  It is also possible to bring about supporting this site by sharing videos and graphics that you like on this blog on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/49/ec/23/49ec230cc0dd976f51b908b6b31b9bbf.jpg" data-lightbox="roadtrip" data-title="Contact Support Gi Bill Paying Bills Finance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/49/ec/23/49ec230cc0dd976f51b908b6b31b9bbf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN3q4wjhR7xVQFu9GUzB21qr2IIaCmlI6t4Q';" alt="Contact Support Gi Bill Paying Bills Finance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Contact Support Gi Bill Paying Bills Finance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/2d/82/9e2d826ddd17608fff4d48679e31c5fb.png" data-lightbox="roadtrip" data-title="Veteran Owned Business Directory Military Veterans Businesses Sdvosb Vob Dvbe In 2020 Veteran Owned Business School Signs Personal Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/2d/82/9e2d826ddd17608fff4d48679e31c5fb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuMXdvkRUyFHBOmPl_VpVoAfFax1Rk5pW5IQ';" alt="Veteran Owned Business Directory Military Veterans Businesses Sdvosb Vob Dvbe In 2020 Veteran Owned Business School Signs Personal Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Owned Business Directory Military Veterans Businesses Sdvosb Vob Dvbe In 2020 Veteran Owned Business School Signs Personal Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5d/b1/37/5db1378148b9f9721ca73cc59b83e759.jpg" data-lightbox="roadtrip" data-title="2020 Gi Bill For Surviving Spouses Children Of Those Kia Milspouse Education Gi Bill">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5d/b1/37/5db1378148b9f9721ca73cc59b83e759.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi8LWLZ99pgJOG1SI_PxHSxWQlxjOVf6JREg';" alt="2020 Gi Bill For Surviving Spouses Children Of Those Kia Milspouse Education Gi Bill">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2020 Gi Bill For Surviving Spouses Children Of Those Kia Milspouse Education Gi Bill</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/15/ff/7f/15ff7f2d3f77a05ba61668a492f632a9.jpg" data-lightbox="roadtrip" data-title="Gst Is A Good And Simple Tax Regime That Will Eliminate The Compounding Effects Of The Multi Layered Tax Syst School Application Smart School Billing Software">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/15/ff/7f/15ff7f2d3f77a05ba61668a492f632a9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp6a5IUrc2v__dsqRrsLI-Ku41haY46R3FKg';" alt="Gst Is A Good And Simple Tax Regime That Will Eliminate The Compounding Effects Of The Multi Layered Tax Syst School Application Smart School Billing Software">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gst Is A Good And Simple Tax Regime That Will Eliminate The Compounding Effects Of The Multi Layered Tax Syst School Application Smart School Billing Software</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/3b/95/b53b95e4a1bdf6e3305017b10a1dadc3.jpg" data-lightbox="roadtrip" data-title="The American Board Is Accepted By The Gi Bill And Troops To Teachers Become A Teacher Today In Idaho Contact Gi Bill Becoming A Teacher Career Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/3b/95/b53b95e4a1bdf6e3305017b10a1dadc3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG6SCB3BlXX0KVmZBfBkuZRkk9wGnZ4gTXwg';" alt="The American Board Is Accepted By The Gi Bill And Troops To Teachers Become A Teacher Today In Idaho Contact Gi Bill Becoming A Teacher Career Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The American Board Is Accepted By The Gi Bill And Troops To Teachers Become A Teacher Today In Idaho Contact Gi Bill Becoming A Teacher Career Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/45/7c/e3457ce31121d3574f398d3e6e955c24.png" data-lightbox="roadtrip" data-title="Va Ebenefits Login Ebenefits Va Gov Login Veterans Services Department Of Veterans Affairs Employment Center">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/45/7c/e3457ce31121d3574f398d3e6e955c24.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQRsydHmCNLAtzeEOx_YhNghx-63IZS-DUlQ';" alt="Va Ebenefits Login Ebenefits Va Gov Login Veterans Services Department Of Veterans Affairs Employment Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Ebenefits Login Ebenefits Va Gov Login Veterans Services Department Of Veterans Affairs Employment Center</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/49/ec/23/49ec230cc0dd976f51b908b6b31b9bbf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQRsydHmCNLAtzeEOx_YhNghx-63IZS-DUlQ';" alt="Va Ebenefits Login Ebenefits Va Gov Login Veterans Services Department Of Veterans Affairs Employment Center">
+										<div class="card-body">
+						<h3 class="h5"><b>Make your edits and click update.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Gi bill contact phone number</strong>. 
+								
+																	Click on edit for anything you wish to change. 
+																	To call us please click on our OFFICES tab above to find the phone number for the office nearest your current or future location. 
+																	Visit the GI Bill customer service page to search Frequently Asked Questions or ask a question electronically Call 1-888-GIBILL-1 1-888-442-4551 For TDDTYY use 711. 
+																	The numbers to be avoided are. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This contact method is available worldwide 24 hours a day seven days a week. 
+																	You may qualify if you served on active duty after September 10 2001 or if youre the qualified spouse or dependent child of a Veteran who meets these service requirements. 
+																	Find out if you can get help paying for school or job training through the Post-911 GI Bill Chapter 33. 
+																	Call Us From Overseas. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you have questions. 
+																	Call us at 888-GIBILL-1 888-442-4551 between 7 am. 
+																	For general inquiries please click on our FAQ andor ABOUT tab above. 
+																	You can also search for answers to frequently asked questions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You MUST have a current or active benefit award for MGIB-Active Duty Chapter 30 or MGIB Selected Reserve Chapter 1606 or Reserve Educational Assistance Program REAP Chapter 1607 or Veterans Retraining Assistance Program VRAP in our system. 
+																	Transfer your Post-911 GI Bill benefits to your spouse and dependents. 
+																	If you need help paying for school or job training and youve served on active duty after September 10 2001 find out if you can get education benefits through the Post-911 GI Bill. 
+																	For specific call charges check with your phone provider. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Join or Log Into Facebook Email or Phone. 
+																	Call 1-888-GIBILL-1 1-888-442-4551 Monday through Friday 800 am. 
+																	Enter the Ask a Question site. 
+																	Monday - Friday 800 am - 900 pm ET. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ways to contact us if you have hearing loss. 
+																	You can also search for answers to frequently asked questions. 
+																	In all cases before giving personal sensitive information over the phone make sure you know who you are taking to. 
+																	Calls to 03 numbers cost no more than calling 01 and 02 prefixed numbers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you wish you can call us at 1-888-442-4551 1 888 GI BILL 1 from 7AM - 7PM Central Time. 
+																	Ask us a Question - Get an answer in four to five working days. 
+																	For other questions and further inquiries please us the contact form provided below. 
+																	800-872-1000 the VA National Call Center number is 800-827-1000 888-442-4511 the VA GI Bill Call Center number is 888-442-4551. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you wish you can call us at 1-888-442-4551 1 888 GI BILL 1 from 7AM - 7PM Central Time. 
+																	Benefits Questions such as GI Bill Claim Status or Disability Benefits. 
+																	This contact method is available worldwide 24 hours a day seven days a week. 
+																	Contact Us Ask a Question and Get Answers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Post-911 GI Bill benefits Post-911 GI Bill. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/20/40/fb/2040fbdb298c2d968e67afd3f57e348a.jpg" data-lightbox="roadtrip" data-title="Transition Planning Information Moving Your Transferable Skills From Military Leadership To Civilian Leadership Dale Tuition Assistance Gi Bill Tuition">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/20/40/fb/2040fbdb298c2d968e67afd3f57e348a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJaeUOqiU96Wx4q_N0zuGxokzQ3MbM2GEV7g';" alt="Transition Planning Information Moving Your Transferable Skills From Military Leadership To Civilian Leadership Dale Tuition Assistance Gi Bill Tuition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Transition Planning Information Moving Your Transferable Skills From Military Leadership To Civilian Leadership Dale Tuition Assistance Gi Bill Tuition</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/90/6f/0e906fde946af4f4dae28530165d857d.jpg" data-lightbox="roadtrip" data-title="Pin By University Of Alaska Fairbanks On Funding Opportunities Gi Bill How To Plan Financial Aid">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/90/6f/0e906fde946af4f4dae28530165d857d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAgZWX1qc7-qLhkkTR2wNLhQikWBJEDhYmCg';" alt="Pin By University Of Alaska Fairbanks On Funding Opportunities Gi Bill How To Plan Financial Aid">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By University Of Alaska Fairbanks On Funding Opportunities Gi Bill How To Plan Financial Aid</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8c/8b/4e/8c8b4eefd62784ea6ee5c0cde69717da.png" data-lightbox="roadtrip" data-title="New Veterans Administration Va Consolidated Home Page Healthy Dinner Recipes Easy Easy Healthy Dinners Video Games For Kids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8c/8b/4e/8c8b4eefd62784ea6ee5c0cde69717da.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXvuWuGClS-aEkfDY8qzOYEiNPQ36XnbKXcg';" alt="New Veterans Administration Va Consolidated Home Page Healthy Dinner Recipes Easy Easy Healthy Dinners Video Games For Kids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Veterans Administration Va Consolidated Home Page Healthy Dinner Recipes Easy Easy Healthy Dinners Video Games For Kids</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/8e/93/ea/8e93ea1c607ba2479394255830ee36d0.jpg" data-lightbox="roadtrip" data-title="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Operation Rapid Hire 2 0 Job Career Hiring Camp Pendleton">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/8e/93/ea/8e93ea1c607ba2479394255830ee36d0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrEOCRXOuV_gN34AeQKOW4ir3cjniXdJao-g';" alt="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Operation Rapid Hire 2 0 Job Career Hiring Camp Pendleton">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Operation Rapid Hire 2 0 Job Career Hiring Camp Pendleton</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/ed/1d/44ed1d46c83738c95c669aa9e0d4a472.jpg" data-lightbox="roadtrip" data-title="Tue Jan 20 Four Week Pilot Solar Energy Training Program Provided By The Department Of Energy Ptad Orders Training Programs Pilot Training Us Marine Corps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/ed/1d/44ed1d46c83738c95c669aa9e0d4a472.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Hr1gRZGM6s5jwGEi1H4LA5p09BBKgW6Wbw';" alt="Tue Jan 20 Four Week Pilot Solar Energy Training Program Provided By The Department Of Energy Ptad Orders Training Programs Pilot Training Us Marine Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tue Jan 20 Four Week Pilot Solar Energy Training Program Provided By The Department Of Energy Ptad Orders Training Programs Pilot Training Us Marine Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/2f/3c/1c2f3c2adf2b2bd55553b9b1925bee04.png" data-lightbox="roadtrip" data-title="Pin On Vob Member Logos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/2f/3c/1c2f3c2adf2b2bd55553b9b1925bee04.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFhgl4Gx5fr9RhRfIiN08GSGwodf9ygKq58g';" alt="Pin On Vob Member Logos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Vob Member Logos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/fc/35/69fc357e9c9fc1772ddc59feb4be40c5.jpg" data-lightbox="roadtrip" data-title="We Are Into Custom Application Development Services Offshore Product Development Services Web Site Domai Website Domains School Application Hosting Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/fc/35/69fc357e9c9fc1772ddc59feb4be40c5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTCYgB6xqL3g9oWC0v5idsdeOhDKqstlG6XA';" alt="We Are Into Custom Application Development Services Offshore Product Development Services Web Site Domai Website Domains School Application Hosting Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Are Into Custom Application Development Services Offshore Product Development Services Web Site Domai Website Domains School Application Hosting Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1e/12/06/1e12065b9e544b9f69cf16a91e6f4cd1.png" data-lightbox="roadtrip" data-title="Join The Msan Team Interested Contact Us At Http Www Milspouseadvocacynetwork Org Contact Us Html Msan Str Editing Writing Editing Skills Helping Others">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1e/12/06/1e12065b9e544b9f69cf16a91e6f4cd1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQx5Qx3SKUT7LB-jZXHnLiElUpzBsByJNWEQ';" alt="Join The Msan Team Interested Contact Us At Http Www Milspouseadvocacynetwork Org Contact Us Html Msan Str Editing Writing Editing Skills Helping Others">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Join The Msan Team Interested Contact Us At Http Www Milspouseadvocacynetwork Org Contact Us Html Msan Str Editing Writing Editing Skills Helping Others</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/36/6e/3a/366e3ac91dd348e40d528ae7f5ecc55e.jpg" data-lightbox="roadtrip" data-title="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Free Virtual In 2020 Stress Management Healthcare Jobs Medical Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/36/6e/3a/366e3ac91dd348e40d528ae7f5ecc55e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnfIag-CKTzbLurbGYTFuAlXcp1bt9Fo9XEw';" alt="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Free Virtual In 2020 Stress Management Healthcare Jobs Medical Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Free Virtual In 2020 Stress Management Healthcare Jobs Medical Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1e/0a/cc/1e0acc8793f6a80c6485b20d06aed04a.png" data-lightbox="roadtrip" data-title="Pin By Terri Knight On Jake Veterans Services Bathroom Upgrades Services Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1e/0a/cc/1e0acc8793f6a80c6485b20d06aed04a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScd71TngTVwkR_LU-xIWYdwpevjD-AwrS4HQ';" alt="Pin By Terri Knight On Jake Veterans Services Bathroom Upgrades Services Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Terri Knight On Jake Veterans Services Bathroom Upgrades Services Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/24/37/0a243725f359b4b5cb7361bcc5085043.jpg" data-lightbox="roadtrip" data-title="Apply For And Manage The Va Benefits And Services You Ve Earned As A Veteran Servicemember Or Family Member Like He Job Training Home Health Care Company Job">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/24/37/0a243725f359b4b5cb7361bcc5085043.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdVHkWHLjKcAv6fS36q3SiV5OjRvc1-SepUQ';" alt="Apply For And Manage The Va Benefits And Services You Ve Earned As A Veteran Servicemember Or Family Member Like He Job Training Home Health Care Company Job">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Apply For And Manage The Va Benefits And Services You Ve Earned As A Veteran Servicemember Or Family Member Like He Job Training Home Health Care Company Job</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/f5/20/75f5205bfe3f4cb88735ff07b67a4529.jpg" data-lightbox="roadtrip" data-title="Pin On Books And Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/f5/20/75f5205bfe3f4cb88735ff07b67a4529.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqw3tjHdeoBJXfMnHlvBrc5Df-oWL9p3hxQ';" alt="Pin On Books And Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Books And Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/38/b6/8a38b6db9f6b501e5d38ad5b992c1057.jpg" data-lightbox="roadtrip" data-title="One Mile One Marker One Hero Virginia Run For The Fallen To Honor And Remember Virginia Military Service Members Who Died Hero Markers Military Service">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/38/b6/8a38b6db9f6b501e5d38ad5b992c1057.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkYSdlZTVI5S1oTuZY2bL1v4RWjJYS_8wA2g';" alt="One Mile One Marker One Hero Virginia Run For The Fallen To Honor And Remember Virginia Military Service Members Who Died Hero Markers Military Service">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">One Mile One Marker One Hero Virginia Run For The Fallen To Honor And Remember Virginia Military Service Members Who Died Hero Markers Military Service</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/will-gi-bill-pay-for-certificate-programs.html">Will Gi Bill Pay For Certificate Programs</a></li>
+													<li class="list-group-item"><a href="/wild-bill-gi-joe-figure.html">Wild Bill Gi Joe Figure</a></li>
+													<li class="list-group-item"><a href="/will-the-va-pay-for-in-home-care.html">Will The Va Pay For In Home Care</a></li>
+													<li class="list-group-item"><a href="/world-war-ii-gi-bill.html">World War Ii Gi Bill</a></li>
+													<li class="list-group-item"><a href="/will-post-911-gi-bill-pay-for-real-estate-license.html">Will Post 911 Gi Bill Pay For Real Estate License</a></li>
+													<li class="list-group-item"><a href="/zeolite-bio-ball.html">Zeolite Bio Ball</a></li>
+													<li class="list-group-item"><a href="/will-the-gi-bill-cover-flight-training.html">Will The Gi Bill Cover Flight Training</a></li>
+													<li class="list-group-item"><a href="/will-post-9-11-gi-bill-pay-for-cdl.html">Will Post 9 11 Gi Bill Pay For Cdl</a></li>
+													<li class="list-group-item"><a href="/who-pays-va-disability-back-pay.html">Who Pays Va Disability Back Pay</a></li>
+													<li class="list-group-item"><a href="/william-montgomery-attorney-glens-falls-ny.html">William Montgomery Attorney Glens Falls Ny</a></li>
+													<li class="list-group-item"><a href="/yuku-veteran-benefits-network.html">Yuku Veteran Benefits Network</a></li>
+													<li class="list-group-item"><a href="/yu-gi-oh-collegehumor.html">Yu Gi Oh Collegehumor</a></li>
+													<li class="list-group-item"><a href="/yu-gi-oh-9-boeluem-tuerkce-dublaj-izle.html">Yu Gi Oh 9 Boeluem Tuerkce Dublaj Izle</a></li>
+													<li class="list-group-item"><a href="/wisconsin-gi-bill-reddit.html">Wisconsin Gi Bill Reddit</a></li>
+													<li class="list-group-item"><a href="/will-100-disabled-veterans-get-the-stimulus-check.html">Will 100 Disabled Veterans Get The Stimulus Check</a></li>
+													<li class="list-group-item"><a href="/why-i-want-to-go-to-college-essay-sample.html">Why I Want To Go To College Essay Sample</a></li>
+													<li class="list-group-item"><a href="/will-the-gi-bill-pay-for-my-masters-degree.html">Will The Gi Bill Pay For My Masters Degree</a></li>
+													<li class="list-group-item"><a href="/wisconsin-gi-bill-supplemental-payment.html">Wisconsin Gi Bill Supplemental Payment</a></li>
+													<li class="list-group-item"><a href="/yuku-va-benefits.html">Yuku Va Benefits</a></li>
+													<li class="list-group-item"><a href="/will-i-get-a-stimulus-check-if-i-receive-va-disability.html">Will I Get A Stimulus Check If I Receive Va Disability</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Does Va Pay Compensation For Headaches - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Does Va Pay Compensation For Headaches",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/200x150/22/0d/48/220d4815f42638dfe991b35c84c24912.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=does+va+pay+compensation+for+headaches",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Does Va Pay Compensation For Headaches</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">If you are a veteran who suffers from service-connected migraine headaches you need to make sure VA pays you benefits at the proper rating. But that does NOT mean as some will tell you that this is the highest rating you can get for the condition. These headaches can be very debilitating. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/benefits-of-go-board-game.html">benefits of go board game</a>
+											<a class="badge badge-light" href="/benefits-of-go-green-campaign.html">benefits of go green campaign</a>
+											<a class="badge badge-secondary" href="/best-state-to-go-to-college.html">best state to go to college</a>
+											<a class="badge badge-success" href="/bill-bi-sko.html">bill bi sko</a>
+											<a class="badge badge-warning" href="/bi-weekly-bill-tracker.html">bi weekly bill tracker</a>
+											<a class="badge badge-primary" href="/best-schools-for-post-911-gi-bill.html">best schools for post 911 gi bill</a>
+											<a class="badge badge-success" href="/bethany-college-kansas-gifts.html">bethany college kansas gifts</a>
+											<a class="badge badge-secondary" href="/bi-li-bi-i.html">bi li bi i</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you have come to pay a visit to the ideal blog.  Our site gives you hints for viewing the highest quality video and picture content, search and find more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, especially Youtube, so we recommend this movie for you to see.  It is also possible to contribute to supporting this website by sharing videos and graphics that you like on this site on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this website.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/40/ab/ab40aba0d6a24d83f23d38d7eb2c81aa.jpg" data-lightbox="roadtrip" data-title="Should You Hire A Lawyer To File A Va Disability Claim Va Disability Veterinary Services Veterans Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/40/ab/ab40aba0d6a24d83f23d38d7eb2c81aa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpXGCOKI4uJgwOhBhODPanNbT4m1KUq-b-yg';" alt="Should You Hire A Lawyer To File A Va Disability Claim Va Disability Veterinary Services Veterans Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Should You Hire A Lawyer To File A Va Disability Claim Va Disability Veterinary Services Veterans Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/2a/4f/732a4f135a1978df8f9667c1cb819813.png" data-lightbox="roadtrip" data-title="6 C P Exam Success Tips For Disabled Veterans Exam Success Disability Va Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/2a/4f/732a4f135a1978df8f9667c1cb819813.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLgm573HhhAbJZcbY0ZAeXGYi-LuBGFCL3uw';" alt="6 C P Exam Success Tips For Disabled Veterans Exam Success Disability Va Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 C P Exam Success Tips For Disabled Veterans Exam Success Disability Va Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/12/98/41/129841481ae1347f3a41fe7dc5aecee2.jpg" data-lightbox="roadtrip" data-title="Va C And P Exam Do S And Don Ts Va Compensation Pension Exam Exam Pensions Compensation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/12/98/41/129841481ae1347f3a41fe7dc5aecee2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjga9AXuw5ENUyIt2r3zjMgdUS46J7p4t0sQ';" alt="Va C And P Exam Do S And Don Ts Va Compensation Pension Exam Exam Pensions Compensation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va C And P Exam Do S And Don Ts Va Compensation Pension Exam Exam Pensions Compensation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/30/e0/5630e05c5a17e762b44b409ec2079bf5.jpg" data-lightbox="roadtrip" data-title="Va Disability Compensation Find Out Your True Rating Va Disability Disability How To Find Out">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/30/e0/5630e05c5a17e762b44b409ec2079bf5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9tcTeKrtHYr3hKmonavWV_x6s7A7GSGJSSw';" alt="Va Disability Compensation Find Out Your True Rating Va Disability Disability How To Find Out">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Compensation Find Out Your True Rating Va Disability Disability How To Find Out</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8c/1b/a8/8c1ba8c131cf3d84526e7c756a04962b.jpg" data-lightbox="roadtrip" data-title="Noccr Knoxville Is Currently Recruiting Volunteers For Ongoing And Upcoming Investigational Studies For Migraine H Headache Migraine Relief Migraine Medication">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8c/1b/a8/8c1ba8c131cf3d84526e7c756a04962b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRb-r51ZqxRWq9-zjj87eGh9wu5LUkpyt53A';" alt="Noccr Knoxville Is Currently Recruiting Volunteers For Ongoing And Upcoming Investigational Studies For Migraine H Headache Migraine Relief Migraine Medication">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Noccr Knoxville Is Currently Recruiting Volunteers For Ongoing And Upcoming Investigational Studies For Migraine H Headache Migraine Relief Migraine Medication</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/23/a7/71/23a7715437e6c401d9117306bf973020.jpg" data-lightbox="roadtrip" data-title="Va Letter Va Letter Of Disability Citybirds Club Letter Templates Lettering Professional Cover Letter Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/23/a7/71/23a7715437e6c401d9117306bf973020.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2bDQrWmGCjwjEAHd_u2jE76LIonctYNYAXQ';" alt="Va Letter Va Letter Of Disability Citybirds Club Letter Templates Lettering Professional Cover Letter Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Letter Va Letter Of Disability Citybirds Club Letter Templates Lettering Professional Cover Letter Template</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/56/30/e0/5630e05c5a17e762b44b409ec2079bf5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2bDQrWmGCjwjEAHd_u2jE76LIonctYNYAXQ';" alt="Va Letter Va Letter Of Disability Citybirds Club Letter Templates Lettering Professional Cover Letter Template">
+										<div class="card-body">
+						<h3 class="h5"><b>However it is not as simple as reporting headaches and receiving compensation.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Does va pay compensation for headaches</strong>. 
+								
+																	If your symptoms and limitations from your headaches are different from those listed above you are entitled by law to an extra-schedular rating. 
+																	Okay now lets jump into the CFR 38 rating criteria and chart for migraine headaches. 
+																	The short answer is yes you may be able to receive VA benefits for headaches. 
+																	You must first prove that it is part of a currently diagnosed condition and that it is related to your time in service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Many veterans develop migraine headaches as a result of their service. 
+																	This rating criteria is commonly thought to apply just to migraine headaches. 
+																	Published by SemperFiGeek on January 5 2020. 
+																	In general the VA rates migraines based on how often you experience them and their severity. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The highest SCHEDULAR VA rating for migraine headaches is 50. 
+																	You need a diagnosis of Migraines from a medical professional an in-service stressor for service-connection a DBQ or a disability benefits questionnaire. 
+																	VA Disability compensation for headaches is available for ALL types of headaches not just migraines. 
+																	However this is not to say that you should exaggerate your symptoms as this could cause problems later on. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans suffering from migraine headaches might not know if they can file a claim for VA disability benefits. 
+																	Service Connection for Migraine Headaches Most often veterans will pursue direct service connection when seeking VA disability benefits for their migraine headaches. 
+																	This would be wrong. 
+																	Because headaches are difficult to assess because theyre not easily diagnosed like a cancer high blood pressure or an eye problem the VA gives headaches four possible ratings to determine their seriousness and eligibility for compensation and benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA Disability Compensation for Migraines. 
+																	VA Migraines Rating 38 CFR Criteria. 
+																	What Is a Migraine. 
+																	Learn more about VA disability rating for migraines and how an attorney can help you fight for your compensation below. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In previous articles I have discussed the four different ratings of 0 10 30 and 50. 
+																	In fact according to the Veterans Benefits Administration VBA and the Top 10 Most Common VA Disability Claims Migraines are the 9 most commonly claimed VA disability. 
+																	When a VA ratings specialist examines your disability claim he looks for evidence that your migraine is. 
+																	VA Rating Criteria for Migraine Headaches. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They fall under CFR 38 the Schedule for Rating Disabilities diagnostic code 8100 for Migraines. 
+																	Veterans that suffer from service-connected migraine headaches are eligible for disability compensation from the Department of Veterans Affairs VA. 
+																	Upon filing a claim for service connection for migraines VA may schedule you for a compensation and pension exam. 
+																	If you have experienced headaches or migraines in or since your time of service you can file a claim with the possibility of receiving one of the following disability ratings for compensation from the VA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Often the Veteran only starts suffering from migraines after service. 
+																	The headaches might not always be that severe but the point is for the VA to compensate you for functionality that you lose due to your service-connected conditions. 
+																	Yes headaches are a VA disability. 
+																	If you are experiencing these Migraine Headaches and you want to file your VA claim here are your evidence requirements to do so. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	According to VA veterans who deploy are more likely to develop migraine headaches. 
+																	Veterans who experience migraine headaches as a result of their time in service may be eligible to receive VA disability compensation at a maximum rate of 50 Migraine headaches. 
+																	If your claim does not contain the information required for the VA to make a decision regarding your disability you may be required to complete a Compensation Pension CP exam. 
+																	VA Disability Ratings for Headaches Migraines. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For example consider diagnostic code 8045-8100. 
+																	VA Rating for Headaches. 
+																	The VA Rating System for Migraines. 
+																	For VA rating purpose ANY type of headache is eligible to be rated at either 0 10 30 or 50 depending upon your medical diagnosis whether its service connected and the severity of your headache symptoms. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA may also schedule a veteran for a CP exam if a condition is already service connected but an assessment of severity is needed. 
+																	Posted by Stephani Bennett on September 1 2019 in Mental Health. 
+																	50- If you suffer from frequent prolonged attacks that are fully prostrating making you have to lay down leaving you with the inability to work. 
+																	For CP exams for migraine headaches the examiner will assess whether your migraines are prostrating. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A veteran must show that their particular disability is the result of their military service in order to qualify for VA disability benefits. 
+																	Types of Headaches for VA Rating Purposes. 
+																	If you have TBI headaches you are going to want to push for rating of your condition using a hyphenated Diagnostic code. 
+																	This exam is generally conducted at a VA health center by VA medical staff with the intent to either refute or support your claim. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In recognition of the debilitating effects of migraine headaches the Department of Veterans Affairs will provide veterans disability benefits for veterans who are impaired by service-connected migraine headaches meaning that a veteran has migraine headaches that are caused by an in-service incident caused by another service-connected impairment or began while the veteran was still in service. 
+																	Traumatic brain injuries TBIs often result in migraine headaches. 
+																	I hope you find those articles helpful in making sure VA rates your migraine headaches properly. 
+																	Most people think Veterans can only file claims for conditions that started in service but thats not always the case. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	According to a report by the Department of Defense migraine diagnoses increased by 27 percent among all branches of the armed forces from 2001-2007. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/e5/2f/a1e52f76f7a6f306637dfefd1b1e6489.png" data-lightbox="roadtrip" data-title="The Full Certainement In Treating Letter Of Recommendation Example Usaf Is The Able Tongue Of The Direction Description From T Sinusitis Lettering Sleep Apnea">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/e5/2f/a1e52f76f7a6f306637dfefd1b1e6489.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuzpUyMdH3N3PyzPUxysDM5-Q34Nuyc5dcQg';" alt="The Full Certainement In Treating Letter Of Recommendation Example Usaf Is The Able Tongue Of The Direction Description From T Sinusitis Lettering Sleep Apnea">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Full Certainement In Treating Letter Of Recommendation Example Usaf Is The Able Tongue Of The Direction Description From T Sinusitis Lettering Sleep Apnea</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/10/78/99/10789901ab107271325d7753832951f4.jpg" data-lightbox="roadtrip" data-title="Sample Disability Letter From Doctor Letter Templates Lettering Professional Cover Letter Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/10/78/99/10789901ab107271325d7753832951f4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpKNoeEEEUWIafHENkfCUhX_SD69B_UQOzRA';" alt="Sample Disability Letter From Doctor Letter Templates Lettering Professional Cover Letter Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sample Disability Letter From Doctor Letter Templates Lettering Professional Cover Letter Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/95/03/4e/95034e3347644e725564126f56a1e32f.jpg" data-lightbox="roadtrip" data-title="Pin On Headache Remedy Diy Migraine Relief">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/95/03/4e/95034e3347644e725564126f56a1e32f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb9pNXD9xhokoYK4ipJ1TJwhuKCBApCVjJSw';" alt="Pin On Headache Remedy Diy Migraine Relief">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Headache Remedy Diy Migraine Relief</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/04/65/47046593017102103042a02414fcd9d5.jpg" data-lightbox="roadtrip" data-title="Gulf War Syndrome War Syndrome Iraq War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/04/65/47046593017102103042a02414fcd9d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsW7R9rB8NL2TvXbz5w6fiKoiW154pmP6JFA';" alt="Gulf War Syndrome War Syndrome Iraq War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gulf War Syndrome War Syndrome Iraq War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/46/07/ca/4607ca22475b36524f448d6a1c310b0a.jpg" data-lightbox="roadtrip" data-title="19 Tools That Can Make It Easier To Live Alone With Illness Or Disability Chronic Migraines Disability Disability Help">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/46/07/ca/4607ca22475b36524f448d6a1c310b0a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTu-UUsbrNJHp22xpgwGMGds2xlUnDfOa_VA';" alt="19 Tools That Can Make It Easier To Live Alone With Illness Or Disability Chronic Migraines Disability Disability Help">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">19 Tools That Can Make It Easier To Live Alone With Illness Or Disability Chronic Migraines Disability Disability Help</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/0f/83/030f833ea04a3d0e91671434011988a9.jpg" data-lightbox="roadtrip" data-title="What The Va Backlog Reduction Means For Veterans Veterans Disability Timeline Jan Dils Veteran Disab Veteran Military Retirement Benefits Veterans Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/0f/83/030f833ea04a3d0e91671434011988a9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT67NgTN3RkiFu8uiJq2hzSOQKVGTR3G8WSPw';" alt="What The Va Backlog Reduction Means For Veterans Veterans Disability Timeline Jan Dils Veteran Disab Veteran Military Retirement Benefits Veterans Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What The Va Backlog Reduction Means For Veterans Veterans Disability Timeline Jan Dils Veteran Disab Veteran Military Retirement Benefits Veterans Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/9a/42/31/9a4231f72621705561646555ac9009be.jpg" data-lightbox="roadtrip" data-title="A Quick Update On Cefaly For Migraine Natural Headache Remedies Natural Migraine Relief Migraine Headaches">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/9a/42/31/9a4231f72621705561646555ac9009be.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnwqYo7aY0kYbpSDnJnm4ZZ3OCKqA5P7oybg';" alt="A Quick Update On Cefaly For Migraine Natural Headache Remedies Natural Migraine Relief Migraine Headaches">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Quick Update On Cefaly For Migraine Natural Headache Remedies Natural Migraine Relief Migraine Headaches</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/200x150/22/0d/48/220d4815f42638dfe991b35c84c24912.jpg" data-lightbox="roadtrip" data-title="Noccr Knoxville Is Currently Recruiting Volunteers For Ongoing And Upcoming Investigational Studies For Migraine H Headache Migraine Relief Migraine Medication">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/200x150/22/0d/48/220d4815f42638dfe991b35c84c24912.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDjwM1-brcyKU4IiImq7lLo8S3L3wKGU-VQA';" alt="Noccr Knoxville Is Currently Recruiting Volunteers For Ongoing And Upcoming Investigational Studies For Migraine H Headache Migraine Relief Migraine Medication">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Noccr Knoxville Is Currently Recruiting Volunteers For Ongoing And Upcoming Investigational Studies For Migraine H Headache Migraine Relief Migraine Medication</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/65/08/3665083d5a6cd318001950e73c471c4d.png" data-lightbox="roadtrip" data-title="Rosacea Flyer Rosacea Clinical Research Research Studies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/65/08/3665083d5a6cd318001950e73c471c4d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2D0cHDV1-1eZbfVdGWvpplsgkNK0sdubHEA';" alt="Rosacea Flyer Rosacea Clinical Research Research Studies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rosacea Flyer Rosacea Clinical Research Research Studies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/58/e1/8858e1d344af7ba5fb5fb52fe0c22d02.jpg" data-lightbox="roadtrip" data-title="How Do You Even Begin To Explain Living With An Invisible Brain Injury Hersenletsel Hoofdpijn">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/58/e1/8858e1d344af7ba5fb5fb52fe0c22d02.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBMx1mHF8JG8gSshmA8Mq-LoI48z0GDOzdsA';" alt="How Do You Even Begin To Explain Living With An Invisible Brain Injury Hersenletsel Hoofdpijn">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Do You Even Begin To Explain Living With An Invisible Brain Injury Hersenletsel Hoofdpijn</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/b8/b3/0bb8b35179526d05d8cb8d832d273f2e.gif" data-lightbox="roadtrip" data-title="Acupressure Point For Headache In Hand Acupressure Point For Headache In Hand In 2020 Migraine Treatment Massage For Headache Acupressure Points For Headache">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/b8/b3/0bb8b35179526d05d8cb8d832d273f2e.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH9MCEHGU9CfTEz42pQPYK_ay3MhgEpinFDw';" alt="Acupressure Point For Headache In Hand Acupressure Point For Headache In Hand In 2020 Migraine Treatment Massage For Headache Acupressure Points For Headache">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Acupressure Point For Headache In Hand Acupressure Point For Headache In Hand In 2020 Migraine Treatment Massage For Headache Acupressure Points For Headache</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/aa/20/08/aa2008b63bf373411d997247959975a6.jpg" data-lightbox="roadtrip" data-title="Trigeminal Neuralgia Is Known As One Of The Most Painful Conditions In Modern Medicine Trigeminal Neuralgia Neuralgia Cluster Headaches">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/aa/20/08/aa2008b63bf373411d997247959975a6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2CvgGnXTm_sihlphEDNoK_TcFr7rB4rFzmw';" alt="Trigeminal Neuralgia Is Known As One Of The Most Painful Conditions In Modern Medicine Trigeminal Neuralgia Neuralgia Cluster Headaches">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trigeminal Neuralgia Is Known As One Of The Most Painful Conditions In Modern Medicine Trigeminal Neuralgia Neuralgia Cluster Headaches</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/15/0a/18/150a18ba18deb0777683a8a9462faaaf.jpg" data-lightbox="roadtrip" data-title="Mesothelioma Center Vital Services For Cancer Patients Families Mesothelioma Cancer Patients Cancer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/15/0a/18/150a18ba18deb0777683a8a9462faaaf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1HwUA23-cfyF80ZSHMGIkprBJelXzvdNRYA';" alt="Mesothelioma Center Vital Services For Cancer Patients Families Mesothelioma Cancer Patients Cancer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mesothelioma Center Vital Services For Cancer Patients Families Mesothelioma Cancer Patients Cancer</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/go-post-x-www-form-urlencoded.html">Go Post X Www Form Urlencoded</a></li>
+													<li class="list-group-item"><a href="/go-smart-education.html">Go Smart Education</a></li>
+													<li class="list-group-item"><a href="/gs-pay-scale-portsmouth-nh.html">Gs Pay Scale Portsmouth Nh</a></li>
+													<li class="list-group-item"><a href="/go-rest-post.html">Go Rest Post</a></li>
+													<li class="list-group-item"><a href="/gs-scale-2020-va-beach.html">Gs Scale 2020 Va Beach</a></li>
+													<li class="list-group-item"><a href="/go-vegetarian-benefits.html">Go Vegetarian Benefits</a></li>
+													<li class="list-group-item"><a href="/go-post-with-header.html">Go Post With Header</a></li>
+													<li class="list-group-item"><a href="/go-state-designs.html">Go State Designs</a></li>
+													<li class="list-group-item"><a href="/go-post-vallarta-plus.html">Go Post Vallarta Plus</a></li>
+													<li class="list-group-item"><a href="/go-usa-college.html">Go Usa College</a></li>
+													<li class="list-group-item"><a href="/go-tv-pay-bill-no.html">Go Tv Pay Bill No</a></li>
+													<li class="list-group-item"><a href="/governor-bill-lee.html">Governor Bill Lee</a></li>
+													<li class="list-group-item"><a href="/go-post-mensajeria.html">Go Post Mensajeria</a></li>
+													<li class="list-group-item"><a href="/gymnastics-college-park-ga.html">Gymnastics College Park Ga</a></li>
+													<li class="list-group-item"><a href="/go-post-request-parameters.html">Go Post Request Parameters</a></li>
+													<li class="list-group-item"><a href="/gophone-bill-payment.html">Gophone Bill Payment</a></li>
+													<li class="list-group-item"><a href="/gs-pay-scale-va-beach.html">Gs Pay Scale Va Beach</a></li>
+													<li class="list-group-item"><a href="/gs-pay-scale-arlington-va.html">Gs Pay Scale Arlington Va</a></li>
+													<li class="list-group-item"><a href="/gopro-hero-4-housing.html">Gopro Hero 4 Housing</a></li>
+													<li class="list-group-item"><a href="/godaddy-billing-phone-number.html">Godaddy Billing Phone Number</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

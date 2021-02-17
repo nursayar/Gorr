@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Most Popular Virginia Woolf Book - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Most Popular Virginia Woolf Book",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/e3/ff/81/e3ff81e7f57e2c64b24eee4509dbd460.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=most+popular+virginia+woolf+book",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Most Popular Virginia Woolf Book</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The book is one of the virginia woolf popular novels which has not lost it charm over the many years. Shelved 166 times as virginia-woolf avg rating 416 122297 ratings published 1929. The Best Virginia Woolf Books 1. <br>				
+			</p>
+										<a class="badge badge-primary" href="/expiration-of-post-911-gi-bill.html">expiration of post 911 gi bill</a>
+											<a class="badge badge-secondary" href="/eligibility-for-gi-bill.html">eligibility for gi bill</a>
+											<a class="badge badge-danger" href="/forever-again-lyrics.html">forever again lyrics</a>
+											<a class="badge badge-warning" href="/film-billu-song-download.html">film billu song download</a>
+											<a class="badge badge-light" href="/ge-9-ext-wpl.html">ge 9 ext wpl</a>
+											<a class="badge badge-secondary" href="/federal-gi-bill.html">federal gi bill</a>
+											<a class="badge badge-danger" href="/forever-again-movie.html">forever again movie</a>
+											<a class="badge badge-success" href="/forever-gifts-supreme-business-park-printworks-lane-manchester-m19-3jp.html">forever gifts supreme business park printworks lane manchester m19 3jp</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you have come to visit the ideal blog.  Our website provides you with hints for viewing the highest quality video and picture content, hunt and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, therefore we recommend this movie for you to see.  It is also possible to bring about supporting this site by sharing videos and graphics that you enjoy on this blog on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a4/d6/12/a4d612eb5a42a29458851a10cc9db0fb.jpg" data-lightbox="roadtrip" data-title="Poll Virginia Woolf S Best Book Virginia Woolf Virginia Books">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a4/d6/12/a4d612eb5a42a29458851a10cc9db0fb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiPTgtEEp8Iwe2QPSoa6zYLkvqG-BL-PcmjQ';" alt="Poll Virginia Woolf S Best Book Virginia Woolf Virginia Books">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Poll Virginia Woolf S Best Book Virginia Woolf Virginia Books</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/60/0b/4a600b4e7c81b05061165c69dedeadf2.jpg" data-lightbox="roadtrip" data-title="30 Books Everyone Should Read Before Turning 30 Books Everyone Should Read Top 100 Books Lighthouse Books">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/60/0b/4a600b4e7c81b05061165c69dedeadf2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI9bn_UgXJ3KE9J3WpRGUznA0oXViysOrNZg';" alt="30 Books Everyone Should Read Before Turning 30 Books Everyone Should Read Top 100 Books Lighthouse Books">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">30 Books Everyone Should Read Before Turning 30 Books Everyone Should Read Top 100 Books Lighthouse Books</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/5c/41/c25c41392e845548ef928a12ac703d5a.jpg" data-lightbox="roadtrip" data-title="30 Books You Should Read Before You Re 30 Huffpost Virginia Woolf Vanessa Bell Books You Should Read">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/5c/41/c25c41392e845548ef928a12ac703d5a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYFT3CQGo3-6l0h5t2aajqceKtQVU6aYN_SA';" alt="30 Books You Should Read Before You Re 30 Huffpost Virginia Woolf Vanessa Bell Books You Should Read">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">30 Books You Should Read Before You Re 30 Huffpost Virginia Woolf Vanessa Bell Books You Should Read</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/8a/1f/608a1fecd9583f213c2ec3ccc52a2f10.jpg" data-lightbox="roadtrip" data-title="Orlando Famous Authors Books Books Virginia Woolf">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/8a/1f/608a1fecd9583f213c2ec3ccc52a2f10.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFQqquu0h60RirrHVBrRvSFn-nL4rp_stgdw';" alt="Orlando Famous Authors Books Books Virginia Woolf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Orlando Famous Authors Books Books Virginia Woolf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/e5/75/03/e57503863bd1c310e38541628a4cc822.jpg" data-lightbox="roadtrip" data-title="What The World S Top Authors Say You Should Be Reading Updated Weekly In 2020 Virginia Woolf Good Books Books">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/e5/75/03/e57503863bd1c310e38541628a4cc822.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2GatMlDOXdszhBsgrbMQNLG32wSc8p-uulw';" alt="What The World S Top Authors Say You Should Be Reading Updated Weekly In 2020 Virginia Woolf Good Books Books">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What The World S Top Authors Say You Should Be Reading Updated Weekly In 2020 Virginia Woolf Good Books Books</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/f3/38/9bf33898122f53e07cf1f1b19dd67725.jpg" data-lightbox="roadtrip" data-title="To The Lighthouse By Virginia Woolf 1927 Penguin Books Covers Penguin Books Vintage Book Covers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/f3/38/9bf33898122f53e07cf1f1b19dd67725.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1LKCI9NaS1RaUXQWaDg8Cs65hySeBLzeYoQ';" alt="To The Lighthouse By Virginia Woolf 1927 Penguin Books Covers Penguin Books Vintage Book Covers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">To The Lighthouse By Virginia Woolf 1927 Penguin Books Covers Penguin Books Vintage Book Covers</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/aa/22/e9/aa22e96d739a96e3b7b6c9b43b7f6d08.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1LKCI9NaS1RaUXQWaDg8Cs65hySeBLzeYoQ';" alt="To The Lighthouse By Virginia Woolf 1927 Penguin Books Covers Penguin Books Vintage Book Covers">
+										<div class="card-body">
+						<h3 class="h5"><b>It is one of the books which comes nearest to stating the mystery of life and so in a sense nearest to solving it Connolly p.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Most popular virginia woolf book</strong>. 
+								
+																	A semi-biographical novel based in part on the life of Woolfs lover Vita Sackville-West it is generally considered. 
+																	Nearly century has passed since Virginia Woolf published her first essays and novels and it feels like shes never been more relevant. 
+																	However Woolf is arguably most famous for her book-length essay A Room of Ones Own with the famous dictum. 
+																	WITH A NEW INTRODUCTION FROM ALISON BECHDEL AUTHOR OF FUN HOME AND CREATOR OF THE BECHDEL TEST. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Through Mrs Dalloway she takes the reader on a journey into the world of Clarissa Dalloway exploring the life of a high society women in the post-world war England. 
+																	Virginia Woolfs most popular book is Mrs. 
+																	The Diary of Virginia Woolf Volume III. 
+																	To the Lighthouse 1927. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	6 Essential Books By Virginia Woolf You Should Read Mrs. 
+																	But it is only when Virginia learns. 
+																	Virginia Woolf 1429 - 2610. 
+																	First edition first impression of Woolfs most ambitious and experimental novel hailed by Cyril Connolly as her masterpiece. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Eavesdrop on the affair that inspired Virginia to write her most fantastical novel Orlando and discover a relationship that - even a hundred years later - feels radical and relatable. 
+																	A Biography is an influential novel by Virginia Woolf first published on 11 October 1928. 
+																	Dalloway 1925 To the Lighthouse 1927 and Orlando 1928 and the book-length essay A Room of Ones Own 1929 with its famous dictum a woman must have money and a room of her own if she is to write fiction. 
+																	In 1925 Virginia is exhausted in the wake of The Common Reader and Mrs Dalloway books that dazzled Vita and intensified the mystique Virginia held for her. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Orlando is titled as a biography. 
+																	A Room of Ones Own Paperback by. 
+																	Readers discovered and re-visited Mrs Dalloway during lockdown finding solace and reflection in her meditation upon time in London and January 2020 saw Woolf placed at the heart of a group biography about women writers in Bloomsbury. 
+																	Her most famous works include the novels Mrs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A Conversation by Virginia Woolf 4 On Being Ill by Virginia Woolf 5 Selected Diaries by Virginia Woolf. 
+																	Mrs Dalloway is undoubtedly one of the best books by Virginia Woolf. 
+																	The best books on Virginia Woolf 1 To the Lighthouse by Virginia Woolf 2 The Years by Virginia Woolf 3 Walter Sickert. 
+																	The world of Mrs Dalloway is evoked in Woolfs famous stream of consciousness style in a lyrical and haunting language which has made this from its publication in 1925 one of her most popular novels. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Virginia Woolf has 1017 books on Goodreads with 1896571 ratings. 
+																	As we reveal in our post on this novel the character of Clarissa Dalloway made her debut in. 
+																	We may not need another book about Virginia Woolf but Julia Briggss biography is a good place to start says Victoria Glendinning Victoria Glendinning Fri 8 Apr 2005 1923 EDT First published on. 
+																	The world of Mrs Dalloway is evoked in Woolfs famous stream of consciousness style in a lyrical and haunting language which has made this from its publication in 1925 one of her most popular novels. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A woman must have money and a room of her own if she is to write fiction In the. 
+																	1 of 5 stars 2 of 5 stars 3 of 5 stars 4 of 5 stars 5 of 5 stars. 
+																	A Biography 1928 To the Lighthouse 1927 A Room of Ones Own 1929 The Waves 1931 Between the Acts 1941. 
+																	The astounding work in Orlando simply goes to express the brilliance of Woolf as a writer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Divided into three sections perhaps in ironic homage to the classic Victorian. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/2c/44/2b2c44ef7bf320ae7bc094428d3d1809.jpg" data-lightbox="roadtrip" data-title="Reading Pathways Virginia Woolf S Lesser Known Works Wave Book Waves Fiction Books">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/2c/44/2b2c44ef7bf320ae7bc094428d3d1809.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8BR6ME-7V-zTLw8DXBAyxdLiOKJbiOwF9RA';" alt="Reading Pathways Virginia Woolf S Lesser Known Works Wave Book Waves Fiction Books">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reading Pathways Virginia Woolf S Lesser Known Works Wave Book Waves Fiction Books</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/da/43/84da430b45425b3b10cd84fffc2e71b9.jpg" data-lightbox="roadtrip" data-title="Mrs Dalloway Favorite Authors Fictional Characters Book Worms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/da/43/84da430b45425b3b10cd84fffc2e71b9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwc6PpA0OTTVGqlkWNyvzISKnubIoZrXsSWg';" alt="Mrs Dalloway Favorite Authors Fictional Characters Book Worms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mrs Dalloway Favorite Authors Fictional Characters Book Worms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/aa/22/e9/aa22e96d739a96e3b7b6c9b43b7f6d08.jpg" data-lightbox="roadtrip" data-title="Cam M Roberts Virginia Woolf Book Cover Famous Books">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/aa/22/e9/aa22e96d739a96e3b7b6c9b43b7f6d08.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwMdFIwDMS0_E1IKLjsMGJDfcvsQzMy90ixg';" alt="Cam M Roberts Virginia Woolf Book Cover Famous Books">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cam M Roberts Virginia Woolf Book Cover Famous Books</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/ff/81/e3ff81e7f57e2c64b24eee4509dbd460.jpg" data-lightbox="roadtrip" data-title="Mrs Dalloway By Virginia Woolf Good Books Book Worth Reading Books">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/ff/81/e3ff81e7f57e2c64b24eee4509dbd460.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBjKoRUL5-dN9GMjMENVSBkQCi957K_nc4dQ';" alt="Mrs Dalloway By Virginia Woolf Good Books Book Worth Reading Books">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mrs Dalloway By Virginia Woolf Good Books Book Worth Reading Books</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/2b/63/502b63b5f09197994cc5e1c05104a955.jpg" data-lightbox="roadtrip" data-title="Virginia Woolf S Sister Designed The Cover For The First Edition Of The Common Reader On Display Vanessa Bell S Origi Book Design Virginia Woolf Vanessa Bell">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/2b/63/502b63b5f09197994cc5e1c05104a955.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzmOnbGpHFEfEIoj1ahBSaOu3v3-_pwJiQKA';" alt="Virginia Woolf S Sister Designed The Cover For The First Edition Of The Common Reader On Display Vanessa Bell S Origi Book Design Virginia Woolf Vanessa Bell">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Woolf S Sister Designed The Cover For The First Edition Of The Common Reader On Display Vanessa Bell S Origi Book Design Virginia Woolf Vanessa Bell</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/07/6e/f0076e7608454017f053cbeb0b911c06.jpg" data-lightbox="roadtrip" data-title="Vintage Paperback Classics By Virginia Woolf George Orwell Vladimir Nabokov Oscar Wilde Books Vintage Books Book Club Books">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/07/6e/f0076e7608454017f053cbeb0b911c06.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDx9zP6IsmS792J3qFBmUOT1MC8WOwrO4BVQ';" alt="Vintage Paperback Classics By Virginia Woolf George Orwell Vladimir Nabokov Oscar Wilde Books Vintage Books Book Club Books">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vintage Paperback Classics By Virginia Woolf George Orwell Vladimir Nabokov Oscar Wilde Books Vintage Books Book Club Books</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/02/e2/8802e2587f6f764887f79140d8379450.jpg" data-lightbox="roadtrip" data-title="Virginia Woolf Mr Bennett And Mrs Brown 1924 Cover By Vanessa Bell Virginia Woolf Vanessa Bell Book Cover">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/02/e2/8802e2587f6f764887f79140d8379450.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4gKNQdBUEXAckGIqXFPr8lINe5KKPKXYDhA';" alt="Virginia Woolf Mr Bennett And Mrs Brown 1924 Cover By Vanessa Bell Virginia Woolf Vanessa Bell Book Cover">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Woolf Mr Bennett And Mrs Brown 1924 Cover By Vanessa Bell Virginia Woolf Vanessa Bell Book Cover</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/bb/30/33bb30f4643b1df0b256c1fcc8e3f67e.jpg" data-lightbox="roadtrip" data-title="Read A Thousand Books And Your Words Will Flow Like A River Virginia Woolf Reading Quotes Words Quotes Quotations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/bb/30/33bb30f4643b1df0b256c1fcc8e3f67e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS2dbDb0P9e0Cefdk0YUSP0uum7zKPNYapwQ';" alt="Read A Thousand Books And Your Words Will Flow Like A River Virginia Woolf Reading Quotes Words Quotes Quotations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Read A Thousand Books And Your Words Will Flow Like A River Virginia Woolf Reading Quotes Words Quotes Quotations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/8f/4a/7d8f4a283aebb5c7cee90d0e2079f10a.jpg" data-lightbox="roadtrip" data-title="I Could Not Love This More Virginiawoolf 10 Quotes On Her Birthday She Quotes 10th Quotes Books">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/8f/4a/7d8f4a283aebb5c7cee90d0e2079f10a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKqmZq2wTeepZejun4Y9DrE9z0Zx6qzZc9jA';" alt="I Could Not Love This More Virginiawoolf 10 Quotes On Her Birthday She Quotes 10th Quotes Books">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Could Not Love This More Virginiawoolf 10 Quotes On Her Birthday She Quotes 10th Quotes Books</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/bc/af/03bcaf7f4d128e77a8a34afbf58cdac9.jpg" data-lightbox="roadtrip" data-title="Mrs Dalloway Published By Houghton Mifflin Harcourt In 1964 Virginia Woolf Novels Book Authors">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/bc/af/03bcaf7f4d128e77a8a34afbf58cdac9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTncGSGaWKxjG9QfHHBq_dLwIEU3UPYONoxaw';" alt="Mrs Dalloway Published By Houghton Mifflin Harcourt In 1964 Virginia Woolf Novels Book Authors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mrs Dalloway Published By Houghton Mifflin Harcourt In 1964 Virginia Woolf Novels Book Authors</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/3e/40/ae3e40ba67164e6db1fc8fdded6ee4e0.png" data-lightbox="roadtrip" data-title="A Writer S Diary Virginia Woolf 9780156027915 Amazon Com Books Virginia Woolf Virginia Freedom Writers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/3e/40/ae3e40ba67164e6db1fc8fdded6ee4e0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKNCznHFYuJ9RokSncY9a5aTVF-YbSdQbKJA';" alt="A Writer S Diary Virginia Woolf 9780156027915 Amazon Com Books Virginia Woolf Virginia Freedom Writers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Writer S Diary Virginia Woolf 9780156027915 Amazon Com Books Virginia Woolf Virginia Freedom Writers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/42/8b/01/428b014168a5b53163b753bb41801b8a.jpg" data-lightbox="roadtrip" data-title="The Docks Of London Bloomsbury Group London Life Virginia Woolf">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/42/8b/01/428b014168a5b53163b753bb41801b8a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEyRodqWsngjcj6uvbCCGaSlb7oqP6SKm5XA';" alt="The Docks Of London Bloomsbury Group London Life Virginia Woolf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Docks Of London Bloomsbury Group London Life Virginia Woolf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/07/ba/20/07ba20e68241852f22753de930d5cf39.jpg" data-lightbox="roadtrip" data-title="Vanessa Bell S Cover Design For Virginia Woolf S The Years Vanessa Bell Book Cover Art Book Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/07/ba/20/07ba20e68241852f22753de930d5cf39.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl9GchpGm2n9TieSuzeiBfssoKHFKiTdWrQg';" alt="Vanessa Bell S Cover Design For Virginia Woolf S The Years Vanessa Bell Book Cover Art Book Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vanessa Bell S Cover Design For Virginia Woolf S The Years Vanessa Bell Book Cover Art Book Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/college-gymnastics-floor-music-2019.html">College Gymnastics Floor Music 2019</a></li>
+													<li class="list-group-item"><a href="/check-post-911-gi-bill-payment-status.html">Check Post 911 Gi Bill Payment Status</a></li>
+													<li class="list-group-item"><a href="/college-gymnastics-floor-music-2020.html">College Gymnastics Floor Music 2020</a></li>
+													<li class="list-group-item"><a href="/college-student-present.html">College Student Present</a></li>
+													<li class="list-group-item"><a href="/college-student-giveaway.html">College Student Giveaway</a></li>
+													<li class="list-group-item"><a href="/check-my-va-rating-online.html">Check My Va Rating Online</a></li>
+													<li class="list-group-item"><a href="/chronic-rhinitis-va-disability.html">Chronic Rhinitis Va Disability</a></li>
+													<li class="list-group-item"><a href="/college-promo-items.html">College Promo Items</a></li>
+													<li class="list-group-item"><a href="/common-trees-in-northern-virginia.html">Common Trees In Northern Virginia</a></li>
+													<li class="list-group-item"><a href="/child-using-post-911-gi-bill.html">Child Using Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/common-trees-northern-virginia.html">Common Trees Northern Virginia</a></li>
+													<li class="list-group-item"><a href="/college-gymnastics-programs-cut.html">College Gymnastics Programs Cut</a></li>
+													<li class="list-group-item"><a href="/common-trees-of-west-virginia.html">Common Trees Of West Virginia</a></li>
+													<li class="list-group-item"><a href="/college-to-go-to.html">College To Go To</a></li>
+													<li class="list-group-item"><a href="/college-graduation-gift-for-her.html">College Graduation Gift For Her</a></li>
+													<li class="list-group-item"><a href="/colleges-going-online-2020.html">Colleges Going Online 2020</a></li>
+													<li class="list-group-item"><a href="/check-gi-bill-status-online.html">Check Gi Bill Status Online</a></li>
+													<li class="list-group-item"><a href="/college-gymnastics-oklahoma.html">College Gymnastics Oklahoma</a></li>
+													<li class="list-group-item"><a href="/chica-go-bills-hat.html">Chica Go Bills Hat</a></li>
+													<li class="list-group-item"><a href="/common-native-trees-of-virginia-pdf.html">Common Native Trees Of Virginia Pdf</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

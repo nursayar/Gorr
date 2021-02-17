@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is Major Depressive Disorder Single Episode - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is Major Depressive Disorder Single Episode",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/f4/44/c0/f444c0eba55af6c3d0c9e11f8d9a0655.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+major+depressive+disorder+single+episode",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is Major Depressive Disorder Single Episode</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Manic episode ICD-10-CM Diagnosis Code F30F30 Manic episodeF301 Manic episode without psychotic symptomsF3010. Depression is a mood disorder that causes a persistent feeling of sadness and loss of interest. In partial remission single episode ICD-10 F324 recurrent episode ICD-10 F3341. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/va-education-benefits-office-phoenix.html">va education benefits office phoenix</a>
+											<a class="badge badge-danger" href="/va-disability-updates.html">va disability updates</a>
+											<a class="badge badge-info" href="/va-education-benefits-for-dependents-amount.html">va education benefits for dependents amount</a>
+											<a class="badge badge-success" href="/va-disability-upgrade.html">va disability upgrade</a>
+											<a class="badge badge-dark" href="/va-disability-ratings-without-dependents.html">va disability ratings without dependents</a>
+											<a class="badge badge-info" href="/va-disability-with-2-dependents.html">va disability with 2 dependents</a>
+											<a class="badge badge-secondary" href="/va-disability-ratings-tinnitus.html">va disability ratings tinnitus</a>
+											<a class="badge badge-dark" href="/va-dmv-approved-driving-schools.html">va dmv approved driving schools</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you've come to visit the right site.  Our site provides you with suggestions for viewing the highest quality video and picture content, hunt and find more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, therefore we recommend this video that you see.  You can also bring about supporting this website by sharing videos and graphics that you enjoy on this blog on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information you get on this website.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/90/ff/c890ff1034024bd287d3e866e42b6803.jpg" data-lightbox="roadtrip" data-title="Pin On Stories">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/90/ff/c890ff1034024bd287d3e866e42b6803.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8jpvowS6z3w0ABSfvrr_nYgoYwL7jZaA-Bg';" alt="Pin On Stories">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Stories</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ee/35/d3/ee35d38ad0e881d2d6fca654c50cadcd.jpg" data-lightbox="roadtrip" data-title="Pin On Behavior Science">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ee/35/d3/ee35d38ad0e881d2d6fca654c50cadcd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnw40HeNPEZIotYg3E1WjFSymKeYQemNQDwQ';" alt="Pin On Behavior Science">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Behavior Science</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/02/28/3502288d830fbc60a06d88f81f4f3be8.jpg" data-lightbox="roadtrip" data-title="Pin On Mental Health Month">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/02/28/3502288d830fbc60a06d88f81f4f3be8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMDoiUh4a2tpdJrtXl6tah1tS7MhnqgJWC1w';" alt="Pin On Mental Health Month">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mental Health Month</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/10/01/2c/10012c0464521ef848ea8fd8bc5a6ce4.jpg" data-lightbox="roadtrip" data-title="Pin On Therapy Tools">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/10/01/2c/10012c0464521ef848ea8fd8bc5a6ce4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwoDGDOxtKXjwEyVMQ87KAqt5eYNDsKuH_MA';" alt="Pin On Therapy Tools">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Therapy Tools</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/2c/0e/262c0e300fe901ad0058e1641c9f7628.png" data-lightbox="roadtrip" data-title="Psychotherapy Info Sheet Worksheet Therapist Aid Psychotherapy Therapy Worksheets Dialectical Behavior Therapy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/2c/0e/262c0e300fe901ad0058e1641c9f7628.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBIJv7J7hLAcfcERtUat2TECpkk2OwQI1ekA';" alt="Psychotherapy Info Sheet Worksheet Therapist Aid Psychotherapy Therapy Worksheets Dialectical Behavior Therapy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Psychotherapy Info Sheet Worksheet Therapist Aid Psychotherapy Therapy Worksheets Dialectical Behavior Therapy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/53/f9/b153f9d8c45d829f16b9f7d06688a364.jpg" data-lightbox="roadtrip" data-title="This Is A Cool Chart By Don Riso That Describes The Most Common Psychological Disorders For Each Type Enneagram Psychology Disorders Enneagram Type One">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/53/f9/b153f9d8c45d829f16b9f7d06688a364.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9En_cfdhj1NAfbMTpsaRb_XY487t8LGuRHw';" alt="This Is A Cool Chart By Don Riso That Describes The Most Common Psychological Disorders For Each Type Enneagram Psychology Disorders Enneagram Type One">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is A Cool Chart By Don Riso That Describes The Most Common Psychological Disorders For Each Type Enneagram Psychology Disorders Enneagram Type One</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/19/4d/eb/194debc11bccd078838da81f658b2db6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9En_cfdhj1NAfbMTpsaRb_XY487t8LGuRHw';" alt="This Is A Cool Chart By Don Riso That Describes The Most Common Psychological Disorders For Each Type Enneagram Psychology Disorders Enneagram Type One">
+										<div class="card-body">
+						<h3 class="h5"><b>A major depressive episode MDE is a period characterized by the symptoms of major depressive disorder.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is major depressive disorder single episode</strong>. 
+								
+																	The main difference to take away from this article is that Major Depressive Episode is a common set of symptoms that is subsumed in Major Depressive Disorder. 
+																	According to the Diagnostic and Statistical Manual of Mental Disorders the essential feature of a major depressive episode is either depressed mood or loss of interest in daily activities over a period of at least two weeks. 
+																	Major depressive disorder MDD also known as clinical depression major depression unipolar depression or unipolar disorder. 
+																	A major depressive episode MDE is characterized by five or more of the following symptoms being present every day or almost every day for a minimum of two weeks. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Major depressive disorder is a common mental disorder that can negatively affect many areas of someones life. 
+																	A major depressive episode is a period of two weeks or longer in which a person experiences certain symptoms of major depression. 
+																	In children and teens the mood may not be depressed but irritable instead. 
+																	It impacts mood and behavior as well as various physical functions including appetite. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Manic depression is the name doctors used to use for bipolar disorder. 
+																	Major depressive disorder single episode F32- bipolar disorder ICD-10-CM Diagnosis Code F31F31 Bipolar disorderF310 Bipolar disorder current episode. 
+																	Episodes may be isolated or recurrent and are categorized as mild few symptoms in excess of minimum criteria moderate or severe marked impact on social or occupational functioning. 
+																	Single episode depression is an episode where a person not with a history of depressive episodes has one. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Also called major depressive disorder or clinical depression it affects how you feel think and behave and can lead to a variety of emotional and physical problems. 
+																	It is not the same illness as depression but people with bipolar disorder experience periods of depression as well as periods of extreme highs. 
+																	A major depressive episode is characterized by the presence of a severely depressed mood that persists for at least two weeks. 
+																	Symptoms of the immediately previously major depressive episode are present but full criteria are not met or there is a period lasting less than two months without any significant symptoms of a major depressive episode following the end of such an episode. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If they have repeat performances of depression we look at this as likely to be something produced by the person either biologically or thinking wise. 
+																	Or as recurrent depression in the case of repeated episodes is a mental disorder characterized by a pervasive and persistent low mood that is accompanied by low self-esteem and by a loss of interest or pleasure in normally enjoyable activities. 
+																	You may have trouble doing normal day-to-day activities and sometimes you may feel as if life isnt worth living. 
+																	Treatment is different for these people compared to people with several episodes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Depressive disorder with mixed features also referred to as mixed episode mixed state or agitated depression is a mood disorder in which a person has symptoms of both depression and mania or hypomania at the same. 
+																	Joe suffered single episode depression and he had never had it beofre. 
+																	An episode of major depression includes five or more mental or physical symptoms in which if the symptoms last for at least two weeks it will be classified as major depression. 
+																	If the cause of the stress can be removed the Major Depressive Episode ends. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Losing a job or getting divorced are both common causes of a Major Depressive Episode. 
+																	Depressed mood for most of the day Loss of interest or enjoyment in all or most activities Significant unexplained weight loss or gain or appetite changes. 
+																	It causes prolonged feelings of sadness emptiness or hopelessness and a loss of interest in activities that were once enjoyed. 
+																	If you experience a severe episode of depression you may get hallucinations or delusions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Both Major Depressive Episode MDE and Major Depressive Disorder MDD are legitimate DSM-IV Diagnostic and Statistical Manual of Mental Disorders 4th Edition Asix I diagnoses. 
+																	Feelings of sadness and hopelessness fatigue weight gain or weight loss changes in sleeping habits loss of interest in activities or thoughts of suicide. 
+																	Depression Depression also known as major depression or major depressive disorder is a psychiatric disorder that affects mood behavior and overall health. 
+																	Major Depressive Disorder is also separated into single episodes and recurrent The first time someone has Major Depression we look more for causes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A Major Depressive Episode is most often the result of stress in a persons life and usually has a definite cause. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/f2/de/5ef2dea37a93192f0041fd21e86101ef.jpg" data-lightbox="roadtrip" data-title="Pin On Personality Mental Emotional Injuries Triggers Behavior">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/f2/de/5ef2dea37a93192f0041fd21e86101ef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREX3qxoD9jD_TeKDbKBXEI6w-71epUPUK9tg';" alt="Pin On Personality Mental Emotional Injuries Triggers Behavior">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Personality Mental Emotional Injuries Triggers Behavior</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/4d/eb/194debc11bccd078838da81f658b2db6.jpg" data-lightbox="roadtrip" data-title="Pin On Scary">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/4d/eb/194debc11bccd078838da81f658b2db6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO5SWucO6Onsyxg66dbl9AOs-5XmAPtrcy5Q';" alt="Pin On Scary">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Scary</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/44/c0/f444c0eba55af6c3d0c9e11f8d9a0655.png" data-lightbox="roadtrip" data-title="Bipolar Disorder Infographic An Infographic Showing The Symptoms Diagnosis Prevalence Causes And Treatment Of Bip Bipolar Disorder Bipolar Mental Disorders">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/44/c0/f444c0eba55af6c3d0c9e11f8d9a0655.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz_KtRd1y9oQC8bymZsf34NEOdfq-Q-PSzxA';" alt="Bipolar Disorder Infographic An Infographic Showing The Symptoms Diagnosis Prevalence Causes And Treatment Of Bip Bipolar Disorder Bipolar Mental Disorders">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bipolar Disorder Infographic An Infographic Showing The Symptoms Diagnosis Prevalence Causes And Treatment Of Bip Bipolar Disorder Bipolar Mental Disorders</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/d6/64/5ed66413c00ac8af21e44538c240cabe.png" data-lightbox="roadtrip" data-title="Pin By Njal Long On Transactional Analysis Social Work Exam Clinical Psychology Psychology Disorders">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/d6/64/5ed66413c00ac8af21e44538c240cabe.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs5Jf8H8Q3Ct3Afgbi53kFV1RDxa7DPc8oRQ';" alt="Pin By Njal Long On Transactional Analysis Social Work Exam Clinical Psychology Psychology Disorders">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Njal Long On Transactional Analysis Social Work Exam Clinical Psychology Psychology Disorders</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/7c/98/b77c986fefb900b563e09d86524dfa5f.jpg" data-lightbox="roadtrip" data-title="Pin By Dosing Health On Did You Know Health And Wellness Common Mental Disorders Mental Disorders Did You Know">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/7c/98/b77c986fefb900b563e09d86524dfa5f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDIuBRHMW9iXZ0EtGRdHATYlNoePsTqBAiWA';" alt="Pin By Dosing Health On Did You Know Health And Wellness Common Mental Disorders Mental Disorders Did You Know">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Dosing Health On Did You Know Health And Wellness Common Mental Disorders Mental Disorders Did You Know</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/50/cf/a150cfb468376b144c1559c25cdbe157.jpg" data-lightbox="roadtrip" data-title="Pin On Infographics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/50/cf/a150cfb468376b144c1559c25cdbe157.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR45xeovUb8Ehd53FWbIoXvAuIuYLVGLhI2ag';" alt="Pin On Infographics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Infographics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/66/2f/1f662fbeab57b9964db0125cfcee8630.jpg" data-lightbox="roadtrip" data-title="Pin On Mentally Speaking">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/66/2f/1f662fbeab57b9964db0125cfcee8630.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv0qg3MtzjJbvxKVMMY2tMGg79unN5ZqSbnQ';" alt="Pin On Mentally Speaking">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mentally Speaking</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/9e/b9/ac9eb9dc6227d76d32eb570248b31793.png" data-lightbox="roadtrip" data-title="Pin On Icd 10">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/9e/b9/ac9eb9dc6227d76d32eb570248b31793.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMq_O0uRYlF_qm5kG3w15MrClUU8SbdiYZTA';" alt="Pin On Icd 10">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Icd 10</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/67/80/ce678056956ee6da790d9447547b1609.jpg" data-lightbox="roadtrip" data-title="Pin On Self Esteem">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/67/80/ce678056956ee6da790d9447547b1609.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkSzCDs7tE_jT90euKoU8oFnn1Z8-infs_6w';" alt="Pin On Self Esteem">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Self Esteem</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/4e/50/2c4e50cff2fcce8716d5720cdc39feca.jpg" data-lightbox="roadtrip" data-title="Pin On Physical Therapy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/4e/50/2c4e50cff2fcce8716d5720cdc39feca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfvgnsFETH3-ZQz2XhT0TPWsLDwL6UDxR0nA';" alt="Pin On Physical Therapy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Physical Therapy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/90/46/f6/9046f62a3e736193c994e356f928b9a4.jpg" data-lightbox="roadtrip" data-title="Pin On Mental Disorders">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/90/46/f6/9046f62a3e736193c994e356f928b9a4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXHFbnn5uv2IBOiHHvONa9FWzxR7G_i5JPUQ';" alt="Pin On Mental Disorders">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mental Disorders</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/22/a4/9a22a47c72a36e939be6a3402ee1f117.jpg" data-lightbox="roadtrip" data-title="Pin On Anger Irritability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/22/a4/9a22a47c72a36e939be6a3402ee1f117.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjxR798GhjI9y4gtnCTKS5eUwBW9rDKhMb3Q';" alt="Pin On Anger Irritability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Anger Irritability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/52/6d/b0/526db015f0d4f827574b3ee5088e12bf.jpg" data-lightbox="roadtrip" data-title="Stress 11 Ways To Overcome Stress Ways To Reduce Stress Stress Coping With Stress">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/52/6d/b0/526db015f0d4f827574b3ee5088e12bf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_f5JalEIvZTTptlrN-qxfhYNAD9t4VE5n6A';" alt="Stress 11 Ways To Overcome Stress Ways To Reduce Stress Stress Coping With Stress">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stress 11 Ways To Overcome Stress Ways To Reduce Stress Stress Coping With Stress</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/post-911-gi-bill-mha-2020.html">Post 911 Gi Bill Mha 2020</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-part-time-online.html">Post 911 Gi Bill Part Time Online</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-transfer-to-spouse.html">Post 911 Gi Bill Transfer To Spouse</a></li>
+													<li class="list-group-item"><a href="/post-go-live-issues.html">Post Go Live Issues</a></li>
+													<li class="list-group-item"><a href="/pronote-college-guy-de-maupassant-bacqueville-en-caux.html">Pronote College Guy De Maupassant Bacqueville En Caux</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-tuition-cap-2016.html">Post 911 Gi Bill Tuition Cap 2016</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-payment-problems.html">Post 911 Gi Bill Payment Problems</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-pay-chart-2021.html">Post 911 Gi Bill Pay Chart 2021</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-telephone-number.html">Post 911 Gi Bill Telephone Number</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-monthly-payments.html">Post 911 Gi Bill Monthly Payments</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-policy-update.html">Post 911 Gi Bill Policy Update</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-total-value.html">Post 911 Gi Bill Total Value</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-transfer-extension.html">Post 911 Gi Bill Transfer Extension</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-montgomery.html">Post 911 Gi Bill Montgomery</a></li>
+													<li class="list-group-item"><a href="/promo-go-bills-januari-2020.html">Promo Go Bills Januari 2020</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-pay-scale.html">Post 911 Gi Bill Pay Scale</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-masters-degree-full-time.html">Post 911 Gi Bill Masters Degree Full Time</a></li>
+													<li class="list-group-item"><a href="/post-gi-bill-911.html">Post Gi Bill 911</a></li>
+													<li class="list-group-item"><a href="/promo-go-bills-juli-2019.html">Promo Go Bills Juli 2019</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-max-benefit.html">Post 911 Gi Bill Max Benefit</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

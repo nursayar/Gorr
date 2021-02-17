@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Loan Rate Cut - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Loan Rate Cut",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/08/a0/77/08a07743c7a571b234d4e6bfc98eb40d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+loan+rate+cut",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Loan Rate Cut</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Typically the group cuts rates by 025 at a time. For purchase loans with a zero-down payment the VA funding fee is 23 of the loan amount if this is your first VA loan. The short answer is no it does not. <br>				
+			</p>
+										<a class="badge badge-danger" href="/go-education-reviews.html">go education reviews</a>
+											<a class="badge badge-info" href="/go-education-private-institute.html">go education private institute</a>
+											<a class="badge badge-dark" href="/go-education-cairns.html">go education cairns</a>
+											<a class="badge badge-light" href="/go-good-college.html">go good college</a>
+											<a class="badge badge-warning" href="/go-education-department.html">go education department</a>
+											<a class="badge badge-info" href="/go-post-json.html">go post json</a>
+											<a class="badge badge-secondary" href="/go-gin-post.html">go gin post</a>
+											<a class="badge badge-light" href="/go-nh-housing.html">go nh housing</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you've come to visit the ideal site.  Our website gives you suggestions for seeing the maximum quality video and image content, search and locate more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, so we recommend this movie that you view.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/0f/c3/bf0fc34f3f87d70f8870c8d78010ddac.png" data-lightbox="roadtrip" data-title="Va Loan Basics Va Loan Rates Home Loan Realestate Cheapmortgagerates Va Mortgages Loan Rates Va Loan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/0f/c3/bf0fc34f3f87d70f8870c8d78010ddac.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFTCfQqvFGqR9mDnWqpcORa7Q-O6vnkbKXpg';" alt="Va Loan Basics Va Loan Rates Home Loan Realestate Cheapmortgagerates Va Mortgages Loan Rates Va Loan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Loan Basics Va Loan Rates Home Loan Realestate Cheapmortgagerates Va Mortgages Loan Rates Va Loan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/74/27/387427d812a934cf49421d83d15beb21.jpg" data-lightbox="roadtrip" data-title="Va Irrrl Quickest And Easiest Refinance Loan Refinance Loans Refinance Mortgage Va Loan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/74/27/387427d812a934cf49421d83d15beb21.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-tRsmh4YdPLmSDwY936-oFMByEfg7gdrIeQ';" alt="Va Irrrl Quickest And Easiest Refinance Loan Refinance Loans Refinance Mortgage Va Loan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Irrrl Quickest And Easiest Refinance Loan Refinance Loans Refinance Mortgage Va Loan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3b/e9/9d/3be99d33e51427a556b02c955ce1146b.jpg" data-lightbox="roadtrip" data-title="What S Going On With Mortgage Interest Rates Mortgage Interest Mortgage Interest Rates Mortgage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3b/e9/9d/3be99d33e51427a556b02c955ce1146b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzsU32VfS1Ba4wwpxMV51lSNt0A7EacEXOkA';" alt="What S Going On With Mortgage Interest Rates Mortgage Interest Mortgage Interest Rates Mortgage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What S Going On With Mortgage Interest Rates Mortgage Interest Mortgage Interest Rates Mortgage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/46/8a/02468a645be3923d2e3145afbe80952e.jpg" data-lightbox="roadtrip" data-title="Kentucky Va Mortgage Guidelines For Student Loans Va Mortgages Mortgage Loans Va Loan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/46/8a/02468a645be3923d2e3145afbe80952e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQDruVegnL5nZw91lZS1jt2XQxJZ_QFny7RA';" alt="Kentucky Va Mortgage Guidelines For Student Loans Va Mortgages Mortgage Loans Va Loan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kentucky Va Mortgage Guidelines For Student Loans Va Mortgages Mortgage Loans Va Loan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/a0/77/08a07743c7a571b234d4e6bfc98eb40d.jpg" data-lightbox="roadtrip" data-title="Mortgage Rates Dropped Again Why Are You Still Waiting To Buy A New Home Homes By Taber Mortgage Rates Buying A New Home Mortgage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/a0/77/08a07743c7a571b234d4e6bfc98eb40d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKBTWvf8sCZLu8DhQnN434F9SfkKgo2ltdfg';" alt="Mortgage Rates Dropped Again Why Are You Still Waiting To Buy A New Home Homes By Taber Mortgage Rates Buying A New Home Mortgage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mortgage Rates Dropped Again Why Are You Still Waiting To Buy A New Home Homes By Taber Mortgage Rates Buying A New Home Mortgage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/7c/28/6d7c2873071b4446d5b5e8fe3e2f6c08.jpg" data-lightbox="roadtrip" data-title="Home Loan Interest Rates 8 35 Compare Apply Online Home Loans Loan Interest Rates Loan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/7c/28/6d7c2873071b4446d5b5e8fe3e2f6c08.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJzgia1cS_OgTB7oyFLIJV89xXW7WSGmaGSw';" alt="Home Loan Interest Rates 8 35 Compare Apply Online Home Loans Loan Interest Rates Loan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Loan Interest Rates 8 35 Compare Apply Online Home Loans Loan Interest Rates Loan</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/02/46/8a/02468a645be3923d2e3145afbe80952e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJzgia1cS_OgTB7oyFLIJV89xXW7WSGmaGSw';" alt="Home Loan Interest Rates 8 35 Compare Apply Online Home Loans Loan Interest Rates Loan">
+										<div class="card-body">
+						<h3 class="h5"><b>However the VA warns that you should make sure the new interest rate.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va loan rate cut</strong>. 
+								
+																	According to Freddie Mac the national average rate dropped earlier this month to an. 
+																	Interest Rate Reduction Refinancing Loans. 
+																	It is also possible to refinance adjustable-rate mortgages ARM into fixed-rate mortgages. 
+																	Well Home Loans has announced that it will pass on the full RBA rate cut of 025 to new and existing variable rate home loan customers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Manufactured home loans not permanently affixed VA funding fee. 
+																	Find out if youre eligibleand how to apply. 
+																	The average 30-year VA. 
+																	Loan type VA funding fee. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With COVID-19 creating havoc and uncertainty within our economy mortgage rates are hitting historic lows. 
+																	If you have an existing VA-backed home loan and you want to reduce your monthly mortgage paymentsor make your payments more stablean interest rate reduction refinance loan IRRRL may be right for you. 
+																	The Mortgage Bankers Association MBA says it believes the average rate for a 30-year mortgage will start at 29 in the first quarter of 2021 and gradually increase to 32 by the end of 2021. 
+																	Though a Fed rate cut doesnt directly push down yields on. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Well Home Loans new Well Balanced home loan rate is 247 pa comparison rate 250 pa. 
+																	As expected by many the Reserve Bank of Australia RBA took the axe to the cash rate again this month lowering it by 25 basis points from 100 to 075. 
+																	Refinancing lets you replace your current loan with a new one under different terms. 
+																	Some want to know if the Fed rate cut directly equals a cut to mortgage loan insurance rates for FHA loans VA mortgages USDA loans or conventional mortgages. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On Monday January 25 2021 according to Bankrates latest survey of the nations largest mortgage lenders the average 30-year VA loan rate is 3100 with an APR of 3370. 
+																	The major banks havent passed on yesterdays 015 per cent interest rate cut to variable home loans but rates on some fixed term home loans have been slashed. 
+																	Also called IRRRL they can be used to lower interest rates by refinancing existing VA loans. 
+																	Rates could inch lower still. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Borrowers looking to reduce overall interest costs can use an IRRRL to refinance to a 15-year mortgage from a 30-year mortgage. 
+																	Currently the average five-year new car loan rate is 461 up from 434 when the Fed started boosting rates while the average four-year used car loan rate is 534 up from 526 over the same. 
+																	Interest Rate Reduction Refinancing Loans IRRRLs VA funding fee. 
+																	In an attempt to keep financial markets stable and make borrowing costs as low as possible for businesses and consumers the Federal Reserve cut its benchmark rate to a 5-year low. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How would a cut affect your credit cards home equity lines savings. 
+																	2250 2727 APR with 0125 discount points on a 45-day lock period for a 15-Year Fixed VA Loan and 2250 2596 APR with 1375 discount points on a 45-day lock period for a 30-Year Fixed VA Loan. 
+																	The Fed doesnt directly impact mortgage rates but borrowers should still pay attention. 
+																	It can be lower for some refinances and can be waived for disabled veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But that does NOT mean an interest rate cut wont affect your mortgage rate if you are not currently in a rate lock commitment with your lender. 
+																	The Federal Reserve seems poised to cut rates for the first time in a decade. 
+																	As of Monday mortgage rates hit their lowest average on record according to Mortgage News Daily. 
+																	VA funding fee. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Of course any sort of rate cut is a good thing for anyone borrowing money especially VA mortgage holders. 
+																	When the Fed cuts rates they are not directly cutting VA mortgage rates or any. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/44/06/cf44060ecdd96b53be45f4476621458b.jpg" data-lightbox="roadtrip" data-title="8 Great Questions To Ask Your Lender Click To My Blog To See Even More Great Questions Or Mortgage Loan Originator Mortgage Estimator This Or That Questions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/44/06/cf44060ecdd96b53be45f4476621458b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyP0bkTHXsd0r1YSW8YEFSuUxpvq3_L0MYvw';" alt="8 Great Questions To Ask Your Lender Click To My Blog To See Even More Great Questions Or Mortgage Loan Originator Mortgage Estimator This Or That Questions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">8 Great Questions To Ask Your Lender Click To My Blog To See Even More Great Questions Or Mortgage Loan Originator Mortgage Estimator This Or That Questions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/4e/12/b2/4e12b228ec4dbc8acf8005f6fb114f22.jpg" data-lightbox="roadtrip" data-title="Pin On Mortgages">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/4e/12/b2/4e12b228ec4dbc8acf8005f6fb114f22.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDLWPZprbK--LcXOv9cK_fVWpv3yRNwtippA';" alt="Pin On Mortgages">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mortgages</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/be/58/39be589d49938962b903d00f750662f1.jpg" data-lightbox="roadtrip" data-title="Tips To Getting Started With Va Home Loans Va Loan Tips Latest Va Home Loan Information Valoan Vatips Valoantips These W Home Loans Va Mortgages Loan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/be/58/39be589d49938962b903d00f750662f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ14F-TKNu4PAwP8JxkuI3xO-_cQA_2E7XLLA';" alt="Tips To Getting Started With Va Home Loans Va Loan Tips Latest Va Home Loan Information Valoan Vatips Valoantips These W Home Loans Va Mortgages Loan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tips To Getting Started With Va Home Loans Va Loan Tips Latest Va Home Loan Information Valoan Vatips Valoantips These W Home Loans Va Mortgages Loan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3d/a2/4b/3da24bb88770664c020dbdf39e1f8c45.jpg" data-lightbox="roadtrip" data-title="Pin On Save Money">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3d/a2/4b/3da24bb88770664c020dbdf39e1f8c45.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUE6mPlEUXbHxyzCMsZ28WjLSvKqoEICnsVA';" alt="Pin On Save Money">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Save Money</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/11/5e/a5115e795d3782f9e417041a00934a24.jpg" data-lightbox="roadtrip" data-title="Get A Home Loan From Riddhi Siddhi Multi Services At Lowest Interest Rate In India Whether You Re Looking To Purchas Home Loans Mortgage Loans Business Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/11/5e/a5115e795d3782f9e417041a00934a24.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZqhluQDEZ45k4IYXccixf8tKe61G_nL_lYw';" alt="Get A Home Loan From Riddhi Siddhi Multi Services At Lowest Interest Rate In India Whether You Re Looking To Purchas Home Loans Mortgage Loans Business Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get A Home Loan From Riddhi Siddhi Multi Services At Lowest Interest Rate In India Whether You Re Looking To Purchas Home Loans Mortgage Loans Business Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/c8/1d/2cc81d8c199585091ad088b4265c9073.jpg" data-lightbox="roadtrip" data-title="Veterans Affairs Home Loan Is The Most Popular Mortgages For Borrowers Who Need A Hassle Free Loa Refinance Mortgage Home Buying Process Home Improvement Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/c8/1d/2cc81d8c199585091ad088b4265c9073.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSju2bCPtBHg7PUzVd7buIypVKOQUsGH49GnA';" alt="Veterans Affairs Home Loan Is The Most Popular Mortgages For Borrowers Who Need A Hassle Free Loa Refinance Mortgage Home Buying Process Home Improvement Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Affairs Home Loan Is The Most Popular Mortgages For Borrowers Who Need A Hassle Free Loa Refinance Mortgage Home Buying Process Home Improvement Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f6/a6/7f/f6a67f262a45d4624db1f813a528f341.jpg" data-lightbox="roadtrip" data-title="Va Loans The Complete Guide From Veterans United Home Loans Va Loan 1st Time Watch This Before Va Loan 1st Ti Usda Loan Construction Loans Veterans United">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f6/a6/7f/f6a67f262a45d4624db1f813a528f341.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXEOBrRfRBgQHvj3Bb5djs1-vzmPnOMTuRrg';" alt="Va Loans The Complete Guide From Veterans United Home Loans Va Loan 1st Time Watch This Before Va Loan 1st Ti Usda Loan Construction Loans Veterans United">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Loans The Complete Guide From Veterans United Home Loans Va Loan 1st Time Watch This Before Va Loan 1st Ti Usda Loan Construction Loans Veterans United</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/4e/d1/e44ed11c3f8df903fed4045218cff0db.png" data-lightbox="roadtrip" data-title="Why The Lowest Interest Rate Is Not Always The Best Rate In 2020 Interest Rates Low Interest Rate Interesting Things">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/4e/d1/e44ed11c3f8df903fed4045218cff0db.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW7dmibxKQDgv8zvHV3lvatdgR3zrECaxnVg';" alt="Why The Lowest Interest Rate Is Not Always The Best Rate In 2020 Interest Rates Low Interest Rate Interesting Things">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why The Lowest Interest Rate Is Not Always The Best Rate In 2020 Interest Rates Low Interest Rate Interesting Things</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8c/80/22/8c802291f9ce4257d4acc1b11ed752c9.png" data-lightbox="roadtrip" data-title="Arizona Home Loans Va Loans Refinance Down Payment Assistance Refinance Loans Va Loan Refinance Down Payment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8c/80/22/8c802291f9ce4257d4acc1b11ed752c9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxYW4XruRXjplnXJ60VfF6kOrD9MiGrQOyTw';" alt="Arizona Home Loans Va Loans Refinance Down Payment Assistance Refinance Loans Va Loan Refinance Down Payment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Arizona Home Loans Va Loans Refinance Down Payment Assistance Refinance Loans Va Loan Refinance Down Payment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/48/89/a84889e8b76469771c7d8e19441f0b0c.png" data-lightbox="roadtrip" data-title="Va Irrrl Refinance Loans Zillow Refinance Loans Mortgage Rates Mortgage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/48/89/a84889e8b76469771c7d8e19441f0b0c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcLutdpPRlqCHRjTurqaVgT-n6pr5ZXlRkfQ';" alt="Va Irrrl Refinance Loans Zillow Refinance Loans Mortgage Rates Mortgage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Irrrl Refinance Loans Zillow Refinance Loans Mortgage Rates Mortgage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/c8/88/d5c888a0b29612d91242f7a6b6d28087.jpg" data-lightbox="roadtrip" data-title="15 Year Mortgage Versus 30 Year Home Loan 30 Year Mortgage Home Loans Mortgage Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/c8/88/d5c888a0b29612d91242f7a6b6d28087.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhfUvGwX4tmktm0cZv8YrGY9Dox2fL49MXzw';" alt="15 Year Mortgage Versus 30 Year Home Loan 30 Year Mortgage Home Loans Mortgage Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">15 Year Mortgage Versus 30 Year Home Loan 30 Year Mortgage Home Loans Mortgage Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/d5/62/e9d562139641d6273e8b22ad9720cae7.jpg" data-lightbox="roadtrip" data-title="Pin On Fl Space Coast Real Estate Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/d5/62/e9d562139641d6273e8b22ad9720cae7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGWl21JLL_JUT691ZPRHnXbdH04qC3IN5T4g';" alt="Pin On Fl Space Coast Real Estate Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Fl Space Coast Real Estate Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/b5/79/02b579c1383d69595344d15981fbcbcc.jpg" data-lightbox="roadtrip" data-title="Which Home Loan Is Right For Your Home Infographic Househunt Real Estate Blog Real Estate Infographic Buying First Home Real Estate Buyers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/b5/79/02b579c1383d69595344d15981fbcbcc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwB-rnqxUjZqfz9yJ7WCcz0dzCstqeNncYWQ';" alt="Which Home Loan Is Right For Your Home Infographic Househunt Real Estate Blog Real Estate Infographic Buying First Home Real Estate Buyers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Which Home Loan Is Right For Your Home Infographic Househunt Real Estate Blog Real Estate Infographic Buying First Home Real Estate Buyers</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/deadline-to-transfer-gi-bill-benefits.html">Deadline To Transfer Gi Bill Benefits</a></li>
+													<li class="list-group-item"><a href="/did-arya-go-blind.html">Did Arya Go Blind</a></li>
+													<li class="list-group-item"><a href="/cs-go-stats.html">Cs Go Stats</a></li>
+													<li class="list-group-item"><a href="/did-cigarettes-go-up-in-price-today.html">Did Cigarettes Go Up In Price Today</a></li>
+													<li class="list-group-item"><a href="/dependent-using-post-911-gi-bill.html">Dependent Using Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/did-gimli-go-to-the-undying-lands.html">Did Gimli Go To The Undying Lands</a></li>
+													<li class="list-group-item"><a href="/did-guy-die.html">Did Guy Die</a></li>
+													<li class="list-group-item"><a href="/did-gidle-disband.html">Did Gidle Disband</a></li>
+													<li class="list-group-item"><a href="/deadline-to-transfer-post-911-gi-bill.html">Deadline To Transfer Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/did-gino-and-maddie-ever-date.html">Did Gino And Maddie Ever Date</a></li>
+													<li class="list-group-item"><a href="/cons-of-the-gi-bill.html">Cons Of The Gi Bill</a></li>
+													<li class="list-group-item"><a href="/did-girlfriends-have-a-series-finale.html">Did Girlfriends Have A Series Finale</a></li>
+													<li class="list-group-item"><a href="/covid-va-stats.html">Covid Va Stats</a></li>
+													<li class="list-group-item"><a href="/definition-of-the-gi-bill.html">Definition Of The Gi Bill</a></li>
+													<li class="list-group-item"><a href="/current-gi-bill.html">Current Gi Bill</a></li>
+													<li class="list-group-item"><a href="/deja-vu-billiards-montgomery-al.html">Deja Vu Billiards Montgomery Al</a></li>
+													<li class="list-group-item"><a href="/department-of-defense-education-activity-alexandria-va.html">Department Of Defense Education Activity Alexandria Va</a></li>
+													<li class="list-group-item"><a href="/did-clocks-go-back.html">Did Clocks Go Back</a></li>
+													<li class="list-group-item"><a href="/did-giyuu-like-shinobu.html">Did Giyuu Like Shinobu</a></li>
+													<li class="list-group-item"><a href="/define-of-gi-bill-of-rights.html">Define Of Gi Bill Of Rights</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

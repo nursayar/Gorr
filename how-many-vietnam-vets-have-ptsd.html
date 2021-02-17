@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>How Many Vietnam Vets Have Ptsd - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "How Many Vietnam Vets Have Ptsd",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/736x/7e/2a/92/7e2a92454690bcb565774470547e7811.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+many+vietnam+vets+have+ptsd",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>How Many Vietnam Vets Have Ptsd</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">This is because there are so many variables. Based on this representative sample of vets the authors conclude that roughly one in four Vietnam war zone veterans alive today have experienced PTSD or some symptoms of the condition at some. When factoring in vets who met some of the criteria that number climbed to almost 11. <br>				
+			</p>
+										<a class="badge badge-dark" href="/go-build-using-vendor-folder.html">go build using vendor folder</a>
+											<a class="badge badge-dark" href="/go-build-doesnt-create-executable.html">go build doesnt create executable</a>
+											<a class="badge badge-dark" href="/go-build-query-string.html">go build query string</a>
+											<a class="badge badge-danger" href="/go-build-bin.html">go build bin</a>
+											<a class="badge badge-warning" href="/go-build-specific-file.html">go build specific file</a>
+											<a class="badge badge-warning" href="/go-build-flag.html">go build flag</a>
+											<a class="badge badge-warning" href="/go-build-set-output-directory.html">go build set output directory</a>
+											<a class="badge badge-light" href="/go-build-dependencies.html">go build dependencies</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you have come to pay a visit to the ideal blog.  Our site provides you with suggestions for viewing the maximum quality video and picture content, search and locate more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, especially Youtube, therefore we recommend this movie for you to view.  It is also possible to bring about supporting this site by sharing videos and graphics that you like on this blog on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this site.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e3/05/79/e305790f015aa4cb4d42825604d146af.jpg" data-lightbox="roadtrip" data-title="Vietnam Vets Vietnam Vets Military Quotes Vietnam War Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e3/05/79/e305790f015aa4cb4d42825604d146af.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFMHbbOtQRFECBdulSoFmG7EmkA2rQTXFZSQ';" alt="Vietnam Vets Vietnam Vets Military Quotes Vietnam War Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vietnam Vets Vietnam Vets Military Quotes Vietnam War Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/da/3d/73da3d2b58adaa506532a532ace7c87b.jpg" data-lightbox="roadtrip" data-title="Proud To Be A Vietnam Veterans Daughter And An Army Veterans Wife Vietnam Vets Vietnam Veterans Supportive">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/da/3d/73da3d2b58adaa506532a532ace7c87b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbzFYh75UvTcV1Aw8pN23cUcc2fjH0jif-Fw';" alt="Proud To Be A Vietnam Veterans Daughter And An Army Veterans Wife Vietnam Vets Vietnam Veterans Supportive">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Proud To Be A Vietnam Veterans Daughter And An Army Veterans Wife Vietnam Vets Vietnam Veterans Supportive</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/5d/5f/b75d5f95b064554fa41b41b837e78514.jpg" data-lightbox="roadtrip" data-title="Welcome Home To Our Vietnam Veterans Thank You For Your Service God Bless Vietnam War Veterans Vietnam War Vietnam Vets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/5d/5f/b75d5f95b064554fa41b41b837e78514.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKDt5pvWkK2MOaT89kvX1RCKxXph06r-UDYg';" alt="Welcome Home To Our Vietnam Veterans Thank You For Your Service God Bless Vietnam War Veterans Vietnam War Vietnam Vets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Welcome Home To Our Vietnam Veterans Thank You For Your Service God Bless Vietnam War Veterans Vietnam War Vietnam Vets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/8e/2c/618e2ccd0871283f78af9b2c78fabcf3.jpg" data-lightbox="roadtrip" data-title="Vietnam Vets Thank Them Today Years Too Late But Thank Them Anyway Tell Them You Re Grateful Thankful And Sorr Vietnam Vets Vietnam Veterans War Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/8e/2c/618e2ccd0871283f78af9b2c78fabcf3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPzppwNw9-tdYY6liPEUvAc_jYGU44__IhBA';" alt="Vietnam Vets Thank Them Today Years Too Late But Thank Them Anyway Tell Them You Re Grateful Thankful And Sorr Vietnam Vets Vietnam Veterans War Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vietnam Vets Thank Them Today Years Too Late But Thank Them Anyway Tell Them You Re Grateful Thankful And Sorr Vietnam Vets Vietnam Veterans War Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/fd/53/07/fd5307f79ebbf470af6640748a2d4a79.jpg" data-lightbox="roadtrip" data-title="Pin By Kerry Kocher On Armed Forces Warrior Quotes Military Quotes Vietnam Vets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/fd/53/07/fd5307f79ebbf470af6640748a2d4a79.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGOstMURZlORxi_88ceSzm0HoWUDnk-ScnZg';" alt="Pin By Kerry Kocher On Armed Forces Warrior Quotes Military Quotes Vietnam Vets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Kerry Kocher On Armed Forces Warrior Quotes Military Quotes Vietnam Vets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4d/e9/87/4de987375350ce17128a0375a2be026e.jpg" data-lightbox="roadtrip" data-title="Pin By 1 209 602 5049 On Vintage Vietnam War Vietnam Vets Vietnam Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4d/e9/87/4de987375350ce17128a0375a2be026e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXX0yPR94Q2JDsoHIc5UHLIHWIxk0lm_PZfw';" alt="Pin By 1 209 602 5049 On Vintage Vietnam War Vietnam Vets Vietnam Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By 1 209 602 5049 On Vintage Vietnam War Vietnam Vets Vietnam Veterans</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/0d/13/1d/0d131d366a7d4d47f3a1855f59258ec8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXX0yPR94Q2JDsoHIc5UHLIHWIxk0lm_PZfw';" alt="Pin By 1 209 602 5049 On Vintage Vietnam War Vietnam Vets Vietnam Veterans">
+										<div class="card-body">
+						<h3 class="h5"><b>According to a new study 271000 Vietnam veterans who served in the middle of the war zone currently have PTSD or meet some of the criteria for its diagnosis.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How many vietnam vets have ptsd</strong>. 
+								
+																	Approximately 30 of men and 27 of women had PTSD at some point in their life following Vietnam. 
+																	Based on these rates we estimate that some 283 000 male and 400 female theater veterans had warzone PTSD in 2012-13 forty or more years after their wartime service. 
+																	These factors include what you do in the war the politics around the war where the war is fought and the type of enemy you face. 
+																	By the late 1980s the staff at a Department of Veterans Affairs hospital diagnosed Smith with post-traumatic stress disorder PTSD and alcoholism. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In fact the VA has found 17 percent or. 
+																	PTSD Symptoms Later in Life. 
+																	More than a. 
+																	Generally speaking the rates of PTSD among military veterans returning from the Afghanistan War the Gulf War and the Vietnam War are between 10-20. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Other factors in a combat situation can add more stress to an already stressful situation. 
+																	The CDC said about 15 percent of veterans ever had PTSD and only about 2 percent still had it. 
+																	The Vietnam War-related PTSD and partial PTSD numbers are. 
+																	The National Vietnam Veterans Readjustment Study NVVRS found that approximately 15 of the 27 million Americans who served in the Vietnam war had PTSD. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Almost 25 of women reported sexual assault in the military About 55 of women and 38 of men have experienced sexual harassment in the military. 
+																	Its difficult to give a number on exactly how many veterans have PTSD. 
+																	The team determined that even now40 years after the war endedabout 271000 Vietnam vets have full war-zone-related PTSD plus war-zone PTSD that meets some diagnostic criteria. 
+																	We also found that 3 percent of theater veterans had many PTSD symptoms but fell short of meeting the DSM-5 criteria referred to as subthreshold warzone PTSD. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The National Vietnam Veterans Readjustment Study NVVRS found that 31 percent of Vietnam vets. 
+																	For women veterans those. 
+																	This may contribute to PTSD and other mental health problems. 
+																	The NVVRS brought greater attention to the issue of PTSD as it found that as many as 15 percent of Veterans had PTSD. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Men who served in the Vietnam war had a war-zone-related PTSD prevalence of 45. 
+																	It is estimated that about 30 out of every 100 or 30 of Vietnam Veterans have had PTSD in their lifetime. 
+																	About 15 out of every 100 Vietnam veterans 15 were currently diagnosed with PTSD when the most recent study of them the National Vietnam Veteran Readjustment Study was conducted in the late. 
+																	Many older Veterans find they have PTSD symptoms even 50 or more years after their wartime experience. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Roughly 11 percent of Vietnam veterans over a 40-year period continue to suffer from clinically important PTSD symptoms either having the full diagnosis or very strong features of the diagnosis. 
+																	At the time of the study middle- to late-1980s among Vietnam veterans approximately 15 of men and 9 of women were found to currently have PTSD. 
+																	One estimate was that 830000 26 of male and female veterans had impairment in functioning due to PTSD while another more recent estimate stated that most Vietnam veterans suffered from chronic PTSD with four-out-of-five reporting recent PTSD symptoms. 
+																	Between 45 and 57 of the American Indian Vietnam Veterans had PTSD for lifetime events 43 of the African Americans suffered from PTSD associated with lifetime events 39 of the Hispanic Vietnam Veterans suffered from lifetime PTSD and 38 of Native Hawaiian Vietnam Veterans suffered from lifetime PTSD compared to 24 of the Whites and 9 of the Japanese Americans2-36. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Among veterans who use Veterans Affairs for health care. 
+																	National Vietnam Veterans Longitudinal Study More recently Congress requested that VA conduct a follow-up study among the participants of the NVVRS known as the National Vietnam Veterans Longitudinal Study NVVLS. 
+																	It is estimated that about 30 percent of Vietnam veterans have had PTSD in their lifetime. 
+																	The incidence over a lifetime following involvement in the Vietnam war however is much greater. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some symptoms of PTSD include having nightmares or feeling like you are reliving the event avoiding situations that remind you of the event being easily startled and loss of interest in activities. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/1b/cb/dd1bcb41caeebd589489faba2aed93c0.jpg" data-lightbox="roadtrip" data-title="Welcome Home Vietnam War Vietnam Vietnam Vets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/1b/cb/dd1bcb41caeebd589489faba2aed93c0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh8Dk0O8V81Kh_HRgSE0A99qjsns_Hy_1qZg';" alt="Welcome Home Vietnam War Vietnam Vietnam Vets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Welcome Home Vietnam War Vietnam Vietnam Vets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/c9/14/78/c9147806ca7978895d01225e4e2ed046.jpg" data-lightbox="roadtrip" data-title="Pin On My Passions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/c9/14/78/c9147806ca7978895d01225e4e2ed046.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPKhgKkV8DiEvlz2L2ZGbpM0CIdpwtYv6xzw';" alt="Pin On My Passions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Passions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/90/78/31907806e0e8d43006d91dd3aca78373.jpg" data-lightbox="roadtrip" data-title="Viet Nam Vets Proud Of My Dad Who Was A Viet Nam River Rat Military Quotes Vietnam Veterans Military Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/90/78/31907806e0e8d43006d91dd3aca78373.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsQEUd8V_miTo-eTkjCHlLeOLLAwVytqiFyg';" alt="Viet Nam Vets Proud Of My Dad Who Was A Viet Nam River Rat Military Quotes Vietnam Veterans Military Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Viet Nam Vets Proud Of My Dad Who Was A Viet Nam River Rat Military Quotes Vietnam Veterans Military Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/4e/e7/64/4ee764fdc64db696453dc3b403376721.jpg" data-lightbox="roadtrip" data-title="Pin On Vietnam Vets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/4e/e7/64/4ee764fdc64db696453dc3b403376721.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9OrvejyEoGHYIJKT82pTWF3YzGOc5OnPzbg';" alt="Pin On Vietnam Vets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Vietnam Vets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/13/1d/0d131d366a7d4d47f3a1855f59258ec8.jpg" data-lightbox="roadtrip" data-title="Pin By Nancy Cartin On Honor Vietnam Vets Vietnam War Vietnam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/13/1d/0d131d366a7d4d47f3a1855f59258ec8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQF5byFxyCsbjJWscizjS-sZYnbIrf3QN6dA';" alt="Pin By Nancy Cartin On Honor Vietnam Vets Vietnam War Vietnam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Nancy Cartin On Honor Vietnam Vets Vietnam War Vietnam</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/17/f6/5d17f6baf44e6f7518d13f6eef593b68.jpg" data-lightbox="roadtrip" data-title="Vietnam Vets Thank You Welcome Home Vietnam Veterans Vietnam War Vietnam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/17/f6/5d17f6baf44e6f7518d13f6eef593b68.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Ayh7PtzippIDQU467zmp_IDOsjuF7EnwiQ';" alt="Vietnam Vets Thank You Welcome Home Vietnam Veterans Vietnam War Vietnam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vietnam Vets Thank You Welcome Home Vietnam Veterans Vietnam War Vietnam</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/7d/f5/6c7df5d1a1536340208ac10bc6ff0ba2.jpg" data-lightbox="roadtrip" data-title="The Jungle War November 4 1966 Us Soldier Carries A Wounded Comrade To Safety During Operation Attleboro Near Vietnam War Photos Vietnam War Vietnam Vets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/7d/f5/6c7df5d1a1536340208ac10bc6ff0ba2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSlXPHH4yTFt7iWir5OIrh4iPIFcVbj9DWLQ';" alt="The Jungle War November 4 1966 Us Soldier Carries A Wounded Comrade To Safety During Operation Attleboro Near Vietnam War Photos Vietnam War Vietnam Vets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Jungle War November 4 1966 Us Soldier Carries A Wounded Comrade To Safety During Operation Attleboro Near Vietnam War Photos Vietnam War Vietnam Vets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7e/2a/92/7e2a92454690bcb565774470547e7811.jpg" data-lightbox="roadtrip" data-title="Pin By Kevinpamsiemsen On Vietnam Vietnam War Vietnam History War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7e/2a/92/7e2a92454690bcb565774470547e7811.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ98dl5kC6JpXKXZNyM_1Y6D2Ljnl53r45_NQ';" alt="Pin By Kevinpamsiemsen On Vietnam Vietnam War Vietnam History War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Kevinpamsiemsen On Vietnam Vietnam War Vietnam History War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/d3/99/c6d3994bff2ace035db154127f4b0ad9.jpg" data-lightbox="roadtrip" data-title="Memorial Commemorating Vietnam War Vets Lost In Battle With Agent Orange Disease Vietnam War Vietnam Memorial Vietnam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/d3/99/c6d3994bff2ace035db154127f4b0ad9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Kl3JtB9bRGE96yo2zw2U2H6zjC0Xsu8_PQ';" alt="Memorial Commemorating Vietnam War Vets Lost In Battle With Agent Orange Disease Vietnam War Vietnam Memorial Vietnam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Memorial Commemorating Vietnam War Vets Lost In Battle With Agent Orange Disease Vietnam War Vietnam Memorial Vietnam</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/47/34/54/4734546efeddb799f4f45a5506ca9c8e.jpg" data-lightbox="roadtrip" data-title="Pin On My Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/47/34/54/4734546efeddb799f4f45a5506ca9c8e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAX6fEcNanruqf1ah24h9poOKcYoFX5zEFnA';" alt="Pin On My Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/56/22/d65622e77dfcc2c80f8c1a804639abbc.jpg" data-lightbox="roadtrip" data-title="Not Found Vietnam Vets Vietnam War Photos Vietnam Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/56/22/d65622e77dfcc2c80f8c1a804639abbc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9GRWj9uQdwUwUZqYPhxHXdklrMoypUzLZqA';" alt="Not Found Vietnam Vets Vietnam War Photos Vietnam Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Not Found Vietnam Vets Vietnam War Photos Vietnam Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/62/8e/a9628e20445b06d1f27de1660d3008fa.jpg" data-lightbox="roadtrip" data-title="Vietnam Vietnam Veterans Vietnam Vietnam War Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/62/8e/a9628e20445b06d1f27de1660d3008fa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGwKnZ3OI8llJvWrd85ggJ-snl_5Pzf6ynzw';" alt="Vietnam Vietnam Veterans Vietnam Vietnam War Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vietnam Vietnam Veterans Vietnam Vietnam War Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/ec/29/8c/ec298ced5b3860dde4a0ac006d774e17.jpg" data-lightbox="roadtrip" data-title="43 Fascinating Facts About The Vietnam War Factretriever Vietnam War Vietnam War Veterans Vietnam War Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/ec/29/8c/ec298ced5b3860dde4a0ac006d774e17.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTczySQye57T-x_VHnXkjFomsule4pGFzh3mQ';" alt="43 Fascinating Facts About The Vietnam War Factretriever Vietnam War Vietnam War Veterans Vietnam War Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">43 Fascinating Facts About The Vietnam War Factretriever Vietnam War Vietnam War Veterans Vietnam War Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/benefits-that-the-gi-bill.html">Benefits That The Gi Bill</a></li>
+													<li class="list-group-item"><a href="/best-college-giveaways.html">Best College Giveaways</a></li>
+													<li class="list-group-item"><a href="/benefits-of-go-bag.html">Benefits Of Go Bag</a></li>
+													<li class="list-group-item"><a href="/best-college-womens-basketball-team.html">Best College Womens Basketball Team</a></li>
+													<li class="list-group-item"><a href="/best-health-insurance-for-veterans.html">Best Health Insurance For Veterans</a></li>
+													<li class="list-group-item"><a href="/bill-gates-go-to-college.html">Bill Gates Go To College</a></li>
+													<li class="list-group-item"><a href="/benefits-of-git.html">Benefits Of Git</a></li>
+													<li class="list-group-item"><a href="/benefits-of-pokemon-go-buddy.html">Benefits Of Pokemon Go Buddy</a></li>
+													<li class="list-group-item"><a href="/bethany-college-kansas-gifts.html">Bethany College Kansas Gifts</a></li>
+													<li class="list-group-item"><a href="/bibill.html">Bibill</a></li>
+													<li class="list-group-item"><a href="/benefits-of-why-go-green.html">Benefits Of Why Go Green</a></li>
+													<li class="list-group-item"><a href="/bill-for-tuition-assistance-for-veterans.html">Bill For Tuition Assistance For Veterans</a></li>
+													<li class="list-group-item"><a href="/bi-pintarbigoid.html">Bi Pintarbigoid</a></li>
+													<li class="list-group-item"><a href="/best-way-to-use-gi-bill.html">Best Way To Use Gi Bill</a></li>
+													<li class="list-group-item"><a href="/benefits-of-let-go.html">Benefits Of Let Go</a></li>
+													<li class="list-group-item"><a href="/benefits-of-giveaway.html">Benefits Of Giveaway</a></li>
+													<li class="list-group-item"><a href="/bile-bile-yandi-yueregim-sevgim-yilmaz-soezleri.html">Bile Bile Yandi Yueregim Sevgim Yilmaz Soezleri</a></li>
+													<li class="list-group-item"><a href="/best-colleges-for-gi-bill.html">Best Colleges For Gi Bill</a></li>
+													<li class="list-group-item"><a href="/bibilly-hills-means.html">Bibilly Hills Means</a></li>
+													<li class="list-group-item"><a href="/bile-bile-song.html">Bile Bile Song</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

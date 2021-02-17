@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Virginia Tech Education Department - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Virginia Tech Education Department",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/71/30/3c/71303ca3ab219df6cea57c2232bfbf98.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=virginia+tech+education+department",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Virginia Tech Education Department</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Protect improve and promote population health in Southwest and Southside Virginia the Commonwealth of Virginia Central Appalachia the nation and the world by training future public health leaders through learning discovery and engagement in. Our collective research spans K-16 mathematics teaching and learning. The Virginia Department of Education VDOE has been working closely with the Governors Office the Virginia Department of Health and other state agencies to ensure our schools and communities have the most up-to-date information and resources. <br>				
+			</p>
+										<a class="badge badge-warning" href="/va-gi-bill-direct-deposit-form.html">va gi bill direct deposit form</a>
+											<a class="badge badge-secondary" href="/va-gi-bill-change-of-program-form.html">va gi bill change of program form</a>
+											<a class="badge badge-warning" href="/va-federal-employee-salary.html">va federal employee salary</a>
+											<a class="badge badge-primary" href="/va-disability-rhinitis.html">va disability rhinitis</a>
+											<a class="badge badge-dark" href="/va-employee-salary-database.html">va employee salary database</a>
+											<a class="badge badge-light" href="/va-federal-pay-calendar.html">va federal pay calendar</a>
+											<a class="badge badge-secondary" href="/va-education-approved-schools.html">va education approved schools</a>
+											<a class="badge badge-primary" href="/va-disability-w2-form.html">va disability w2 form</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you've come to visit the ideal site.  Our website gives you suggestions for seeing the highest quality video and image content, search and locate more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this video for you to see.  You can also contribute to supporting this website by sharing videos and graphics that you like on this site on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/90/57/9490570555b6e9bb90d00113ead747f9.jpg" data-lightbox="roadtrip" data-title="Home Virginia Tech Campus Virginia Tech Virginia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/90/57/9490570555b6e9bb90d00113ead747f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkNQzcxu4jC-efpKlIi5PMtW_Y7S7IJ_B8Ew';" alt="Home Virginia Tech Campus Virginia Tech Virginia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Virginia Tech Campus Virginia Tech Virginia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/6e/3c/036e3c60885fd959a8841797c201d024.jpg" data-lightbox="roadtrip" data-title="15 Struggles Every Virginia Tech Student Understands Virginia Tech Campus Virginia Virginia Tech">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/6e/3c/036e3c60885fd959a8841797c201d024.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxBkvTWw3P5mxYMGWSg9TWM4Dddc6rAzjdEw';" alt="15 Struggles Every Virginia Tech Student Understands Virginia Tech Campus Virginia Virginia Tech">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">15 Struggles Every Virginia Tech Student Understands Virginia Tech Campus Virginia Virginia Tech</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/db/a3/d9dba3349774536b04e97406dcef07e8.jpg" data-lightbox="roadtrip" data-title="Burruss Hall Virginia Tech Virginia Tech Campus Virginia Tech College Campus">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/db/a3/d9dba3349774536b04e97406dcef07e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaztH1rTaqcdrC739OU1fa2pxkPff2EgJ8aw';" alt="Burruss Hall Virginia Tech Virginia Tech Campus Virginia Tech College Campus">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Burruss Hall Virginia Tech Virginia Tech Campus Virginia Tech College Campus</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5f/29/56/5f2956f9029b7cd31b4cd0b3c5d44d42.jpg" data-lightbox="roadtrip" data-title="Struggling With The Virginia Tech Essay Prompts Check Out Our Complete Guide To Writing Virginia Tech Essays That Wor Virginia Tech Campus Virginia Blacksburg">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5f/29/56/5f2956f9029b7cd31b4cd0b3c5d44d42.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ-xqFFZIiOgJOzZiG3YWJXxOUg7XoZigOmg';" alt="Struggling With The Virginia Tech Essay Prompts Check Out Our Complete Guide To Writing Virginia Tech Essays That Wor Virginia Tech Campus Virginia Blacksburg">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Struggling With The Virginia Tech Essay Prompts Check Out Our Complete Guide To Writing Virginia Tech Essays That Wor Virginia Tech Campus Virginia Blacksburg</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/d7/11/77d711825ad36a3495290e9df55571cb.png" data-lightbox="roadtrip" data-title="Pin By Virginia Tech School Of Educat On School Of Education Centers Education School Of Education Education Center">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/d7/11/77d711825ad36a3495290e9df55571cb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-gynG6CUG8WhJ5dZysFnck6rfULp14Pw9xg';" alt="Pin By Virginia Tech School Of Educat On School Of Education Centers Education School Of Education Education Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Virginia Tech School Of Educat On School Of Education Centers Education School Of Education Education Center</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/93/38/9393383cb974d9e1e49d21f63ec772ca.jpg" data-lightbox="roadtrip" data-title="Virginia Tech University Blacksburg Va Virginia Tech Virginia Blacksburg">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/93/38/9393383cb974d9e1e49d21f63ec772ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWmBUlj4BxVs8CoLw3aMeIQVnbuOMFuXwjaQ';" alt="Virginia Tech University Blacksburg Va Virginia Tech Virginia Blacksburg">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Tech University Blacksburg Va Virginia Tech Virginia Blacksburg</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/01/b4/14/01b41440fda5a101935b7922f8de71d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWmBUlj4BxVs8CoLw3aMeIQVnbuOMFuXwjaQ';" alt="Virginia Tech University Blacksburg Va Virginia Tech Virginia Blacksburg">
+										<div class="card-body">
+						<h3 class="h5"><b>Virginia Tech reported 27 students and 12 employees have tested positive for COVID-19 since the start of the year according to the schools own dashboard.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Virginia tech education department</strong>. 
+								
+																	Faculty and students design safer bike helmets secure our national cyber systems and develop targeted cancer treatments. 
+																	Virginia Tech has made the decision to cancel participation in all Winter 2020 study abroad programs. 
+																	Virginia Tech is the lead US. 
+																	Our role in the world Partner to Serve Communities. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	At this time planning and recruitment for Spring. 
+																	Applications are now being accepted for 2021-22 Peer Advisors Communications Assistant and Safety and Risk Management Assistant. 
+																	345 Goodwin Hall MC 0218 635 Prices Fork Rd Blacksburg VA 24061 Phone. 
+																	We include faculty from the School of Education as well as the Department of Mathematics and we collaborate with faculty members accross the university from departments in engineering physics psychology sociology. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With programs for prospective teachers educational leaders school counselors and leaders in higher education you can find your own pathway to serve the greater good. 
+																	The Department of Agricultural Leadership and Community Education is a social science unit in the College of Agriculture and Life Sciences at Virginia Tech dedicated to advancing the priorities of the university and the college through applied social sciences emphasizing teaching and learning in agriculture leadership and social change and community education and development. 
+																	Virginia Tech Department of Engineering Education. 
+																	The mathematics education research group is interdisciplinary by nature of its subject. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	OReilly Safari Learning Sponsored by University Libraries Virginia Tech subscribes to a custom OReilly Safari Learning Library of more than 16000 ebooks and online video titles in the areas of technology digital media and. 
+																	Virginia Department of Educations Training and Technical Assistance Center TTAC. 
+																	The Department of Engineering Education has a unique role of preparing first-year and transfer students for matriculation into engineering disciplines and doctoral students for careers focused on improving how engineering is taught and learned. 
+																	Virginia Tech researchers dive deep to solve complex problems across disciplines. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1 08 N Jefferson St 701 Roanoke VA 24016 Richmond Center. 
+																	Virginia Techs School of Education is a global catalyst for individual and social transformation though education applied research and advocacy. 
+																	The law requires that parents and school personnel work together to provide children with appropriate educational services. 
+																	Parham Rd Suite 300 Henrico VA 23294 ccash48vtedu. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The university said 22 of those cases. 
+																	Learn more COVID-19 Updates. 
+																	Virginia Department of Education Parents play an important role in the education of their children especially parents of children who are identified as having disabilities. 
+																	Virginia Tech Continuing and Professional Education is your point of contact if you are an academic government or corporate thought leader interested in designing programs that transform individuals organizations and communities through innovative learning experiences. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you are interested in applying to study at one of the partner institutions or would like more information please contact Priscilla Baker. 
+																	Department of Mathematics 0123 460 McBryde Hall Virginia Tech 225 Stanger Street Blacksburg VA 24061-1026. 
+																	The Virginia Tech Honors College inspires and facilitates an extraordinary undergraduate education for students with exceptional motivation and ability. 
+																	Institution for an education abroad program for biological systems engineering students to study one or two semesters in Ireland at University College Dublin UCD. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Join the Global Education Office team by applying for one of our student positions. 
+																	7054 Haycock Road Falls Church VA 22043 susanlivtedu Roanoke Center. 
+																	Visit COVID-19 Virginia Public Schools for access to the latest information. 
+																	The Tuition Waiver Program applies to full-time and part-time salaried employees who wish to take credit courses at Virginia Tech or other accredited institutions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MPH concentrations in public health education and infectious disease About Us Our People Academic Programs Research Engagement Our mission. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/34/8e/bd348e5f6cb7a06ac5852cbedc1f717a.jpg" data-lightbox="roadtrip" data-title="Hume Center Awarded 3 8 Million For Advanced Manufacturing Education By The Department Of Defense In 2020 Cooperative Education Engineering Education Continuing Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/34/8e/bd348e5f6cb7a06ac5852cbedc1f717a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMjIPE5Bd4YQF_PrEwe1eLc2QOePDK6cWzyg';" alt="Hume Center Awarded 3 8 Million For Advanced Manufacturing Education By The Department Of Defense In 2020 Cooperative Education Engineering Education Continuing Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hume Center Awarded 3 8 Million For Advanced Manufacturing Education By The Department Of Defense In 2020 Cooperative Education Engineering Education Continuing Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/72/c0/be72c0fe6744b3571d9317e41e1719ca.jpg" data-lightbox="roadtrip" data-title="Photos Fall At Virginia Tech Virginia Tech News Virginia Tech Virginia Tech Campus Virginia Tech Hokies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/72/c0/be72c0fe6744b3571d9317e41e1719ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLOpyB5v8rDllBPXXSzTaa2Qg5xB5hRVf_Ag';" alt="Photos Fall At Virginia Tech Virginia Tech News Virginia Tech Virginia Tech Campus Virginia Tech Hokies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Photos Fall At Virginia Tech Virginia Tech News Virginia Tech Virginia Tech Campus Virginia Tech Hokies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/54/07/6b54079205ffe894b4f51049f5e56f29.jpg" data-lightbox="roadtrip" data-title="Virginia Tech University Blacksburg Va Custom Colored Essay Seating In Learning Space Nationaloffic Wood Office Furniture Student Seating Learning Spaces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/54/07/6b54079205ffe894b4f51049f5e56f29.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo6auUnYx0DsgyORSoWJI1uFxQDRYMPFMIvw';" alt="Virginia Tech University Blacksburg Va Custom Colored Essay Seating In Learning Space Nationaloffic Wood Office Furniture Student Seating Learning Spaces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Tech University Blacksburg Va Custom Colored Essay Seating In Learning Space Nationaloffic Wood Office Furniture Student Seating Learning Spaces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/34/1e/b7341e413154286f8a370bc77486b019.jpg" data-lightbox="roadtrip" data-title="The Center For Instructional Technology Solutions In Industry And Education Virginia Tech Technology Solutions Instructional Technology Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/34/1e/b7341e413154286f8a370bc77486b019.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT7f2LpYJ5jkZh4A-Pq-Ou5v22SNuw6nGpkA';" alt="The Center For Instructional Technology Solutions In Industry And Education Virginia Tech Technology Solutions Instructional Technology Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Center For Instructional Technology Solutions In Industry And Education Virginia Tech Technology Solutions Instructional Technology Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/15/ce/af/15ceaf13ba270ab694f2359cf9798467.jpg" data-lightbox="roadtrip" data-title="Upper Quad Residential Facilities Facilities Department Virginia Tech Virginia Tech Virginia Quad">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/15/ce/af/15ceaf13ba270ab694f2359cf9798467.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp_U6dmqcj3AxHcTPFxR8_iHsl9HvdALjWOw';" alt="Upper Quad Residential Facilities Facilities Department Virginia Tech Virginia Tech Virginia Quad">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Upper Quad Residential Facilities Facilities Department Virginia Tech Virginia Tech Virginia Quad</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/1f/8d/b71f8d0f40a3bdfc7f423f106b6144d9.jpg" data-lightbox="roadtrip" data-title="Pin On Upcoming Events In The New River Valley">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/1f/8d/b71f8d0f40a3bdfc7f423f106b6144d9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7xN9S4z0lQpKnpUuq8eQaIEFgTmWoGuq9Ww';" alt="Pin On Upcoming Events In The New River Valley">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Upcoming Events In The New River Valley</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/b4/14/01b41440fda5a101935b7922f8de71d8.jpg" data-lightbox="roadtrip" data-title="Virginia Tech Burruss Hall Virginia Tech Virginia Tech Hokies Tech">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/b4/14/01b41440fda5a101935b7922f8de71d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQycobXdZiKdQJkrewzlU2eUkqaOVu4Ig2ZjQ';" alt="Virginia Tech Burruss Hall Virginia Tech Virginia Tech Hokies Tech">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Tech Burruss Hall Virginia Tech Virginia Tech Hokies Tech</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/17/3c/5c/173c5c03fc9546a28f6da46818bd2cff.jpg" data-lightbox="roadtrip" data-title="Pin On Around Virginia Tech">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/17/3c/5c/173c5c03fc9546a28f6da46818bd2cff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmBeh9BinTjg2daPRFX-8o2o1gq9Y7XzcEPg';" alt="Pin On Around Virginia Tech">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Around Virginia Tech</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/ba/b9/41bab98d0aff09bfe79ae0e6da5d21e8.jpg" data-lightbox="roadtrip" data-title="Pin On Time To Shine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/ba/b9/41bab98d0aff09bfe79ae0e6da5d21e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyxKVUbz1kw_92uqHaPYCsGcB7yuyueRWFjQ';" alt="Pin On Time To Shine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Time To Shine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/de/d3/8dded39126828041d7318934499b1b7f.jpg" data-lightbox="roadtrip" data-title="Timelapse Photography Part I January 2015 Time Lapse Photography Virginia Tech Campus Photography">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/de/d3/8dded39126828041d7318934499b1b7f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw7-kls_auE9iOgJWUrljYR8whrhejjNiNLw';" alt="Timelapse Photography Part I January 2015 Time Lapse Photography Virginia Tech Campus Photography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Timelapse Photography Part I January 2015 Time Lapse Photography Virginia Tech Campus Photography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/90/b7/c790b72b09e4143d6d153a88fc81dc79.png" data-lightbox="roadtrip" data-title="Eggleston Hall Is Beautiful Even Dressed In Snow Virginia Tech Football Blacksburg Virginia Tech Hokies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/90/b7/c790b72b09e4143d6d153a88fc81dc79.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnkgKZ8Ng-nlkLmfPTnq77C3ypXfPGRh9InQ';" alt="Eggleston Hall Is Beautiful Even Dressed In Snow Virginia Tech Football Blacksburg Virginia Tech Hokies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Eggleston Hall Is Beautiful Even Dressed In Snow Virginia Tech Football Blacksburg Virginia Tech Hokies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/71/30/3c/71303ca3ab219df6cea57c2232bfbf98.jpg" data-lightbox="roadtrip" data-title="The Big Event Is Just Around The Corner Register Today Http Vtbigevent Org Virginia Tech Virginia Tech Student Organization Student">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/71/30/3c/71303ca3ab219df6cea57c2232bfbf98.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-QBqzKs9JNbvGTmlLYamzfxH3bajYQWmYaQ';" alt="The Big Event Is Just Around The Corner Register Today Http Vtbigevent Org Virginia Tech Virginia Tech Student Organization Student">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Big Event Is Just Around The Corner Register Today Http Vtbigevent Org Virginia Tech Virginia Tech Student Organization Student</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/82/aa/1682aaa5e0e2f874dfaf7629a6b4005a.jpg" data-lightbox="roadtrip" data-title="Pediatric Psychology Research Group Psychology Department Psychology Research Psychology Department Pediatrics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/82/aa/1682aaa5e0e2f874dfaf7629a6b4005a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9mHKvHFpdhbmj58m9eiMdIJb0t9F-CcDyMA';" alt="Pediatric Psychology Research Group Psychology Department Psychology Research Psychology Department Pediatrics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pediatric Psychology Research Group Psychology Department Psychology Research Psychology Department Pediatrics</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/house-waybill-la-gi.html">House Waybill La Gi</a></li>
+													<li class="list-group-item"><a href="/health-insurance-for-veteran-spouses.html">Health Insurance For Veteran Spouses</a></li>
+													<li class="list-group-item"><a href="/healthcare-for-spouse-of-disabled-veteran.html">Healthcare For Spouse Of Disabled Veteran</a></li>
+													<li class="list-group-item"><a href="/health-care-for-spouses-of-veterans.html">Health Care For Spouses Of Veterans</a></li>
+													<li class="list-group-item"><a href="/hi-bill-movie-sub-indo.html">Hi Bill Movie Sub Indo</a></li>
+													<li class="list-group-item"><a href="/house-bill-of-lading-la-gi.html">House Bill Of Lading La Gi</a></li>
+													<li class="list-group-item"><a href="/hi-bill-congratulations.html">Hi Bill Congratulations</a></li>
+													<li class="list-group-item"><a href="/health-care-for-military-veterans.html">Health Care For Military Veterans</a></li>
+													<li class="list-group-item"><a href="/hi-bill-lk21.html">Hi Bill Lk21</a></li>
+													<li class="list-group-item"><a href="/hello-is-bill-there.html">Hello Is Bill There</a></li>
+													<li class="list-group-item"><a href="/highest-gi-bill-housing-allowance.html">Highest Gi Bill Housing Allowance</a></li>
+													<li class="list-group-item"><a href="/help-increasing-va-rating.html">Help Increasing Va Rating</a></li>
+													<li class="list-group-item"><a href="/hi-bill-sub-indo.html">Hi Bill Sub Indo</a></li>
+													<li class="list-group-item"><a href="/hearing-loss-and-tinnitus-va-disability-benefits.html">Hearing Loss And Tinnitus Va Disability Benefits</a></li>
+													<li class="list-group-item"><a href="/health-insurance-for-veterans-reddit.html">Health Insurance For Veterans Reddit</a></li>
+													<li class="list-group-item"><a href="/history-of-the-gi-bill.html">History Of The Gi Bill</a></li>
+													<li class="list-group-item"><a href="/housing-gopro-5.html">Housing Gopro 5</a></li>
+													<li class="list-group-item"><a href="/health-coverage-for-veterans-spouses.html">Health Coverage For Veterans Spouses</a></li>
+													<li class="list-group-item"><a href="/health-care-for-veterans-traveling-abroad.html">Health Care For Veterans Traveling Abroad</a></li>
+													<li class="list-group-item"><a href="/home-health-care-for-veterans-spouses.html">Home Health Care For Veterans Spouses</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

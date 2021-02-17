@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Congress Bill Bill - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Congress Bill Bill",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/e7/1d/29/e71d2949e748410d3d2e2e942527d2fd.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=congress+bill+bill",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Congress Bill Bill</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Policy changes that are extraneous to the budget are limited by the Byrd Rule which also prohibits reconciliation bills from increasing the federal deficit after a ten-year period or making changes to Social Security. Congress panel approves bill to lower corporate income tax posted February 02 2021 at 0200 am by Maricel Cruz and Macon Ramos-Araneta A joint congressional panel approved on Monday a bill that will reduce the rate of corporate income tax in a bid to attract more foreign investment and help the coronavirus-hit country recover. Anyone elected to either body can propose a bill. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/when-do-i-get-gi-bill-housing-allowance.html">when do i get gi bill housing allowance</a>
+											<a class="badge badge-primary" href="/which-program-provides-health-care-benefits-for-dependents-of-permanently-disabled-veterans.html">which program provides health care benefits for dependents of permanently disabled veterans</a>
+											<a class="badge badge-danger" href="/what-vaed-treas-310-xxva-ch33.html">what vaed treas 310 xxva ch33</a>
+											<a class="badge badge-secondary" href="/when-did-the-gi-bill-expire.html">when did the gi bill expire</a>
+											<a class="badge badge-light" href="/whats-better-montgomery-gi-bill-or-post-911.html">whats better montgomery gi bill or post 911</a>
+											<a class="badge badge-secondary" href="/whats-the-definition-of-a-gi-bill.html">whats the definition of a gi bill</a>
+											<a class="badge badge-success" href="/what-were-the-effects-of-the-gi-bill-quizlet.html">what were the effects of the gi bill quizlet</a>
+											<a class="badge badge-light" href="/when-is-the-gi-bill-book-stipend-paid.html">when is the gi bill book stipend paid</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to pay a visit to the right site.  Our site gives you suggestions for seeing the maximum quality video and image content, hunt and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, especially Youtube, so we recommend this movie that you see.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/eb/3a/1f/eb3a1fd471c38afe3f3a4837116629a1.jpg" data-lightbox="roadtrip" data-title="Pin On Registration Form Templates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/eb/3a/1f/eb3a1fd471c38afe3f3a4837116629a1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSujEz3NeJvpjK7ADrJoSjKROoEbuC_AkpGLw';" alt="Pin On Registration Form Templates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Registration Form Templates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8f/a5/6e/8fa56eeece4c0e40c89c11884d8b1c79.jpg" data-lightbox="roadtrip" data-title="Pin On Registration Form Templates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8f/a5/6e/8fa56eeece4c0e40c89c11884d8b1c79.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp-G0dff_pCxw6VvBnuT2W4Eh4SK_mITC5cA';" alt="Pin On Registration Form Templates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Registration Form Templates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/07/24/96/0724964150049ef65b034b0669f527b9.jpg" data-lightbox="roadtrip" data-title="Student Congress Bill Format Beautiful 10 How To Write A Bill Template In 2020 Invoice Template Word Invoice Template Business Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/07/24/96/0724964150049ef65b034b0669f527b9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQATarAuufN1QiuXxnlSoDQxkvNedKJ6bchyw';" alt="Student Congress Bill Format Beautiful 10 How To Write A Bill Template In 2020 Invoice Template Word Invoice Template Business Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Student Congress Bill Format Beautiful 10 How To Write A Bill Template In 2020 Invoice Template Word Invoice Template Business Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/1d/29/e71d2949e748410d3d2e2e942527d2fd.jpg" data-lightbox="roadtrip" data-title="Pin On Example Form Business Template Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/1d/29/e71d2949e748410d3d2e2e942527d2fd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHR3S3DE-jyDp1SX8izdnm_1D0tiWV-ftv2A';" alt="Pin On Example Form Business Template Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Example Form Business Template Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/14/e8/51/14e8517a649bc8d4e44894163b3c2402.jpg" data-lightbox="roadtrip" data-title="Bill Format Congress Elegant Bill Quantities Template Excel In 2020 Bill Template Quotation Format Templates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/14/e8/51/14e8517a649bc8d4e44894163b3c2402.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeYU2Wi5SDjQ8TuSbr5LKwLISjT3RSVhWpsw';" alt="Bill Format Congress Elegant Bill Quantities Template Excel In 2020 Bill Template Quotation Format Templates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Format Congress Elegant Bill Quantities Template Excel In 2020 Bill Template Quotation Format Templates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/af/a9/8b/afa98b28e8e80754d5cdb0f77b0a4957.jpg" data-lightbox="roadtrip" data-title="Pin On Example Form Business Template Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/af/a9/8b/afa98b28e8e80754d5cdb0f77b0a4957.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxJTd25rJ8p-5cWpygLzgAZGRG18otMG5cSg';" alt="Pin On Example Form Business Template Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Example Form Business Template Design</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/d9/11/d2/d911d22c48b14348b14ab94622cbc9ae.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxJTd25rJ8p-5cWpygLzgAZGRG18otMG5cSg';" alt="Pin On Example Form Business Template Design">
+										<div class="card-body">
+						<h3 class="h5"><b>In the United States Congress a bill is proposed legislation under consideration by either of the two chambers of Congress.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Congress bill bill</strong>. 
+								
+																	The House of Representatives or the Senate. 
+																	The Postal Service seeks to cut costs and its regulator gave the agency greater flexibility setting higher mail rates but Congress could have a far greater impact putting the Postal Service on firmer financial footing if it chooses to act. 
+																	4 vital health issues not tied to COVID that Congress addressed in massive spending bill Here are some details about those big changes Congress made in December. 
+																	Congress works in two-year legislative sessions tied to the elections. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sarbanes for himself Ms. 
+																	Ned Lamont D is circulating a draft marijuana legalization bill for feedback. 
+																	The current session is called the 117 th Congress and it began on Jan 3 2021. 
+																	Washington Both chambers of Congress on Monday night passed a 900 billion relief measure designed to provide long-awaited assistance to Americans small businesses and industries ailing from the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Greg Steube R-FL filed the first federal marijuana reform bill of the new Congress. 
+																	As debate begins again on another bill Congress needs. 
+																	Summary of HR127 - 117th Congress 2021-2022. 
+																	Be it enacted by the Senate and House of Representatives of the United States of America in Congress assembled. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sabika Sheikh Firearm Licensing and Registration Act. 
+																	December 22 2020 658 am. 
+																	Tucked into the massive COVID bill that passed before Christmas was an important step forward for patients wanting more price transparency. 
+																	A bill To provide for the licensing of firearm and ammunition possession and the registration of firearms and to prohibit the possession of certain ammunition. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It can be republished. 
+																	The bill also removed the waiver for heigh requirement for appointment as an officer or employe of the PNP BFP BJMP or BuCor of a person who belongs to cultural communnities or indigenous peoples. 
+																	HR280 117th Congress 2021-2022 To direct the Secretary of Health and Human Services to carry out a pilot program to test the feasibility and outcomes of integrating a substance use disorder and behavioral health treatment locator tool into the prescription drug monitoring programs of 5 eligible States. 
+																	Tasos Katopodis Getty Images This story also ran on NPR. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Members of the House and Senate have introduced variations of the same postal reform bill in recent years but nearly all failed gain much momentum. 
+																	However the bill retained the height requirement for cadets of the Philippine National Police Academy at 162 m. 
+																	After both chambers approve a bill it is sent to the President of the United States for consideration. 
+																	Which was referred to the Committee on House Administration and in addition to the Committees on Intelligence Permanent Select the Judiciary Oversight and Reform Science Space and Technology Education and Labor Ways and Means Financial Services Ethics Homeland Security and Armed Services for a. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Congress can thus pass a maximum of three reconciliation bills per year though in practice it has often passed a single reconciliation bill affecting both spending and revenue. 
+																	Lofgren introduced the following bill. 
+																	Jobless Americans missed out on billions of dollars of benefits last month because then-President Donald Trump and Congress did not finalize a coronavirus relief bill until the end of December. 
+																	Angus King sets up a sign alongside a bipartisan group of Democrat and Republican members of Congress as they announce a proposal for a COVID-19 relief bill on Capitol Hill on December 1 2020 in Washington DC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It would simply move cannabis from Schedule I to Schedule III which would not end prohibition but would have a number of other effects. 
+																	All bills not enacted by the end of the session on Jan 3 2023 die and Congress will start over. 
+																	Each year the United States Congress considers about 5000 bills and resolutions but of those only about 7 will become law. 
+																	Most-Viewed Bills Top 10 HR5717 116th Gun Violence Prevention and Community Safety Act of 2020 HR127 117th To provide for the licensing of firearm and ammunition possession and the registration of firearms and to prohibit the possession of certain ammunition. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	WASHINGTON AP Congress passed a 900 billion pandemic relief package Monday night that would finally deliver long-sought cash to businesses and individuals and resources to vaccinate a nation confronting a frightening surge in COVID-19 cases and deaths. 
+																	For male and 157 m. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/11/d2/d911d22c48b14348b14ab94622cbc9ae.png" data-lightbox="roadtrip" data-title="Pin On Invoice Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/11/d2/d911d22c48b14348b14ab94622cbc9ae.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4uUUXdPoXvUGR0ZucvmDm8KPxDqypumsiyg';" alt="Pin On Invoice Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Invoice Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/06/fe/b506fe5d4f1c1993762d9aa776b88975.jpg" data-lightbox="roadtrip" data-title="Congress Bill Format Lovely Rent Receipt Free Printable">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/06/fe/b506fe5d4f1c1993762d9aa776b88975.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN61wofU7l-icFNXiH4R-PB8vB2k_iOujwHw';" alt="Congress Bill Format Lovely Rent Receipt Free Printable">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Congress Bill Format Lovely Rent Receipt Free Printable</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6e/76/16/6e7616873739b8d16235de68c247fa34.jpg" data-lightbox="roadtrip" data-title="Pin On Z Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6e/76/16/6e7616873739b8d16235de68c247fa34.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRE7lN3CAo05tIhdEiP3gz7G5pxkN9HXjGkQ';" alt="Pin On Z Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Z Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/b2/ba/d4b2bad5b72ae523593787b8701fbc79.jpg" data-lightbox="roadtrip" data-title="Pin On Congress In Action">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/b2/ba/d4b2bad5b72ae523593787b8701fbc79.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgFht1SZu4OvMVPHAqSvYcbpTPylo1VItYgw';" alt="Pin On Congress In Action">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Congress In Action</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c0/76/d6/c076d6b51f18c5a2abe25075787a6cff.jpg" data-lightbox="roadtrip" data-title="Student Congress Bill Format Best Of Congress Bill Template Sample Worksheets Nfl Student Fotos Lindas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c0/76/d6/c076d6b51f18c5a2abe25075787a6cff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYzQI3wSMVEqxPIFTYLgb6kAffxRLZpl-rOA';" alt="Student Congress Bill Format Best Of Congress Bill Template Sample Worksheets Nfl Student Fotos Lindas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Student Congress Bill Format Best Of Congress Bill Template Sample Worksheets Nfl Student Fotos Lindas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/23/fd/8b/23fd8b5e15fa0ec4f8e2029633773e98.jpg" data-lightbox="roadtrip" data-title="Pin On Example Form Business Template Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/23/fd/8b/23fd8b5e15fa0ec4f8e2029633773e98.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS92rOMNy76PaRTH9HUsF5u0v3obE0dkjnPwA';" alt="Pin On Example Form Business Template Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Example Form Business Template Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/8e/f1/14/8ef11498dee9d8f892560bb0b8fd9d09.jpg" data-lightbox="roadtrip" data-title="Pin On Example Form Business Template Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/8e/f1/14/8ef11498dee9d8f892560bb0b8fd9d09.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGJVFtT2dmKHjsntBwE3yXFznSUI7iZS1oAA';" alt="Pin On Example Form Business Template Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Example Form Business Template Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c1/98/b6/c198b64b77b8563e2591513c95ad5226.jpg" data-lightbox="roadtrip" data-title="Pin On American Revolutionary War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c1/98/b6/c198b64b77b8563e2591513c95ad5226.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7nWnPHXM_E_fF8m32_gStquMOiQMcqGosRw';" alt="Pin On American Revolutionary War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On American Revolutionary War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ad/a6/f7/ada6f716ea6a07d1bd0eabb1cba06838.jpg" data-lightbox="roadtrip" data-title="Pin By Surviving Social Studies On Surviving Social Studies Writing Activities Teaching Government Social Studies Activities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ad/a6/f7/ada6f716ea6a07d1bd0eabb1cba06838.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0s_3-qr-bX496l3bqCiXcpET7hsRQH-x7hw';" alt="Pin By Surviving Social Studies On Surviving Social Studies Writing Activities Teaching Government Social Studies Activities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Surviving Social Studies On Surviving Social Studies Writing Activities Teaching Government Social Studies Activities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/59/c4/26/59c426038a860af7b8ad8823b14d32db.jpg" data-lightbox="roadtrip" data-title="Student Congress Bill Format Lovely The White House Steps In To Help Students In Debt What In 2020 Student Birth Certificate Template White House Plans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/59/c4/26/59c426038a860af7b8ad8823b14d32db.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-wRXeQTIyg1dt6hPPhrGsmrdy1VdhICovyw';" alt="Student Congress Bill Format Lovely The White House Steps In To Help Students In Debt What In 2020 Student Birth Certificate Template White House Plans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Student Congress Bill Format Lovely The White House Steps In To Help Students In Debt What In 2020 Student Birth Certificate Template White House Plans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/30/0f/87/300f87278edef5824a19ee1a7ec6eb35.jpg" data-lightbox="roadtrip" data-title="Check Out This Downloadable Infographic About How A Bill Becomes A Law Which Expl Social Studies Middle School Teaching Government Homeschool Social Studies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/30/0f/87/300f87278edef5824a19ee1a7ec6eb35.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6ikpmekbXooB0omPuwLglu-IOuy0NlZExiw';" alt="Check Out This Downloadable Infographic About How A Bill Becomes A Law Which Expl Social Studies Middle School Teaching Government Homeschool Social Studies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Check Out This Downloadable Infographic About How A Bill Becomes A Law Which Expl Social Studies Middle School Teaching Government Homeschool Social Studies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/84/a3/f484a3c5fe458f64d4f523b05ae91045.jpg" data-lightbox="roadtrip" data-title="Pin On Registration Form Templates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/84/a3/f484a3c5fe458f64d4f523b05ae91045.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG0qBRkmaCrAAcnepXvKnkIvaLHyz263gvCg';" alt="Pin On Registration Form Templates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Registration Form Templates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/be/f3/01bef39aaf81298e5db6fe9fb6d8542c.jpg" data-lightbox="roadtrip" data-title="Pin On Example Form Business Template Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/be/f3/01bef39aaf81298e5db6fe9fb6d8542c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSynpkRPu2PJYvTzwZ1mtq8t6wZV8XKUAf-LQ';" alt="Pin On Example Form Business Template Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Example Form Business Template Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/gi-bill-definition-sentence.html">Gi Bill Definition Sentence</a></li>
+													<li class="list-group-item"><a href="/gi-bill-certification.html">Gi Bill Certification</a></li>
+													<li class="list-group-item"><a href="/gi-bill-mha-online.html">Gi Bill Mha Online</a></li>
+													<li class="list-group-item"><a href="/gi-bill-jazz.html">Gi Bill Jazz</a></li>
+													<li class="list-group-item"><a href="/gi-bill-coding-bootcamp-reddit.html">Gi Bill Coding Bootcamp Reddit</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-guard-and-reserve.html">Gi Bill For Guard And Reserve</a></li>
+													<li class="list-group-item"><a href="/gi-bill-kicker-jobs.html">Gi Bill Kicker Jobs</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing.html">Gi Bill Housing</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing-allowance-rates.html">Gi Bill Housing Allowance Rates</a></li>
+													<li class="list-group-item"><a href="/gi-bill-maximum-credit-hours.html">Gi Bill Maximum Credit Hours</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing-allowance-by-state.html">Gi Bill Housing Allowance By State</a></li>
+													<li class="list-group-item"><a href="/gi-bill-definition-origin.html">Gi Bill Definition Origin</a></li>
+													<li class="list-group-item"><a href="/gi-bill-in-reserves.html">Gi Bill In Reserves</a></li>
+													<li class="list-group-item"><a href="/gi-bill-kicker-reserves.html">Gi Bill Kicker Reserves</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing-allowance-for-california.html">Gi Bill Housing Allowance For California</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing-allowance-arizona.html">Gi Bill Housing Allowance Arizona</a></li>
+													<li class="list-group-item"><a href="/gi-bill-helicopter-pilot-training.html">Gi Bill Helicopter Pilot Training</a></li>
+													<li class="list-group-item"><a href="/gi-bill-history-facts.html">Gi Bill History Facts</a></li>
+													<li class="list-group-item"><a href="/gi-bill-coe.html">Gi Bill Coe</a></li>
+													<li class="list-group-item"><a href="/gi-bill-flight-training-reddit.html">Gi Bill Flight Training Reddit</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

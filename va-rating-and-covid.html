@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Rating And Covid - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Rating And Covid",
+  "datePublished": "2021-02-17",
+  "image": "https://www.huntington.va.gov/images/200710-HWW-COVID-PharmacyPickupnew.JPG",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+rating+and+covid",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Rating And Covid</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The public-facing report provides the same aggregated information that is available to VA leaders and clinicians and displays all known VA COVID-19 cases that are tested or treated at a VA facility. Add or change safety measures like not allowing anyone except patients and staff to enter the facility. The delivery of physical mail to the Governors office may be significantly delayed due to safety precautions that Virginia has implemented to help reduce the spread of COVID-19. <br>				
+			</p>
+										<a class="badge badge-success" href="/bah-for-100-disabled-veterans.html">bah for 100 disabled veterans</a>
+											<a class="badge badge-info" href="/american-college-of-gastroenterology-guideline-management-of-gerd.html">american college of gastroenterology guideline management of gerd</a>
+											<a class="badge badge-info" href="/are-gi-bill-payments-taxable.html">are gi bill payments taxable</a>
+											<a class="badge badge-warning" href="/allergic-rhinitis-veterans-claim.html">allergic rhinitis veterans claim</a>
+											<a class="badge badge-light" href="/allergic-rhinitis-and-va-benefits.html">allergic rhinitis and va benefits</a>
+											<a class="badge badge-danger" href="/bellagio-sidoarjo.html">bellagio sidoarjo</a>
+											<a class="badge badge-warning" href="/applying-for-social-security-disability-for-veterans.html">applying for social security disability for veterans</a>
+											<a class="badge badge-primary" href="/american-college-of-gastroenterology-2016-guideline-on-acute-diarrhea.html">american college of gastroenterology 2016 guideline on acute diarrhea</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you have come to visit the ideal site.  Our site gives you hints for viewing the maximum quality video and picture content, hunt and locate more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, particularly Youtube, so we recommend this movie that you view.  It is also possible to contribute to supporting this site by sharing videos and graphics that you like on this site on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this website.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="2Ed3967_pcaliM" data-lightbox="roadtrip" data-title="Https Www Benefits Va Gov Compensation Docs Claimexam Resumption One Pager Pdf">
+											<img class="card-img v-image ads-img " src="2Ed3967_pcaliM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbwW_m58tkvxRXqT6XMKaTBkv5qskd1bCwTQ';" alt="Https Www Benefits Va Gov Compensation Docs Claimexam Resumption One Pager Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Benefits Va Gov Compensation Docs Claimexam Resumption One Pager Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.legion.org/sites/legion.org/files/styles/scalecrop800x479/public/COVID_Vaccine_%2850745583447%29.jpg?itok=gExoIw2h" data-lightbox="roadtrip" data-title="Covid 19 Vaccine Info Available To Veterans Through Va The American Legion">
+											<img class="card-img v-image ads-img " src="https://www.legion.org/sites/legion.org/files/styles/scalecrop800x479/public/COVID_Vaccine_%2850745583447%29.jpg?itok=gExoIw2h" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRfHBNilguoQrR_OG6hWS9gAD6Mcxg8cd-wg';" alt="Covid 19 Vaccine Info Available To Veterans Through Va The American Legion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Covid 19 Vaccine Info Available To Veterans Through Va The American Legion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="UzPZoB9YrZ05VM" data-lightbox="roadtrip" data-title="Https Www Va Gov Health Docs Vha Covid 19 Response Report Pdf">
+											<img class="card-img v-image ads-img " src="UzPZoB9YrZ05VM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk_7PGuQk718h0Rw8JKrUhuSzrz5Li1d19yg';" alt="Https Www Va Gov Health Docs Vha Covid 19 Response Report Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Va Gov Health Docs Vha Covid 19 Response Report Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.chesterfield.gov/ImageRepository/Document?documentID=15220" data-lightbox="roadtrip" data-title="County Response To Covid 19 Chesterfield County Va">
+											<img class="card-img v-image ads-img " src="https://www.chesterfield.gov/ImageRepository/Document?documentID=15220" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6aVXltWjc6WobxlhwjqmhmEACkiJ9HgkJHQ';" alt="County Response To Covid 19 Chesterfield County Va">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">County Response To Covid 19 Chesterfield County Va</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.benefits.va.gov/BENEFITS/images/covid-19-vaccines-va.jpg" data-lightbox="roadtrip" data-title="Phoenix Regional Office Home">
+											<img class="card-img v-image ads-img " src="https://www.benefits.va.gov/BENEFITS/images/covid-19-vaccines-va.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY5d39l6p5kC7bDG3u4iEwsK6uH_xriD4EnQ';" alt="Phoenix Regional Office Home">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Phoenix Regional Office Home</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.comscore.com/var/comscore/storage/images/media/images/blog/charts/coronavirus-tv-viewing-audience-increase/2821786-1-eng-US/Coronavirus-TV-viewing-audience-increase.png" data-lightbox="roadtrip" data-title="Comscore Figures Reveal Surging Levels Of Coronavirus Tv Coverage">
+											<img class="card-img v-image ads-img " src="https://www.comscore.com/var/comscore/storage/images/media/images/blog/charts/coronavirus-tv-viewing-audience-increase/2821786-1-eng-US/Coronavirus-TV-viewing-audience-increase.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzvbrRVfvabcAiphusbfoTAYBCCyGOQA9LJg';" alt="Comscore Figures Reveal Surging Levels Of Coronavirus Tv Coverage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Comscore Figures Reveal Surging Levels Of Coronavirus Tv Coverage</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://thumbor.forbes.com/thumbor/711x1660/https://specials-images.forbesimg.com/imageserve/5e6fe438e1e61700080ef359/960x0.jpg?fit=scale" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzvbrRVfvabcAiphusbfoTAYBCCyGOQA9LJg';" alt="Comscore Figures Reveal Surging Levels Of Coronavirus Tv Coverage">
+										<div class="card-body">
+						<h3 class="h5"><b>Service-connected disabilities are injuries or illnesses that were causedor made worseby your active-duty military service.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va rating and covid</strong>. 
+								
+																	VA gave hydroxychloroquine for COVID-19 to 1300 veterans The Department of Veterans Affairs VA has used hydroxychloroquine as a treatment for the coronavirus for approximately 1300 veterans. 
+																	COVID App Use Urged By VA Officials As State Tops 100K In Cases Shutterstock Virginias total coronavirus cases topped 100K cases this weekend and state leaders urge residents to use the. 
+																	Learn about VA disability ratings and use the VA disability rating calculator or our ratings table to find your VA combined disability rating if you have more than one service-connected condition. 
+																	In the Spring of 2020 the President signed Public Law 116-128 then Public Law 116-140 Student Veteran Coronavirus Response Act of 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Guidance for VA home loan borrowers during COVID-19 Coronavirus Aid Relief and Economic Security CARES Act of 2020 Guidance for Borrowers with VA-guaranteed Home Loans. 
+																	On March 27 2020 the President signed into law the Coronavirus Aid Relief and Economic Security Act Public Law 116-136. 
+																	Hold at its current level of expanded in-person services. 
+																	This is your monthly basic rate. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Information about the number of recorded cases and the number of recorded deaths for people who have tested positive. 
+																	From the beginning of COVID-19 we have been working with Congress to preserve GI Bill benefits for those impacted by COVID-19. 
+																	The CARES Act protects borrowers with Federally-backed mortgage loans who are experiencing financial hardship due to the COVID-19 national emergency. 
+																	See VA testing numbers and other COVID-related statistics VA is taking aggressive steps to prevent COVID-19 transmission. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Beginning May 4 2020 the VA COVID-19 report incorporates deaths reported to VA from the community. 
+																	If you are in need of assistance please contact the Governors office using this form or by phone at 804 786-2211. 
+																	The panel reviews and summarizes the clinically relevant information and scientific literature available. 
+																	COVID-19 cases and deaths. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Reduce select in-person services. 
+																	On the Basic rates table find the amount for your disability rating and dependent status. 
+																	If youre a Veteran with a 30 disability rating and you have a dependent spouse no dependent parents or children your monthly basic rate would be 49335 each month. 
+																	Youll also be able to see which of your individual disability ratings are service-connected. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Youll see your VA combined disability rating and a list of your individual disability ratings. 
+																	In light of the ongoing 2019 Novel Coronavirus COVID-19 pandemic many veterans have been asking questions about what the Department of Veterans Affairs VA and its medical facilities are doing to protect and care for veterans during the outbreak. 
+																	VOA launches its 2021 graduate scheme 29 October 2020. 
+																	The VA checks certain criteria to see if you qualify for their care. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As the number of COVID-19 cases rises your VA facility may temporarily take one or more of these actions. 
+																	The Valuation Office Rating Contact scheme helps customers with more than 20 properties to submit rental information for Revaluation 2023. 
+																	Phyllis Tien MD San Francisco VA Health Care System Panel provides COVID-19 recommendations and guidance To develop treatment guidelines the panel meets regularly to update the guidelines as new data and information become available. 
+																	Information regarding the Department of Veterans Affairs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These measures include outreach to Veterans and staff clinical screening at VA health care facilities and protective procedures for patients admitted to community living centers and spinal cord injury units. 
+																	Example Veteran with no children. 
+																	They will review your military service history your disability rating your income level and other benefits you may be. 
+																	Nearly 880 have been hospitalized for the illness an indication of a serious case of COVID-19 with the potential for long-term effects and possibly VA benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In addition to the COVID-19. 
+																	According to new data made available by the Department of Health and Human Resources Coronavirus Dashboard the state has administered 92070 first doses of the PfizerBioNTech and Modern vaccines for COVID-19 vaccinating more than 5 percent of the states 18 million residents the most of any state according to Bloombergs Vaccine Tracker. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.fairfaxcounty.gov/health/sites/health/files/Assets/images/Coronavirus/parent-school-algorithm.jpg" data-lightbox="roadtrip" data-title="Covid 19 Tools For The Fairfax Community Health">
+											<img class="card-img v-image ads-img " src="https://www.fairfaxcounty.gov/health/sites/health/files/Assets/images/Coronavirus/parent-school-algorithm.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfp__WG-3ChwxtwQuvPlQVqBBglRc-OWT4sw';" alt="Covid 19 Tools For The Fairfax Community Health">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Covid 19 Tools For The Fairfax Community Health</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.suffolkva.us/ImageRepository/Document?documentID=5309" data-lightbox="roadtrip" data-title="Suffolk Coronavirus Covid 19 Updates Suffolk Va">
+											<img class="card-img v-image ads-img " src="http://www.suffolkva.us/ImageRepository/Document?documentID=5309" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxKw2FbUyC_zMMbe3x6spme7fdsaMBTq8iKg';" alt="Suffolk Coronavirus Covid 19 Updates Suffolk Va">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Suffolk Coronavirus Covid 19 Updates Suffolk Va</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://henrico.us/assets/Quarantine_Guidelines_GraphicDec2020Eng.png" data-lightbox="roadtrip" data-title="Coronavirus Covid 19 English Henrico County Virginia">
+											<img class="card-img v-image ads-img " src="https://henrico.us/assets/Quarantine_Guidelines_GraphicDec2020Eng.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk67RSvF0DLSPNVjMCNQNVVCmZjgKZY6xZKQ';" alt="Coronavirus Covid 19 English Henrico County Virginia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coronavirus Covid 19 English Henrico County Virginia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hillandponton.com/wp-content/uploads/2016/04/protected-ratings.jpg" data-lightbox="roadtrip" data-title="Protected Va Disability Ratings And Va Rules Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://www.hillandponton.com/wp-content/uploads/2016/04/protected-ratings.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEXI78uEOZYoVkLDCsOb1DzvKz4P1gMkM_rA';" alt="Protected Va Disability Ratings And Va Rules Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Protected Va Disability Ratings And Va Rules Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://westjem.com/wp-content/gallery/article-importer/PMC7234684.1-wjem-21-514-g001.PNG" data-lightbox="roadtrip" data-title="15 Smartphone Apps For Older Adults To Use While In Isolation During The Covid 19 Pandemic The Western Journal Of Emergency Medicine">
+											<img class="card-img v-image ads-img " src="https://westjem.com/wp-content/gallery/article-importer/PMC7234684.1-wjem-21-514-g001.PNG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP9Qv8vEg-l7Jttgl__NSXyVjnNIsy7W-ULg';" alt="15 Smartphone Apps For Older Adults To Use While In Isolation During The Covid 19 Pandemic The Western Journal Of Emergency Medicine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">15 Smartphone Apps For Older Adults To Use While In Isolation During The Covid 19 Pandemic The Western Journal Of Emergency Medicine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://thumbor.forbes.com/thumbor/711x1660/https://specials-images.forbesimg.com/imageserve/5e6fe438e1e61700080ef359/960x0.jpg?fit=scale" data-lightbox="roadtrip" data-title="See How Coronavirus Compares To Other Pandemics Through History">
+											<img class="card-img v-image ads-img " src="https://thumbor.forbes.com/thumbor/711x1660/https://specials-images.forbesimg.com/imageserve/5e6fe438e1e61700080ef359/960x0.jpg?fit=scale" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPDLUhIeLFdXpsdVycQHxXBvm40BQvm54q8A';" alt="See How Coronavirus Compares To Other Pandemics Through History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">See How Coronavirus Compares To Other Pandemics Through History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.moaa.org/uploadedfiles/lab-prep-hands-h.jpg" data-lightbox="roadtrip" data-title="Moaa Va Releases Priority List For Covid 19 Vaccine Distribution">
+											<img class="card-img v-image ads-img " src="https://www.moaa.org/uploadedfiles/lab-prep-hands-h.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnxny9kcdcuGddlx9snnIkFdlAZ7Bup715bg';" alt="Moaa Va Releases Priority List For Covid 19 Vaccine Distribution">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Moaa Va Releases Priority List For Covid 19 Vaccine Distribution</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdrpc.org/wp-content/uploads/2020/04/esri-covid-19-report.jpg" data-lightbox="roadtrip" data-title="Capital Region Coronavirus Update Regional Resources Cdrpc">
+											<img class="card-img v-image ads-img " src="https://cdrpc.org/wp-content/uploads/2020/04/esri-covid-19-report.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbrIpcv2tTlcE61I9rvSyyX9EhQKKZU3W6cw';" alt="Capital Region Coronavirus Update Regional Resources Cdrpc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Capital Region Coronavirus Update Regional Resources Cdrpc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.covid19reviews.org/img/ESP%20logo%20(2019%20update).png" data-lightbox="roadtrip" data-title="Va Esp Covid 19 Reviews">
+											<img class="card-img v-image ads-img " src="https://www.covid19reviews.org/img/ESP%20logo%20(2019%20update).png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjUy8KbMC-0alhag2v-hwuUsFND8HlHxWNnA';" alt="Va Esp Covid 19 Reviews">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Esp Covid 19 Reviews</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.spokane.va.gov/images/COVIDCoachApp.png" data-lightbox="roadtrip" data-title="Mann Grandstaff Va Medical Center">
+											<img class="card-img v-image ads-img " src="https://www.spokane.va.gov/images/COVIDCoachApp.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgVnCxzmR6qWunLFsdEewqK1gSX-mz9edc8Q';" alt="Mann Grandstaff Va Medical Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mann Grandstaff Va Medical Center</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://static.toiimg.com/thumb/msid-74850207,width-800,height-600,resizemode-75,imgsize-169207,pt-32,y_pad-40/74850207.jpg" data-lightbox="roadtrip" data-title="Coronavirus How To Tell The Difference Between A Dry Cough And A Wet Cough Times Of India">
+											<img class="card-img v-image ads-img " src="https://static.toiimg.com/thumb/msid-74850207,width-800,height-600,resizemode-75,imgsize-169207,pt-32,y_pad-40/74850207.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKyB7BlsYYyFqbk2EUubFEdpwMEFWpqo4UUw';" alt="Coronavirus How To Tell The Difference Between A Dry Cough And A Wet Cough Times Of India">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coronavirus How To Tell The Difference Between A Dry Cough And A Wet Cough Times Of India</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.stripes.com/polopoly_fs/1.655677.1608234740!/image/image.jpg_gen/derivatives/600x400/image.jpg" data-lightbox="roadtrip" data-title="Veterans Stripes">
+											<img class="card-img v-image ads-img " src="https://www.stripes.com/polopoly_fs/1.655677.1608234740!/image/image.jpg_gen/derivatives/600x400/image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSypK3ym7PkJTLvKjqubUY2Uh_k2rMwAxmPVg';" alt="Veterans Stripes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Stripes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.huntington.va.gov/images/200710-HWW-COVID-PharmacyPickupnew.JPG" data-lightbox="roadtrip" data-title="Hershel Woody Williams Va Medical Center">
+											<img class="card-img v-image ads-img " src="https://www.huntington.va.gov/images/200710-HWW-COVID-PharmacyPickupnew.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtbsluWg9u-0cSXkxzc-lSrFfCRAeCIafmjQ';" alt="Hershel Woody Williams Va Medical Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hershel Woody Williams Va Medical Center</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-rating-complex-migraines.html">Va Rating Complex Migraines</a></li>
+													<li class="list-group-item"><a href="/va-rating-10-percent.html">Va Rating 10 Percent</a></li>
+													<li class="list-group-item"><a href="/va-rating-criteria-for-hearing-loss.html">Va Rating Criteria For Hearing Loss</a></li>
+													<li class="list-group-item"><a href="/va-rating-5022.html">Va Rating 5022</a></li>
+													<li class="list-group-item"><a href="/va-rating-ankle-injury.html">Va Rating Ankle Injury</a></li>
+													<li class="list-group-item"><a href="/va-ptsd-100.html">Va Ptsd 100</a></li>
+													<li class="list-group-item"><a href="/va-quality.html">Va Quality</a></li>
+													<li class="list-group-item"><a href="/va-percentage-for-post-traumatic-stress-disorder.html">Va Percentage For Post Traumatic Stress Disorder</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-arthritis-in-neck.html">Va Rating For Arthritis In Neck</a></li>
+													<li class="list-group-item"><a href="/va-rating-5014.html">Va Rating 5014</a></li>
+													<li class="list-group-item"><a href="/va-ptsd-rating-cfr.html">Va Ptsd Rating Cfr</a></li>
+													<li class="list-group-item"><a href="/va-rating-code-for-ptsd.html">Va Rating Code For Ptsd</a></li>
+													<li class="list-group-item"><a href="/va-physician-pay-tables-2021.html">Va Physician Pay Tables 2021</a></li>
+													<li class="list-group-item"><a href="/va-rating-by-percentage.html">Va Rating By Percentage</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-arthritis-in-hand.html">Va Rating For Arthritis In Hand</a></li>
+													<li class="list-group-item"><a href="/va-rating-determination-letter.html">Va Rating Determination Letter</a></li>
+													<li class="list-group-item"><a href="/va-rating-code-for-acid-reflux.html">Va Rating Code For Acid Reflux</a></li>
+													<li class="list-group-item"><a href="/va-rate-increase-request.html">Va Rate Increase Request</a></li>
+													<li class="list-group-item"><a href="/va-rating-breakdown.html">Va Rating Breakdown</a></li>
+													<li class="list-group-item"><a href="/va-rating-ankle-pain.html">Va Rating Ankle Pain</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

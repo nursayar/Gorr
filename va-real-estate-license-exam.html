@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Real Estate License Exam - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Real Estate License Exam",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/81/29/8f/81298f19683ff723971f5105a6c6c79c.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+real+estate+license+exam",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Real Estate License Exam</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Virginia Real Estate Practice Exams Pass the Virginia real estate Salesperson exam with confidence. You hold a high school degree or equivalent. Learn from a live instructor with situational videos describing terminology and real-world application. <br>				
+			</p>
+										<a class="badge badge-success" href="/black-soldiers-world-war-2-gi-bill.html">black soldiers world war 2 gi bill</a>
+											<a class="badge badge-danger" href="/billy-dan-amanda-manopo.html">billy dan amanda manopo</a>
+											<a class="badge badge-primary" href="/billige-yu-gi-oh-kort.html">billige yu gi oh kort</a>
+											<a class="badge badge-primary" href="/billy-tambahani.html">billy tambahani</a>
+											<a class="badge badge-success" href="/billkin-freaking-special-lyrics.html">billkin freaking special lyrics</a>
+											<a class="badge badge-danger" href="/billy-forgot.html">billy forgot</a>
+											<a class="badge badge-warning" href="/bills-go-up.html">bills go up</a>
+											<a class="badge badge-danger" href="/billing-adalah.html">billing adalah</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you've come to pay a visit to the right blog.  Our site gives you hints for seeing the maximum quality video and image content, hunt and find more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, particularly Youtube, so we recommend this video that you see.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/dc/2e/e9dc2ef528aab2078f922585e1552527.png" data-lightbox="roadtrip" data-title="How To Become A Real Estate Agent In Virginia Real Estate Exam Real Estate Agent Real Estate">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/dc/2e/e9dc2ef528aab2078f922585e1552527.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwRKYU2M4HBYyuchu5l60S89eYk4McMYY24Q';" alt="How To Become A Real Estate Agent In Virginia Real Estate Exam Real Estate Agent Real Estate">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Become A Real Estate Agent In Virginia Real Estate Exam Real Estate Agent Real Estate</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/d0/c1/a7d0c1789d99a4a17705b1bfd92c6917.png" data-lightbox="roadtrip" data-title="How To Become A Real Estate Agent Broker In Virginia Real Estate Exam Real Estate Agent Real Estate Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/d0/c1/a7d0c1789d99a4a17705b1bfd92c6917.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaTtCAwaUO08iHwbyerKwX19Yof9iav6LhsQ';" alt="How To Become A Real Estate Agent Broker In Virginia Real Estate Exam Real Estate Agent Real Estate Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Become A Real Estate Agent Broker In Virginia Real Estate Exam Real Estate Agent Real Estate Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/7d/ac/1d7dac0511fed36c9d2fd1c78ed8d326.jpg" data-lightbox="roadtrip" data-title="Real Estate Broker Va Tasks List To Delegate In A Nutshell An Expert Real Estate Virtual A Virtual Assistant Real Estate Assistant Virtual Assistant Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/7d/ac/1d7dac0511fed36c9d2fd1c78ed8d326.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuEMZYcNztxvmbB4W5HzvfvGjijPD5HISGfw';" alt="Real Estate Broker Va Tasks List To Delegate In A Nutshell An Expert Real Estate Virtual A Virtual Assistant Real Estate Assistant Virtual Assistant Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Real Estate Broker Va Tasks List To Delegate In A Nutshell An Expert Real Estate Virtual A Virtual Assistant Real Estate Assistant Virtual Assistant Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/be/33/06be330922fffd63a1dfd7b461c2d385.png" data-lightbox="roadtrip" data-title="How To Become A Real Estate Agent In Minnesota Real Estate Exam Real Estate License Real Estate Salesperson">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/be/33/06be330922fffd63a1dfd7b461c2d385.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSayaKQfoM0pgMhV8o521tZMVKrWa8jYuK-Tw';" alt="How To Become A Real Estate Agent In Minnesota Real Estate Exam Real Estate License Real Estate Salesperson">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Become A Real Estate Agent In Minnesota Real Estate Exam Real Estate License Real Estate Salesperson</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/ca/9b/dfca9bf226cf69f6e913e01465034a18.png" data-lightbox="roadtrip" data-title="How To Apply Steps Page 1 How To Apply Real Estate License Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/ca/9b/dfca9bf226cf69f6e913e01465034a18.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1iTpHuXlCZJ33thX-wP8Y-CeQKDBEs-y55A';" alt="How To Apply Steps Page 1 How To Apply Real Estate License Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Apply Steps Page 1 How To Apply Real Estate License Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/2e/3b/ce/2e3bcec3258164e3156f269bca7848dc.jpg" data-lightbox="roadtrip" data-title="How To Become A Real Estate Appraiser In Virginia Real Estate How To Become Real Estate Career">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/2e/3b/ce/2e3bcec3258164e3156f269bca7848dc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWucjcav59MIFtuyT-4lshnL6-mek6JetQQ';" alt="How To Become A Real Estate Appraiser In Virginia Real Estate How To Become Real Estate Career">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Become A Real Estate Appraiser In Virginia Real Estate How To Become Real Estate Career</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/c7/dd/6a/c7dd6a4b598438bf78e872cc81578976.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWucjcav59MIFtuyT-4lshnL6-mek6JetQQ';" alt="How To Become A Real Estate Appraiser In Virginia Real Estate How To Become Real Estate Career">
+										<div class="card-body">
+						<h3 class="h5"><b>That broker will assist you in completing your license application.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va real estate license exam</strong>. 
+								
+																	Your instructor Bill has been a full-time teacher. 
+																	If youre considering starting a real estate career in Virginia Beach Norfolk Chesapeake Richmond Arlington or any other city in the state youll need to earn a Virginia real estate licenseTo earn your real estate license in Virginia you must be at least 18 years of age complete 60 hours of approved education pass the Virginia salesperson licensing exam complete fingerprinting and a. 
+																	Where can I take the VA real estate licensing exam. 
+																	To get your Virginia salesperson license there are some basic requirements you need to meet before you take the Virginia Real Estate Exam. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Complete 60 classclock hours of a Board-approved Principles of Real Estate Pre-License Courses. 
+																	Proof of age 18 and above. 
+																	Where the applicant completed 180 classroom hours of broker pre-licensing courses substantially equivalent to Virginias real estate education requirements and 4 submit letters of certification from other jurisdictions where licensed. 
+																	You have the reputation of being honest trustworthy and competent. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This program requires pre-approval before you can sit for the exam. 
+																	Apply for a Virginia real. 
+																	You must take the Virginia state licensing exam at one of the approved PSI testing centers. 
+																	While the exam itself is usually around 100 you should expect to spend an additional 200-500 on prelicensing classes license applications background checks and other costs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Complete 60 classclock hours of a Board-approved Principles of Real Estate Pre-License Courses PDF and pass the state and national portions of the examination. 
+																	Pass the Virginia real estate exam. 
+																	Salesperson Pre-License Education In order to become licensed as a real estate salesperson by the Real Estate Board applicants must. 
+																	Study Guide Final Free Practice Test Instructions Choose your answer to the question and click Continue to see how you did. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All of our 1000 Virginia real estate practice exam questions are similar to the ones you will find on the actual Virginia real estate exam and are written by a Licensed Real Estate Instructor. 
+																	The PSI Virginia Salesperson License Exam should be taken after completion of sixty 60 hours of basic real estate courses and our optional PSI Exam Prep course. 
+																	The practice tests are free and includes scoring and both text and video answers. 
+																	This section of the Real Estate License Exam makes up approximately 17 of the whole exam and covers knowledge of real estate trends and developments fair practice laws math calculations and real estate forms. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In Virginia in order become a real estate agent you must. 
+																	Take a full-length 120 questions 2020 real estate Virginia Exam to simulate what it will be like on your real estate license test day. 
+																	All states require real estate agents to be licensed by the state to engage in the sale of real estate. 
+																	Have a high school diploma or its equivalent like a GED. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are seven PSI testing centers throughout Virginia. 
+																	View content from the comfort of your couch with 247 access to a library of video explanations and an instructor portal for asking direct questions. 
+																	Exam information and pre-license education. 
+																	Most states administer the tests in two parts and require that the candidate pass both. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Pass Your VA Real Estate License Exam. 
+																	Real Estate Exam Fees There are more costs associated with earning your real estate license than just the cost of the exam itself. 
+																	Before submitting an application for a Virginia real estate license each applicant must submit a set of fingerprints to the Virginia Central Criminal Records Exchange for the purpose of conducting a state and national fingerprint-based criminal history record. 
+																	Also in order to apply through reciprocity the broker MUST hold a current broker license in another state. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Then click Next Question. 
+																	Virginia Real Estate Broker License Exam. 
+																	To sell real estate in VA a licensed broker must agree that you may affiliate with his or her brokerage. 
+																	Choose your answer to the question and click Continue to see how you did. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Virginia Real Estate Salesperson Licensing Exam. 
+																	Study Guide Final Free Practice Test Instructions. 
+																	VIRGINIA REAL ESTATE. 
+																	A minimum score of 75 percent on the final exam is required in Virginia and there is no limit on the number of retakes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	LEARN AT YOUR OWN PACE. 
+																	Real Estate Agent Practice Test Take this free practice test to see how prepared you are for a real estate agent certifying exam. 
+																	It also includes items specific to running a real estate agency such as agency creation and closure and commissions and fees. 
+																	Pass both the state and national PSI exams the Virginia real estate boards testing service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You cannot take the state exam at a location outside of the Commonwealth of Virginia. 
+																	The general part of the exam is broken into several categories similar to the categories you. 
+																	Be at least 18 years of age. 
+																	Generally you can expect that your state real estate agent license exam will consist of 80-100 multiple-choice questions about general real estate concepts and 60-80 questions specific to state licensing laws. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Choose a broker to sponsor you. 
+																	Real estate examination successfully completed. 
+																	Then click Next. 
+																	You are at least 18 years old. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The tests cover such subjects as forms of ownership physical descriptions valuation and regulation. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/94/00/5f940007e0a8622375b9d38d96840219.jpg" data-lightbox="roadtrip" data-title="Real Estate Exam Vocabulary Worksheet Real Estate Exam Real Estate Classes Real Estate Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/94/00/5f940007e0a8622375b9d38d96840219.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw2Bu0wYtFunHxVp3Yv32vzhqSwN1_glR1Nw';" alt="Real Estate Exam Vocabulary Worksheet Real Estate Exam Real Estate Classes Real Estate Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Real Estate Exam Vocabulary Worksheet Real Estate Exam Real Estate Classes Real Estate Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/e4/09/a1e4098b9bc8b5edb23b7b76679a548d.png" data-lightbox="roadtrip" data-title="How To Become A Real Estate Appraiser In Virginia How To Become Work Experience Real Estate">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/e4/09/a1e4098b9bc8b5edb23b7b76679a548d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHcpkHEHD0LcWvICuk7mkproZNhoZGq2skTw';" alt="How To Become A Real Estate Appraiser In Virginia How To Become Work Experience Real Estate">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Become A Real Estate Appraiser In Virginia How To Become Work Experience Real Estate</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/96/f1/b2/96f1b2fb5b3f158a628beb83833f124c.jpg" data-lightbox="roadtrip" data-title="How To Become A Real Estate Agent Infographic Careers Http Xtremefreelance Com Real Estate School Real Estate Training Real Estate Career">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/96/f1/b2/96f1b2fb5b3f158a628beb83833f124c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoxU15KiIEfGtq_fgOmKGaYj4DuzB3IvkHUg';" alt="How To Become A Real Estate Agent Infographic Careers Http Xtremefreelance Com Real Estate School Real Estate Training Real Estate Career">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Become A Real Estate Agent Infographic Careers Http Xtremefreelance Com Real Estate School Real Estate Training Real Estate Career</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/dd/6a/c7dd6a4b598438bf78e872cc81578976.png" data-lightbox="roadtrip" data-title="Pin On Real Estate Sales Career Agent Broker">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/dd/6a/c7dd6a4b598438bf78e872cc81578976.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkRXAas5fEtTQskd3r1UwpUfwbcacOaf5tAw';" alt="Pin On Real Estate Sales Career Agent Broker">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Real Estate Sales Career Agent Broker</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9c/dd/73/9cdd7339968698f2681be2fcddc807bc.jpg" data-lightbox="roadtrip" data-title="Pin On Crochet">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9c/dd/73/9cdd7339968698f2681be2fcddc807bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReLkQSjxh04M1alafk3dutLV4TeDmxFDXYZw';" alt="Pin On Crochet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Crochet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/86/e6/d4/86e6d488286fb1238c2168a83126ca20.jpg" data-lightbox="roadtrip" data-title="Pin On Anatomy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/86/e6/d4/86e6d488286fb1238c2168a83126ca20.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlhmBZ0yVPy-KWczblovG8rIVeL_0sBH0IOg';" alt="Pin On Anatomy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Anatomy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5c/8e/3b/5c8e3b5f275cbfd2f18210fa70b8aa1f.jpg" data-lightbox="roadtrip" data-title="Real Estate Terminology Pdf Real Estate Tips Real Estate Education Getting Into Real Estate">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5c/8e/3b/5c8e3b5f275cbfd2f18210fa70b8aa1f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU2CRJjk_h3seByPOlvq1-whAJQL0S-HpaWA';" alt="Real Estate Terminology Pdf Real Estate Tips Real Estate Education Getting Into Real Estate">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Real Estate Terminology Pdf Real Estate Tips Real Estate Education Getting Into Real Estate</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/29/8f/81298f19683ff723971f5105a6c6c79c.png" data-lightbox="roadtrip" data-title="Pin On Infografics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/29/8f/81298f19683ff723971f5105a6c6c79c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl7lXgvGOcyNVwKNPEUleEhO9J2O7CanHHFg';" alt="Pin On Infografics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Infografics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/bc/b4/4abcb4eaff10c9c6ed1a2ba86fd9ef54.jpg" data-lightbox="roadtrip" data-title="Real Estate Vocabulary Real Estate Terms Real Estate Infographic Real Estate Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/bc/b4/4abcb4eaff10c9c6ed1a2ba86fd9ef54.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm8_jMpfdu6u0xavCrbnAdwjzb5v-nZwThJg';" alt="Real Estate Vocabulary Real Estate Terms Real Estate Infographic Real Estate Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Real Estate Vocabulary Real Estate Terms Real Estate Infographic Real Estate Memes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/0b/3b/4f/0b3b4fc0fc4a6dca1cd7c0d79ebea058.jpg" data-lightbox="roadtrip" data-title="Epingle Sur Law Books You Must Read">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/0b/3b/4f/0b3b4fc0fc4a6dca1cd7c0d79ebea058.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9Bbu5auBjcDr7brXqxLKMuys6hz0q4K8VA';" alt="Epingle Sur Law Books You Must Read">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Epingle Sur Law Books You Must Read</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/35/7c/cf357c0c6cdf7e776d1c6e4a5cb44344.jpg" data-lightbox="roadtrip" data-title="Real Estate Transaction Coordinator Checklist Printable 1 Page In 2020 Real Estate Assistant Real Estate Exam Real Estate Checklist">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/35/7c/cf357c0c6cdf7e776d1c6e4a5cb44344.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfJMCJ2-kv31FK0X5JwPscJrPtdtTTia8_8w';" alt="Real Estate Transaction Coordinator Checklist Printable 1 Page In 2020 Real Estate Assistant Real Estate Exam Real Estate Checklist">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Real Estate Transaction Coordinator Checklist Printable 1 Page In 2020 Real Estate Assistant Real Estate Exam Real Estate Checklist</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/61/f9/b4/61f9b47d0fb8ab78ef83f1bb25bfd869.jpg" data-lightbox="roadtrip" data-title="Virtual Transaction Coordinator Checklist And Starter Kit In 2021 Transaction Coordinator Real Estate Assistant Virtual Assistant Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/61/f9/b4/61f9b47d0fb8ab78ef83f1bb25bfd869.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52QOk9OKQI6Uurw3i2MCrtt5EUVnaJoLlig';" alt="Virtual Transaction Coordinator Checklist And Starter Kit In 2021 Transaction Coordinator Real Estate Assistant Virtual Assistant Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virtual Transaction Coordinator Checklist And Starter Kit In 2021 Transaction Coordinator Real Estate Assistant Virtual Assistant Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/ba/21/4eba21258ca0b5f360e407239e2a7137.jpg" data-lightbox="roadtrip" data-title="2003 Real Estate License Exam Passed Oregon Principal Broker Now What Does This Prove Real Estate Exam Real Estate License Exam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/ba/21/4eba21258ca0b5f360e407239e2a7137.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfwNM05fwZ8o7d6jUQ4QAlQYHGicPFBLeKPg';" alt="2003 Real Estate License Exam Passed Oregon Principal Broker Now What Does This Prove Real Estate Exam Real Estate License Exam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2003 Real Estate License Exam Passed Oregon Principal Broker Now What Does This Prove Real Estate Exam Real Estate License Exam</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/donate-a-car-to-disabled-american-veterans.html">Donate A Car To Disabled American Veterans</a></li>
+													<li class="list-group-item"><a href="/does-the-gi-bill-cover-off-campus-housing.html">Does The Gi Bill Cover Off Campus Housing</a></li>
+													<li class="list-group-item"><a href="/does-the-gi-bill-pay-for-masters-degree.html">Does The Gi Bill Pay For Masters Degree</a></li>
+													<li class="list-group-item"><a href="/does-the-gi-bill-pay-housing-for-online-classes.html">Does The Gi Bill Pay Housing For Online Classes</a></li>
+													<li class="list-group-item"><a href="/does-the-va-do-covid-testing.html">Does The Va Do Covid Testing</a></li>
+													<li class="list-group-item"><a href="/does-virginia-have-front-license-plates.html">Does Virginia Have Front License Plates</a></li>
+													<li class="list-group-item"><a href="/does-the-post-9-11-gi-bill-pay-for-certificate-programs.html">Does The Post 9 11 Gi Bill Pay For Certificate Programs</a></li>
+													<li class="list-group-item"><a href="/does-the-gi-bill-pay-for-graduate-certificate-programs.html">Does The Gi Bill Pay For Graduate Certificate Programs</a></li>
+													<li class="list-group-item"><a href="/donation-to-disabled-american-veterans.html">Donation To Disabled American Veterans</a></li>
+													<li class="list-group-item"><a href="/ebenefits-gi-bill.html">Ebenefits Gi Bill</a></li>
+													<li class="list-group-item"><a href="/does-the-gi-bill-pay-for-trade-schools.html">Does The Gi Bill Pay For Trade Schools</a></li>
+													<li class="list-group-item"><a href="/does-the-va-offer-covid-testing.html">Does The Va Offer Covid Testing</a></li>
+													<li class="list-group-item"><a href="/does-va-healthcare-cover-overseas.html">Does Va Healthcare Cover Overseas</a></li>
+													<li class="list-group-item"><a href="/does-the-gi-bill-pay-for-spouses-college.html">Does The Gi Bill Pay For Spouses College</a></li>
+													<li class="list-group-item"><a href="/does-the-post-911-gi-bill-pay-for-all-of-college.html">Does The Post 911 Gi Bill Pay For All Of College</a></li>
+													<li class="list-group-item"><a href="/does-the-gi-bill-cover-graduate-fees.html">Does The Gi Bill Cover Graduate Fees</a></li>
+													<li class="list-group-item"><a href="/does-the-gi-bill-cover-international-schools.html">Does The Gi Bill Cover International Schools</a></li>
+													<li class="list-group-item"><a href="/does-usaa-do-va-home-loans.html">Does Usaa Do Va Home Loans</a></li>
+													<li class="list-group-item"><a href="/does-the-post-911-gi-bill-pay-for-police-academy.html">Does The Post 911 Gi Bill Pay For Police Academy</a></li>
+													<li class="list-group-item"><a href="/does-usaa-do-va-construction-loans.html">Does Usaa Do Va Construction Loans</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

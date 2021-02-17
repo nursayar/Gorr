@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ashford University Gi Bill - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ashford University Gi Bill",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/5e/c5/06/5ec506c77b7e11334434c8b3dd83e96a.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ashford+university+gi+bill",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ashford University Gi Bill</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Our commitment to the academic and personal success of our military and veteran students is unwavering. In 2018 Ashford received more than 27 million in Post-911 GI Bill revenue according to VA data with nearly 7000 student veterans enrolled making the university the sixth-largest recipient of. ASHFORD UNIVERSITY GREEN-LIT FOR GI BILL FUNDS. <br>				
+			</p>
+										<a class="badge badge-warning" href="/gi-bill-1606-application.html">gi bill 1606 application</a>
+											<a class="badge badge-success" href="/gi-bill-and-pilot-training.html">gi bill and pilot training</a>
+											<a class="badge badge-primary" href="/gi-bill-and-montgomery.html">gi bill and montgomery</a>
+											<a class="badge badge-info" href="/gi-bill-1945.html">gi bill 1945</a>
+											<a class="badge badge-warning" href="/gi-bill-benefits-for-online-courses.html">gi bill benefits for online courses</a>
+											<a class="badge badge-dark" href="/gi-bill-ask-a-question-website.html">gi bill ask a question website</a>
+											<a class="badge badge-warning" href="/gi-bill-apartment.html">gi bill apartment</a>
+											<a class="badge badge-secondary" href="/gi-bill-approved-schools-san-diego.html">gi bill approved schools san diego</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you've come to pay a visit to the right blog.  Our website provides you with hints for seeing the maximum quality video and image content, hunt and locate more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, particularly Youtube, so we recommend this video for you to view.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/170x/ae/61/fe/ae61feea5e614d57ab2e6d712f333fa5.jpg" data-lightbox="roadtrip" data-title="Vets Group Sounds The Alarm After Va Greenlights Controversial Ashford University For Gi Bill Funds In 2020 Education Success Military Education Teaching Credential">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/170x/ae/61/fe/ae61feea5e614d57ab2e6d712f333fa5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJjLU4hEwbDER7tlIh_LJYqEpsNBI4jj4Kdg';" alt="Vets Group Sounds The Alarm After Va Greenlights Controversial Ashford University For Gi Bill Funds In 2020 Education Success Military Education Teaching Credential">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vets Group Sounds The Alarm After Va Greenlights Controversial Ashford University For Gi Bill Funds In 2020 Education Success Military Education Teaching Credential</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/20/40/fb/2040fbdb298c2d968e67afd3f57e348a.jpg" data-lightbox="roadtrip" data-title="Transition Planning Information Moving Your Transferable Skills From Military Leadership To Civilian Leadership Dale Tuition Assistance Gi Bill Tuition">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/20/40/fb/2040fbdb298c2d968e67afd3f57e348a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJaeUOqiU96Wx4q_N0zuGxokzQ3MbM2GEV7g';" alt="Transition Planning Information Moving Your Transferable Skills From Military Leadership To Civilian Leadership Dale Tuition Assistance Gi Bill Tuition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Transition Planning Information Moving Your Transferable Skills From Military Leadership To Civilian Leadership Dale Tuition Assistance Gi Bill Tuition</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/aa/74/7f/aa747f8b1aae92d419a27abdcad66462.png" data-lightbox="roadtrip" data-title="Otr Drivers Choose U S Xpress And Earn An Extra 6 000 For Experienced Drivers In The First Year Truck Driver Jobs Trucking Companies Truck Driving Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/aa/74/7f/aa747f8b1aae92d419a27abdcad66462.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIaXwQm5u83o2Z1AUy07UGzsCr89nak5_P5Q';" alt="Otr Drivers Choose U S Xpress And Earn An Extra 6 000 For Experienced Drivers In The First Year Truck Driver Jobs Trucking Companies Truck Driving Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Otr Drivers Choose U S Xpress And Earn An Extra 6 000 For Experienced Drivers In The First Year Truck Driver Jobs Trucking Companies Truck Driving Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/bf/19/a7bf19c68e6a9604397ca6aca8a6f945.jpg" data-lightbox="roadtrip" data-title="Instagram Photo By Aijalon Apr 26 2016 At 1 27am Utc Cap Decorations Graduation Cap Decoration Graduation Cap">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/bf/19/a7bf19c68e6a9604397ca6aca8a6f945.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkQyx6BMajKxzN2iak7xy_UsOwd2RSBQdxSA';" alt="Instagram Photo By Aijalon Apr 26 2016 At 1 27am Utc Cap Decorations Graduation Cap Decoration Graduation Cap">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Instagram Photo By Aijalon Apr 26 2016 At 1 27am Utc Cap Decorations Graduation Cap Decoration Graduation Cap</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/c5/06/5ec506c77b7e11334434c8b3dd83e96a.jpg" data-lightbox="roadtrip" data-title="Fire Dancers At Jeff S Pirate Cove Tallafofo Guam Pirates Cove Fire Dancer Photography">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/c5/06/5ec506c77b7e11334434c8b3dd83e96a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR21x4N7jztxPW_0wxCE7BRF5PkVplYXLy-eQ';" alt="Fire Dancers At Jeff S Pirate Cove Tallafofo Guam Pirates Cove Fire Dancer Photography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fire Dancers At Jeff S Pirate Cove Tallafofo Guam Pirates Cove Fire Dancer Photography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/66/3e/d5/663ed5ba2b20380e480f0b21838c3f0f.png" data-lightbox="roadtrip" data-title="As The Driver Of A Large Heavy Truck You Have A Lot Of Responsibility As You Drive Down The Road The Biggest Concern Is Safe Trucks Heavy Truck Truck Driver">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/66/3e/d5/663ed5ba2b20380e480f0b21838c3f0f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCudAKGHOfpSj_YwVhqaIFRn7fnpH2ivrTGA';" alt="As The Driver Of A Large Heavy Truck You Have A Lot Of Responsibility As You Drive Down The Road The Biggest Concern Is Safe Trucks Heavy Truck Truck Driver">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">As The Driver Of A Large Heavy Truck You Have A Lot Of Responsibility As You Drive Down The Road The Biggest Concern Is Safe Trucks Heavy Truck Truck Driver</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/5e/c5/06/5ec506c77b7e11334434c8b3dd83e96a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCudAKGHOfpSj_YwVhqaIFRn7fnpH2ivrTGA';" alt="As The Driver Of A Large Heavy Truck You Have A Lot Of Responsibility As You Drive Down The Road The Biggest Concern Is Safe Trucks Heavy Truck Truck Driver">
+										<div class="card-body">
+						<h3 class="h5"><b>A shford University will maintain its GI Bill eligibility for now.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ashford university gi bill</strong>. 
+								
+																	The Iowa State Approving Agency has announced that it is withdrawing Ashford Universitys approval for GI Bill benefits on June 30 2016 due to the closure of Ashford Universitys residential campus in Clinton Iowa. 
+																	This action also affects Ashford Universitys online courses and could potentially impact benefit payments. 
+																	To keep access to GI Bill funds Ashford needed the approval of a state veterans agency. 
+																	The states approval agency in 2016 attempted to strike the for-profit universitys eligibility citing a previous decision by Ashford to close its physical location in the state. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Make your investment in your education count when you attend the University of Arizona Global Campus as we offer the ability to use multiple military education benefits. 
+																	Ashford University received approval to offer GI Bill benefits by the Arizona State Approving Agency SAA on July 6 2017. 
+																	Undergraduates who receive tuition support from the GI Bill compensate for a third of their registered students said the Chronicle. 
+																	Veterans Education Success an advocacy group that focuses on student-veterans said in statement that it learned the leadership of VA decided to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ashford University sued the state of Iowa in June to reverse its decision to revoke GI Bill certification asserting the state misunderstood when and which operations would go to California according to court. 
+																	Ashford University then leased an office in Phoenix and gained GI Bill approval from Arizona in September 2017 but in November 2017 the US. 
+																	And with that one states approval the university would then be able to receive GI Bill funds for students. 
+																	Ashford University announced Tuesday that the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Iowa pulled Ashfords approval for GI Bill funding when the university announced their operations would leave the state and move west. 
+																	According to Ashford University class action lawsuit their vast bulk of income originate from government subsidies in the form of student loans and scholarships. 
+																	Iowas Supreme Court has tossed out a lower courts decision in the long-running legal battle over Ashford Universitys eligibility to receive Post-911 GI Bill benefits. 
+																	Wofford said for-profit colleges target Veterans largely because of the so-called 9010 loophole. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	At this time as of November 2018 the college is looking at large challenges ahead even the loss of GI Bill funding. 
+																	In 2018 Ashford received more than 27 million in Post-911 GI Bill revenue according to VA data with nearly 7000 student Veterans enrolled making the university the sixth-largest recipient of GI Bill funds in the country. 
+																	The decision is retroactive to July 1 2019. 
+																	Department of Veterans Affairs VA gave it approval to continue to receive benefits under the GI Bill. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A full year of tuition at Ashford is more than 21000 according to a Department of Veterans Affairs GI Bill benefits calculator. 
+																	Last year the VA stripped the State of California of the right to regulate which schools are eligible for GI Bill funding in the state after a dispute with Ashford University a for-profit online school whose certification had been put on hold pending a lawsuit by the state attorney general over predatory practices. 
+																	16 after an Iowa court dismissed the for-profit schools request to retain eligibility. 
+																	Thanks to the Post-911 GI Bill assuming you fully qualify we expect your yearly benefits to exceed your cost to attend Ashford University by at least 1368. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Youll find that the University of Arizona Global Campus offers one of the lowest tuition costs available online and is approved for Military Tuition Assistance and veterans GI Bill benefits. 
+																	Attend Ashford University as a Veteran and Walk Away With at Least 1368. 
+																	The for-profit institution which was the subject of a Chronicle investigation in November faced a Tuesday deadline from. 
+																	The decision follows the for-profit online universitys drawn-out battle to remain eligible for GI Bill funding after the state of Iowa moved to pull its approval in 2016. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These military benefits are tailored to help the active duty and veterans and also provide tuition assistance for military spouses. 
+																	The VA announced last month it was pulling Ashford Universitys eligibility to accept GI Bill funds on Aug. 
+																	Department of Veterans Affairs VA ruled that the Phoenix office did not qualify as a main campus since Bridgepoint is headquartered in California and therefore the jurisdiction for approval would fall to California not Arizona. 
+																	The schools request withdrawal comes after Iowa postponed a decision to pull GI Bill certification on June 20 giving Ashford until September to seek and receive approval in California. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bridgepoint Education who bought out the college as mentioned is thinking of merging with the school called University of the Rockies and transforming Ashford into a nonprofit university. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/43/e5/2843e570a140b42de46d5932d1fd9de4.png" data-lightbox="roadtrip" data-title="Brand New New Logo And Identity For Saint Didier Au Mont D Or By Grapheine Identity Logo Social Media Marketing Tools Branding Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/43/e5/2843e570a140b42de46d5932d1fd9de4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvjq81NqYHSuBFnZbL6_-VlhygOjq_Uu43nA';" alt="Brand New New Logo And Identity For Saint Didier Au Mont D Or By Grapheine Identity Logo Social Media Marketing Tools Branding Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Brand New New Logo And Identity For Saint Didier Au Mont D Or By Grapheine Identity Logo Social Media Marketing Tools Branding Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/3c/c1/4a3cc197f4bfd8acf9ef176a1ce21e57.jpg" data-lightbox="roadtrip" data-title="Rowan Cabarrus Community College Students Benefit From Guaranteed Admissions Agreement With Unc Wilmington Wbt In 2021 Community College College Related College News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/3c/c1/4a3cc197f4bfd8acf9ef176a1ce21e57.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsFrnynJxvHjZdZxFLRr7r2VcG9a5TBgSW4g';" alt="Rowan Cabarrus Community College Students Benefit From Guaranteed Admissions Agreement With Unc Wilmington Wbt In 2021 Community College College Related College News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rowan Cabarrus Community College Students Benefit From Guaranteed Admissions Agreement With Unc Wilmington Wbt In 2021 Community College College Related College News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/6f/2e/03/6f2e03577783a798d0051d5b33c84e87--modern-warfare-dear-god.jpg" data-lightbox="roadtrip" data-title="Incredible New George S Patton Speech Iran Modern Warfare The Incredibles Modern Warfare Patton">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/6f/2e/03/6f2e03577783a798d0051d5b33c84e87--modern-warfare-dear-god.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaZhevW8-dXOyrIkyBi4g1MG17JqvOGEs-Vg';" alt="Incredible New George S Patton Speech Iran Modern Warfare The Incredibles Modern Warfare Patton">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Incredible New George S Patton Speech Iran Modern Warfare The Incredibles Modern Warfare Patton</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/e0/47/8de0477db3350ea161fa2f563b56fb58.jpg" data-lightbox="roadtrip" data-title="Grad Cap Engineering Tesla Coil Navy Et Electronics Technician Grad Cap Graduation Cap Technology Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/e0/47/8de0477db3350ea161fa2f563b56fb58.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRApZQ6LJ_nvfXq_t_kzC85JSoutMoOBUDUsw';" alt="Grad Cap Engineering Tesla Coil Navy Et Electronics Technician Grad Cap Graduation Cap Technology Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Grad Cap Engineering Tesla Coil Navy Et Electronics Technician Grad Cap Graduation Cap Technology Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/8b/d9/0c8bd99ab81766b6eb5ba68042994669.jpg" data-lightbox="roadtrip" data-title="Non Sequitur Dana Comics Mobile App Promotion Non Sequitur Fairy Tales Worlds Of Fun">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/8b/d9/0c8bd99ab81766b6eb5ba68042994669.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaAP5n-xYcsK9TIR_bksP39jNQrVABa3HFLQ';" alt="Non Sequitur Dana Comics Mobile App Promotion Non Sequitur Fairy Tales Worlds Of Fun">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Non Sequitur Dana Comics Mobile App Promotion Non Sequitur Fairy Tales Worlds Of Fun</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/fe/2a/c9fe2a1c6b095b9ed8a92079af627f6d.png" data-lightbox="roadtrip" data-title="Angela Renee Went Out For Her Second Career Start In The Adirondack S G2 At Saratoga On August 10th Congrats Angela She Horse Racing Rare Breed Farm Photo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/fe/2a/c9fe2a1c6b095b9ed8a92079af627f6d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTBOsqX1ldxkYx7_Cz5VXHS0JqzrS4RuldLw';" alt="Angela Renee Went Out For Her Second Career Start In The Adirondack S G2 At Saratoga On August 10th Congrats Angela She Horse Racing Rare Breed Farm Photo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Angela Renee Went Out For Her Second Career Start In The Adirondack S G2 At Saratoga On August 10th Congrats Angela She Horse Racing Rare Breed Farm Photo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/4f/44/c64f4462907efec68250beec28b9774b.jpg" data-lightbox="roadtrip" data-title="Blakevjones">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/4f/44/c64f4462907efec68250beec28b9774b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE1v_eTaKa0i910gdi5bkDQqjV2RkM3a5qrQ';" alt="Blakevjones">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Blakevjones</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/3a/14/323a147bd3263e006c9c3362ebba21d2.png" data-lightbox="roadtrip" data-title="Pin By Scott Mc Keag On Bestbuy Radioshack Napa Wayfair Fbi Youtube Dish Hopper 3 And Google Com Cool Things To Buy Photo My Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/3a/14/323a147bd3263e006c9c3362ebba21d2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ-xNKT4o5Xoe8ciVSl1WwpO65W2_4xCst8g';" alt="Pin By Scott Mc Keag On Bestbuy Radioshack Napa Wayfair Fbi Youtube Dish Hopper 3 And Google Com Cool Things To Buy Photo My Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Scott Mc Keag On Bestbuy Radioshack Napa Wayfair Fbi Youtube Dish Hopper 3 And Google Com Cool Things To Buy Photo My Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/ed/aa/ccedaaa932a0e328e2a87cf6b2f59ba0.jpg" data-lightbox="roadtrip" data-title="Vf 111 Aardvarks Nas Miramar F 14 Tomcat Us Military Aircraft Military Aircraft Fighter Jets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/ed/aa/ccedaaa932a0e328e2a87cf6b2f59ba0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO7ZWxxfF6FKO57A_FiZsKfW3ALcVMDv6LAg';" alt="Vf 111 Aardvarks Nas Miramar F 14 Tomcat Us Military Aircraft Military Aircraft Fighter Jets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vf 111 Aardvarks Nas Miramar F 14 Tomcat Us Military Aircraft Military Aircraft Fighter Jets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/7e/81/b87e8107ab57373c44461bd1421f3cd1.jpg" data-lightbox="roadtrip" data-title="Sombrero Slide Kit Carson Park Escondido Kit Carson Escondido Childhood Memories">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/7e/81/b87e8107ab57373c44461bd1421f3cd1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcjajeNi87ERYroMTdbEabvEomZi3TRBFR2Q';" alt="Sombrero Slide Kit Carson Park Escondido Kit Carson Escondido Childhood Memories">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sombrero Slide Kit Carson Park Escondido Kit Carson Escondido Childhood Memories</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/22/76/a4/2276a4b3a0147885cac5fdb775ae663b.jpg" data-lightbox="roadtrip" data-title="Sabias Que De Los Dientes Busqueda De Google Dentalconsultory Dientes Odontologia Salud Dental">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/22/76/a4/2276a4b3a0147885cac5fdb775ae663b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVUwEkSUYZE1y254GYmzCiy9H730m6oqWxTQ';" alt="Sabias Que De Los Dientes Busqueda De Google Dentalconsultory Dientes Odontologia Salud Dental">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sabias Que De Los Dientes Busqueda De Google Dentalconsultory Dientes Odontologia Salud Dental</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/84/3c/ba843c32353ee9ce25e4e85489bbd230.jpg" data-lightbox="roadtrip" data-title="Pin On Celebrity">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/84/3c/ba843c32353ee9ce25e4e85489bbd230.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAD9t5zGObOQGFTqDjYLaJCGREOTb_DjqLpQ';" alt="Pin On Celebrity">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Celebrity</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="/search?q=kit+carson+park+sombrero+slide&amp;tbm=isch" data-lightbox="roadtrip" data-title="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gctmqubnqvrny0rztq2pvaoxbniu645thq73clwd Dyqinigdegg Usqp Cau">
+											<img class="card-img v-image ads-img " src="/search?q=kit+carson+park+sombrero+slide&amp;tbm=isch" onerror="this.onerror=null;this.src='/search?q=kit+carson+park+sombrero+slide&amp;tbm=isch';" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gctmqubnqvrny0rztq2pvaoxbniu645thq73clwd Dyqinigdegg Usqp Cau">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gctmqubnqvrny0rztq2pvaoxbniu645thq73clwd Dyqinigdegg Usqp Cau</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/when-will-the-bill-go-to-the-house.html">When Will The Bill Go To The House</a></li>
+													<li class="list-group-item"><a href="/when-was-the-gi-bill-passed.html">When Was The Gi Bill Passed</a></li>
+													<li class="list-group-item"><a href="/who-can-transfer-post-911-gi-bill.html">Who Can Transfer Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/when-do-you-receive-gi-bill-payments.html">When Do You Receive Gi Bill Payments</a></li>
+													<li class="list-group-item"><a href="/where-to-get-va-disability-tax-form.html">Where To Get Va Disability Tax Form</a></li>
+													<li class="list-group-item"><a href="/when-does-the-gi-bill-pay-each-month.html">When Does The Gi Bill Pay Each Month</a></li>
+													<li class="list-group-item"><a href="/when-does-the-bill-go-to-senate.html">When Does The Bill Go To Senate</a></li>
+													<li class="list-group-item"><a href="/when-can-your-spouse-use-your-gi-bill.html">When Can Your Spouse Use Your Gi Bill</a></li>
+													<li class="list-group-item"><a href="/when-will-my-gi-bill-be-deposited.html">When Will My Gi Bill Be Deposited</a></li>
+													<li class="list-group-item"><a href="/where-do-i-find-my-va-rating-decision-letter.html">Where Do I Find My Va Rating Decision Letter</a></li>
+													<li class="list-group-item"><a href="/where-to-use-gi-bill.html">Where To Use Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-were-the-benefits-of-the-gi-bill-of-rights-quizlet.html">What Were The Benefits Of The Gi Bill Of Rights Quizlet</a></li>
+													<li class="list-group-item"><a href="/what-was-the-gi-bill-of-rights-how-did-it-affect-the-future-of-the-us.html">What Was The Gi Bill Of Rights How Did It Affect The Future Of The Us</a></li>
+													<li class="list-group-item"><a href="/where-to-send-va-form-21-674.html">Where To Send Va Form 21 674</a></li>
+													<li class="list-group-item"><a href="/when-does-a-bill-go-to-collections.html">When Does A Bill Go To Collections</a></li>
+													<li class="list-group-item"><a href="/when-does-the-gi-bill-pay.html">When Does The Gi Bill Pay</a></li>
+													<li class="list-group-item"><a href="/which-program-provides-health-care-benefits-for-dependents-of-permanently-disabled-veterans.html">Which Program Provides Health Care Benefits For Dependents Of Permanently Disabled Veterans</a></li>
+													<li class="list-group-item"><a href="/when-are-post-911-gi-bill-bah-payments-made.html">When Are Post 911 Gi Bill Bah Payments Made</a></li>
+													<li class="list-group-item"><a href="/which-credit-score-is-used-for-va-home-loans.html">Which Credit Score Is Used For Va Home Loans</a></li>
+													<li class="list-group-item"><a href="/what-was-the-impact-of-the-gi-bill-of-rights-on-american-society-including-minorities.html">What Was The Impact Of The Gi Bill Of Rights On American Society Including Minorities</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

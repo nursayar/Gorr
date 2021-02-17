@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>How To Get The Most Out Of Gi Bill Reddit - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "How To Get The Most Out Of Gi Bill Reddit",
+  "datePublished": "2021-02-17",
+  "image": "https://www.thewrap.com/wp-content/uploads/2016/12/Bill-Gates-Secret-Santa.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+to+get+the+most+out+of+gi+bill+reddit",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>How To Get The Most Out Of Gi Bill Reddit</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Among student veterans tips for getting the most out of the GI Bill are to knock out credits before you start school and save for the summer months. Mark CornelisonUniversity of Kentucky Mark. Renting books or paying slightly less for e-books seem like great options. <br>				
+			</p>
+										<a class="badge badge-danger" href="/how-much-money-is-the-montgomery-gi-bill.html">how much money is the montgomery gi bill</a>
+											<a class="badge badge-light" href="/how-much-money-does-the-post-911-gi-bill-give-you.html">how much money does the post 911 gi bill give you</a>
+											<a class="badge badge-info" href="/how-much-is-va-employee-retirement-pay.html">how much is va employee retirement pay</a>
+											<a class="badge badge-danger" href="/how-much-is-20-va-disability.html">how much is 20 va disability</a>
+											<a class="badge badge-danger" href="/how-to-apply-for-the-gi-bill-kicker.html">how to apply for the gi bill kicker</a>
+											<a class="badge badge-light" href="/how-much-does-va-pay-rn.html">how much does va pay rn</a>
+											<a class="badge badge-light" href="/how-much-unemployment-will-i-get-virginia.html">how much unemployment will i get virginia</a>
+											<a class="badge badge-success" href="/how-the-gi-bill-changes-higher-education.html">how the gi bill changes higher education</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to visit the right site.  Our site provides you with hints for seeing the maximum quality video and picture content, search and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, therefore we recommend this video that you see.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.redd.it/z2gw68w3x2e11.png" data-lightbox="roadtrip" data-title="Reddit S Trade Circlejerk Starterpacks">
+											<img class="card-img v-image ads-img " src="https://i.redd.it/z2gw68w3x2e11.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu5De_xz1Yma5tPE4rBH7JVukvJGYeXy21GQ';" alt="Reddit S Trade Circlejerk Starterpacks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reddit S Trade Circlejerk Starterpacks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://external-preview.redd.it/bGyvUfZsY2MyQDkSxhuYf3pB3Jf6tlWHeKWyls5El3g.jpg?auto=webp&amp;s=bbf67ff7a20358a50941c9e28a46495b8c2fb20f" data-lightbox="roadtrip" data-title="What S Going On With R Dababy And All Of The Shitposting Outoftheloop">
+											<img class="card-img v-image ads-img " src="https://external-preview.redd.it/bGyvUfZsY2MyQDkSxhuYf3pB3Jf6tlWHeKWyls5El3g.jpg?auto=webp&amp;s=bbf67ff7a20358a50941c9e28a46495b8c2fb20f" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUigN84VKqq517H-XxiO7sNGwb785_hHHV5g';" alt="What S Going On With R Dababy And All Of The Shitposting Outoftheloop">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What S Going On With R Dababy And All Of The Shitposting Outoftheloop</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/ny/api/res/1.2/szNvxTf80bx10iUqTek6LA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MA--/https://media.zenfs.com/en-US/variety_finance_606/e8987fcde615d52949121b6afd70be52" data-lightbox="roadtrip" data-title="Reddit Bans Pro Trump Forum For Inciting Violence In Connection With U S Capitol Attack">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/ny/api/res/1.2/szNvxTf80bx10iUqTek6LA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MA--/https://media.zenfs.com/en-US/variety_finance_606/e8987fcde615d52949121b6afd70be52" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRxoFhzEW3S0MWcKLBLoVaoJK33yFDnuUiWg';" alt="Reddit Bans Pro Trump Forum For Inciting Violence In Connection With U S Capitol Attack">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reddit Bans Pro Trump Forum For Inciting Violence In Connection With U S Capitol Attack</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/uu/api/res/1.2/oC0aPs9UabdhCOfKfTK8Tg--~B/aD03NjQ7dz0xMjk2O2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/bloomberg_markets_842/8939e5f532cd6df7b839fedab01fd44b" data-lightbox="roadtrip" data-title="Wallstreetbets Briefly Goes Dark After Fueling Gamestop S Surge">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/uu/api/res/1.2/oC0aPs9UabdhCOfKfTK8Tg--~B/aD03NjQ7dz0xMjk2O2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/bloomberg_markets_842/8939e5f532cd6df7b839fedab01fd44b" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZs67iqJSuM6RgZ4aI-xlcrvdi8zq2ANAJUQ';" alt="Wallstreetbets Briefly Goes Dark After Fueling Gamestop S Surge">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wallstreetbets Briefly Goes Dark After Fueling Gamestop S Surge</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ab/3d/f8/ab3df8f5793142ad0392261eb5adfa3e.jpg" data-lightbox="roadtrip" data-title="Parasitare App Reddit Ceo Steve Huffmann Warnt Vor Der Installation Von Tiktok One Photo Video Herunterladen Ecommerce">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ab/3d/f8/ab3df8f5793142ad0392261eb5adfa3e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT00gnM4F4aLFk_XCNPoRUOOhxpI23DJpRHaA';" alt="Parasitare App Reddit Ceo Steve Huffmann Warnt Vor Der Installation Von Tiktok One Photo Video Herunterladen Ecommerce">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Parasitare App Reddit Ceo Steve Huffmann Warnt Vor Der Installation Von Tiktok One Photo Video Herunterladen Ecommerce</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.redd.it/jgon4skt6pr51.png" data-lightbox="roadtrip" data-title="I Owe A Debt To The Va This Is My Debt Waiver Letter I Just Graduated I M Broke And Do Not Have 1k Please Read Letter Before Voting Thank You Veterans">
+											<img class="card-img v-image ads-img " src="https://i.redd.it/jgon4skt6pr51.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbtP-g8wx5QL2HWky3iv3k6wYI-hthdhN8pQ';" alt="I Owe A Debt To The Va This Is My Debt Waiver Letter I Just Graduated I M Broke And Do Not Have 1k Please Read Letter Before Voting Thank You Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Owe A Debt To The Va This Is My Debt Waiver Letter I Just Graduated I M Broke And Do Not Have 1k Please Read Letter Before Voting Thank You Veterans</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.thewrap.com/wp-content/uploads/2016/12/Bill-Gates-Secret-Santa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbtP-g8wx5QL2HWky3iv3k6wYI-hthdhN8pQ';" alt="I Owe A Debt To The Va This Is My Debt Waiver Letter I Just Graduated I M Broke And Do Not Have 1k Please Read Letter Before Voting Thank You Veterans">
+										<div class="card-body">
+						<h3 class="h5"><b>There are a few things I wished I knew when I left the Army to use my GI.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How to get the most out of gi bill reddit</strong>. 
+								
+																	Your GI Bill grants you a 1000 stipend each year for books. 
+																	Never thought it would be an issue before but Ive been fucking around for the last ten years and finally decided to get my shit together. 
+																	Using the GI Bill to get a college degree is one of the best ways to improve long-term career outlook and earning power. 
+																	See if your target school officially offers full tuition for 100 Post-911 GI Bill eligible veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You wont get BAH just handed to you when you get out boss. 
+																	The benefits of having a diploma hanging on your wall are so widely accepted that sometimes it might be easy to forget that higher education can offer much more than. 
+																	You still have to pay interest though. 
+																	Try to work your class schedule to be either TuesdayThursday or MondayWednesdayFriday to avoid making the trip 5x a week. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you go to college and then join you can opt out of the GI Bill and get Student Loan Repayment. 
+																	The Reality of College Credit for Military Service. 
+																	You are basically throwing away 6500000. 
+																	GI Bill Eligibility Certificate COE Yellow Ribbon Program Explained. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Thus youll end up getting to keep almost all of your 1000. 
+																	Im going to try and go the FAFSAscholarship route. 
+																	The duration of your enlistment dictates the percentage the GI Bill will pay out. 
+																	Get an extremely fuel efficient vehicle. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I need to finish a masters before I. 
+																	College isnt for everyone and veterans are no exception but it can be an opportunity to expand your mind gain a useful degree and it can be an opportunity to reintegrate into civilian life with some government income still dropping in your pocket. 
+																	Being you are still paying into the Montgomery GI Bill MGIB you are better off to pay the 100 per month for 12 months than to try and stop it. 
+																	Full tuition paid at almost any law school in the country under the Yellow Ribbon add-on program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Terry Howell posts. 
+																	Over the course of a lifetime a degree can mean the difference of tens or hundreds of thousands of dollars. 
+																	Yeah I think the consensus has been that you get fucked using GI Bill while active. 
+																	My total enlistment minus basic training time was 30 months. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you start out with the Post 911 you CAN NOT use the Montgomery. 
+																	You could enlist for 3 years and then use the Post 911 GI Bill to go to college. 
+																	In VA terms I get paid 80 of tuition books and housing. 
+																	Get a SMART Start On Your Education. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Terry Howell is a retired Coast Guard veteran where he served for. 
+																	Getting the Most Out of Your GI Bill. 
+																	If youre not set on a stateregion check out the highest paying BAH rates and search for towns within 75-90 miles to live. 
+																	The additional 12 months of Post-911 GI. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Not to mention if you start to fail in school they will take it all back and expect you to pay back the last bit. 
+																	Had my time been 36 months VA would pay 100. 
+																	Dealing With GI Bill Glitches. 
+																	But if you buy your books from reputable sources like Amazon or Barnes and Noble theyll buy them back from you at the end of the semester. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To make sure the GI Bill largely benefited white people the southern Democrats drew on tactics they had previously used to ensure that the New Deal helped as few Black people as possible. 
+																	NYC San Fran Chicago Boston Seattle etc. 
+																	This TA cap is really cutting into my timeline and my tuition is about to go up. 
+																	The army isnt gonna just hand over 1800 a quarter for nothing they are gonna need to see that its going to the right place. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You need to serve at least 36 months on active duty or be a post-911 Purple Heart. 
+																	Plus you can get a monthly housing allowance and yearly book stipend for the period covered under your GI Bill. 
+																	The Army will pay back up to 74000 of qualified college loans over 3 years. 
+																	They pay you directly it is only like 5000 less per month and once you use it up 36 months you can use the Post 911 GI bill another 36 months. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The GI Bill is a fantastic resource for anyone exiting the military. 
+																	Importance of GI Bill Eligibility Certification. 
+																	You can use your Montgomery GI Bill up to a certain point and still have a year left of your Post-911 GI available to you for an advanced degree program. 
+																	Once you are fully vested in the MGIB you can always switch over to the Post 911 GI Bill and get your 1200 contribution fee back once you have used up all of your entitlement. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	About the author. 
+																	It pays for tuition up to the rate of the most expensive public college in the state plus BAH at. 
+																	The best bang for your buck method is to pick a city with a really high BAHMHA payment and then live there very cheaply either by commuting from far away or by having a lot of roommates. 
+																	For instance San Franciscos MHA is 4200month. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your GI bill will have it mixed in with it and all that money is strictly for your schooling. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/ny/api/res/1.2/zcaL72vPtXzK0mdVLapYHQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU3MS4y/https://s.yimg.com/uu/api/res/1.2/P9J1rReqdfT7p2JlXTaFUw--~B/aD00NzY7dz04MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/reuters.com/60a9857cb257ff5f8e352315f765bf2a" data-lightbox="roadtrip" data-title="Bbx4ay8a9wqfgm">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/ny/api/res/1.2/zcaL72vPtXzK0mdVLapYHQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU3MS4y/https://s.yimg.com/uu/api/res/1.2/P9J1rReqdfT7p2JlXTaFUw--~B/aD00NzY7dz04MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/reuters.com/60a9857cb257ff5f8e352315f765bf2a" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvJrv9x85fhurvt9OoOk-cYIGAnMt3w-O9lg';" alt="Bbx4ay8a9wqfgm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bbx4ay8a9wqfgm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.thewrap.com/wp-content/uploads/2016/12/Bill-Gates-Secret-Santa.jpg" data-lightbox="roadtrip" data-title="Bill Gates Is My Freakin Santa A Reddit User Squeals">
+											<img class="card-img v-image ads-img " src="https://www.thewrap.com/wp-content/uploads/2016/12/Bill-Gates-Secret-Santa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlF6klAQPJCs-JxScxiMR0RWimK4y3JoUhfg';" alt="Bill Gates Is My Freakin Santa A Reddit User Squeals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Gates Is My Freakin Santa A Reddit User Squeals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/ny/api/res/1.2/MLCpU9bYZAEfgrkCnK_1zw--/YXBwaWQ9aGlnaGxhbmRlcjtoPTY2Ng--/https://media.zenfs.com/en-US/digital_trends_973/6da9d3376c74772ce96a1c1cfb1c0b20" data-lightbox="roadtrip" data-title="How To Create Your Own Reddit Community">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/ny/api/res/1.2/MLCpU9bYZAEfgrkCnK_1zw--/YXBwaWQ9aGlnaGxhbmRlcjtoPTY2Ng--/https://media.zenfs.com/en-US/digital_trends_973/6da9d3376c74772ce96a1c1cfb1c0b20" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHver15jsscaC3-QwCCUDH7tbGDWkG3VlEjQ';" alt="How To Create Your Own Reddit Community">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Create Your Own Reddit Community</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/81/e2/4e81e279638da870cb1e26aabef19155.png" data-lightbox="roadtrip" data-title="List Of Best Korean Movies Tops Reddit Front Page Korean Drama Quotes Korean Drama List Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/81/e2/4e81e279638da870cb1e26aabef19155.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRdgmZgoeS3jqpzBhh6AjWvx2okXN51fJ4aA';" alt="List Of Best Korean Movies Tops Reddit Front Page Korean Drama Quotes Korean Drama List Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">List Of Best Korean Movies Tops Reddit Front Page Korean Drama Quotes Korean Drama List Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/ny/api/res/1.2/ZoMxk5u6maf8k9YhqZQHzg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU0MA--/https://s.yimg.com/uu/api/res/1.2/tpTSbJYoxiLkEtW3Hgv.Zg--~B/aD02NzU7dz0xMjAwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/bloomberg_markets_842/ffbcb4f03a9ee24cad49ee1b912873de" data-lightbox="roadtrip" data-title="Kfq1g Sqvdiu7m">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/ny/api/res/1.2/ZoMxk5u6maf8k9YhqZQHzg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU0MA--/https://s.yimg.com/uu/api/res/1.2/tpTSbJYoxiLkEtW3Hgv.Zg--~B/aD02NzU7dz0xMjAwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/bloomberg_markets_842/ffbcb4f03a9ee24cad49ee1b912873de" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3bcF64eq59ngumYL7PJRNnVVGug2XSxdEAw';" alt="Kfq1g Sqvdiu7m">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kfq1g Sqvdiu7m</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/18/1d/ef181d5caa620a3e27cb33779b0a60b9.jpg" data-lightbox="roadtrip" data-title="The Best Venn Diagram Ever Via Reddit Com Venn Diagram Funniest Hilarious Memes Steve Miller Band">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/18/1d/ef181d5caa620a3e27cb33779b0a60b9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQArPBpF2rx7JyLZ7TffRzJP9sO1_qlUwcBBA';" alt="The Best Venn Diagram Ever Via Reddit Com Venn Diagram Funniest Hilarious Memes Steve Miller Band">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Best Venn Diagram Ever Via Reddit Com Venn Diagram Funniest Hilarious Memes Steve Miller Band</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/ny/api/res/1.2/TnWUqRY7G_Gq4QjMpJPhbw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTUyNy40NzI1Mjc0NzI1Mjc0/https://s.yimg.com/uu/api/res/1.2/6nNFePse9rkXHAWVg7E6uQ--~B/aD00MDA7dz03Mjg7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/investorplace_417/20c04d3add469bdac465b916bc7361df" data-lightbox="roadtrip" data-title="Njqbamnqjrljnm">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/ny/api/res/1.2/TnWUqRY7G_Gq4QjMpJPhbw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTUyNy40NzI1Mjc0NzI1Mjc0/https://s.yimg.com/uu/api/res/1.2/6nNFePse9rkXHAWVg7E6uQ--~B/aD00MDA7dz03Mjg7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/investorplace_417/20c04d3add469bdac465b916bc7361df" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Nw1sm5Mfya0emF0XTk3pRx8loOu4V8m_FQ';" alt="Njqbamnqjrljnm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Njqbamnqjrljnm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ml9btah1pfql.i.optimole.com/4XpCEfE-2vlaHxkg/w:500/h:380/q:90/https://www.creditknocks.com/wp-content/uploads/2020/06/Reddit-Best-Credit-Cards-for-Rewards-Cashback-Churning-First-Time-Cards.png" data-lightbox="roadtrip" data-title="Best Credit Cards On Reddit For Cashback Churning Good Or Bad Credit">
+											<img class="card-img v-image ads-img " src="https://ml9btah1pfql.i.optimole.com/4XpCEfE-2vlaHxkg/w:500/h:380/q:90/https://www.creditknocks.com/wp-content/uploads/2020/06/Reddit-Best-Credit-Cards-for-Rewards-Cashback-Churning-First-Time-Cards.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzXyTUNLiLVJzrKVXXlmkaTQRvEWDIMAh8MA';" alt="Best Credit Cards On Reddit For Cashback Churning Good Or Bad Credit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Credit Cards On Reddit For Cashback Churning Good Or Bad Credit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/14/03/571403fa04b65871a9a17cf907839198.jpg" data-lightbox="roadtrip" data-title="Pin By Fnr River On Mbti Mbti Personality Infp Personality Type Infp Personality">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/14/03/571403fa04b65871a9a17cf907839198.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNBQro9sHx1sQUqilRY6APChbPonrz2gL1Mw';" alt="Pin By Fnr River On Mbti Mbti Personality Infp Personality Type Infp Personality">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Fnr River On Mbti Mbti Personality Infp Personality Type Infp Personality</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ca/76/df/ca76df128447bea50369487d6ffb94f1.jpg" data-lightbox="roadtrip" data-title="Https Www Reddit Com R Watches Comments 8bj5xb Bruno S C3 B6hnle First Watch In My Collection Stylish Watches Watches Watches For Men">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ca/76/df/ca76df128447bea50369487d6ffb94f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqZmRaClsYu6zbK9j-kiPWgauTDcK-Jc3_lQ';" alt="Https Www Reddit Com R Watches Comments 8bj5xb Bruno S C3 B6hnle First Watch In My Collection Stylish Watches Watches Watches For Men">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Reddit Com R Watches Comments 8bj5xb Bruno S C3 B6hnle First Watch In My Collection Stylish Watches Watches Watches For Men</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/e9/a4/6ae9a4ecbd535a9fe1cefec9da2c139b.jpg" data-lightbox="roadtrip" data-title="Center And Peripherals Have Switched To The Use Of Ripple Buy Bitcoins Long Bitcoin Casino Us Review And Bitcoin B Bitcoin Transaction Bitcoin Startup Company">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/e9/a4/6ae9a4ecbd535a9fe1cefec9da2c139b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlAIl072SdKxt69mJyewQJqK4bD8D0Laz30Q';" alt="Center And Peripherals Have Switched To The Use Of Ripple Buy Bitcoins Long Bitcoin Casino Us Review And Bitcoin B Bitcoin Transaction Bitcoin Startup Company">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Center And Peripherals Have Switched To The Use Of Ripple Buy Bitcoins Long Bitcoin Casino Us Review And Bitcoin B Bitcoin Transaction Bitcoin Startup Company</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://external-preview.redd.it/odeUNiJ408wmeoRfJ4wjmXaz-7xwn-zdaKK4oXNh64M.jpg?auto=webp&amp;s=95cc0600b1178be14ba70c3da349103e7bcb70c0" data-lightbox="roadtrip" data-title="New Law Will Cut Off Unemployment Pay For Gi Bill Users News">
+											<img class="card-img v-image ads-img " src="https://external-preview.redd.it/odeUNiJ408wmeoRfJ4wjmXaz-7xwn-zdaKK4oXNh64M.jpg?auto=webp&amp;s=95cc0600b1178be14ba70c3da349103e7bcb70c0" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG1r75ApOWG4g7svSVvDCUrVbL-vsQZkkRsw';" alt="New Law Will Cut Off Unemployment Pay For Gi Bill Users News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Law Will Cut Off Unemployment Pay For Gi Bill Users News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.redd.it/q1a8livuk4q51.png" data-lightbox="roadtrip" data-title="Drew This After Seeing This Reddit Post Even Though It S A Little Ooc For Shin Ae Xd Iloveyoo">
+											<img class="card-img v-image ads-img " src="https://i.redd.it/q1a8livuk4q51.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrP45YHKTam_fOFYZ5RauaHFRSCLLUetHdlA';" alt="Drew This After Seeing This Reddit Post Even Though It S A Little Ooc For Shin Ae Xd Iloveyoo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Drew This After Seeing This Reddit Post Even Though It S A Little Ooc For Shin Ae Xd Iloveyoo</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-disability-percentage-matrix.html">Va Disability Percentage Matrix</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-for-headaches.html">Va Disability Percentage For Headaches</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentages-per-condition.html">Va Disability Percentages Per Condition</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentages-and-pay.html">Va Disability Percentages And Pay</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentages-for-sleep-apnea.html">Va Disability Percentages For Sleep Apnea</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-for-prostate-cancer.html">Va Disability Percentage For Prostate Cancer</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-guidelines.html">Va Disability Percentage Guidelines</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentages-for-ptsd.html">Va Disability Percentages For Ptsd</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentages-for-back-pain.html">Va Disability Percentages For Back Pain</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-for-prostate.html">Va Disability Percentage For Prostate</a></li>
+													<li class="list-group-item"><a href="/va-disability-rate-chart.html">Va Disability Rate Chart</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-per-body-part.html">Va Disability Percentage Per Body Part</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentages-table.html">Va Disability Percentages Table</a></li>
+													<li class="list-group-item"><a href="/va-disability-rate-for-high-blood-pressure.html">Va Disability Rate For High Blood Pressure</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-guide.html">Va Disability Percentage Guide</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-per-condition.html">Va Disability Percentage Per Condition</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-shin-splints.html">Va Disability Percentage Shin Splints</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-for-diabetes.html">Va Disability Percentage For Diabetes</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-for-lupus.html">Va Disability Percentage For Lupus</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentages-for-injuries.html">Va Disability Percentages For Injuries</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

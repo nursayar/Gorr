@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Go Build Binary - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Go Build Binary",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/736x/2a/b1/4c/2ab14c5dd75f19f07bc8fa95b30d0f34.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=go+build+binary",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Go Build Binary</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The minimal source code for a binary-only package was therefore. You can specify for which GOOS GOARCH and GOARM binaries are built goreleaser will generate a matrix of all combinations and you can change the name of the binary flags environment variables hooks and etc. WORKtmpgo-build249279931 mkdir -p WORKcryptohmac_obj mkdir -p WORKcrypto. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/how-long-does-a-bva-appeal-take.html">how long does a bva appeal take</a>
+											<a class="badge badge-primary" href="/how-did-the-gi-bill-help-veterans-quizlet.html">how did the gi bill help veterans quizlet</a>
+											<a class="badge badge-light" href="/how-does-the-gi-bill-pay-for-college.html">how does the gi bill pay for college</a>
+											<a class="badge badge-info" href="/how-does-using-the-gi-bill-work.html">how does using the gi bill work</a>
+											<a class="badge badge-light" href="/how-does-the-gi-bill-work-for-online-classes.html">how does the gi bill work for online classes</a>
+											<a class="badge badge-info" href="/how-long-do-you-have-to-serve-to-get-the-gi-bill.html">how long do you have to serve to get the gi bill</a>
+											<a class="badge badge-secondary" href="/how-does-post-911-11-gi-bill-work-for-online-classes.html">how does post 911 11 gi bill work for online classes</a>
+											<a class="badge badge-light" href="/how-can-i-use-my-gi-bill-to-buy-a-house.html">how can i use my gi bill to buy a house</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you've come to visit the right site.  Our website gives you hints for seeing the maximum quality video and picture content, hunt and find more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, particularly Youtube, so we recommend this video that you see.  You can also contribute to supporting this website by sharing videos and graphics that you like on this blog on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/5f/52/635f528e8c6507b594735de0f62b0b32.jpg" data-lightbox="roadtrip" data-title="Teach Kids Binary In One Simple Step Teaching Coding Coding Lessons Coding For Kids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/5f/52/635f528e8c6507b594735de0f62b0b32.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3hFn5NEb9rdcFZxWjXE5cto9oWbl0w4S4gg';" alt="Teach Kids Binary In One Simple Step Teaching Coding Coding Lessons Coding For Kids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Teach Kids Binary In One Simple Step Teaching Coding Coding Lessons Coding For Kids</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3e/8e/bc/3e8ebcc7b48c5b5944df6a0781069b7d.jpg" data-lightbox="roadtrip" data-title="Quick Ready To Go Math Activities That Require Little Instruction Students Use The Binary Number System To Create Mi Number Grid Binary Number Grid Puzzles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3e/8e/bc/3e8ebcc7b48c5b5944df6a0781069b7d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHkbwGlXExaUvB-H70AEKLjektCHTfVqN1UQ';" alt="Quick Ready To Go Math Activities That Require Little Instruction Students Use The Binary Number System To Create Mi Number Grid Binary Number Grid Puzzles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Quick Ready To Go Math Activities That Require Little Instruction Students Use The Binary Number System To Create Mi Number Grid Binary Number Grid Puzzles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/f4/83/4af483c6d33fc6ee450feab2f10e0c8b.png" data-lightbox="roadtrip" data-title="Go Basics Plus Practical Tips Books Bootcamp Binary Tree">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/f4/83/4af483c6d33fc6ee450feab2f10e0c8b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXAQzVd2xyZZu24CnbuBZoiBa1Fqhyu7ZJ3w';" alt="Go Basics Plus Practical Tips Books Bootcamp Binary Tree">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Go Basics Plus Practical Tips Books Bootcamp Binary Tree</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/ed/60/b5ed60db24df3ddb47cc330ae7ec9281.jpg" data-lightbox="roadtrip" data-title="Introduction About Binary Options At Go Markets Binary Forex Brokers Marketing Website">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/ed/60/b5ed60db24df3ddb47cc330ae7ec9281.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl1ca02lUq-5RiuGfwlL9zNb0JMayT0YQ66Q';" alt="Introduction About Binary Options At Go Markets Binary Forex Brokers Marketing Website">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Introduction About Binary Options At Go Markets Binary Forex Brokers Marketing Website</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/29/8b/0f298be8804e0c8a7814a2cb55e44c26.png" data-lightbox="roadtrip" data-title="Pin On R">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/29/8b/0f298be8804e0c8a7814a2cb55e44c26.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPFU_oZp5-X_nYvUoY4IlIF7D3HITuLonNLg';" alt="Pin On R">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On R</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2a/b1/4c/2ab14c5dd75f19f07bc8fa95b30d0f34.jpg" data-lightbox="roadtrip" data-title="Pin On Pc Build">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2a/b1/4c/2ab14c5dd75f19f07bc8fa95b30d0f34.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfUK47-Plzb3I0wNt21F7X1ExWLDRdkjW0Ig';" alt="Pin On Pc Build">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Pc Build</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/5c/b0/78/5cb078ef965f64af26aebf92375d53b3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfUK47-Plzb3I0wNt21F7X1ExWLDRdkjW0Ig';" alt="Pin On Pc Build">
+										<div class="card-body">
+						<h3 class="h5"><b>You may want to use other command wrapper eg packr2 example build_command.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Go build binary</strong>. 
+								
+																	4 How to deploy Golang application on any GNULinux system but without Docker. 
+																	Both binaries are statically linked and without debug_info. 
+																	A go_binary rule builds a native executable from the supplied set of Go source files and dependencies. 
+																	BUILDFLAGS are flags that will be passed to go build. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Go build and other commands no longer support binary-only-packages. 
+																	Here is a commented builds section with all fields specified. 
+																	Go build -ldflags -X mainVersionv100. 
+																	Running a Go binary as a systemd service on Ubuntu 1604 The Go language with its simplicity concurrency support rich package ecosystem and ability to compile down to a single binary is an attractive solution for writing services on Ubuntu. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In the compilation step we consume the TARGETOS and TARGETARCH variables both filled by the build platform flag to tell Go which platform to build for. 
+																	-o may be used to alter the name and destination of your binary but remember that go build takes a value that is relative to your GOPATHsrc not your working directory so changing directories then executing the go build command is also an option. 
+																	The exe suffix is added when writing a Windows executable. 
+																	Gobinary-only-package package mypkg The source code could include additional Go code. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	GOOSlinux go build cmdgo ls -l go -rwxr-xr-x 1 filippo staff 12493536 Apr 16 1658 go GOOSlinux go build -ldflags-s -w cmdgo ls -l go -rwxr-xr-x 1 filippo staff 8941952 Apr 16 1708 go We already lost 28 of our weight. 
+																	Go build creates a temporary directory tmpgo-build249279931 and populates it with some skeleton subdirectories to hold the results of the compilation. 
+																	Reminds us of the old C programming days. 
+																	Exploring size of Binaries created by Go G o is the modern programming language from Google. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The second mkdir may be redundant issue 6538 has been created to track this. 
+																	Setting Up and Running the Go Binary. 
+																	You can see that the last pretty-low entropy section is gone. 
+																	However the Go language does not natively provide a reliable way to daemonize itself. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To replace the Version variable in your example application use the syntax in the last command block to pass in a new value and build the new binary. 
+																	What version of Go are you using go version. 
+																	Go x64 1103 - generated binary with size 1214208 byte. 
+																	Additional arguments to pass the go build command. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How To Build and Install Go Programs Prerequisites. 
+																	To simplify things and because this is a simple application we statically compile the binary by setting CGO_ENABLED0. 
+																	But if you link you C code statically you might get a binary with a bigger size. 
+																	It compiles to a standalone binary. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you buy into the Buffalo Way things just work. 
+																	In this command main is the package path of the Version variable since this variable is in the maingo file. 
+																	A Go workspace set up by following How To Install Go and Set Up a Local Programming Environment. 
+																	Yes Go 115 What operating system and processor architecture are you using go env. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Buffalo features a command build that will build a full binary of your application including but not limited to. 
+																	Buck currently supports Go version 110. 
+																	Its a wonderful experience. 
+																	The -X flag. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When compiling a single main package build writes the resulting executable to an output file named after the first source file go build edgo rxgo writes ed or edexe or the source code directory go build unixsam writes sam or samexe. 
+																	Gcc x64 620 - generated binary with size 1421312 byte. 
+																	That code was never compiled but would be processed by tools like godoc and might be useful as end-user documentation. 
+																	5 A powerful CLI for create a new production-ready project with. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Building Go Binaries With go. 
+																	Go version go version go115 linuxamd64 Does this issue reproduce with the latest release. 
+																	The files supplied are expected to be in the main package implicitly. 
+																	The actual command to build binary typically go build. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Remember to use pre_command to set up packr2 command in this scenario. 
+																	Builds can be customized in multiple ways. 
+																	1 The easiest way to embed static files into a binary file in your Golang app no external dependencies 2 Lets write config for your Golang web app on right way YAML 3 How to update versions cache of your package in pkggodev. 
+																	Assets migrations templates etc. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Values to provide to the -ldflags argument. 
+																	First create an application to use as an example for demonstrating the Go. 
+																	Heres the new entropy graph. 
+																	The flag -s tells Go to omit the symbol table from the binary and the flag -w says to omit debug information. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Go build -ldflags-s -w -o test-go testgo gcc -static -s -o test-c testc. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/8a/a5/248aa5971ac57bbaff907ac09e26f487.jpg" data-lightbox="roadtrip" data-title="How To Build A Binary Tree With Ruby How To Do Math Binary Tree Math">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/8a/a5/248aa5971ac57bbaff907ac09e26f487.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS_jwogPbvuiGPiIh8jH4x-c4snoc5nynieA';" alt="How To Build A Binary Tree With Ruby How To Do Math Binary Tree Math">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Build A Binary Tree With Ruby How To Do Math Binary Tree Math</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ad/23/c7/ad23c761ceec6b551f730b2fd07dbc7e.jpg" data-lightbox="roadtrip" data-title="Xkcd Binary Heart Geek Stuff Love Computer Geek">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ad/23/c7/ad23c761ceec6b551f730b2fd07dbc7e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4ySF7mbcyN9AV5TUqXJEBdRtypw9dey4pLQ';" alt="Xkcd Binary Heart Geek Stuff Love Computer Geek">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Xkcd Binary Heart Geek Stuff Love Computer Geek</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/63/af/ab63aff3e2069ad77eaad2efdc05fa5a.png" data-lightbox="roadtrip" data-title="Winter Binary Number 8x8 Grid Puzzles Grid Puzzles Binary Number Math Activities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/63/af/ab63aff3e2069ad77eaad2efdc05fa5a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG9qzrLCodQvDIg-J3P7_Y987UxoCmUp0Siw';" alt="Winter Binary Number 8x8 Grid Puzzles Grid Puzzles Binary Number Math Activities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Winter Binary Number 8x8 Grid Puzzles Grid Puzzles Binary Number Math Activities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/ec/29/85ec296eaae85dfab7860cd6ac95037f.png" data-lightbox="roadtrip" data-title="Pin On Binary Options Tradings">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/ec/29/85ec296eaae85dfab7860cd6ac95037f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJavz5mQEtqAJ5kmHxgubF-G76VBfDpW-3IA';" alt="Pin On Binary Options Tradings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Binary Options Tradings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5c/b0/78/5cb078ef965f64af26aebf92375d53b3.jpg" data-lightbox="roadtrip" data-title="Enhance Your Coding Lessons With This Unplugged Coding Game Ready To Print And Go Perfect For Earl Coding Lessons Unplugged Coding Activities Teaching Coding">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5c/b0/78/5cb078ef965f64af26aebf92375d53b3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0GpzXIvepfK1b91wec1mqoQNhxcG7CctIDg';" alt="Enhance Your Coding Lessons With This Unplugged Coding Game Ready To Print And Go Perfect For Earl Coding Lessons Unplugged Coding Activities Teaching Coding">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Enhance Your Coding Lessons With This Unplugged Coding Game Ready To Print And Go Perfect For Earl Coding Lessons Unplugged Coding Activities Teaching Coding</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/be/8c/e4be8cd41c14cfea9ea154907e9838be.jpg" data-lightbox="roadtrip" data-title="Build A Website That Works For Your Business Go The Extra Mile With A Stronger O Ecommerce Website Development Website Development Company Website Development">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/be/8c/e4be8cd41c14cfea9ea154907e9838be.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHBLC--2ybYY_i35GL7RddENxmFxgtaZBQQQ';" alt="Build A Website That Works For Your Business Go The Extra Mile With A Stronger O Ecommerce Website Development Website Development Company Website Development">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Build A Website That Works For Your Business Go The Extra Mile With A Stronger O Ecommerce Website Development Website Development Company Website Development</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/5a/6f/9d5a6fbf4f14da3d7474141bfa9dc113.jpg" data-lightbox="roadtrip" data-title="Convert Decimal To Fraction Converting Fractions To Decimals And Convert Hex To Decimal Algebraic Expressions Computer Coding Converting Decimals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/5a/6f/9d5a6fbf4f14da3d7474141bfa9dc113.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Wxd9V24pKlPx1tO9QuJr3n53UzwfvGf92Q';" alt="Convert Decimal To Fraction Converting Fractions To Decimals And Convert Hex To Decimal Algebraic Expressions Computer Coding Converting Decimals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Convert Decimal To Fraction Converting Fractions To Decimals And Convert Hex To Decimal Algebraic Expressions Computer Coding Converting Decimals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6a/f4/b0/6af4b0f556fee698ffd605147aed48dc.jpg" data-lightbox="roadtrip" data-title="Roll N Build Stem Grades 3 6 In 2020 Critical Thinking Lessons Stem Education Science Lessons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6a/f4/b0/6af4b0f556fee698ffd605147aed48dc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpnjDMkdDVLuL1P3pdTjzENefXUHWGfio_wg';" alt="Roll N Build Stem Grades 3 6 In 2020 Critical Thinking Lessons Stem Education Science Lessons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Roll N Build Stem Grades 3 6 In 2020 Critical Thinking Lessons Stem Education Science Lessons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/d6/01/b2d601678b35323826f3238a136952cd.jpg" data-lightbox="roadtrip" data-title="Credits Startup Boss Go Follow Startup Boss On Instagram Is Facebook Engagement Down Online Business Marketing Money Life Hacks Business Ideas Entrepreneur">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/d6/01/b2d601678b35323826f3238a136952cd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZdudRZpIu3o-xNL5Ncwpw56y9r3jCl1qdHg';" alt="Credits Startup Boss Go Follow Startup Boss On Instagram Is Facebook Engagement Down Online Business Marketing Money Life Hacks Business Ideas Entrepreneur">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Credits Startup Boss Go Follow Startup Boss On Instagram Is Facebook Engagement Down Online Business Marketing Money Life Hacks Business Ideas Entrepreneur</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/b7/ab/94b7ab95187e7b5b8435fce00464726b.jpg" data-lightbox="roadtrip" data-title="Let S Go To Try Understanding That What Is The Sigma Option App System It S A Binary Options Trading Sign Forex Trading How To Get Rich Forex Trading Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/b7/ab/94b7ab95187e7b5b8435fce00464726b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRnD_kl51wn7efGCzVYE8l-wiLRyI7W2vx0g';" alt="Let S Go To Try Understanding That What Is The Sigma Option App System It S A Binary Options Trading Sign Forex Trading How To Get Rich Forex Trading Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Let S Go To Try Understanding That What Is The Sigma Option App System It S A Binary Options Trading Sign Forex Trading How To Get Rich Forex Trading Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/98/3b/07/983b07f8be9ecb3df8171c52d6b6616f.jpg" data-lightbox="roadtrip" data-title="Pin On Teaching Math">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/98/3b/07/983b07f8be9ecb3df8171c52d6b6616f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX10aQdPyHEmqNqE3gERBRdlAXXVe9KNzz4g';" alt="Pin On Teaching Math">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Teaching Math</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3e/53/91/3e539180fb67855c9362ea7cde0b5f81.jpg" data-lightbox="roadtrip" data-title="Binary Coding Unplugged Students Will Learn The On And Off Method Of Binary While Exploring The Coding Ac Coding Critical Thinking Lessons Math Curriculum">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3e/53/91/3e539180fb67855c9362ea7cde0b5f81.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYPSUFFFkSN2U7J4kufrUgdYSNpuyXcQhrag';" alt="Binary Coding Unplugged Students Will Learn The On And Off Method Of Binary While Exploring The Coding Ac Coding Critical Thinking Lessons Math Curriculum">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Binary Coding Unplugged Students Will Learn The On And Off Method Of Binary While Exploring The Coding Ac Coding Critical Thinking Lessons Math Curriculum</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/de/e0/68/dee06881285dd04054612cdde93fc70f.jpg" data-lightbox="roadtrip" data-title="Whatsapp Me 1585 204 0144 Make Good Money Online From Binary Theatre Company Trading With Sure Forex Millennium Is Money Online Risk Reward Impulsive Behavior">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/de/e0/68/dee06881285dd04054612cdde93fc70f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Eqh_jD5V6_VQchzfABZJXvXc-4bhlBPSHA';" alt="Whatsapp Me 1585 204 0144 Make Good Money Online From Binary Theatre Company Trading With Sure Forex Millennium Is Money Online Risk Reward Impulsive Behavior">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Whatsapp Me 1585 204 0144 Make Good Money Online From Binary Theatre Company Trading With Sure Forex Millennium Is Money Online Risk Reward Impulsive Behavior</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/can-you-use-financial-aid-and-gi-bill.html">Can You Use Financial Aid And Gi Bill</a></li>
+													<li class="list-group-item"><a href="/can-you-transfer-post-911-gi-bill-after-retirement.html">Can You Transfer Post 911 Gi Bill After Retirement</a></li>
+													<li class="list-group-item"><a href="/can-you-get-va-disability-for-std.html">Can You Get Va Disability For Std</a></li>
+													<li class="list-group-item"><a href="/chapter-1606.html">Chapter 1606</a></li>
+													<li class="list-group-item"><a href="/can-you-transfer-gi-bill-to-grandchildren.html">Can You Transfer Gi Bill To Grandchildren</a></li>
+													<li class="list-group-item"><a href="/chapter-33-yellow-ribbon.html">Chapter 33 Yellow Ribbon</a></li>
+													<li class="list-group-item"><a href="/ch-30-1606-offset.html">Ch 30 1606 Offset</a></li>
+													<li class="list-group-item"><a href="/can-you-get-disability-for-si-joint-dysfunction.html">Can You Get Disability For Si Joint Dysfunction</a></li>
+													<li class="list-group-item"><a href="/chapter-32-gi-bill.html">Chapter 32 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/can-you-use-your-gi-bill-if-you-owe-money.html">Can You Use Your Gi Bill If You Owe Money</a></li>
+													<li class="list-group-item"><a href="/chapter-33-veterans-benefits.html">Chapter 33 Veterans Benefits</a></li>
+													<li class="list-group-item"><a href="/can-you-use-montgomery-gi-bill-and-post-911-gi-bill.html">Can You Use Montgomery Gi Bill And Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/can-you-get-on-disability-for-ptsd.html">Can You Get On Disability For Ptsd</a></li>
+													<li class="list-group-item"><a href="/can-you-get-va-disability-if-you-are-in-the-reserves.html">Can You Get Va Disability If You Are In The Reserves</a></li>
+													<li class="list-group-item"><a href="/can-you-transfer-your-montgomery-gi-bill-to-your-child.html">Can You Transfer Your Montgomery Gi Bill To Your Child</a></li>
+													<li class="list-group-item"><a href="/chapter-31-gi-bill.html">Chapter 31 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/can-you-use-gi-bill-to-repay-student-loans.html">Can You Use Gi Bill To Repay Student Loans</a></li>
+													<li class="list-group-item"><a href="/can-you-get-social-security-disability-for-major-depressive-disorder.html">Can You Get Social Security Disability For Major Depressive Disorder</a></li>
+													<li class="list-group-item"><a href="/can-you-transfer-the-montgomery-gi-bill-to-your-spouse.html">Can You Transfer The Montgomery Gi Bill To Your Spouse</a></li>
+													<li class="list-group-item"><a href="/can-you-get-compensation-for-nerve-damage.html">Can You Get Compensation For Nerve Damage</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

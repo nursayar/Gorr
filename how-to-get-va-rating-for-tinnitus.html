@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>How To Get Va Rating For Tinnitus - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "How To Get Va Rating For Tinnitus",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/da/79/07/da79076852463fba62403a3ee60a3a86.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+to+get+va+rating+for+tinnitus",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>How To Get Va Rating For Tinnitus</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">You only had to show the four pillars to have your claim recognized. Thyroid Illness Tinnitus Any Essential Oils Help Tinnitus Blood Vessel Wearing Through Bone Tinnitus. You can do this online at the VAs. <br>				
+			</p>
+										<a class="badge badge-danger" href="/hi-bill-congratulations.html">hi bill congratulations</a>
+											<a class="badge badge-success" href="/highest-va-rating-for-shoulder.html">highest va rating for shoulder</a>
+											<a class="badge badge-secondary" href="/health-insurance-for-unemployed-veterans.html">health insurance for unemployed veterans</a>
+											<a class="badge badge-success" href="/health-benefits-for-widows-of-veterans.html">health benefits for widows of veterans</a>
+											<a class="badge badge-danger" href="/health-care-for-us-veterans.html">health care for us veterans</a>
+											<a class="badge badge-info" href="/health-insurance-for-veterans-dependents.html">health insurance for veterans dependents</a>
+											<a class="badge badge-danger" href="/hi-bill-lk21.html">hi bill lk21</a>
+											<a class="badge badge-light" href="/highest-va-rating-for-degenerative-disc-disease.html">highest va rating for degenerative disc disease</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to visit the right blog.  Our website provides you with hints for viewing the highest quality video and image content, hunt and locate more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, especially Youtube, so we recommend this video for you to see.  You can also contribute to supporting this site by sharing videos and graphics that you like on this blog on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/1a/56/041a56c644c03b2329ace452c66f32fb.jpg" data-lightbox="roadtrip" data-title="Filing A Va Claim For Tinnitus Exam Veterans Affairs Gaming Logos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/1a/56/041a56c644c03b2329ace452c66f32fb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPt3kovAzD2xcmzrhQI2mOdqwNhkVI2CA6nw';" alt="Filing A Va Claim For Tinnitus Exam Veterans Affairs Gaming Logos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Filing A Va Claim For Tinnitus Exam Veterans Affairs Gaming Logos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/17/8f/01178f98255e141767431afc194cf8f3.png" data-lightbox="roadtrip" data-title="How To Get Veterans Disability Benefits For Hearing Loss Disability Benefit Disabled Veterans Benefits Hearing Loss">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/17/8f/01178f98255e141767431afc194cf8f3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6YD5WTwE8Uolx7qfSFdW0FSD5a2XlGkK8og';" alt="How To Get Veterans Disability Benefits For Hearing Loss Disability Benefit Disabled Veterans Benefits Hearing Loss">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Get Veterans Disability Benefits For Hearing Loss Disability Benefit Disabled Veterans Benefits Hearing Loss</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/84/a6/a1/84a6a1bfd8d6c340b544f1f014ea49b8.jpg" data-lightbox="roadtrip" data-title="Before You Can Win A Va Claim You Need 3 Pieces Of Information Service Connection Medical Diagnos Va Disability Veterans Benefits Disabled Veterans Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/84/a6/a1/84a6a1bfd8d6c340b544f1f014ea49b8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbLP8crPL6YQmzkxY6dpaTW13QmVhBpQfZ5g';" alt="Before You Can Win A Va Claim You Need 3 Pieces Of Information Service Connection Medical Diagnos Va Disability Veterans Benefits Disabled Veterans Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Before You Can Win A Va Claim You Need 3 Pieces Of Information Service Connection Medical Diagnos Va Disability Veterans Benefits Disabled Veterans Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/79/07/da79076852463fba62403a3ee60a3a86.png" data-lightbox="roadtrip" data-title="Tinnitus Qualifying For Va Disability Benefits Disability Benefit Va Disability Benefits Veterans Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/79/07/da79076852463fba62403a3ee60a3a86.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ99WmRG0jULamZvaBeHA2ErHNWKPqkCkYwdw';" alt="Tinnitus Qualifying For Va Disability Benefits Disability Benefit Va Disability Benefits Veterans Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tinnitus Qualifying For Va Disability Benefits Disability Benefit Va Disability Benefits Veterans Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/7a/9b/1f7a9b6dc386b9eb952d17ce93c4046f.png" data-lightbox="roadtrip" data-title="Neuroscience May Offer Hope To Millions Robbed Of Silence By Tinnitus Pbs Newshour Nov 6 2013 P With Images Science Articles Department Of Veterans Affairs Science">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/7a/9b/1f7a9b6dc386b9eb952d17ce93c4046f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjPJWdorOP9Rv7B4HdVA3H13GTIo3eN8FxzA';" alt="Neuroscience May Offer Hope To Millions Robbed Of Silence By Tinnitus Pbs Newshour Nov 6 2013 P With Images Science Articles Department Of Veterans Affairs Science">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Neuroscience May Offer Hope To Millions Robbed Of Silence By Tinnitus Pbs Newshour Nov 6 2013 P With Images Science Articles Department Of Veterans Affairs Science</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/9b/9a/ce9b9a2f909062fad5b18ab6373537fc.png" data-lightbox="roadtrip" data-title="Eqj26gtbv189zm">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/9b/9a/ce9b9a2f909062fad5b18ab6373537fc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc2jze83nuTr2QLpt9hxdUkQaBLiSYUFDfCg';" alt="Eqj26gtbv189zm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Eqj26gtbv189zm</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/f7/22/5b/f7225b4127db612455a9882069738dd8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc2jze83nuTr2QLpt9hxdUkQaBLiSYUFDfCg';" alt="Eqj26gtbv189zm">
+										<div class="card-body">
+						<h3 class="h5"><b>VA rates tinnitus under 38 CFR 487 Schedule of Ratings Ear Diagnostic Code 6260.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How to get va rating for tinnitus</strong>. 
+								
+																	Normal Tinnitus Sounds Can Hypoxemia Cause Tinnitus. 
+																	The only rating available for tinnitus is 10. 
+																	The biggest obstacle for Veterans in VA Tinnitus Claims was proof of nexus. 
+																	It can be rated separately from the condition it is related to such as hearing loss psychiatric conditions TBI or other conditions if it is linked to one but whether linked to another conditions or not the maximum rating will always be 10. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Department of Veterans Affairs VA determines a disability rating for hearing loss based on your performance during a couple of different tests. 
+																	VA Tinnitus Rating First of all it must be mentioned that whether or not your tinnitus is in 1 ear or both ears bilateral tinnitus the VA rating will be the same. 
+																	Yet dont let this stop you from pursuing a VA disability claim for tinnitus. 
+																	Since a lot of veterans often suffer from both tinnitus and hearing loss its worth mentioning that this 10 is awarded in addition to whatever compensation has been determined for hearing loss. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Two main tests are carried out to determine hearing loss or impairment. 
+																	VA Disability Ratings for Tinnitus After service connection for tinnitus is established VA will award a disability rating based on the severity of the condition. 
+																	If you also have hearing loss however you are entitled to one rating for hearing loss and another for tinnitus. 
+																	If you wore 3M military earplugs between 2003 and 2015 you may be eligible for compensation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In 2000 3M tested their dual-ended earplugs and found them to be faulty. 
+																	While Tinnitus is only rated at 10 making it a low-value VA claim did you know there are 5 high-value VA disability claims rated at 30 or above that can be medically linked to Tinnitus. 
+																	Since it can be difficult to prove that tinnitus is connected to military service we recommend hiring one of our VA disability lawyers. 
+																	Conditions that affect the ears ability to sense proper body balance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Our veterans attorneys in Kalamazoo MI will be able to walk you through the steps of. 
+																	A medical diagnosis is not always necessary. 
+																	I wanted to make this video so that you. 
+																	Also Tinnitus can be claimed as a Primary disability or it can be Secondary to other conditions as stated above. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Obstacles Veterans Face in VA Tinnitus Claims. 
+																	Exposure to noise in service or symptoms in service a current diagnosis of tinnitus and the rating should be automatic 10 is the highest you can get. 
+																	It used to be much easier to prove a tinnitus claim to the VA. 
+																	Veterans want to learn how to win high-value VA secondary conditions to Tinnitus and potentially get a HIGHER VA disability rating even if youve already b. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Recurrent tinnitus carries a standard rating of 10 which is about 140 a month. 
+																	Regular or recurrent tinnitus carries a maximum rating of 10 regardless of how bad it is or whether it is present in one or both ears. 
+																	Cold Cause Lasting Tinnitus Does Aspirin Cause Tinnitus Biotin For Tinnitus Reddit. 
+																	According to the VA more than 27 million veterans currently receiving disability for hearing loss or tinnitus. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Maximum VA Rating for Tinnitus. 
+																	VA Ratings for Vertigo. 
+																	Schedule Your Free Consultation Today by Calling 401-237-6412. 
+																	Overview of Tinnitus To wrap things up according to ECFR- TItle 38 Part 4 VA Disabilities code 6260. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Yet too many veterans dont receive the compensation they deserve for this condition. 
+																	The standard rating for recurrent tinnitus is 10 percent and this rating applies whether your condition affects both or just one ear. 
+																	According to the Veterans Benefits Administration Tinnitus aka Ringing in the Ear Syndrome is the 1 most claimed VA disability with 1971201 disabled veterans with a service-connected Tinnitus rating of 10. 
+																	According to the VA compensation table for December 2020 a 10 percent rating warrants a monthly benefit of 14414 for tinnitus. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Types Of Pulsatile Tinnitus Tinnitus And Ptsd Va Rating. 
+																	This is a quick video about what to expect during a VA Compensation and Disability Exam for hearing loss or tinnitus. 
+																	If You Get Tinnitus From High Blood Pressure Will It Go Away Tinnitus Playerunknown Battlegrounds Tinnitus Is The Term Used To Describe Degenerative Hearing Loss That Occus With Advancing Age. 
+																	How To Get Disbaility Rating For Hearing Loss Tinnitus Va Va Testing For Tinnitus Tinnitus Neurologist Can You Get Used To Loud Tinnitus. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veteran status service-connection in this case exposure to loud noises or symptoms or tinnitus during service impairment rating and an effective date of when you started to feel the effects of tinnitus. 
+																	Disability Ratings for Vision Problems. 
+																	The Department of Veterans Affairs bases its disability ratings for disability benefits on most vertigo issues based on the severity of symptoms meaning it will usually assign higher ratings for more severe symptoms. 
+																	A 10 rating will be assigned whether you have ringing in one ear or in both ears you cannot receive a 20 rating due to tinnitus in both ears. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The maximum VA rating for tinnitus is 10. 
+																	The maximum rating for Tinnitus is 10 nothing more and nothing less. 
+																	Hearing loss is a significant problem for veterans of the military. 
+																	If you are a veteran and think you may have the symptoms of tinnitus the first and foremost thing to do is to apply for disability benefits from the VA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The condition of tinnitus almost always results in a 10 percent disability rating. 
+																	This rating applies whether the tinnitus occurs in one or both ears. 
+																	In other words there is no more compensation given for tinnitus in both ears. 
+																	To prove a VA Tinnitus Claim you simply have to show the 4 pillars. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Tinnitus is one of the most claimed VA disabilities in the United States. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/90/2a/b0/902ab0319a5c334590aed83a835f91ad.jpg" data-lightbox="roadtrip" data-title="Va Hearing Loss Claim Rating Hearing Loss Medical Problems Hearing Problems">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/90/2a/b0/902ab0319a5c334590aed83a835f91ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnG05H7W70i_xxTuHmh1Gs4lvNZle-fDiPiw';" alt="Va Hearing Loss Claim Rating Hearing Loss Medical Problems Hearing Problems">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Hearing Loss Claim Rating Hearing Loss Medical Problems Hearing Problems</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/20/27/80/202780afc209d0971f267f13b84265df.jpg" data-lightbox="roadtrip" data-title="How Do I Get A 100 Percent Va Disability Rating Va Disability Disabled Veterans Benefits Veterans Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/20/27/80/202780afc209d0971f267f13b84265df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGfx_GiGZV6trBr5RQw2U4LR22Wfra2qXozA';" alt="How Do I Get A 100 Percent Va Disability Rating Va Disability Disabled Veterans Benefits Veterans Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Do I Get A 100 Percent Va Disability Rating Va Disability Disabled Veterans Benefits Veterans Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/f5/eb/cbf5eb2395b0632834f9f78815b0500f.jpg" data-lightbox="roadtrip" data-title="How To Win Your Va Compensation Claim Youtube Compensation Claim Compensation Informative">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/f5/eb/cbf5eb2395b0632834f9f78815b0500f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMJJIHJgc2POoLyg-MTTOrQ6S72JKatibA1g';" alt="How To Win Your Va Compensation Claim Youtube Compensation Claim Compensation Informative">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Win Your Va Compensation Claim Youtube Compensation Claim Compensation Informative</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/4a/5e/f74a5e079e2e93e2f75c2e8434fda538.jpg" data-lightbox="roadtrip" data-title="Determining Va Disability Ratings Va Disability Disability Veterans Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/4a/5e/f74a5e079e2e93e2f75c2e8434fda538.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEhpdFLtpdt9lPI4Y3NELYFZUFl5Qdox7YBg';" alt="Determining Va Disability Ratings Va Disability Disability Veterans Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Determining Va Disability Ratings Va Disability Disability Veterans Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/22/5b/f7225b4127db612455a9882069738dd8.png" data-lightbox="roadtrip" data-title="6 C P Exam Success Tips For Disabled Veterans Disabled Veterans Benefits Disabled Veterans Va Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/22/5b/f7225b4127db612455a9882069738dd8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkFb4QRCnF7lvrrEWSBcdL_gcr7ixLCuJLuA';" alt="6 C P Exam Success Tips For Disabled Veterans Disabled Veterans Benefits Disabled Veterans Va Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 C P Exam Success Tips For Disabled Veterans Disabled Veterans Benefits Disabled Veterans Va Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/05/6a/7c056a2a77bf6ad6b2c9701adb6b728f.jpg" data-lightbox="roadtrip" data-title="How The Va Handles Back Pay For Veterans In 2020 Va Disability Va Disability Benefits Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/05/6a/7c056a2a77bf6ad6b2c9701adb6b728f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe1tucuGeMn6rts0YSDv_Q345o4uSHBzP3CQ';" alt="How The Va Handles Back Pay For Veterans In 2020 Va Disability Va Disability Benefits Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How The Va Handles Back Pay For Veterans In 2020 Va Disability Va Disability Benefits Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/61/61/21/6161217e12a07869d56e0e7000819e18.jpg" data-lightbox="roadtrip" data-title="Tinnitus Cure At Home Tinnitus Cure Tinnitus Remedies Tinnitus Relief">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/61/61/21/6161217e12a07869d56e0e7000819e18.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0An2Z3migV1YR_z71TkK5-309_m54wuwS0A';" alt="Tinnitus Cure At Home Tinnitus Cure Tinnitus Remedies Tinnitus Relief">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tinnitus Cure At Home Tinnitus Cure Tinnitus Remedies Tinnitus Relief</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/c6/31/cac631ca388f4fdd337793059892d2ba.jpg" data-lightbox="roadtrip" data-title="Veterans How Va Rates Disabilities Disabled Veterans Benefits Veterans Benefits Va Disability Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/c6/31/cac631ca388f4fdd337793059892d2ba.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDNHaGchR_tXCuR8b5mkQ3dl1keoWDcnC0-g';" alt="Veterans How Va Rates Disabilities Disabled Veterans Benefits Veterans Benefits Va Disability Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans How Va Rates Disabilities Disabled Veterans Benefits Veterans Benefits Va Disability Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/55/40/22/55402214fc79f23cb5ed5fb92d9e4ccb.jpg" data-lightbox="roadtrip" data-title="Valuable Va Disability Claims The Va Does Not Want You To Know About In 2020 Va Disability Va Disability Benefits Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/55/40/22/55402214fc79f23cb5ed5fb92d9e4ccb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA-b-2XrciY5l3BDxsqu8gOsuxuISq1WSJNg';" alt="Valuable Va Disability Claims The Va Does Not Want You To Know About In 2020 Va Disability Va Disability Benefits Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Valuable Va Disability Claims The Va Does Not Want You To Know About In 2020 Va Disability Va Disability Benefits Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/6e/34/0b6e3470a058f7e6922d0cd9cb6d6303.jpg" data-lightbox="roadtrip" data-title="Actual Va Raters Reveal 3 Secret Va Claim Tips Va Disability Disabled Veterans Benefits Veterans Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/6e/34/0b6e3470a058f7e6922d0cd9cb6d6303.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm_tiiiwJWB1vtue1apGQEJm6DRcQMbJnKAw';" alt="Actual Va Raters Reveal 3 Secret Va Claim Tips Va Disability Disabled Veterans Benefits Veterans Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Actual Va Raters Reveal 3 Secret Va Claim Tips Va Disability Disabled Veterans Benefits Veterans Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2d/1f/a7/2d1fa777d4326c8f4f8abeee5a9f35a9.jpg" data-lightbox="roadtrip" data-title="Pin On Tinnitusremedies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2d/1f/a7/2d1fa777d4326c8f4f8abeee5a9f35a9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtEd4eLvErMkuX0QC-AQ1S6zGCAc2Kl5Ae5g';" alt="Pin On Tinnitusremedies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Tinnitusremedies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/91/d2/cb91d2e1c50acb13c4f7f56f6b7aeb07.jpg" data-lightbox="roadtrip" data-title="Home Remedies For Tinnitus Treat This Problem Naturally Tinnitus Cure Tinnitus Remedies Tinnitus Symptoms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/91/d2/cb91d2e1c50acb13c4f7f56f6b7aeb07.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbX3P-caI0w9txZfKDWZ8DV7aPO9NKV4HdUw';" alt="Home Remedies For Tinnitus Treat This Problem Naturally Tinnitus Cure Tinnitus Remedies Tinnitus Symptoms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Remedies For Tinnitus Treat This Problem Naturally Tinnitus Cure Tinnitus Remedies Tinnitus Symptoms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/ff/7a/6aff7a4b0998c8941672acddec481a69.png" data-lightbox="roadtrip" data-title="Pin On Va Disability Claim">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/ff/7a/6aff7a4b0998c8941672acddec481a69.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC6kUrYSWHBi-Xq8F2T_2W1ANlCXQAXiu_vA';" alt="Pin On Va Disability Claim">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Va Disability Claim</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/veterans-gi-bill.html">Veterans Gi Bill</a></li>
+													<li class="list-group-item"><a href="/veterans-social-security-disability-assistance.html">Veterans Social Security Disability Assistance</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-chapter-35-phone-number.html">Veterans Affairs Chapter 35 Phone Number</a></li>
+													<li class="list-group-item"><a href="/va-status-says-compensation-issue.html">Va Status Says Compensation Issue</a></li>
+													<li class="list-group-item"><a href="/va-static-rating.html">Va Static Rating</a></li>
+													<li class="list-group-item"><a href="/va-workmans-comp-login.html">Va Workmans Comp Login</a></li>
+													<li class="list-group-item"><a href="/va-temporary-convalescence.html">Va Temporary Convalescence</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-form-21-8940.html">Va Unemployability Form 21 8940</a></li>
+													<li class="list-group-item"><a href="/vagov-gi-bill-comparison.html">Vagov Gi Bill Comparison</a></li>
+													<li class="list-group-item"><a href="/va-workers-comp-web-file.html">Va Workers Comp Web File</a></li>
+													<li class="list-group-item"><a href="/vaed-treas-310-xxva-ch33-direct-deposit.html">Vaed Treas 310 Xxva Ch33 Direct Deposit</a></li>
+													<li class="list-group-item"><a href="/virginia-100-va-disability-benefits.html">Virginia 100 Va Disability Benefits</a></li>
+													<li class="list-group-item"><a href="/va-workers-comp-website.html">Va Workers Comp Website</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-45-hour-driving-log.html">Virginia Department Of Education 45 Hour Driving Log</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-answer-key.html">Virginia Department Of Education Answer Key</a></li>
+													<li class="list-group-item"><a href="/valley-college-gymnastics.html">Valley College Gymnastics</a></li>
+													<li class="list-group-item"><a href="/vertigo-secondary-to-migraines-va-disability.html">Vertigo Secondary To Migraines Va Disability</a></li>
+													<li class="list-group-item"><a href="/veterans-educational-benefits-for-dependents.html">Veterans Educational Benefits For Dependents</a></li>
+													<li class="list-group-item"><a href="/virginia-approved-driver-training-course.html">Virginia Approved Driver Training Course</a></li>
+													<li class="list-group-item"><a href="/virginia-approved-online-real-estate-schools.html">Virginia Approved Online Real Estate Schools</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

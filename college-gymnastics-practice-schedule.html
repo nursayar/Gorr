@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>College Gymnastics Practice Schedule - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "College Gymnastics Practice Schedule",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/c5/79/97/c579971b888ac013999621cfb66fc21a.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=college+gymnastics+practice+schedule",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>College Gymnastics Practice Schedule</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The official Womens Gymnastics page for the Penn State University Nittany Lions. 600 22nd Street NW Washington DC 20052 202-994-1000. I would guess that more injuries occur when the girls are tired. <br>				
+			</p>
+										<a class="badge badge-success" href="/va-disability-ratings-asthma.html">va disability ratings asthma</a>
+											<a class="badge badge-primary" href="/va-disability-rating-menieres-disease.html">va disability rating menieres disease</a>
+											<a class="badge badge-dark" href="/va-disability-ratings-chronic-fatigue.html">va disability ratings chronic fatigue</a>
+											<a class="badge badge-secondary" href="/va-disability-rating-for-neuritis.html">va disability rating for neuritis</a>
+											<a class="badge badge-light" href="/va-disability-ratings-help.html">va disability ratings help</a>
+											<a class="badge badge-info" href="/va-disability-rating-for-psoriatic-arthritis.html">va disability rating for psoriatic arthritis</a>
+											<a class="badge badge-danger" href="/va-disability-rating-for-sinus-infections.html">va disability rating for sinus infections</a>
+											<a class="badge badge-secondary" href="/va-disability-rating-for-spinal-arthritis.html">va disability rating for spinal arthritis</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to visit the right blog.  Our site provides you with suggestions for seeing the highest quality video and picture content, search and locate more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, especially Youtube, so we recommend this movie for you to view.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/cd/38/a8cd38ce9b0fc3501922d8696ec95d32.jpg" data-lightbox="roadtrip" data-title="Pin By Elena Johnson On Gymnastics Gymnastics Conditioning Gymnastics Workout Gymnastics Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/cd/38/a8cd38ce9b0fc3501922d8696ec95d32.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjnTgyWbj2j3b62T4_9nFhFHIkb7cZOCjhkg';" alt="Pin By Elena Johnson On Gymnastics Gymnastics Conditioning Gymnastics Workout Gymnastics Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Elena Johnson On Gymnastics Gymnastics Conditioning Gymnastics Workout Gymnastics Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/b8/d4/c9b8d4a6683162076860e9cbea19f83b.png" data-lightbox="roadtrip" data-title="Watch This College Gymnast Casually Slay Her Floor Routine Gymnastics Routines Olympic Gymnastics Artistic Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/b8/d4/c9b8d4a6683162076860e9cbea19f83b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScXHyA5e5t_NVymsXhI3wG4oF1vGqRzNINUw';" alt="Watch This College Gymnast Casually Slay Her Floor Routine Gymnastics Routines Olympic Gymnastics Artistic Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Watch This College Gymnast Casually Slay Her Floor Routine Gymnastics Routines Olympic Gymnastics Artistic Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/e3/35/90e3351682c342ad561f0890f1d66a36.jpg" data-lightbox="roadtrip" data-title="Simone Biles Training Schedule Revealed Simone Biles Gymnastics Outfits Gymnastics Leotards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/e3/35/90e3351682c342ad561f0890f1d66a36.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvXS8f6INxUI5ZPvfCe5mHEEJz9ywViZgw0Q';" alt="Simone Biles Training Schedule Revealed Simone Biles Gymnastics Outfits Gymnastics Leotards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Simone Biles Training Schedule Revealed Simone Biles Gymnastics Outfits Gymnastics Leotards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/3a/f3/a73af32c9011b76ee8f73aa3a288c4ac.jpg" data-lightbox="roadtrip" data-title="College Gymnastics Leotards Ginasta Ginastica Artistica Corpos Femininos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/3a/f3/a73af32c9011b76ee8f73aa3a288c4ac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUbRparf81Gmpz3iQtzXxR2nX_T7dW1u56yA';" alt="College Gymnastics Leotards Ginasta Ginastica Artistica Corpos Femininos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Gymnastics Leotards Ginasta Ginastica Artistica Corpos Femininos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/a8/9c/bba89ca44d9e651a98d9aa5b0fdc6a7f.jpg" data-lightbox="roadtrip" data-title="Pin On Gymnastic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/a8/9c/bba89ca44d9e651a98d9aa5b0fdc6a7f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMFDjI2zlbfRB1LyQ97AOouEXqW44PDGVTig';" alt="Pin On Gymnastic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Gymnastic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/61/0e/72610ede569280177e67db712470ce57.jpg" data-lightbox="roadtrip" data-title="Middle Splits Gymnastics Team Gymnastics Training Gymnastics Girls">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/61/0e/72610ede569280177e67db712470ce57.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBjANFys_R70iiAo5e0EQZ1mONwc-V-hMdOw';" alt="Middle Splits Gymnastics Team Gymnastics Training Gymnastics Girls">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Middle Splits Gymnastics Team Gymnastics Training Gymnastics Girls</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/dd/9e/62/dd9e62ce230813abd1a95f631a63aa72.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBjANFys_R70iiAo5e0EQZ1mONwc-V-hMdOw';" alt="Middle Splits Gymnastics Team Gymnastics Training Gymnastics Girls">
+										<div class="card-body">
+						<h3 class="h5"><b>The Kent College Gymnastics Academy is a thriving award winning Gymnastics Club established in 2009.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>College gymnastics practice schedule</strong>. 
+								
+																	Major Motor Behavior Laboratory Dept. 
+																	Strength-training coach Rob Price recommends using a three-day strength-training regimen that focuses on sport-specific muscle groups through compound exercises. 
+																	A complete listing of the daily schedule for the womens college gymnastics championship. 
+																	News Cross Country Cross Country. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get the latest news straight to your inbox. 
+																	College Gym News was founded in 2015 by Editor-in-Chief Elizabeth Grimsley. 
+																	The gyms summer practice schedule is 4 days 1day 3 hours practice and 3 days 5 hours for a total of 18 hours. 
+																	Gymnastics coaches are responsible for not only skill training routine composition safety education and mental health of their gymnasts but also their. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In addition to military training gymnastics move-ments were used to provide entertainment. 
+																	The official 2021 Gymnastics schedule for the LSU. 
+																	It seems like 5 hour practices are very long and I wonder if this is good for her body or safe. 
+																	Since then the site has transformed into a one-stop-shop for college gymnastics news from recruiting analysis to meet coverage at the NCAA national championships thanks to the hard work of 10-plus contributors. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The framework of a gymnast training program is the schedule established for working out. 
+																	Womens Gymnastics Schedule Roster Coaches Recruits Join Team 10 Additional Links. 
+																	At 38000 square feet it is a stand-alone facility that contains approximately 18000 square feet of practice space in the gym areaThe practice area features four competition-style beams three vault runways with various surfaces for landings four sets of uneven bars and an. 
+																	A pommel was turned sideways and the handles were removed to create the apparatus needed to vault. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Is this a safe amount of practice for her. 
+																	How to Watch Get Pac-12 Networks. 
+																	Over 100 girls and boys regularly train with the Academy developing their gymnastic talents and competing in regional competitions. 
+																	Strength Training Fundamentals in Gymnastics Conditioning James J. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sign up for Pac-12 email. 
+																	Modern gymnastics appeared in the 18th century when two physical educators decided to create apparatus such as the high bar and parallel bars originally fashioned from a ladder with the rungs removed. 
+																	Bodybuilding and weight training purely for aesthetic purposes bears little resemblance to strength training for gymnastics. 
+																	Is to provide high quality gymnastics training for children and young adults in a family friendly positive and encouraging environment that nurtures and supports healthy behaviors hard work and a love for the sport. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is especially true for gymnasts who usually perform movements that require every major muscle group in. 
+																	The official Gymnastics page for the University of Arizona Wildcats. 
+																	The official 2021 Gymnastics schedule for the University of Alabama Crimson Tide. 
+																	In February 2016 LSU officially opened the state-of-the-art gymnastics training facility on campus. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Classes are open to KC and non KC pupils aged between 4 and 18 and are held on Saturdays from 830am with recreational sessions lasting from between 45 mins to 1. 
+																	Owner Tracy Salvino-Longenecker a former elite-level and Penn State gymnast is joined by an amazing staff of men and women who are eager to share their passion for gymnastics. 
+																	Bodybuilders train muscle groups athletes must train movements. 
+																	Of Exercise and Sports Science University of Utah Salt Lake City Utah Often coaches must be a jack-of-all-trades but masters of one. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Each of the three training days will utilize a specific training intensity with one heavy weightlow-intensity session one medium weight. 
+																	In fact the wrong type of strength training can actually be detrimental to performance 3. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/97/12/3b97123737077d331768d0ce1104303c.png" data-lightbox="roadtrip" data-title="Pin On Pp">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/97/12/3b97123737077d331768d0ce1104303c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT8RA8DzdwK4itpOODEcI2OB8yUBqYR3q3Mw';" alt="Pin On Pp">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Pp</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ba/ee/6a/baee6a6056ee374e96bb442c04b9fffa.jpg" data-lightbox="roadtrip" data-title="All These College Gymnasts Floor Routines Are So Good We Can T Stop Watching In 2020 Female Gymnast Gymnastics Gymnastics Floor Routine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ba/ee/6a/baee6a6056ee374e96bb442c04b9fffa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVokV88d76P9DhLok4OhjmoXdvWmXrmZBO4w';" alt="All These College Gymnasts Floor Routines Are So Good We Can T Stop Watching In 2020 Female Gymnast Gymnastics Gymnastics Floor Routine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">All These College Gymnasts Floor Routines Are So Good We Can T Stop Watching In 2020 Female Gymnast Gymnastics Gymnastics Floor Routine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c5/79/97/c579971b888ac013999621cfb66fc21a.jpg" data-lightbox="roadtrip" data-title="Results From Search By College Program Female Gymnast Gymnastics Girls Gymnastics Routines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c5/79/97/c579971b888ac013999621cfb66fc21a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ6AHtq0jAf2OYCn3eukbvT5BttrjfanQchw';" alt="Results From Search By College Program Female Gymnast Gymnastics Girls Gymnastics Routines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Results From Search By College Program Female Gymnast Gymnastics Girls Gymnastics Routines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/9a/7a/439a7af1601b88279b68e7e9a297b47b.jpg" data-lightbox="roadtrip" data-title="Pin On Esportes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/9a/7a/439a7af1601b88279b68e7e9a297b47b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS07X3F25fs-bNVNY6INaWnn5-Wlx0-8iLYqw';" alt="Pin On Esportes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Esportes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/9e/62/dd9e62ce230813abd1a95f631a63aa72.jpg" data-lightbox="roadtrip" data-title="Katelyn Ohashi Scored The Fifth Perfect 10 For Ucla With Her Smashing Floor Exercise Routine To Michael Jacks Female Gymnast Katelyn Ohashi Gymnastics Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/9e/62/dd9e62ce230813abd1a95f631a63aa72.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzqxRb6gPxuOlTKZN-0VUfJZT-zWWI_w3hUQ';" alt="Katelyn Ohashi Scored The Fifth Perfect 10 For Ucla With Her Smashing Floor Exercise Routine To Michael Jacks Female Gymnast Katelyn Ohashi Gymnastics Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Katelyn Ohashi Scored The Fifth Perfect 10 For Ucla With Her Smashing Floor Exercise Routine To Michael Jacks Female Gymnast Katelyn Ohashi Gymnastics Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/e6/0b/13e60b4ed24eacafab582918b3c5645d.jpg" data-lightbox="roadtrip" data-title="Pin On Sports Vixens">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/e6/0b/13e60b4ed24eacafab582918b3c5645d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuHmhsidqTEIkE11HIurzQWI6P0GEkZ8Z5JA';" alt="Pin On Sports Vixens">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sports Vixens</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/37/c1/e437c1aaee6fa91c79d56394cb472329.png" data-lightbox="roadtrip" data-title="College Gymnast Floats Through The Air To Get Perfect 10 Routine In 2020 Perfect 10 Cheerleading Quotes Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/37/c1/e437c1aaee6fa91c79d56394cb472329.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtioS7tqZvMguAjcNF86ALWVzFiOdIZOTyMw';" alt="College Gymnast Floats Through The Air To Get Perfect 10 Routine In 2020 Perfect 10 Cheerleading Quotes Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Gymnast Floats Through The Air To Get Perfect 10 Routine In 2020 Perfect 10 Cheerleading Quotes Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/af/b8/7eafb863f51bd8abd0b4bd4a3c2e1d25.jpg" data-lightbox="roadtrip" data-title="April 15 Super Six Team Final Ashleigh Gnat Lsu Lsu Gymnastics Gymnastics Photography Gymnastics Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/af/b8/7eafb863f51bd8abd0b4bd4a3c2e1d25.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR71IQmkV4FjGrwj_DoR0PqznWd8SMPr9ljQ';" alt="April 15 Super Six Team Final Ashleigh Gnat Lsu Lsu Gymnastics Gymnastics Photography Gymnastics Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">April 15 Super Six Team Final Ashleigh Gnat Lsu Lsu Gymnastics Gymnastics Photography Gymnastics Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/b9/f1/dfb9f18830e7771094b08b5936aae2b3.png" data-lightbox="roadtrip" data-title="Gymnast Lays On The Mat Delivers Dark Scary Routine Making Everyone Scream Gymnastics Gymnastics Tricks Floor Workouts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/b9/f1/dfb9f18830e7771094b08b5936aae2b3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ7QigOueFMd4iwBdnqeEpJJZgclWRnqR-uA';" alt="Gymnast Lays On The Mat Delivers Dark Scary Routine Making Everyone Scream Gymnastics Gymnastics Tricks Floor Workouts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gymnast Lays On The Mat Delivers Dark Scary Routine Making Everyone Scream Gymnastics Gymnastics Tricks Floor Workouts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/22/5e/79225e86cdf59c3c0e9e951e4ac5f32e.jpg" data-lightbox="roadtrip" data-title="Top Tips To Keep In Mind When Trying To Become A College Gymnast Gymnastics Mom Gymnastics Quotes Gymnastics Coaching">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/22/5e/79225e86cdf59c3c0e9e951e4ac5f32e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrZLk_KXNJk967a6J85bMJFXqXaqOdat9x-Q';" alt="Top Tips To Keep In Mind When Trying To Become A College Gymnast Gymnastics Mom Gymnastics Quotes Gymnastics Coaching">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top Tips To Keep In Mind When Trying To Become A College Gymnast Gymnastics Mom Gymnastics Quotes Gymnastics Coaching</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ee/0c/a3/ee0ca3c13dbbb4f91baaf4b39cfeaffe.gif" data-lightbox="roadtrip" data-title="College Gymnast Brings Down The House With A Perfect Routine Gymnastics Gymnastics Posters College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ee/0c/a3/ee0ca3c13dbbb4f91baaf4b39cfeaffe.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwcf7Kl-gyiQo0YrWc6S-SYOUw3hsDlBmu1A';" alt="College Gymnast Brings Down The House With A Perfect Routine Gymnastics Gymnastics Posters College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Gymnast Brings Down The House With A Perfect Routine Gymnastics Gymnastics Posters College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4d/58/9e/4d589e54721025a35249d0eadccc658e.png" data-lightbox="roadtrip" data-title="College Gymnast Floats Through The Air To Get Perfect 10 Routine In 2020 Perfect 10 Gymnastics Weird World">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4d/58/9e/4d589e54721025a35249d0eadccc658e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx3EWoZ9YLrMVhUAOm6HcvJgrTY4bKJb0VNw';" alt="College Gymnast Floats Through The Air To Get Perfect 10 Routine In 2020 Perfect 10 Gymnastics Weird World">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Gymnast Floats Through The Air To Get Perfect 10 Routine In 2020 Perfect 10 Gymnastics Weird World</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/80/83/14/80831447df29b1e6829796578889ba0a.jpg" data-lightbox="roadtrip" data-title="Pin On Gymnastics Photography">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/80/83/14/80831447df29b1e6829796578889ba0a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjW-1fST8g3EI_KkQLWqOoxnfgArEyJ8uojg';" alt="Pin On Gymnastics Photography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Gymnastics Photography</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-disability-rating-for-right-hip-pain.html">Va Disability Rating For Right Hip Pain</a></li>
+													<li class="list-group-item"><a href="/va-disability-ratings-money.html">Va Disability Ratings Money</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-maxillary-sinusitis.html">Va Disability Rating For Maxillary Sinusitis</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-shortness-of-breath.html">Va Disability Rating Shortness Of Breath</a></li>
+													<li class="list-group-item"><a href="/va-disability-ratings-for-mental-health.html">Va Disability Ratings For Mental Health</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-polycystic-kidney-disease.html">Va Disability Rating For Polycystic Kidney Disease</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-social-anxiety-disorder.html">Va Disability Rating For Social Anxiety Disorder</a></li>
+													<li class="list-group-item"><a href="/va-disability-ratings-for-rheumatoid-arthritis.html">Va Disability Ratings For Rheumatoid Arthritis</a></li>
+													<li class="list-group-item"><a href="/va-disability-ratings-for-ulnar-nerve.html">Va Disability Ratings For Ulnar Nerve</a></li>
+													<li class="list-group-item"><a href="/va-disability-ratings-for-sleep-apnea.html">Va Disability Ratings For Sleep Apnea</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-tension-headaches.html">Va Disability Rating Tension Headaches</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-ringing-in-ears.html">Va Disability Rating For Ringing In Ears</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-neuropathy-in-feet.html">Va Disability Rating For Neuropathy In Feet</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-tinnitus-and-hearing-loss.html">Va Disability Rating For Tinnitus And Hearing Loss</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-wrist-range-of-motion.html">Va Disability Rating For Wrist Range Of Motion</a></li>
+													<li class="list-group-item"><a href="/va-disability-ratings-manual.html">Va Disability Ratings Manual</a></li>
+													<li class="list-group-item"><a href="/va-disability-ratings-for-ptsd.html">Va Disability Ratings For Ptsd</a></li>
+													<li class="list-group-item"><a href="/va-disability-ratings-conditions.html">Va Disability Ratings Conditions</a></li>
+													<li class="list-group-item"><a href="/va-disability-ratings-back-pain.html">Va Disability Ratings Back Pain</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating.html">Va Disability Rating</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

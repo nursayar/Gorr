@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Billie I Love You - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Billie I Love You",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/564x/c2/3a/a0/c23aa0d348e008e6abf86ebd4d3cce38.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=billie+i+love+you",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Billie I Love You</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Download now for FREE httpssingkinglinkyt-descPiano karaoke sing along of i love you by Billie Eilish from. Virtual class choreography - June 16th 2020Choreography Katy TateDancer Delaney InmanMusic I Love You - Billie EillishRhode IslandI do not own the. I Love You stylized in all lowercase is a song by American singer Billie Eilish from her debut studio album When We All Fall Asleep Where Do We Go. <br>				
+			</p>
+										<a class="badge badge-primary" href="/post-911-gi-bill-financial-aid.html">post 911 gi bill financial aid</a>
+											<a class="badge badge-dark" href="/post-911-gi-bill-extension-application.html">post 911 gi bill extension application</a>
+											<a class="badge badge-light" href="/post-911-gi-bill-call-center.html">post 911 gi bill call center</a>
+											<a class="badge badge-success" href="/post-911-gi-bill-approved-courses.html">post 911 gi bill approved courses</a>
+											<a class="badge badge-warning" href="/post-911-gi-bill-8-week-classes.html">post 911 gi bill 8 week classes</a>
+											<a class="badge badge-success" href="/post-911-gi-bill-bah-benefits.html">post 911 gi bill bah benefits</a>
+											<a class="badge badge-danger" href="/post-911-gi-bill-how-long-does-it-take-to-get-bah.html">post 911 gi bill how long does it take to get bah</a>
+											<a class="badge badge-light" href="/post-911-gi-bill-active-duty-kicker.html">post 911 gi bill active duty kicker</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to visit the right site.  Our site gives you hints for seeing the maximum quality video and image content, hunt and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, especially Youtube, therefore we recommend this video for you to view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/ea/78/0fea788c653e670b6dcb5896d822cf62.jpg" data-lightbox="roadtrip" data-title="I Love You Billie Eilish Billie Eilish Bad Guy Billie">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/ea/78/0fea788c653e670b6dcb5896d822cf62.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwx4ZrT8a_UCHfbxEnJt9kbm3J9mHBphZqXg';" alt="I Love You Billie Eilish Billie Eilish Bad Guy Billie">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Love You Billie Eilish Billie Eilish Bad Guy Billie</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/39/28/693928dd743a397e039e324b8dfcf2e9.jpg" data-lightbox="roadtrip" data-title="Billie Eilish I Love You Lyrics Youtube Love Yourself Lyrics Yours Lyrics Billie Eilish">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/39/28/693928dd743a397e039e324b8dfcf2e9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL5bQQ0447MMdhk1KDoqdS4F1rRqAmQ8C0CA';" alt="Billie Eilish I Love You Lyrics Youtube Love Yourself Lyrics Yours Lyrics Billie Eilish">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Billie Eilish I Love You Lyrics Youtube Love Yourself Lyrics Yours Lyrics Billie Eilish</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/20/28/0d20285424fbaaa77da9d1c5dc036cd8.jpg" data-lightbox="roadtrip" data-title="Billie Eilish I Love You Lyrics Love Yourself Lyrics Yours Lyrics Billie">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/20/28/0d20285424fbaaa77da9d1c5dc036cd8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6yccnAWyrCV58VAQYFUqD8G9cW5hUWctTzA';" alt="Billie Eilish I Love You Lyrics Love Yourself Lyrics Yours Lyrics Billie">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Billie Eilish I Love You Lyrics Love Yourself Lyrics Yours Lyrics Billie</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/4b/fc/35/4bfc355484a69a7ef516416b9d02a340.jpg" data-lightbox="roadtrip" data-title="Billie Eilish I Love You Lyrics Wallpaper Love Yourself Lyrics Lyrics Aesthetic Billie Eilish">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/4b/fc/35/4bfc355484a69a7ef516416b9d02a340.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEUWYkH_jCQTKp7PEuOR3xU6UNveWCAOXvzQ';" alt="Billie Eilish I Love You Lyrics Wallpaper Love Yourself Lyrics Lyrics Aesthetic Billie Eilish">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Billie Eilish I Love You Lyrics Wallpaper Love Yourself Lyrics Lyrics Aesthetic Billie Eilish</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/da/b1/88dab11944feae4c4510bba37addbda1.jpg" data-lightbox="roadtrip" data-title="Billie Eilish I Love You Billie Eilish Billie I Love You Song">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/da/b1/88dab11944feae4c4510bba37addbda1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSjzAxR0VJFDUAwlax_IB8GsvYb-1rESnx3g';" alt="Billie Eilish I Love You Billie Eilish Billie I Love You Song">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Billie Eilish I Love You Billie Eilish Billie I Love You Song</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/0f/d2/250fd2365f72c5337f398166a3690988.png" data-lightbox="roadtrip" data-title="I Love You Billie Eilish Love Yourself Lyrics Cute Backgrounds For Phones Billie Eilish">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/0f/d2/250fd2365f72c5337f398166a3690988.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRth4yfmn6khY5_Mk7K0l-KcN7UGWeIYbi5oQ';" alt="I Love You Billie Eilish Love Yourself Lyrics Cute Backgrounds For Phones Billie Eilish">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Love You Billie Eilish Love Yourself Lyrics Cute Backgrounds For Phones Billie Eilish</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/474x/4b/fc/35/4bfc355484a69a7ef516416b9d02a340.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRth4yfmn6khY5_Mk7K0l-KcN7UGWeIYbi5oQ';" alt="I Love You Billie Eilish Love Yourself Lyrics Cute Backgrounds For Phones Billie Eilish">
+										<div class="card-body">
+						<h3 class="h5"><b>Our brand new app is here.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Billie i love you</strong>. 
+								
+																	I love you is a soft acoustic ballad that explores the struggles and feelings from a complicated relationship. 
+																	Oconnell Billie Eilish Oconnell Finneas Baird The singer said in an Instagram post idontwannabeyouanymore is a very inside of me song that has finally come out so if youd like to hear deep inside my HEAD and feel my FEELINGS GOO LISTEN. 
+																	We have an official I Love You tab made by UG professional guitarists. 
+																	Our brand new app is here. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Download now for FREE httpssingkinglinkyt-descKaraoke sing along of i love you by Billie Eilish from Sing. 
+																	In his doing so he has brought about unwanted ramifications with Billie now gushing with emotions that she is not. 
+																	Listen to WHEN WE ALL FALL ASLEEP WHERE DO WE GO out now. 
+																	She then posted it again on Instagram in January 2019 and confirmed it would be a track off of her debut album. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You have been the most encouraging loving funniest one of a kind special. 
+																	Provided to YouTube by Universal Music Groupi love you Billie EilishWHEN WE ALL FALL ASLEEP WHERE DO WE GO 2019 DarkroomInterscope RecordsReleased on. 
+																	The premise behind American singer Billie Eilishs I Love You seems to be based on her boyfriend half-jokingly reciting those selfsame words to her. 
+																	Billie Eilish teased a short snippet of this song to her fans on the 13th of May 2018. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Eilish co-wrote the song with her brother Finneas OConnell who also handled production. 
+																	Dm Say you were tryna make me laugh G And nothing has to change today G7 Am You didnt mean to say I love you Cmaj7 F Cmaj7 I love you and I dont want to ooh Bridge Dm The smile that you gave me G F Even when you felt like dying Outro F We fall apart as it gets dark Dm Im in your arms in Central Park G Theres nothing you could do or say G7 Am I cant escape the way I love you Cmaj7 F. 
+																	Billie Eilish I Love You Live Acoustic Session 2019_____LYRICSIts not trueTell me Ive been lied toCrying isnt like you oohWhat the hell did. 
+																	The singer said to Radio Energy I Love You is still one of my favorite songs Ive ever written in my life. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The songs chorus features vocal harmonies by her brother FINNEAS. 
+																	Listen to i love you on Spotify. 
+																	I will love you forever and ever I am so grateful I had you in my life for 31 years Billie continued. 
+																	Billie Eilish Song 2019. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Say you were tryna make me laugh G And nothing has to change today Am You didnt mean to say I love you C Am Em I love you and I dont want to ooh Bridge F The smile that you gave me G Am Even when you felt like dying Outro. 
+																	Check out the tab. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/c2/3a/a0/c23aa0d348e008e6abf86ebd4d3cce38.jpg" data-lightbox="roadtrip" data-title="I Love You Billie Eilish Phonewallpaperquotes I Love You Billie Eilish Billie Eilish Love Song Lyrics Wallpaper Billie Eilish Billie">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/c2/3a/a0/c23aa0d348e008e6abf86ebd4d3cce38.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6DwSKc7BPaGjTtjKVEDF_jXOoTgEiMq0-4w';" alt="I Love You Billie Eilish Phonewallpaperquotes I Love You Billie Eilish Billie Eilish Love Song Lyrics Wallpaper Billie Eilish Billie">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Love You Billie Eilish Phonewallpaperquotes I Love You Billie Eilish Billie Eilish Love Song Lyrics Wallpaper Billie Eilish Billie</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/0b/96/8e0b965bc08c4b740139d33d28282514.jpg" data-lightbox="roadtrip" data-title="I Love You Billie Eilish Billie Eilish Billie Aesthetic Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/0b/96/8e0b965bc08c4b740139d33d28282514.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyCgjRFm77BdcMJbiuffs3E8Zx0SvqXSdU3g';" alt="I Love You Billie Eilish Billie Eilish Billie Aesthetic Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Love You Billie Eilish Billie Eilish Billie Aesthetic Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/0d/cb/d50dcb35fcf4b52ff7c5ec80a58d90de.jpg" data-lightbox="roadtrip" data-title="Billie Eilish I Love You Lyrics Youtube Love Yourself Lyrics Yours Lyrics Billie Eilish">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/0d/cb/d50dcb35fcf4b52ff7c5ec80a58d90de.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWQTaOQmb2Sj8hz5NKHhjA4WLhin0CNCHHMw';" alt="Billie Eilish I Love You Lyrics Youtube Love Yourself Lyrics Yours Lyrics Billie Eilish">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Billie Eilish I Love You Lyrics Youtube Love Yourself Lyrics Yours Lyrics Billie Eilish</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/e5/1c/a6/e51ca68730f4e7328182aaa9c61c2ecf.jpg" data-lightbox="roadtrip" data-title="Billie Eilish I Love You Download Mp3 For Free I Love You Song I Love You Billie Eilish">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/e5/1c/a6/e51ca68730f4e7328182aaa9c61c2ecf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJPwZ46WUrX8LtdKW20gAdnAwHrwO5kmYbOw';" alt="Billie Eilish I Love You Download Mp3 For Free I Love You Song I Love You Billie Eilish">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Billie Eilish I Love You Download Mp3 For Free I Love You Song I Love You Billie Eilish</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/68/09/7b/68097b93d0bd6db0ddc44555394d40dc.jpg" data-lightbox="roadtrip" data-title="Billie Eilish I Love You Whatsapp Status Ultrartone Youtube Billie Eilish My Love Billie">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/68/09/7b/68097b93d0bd6db0ddc44555394d40dc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS15BMU4KKQX9Q3wB9hIR8fZuNCD47sxAMdQA';" alt="Billie Eilish I Love You Whatsapp Status Ultrartone Youtube Billie Eilish My Love Billie">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Billie Eilish I Love You Whatsapp Status Ultrartone Youtube Billie Eilish My Love Billie</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/04/b4/5d04b4699aa8596efc989932ddd86ae7.jpg" data-lightbox="roadtrip" data-title="I Love You By Billie Eilish Spotify Code Sticker Billie Eilish Good Vibe Songs Spotify">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/04/b4/5d04b4699aa8596efc989932ddd86ae7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8kyGTH68gzJv4wtXR0SY5furFC-a6Lq82yw';" alt="I Love You By Billie Eilish Spotify Code Sticker Billie Eilish Good Vibe Songs Spotify">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Love You By Billie Eilish Spotify Code Sticker Billie Eilish Good Vibe Songs Spotify</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/32/bf/46/32bf46808dc41ac91f11f0d12f699c9a.jpg" data-lightbox="roadtrip" data-title="Billieeilish If You Need Me Wanna See Me Better Hurry Cause Am Leaving Soon Song I Love You By Billieeilish Billie Eilish Billie Love Yourself Lyrics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/32/bf/46/32bf46808dc41ac91f11f0d12f699c9a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFj2hdmNQaEBrSGKZ9V4E9Jhf63tUQYkfKpQ';" alt="Billieeilish If You Need Me Wanna See Me Better Hurry Cause Am Leaving Soon Song I Love You By Billieeilish Billie Eilish Billie Love Yourself Lyrics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Billieeilish If You Need Me Wanna See Me Better Hurry Cause Am Leaving Soon Song I Love You By Billieeilish Billie Eilish Billie Love Yourself Lyrics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f2/87/07/f287073f884fef4041fa32c2fbb70948.jpg" data-lightbox="roadtrip" data-title="Billie Eilish I Love You Song Lyrics Wallpaper Billie Eilish Love Yourself Lyrics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f2/87/07/f287073f884fef4041fa32c2fbb70948.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR-0yhjNEk2cWZq3PA8xQj9raFkEhIL_nh5g';" alt="Billie Eilish I Love You Song Lyrics Wallpaper Billie Eilish Love Yourself Lyrics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Billie Eilish I Love You Song Lyrics Wallpaper Billie Eilish Love Yourself Lyrics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/fb/07/4d/fb074d5328a2ee08ce57e832592bcacf.jpg" data-lightbox="roadtrip" data-title="I Love You Billie Eilish Lyrics Love Yourself Lyrics Billie Eilish Billie">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/fb/07/4d/fb074d5328a2ee08ce57e832592bcacf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkMAZUACuHT4JUom8zK_w49tJxowM6kclKmg';" alt="I Love You Billie Eilish Lyrics Love Yourself Lyrics Billie Eilish Billie">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Love You Billie Eilish Lyrics Love Yourself Lyrics Billie Eilish Billie</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/73/49/b7734943bc53d7f2ee316b0677c3de8d.jpg" data-lightbox="roadtrip" data-title="I Love You Song Lyrics Wallpaper Love Yourself Lyrics Billie Eilish">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/73/49/b7734943bc53d7f2ee316b0677c3de8d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyaLDqSS4MbFQemH5upFpKjnrOU7MZOGFwtA';" alt="I Love You Song Lyrics Wallpaper Love Yourself Lyrics Billie Eilish">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Love You Song Lyrics Wallpaper Love Yourself Lyrics Billie Eilish</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/6f/c9/a6/6fc9a6daa769a417b5b527f9bb1a03ea.jpg" data-lightbox="roadtrip" data-title="Billie Eilish I Love You Lyrics Video مترجمة Youtube Love Yourself Lyrics Yours Lyrics Billie Eilish">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/6f/c9/a6/6fc9a6daa769a417b5b527f9bb1a03ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJkkrW6pYsjQgVx-75oNrIxvm6OZc_7xClag';" alt="Billie Eilish I Love You Lyrics Video مترجمة Youtube Love Yourself Lyrics Yours Lyrics Billie Eilish">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Billie Eilish I Love You Lyrics Video مترجمة Youtube Love Yourself Lyrics Yours Lyrics Billie Eilish</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/e5/ad/b6e5adc40d089310e1ff55cc72b78f8f.png" data-lightbox="roadtrip" data-title="Follow Spotify Findances Music Album Cover Spotify Screenshot Cover Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/e5/ad/b6e5adc40d089310e1ff55cc72b78f8f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKfbXw44Dl_ynUdmT8AbjJ1ZUN7vc7Hz5kSA';" alt="Follow Spotify Findances Music Album Cover Spotify Screenshot Cover Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Follow Spotify Findances Music Album Cover Spotify Screenshot Cover Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/c4/71/36c47106f6a48de2241cf6fc17d668cd.jpg" data-lightbox="roadtrip" data-title="Billie Eilish I D Love To Let You Go 6 18 18 Lyrics Billie Eilish Let You Go Lyrics Let It Be">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/c4/71/36c47106f6a48de2241cf6fc17d668cd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjdiTbY7J1ftEyNRSU2BNx0UZSvZb8cDzoIg';" alt="Billie Eilish I D Love To Let You Go 6 18 18 Lyrics Billie Eilish Let You Go Lyrics Let It Be">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Billie Eilish I D Love To Let You Go 6 18 18 Lyrics Billie Eilish Let You Go Lyrics Let It Be</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/spouse-eligibility-for-gi-bill.html">Spouse Eligibility For Gi Bill</a></li>
+													<li class="list-group-item"><a href="/snhu-gi-bill.html">Snhu Gi Bill</a></li>
+													<li class="list-group-item"><a href="/requirements-for-montgomery-gi-bill.html">Requirements For Montgomery Gi Bill</a></li>
+													<li class="list-group-item"><a href="/qualifications-for-montgomery-gi-bill.html">Qualifications For Montgomery Gi Bill</a></li>
+													<li class="list-group-item"><a href="/stanford-university-post-911-gi-bill.html">Stanford University Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/state-government-artinya.html">State Government Artinya</a></li>
+													<li class="list-group-item"><a href="/state-gi.html">State Gi</a></li>
+													<li class="list-group-item"><a href="/short-definition-for-gi-bill-of-rights.html">Short Definition For Gi Bill Of Rights</a></li>
+													<li class="list-group-item"><a href="/sciatic-nerve-damage-va-compensation.html">Sciatic Nerve Damage Va Compensation</a></li>
+													<li class="list-group-item"><a href="/reasons-to-want-to-go-to-college.html">Reasons To Want To Go To College</a></li>
+													<li class="list-group-item"><a href="/state-go-bonds.html">State Go Bonds</a></li>
+													<li class="list-group-item"><a href="/state-government-budget.html">State Government Budget</a></li>
+													<li class="list-group-item"><a href="/royal-air-force-x-g-shock-gravitymaster.html">Royal Air Force X G Shock Gravitymaster</a></li>
+													<li class="list-group-item"><a href="/rhinitis-surgery-va-disability-rating.html">Rhinitis Surgery Va Disability Rating</a></li>
+													<li class="list-group-item"><a href="/sciatic-neuritis-va-rating.html">Sciatic Neuritis Va Rating</a></li>
+													<li class="list-group-item"><a href="/state-gown-design.html">State Gown Design</a></li>
+													<li class="list-group-item"><a href="/split-the-bill-go-dutch.html">Split The Bill Go Dutch</a></li>
+													<li class="list-group-item"><a href="/que-significa-vago-en-valenciano.html">Que Significa Vago En Valenciano</a></li>
+													<li class="list-group-item"><a href="/richmond-gs-pay-scale.html">Richmond Gs Pay Scale</a></li>
+													<li class="list-group-item"><a href="/si-joint-dysfunction-va-rating.html">Si Joint Dysfunction Va Rating</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

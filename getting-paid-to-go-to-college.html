@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Getting Paid To Go To College - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Getting Paid To Go To College",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/736x/fc/e6/70/fce670362f2b461fe204fa3e258ab500.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=getting+paid+to+go+to+college",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Getting Paid To Go To College</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">It really is too cold to run outside here in Chicago. Could I get paid to go to college. Well now that I AM getting paid for it I wish I was getting paid MORE. <br>				
+			</p>
+										<a class="badge badge-warning" href="/va-compensation-based-on-unemployability.html">va compensation based on unemployability</a>
+											<a class="badge badge-warning" href="/va-chapter-11.html">va chapter 11</a>
+											<a class="badge badge-info" href="/va-benefits-pay-table-2019.html">va benefits pay table 2019</a>
+											<a class="badge badge-primary" href="/va-compensation-combined-rating-chart.html">va compensation combined rating chart</a>
+											<a class="badge badge-info" href="/va-combined-compensation-rate-tables.html">va combined compensation rate tables</a>
+											<a class="badge badge-light" href="/va-compensation-60-with-spouse.html">va compensation 60 with spouse</a>
+											<a class="badge badge-warning" href="/va-chapter-4.html">va chapter 4</a>
+											<a class="badge badge-warning" href="/va-comp-table-2020.html">va comp table 2020</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you have come to visit the ideal blog.  Our site provides you with hints for viewing the maximum quality video and image content, hunt and locate more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, particularly Youtube, so we recommend this video for you to see.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/ed/96/cced96f9a32cbb07b060fa11ade14618.jpg" data-lightbox="roadtrip" data-title="Paid To Go To College How To Free College In 2020 Scholarships For College Scholarships School Scholarship">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/ed/96/cced96f9a32cbb07b060fa11ade14618.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThyV1bQXB_Dt39dPUUfqtcp0s_JDFqdAL3Zg';" alt="Paid To Go To College How To Free College In 2020 Scholarships For College Scholarships School Scholarship">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Paid To Go To College How To Free College In 2020 Scholarships For College Scholarships School Scholarship</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7b/1d/d1/7b1dd1c805a72e1ef8bba0ec1f8c9c70.jpg" data-lightbox="roadtrip" data-title="How To Get Paid To Go To College Some Students Have Found A Way To Not Only Avoid Student Loans But To Graduate With A Posit College To Go College Experience">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7b/1d/d1/7b1dd1c805a72e1ef8bba0ec1f8c9c70.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaxjP1fej73cTcbU9IkTOKr6zZv-4MqCAzsA';" alt="How To Get Paid To Go To College Some Students Have Found A Way To Not Only Avoid Student Loans But To Graduate With A Posit College To Go College Experience">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Get Paid To Go To College Some Students Have Found A Way To Not Only Avoid Student Loans But To Graduate With A Posit College To Go College Experience</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/56/c4/2856c4be6f88b3a43755b4915c3260f2.jpg" data-lightbox="roadtrip" data-title="This Cartoon Drawing Uses A Bit Of Hyperbole To Get The Message Across That College Coaches Receive Remarkable Salari Student Athlete Athlete Nebraska Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/56/c4/2856c4be6f88b3a43755b4915c3260f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJEkA4Y2fR8y4-JOyqoq1RxLJMb1TrRyBeow';" alt="This Cartoon Drawing Uses A Bit Of Hyperbole To Get The Message Across That College Coaches Receive Remarkable Salari Student Athlete Athlete Nebraska Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Cartoon Drawing Uses A Bit Of Hyperbole To Get The Message Across That College Coaches Receive Remarkable Salari Student Athlete Athlete Nebraska Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/98/e0/5598e080626d6224f0476018e9509c8a.jpg" data-lightbox="roadtrip" data-title="How To Get Money For College When You Have No Money Scholarships For College College Money College Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/98/e0/5598e080626d6224f0476018e9509c8a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsSkoQh0U_79ZP8g1xe2Aci7BGFck6evkqGw';" alt="How To Get Money For College When You Have No Money Scholarships For College College Money College Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Get Money For College When You Have No Money Scholarships For College College Money College Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/96/a1/af96a11acc0a16491095749877903f65.png" data-lightbox="roadtrip" data-title="How I Got Paid To Attend College Life For The Better College How To Juggle College Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/96/a1/af96a11acc0a16491095749877903f65.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMwAXIdONdwEat1OabacvME_IFcrIwyN2sIw';" alt="How I Got Paid To Attend College Life For The Better College How To Juggle College Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How I Got Paid To Attend College Life For The Better College How To Juggle College Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/a1/1a/eca11ac4f74f1c14e75d5f0e1d8b6fac.png" data-lightbox="roadtrip" data-title="Scholarships In Canada Get Paid To Go To School Money In Your Tea Homeschool Home School Canad In 2020 Scholarships Scholarships For College Scholarships Canada">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/a1/1a/eca11ac4f74f1c14e75d5f0e1d8b6fac.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaUFMTWroifatPAwm6lAQuq7fgKnmDoSvRrw';" alt="Scholarships In Canada Get Paid To Go To School Money In Your Tea Homeschool Home School Canad In 2020 Scholarships Scholarships For College Scholarships Canada">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Scholarships In Canada Get Paid To Go To School Money In Your Tea Homeschool Home School Canad In 2020 Scholarships Scholarships For College Scholarships Canada</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/c4/fc/e8/c4fce857278dd8ca0282981c646a8291.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaUFMTWroifatPAwm6lAQuq7fgKnmDoSvRrw';" alt="Scholarships In Canada Get Paid To Go To School Money In Your Tea Homeschool Home School Canad In 2020 Scholarships Scholarships For College Scholarships Canada">
+										<div class="card-body">
+						<h3 class="h5"><b>The Supplemental Education Opportunity grant FSEOG goes to students with exceptional financial need.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Getting paid to go to college</strong>. 
+								
+																	16 to 19 Bursary Fund a loan to help with the costs of a college or training course if youre 19 or older - called an Advanced Learning Loan Funding for essential skills In most cases you will not. 
+																	Ive seen cases where students lost thousands of. 
+																	This is information for institutions. 
+																	This option is only applicable to those already in the workforcebut it can pay off big. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Collegeuniversity also means the same thing in both countries. 
+																	I know going to college is a big debate on this forum but I have decided to go anyways regardless of. 
+																	With tuition prices of over 40000 debt seems unavoidable. 
+																	Despite only getting about 6 hours of sleep I had a great run this morning on the treadmill. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hey guys Since I am in the military I have the opportunity to get paid for attend college I plan on finishing school. 
+																	The amount you can get paid to go to school varies depending on the aid youve chosen to apply for. 
+																	High school in the UK is the same thing as high school in the US. 
+																	14 Creative Ways to Get Paid to Go to College. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If your employer offers tuition reimbursement as part of its benefits package taking advantage of this perk can be a straightforward way to get paid to go to school. 
+																	But you will receive plenty of financial support during your studies to cover education-related costs in the forms of bursaries the majority of which dont need to be paid back. 
+																	That is what they want you to believe. 
+																	You might get a bursary or. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	16 to 19 financial support. 
+																	You can get a maximum annual credit of 2500 per eligible student. 
+																	Getting paid to go to school is not just for students attending traditional schools. 
+																	The amount of cash that students receive varies on a case-to-case basis. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It shows the financial support young people may be able to get to help them take part in education and training. 
+																	Many online colleges will pay you to attend. 
+																	Careful of the term student funding as that usually takes you to webpages dealing with university student finances not college. 
+																	It is not only possible to achieve a university education without going into debt but you can receive a fat check. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In order to get paid to go to school you will need to first apply for federal financial aid with a free application form. 
+																	Now were getting to the hard part of determining whether or not you will able to study in the UK. 
+																	Debt companies have flourished from struggling students trying to obtain a diploma. 
+																	Apply for admission to a qualifying school of choice. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Southern New Hampshire University Ashford University and Purdue University Global all offer financial aid for their online programs. 
+																	Get your employer to pay for your education. 
+																	But definitely ask at your college as they have discretionary funds to help students who are having problems. 
+																	The American opportunity tax credit AOTC is a credit for qualified education expenses paid for an eligible student for the first four years of higher education. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The cost of attending college. 
+																	Yes they pay for my school as well as cut me a check every month. 
+																	You dont get paid to go to high school and below in the UK and it is free same thing goes for the US. 
+																	It is for undergraduates only and ranges from 200 to 4000 annually. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Why dont you stop answering questions because you have no idea. 
+																	No one likes to think about money but its a very important part in determining whether or not you will be able to attend a university in the UK. 
+																	Literally you dont get paid to go to college in the UK. 
+																	If you think that you may be eligible then you have nothing to lose in trying. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Study at The University of Law. 
+																	In general such a grant is given on a first-come first-serve basis and it is offered to students who demonstrate a great financial need. 
+																	As someone who worked as an undergraduate college admissions representative I can tell you that those standardized tests play a big role perhaps too big of a role in determining your admission and scholarship eligibility. 
+																	Corporate tuition reimbursement is when your employer helps pay for you to attend college to continue your education or earn your degree. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Back in college I used to think that all that work and pulling all-nighters wouldnt be so bad if we got paid for it. 
+																	My goodness Arbitrary person you are an idiot. 
+																	Many companies have tuition reimbursement programs typically aimed towards helping their employees with their professional development and advancement. 
+																	Dont fall into the trap. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Even if you claim a college student loan then only a small rate of interest will be charged. 
+																	Scholarships and grants can give you as low as 1000 to over 35000 each year with an average of 5000. 
+																	Getting paid to go to college absolutely requires four years of strong academic performance. 
+																	Be one step ahead with a globally recognised university in the UK. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Many times there are restrictions on areas of study and institutions. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/52/a9/8652a92b5e6ff80202fb01f5d7de38d8.png" data-lightbox="roadtrip" data-title="Get Paid To Shop Online You Re Already Shopping Online So Why Wouldn T You Want To Earn Cash Back For It Get Paid To Shop Online Education Right To Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/52/a9/8652a92b5e6ff80202fb01f5d7de38d8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5RFbEDQTIlWrLJoNvuqDE_aC7pW4zw3mfw';" alt="Get Paid To Shop Online You Re Already Shopping Online So Why Wouldn T You Want To Earn Cash Back For It Get Paid To Shop Online Education Right To Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get Paid To Shop Online You Re Already Shopping Online So Why Wouldn T You Want To Earn Cash Back For It Get Paid To Shop Online Education Right To Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/ff/ae/81/ffae81c619a5a0035a056764b78a2813.jpg" data-lightbox="roadtrip" data-title="Did You Know That Some People Get Paid To Learn And The Payment Is Not Coming In The Form Of Student Scholarships For College Scholarships Grants For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/ff/ae/81/ffae81c619a5a0035a056764b78a2813.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYw2irqVK83LMg1tPH_jdZ1c-FSBiA_LNPbA';" alt="Did You Know That Some People Get Paid To Learn And The Payment Is Not Coming In The Form Of Student Scholarships For College Scholarships Grants For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Did You Know That Some People Get Paid To Learn And The Payment Is Not Coming In The Form Of Student Scholarships For College Scholarships Grants For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/d1/2d/44d12d7a0f80abfb3dded7f6a6fb6f28.png" data-lightbox="roadtrip" data-title="Want College Scholarships For Your Video Game Skills Read This Comprehensive List Of Esports College Financial Aid For College Scholarships Grants For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/d1/2d/44d12d7a0f80abfb3dded7f6a6fb6f28.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgmGAOQo6CWRLJIv2dbaG8DR2Ww5BoNJCHoA';" alt="Want College Scholarships For Your Video Game Skills Read This Comprehensive List Of Esports College Financial Aid For College Scholarships Grants For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Want College Scholarships For Your Video Game Skills Read This Comprehensive List Of Esports College Financial Aid For College Scholarships Grants For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/2e/c0/452ec05e26d0900c3e6bdf137ddf4e6f.png" data-lightbox="roadtrip" data-title="Scholarships In Canada Get Paid To Go To School Money In Your Tea Scholarships Scholarships For College Post Secondary Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/2e/c0/452ec05e26d0900c3e6bdf137ddf4e6f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6_G5Jku9ZOxgjxf_oVvppoZuKYuxWPItriQ';" alt="Scholarships In Canada Get Paid To Go To School Money In Your Tea Scholarships Scholarships For College Post Secondary Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Scholarships In Canada Get Paid To Go To School Money In Your Tea Scholarships Scholarships For College Post Secondary Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/fc/e8/c4fce857278dd8ca0282981c646a8291.jpg" data-lightbox="roadtrip" data-title="Pin On Money Ideas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/fc/e8/c4fce857278dd8ca0282981c646a8291.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4lrO-Vhbu5fa-je17kTNYTdvtI3iTQYMfnQ';" alt="Pin On Money Ideas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Money Ideas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6e/fe/c4/6efec4383add6d5a246d7bebf39ce6ac.jpg" data-lightbox="roadtrip" data-title="Scholarships In Canada Get Paid To Go To School Scholarships Scholarships For College Student Finance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6e/fe/c4/6efec4383add6d5a246d7bebf39ce6ac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToQUpgcRs9KWhhyNCiAIcvi-XhH5A15HsSbg';" alt="Scholarships In Canada Get Paid To Go To School Scholarships Scholarships For College Student Finance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Scholarships In Canada Get Paid To Go To School Scholarships Scholarships For College Student Finance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/fc/e6/70/fce670362f2b461fe204fa3e258ab500.jpg" data-lightbox="roadtrip" data-title="College Students Earn Extra Money Scholarships For College Earn Extra Money Studysoup">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/fc/e6/70/fce670362f2b461fe204fa3e258ab500.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMQr3uCyBJFDl8KQhZ68zDC0C0VV65WHfCng';" alt="College Students Earn Extra Money Scholarships For College Earn Extra Money Studysoup">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Students Earn Extra Money Scholarships For College Earn Extra Money Studysoup</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/7b/87/ef7b87393375568fb35cf63caba1a5a6.jpg" data-lightbox="roadtrip" data-title="Pin On Smart Start Money">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/7b/87/ef7b87393375568fb35cf63caba1a5a6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKyV4kTtGZrrmXKHn23EabBCDgqy7LcctZ6A';" alt="Pin On Smart Start Money">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Smart Start Money</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/9b/e8/0c/9be80c8ffa67e18cc4d6da90d28118d2.jpg" data-lightbox="roadtrip" data-title="Get Paid Up To 45 Per Hour Realistic Online Jobs For College Students Onlinejobs Students Onlinejobsfors Online Jobs Online Jobs For Students Student Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/9b/e8/0c/9be80c8ffa67e18cc4d6da90d28118d2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVRw-b8OMGoAN5VP3P8Ob-4Sq11OI4VKWTow';" alt="Get Paid Up To 45 Per Hour Realistic Online Jobs For College Students Onlinejobs Students Onlinejobsfors Online Jobs Online Jobs For Students Student Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get Paid Up To 45 Per Hour Realistic Online Jobs For College Students Onlinejobs Students Onlinejobsfors Online Jobs Online Jobs For Students Student Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/eb/f7/b8/ebf7b8d90bcd892810c2e4b03a0cd9cc.jpg" data-lightbox="roadtrip" data-title="Pin On Pinterest Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/eb/f7/b8/ebf7b8d90bcd892810c2e4b03a0cd9cc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-9TrCh8PEJOMvdh2BHv0153TU89M68M_pIw';" alt="Pin On Pinterest Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Pinterest Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/e9/94/c6e994b1418a22984d9426433df21ac4.gif" data-lightbox="roadtrip" data-title="759 250 For 3 Degrees How I Get Paid To Go To College Student Loans Student College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/e9/94/c6e994b1418a22984d9426433df21ac4.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGyZ6oRUfL97Q3EY01SUd8lsK_ReLM2LntDA';" alt="759 250 For 3 Degrees How I Get Paid To Go To College Student Loans Student College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">759 250 For 3 Degrees How I Get Paid To Go To College Student Loans Student College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fe/35/28/fe3528c46d168135bb85076fae359c67.jpg" data-lightbox="roadtrip" data-title="I Wish You Could Get Paid To Go To College I Could Be A Professional Student Just Girly Things Classroom Rules I Love School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fe/35/28/fe3528c46d168135bb85076fae359c67.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaVvCNknuBVZ90tnpf8f3fd6XocWchnlDwYw';" alt="I Wish You Could Get Paid To Go To College I Could Be A Professional Student Just Girly Things Classroom Rules I Love School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Wish You Could Get Paid To Go To College I Could Be A Professional Student Just Girly Things Classroom Rules I Love School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/4c/bb/ce/4cbbce2ad6e6b864ff7bdec87404ac48.jpg" data-lightbox="roadtrip" data-title="Get Paid Up To 30 Per Hour Realistic Online Jobs For Students Onlinejobsforstudents Online Jobs For Students Student Jobs Online Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/4c/bb/ce/4cbbce2ad6e6b864ff7bdec87404ac48.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQchPEqHSu8-zTavztGv8AAEiiBmLJDkMRoSg';" alt="Get Paid Up To 30 Per Hour Realistic Online Jobs For Students Onlinejobsforstudents Online Jobs For Students Student Jobs Online Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get Paid Up To 30 Per Hour Realistic Online Jobs For Students Onlinejobsforstudents Online Jobs For Students Student Jobs Online Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/can-gi-bill-be-used-to-calculate-child-support.html">Can Gi Bill Be Used To Calculate Child Support</a></li>
+													<li class="list-group-item"><a href="/can-the-gi-bill-be-used-for-police-academy.html">Can The Gi Bill Be Used For Police Academy</a></li>
+													<li class="list-group-item"><a href="/can-gi-bill-be-passed-to-child.html">Can Gi Bill Be Passed To Child</a></li>
+													<li class="list-group-item"><a href="/can-my-husbands-gi-bill-pay-off-my-student-loans.html">Can My Husbands Gi Bill Pay Off My Student Loans</a></li>
+													<li class="list-group-item"><a href="/can-i-use-my-dads-gi-bill-for-college.html">Can I Use My Dads Gi Bill For College</a></li>
+													<li class="list-group-item"><a href="/can-i-use-my-gi-bill-to-pay-for-police-academy.html">Can I Use My Gi Bill To Pay For Police Academy</a></li>
+													<li class="list-group-item"><a href="/can-my-ex-wife-take-my-va-disability.html">Can My Ex Wife Take My Va Disability</a></li>
+													<li class="list-group-item"><a href="/can-the-gi-bill-be-used-for-child-support.html">Can The Gi Bill Be Used For Child Support</a></li>
+													<li class="list-group-item"><a href="/can-spouse-receive-bah-post-911-gi-bill.html">Can Spouse Receive Bah Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/can-i-get-fafsa-if-i-use-gi-bill.html">Can I Get Fafsa If I Use Gi Bill</a></li>
+													<li class="list-group-item"><a href="/can-i-use-my-post-911-gi-bill-to-pay-student-loans.html">Can I Use My Post 911 Gi Bill To Pay Student Loans</a></li>
+													<li class="list-group-item"><a href="/can-spouses-of-veterans-get-medical-benefits.html">Can Spouses Of Veterans Get Medical Benefits</a></li>
+													<li class="list-group-item"><a href="/can-i-transfer-my-post-911-gi-bill-to-my-sister.html">Can I Transfer My Post 911 Gi Bill To My Sister</a></li>
+													<li class="list-group-item"><a href="/can-i-use-post-9-11-gi-bill-at-two-schools.html">Can I Use Post 9 11 Gi Bill At Two Schools</a></li>
+													<li class="list-group-item"><a href="/can-i-use-financial-aid-and-gi-bill.html">Can I Use Financial Aid And Gi Bill</a></li>
+													<li class="list-group-item"><a href="/can-spouse-veteran-use-gi-bill.html">Can Spouse Veteran Use Gi Bill</a></li>
+													<li class="list-group-item"><a href="/can-i-transfer-my-montgomery-gi-bill-to-my-child.html">Can I Transfer My Montgomery Gi Bill To My Child</a></li>
+													<li class="list-group-item"><a href="/can-air-force-go-in-the-wash.html">Can Air Force Go In The Wash</a></li>
+													<li class="list-group-item"><a href="/can-i-transfer-my-gi-bill-after-i-get-out.html">Can I Transfer My Gi Bill After I Get Out</a></li>
+													<li class="list-group-item"><a href="/can-i-go-to-two-schools-at-once-with-gi-bill.html">Can I Go To Two Schools At Once With Gi Bill</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

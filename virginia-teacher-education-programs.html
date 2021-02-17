@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Virginia Teacher Education Programs - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Virginia Teacher Education Programs",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/736x/01/b0/85/01b08583390c5485158b29577603daea.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=virginia+teacher+education+programs",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Virginia Teacher Education Programs</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The coursework often includes instruction on foundational knowledge and skills teaching methodology and preparing students to research design and implement learning techniques in their field of study. If you want to earn a license to teach in a Virginia public school preK-12 but a full-time teacher education program isnt right for you the UVA School of Education and Human Development offers individualized advising and flexible online coursework designed to help you meet the requirements you need for the alternative route to licensure available in Virginia. Teacher Education Program This curriculum prepares you to transfer to a four-year college or university teacher preparation program. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/pudendal-neuralgia-va-rating.html">pudendal neuralgia va rating</a>
+											<a class="badge badge-dark" href="/state-go-bonds.html">state go bonds</a>
+											<a class="badge badge-light" href="/state-go-angularjs-with-params.html">state go angularjs with params</a>
+											<a class="badge badge-dark" href="/reasons-to-go-to-college.html">reasons to go to college</a>
+											<a class="badge badge-warning" href="/schools-gi-bill-covers.html">schools gi bill covers</a>
+											<a class="badge badge-primary" href="/refund-for-montgomery-gi-bill.html">refund for montgomery gi bill</a>
+											<a class="badge badge-success" href="/state-go-back-angularjs.html">state go back angularjs</a>
+											<a class="badge badge-dark" href="/refund-of-montgomery-gi-bill.html">refund of montgomery gi bill</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you've come to visit the right site.  Our site gives you hints for viewing the highest quality video and picture content, hunt and locate more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, particularly Youtube, so we recommend this video for you to see.  You can also contribute to supporting this website by sharing videos and images that you like on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this site.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/23/53/4d/23534d13e8f1bb4e6560a01ee01f9db3.jpg" data-lightbox="roadtrip" data-title="Powerful Teacher Education Pdf Free In 2020 Teacher Education Teacher Education Program Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/23/53/4d/23534d13e8f1bb4e6560a01ee01f9db3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFgt5--Y1CZI-LUj2ftTeAQT3K4Px7UXptMQ';" alt="Powerful Teacher Education Pdf Free In 2020 Teacher Education Teacher Education Program Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Powerful Teacher Education Pdf Free In 2020 Teacher Education Teacher Education Program Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/a0/d4/11a0d4e2bde66fafeb8320d04c4d833c.jpg" data-lightbox="roadtrip" data-title="Diversity Equity And Justice Teaching Tolerance Educational Programs Teacher Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/a0/d4/11a0d4e2bde66fafeb8320d04c4d833c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCcuPTy806aTfGjPJxLOcBdjQ_PuJ9iEYweA';" alt="Diversity Equity And Justice Teaching Tolerance Educational Programs Teacher Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Diversity Equity And Justice Teaching Tolerance Educational Programs Teacher Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/cd/ec/ab/cdecab6eace0af124c64412307a17c4c.jpg" data-lightbox="roadtrip" data-title="4 Reasons To Join The Virginia Teacher Club In 2020 Teachers Curriculum Teacher Help Teacher">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/cd/ec/ab/cdecab6eace0af124c64412307a17c4c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpdtzGWGo1h_7oz26e4Ta05Kb8t4YiBS4ExQ';" alt="4 Reasons To Join The Virginia Teacher Club In 2020 Teachers Curriculum Teacher Help Teacher">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4 Reasons To Join The Virginia Teacher Club In 2020 Teachers Curriculum Teacher Help Teacher</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/09/54/690954f415a3d3311c409f3f79ec40ee.jpg" data-lightbox="roadtrip" data-title="Pin On Online Learning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/09/54/690954f415a3d3311c409f3f79ec40ee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRALx6MjsqUSE9rJ1q0M6Nm6piR8QQWWC43w';" alt="Pin On Online Learning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Online Learning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/10/8f/ae/108faebc8c7e9fd95e43e05c49363413.jpg" data-lightbox="roadtrip" data-title="4 Reasons To Join The Virginia Teacher Club In 2020 Teachers Pay Teachers Seller Teacher Help Teachers Curriculum">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/10/8f/ae/108faebc8c7e9fd95e43e05c49363413.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmhd5hqlUkbsySq-f6AvknoD8fWTDnIONO5g';" alt="4 Reasons To Join The Virginia Teacher Club In 2020 Teachers Pay Teachers Seller Teacher Help Teachers Curriculum">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4 Reasons To Join The Virginia Teacher Club In 2020 Teachers Pay Teachers Seller Teacher Help Teachers Curriculum</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/16/4b/ed/164bed62e8812203b6c70ae823de9c39.jpg" data-lightbox="roadtrip" data-title="Pin On Social Studies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/16/4b/ed/164bed62e8812203b6c70ae823de9c39.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSdYyKS9X0mVdSZ2wOTma13aN7cq2Ks9hgdA';" alt="Pin On Social Studies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Social Studies</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/00/7f/9d/007f9dcadbcce9ac5add627772ad303a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSdYyKS9X0mVdSZ2wOTma13aN7cq2Ks9hgdA';" alt="Pin On Social Studies">
+										<div class="card-body">
+						<h3 class="h5"><b>In addition to academic expertise Virginia Tech teacher education programs promote lifelong learning professionalism and dedication to the teaching profession understanding of diversity improvement of schools technological literacy and knowledge of working with students with special needs.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Virginia teacher education programs</strong>. 
+								
+																	Brighton Associate Dean for Academic Programs Curry School of Education University of Virginia 417 Emmet Street South P. 
+																	Earn your Virginia teaching license without attending a full-time teacher education program. 
+																	By providing greater access to educational opportunities the Office of Continuing Education helps the University in fulling its goal of helping to build a better world for all citizens. 
+																	Box 400873 Charlottesville Virginia 22904 434-924-1022. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The English Education program offers. 
+																	Teacher Education University of Richmond 28 Westhampton Way Suite 309 North Court Richmond VA 23229 804-289-8432 804-287-6369 FAX. 
+																	Fully accredited by the Virginia Board of Education the Teacher Education Program at Virginia Wesleyan University is known for preparing enthusiastic well-prepared and effective classroom teachers. 
+																	Or click here to learn more about USCs online Masters and PhD programs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The career switcher program recognizes the life experiences of qualified individuals and provides participants with skills needed to pursue a teaching career in Virginia. 
+																	1 5 colleges and universities offer an associates degree in education 1 21 colleges and universities offer a bachelors degree in education 1 31 colleges and universities offer a masters or advanced degree in education 1. 
+																	The Career and Technical Education Program at Virginia Tech prepares teachers administrators and teacher educators for the field of CTE. 
+																	The program offers pre-service teacher education for the initial preparation of individuals to become a CTE teacher. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Virginia Teaching Scholarship Loan Program VTSLP The primary purpose of the Virginia Teaching Scholarship Loan Program VTSLP is to provide financial support to students who are preparing to teach in one of Virginias critical shortage teaching areas. 
+																	For undergraduate students we offer four-year degrees in Elementary Education Special Education and Early Childhood Education. 
+																	There are 39 colleges and universities with teacher degree programs in Virginia. 
+																	Fieldwork includes student teaching observing classrooms or completing an internship. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Troops to Teachers TTT Virginia Center TTT Virginia Center is Virginias program for the Troops to Teachers National Office and is administered by William Mary for the Virginia Department of Education. 
+																	There are many paths to becoming a teacher. 
+																	Teacher education programs in Virginia are a combination of curricula and fieldwork. 
+																	The UVA School of Education and Human Development prepares teachers to make a difference in their students lives from the first day they set foot in the classroom. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Virginia Teachers for Tomorrow Program Information for high school juniors and seniors interested in pursuing a career in education. 
+																	The department also administers regulations governing educator preparation programs to ensure that teachers enter the classroom with content knowledge and instructional skills aligned to the Standards of Learning and other objectives for learning and achievement. 
+																	The English Education programs at Virginia Tech meld traditional issues of teaching writing language and literature with newly emerging practices and research in adolescent literacy new literacies multimodal technologies and teaching and learning in 21st century classrooms. 
+																	Approved Teacher Education Program Through a Virginia Department of Education state-approved teacher preparation program or an alternative licensure state approved program educators can become eligible for licensure in the state of Virginia. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Virginia Department of Education licenses teachers and administrators according to regulations adopted by the Board of Education. 
+																	Virginia Teaching Certification Programs Contact schools to learn more about teacher education programs and what specific subjectfield teaching endorsements are available at each certification level. 
+																	Teacher Education Program Resources Information for persons interested in pursuing teacher licensure through approved college or university programs. 
+																	These providers are listed below. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Continuing Education at VSU serves to bring the curriculum and research to the community through customized courses certificate programs and degree pathways. 
+																	More than three dozen public and private colleges and universities throughout Virginia offer programs of study for aspiring educators and continuing education opportunities for veteran teachers. 
+																	It is specifically designed for students who plan to seek endorsement and licensure as teachers in PK-3 PK-6 middle school or special education. 
+																	State approved Teacher Preparation Programs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Individuals interested in enrolling in a career switcher program must apply for admission directly to a certified program provider. 
+																	Industry Credentials for Endorsement s in Career and Technical Education Section 221-2981 of the Code of Virginia requires that every teacher seeking an initial license in the Commonwealth with an endorsement in the area of career and technical education shall have an industry certification credential in the area in which the teacher seeks endorsement. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e9/ec/da/e9ecda5d26869b9baa5185f530ab2583.jpg" data-lightbox="roadtrip" data-title="Nursing Schools In Virginia Nursingschoolsnearme Teacher Career Career Choices Career Change For Teachers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e9/ec/da/e9ecda5d26869b9baa5185f530ab2583.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUuHoPLmfga3qtfDCasUtb7U8XjhY9fsnjJw';" alt="Nursing Schools In Virginia Nursingschoolsnearme Teacher Career Career Choices Career Change For Teachers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nursing Schools In Virginia Nursingschoolsnearme Teacher Career Career Choices Career Change For Teachers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/61/22/b561220662a382681d80abb4dbb8ec87.jpg" data-lightbox="roadtrip" data-title="Cee Holds Stem Teacher Workshops In Virginia In 2020 Teacher Workshops Stem Teacher Enrichment Programs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/61/22/b561220662a382681d80abb4dbb8ec87.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2TcTC3tZ3zkbAC30_hawuIIygACfwXuuFzw';" alt="Cee Holds Stem Teacher Workshops In Virginia In 2020 Teacher Workshops Stem Teacher Enrichment Programs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cee Holds Stem Teacher Workshops In Virginia In 2020 Teacher Workshops Stem Teacher Enrichment Programs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/e8/d3/c3e8d3a28010df3379df0f16b2fdba37.jpg" data-lightbox="roadtrip" data-title="Lu Ranks Number 3 For Online Teacher Education Programs 360 Education Solutions Liberty University University Education Solution">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/e8/d3/c3e8d3a28010df3379df0f16b2fdba37.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKXvKQ8yxLLBax3aABQ6lOQP8P1-bWJdGP6A';" alt="Lu Ranks Number 3 For Online Teacher Education Programs 360 Education Solutions Liberty University University Education Solution">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lu Ranks Number 3 For Online Teacher Education Programs 360 Education Solutions Liberty University University Education Solution</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ee/e4/fe/eee4fe9a175cd6b2b7354b55e455a7b6.png" data-lightbox="roadtrip" data-title="Pin By Virginia Carlson On Eylf Outcomes Early Childhood Education Resources Early Childhood Education Curriculum Early Childhood Learning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ee/e4/fe/eee4fe9a175cd6b2b7354b55e455a7b6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsWe1v3YErW01FkNe_-0eFfuPK4fEn8UaRHA';" alt="Pin By Virginia Carlson On Eylf Outcomes Early Childhood Education Resources Early Childhood Education Curriculum Early Childhood Learning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Virginia Carlson On Eylf Outcomes Early Childhood Education Resources Early Childhood Education Curriculum Early Childhood Learning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/01/b0/85/01b08583390c5485158b29577603daea.jpg" data-lightbox="roadtrip" data-title="Online Schools And Colleges In Virginia Online School Online Education Online College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/01/b0/85/01b08583390c5485158b29577603daea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyM2zy5R-LjPsVgs9-ZdCyjJaB3RFxunM2xg';" alt="Online Schools And Colleges In Virginia Online School Online Education Online College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Online Schools And Colleges In Virginia Online School Online Education Online College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/9a/ed/9b9aed3349bfa1842e2b8a787d0e0414.jpg" data-lightbox="roadtrip" data-title="Vdoe Early Childhood Instruction Early Childhood Education Programs Early Childhood Education Activities Early Childhood">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/9a/ed/9b9aed3349bfa1842e2b8a787d0e0414.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-pVn3YaABlFNryN0B0AIN2zBRplPv0XypAg';" alt="Vdoe Early Childhood Instruction Early Childhood Education Programs Early Childhood Education Activities Early Childhood">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vdoe Early Childhood Instruction Early Childhood Education Programs Early Childhood Education Activities Early Childhood</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/7f/9d/007f9dcadbcce9ac5add627772ad303a.jpg" data-lightbox="roadtrip" data-title="Henry County Public Schools And Pride Reading Program In 2020 Dyslexia Teaching Activities Teaching Spelling Activities Teaching Spelling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/7f/9d/007f9dcadbcce9ac5add627772ad303a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-AhcyVbUawRHQu7SgL5LPdlMdVxr73TIaVA';" alt="Henry County Public Schools And Pride Reading Program In 2020 Dyslexia Teaching Activities Teaching Spelling Activities Teaching Spelling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Henry County Public Schools And Pride Reading Program In 2020 Dyslexia Teaching Activities Teaching Spelling Activities Teaching Spelling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/82/4d/48824d989cabcdcba55ea4f26eaca6df.gif" data-lightbox="roadtrip" data-title="Vco Education Programs Teaching Music Music Education Middle School Music">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/82/4d/48824d989cabcdcba55ea4f26eaca6df.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrhVA_9kjJlWKoT3AgUEPPBiD0ErJ9Kwqd1Q';" alt="Vco Education Programs Teaching Music Music Education Middle School Music">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vco Education Programs Teaching Music Music Education Middle School Music</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/07/54/ec/0754ecdaa2440c03ecd43d41c00420bc.jpg" data-lightbox="roadtrip" data-title="This Bundle Includes Interactive Vocabulary Power Point And Scoot Game Based On The Story Th Interactive Vocabulary Journeys Reading Teacher Created Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/07/54/ec/0754ecdaa2440c03ecd43d41c00420bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA-awxHfcgA-lK107shMwlwB0DYc_nZZK5Sw';" alt="This Bundle Includes Interactive Vocabulary Power Point And Scoot Game Based On The Story Th Interactive Vocabulary Journeys Reading Teacher Created Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Bundle Includes Interactive Vocabulary Power Point And Scoot Game Based On The Story Th Interactive Vocabulary Journeys Reading Teacher Created Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/2e/12/0f2e122817d20f28438fea4d0dc89c8c.png" data-lightbox="roadtrip" data-title="Pin On Providing Student Feedback">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/2e/12/0f2e122817d20f28438fea4d0dc89c8c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFjCI3LMTWskDUwlKeZ2CYLMie11_f8lv-YQ';" alt="Pin On Providing Student Feedback">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Providing Student Feedback</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/f0/49/edf049703da3569c910f6b307bbebda5.jpg" data-lightbox="roadtrip" data-title="Highlands Educational Literacy Program Inc In Meadowview Va Literacy Programs Literacy Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/f0/49/edf049703da3569c910f6b307bbebda5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6_0OJjypdVKri4b6Mi4E7DwTONLPyNs6lRA';" alt="Highlands Educational Literacy Program Inc In Meadowview Va Literacy Programs Literacy Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Highlands Educational Literacy Program Inc In Meadowview Va Literacy Programs Literacy Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/c6/b8/c2c6b80b83cc123a4c56782a153baa63.jpg" data-lightbox="roadtrip" data-title="Glue Bin Create A Gluing Activity To Teach Your Toddler How To Use A Glue To Know Call Text 703 479 7447 Tr Montessori School Kids Focus Early Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/c6/b8/c2c6b80b83cc123a4c56782a153baa63.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpNxUyi9KuMha5fImnqyGDurlibM8Eu7zoxA';" alt="Glue Bin Create A Gluing Activity To Teach Your Toddler How To Use A Glue To Know Call Text 703 479 7447 Tr Montessori School Kids Focus Early Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Glue Bin Create A Gluing Activity To Teach Your Toddler How To Use A Glue To Know Call Text 703 479 7447 Tr Montessori School Kids Focus Early Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/cc/34/59cc34287423daadeeb9cc2502076757.png" data-lightbox="roadtrip" data-title="Educational Programs Lectures Isle Of Wight County Museum Smithfield Virginia Usa Educational Programs Education Record History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/cc/34/59cc34287423daadeeb9cc2502076757.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs3eyo9x3B5T19txq6SUFXEbFsLbNBIBp9pA';" alt="Educational Programs Lectures Isle Of Wight County Museum Smithfield Virginia Usa Educational Programs Education Record History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Educational Programs Lectures Isle Of Wight County Museum Smithfield Virginia Usa Educational Programs Education Record History</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-disability-rating-for-cervical-spine-radiculopathy.html">Va Disability Rating For Cervical Spine Radiculopathy</a></li>
+													<li class="list-group-item"><a href="/va-disability-rates-ankle.html">Va Disability Rates Ankle</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-arthritis-in-back.html">Va Disability Rating For Arthritis In Back</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-autonomic-neuropathy.html">Va Disability Rating For Autonomic Neuropathy</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-digestive-system.html">Va Disability Rating For Digestive System</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-bilateral-carpal-tunnel.html">Va Disability Rating Bilateral Carpal Tunnel</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-left-ankle-sprain.html">Va Disability Rating For Left Ankle Sprain</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-diabetic-nephropathy.html">Va Disability Rating For Diabetic Nephropathy</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-knee-instability.html">Va Disability Rating For Knee Instability</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-kidney-cyst.html">Va Disability Rating For Kidney Cyst</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-bilateral-knee-pain.html">Va Disability Rating For Bilateral Knee Pain</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-cervicogenic-headaches.html">Va Disability Rating Cervicogenic Headaches</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-ed.html">Va Disability Rating Ed</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-0-percent.html">Va Disability Rating 0 Percent</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-kidney-cancer.html">Va Disability Rating For Kidney Cancer</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-acid-reflux.html">Va Disability Rating Acid Reflux</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-back-problems.html">Va Disability Rating For Back Problems</a></li>
+													<li class="list-group-item"><a href="/va-disability-rates-by-injury.html">Va Disability Rates By Injury</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-arthritis-of-spine.html">Va Disability Rating For Arthritis Of Spine</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-diabetic-retinopathy.html">Va Disability Rating For Diabetic Retinopathy</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

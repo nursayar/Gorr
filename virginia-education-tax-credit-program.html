@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Virginia Education Tax Credit Program - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Virginia Education Tax Credit Program",
+  "datePublished": "2021-02-17",
+  "image": "https://sfs.virginia.edu/sites/sfs/files/State%20Prepaid.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=virginia+education+tax+credit+program",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Virginia Education Tax Credit Program</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">C Allowable Virginia tax credit to be claimed by the beneficiary. Virginia Education Improvement Scholarships Tax Credits Program. Also obtain the Virginia Department of Education Preauthorization Form from MPSF or the Catholic school of your choice. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/go-reliable-education.html">go reliable education</a>
+											<a class="badge badge-dark" href="/gs-pay-scale-2019-dc.html">gs pay scale 2019 dc</a>
+											<a class="badge badge-warning" href="/go-tv-pay-bill-number.html">go tv pay bill number</a>
+											<a class="badge badge-primary" href="/go-utility-billing-long-beach.html">go utility billing long beach</a>
+											<a class="badge badge-success" href="/go-post-multipartform-data.html">go post multipartform data</a>
+											<a class="badge badge-success" href="/go-to-college-with-no-money.html">go to college with no money</a>
+											<a class="badge badge-light" href="/hbo-go-bill-maher-live.html">hbo go bill maher live</a>
+											<a class="badge badge-success" href="/go-post-near-me.html">go post near me</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you've come to visit the right site.  Our site provides you with hints for viewing the highest quality video and picture content, search and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this movie for you to see.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.edchoice.org/wp-content/uploads/2016/07/What-is-a-Tax-Credit-Scholarship%EF%80%A5.png" data-lightbox="roadtrip" data-title="What Is A Tax Credit Scholarship Edchoice">
+											<img class="card-img v-image ads-img " src="https://www.edchoice.org/wp-content/uploads/2016/07/What-is-a-Tax-Credit-Scholarship%EF%80%A5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTneOSyeoAIca2bL8rL_59g7VXtaXjGidTSDA';" alt="What Is A Tax Credit Scholarship Edchoice">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is A Tax Credit Scholarship Edchoice</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.dss.virginia.gov/files/division/bp/covid19/resources/SNAP_Graphic.png" data-lightbox="roadtrip" data-title="Assistance Virginia Department Of Social Services">
+											<img class="card-img v-image ads-img " src="https://www.dss.virginia.gov/files/division/bp/covid19/resources/SNAP_Graphic.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxPTl7x0Gx3Tx3jNP8sgFZOwyPm_z4itQMLQ';" alt="Assistance Virginia Department Of Social Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Assistance Virginia Department Of Social Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.vhda.com/BusinessPartners/MFDevelopers/PublishingImages/Tax-Credit-Updates.jpg" data-lightbox="roadtrip" data-title="Low Income Housing Tax Credit Program Virginia Housing">
+											<img class="card-img v-image ads-img " src="https://www.vhda.com/BusinessPartners/MFDevelopers/PublishingImages/Tax-Credit-Updates.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzLXvXiR15FhtMgYUyDQ62wtM2S-PAowQMjw';" alt="Low Income Housing Tax Credit Program Virginia Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Low Income Housing Tax Credit Program Virginia Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://britepaths.org/sites/default/files/NAPTaxCreditsGraphicOct19-400x335.png" data-lightbox="roadtrip" data-title="Neighborhood Assistance Program Nap Tax Credit Britepaths">
+											<img class="card-img v-image ads-img " src="https://britepaths.org/sites/default/files/NAPTaxCreditsGraphicOct19-400x335.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYMZFcnKgI3KETGocSOdMZZYXvCEYB_U0I2g';" alt="Neighborhood Assistance Program Nap Tax Credit Britepaths">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Neighborhood Assistance Program Nap Tax Credit Britepaths</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.taxslayer.com/blog/wp-content/uploads/2020/04/Education-Tax-Breaks-1.jpg" data-lightbox="roadtrip" data-title="College Students Are You Getting Your Education Tax Credits The Official Blog Of Taxslayer">
+											<img class="card-img v-image ads-img " src="https://www.taxslayer.com/blog/wp-content/uploads/2020/04/Education-Tax-Breaks-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpqE08QTgaWVnJO48zZsuvpuIvRzNw8oM2SQ';" alt="College Students Are You Getting Your Education Tax Credits The Official Blog Of Taxslayer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Students Are You Getting Your Education Tax Credits The Official Blog Of Taxslayer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.bursar.vt.edu/content/bursar_vt_edu/en/tuition-fee-rates/taxinfo/_jcr_content/content/adaptiveimage.img.png/1580853199533.png" data-lightbox="roadtrip" data-title="1098 T Tax Information W 9s Form Bursar S Office Virginia Tech">
+											<img class="card-img v-image ads-img " src="https://www.bursar.vt.edu/content/bursar_vt_edu/en/tuition-fee-rates/taxinfo/_jcr_content/content/adaptiveimage.img.png/1580853199533.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkNqfui2b5Alchsbg8-Xr3BvSVIsuKrvpf9w';" alt="1098 T Tax Information W 9s Form Bursar S Office Virginia Tech">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1098 T Tax Information W 9s Form Bursar S Office Virginia Tech</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.vhda.com/BusinessPartners/MFDevelopers/PublishingImages/Tax-Credit-Updates.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkNqfui2b5Alchsbg8-Xr3BvSVIsuKrvpf9w';" alt="1098 T Tax Information W 9s Form Bursar S Office Virginia Tech">
+										<div class="card-body">
+						<h3 class="h5"><b>This program provides state tax credits for persons or businesses making monetary or marketable securities donations that provide scholarships to eligible students for qualified educational expenses incurred in attending eligible non-public schools.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Virginia education tax credit program</strong>. 
+								
+																	Once you have the credit amount if this is the only credit youre claiming on your income tax return enter the amount on the Credits line line 25 on the 2019 Virginia Form 760 and write Trust Beneficiary Accumulation Distribution Credit to the left of the box. 
+																	This reduces their state tax bill. 
+																	This program offers a 65 percent tax credit to individuals and businesses to donate to qualified scholarship foundations. 
+																	The Education Improvement Scholarships Tax Credits Program provides state tax credits for persons or businesses making monetary or marketable securities donations to foundations that provide scholarships to eligible students and children attending eligible private schools and eligible nonpublic pre-kindergarten programs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The foundations then provide private school scholarships to students whose families meet the income requirements. 
+																	The Donor mails the completed Request for Preauthorization for Tax Credits form to Department of Education Tax Credit Programs 23rd Floor PO Box 2120 Richmond VA 23218-2120. 
+																	The Diocese of Arlington Scholarship Foundation DASF is part of the Virginia Education Improvement Scholarship Tax Credit Program which provides scholarships to low income new students to a Diocese of Arlington Catholic School. 
+																	The paper request will be processed manually and the Preauthorization Notice will be mailed directly to the donor via US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Donors who itemize also receive a Virginia tax deduction and a partial federal tax deduction. 
+																	Virginia enacted the Education Improvement Scholarships Tax Credits Program in 2012 and launched the program in 2013. 
+																	Virginia enacted the Education Improvement Scholarships Tax Credits Program in 2012 and launched the program in 2013. 
+																	Virginia Education Improvement Scholarships Tax Credits Program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In addition to credits Virginia offers a number of deductions and subtractions from income that may help reduce your tax liability. 
+																	Donors receive 65 of their approved donation in Virginia tax credits. 
+																	School Finance Neighborhood Assistance Act. 
+																	This program provides Virginia state tax credits for resident persons or businesses making monetary or marketable securities donations to approved scholarship foundations that provide scholarships to eligible students for qualified educational expenses incurred in attending eligible nonpublic schools. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VDOE has set aside 25 million in tax credits per program year. 
+																	The Virginia Education Improvement Scholarship Tax Credit program can offer support for thousands of low and middle- income families in Virginia. 
+																	2363 students received scholarships to attend one of the 29 accredited Catholic. 
+																	Send the completed Preauthorization and Letter of Intent to MPSF who will submit your Preauthorization Form by secure electronic dropbox to the VA DOE for approval of your Tax Credits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Review the credits below to see what you may be able to deduct from the tax you owe. 
+																	Obtain a blank Letter of Intent from the McMahon Parater Scholarship Foundation MPSF or the Catholic school of your choice. 
+																	The Virginia Neighborhood Assistance Act provides tax credits to individuals and businesses that make qualified donations directly to pre-approved Neighborhood Assistance Program organizations whose primary function is to provide educational or other qualified services for the benefit of low-income families. 
+																	Virginia Education Improvement Scholarships Tax Credits Program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In the Diocese of Richmond five years into Virginias historic Education Improvement Scholarships Tax Credits program EISTC donors provided over 11000000 in new scholarships for qualified students to attend Catholic K-12 schools and received most of their money back in federal and Virginia tax savings. 
+																	Scholarship tax credit programs of the United States of America also called tax credit scholarship education tax credit or tuition tax credit programs are a form of school choice that allows individuals or corporations to receive a tax credit from state taxes against donations made to non-profit organizations that grant private school scholarships. 
+																	The Virginia Department of Education VDOE is seeking a qualified and experienced individual to administer two education tax credit programs the Neighborhood Assistance Program and the Education. 
+																	This program offers a 65 percent tax credit to individuals and businesses to donate to qualified scholarship foundations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The foundations then provide private school scholarships to students whose families meet the income requirements. 
+																	Now if they take advantage of The Education Improvement Scholarship Tax Credits they will also receive a state tax credit of 65 of their donation or 6500. 
+																	To learn more about the Land Preservation Tax Credit see our Land Preservation Tax Credit page. 
+																	The program offers opportunity for Virginia families to send their children to a school of their choice using private scholarships from scholarship foundations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Neighborhood Assistance Act Tax Credit Program for Education administered by Virginia Department of Education the Department allows individuals or businesses to receive state tax credits - up to and including 65 percent of the qualified donation for eligible donations made to approved neighborhood organizations. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.vhda.com/Renters/PublishingImages/Renter-Ed.png" data-lightbox="roadtrip" data-title="Renter Education Virginia Housing">
+											<img class="card-img v-image ads-img " src="https://www.vhda.com/Renters/PublishingImages/Renter-Ed.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgTNBSKvpGnwzDCB1PlKs9w_A7eSQvi8EwPQ';" alt="Renter Education Virginia Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Renter Education Virginia Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://sfs.virginia.edu/sites/sfs/files/State%20Prepaid.jpg" data-lightbox="roadtrip" data-title="529 College Savings State Prepaid Tuition Programs Student Financial Services">
+											<img class="card-img v-image ads-img " src="https://sfs.virginia.edu/sites/sfs/files/State%20Prepaid.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVzUta6QgEmsgsrSdmSZjUMXKTsDPQhapDRw';" alt="529 College Savings State Prepaid Tuition Programs Student Financial Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">529 College Savings State Prepaid Tuition Programs Student Financial Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://web-resources.savingforcollege.com/images/plan_logos/plan-va-55.png" data-lightbox="roadtrip" data-title="Invest529 Virginia 529 College Savings Plan Ratings Tax Benefits Fees And Performance">
+											<img class="card-img v-image ads-img " src="https://web-resources.savingforcollege.com/images/plan_logos/plan-va-55.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOH-X7mVXW_EXv0Fp53kMq7xaR6EwKUJ9LdA';" alt="Invest529 Virginia 529 College Savings Plan Ratings Tax Benefits Fees And Performance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Invest529 Virginia 529 College Savings Plan Ratings Tax Benefits Fees And Performance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.edchoice.org/wp-content/uploads/2016/07/How-Do-Education-Tax-Credits-and-Deductions-Work%EF%80%A5.png" data-lightbox="roadtrip" data-title="How Do K 12 Education Tax Credits And Deductions Work Edchoice">
+											<img class="card-img v-image ads-img " src="https://www.edchoice.org/wp-content/uploads/2016/07/How-Do-Education-Tax-Credits-and-Deductions-Work%EF%80%A5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdTFOuJeBR_dOIneEcY_OmzYxZtSex_mRImA';" alt="How Do K 12 Education Tax Credits And Deductions Work Edchoice">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Do K 12 Education Tax Credits And Deductions Work Edchoice</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="_6BNhOepMBVkmM" data-lightbox="roadtrip" data-title="Https Www Tax Virginia Gov Sites Default Files Vatax Pdf 2019 760 Instructions Pdf">
+											<img class="card-img v-image ads-img " src="_6BNhOepMBVkmM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMZgrwApmln0pi8JWuTJWglRmg0yb7cprsOg';" alt="Https Www Tax Virginia Gov Sites Default Files Vatax Pdf 2019 760 Instructions Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Tax Virginia Gov Sites Default Files Vatax Pdf 2019 760 Instructions Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="RZkNebzUdJOBpM" data-lightbox="roadtrip" data-title="Https Www Vhda Com Businesspartners Lenders Mccformsanddocuments Mcc Program Overview Pdf">
+											<img class="card-img v-image ads-img " src="RZkNebzUdJOBpM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW7P9dTH76AyPgLY11aq-QY5KNRsFlmiq3fA';" alt="Https Www Vhda Com Businesspartners Lenders Mccformsanddocuments Mcc Program Overview Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Vhda Com Businesspartners Lenders Mccformsanddocuments Mcc Program Overview Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.dcr.virginia.gov/land-conservation/image/sk-farm-zorger.jpg" data-lightbox="roadtrip" data-title="Land Preservation Tax Credit">
+											<img class="card-img v-image ads-img " src="https://www.dcr.virginia.gov/land-conservation/image/sk-farm-zorger.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmzPSlUXsFLeFNYh0ho75X2q7Ul9ceUVQXRg';" alt="Land Preservation Tax Credit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Land Preservation Tax Credit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://aaec.vt.edu/content/aaec_vt_edu/en/extension/Virginiatechincometaxschool/_jcr_content/content/adaptiveimage.transform/m-medium/image.jpg" data-lightbox="roadtrip" data-title="Virginia Tech Income Tax School Department Of Agricultural And Applied Economics Virginia Tech">
+											<img class="card-img v-image ads-img " src="https://aaec.vt.edu/content/aaec_vt_edu/en/extension/Virginiatechincometaxschool/_jcr_content/content/adaptiveimage.transform/m-medium/image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3zp9ZKW2STl0BPIMQQgoYobYh4TKKTWW6pQ';" alt="Virginia Tech Income Tax School Department Of Agricultural And Applied Economics Virginia Tech">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Tech Income Tax School Department Of Agricultural And Applied Economics Virginia Tech</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.vbgov.com/government/departments/public-utilities/customer-service/SiteAssets/Pages/CSPandemicRelief/web.png" data-lightbox="roadtrip" data-title="City Services Bill Pandemic Relief Program Vbgov Com City Of Virginia Beach">
+											<img class="card-img v-image ads-img " src="https://www.vbgov.com/government/departments/public-utilities/customer-service/SiteAssets/Pages/CSPandemicRelief/web.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNLglwmQB2BUXfPY2I4N7s25HYvbpDQK8agQ';" alt="City Services Bill Pandemic Relief Program Vbgov Com City Of Virginia Beach">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">City Services Bill Pandemic Relief Program Vbgov Com City Of Virginia Beach</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.edchoice.org/wp-content/uploads/2020/01/website-01.png" data-lightbox="roadtrip" data-title="School Choice Fast Facts And Statistics">
+											<img class="card-img v-image ads-img " src="https://www.edchoice.org/wp-content/uploads/2020/01/website-01.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfle7OuMuVmfkzVE4-Ay0CR__DDizHNB7Okw';" alt="School Choice Fast Facts And Statistics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">School Choice Fast Facts And Statistics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.virginia529.com/assets/svgs/va529-logo.svg" data-lightbox="roadtrip" data-title="529 Faqs Resources Virginia529">
+											<img class="card-img v-image ads-img " src="https://www.virginia529.com/assets/svgs/va529-logo.svg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIWZszC4xqufzd_juO6F__mn4auLdUtEGoAA';" alt="529 Faqs Resources Virginia529">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">529 Faqs Resources Virginia529</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.gao.gov/extracts/ad63fa0a0d7243d967eae11e0e3fbad2/rId15_image5.png" data-lightbox="roadtrip" data-title="U S Gao Private School Choice Accountability In State Tax Credit Scholarship Programs">
+											<img class="card-img v-image ads-img " src="https://www.gao.gov/extracts/ad63fa0a0d7243d967eae11e0e3fbad2/rId15_image5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2EMHuyb-zc9Wr_Q7775eC1oWvmUhpg_DIug';" alt="U S Gao Private School Choice Accountability In State Tax Credit Scholarship Programs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Gao Private School Choice Accountability In State Tax Credit Scholarship Programs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/66/2e/5d662ed61abb9971d94155abfd5f886f.jpg" data-lightbox="roadtrip" data-title="Wv Kids Count Details How Income Affects Achievement And What Can Be Done To Give Every West Virginia Child A Fa Counting For Kids Starting School Infographic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/66/2e/5d662ed61abb9971d94155abfd5f886f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf54mF856UFDCK1FRzKknZdPMbgIUWN_fQxw';" alt="Wv Kids Count Details How Income Affects Achievement And What Can Be Done To Give Every West Virginia Child A Fa Counting For Kids Starting School Infographic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wv Kids Count Details How Income Affects Achievement And What Can Be Done To Give Every West Virginia Child A Fa Counting For Kids Starting School Infographic</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/do-american-veterans-get-free-healthcare.html">Do American Veterans Get Free Healthcare</a></li>
+													<li class="list-group-item"><a href="/do-combat-veterans-get-free-healthcare.html">Do Combat Veterans Get Free Healthcare</a></li>
+													<li class="list-group-item"><a href="/did-itu-apa.html">Did Itu Apa</a></li>
+													<li class="list-group-item"><a href="/digi-queensbay-mall.html">Digi Queensbay Mall</a></li>
+													<li class="list-group-item"><a href="/disabled-american-veterans-car-donations.html">Disabled American Veterans Car Donations</a></li>
+													<li class="list-group-item"><a href="/did-us-go-into-lockdown.html">Did Us Go Into Lockdown</a></li>
+													<li class="list-group-item"><a href="/do-i-qualify-for-va-benefits-with-a-other-than-honorable-discharge.html">Do I Qualify For Va Benefits With A Other Than Honorable Discharge</a></li>
+													<li class="list-group-item"><a href="/digi-xbee-s2c.html">Digi Xbee S2c</a></li>
+													<li class="list-group-item"><a href="/did-itu-tenses-apa.html">Did Itu Tenses Apa</a></li>
+													<li class="list-group-item"><a href="/different-chapters-of-gi-bill.html">Different Chapters Of Gi Bill</a></li>
+													<li class="list-group-item"><a href="/digiquest.html">Digiquest</a></li>
+													<li class="list-group-item"><a href="/do-canadian-veterans-get-free-healthcare.html">Do Canadian Veterans Get Free Healthcare</a></li>
+													<li class="list-group-item"><a href="/did-unspeakable-go-to-jail.html">Did Unspeakable Go To Jail</a></li>
+													<li class="list-group-item"><a href="/do-i-get-gi-bill-with-general-discharge.html">Do I Get Gi Bill With General Discharge</a></li>
+													<li class="list-group-item"><a href="/disabled-american-veterans-san-antonio-tx.html">Disabled American Veterans San Antonio Tx</a></li>
+													<li class="list-group-item"><a href="/do-i-need-to-go-to-college.html">Do I Need To Go To College</a></li>
+													<li class="list-group-item"><a href="/disability-for-vets.html">Disability For Vets</a></li>
+													<li class="list-group-item"><a href="/difference-between-gi-bill-and-montgomery.html">Difference Between Gi Bill And Montgomery</a></li>
+													<li class="list-group-item"><a href="/did-zeke-go-to-military.html">Did Zeke Go To Military</a></li>
+													<li class="list-group-item"><a href="/disabled-american-veterans-houston-tx.html">Disabled American Veterans Houston Tx</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

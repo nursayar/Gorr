@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Reservist Gi Bill Benefits - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Reservist Gi Bill Benefits",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/60/b8/32/60b83251c621aa7eebd0e36f0eecf787.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=reservist+gi+bill+benefits",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Reservist Gi Bill Benefits</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">As of 1 Aug 2013 anyone who applies for transfer will incur a 4-year service obligation. 40 - 90 or more days. Once discharged the benefit goes away. <br>				
+			</p>
+										<a class="badge badge-light" href="/va-real-estate-license-exam.html">va real estate license exam</a>
+											<a class="badge badge-light" href="/va-real-estate-license-renewal-fee.html">va real estate license renewal fee</a>
+											<a class="badge badge-secondary" href="/va-rheumatoid-arthritis.html">va rheumatoid arthritis</a>
+											<a class="badge badge-info" href="/va-rating-transformers-what-does-mean.html">va rating transformers what does mean</a>
+											<a class="badge badge-primary" href="/va-real-estate-license-reciprocity.html">va real estate license reciprocity</a>
+											<a class="badge badge-success" href="/va-rating-severe-radiculopathy.html">va rating severe radiculopathy</a>
+											<a class="badge badge-secondary" href="/va-rating-of-transformer.html">va rating of transformer</a>
+											<a class="badge badge-dark" href="/va-real-estate-license-fees.html">va real estate license fees</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you have come to visit the right site.  Our website provides you with hints for seeing the highest quality video and picture content, hunt and find more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this video for you to view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/7a/82/bd7a820b6dfc5c35afc70b8a8eb1e245.jpg" data-lightbox="roadtrip" data-title="Army Reservist Military Educational Benefits Tuition Assistance Education Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/7a/82/bd7a820b6dfc5c35afc70b8a8eb1e245.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Ui617ueH0SVYhdz1GQIczkZl2ZYInkMydQ';" alt="Army Reservist Military Educational Benefits Tuition Assistance Education Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Reservist Military Educational Benefits Tuition Assistance Education Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/20/b3/8820b32cab44114ef57dd62701d24742.jpg" data-lightbox="roadtrip" data-title="G I Bill 2 0 Online Education Online Education Teaching Us History Educational Infographic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/20/b3/8820b32cab44114ef57dd62701d24742.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTplMt_HpLBFRObeUcMOB0jDz1BqSHaCehhA';" alt="G I Bill 2 0 Online Education Online Education Teaching Us History Educational Infographic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">G I Bill 2 0 Online Education Online Education Teaching Us History Educational Infographic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/95/cf/5195cfa59b502e514ed8164569b39a19.png" data-lightbox="roadtrip" data-title="Pin On Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/95/cf/5195cfa59b502e514ed8164569b39a19.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwMTa5sAXMvug8uragU3gL10KJxXyMP-c8dg';" alt="Pin On Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/98/9c/3b/989c3bbc4acce901d6fed24a85805073.jpg" data-lightbox="roadtrip" data-title="Veteran Employees Can Benefit Your Business In Many Ways But Did You Know That You Can Also Earn Money Saving Tax Cre In 2020 Hiring Veterans Tax Credits Veteran Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/98/9c/3b/989c3bbc4acce901d6fed24a85805073.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZOBL86J8HvtOu7PJJbaLH3_GapQdtIbTCNA';" alt="Veteran Employees Can Benefit Your Business In Many Ways But Did You Know That You Can Also Earn Money Saving Tax Cre In 2020 Hiring Veterans Tax Credits Veteran Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Employees Can Benefit Your Business In Many Ways But Did You Know That You Can Also Earn Money Saving Tax Cre In 2020 Hiring Veterans Tax Credits Veteran Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e5/7a/e4/e57ae48fb478ea07652375ecb5038f90.jpg" data-lightbox="roadtrip" data-title="Pin By Military Benefits On Money Finance In 2021 Finance Money Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e5/7a/e4/e57ae48fb478ea07652375ecb5038f90.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbG8A9hfRzDqPzneKJaFi55OWn0qb-XqpcYw';" alt="Pin By Military Benefits On Money Finance In 2021 Finance Money Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Military Benefits On Money Finance In 2021 Finance Money Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/80/b8/0580b89de771035981ac5e01c6a7b4b8.jpg" data-lightbox="roadtrip" data-title="Veteran Owned Business Member Badge Showing Proud Member Veteran Owned Business Military Veterans Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/80/b8/0580b89de771035981ac5e01c6a7b4b8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDVL003lPijCUua-z6ZkaoT-H0tK7LNZscWg';" alt="Veteran Owned Business Member Badge Showing Proud Member Veteran Owned Business Military Veterans Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Owned Business Member Badge Showing Proud Member Veteran Owned Business Military Veterans Business</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/87/88/34/878834dd5e3f28e9f2100c01c7d02760.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDVL003lPijCUua-z6ZkaoT-H0tK7LNZscWg';" alt="Veteran Owned Business Member Badge Showing Proud Member Veteran Owned Business Military Veterans Business">
+										<div class="card-body">
+						<h3 class="h5"><b>And for many the benefits will be better.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Reservist gi bill benefits</strong>. 
+								
+																	On the Job Training. 
+																	Montgomery GI Bill Selected Reserve. 
+																	Transfer of Post 911 GI Bill benefit requires a 4-year selected reserve service commitment. 
+																	You should also qualify for 36 months of the Post 911 GI Bill at the 60 level meaning the VA would pay 60 of your tuition and fees directly to your school up to the maximum and you would get 60 of the housing allowance and book stipend. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Montgomery GI Selected Reserve MGIB-SR - Education and Training Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+																	Vocationaltechnical training and non-college degree programs. 
+																	EARN UP TO FULL COLLEGE TUITION WITH THE GI BILL PROGRAM. 
+																	Find out if you qualify. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MGIB benefits are for up to 36 months of schooling and one school year is about nine months in total so benefits should cover up to a four year degree. 
+																	Complete your initial active duty for training IADT. 
+																	Educational Assistance Allowance for trainees under the Montgomery GI Bill Selected Reserve Ch. 
+																	For members of the National Guard GI Bill payments are not as high as for active duty veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	16 President Donald Trump signed the so-called Forever GI Bill into law. 
+																	This benefit may be used for degree and certificate programs flight training apprenticeshipon-the-job training and correspondence courses. 
+																	50 - six total months. 
+																	The Montgomery GI Bill Selected Reserve Chapter 1606 is an education program that provides up to 36 months of education benefits to members of the Selected Reserve. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Army offers many education benefits but the GI Bill program is one of the most powerful benefits available to help pay for a four-year college trade school technical school or trainings. 
+																	60 - 12 total months. 
+																	Before transferring benefits make sure you have the retainability. 
+																	Have a six-year obligation to serve in the Selected Reserve or Guard signed after June 30 1985. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This includes the Army Navy Air Force Marine Corps and Coast Guard Reserves as well as the Army National Guard and the Air National Guard. 
+																	If you are an officer you must have agreed to serve. 
+																	Work toward a degree. 
+																	The service commitment begins on the date you submit your Transfer request. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Train for a specific career trade or industry. 
+																	The days and nights National Guard troops spent securing Capitol Hill will count towards time needed to qualify for GI Bill education benefits according to a memo sent to lawmakers on Thursday. 
+																	Undergraduate and graduate degrees. 
+																	Find GI Bill-Approved Colleges For Military and Veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Montgomery GI Bill Selected Reserve MGIB-SR program offers up to 36 months of education and training benefits. 
+																	Meet the requirement to receive a high school diploma or equivalency. 
+																	The Army National Guard official site includes discussion of the benefits for Guard members. 
+																	If youre a member of the Army Navy Air Force Marine Corps or Coast Guard Reserve Army National Guard or Air National Guard you may be eligible for this benefit. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	100 - 30 or more consecutive days with Disability related Discharge. 
+																	Remedial deficiency and refresher courses may be approved under certain circumstances. 
+																	In many cases Soldiers using the GI Bill program receive full tuition for their military service. 
+																	1606 of Title 10 USC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The GI Bill provides education benefits to veterans and their dependents. 
+																	You can use your GI Bill benefits in many ways to advance your education and training. 
+																	100 - 36 or more total months. 
+																	Servicemembers in the Guard and Reserves have the Montgomery GI Bill Selected Reserves MGIB-SR which is only good as long as the servicemember stays in a Reserve Component. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Since 1944 the GI Bill has helped millions of Veterans pay for college graduate school and training programs. 
+																	70 - 18 total months. 
+																	The Montgomery GI Bill Select Reserve MGIB-SR program may be available to you. 
+																	Generally speaking no you wont have any GI Bill benefits to use if you had been in Reserves the whole time. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA pays monthly compensation benefits for disabilities incurred or aggravated during active duty and active duty for training as a result of injury or disease and for disabilities due to injury heart attack or stroke that occurred during inactive duty training. 
+																	Veterans Benefits Administrations Education Service delivers GI Bill education benefits to Veterans service members and their families. 
+																	80 - 24 total months. 
+																	His signature follows unanimous votes in both the House and Senate to approve the law. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Any bills that dont pass must be reintroduced and Levin said he planned to do so soon ensuring Guard and Reserve members always receive the GI Bill benefits they deserve. 
+																	For Guardsmen and Reservists qualifying for the Post-911 GI Bill is about to get easier. 
+																	Veterans technology education courses VET TEC. 
+																	90 - 30 total months. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A monthly expense allowance of up to 384 for more than 13500 total over a four year college career. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/c3/09/54/c309541ba7b1ba9c2d1ea8617767f3b6.jpg" data-lightbox="roadtrip" data-title="Pin On Jobs For Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/c3/09/54/c309541ba7b1ba9c2d1ea8617767f3b6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYvnxWZy75DU9uFSldPxWAUd_nqpC7BIJerQ';" alt="Pin On Jobs For Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Jobs For Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c8/88/6e/c8886e7d23547723e58771c00129b348.jpg" data-lightbox="roadtrip" data-title="Soldiers Stand In Formation During A Deployment Ceremony For An Army Reserve Battalion In 2016 The Army After Doling Out Housin Army Reserve Military Seasons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c8/88/6e/c8886e7d23547723e58771c00129b348.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYkLs5Pr3DgA7axeprzk3M0oJd06UwU4lt4w';" alt="Soldiers Stand In Formation During A Deployment Ceremony For An Army Reserve Battalion In 2016 The Army After Doling Out Housin Army Reserve Military Seasons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soldiers Stand In Formation During A Deployment Ceremony For An Army Reserve Battalion In 2016 The Army After Doling Out Housin Army Reserve Military Seasons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/98/98/0c/98980c7711e8d0760464d827a266f7d9.png" data-lightbox="roadtrip" data-title="5 Things That Cause Your Credit Score To Drop Yuge Debt Credit Score Check Credit Score Good Credit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/98/98/0c/98980c7711e8d0760464d827a266f7d9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2mhbn8GcbLutfJIdcqYNq-VtZF6YtK9RBdg';" alt="5 Things That Cause Your Credit Score To Drop Yuge Debt Credit Score Check Credit Score Good Credit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Things That Cause Your Credit Score To Drop Yuge Debt Credit Score Check Credit Score Good Credit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/41/51/77415150effb280f7b5794c1c0bff534.jpg" data-lightbox="roadtrip" data-title="There Are Many Reasons Why Veterans And Currently Serving Military Members Might Need To Consider Applying For A Personal Loans Navy Federal Credit Union Loan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/41/51/77415150effb280f7b5794c1c0bff534.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Vehq-1rTQN6ATnDMyJ4kCEJ_hgHoxwry7w';" alt="There Are Many Reasons Why Veterans And Currently Serving Military Members Might Need To Consider Applying For A Personal Loans Navy Federal Credit Union Loan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">There Are Many Reasons Why Veterans And Currently Serving Military Members Might Need To Consider Applying For A Personal Loans Navy Federal Credit Union Loan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/88/34/878834dd5e3f28e9f2100c01c7d02760.png" data-lightbox="roadtrip" data-title="Netsuite For Food And Beverage Beverages How To Plan Budgeting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/88/34/878834dd5e3f28e9f2100c01c7d02760.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtcXNgQyxCRx_P0AXDUO9nQwbJcF06IafWrw';" alt="Netsuite For Food And Beverage Beverages How To Plan Budgeting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Netsuite For Food And Beverage Beverages How To Plan Budgeting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/76/12/0c76129ba84007b5455baced3cee0d36.jpg" data-lightbox="roadtrip" data-title="Pin By Military Benefits On Money Finance In 2021 Military Pay Military Paying">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/76/12/0c76129ba84007b5455baced3cee0d36.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhqa0EtTcTtssMCpJIWxSOyVzf_wuFCgRrlg';" alt="Pin By Military Benefits On Money Finance In 2021 Military Pay Military Paying">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Military Benefits On Money Finance In 2021 Military Pay Military Paying</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/24/83/02248317673e4d4565b39be05bbfb835.jpg" data-lightbox="roadtrip" data-title="Call Me Maybe Performed By The Us Army The Veterans Site Veteran Vets Homeless Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/24/83/02248317673e4d4565b39be05bbfb835.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQilDxnt5QUPjkq3rqFujMESFbeMuNDS32OsA';" alt="Call Me Maybe Performed By The Us Army The Veterans Site Veteran Vets Homeless Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Call Me Maybe Performed By The Us Army The Veterans Site Veteran Vets Homeless Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/83/2e/51832ed503873944495ba11822a1767b.jpg" data-lightbox="roadtrip" data-title="Electionday Exercise Your Right To Vote Veteran Owned Business Military Veterans Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/83/2e/51832ed503873944495ba11822a1767b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw1oWVDg1ZnDJItnpjKMBvKJq9RD9-xIcRMg';" alt="Electionday Exercise Your Right To Vote Veteran Owned Business Military Veterans Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Electionday Exercise Your Right To Vote Veteran Owned Business Military Veterans Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/83/df/8883df2a002f0307a0e76dde4cbca345.jpg" data-lightbox="roadtrip" data-title="Pin On General Retirement Planning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/83/df/8883df2a002f0307a0e76dde4cbca345.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT97-WEmwrrcjfFZdNISeSMYzg-5-tEhaccw';" alt="Pin On General Retirement Planning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On General Retirement Planning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/62/50/cb/6250cbf1a17590ea54718220295c022b.jpg" data-lightbox="roadtrip" data-title="Ok Google Seo For Voice Search Stephen James Hall Seo Knowledge Graph Seo Search Engine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/62/50/cb/6250cbf1a17590ea54718220295c022b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo1NDbzUbmMn6xtsMWwjFbWvDZzENGp2PUDA';" alt="Ok Google Seo For Voice Search Stephen James Hall Seo Knowledge Graph Seo Search Engine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ok Google Seo For Voice Search Stephen James Hall Seo Knowledge Graph Seo Search Engine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/b0/bf/a6b0bf2064692ec8b4e52b7296ed8fbb.jpg" data-lightbox="roadtrip" data-title="5 Must Have Items In Your Tabletop Exhibit Table Top Display Table Top Must Have Items">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/b0/bf/a6b0bf2064692ec8b4e52b7296ed8fbb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2hrhDJeq7pom42cS5QpUV2ymEXgJQZDD1Ig';" alt="5 Must Have Items In Your Tabletop Exhibit Table Top Display Table Top Must Have Items">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Must Have Items In Your Tabletop Exhibit Table Top Display Table Top Must Have Items</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/e3/84/d4e384770566e9d9d01371496c80872e.jpg" data-lightbox="roadtrip" data-title="Pin On Contributors I">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/e3/84/d4e384770566e9d9d01371496c80872e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY6uDY6bYt8Fmv_aKCb40JIbjbKx75F2ZoKQ';" alt="Pin On Contributors I">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Contributors I</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/b8/32/60b83251c621aa7eebd0e36f0eecf787.png" data-lightbox="roadtrip" data-title="American Veteran Owned Business Association Avoba Logo And Badge Veteran Owned Business Small Business Association Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/b8/32/60b83251c621aa7eebd0e36f0eecf787.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM4yrC1uhnPr63Lj1-CogsI4CNvNBtAKIvPg';" alt="American Veteran Owned Business Association Avoba Logo And Badge Veteran Owned Business Small Business Association Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">American Veteran Owned Business Association Avoba Logo And Badge Veteran Owned Business Small Business Association Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/clothing-donations-to-disabled-american-veterans.html">Clothing Donations To Disabled American Veterans</a></li>
+													<li class="list-group-item"><a href="/college-gifts-for-brother.html">College Gifts For Brother</a></li>
+													<li class="list-group-item"><a href="/combining-montgomery-gi-bill-and-post-911.html">Combining Montgomery Gi Bill And Post 911</a></li>
+													<li class="list-group-item"><a href="/college-gymnastics-message-board.html">College Gymnastics Message Board</a></li>
+													<li class="list-group-item"><a href="/college-gymnastics-practice-schedule.html">College Gymnastics Practice Schedule</a></li>
+													<li class="list-group-item"><a href="/check-gi-bill-payment-status-online.html">Check Gi Bill Payment Status Online</a></li>
+													<li class="list-group-item"><a href="/chapter-vs-episode.html">Chapter Vs Episode</a></li>
+													<li class="list-group-item"><a href="/college-bowl-gifts-2019.html">College Bowl Gifts 2019</a></li>
+													<li class="list-group-item"><a href="/college-graduation-gift-ideas-for-sister.html">College Graduation Gift Ideas For Sister</a></li>
+													<li class="list-group-item"><a href="/common-flowering-trees-in-virginia.html">Common Flowering Trees In Virginia</a></li>
+													<li class="list-group-item"><a href="/chica-go-bills-hat.html">Chica Go Bills Hat</a></li>
+													<li class="list-group-item"><a href="/common-trees-of-west-virginia.html">Common Trees Of West Virginia</a></li>
+													<li class="list-group-item"><a href="/chapter-vs-unit.html">Chapter Vs Unit</a></li>
+													<li class="list-group-item"><a href="/college-station-gi-museum.html">College Station Gi Museum</a></li>
+													<li class="list-group-item"><a href="/college-gymnastics-balance-beam.html">College Gymnastics Balance Beam</a></li>
+													<li class="list-group-item"><a href="/chapter-vs-branch.html">Chapter Vs Branch</a></li>
+													<li class="list-group-item"><a href="/check-post-911-gi-bill-payment-status.html">Check Post 911 Gi Bill Payment Status</a></li>
+													<li class="list-group-item"><a href="/clothing-donation-disabled-american-veterans.html">Clothing Donation Disabled American Veterans</a></li>
+													<li class="list-group-item"><a href="/check-gi-bill-transfer-status.html">Check Gi Bill Transfer Status</a></li>
+													<li class="list-group-item"><a href="/coast-guard-gi-bill.html">Coast Guard Gi Bill</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

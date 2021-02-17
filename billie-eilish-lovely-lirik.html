@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Billie Eilish Lovely Lirik - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Billie Eilish Lovely Lirik",
+  "datePublished": "2021-02-17",
+  "image": "https://www.guitartabsexplorer.com/images/tabs/billie-eilish_lovely.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=billie+eilish+lovely+lirik",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Billie Eilish Lovely Lirik</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The song reached number 64 on the US Billboard Hot 100 chart. Billie Eilish Khalid Oh I hope some day Ill make it out of here Even if it takes all night or a hundred. This song focuses on an attempt to overcome depression. <br>				
+			</p>
+										<a class="badge badge-primary" href="/wi-gi-bill-faq.html">wi gi bill faq</a>
+											<a class="badge badge-light" href="/wisconsin-gi-bill-supplemental-payment.html">wisconsin gi bill supplemental payment</a>
+											<a class="badge badge-success" href="/why-i-want-to-go-to-college-essay-sample.html">why i want to go to college essay sample</a>
+											<a class="badge badge-info" href="/who-qualifies-for-forever-gi-bill.html">who qualifies for forever gi bill</a>
+											<a class="badge badge-primary" href="/will-the-gi-bill-pay-off-my-student-loans.html">will the gi bill pay off my student loans</a>
+											<a class="badge badge-info" href="/will-i-get-a-stimulus-check-if-i-get-va-disability.html">will i get a stimulus check if i get va disability</a>
+											<a class="badge badge-light" href="/will-gi-bill-pay-for-certificate-programs.html">will gi bill pay for certificate programs</a>
+											<a class="badge badge-warning" href="/wild-bill-gi-joe-action-figure.html">wild bill gi joe action figure</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you have come to visit the right blog.  Our website provides you with suggestions for viewing the maximum quality video and picture content, search and locate more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, particularly Youtube, therefore we recommend this movie for you to see.  It is also possible to bring about supporting this site by sharing videos and images that you like on this site on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this website.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/9kCUhJ9M97Q/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Billie Eilish Lovely Lyrics Ft Khalid Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/9kCUhJ9M97Q/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqxqlhQVDoeJUYq5GWqmiMDRw0hnbcwbV5LFr7jQDLi7x8fEukzzy5FwuowVl8ziz1oklogg&amp;ec=45771803';" alt="Billie Eilish Lovely Lyrics Ft Khalid Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Billie Eilish Lovely Lyrics Ft Khalid Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/xirk18P889U/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Billie Eilish Lovely Lyrics Ft Khalid Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/xirk18P889U/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjas3kPL8aSBoo3uF7WsieJ2duM_zkxrHPU0hlhAhhMER0-n1amCU6sDi-bNUlPvy1UOBD_A&amp;ec=45771803';" alt="Billie Eilish Lovely Lyrics Ft Khalid Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Billie Eilish Lovely Lyrics Ft Khalid Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/QVwbV3AC-gA/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Lovely Billie Eilish Ft Khalid Lirik Lagu Terjemahan Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/QVwbV3AC-gA/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9BXsVtmcjyTKcjCbBuD-wSnvOZTXcUQbPVv6yZL2nr0V0exiCoUXo58bqyS_neEB8r6bhHQ&amp;ec=45771803';" alt="Lovely Billie Eilish Ft Khalid Lirik Lagu Terjemahan Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lovely Billie Eilish Ft Khalid Lirik Lagu Terjemahan Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/cW9R7QLrdBM/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Billie Eilish Khalid Lovely Lirik Lagu Terjemahan Indonesia Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/cW9R7QLrdBM/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShGV7Vd6QQb8wuQYrrRIN4n39DaLzVv4CaUQE52jC94vtVgDnFf6weCsJ8A4HGMJxENsWgDQ&amp;ec=45771803';" alt="Billie Eilish Khalid Lovely Lirik Lagu Terjemahan Indonesia Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Billie Eilish Khalid Lovely Lirik Lagu Terjemahan Indonesia Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn1-production-images-kly.akamaized.net/HrVTP4yWOwPa4QXIzU1Oe35PK1Q=/0x0:3648x4863/640x853/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3054245/original/086402000_1582084262-000_1P3609.jpg" data-lightbox="roadtrip" data-title="Lirik Lagu Lovely Billie Eilish Khalid Ragam Bola Com">
+											<img class="card-img v-image ads-img " src="https://cdn1-production-images-kly.akamaized.net/HrVTP4yWOwPa4QXIzU1Oe35PK1Q=/0x0:3648x4863/640x853/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3054245/original/086402000_1582084262-000_1P3609.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5fUZUZLcNl51zoL7zccoNCxnrHzeBVqlL-79b0deQ8oVEZAkO6HcQvrypKw6yuykBAQlJqQ&amp;ec=45771803';" alt="Lirik Lagu Lovely Billie Eilish Khalid Ragam Bola Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lirik Lagu Lovely Billie Eilish Khalid Ragam Bola Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/zD2dx-a_2kU/sddefault.jpg" data-lightbox="roadtrip" data-title="Lyric Lirik Lovely Billie Eilish Khalid Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/zD2dx-a_2kU/sddefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzmD91xEgRUPqtRq0t9zSYb9VcpHgLUB00NWr-oQfJ4VNHk1_B6FdqgyF6Z2x43TgrrQc1rg&amp;ec=45771803';" alt="Lyric Lirik Lovely Billie Eilish Khalid Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lyric Lirik Lovely Billie Eilish Khalid Youtube</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/5d/e4/f6/5de4f6813efe36bc4a8fc551c99a5bca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzmD91xEgRUPqtRq0t9zSYb9VcpHgLUB00NWr-oQfJ4VNHk1_B6FdqgyF6Z2x43TgrrQc1rg&amp;ec=45771803';" alt="Lyric Lirik Lovely Billie Eilish Khalid Youtube">
+										<div class="card-body">
+						<h3 class="h5"><b>Billie Eilish Khalid Thought I found a way Thought I found a way out Found But you never go away Never go away So I guess I gotta stay now Pre-Chorus.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Billie eilish lovely lirik</strong>. 
+								
+																	Billie Eilish Khalid Lovely Lyrics Verse 1. 
+																	Thought I found a way Thought I found a way yeah found But you never go away never go away So I guess I gotta stay now Oh I hope someday Ill make it out of here Even if it takes all night or a hundred years Need a. 
+																	It is composed and written by Billie Eilish Finneas OConnell Khalid Robinson. 
+																	Thought I found a way Thought I found a way yeah found But you never go away never go away So I guess I gotta stay now Oh I hope some day Ill make it out of here Even if it takes all night or a hundred years Need a place to hide but I cant find one near Wanna feel alive outside I can fight my fear Isnt. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In an interview with NME Billie revealed that the song was partly inspired by instances where she shoplifted or took toys from friends as a child. 
+																	Even if it takes all night or a hundred years. 
+																	Heart made of glass my mind of stone. 
+																	Billie Eilish Khalid Oh I hope some day Ill make it out of here. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	She begins to sing in a crescendo showing her. 
+																	Billie Eilish told Zane Lowe from Beats 1 Apple Musics radio station where this song premiered on the 19th of April 2018 The song is really freaking depressing oh how lovely just like taking everything horrible You know what this is great Im so happy being so miserable. 
+																	SONGLYRICS just got interactive. 
+																	Lovely is the popular pop song from the album 13 Reasons Why Season 2. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Billie Eilish - lovely Lyrics Thought I found a way Thought I found a way yeah found But you never go away never go away. 
+																	Lovely is a song by American singers Billie Eilish and Khalid for the official soundtrack of the second season of the Netflix drama series 13 Reasons Why. 
+																	With an appetite for the gliding glassy indie-pop of artists like Aurora and Lana Del Rey and the Distorted Menace of Tyler the Creator and Earl Sweatshirt Billie Eilish listens to music the way that most watch movies entirely undefined by genre. 
+																	Khalid - lovely Lyrics. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Lovely is so cute but the lyrics dont mean shit they do though heres the thing though I feel bad because like my. 
+																	Billie Eilish Khalid Thought I found a way Thought I found a way yeah found. 
+																	The song is called lovely since it is depressing it is about getting out of everything horrible after feeling miserableIn my opinion when she sings about finding a way out its her thinking shes found a way to get away from the depression controlling her life. 
+																	Lovely Lyrics Billie Eilish Billie Eilish. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The song was released on April 19 2018 through Darkroom and Interscope Records. 
+																	Id leave and want to throw up with guilt. 
+																	Lirik Lagu Lovely Dan Terjemahannya- Billie Eilish Verse 1. 
+																	It was written by the lead artists and Eilishs brother Finneas OConnell who also produced the track. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Oh aku harap suatu hari nanti aku akan keluar dari sini. 
+																	Although the depression is still there and she might as well stay like this. 
+																	In an interview with NPO 3FM Eilish states about the track. 
+																	Lovely here is a use of mordacity showing that loneliness isnt actually very lovely. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The song reached the top five in Australia and New. 
+																	This song is sung by Billie Eilish Khalid. 
+																	Lovely lyrics Billie Eilish Thought I found a way Thought I found a way yeah found But you never go away never go away. 
+																	This bleeds through into her own unique style of music calling out lyrics. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It depicts on their depression and how it actually feels to be in solitude. 
+																	Billie Eilish Khalid Lovely Lyrics. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/4a/87/fa/4a87faea1ee70b2d60ee08e0524fc31d.jpg" data-lightbox="roadtrip" data-title="Lovely With Khalid By Billie Eilish Khalid Ifttt Tumblr Billie Billie Eilish Khalid">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/4a/87/fa/4a87faea1ee70b2d60ee08e0524fc31d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwkW9miHweAqmBU5EmaH8yfAVYv1Gel0nINoyqsiHxyo29wK9yiEsbDZ6Vh0ItOLBDAYd60A&amp;ec=45771803';" alt="Lovely With Khalid By Billie Eilish Khalid Ifttt Tumblr Billie Billie Eilish Khalid">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lovely With Khalid By Billie Eilish Khalid Ifttt Tumblr Billie Billie Eilish Khalid</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://1.bp.blogspot.com/-sabJ8XEzL_4/XE9GskEbVKI/AAAAAAAAAFU/b0ssmjf1aqsLicGzkHFGmWBA2Qmtq5AgQCLcBGAs/s1600/Untfsffsitled.jpg" data-lightbox="roadtrip" data-title="Billie Eilish With Khalid Lovely Lirik Dan Terjemahan Lirik Lagu 76">
+											<img class="card-img v-image ads-img " src="https://1.bp.blogspot.com/-sabJ8XEzL_4/XE9GskEbVKI/AAAAAAAAAFU/b0ssmjf1aqsLicGzkHFGmWBA2Qmtq5AgQCLcBGAs/s1600/Untfsffsitled.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv8_DVM3Yq5IDJDULGNCI9qTx8dxhdw03jGFhRfJNwCpZZ1H6-3Znr9r6dPVG8SxZCu51yLQ&amp;ec=45771803';" alt="Billie Eilish With Khalid Lovely Lirik Dan Terjemahan Lirik Lagu 76">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Billie Eilish With Khalid Lovely Lirik Dan Terjemahan Lirik Lagu 76</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://1.bp.blogspot.com/-j6KZvs7vDj0/XDLqCLMJA7I/AAAAAAAAAiI/iCsKxgiNH94Bl_4Q-dQoj7TMpW1DzVXvwCLcBGAs/s1600/khalid-billie-eilish.JPG" data-lightbox="roadtrip" data-title="Blog Newbie Lovely Billie Eilish Feat Khalid Terjemahan Lirik Lagu Barat Newbie">
+											<img class="card-img v-image ads-img " src="https://1.bp.blogspot.com/-j6KZvs7vDj0/XDLqCLMJA7I/AAAAAAAAAiI/iCsKxgiNH94Bl_4Q-dQoj7TMpW1DzVXvwCLcBGAs/s1600/khalid-billie-eilish.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIynOPFLdZbHM3vWuq2Magl2jybbU2djbP7fAVlQrHjyacq-ru9qdblB6fbDPddJCx8qqSTw&amp;ec=45771803';" alt="Blog Newbie Lovely Billie Eilish Feat Khalid Terjemahan Lirik Lagu Barat Newbie">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Blog Newbie Lovely Billie Eilish Feat Khalid Terjemahan Lirik Lagu Barat Newbie</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img.youtube.com/vi/9kCUhJ9M97Q/hqdefault.jpg" data-lightbox="roadtrip" data-title="Download Billie Eilish Lovely Letra Mp3 Mp4 Popular Hemaviton Mp3">
+											<img class="card-img v-image ads-img " src="https://img.youtube.com/vi/9kCUhJ9M97Q/hqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB8wGSctSh8q-cqWP_az2DpUahNuM3fMQHn4MbjJ5Hg6_pyfNd2d_JuA7d948ns92nlvy6nA&amp;ec=45771803';" alt="Download Billie Eilish Lovely Letra Mp3 Mp4 Popular Hemaviton Mp3">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Download Billie Eilish Lovely Letra Mp3 Mp4 Popular Hemaviton Mp3</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/62/61/a8/6261a851717fdcd012812779342679f8.jpg" data-lightbox="roadtrip" data-title="Lovely Feat Khalid Billie Eilish Billieeilish Songs Quotes Lyrics Quoteoftheday Lyrics Aesthetic Song Lyrics Wallpaper Billie Eilish">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/62/61/a8/6261a851717fdcd012812779342679f8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR11wa8ZHcN4kOi23mGoLx7XVE9GIwAwk06zzRfCdcoyhEBeWAZdw33uFm2MYeOKkLZHvig1g&amp;ec=45771803';" alt="Lovely Feat Khalid Billie Eilish Billieeilish Songs Quotes Lyrics Quoteoftheday Lyrics Aesthetic Song Lyrics Wallpaper Billie Eilish">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lovely Feat Khalid Billie Eilish Billieeilish Songs Quotes Lyrics Quoteoftheday Lyrics Aesthetic Song Lyrics Wallpaper Billie Eilish</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/54/8a/85/548a85fd67495a1bf3a2823d5d32730e.jpg" data-lightbox="roadtrip" data-title="Lirik Lagu Billie Eilish Bury A Friend Dan Terjemahan Lirik Lagu Billie Eilish Bury A Friend Dan Terjemahan Billie Eilish Billie Sampul Album Musik">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/54/8a/85/548a85fd67495a1bf3a2823d5d32730e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy8rrQ20iAKfDSUTpm2avm-hw9udV9fmHxIsl61bY-7UIfscOjUwN5CDYojQ2EA9I8rwbhQA&amp;ec=45771803';" alt="Lirik Lagu Billie Eilish Bury A Friend Dan Terjemahan Lirik Lagu Billie Eilish Bury A Friend Dan Terjemahan Billie Eilish Billie Sampul Album Musik">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lirik Lagu Billie Eilish Bury A Friend Dan Terjemahan Lirik Lagu Billie Eilish Bury A Friend Dan Terjemahan Billie Eilish Billie Sampul Album Musik</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/e4/f6/5de4f6813efe36bc4a8fc551c99a5bca.jpg" data-lightbox="roadtrip" data-title="Thank You For Letting Me Go It Will Be Ok It S For The Best Billie Eilish Lovely With Khalid Youtube Music Khalid Billie Eilish Billie">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/e4/f6/5de4f6813efe36bc4a8fc551c99a5bca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUxwLvrBD4BFd6Xmcu0BvVDBdtGqhUIptLJ4WUR7ot2xvEpNtGxpKJQkII53pKU0CdEb981Q&amp;ec=45771803';" alt="Thank You For Letting Me Go It Will Be Ok It S For The Best Billie Eilish Lovely With Khalid Youtube Music Khalid Billie Eilish Billie">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thank You For Letting Me Go It Will Be Ok It S For The Best Billie Eilish Lovely With Khalid Youtube Music Khalid Billie Eilish Billie</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://4.bp.blogspot.com/-SkqqI_1ZUNc/Wia6wJpGJOI/AAAAAAAABGQ/eCQCHmv4rPYMqUsSamrVeTS5ROjQUflJACPcBGAYYCw/s400/Lirik%2BLagu.png" data-lightbox="roadtrip" data-title="Billie Eilish Lovely Feat Khalid Lirik Lagu Terjemahan">
+											<img class="card-img v-image ads-img " src="https://4.bp.blogspot.com/-SkqqI_1ZUNc/Wia6wJpGJOI/AAAAAAAABGQ/eCQCHmv4rPYMqUsSamrVeTS5ROjQUflJACPcBGAYYCw/s400/Lirik%2BLagu.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl4NPyvw-DsPjWANZ9LtHJtoZv9b98rHlJUfbYbRpPg1uPldjkJ25jk7GVY_0LcPFV8plC7w&amp;ec=45771803';" alt="Billie Eilish Lovely Feat Khalid Lirik Lagu Terjemahan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Billie Eilish Lovely Feat Khalid Lirik Lagu Terjemahan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/5f/00/0b5f003a2f35fcee42d7489b43fc0adc.jpg" data-lightbox="roadtrip" data-title="Isn T It Lovely All Alone Heart Made Of Glass My Mind Of Stone Tear Me To Pieces Skin And Bone Hello Welcome Hom Billie Eilish My Love Lyrics Song Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/5f/00/0b5f003a2f35fcee42d7489b43fc0adc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWkg4pSroXa2IHnn8kdgrlKZodK7FE33c5eeQ1BCY4RFpwKQuFZl09cEmpBSlAoOeabOEXaw&amp;ec=45771803';" alt="Isn T It Lovely All Alone Heart Made Of Glass My Mind Of Stone Tear Me To Pieces Skin And Bone Hello Welcome Hom Billie Eilish My Love Lyrics Song Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Isn T It Lovely All Alone Heart Made Of Glass My Mind Of Stone Tear Me To Pieces Skin And Bone Hello Welcome Hom Billie Eilish My Love Lyrics Song Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://2.bp.blogspot.com/-_qgUP5SIV6U/XGuR0mi42cI/AAAAAAAABI0/QSU6NDSNlZo3w0FloD22f_RCOSnWh-UJgCKgBGAs/s1600/your_quotes_picture%2B%252848%2529.jpg" data-lightbox="roadtrip" data-title="Picture Quote Billie Eilish Feat Khalid Lovely">
+											<img class="card-img v-image ads-img " src="https://2.bp.blogspot.com/-_qgUP5SIV6U/XGuR0mi42cI/AAAAAAAABI0/QSU6NDSNlZo3w0FloD22f_RCOSnWh-UJgCKgBGAs/s1600/your_quotes_picture%2B%252848%2529.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-A14xqQqflSo4KJirFiTptENIDalcVqp-s5Lb97hLYz4zjzoSqoeLN13AIAh6IhP04OIJbg&amp;ec=45771803';" alt="Picture Quote Billie Eilish Feat Khalid Lovely">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Picture Quote Billie Eilish Feat Khalid Lovely</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/AGYnCaOIuVI/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Lirik Lagu Billie Eilish Lovely Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/AGYnCaOIuVI/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfnWgMUMYBbjvGoLKXveS-kCfLpJap1395gY6kEOqp4mpyCeHhpkJ3P2MJFDPJk2ndEXMHvA&amp;ec=45771803';" alt="Lirik Lagu Billie Eilish Lovely Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lirik Lagu Billie Eilish Lovely Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.guitartabsexplorer.com/images/tabs/billie-eilish_lovely.jpg" data-lightbox="roadtrip" data-title="Lovely Guitar Chords By Billie Eilish Guitar Chords Explorer">
+											<img class="card-img v-image ads-img " src="https://www.guitartabsexplorer.com/images/tabs/billie-eilish_lovely.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7uqug4uYL-6LOPCgn7e-bHb7q8w4PueCi4vAhMDRWJnFaIyMXPaKEmqnQ_7bhAeyd7FluUQ&amp;ec=45771803';" alt="Lovely Guitar Chords By Billie Eilish Guitar Chords Explorer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lovely Guitar Chords By Billie Eilish Guitar Chords Explorer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/27/eb/d3/27ebd397d9767a2e350b7092a19ec96d.jpg" data-lightbox="roadtrip" data-title="Pin By Nevaeh In Nirvana On One Hundred Song Lyrics Wallpaper Song Lyric Quotes Song Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/27/eb/d3/27ebd397d9767a2e350b7092a19ec96d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQanC0JdQyzSTeYZLeqDFQ_uaREe9Ge4VZxxMYWHjXd1EV_9slTJYvaZwkYLt6K9OyMBnI2vg&amp;ec=45771803';" alt="Pin By Nevaeh In Nirvana On One Hundred Song Lyrics Wallpaper Song Lyric Quotes Song Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Nevaeh In Nirvana On One Hundred Song Lyrics Wallpaper Song Lyric Quotes Song Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-much-of-college-does-the-gi-bill-pay-for.html">How Much Of College Does The Gi Bill Pay For</a></li>
+													<li class="list-group-item"><a href="/how-much-is-the-military-gi-bill.html">How Much Is The Military Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-much-does-va-cwt-pay.html">How Much Does Va Cwt Pay</a></li>
+													<li class="list-group-item"><a href="/how-much-does-veterans-counselor-make.html">How Much Does Veterans Counselor Make</a></li>
+													<li class="list-group-item"><a href="/how-much-does-the-va-governor-make-annually.html">How Much Does The Va Governor Make Annually</a></li>
+													<li class="list-group-item"><a href="/how-much-is-gm-military-discount.html">How Much Is Gm Military Discount</a></li>
+													<li class="list-group-item"><a href="/how-much-of-your-donation-goes-to-disabled-american-veterans.html">How Much Of Your Donation Goes To Disabled American Veterans</a></li>
+													<li class="list-group-item"><a href="/how-to-add-parents-to-va-compensation.html">How To Add Parents To Va Compensation</a></li>
+													<li class="list-group-item"><a href="/how-much-does-virginia-tech-pay-metallica.html">How Much Does Virginia Tech Pay Metallica</a></li>
+													<li class="list-group-item"><a href="/how-much-does-the-gi-bill-cover-for-housing.html">How Much Does The Gi Bill Cover For Housing</a></li>
+													<li class="list-group-item"><a href="/how-much-is-monthly-va-benefits.html">How Much Is Monthly Va Benefits</a></li>
+													<li class="list-group-item"><a href="/how-much-is-a-10-va-rating.html">How Much Is A 10 Va Rating</a></li>
+													<li class="list-group-item"><a href="/how-much-money-is-the-montgomery-gi-bill.html">How Much Money Is The Montgomery Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-painful-is-intercostal-neuralgia.html">How Painful Is Intercostal Neuralgia</a></li>
+													<li class="list-group-item"><a href="/how-much-gi-bill-housing-allowance.html">How Much Gi Bill Housing Allowance</a></li>
+													<li class="list-group-item"><a href="/how-much-does-va-pay-for-home-health-care.html">How Much Does Va Pay For Home Health Care</a></li>
+													<li class="list-group-item"><a href="/how-service-dogs-help-veterans-with-ptsd.html">How Service Dogs Help Veterans With Ptsd</a></li>
+													<li class="list-group-item"><a href="/how-much-does-the-va-pay-for-40-disability.html">How Much Does The Va Pay For 40 Disability</a></li>
+													<li class="list-group-item"><a href="/how-to-apply-for-va-loan-navy-federal.html">How To Apply For Va Loan Navy Federal</a></li>
+													<li class="list-group-item"><a href="/how-much-money-does-the-gi-bill-pay-for-college.html">How Much Money Does The Gi Bill Pay For College</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

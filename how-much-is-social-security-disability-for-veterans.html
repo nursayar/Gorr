@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>How Much Is Social Security Disability For Veterans - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "How Much Is Social Security Disability For Veterans",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/60/85/f6/6085f6261edac156b9c959d291120379.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+much+is+social+security+disability+for+veterans",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>How Much Is Social Security Disability For Veterans</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">They may also use the Medicaid and Medicare health benefits that come with SSISSDI to supplement VA health services. The VA and SSA process claims differently. Third most people applying for Social Security disability cannot have more than 1310 in monthly income from all sources combined. <br>				
+			</p>
+										<a class="badge badge-info" href="/virginia-real-estate-license-felony.html">virginia real estate license felony</a>
+											<a class="badge badge-danger" href="/virginia-department-of-education-diploma-requirements.html">virginia department of education diploma requirements</a>
+											<a class="badge badge-secondary" href="/virginia-real-estate-license-sample-questions.html">virginia real estate license sample questions</a>
+											<a class="badge badge-success" href="/virginia-dept-of-education-standards.html">virginia dept of education standards</a>
+											<a class="badge badge-danger" href="/virginia-department-of-insurance-continuing-education.html">virginia department of insurance continuing education</a>
+											<a class="badge badge-secondary" href="/virginia-department-of-education-graduation-rates.html">virginia department of education graduation rates</a>
+											<a class="badge badge-danger" href="/virginia-department-of-education-website.html">virginia department of education website</a>
+											<a class="badge badge-danger" href="/virginia-department-of-education-iep.html">virginia department of education iep</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you have come to visit the right site.  Our website provides you with hints for seeing the maximum quality video and picture content, search and locate more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, therefore we recommend this video for you to view.  You can also contribute to supporting this site by sharing videos and graphics that you like on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/0f/b2/9a0fb242954e0f75f99eea578f7fd5f6.png" data-lightbox="roadtrip" data-title="Top 5 Social Security Disability Application Mistakes To Avoid Social Security Disability Disability Application Social Security Disability Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/0f/b2/9a0fb242954e0f75f99eea578f7fd5f6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtmuhvr1gefoPETfiyp-MjjpCP-E4-VG17lQ';" alt="Top 5 Social Security Disability Application Mistakes To Avoid Social Security Disability Disability Application Social Security Disability Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 5 Social Security Disability Application Mistakes To Avoid Social Security Disability Disability Application Social Security Disability Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/5b/60/e05b60310e31626a0d61b2abdcb1d688.png" data-lightbox="roadtrip" data-title="How To Qualify For Social Security Disability Benefits Social Security Disability Benefits Social Security Disability Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/5b/60/e05b60310e31626a0d61b2abdcb1d688.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVMMr7U8_ZDjfSUXwqeC-qOEB4Me_NPVzU3Q';" alt="How To Qualify For Social Security Disability Benefits Social Security Disability Benefits Social Security Disability Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Qualify For Social Security Disability Benefits Social Security Disability Benefits Social Security Disability Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/6e/ca/306eca09ade696df714a4ce1d8b9ad54.jpg" data-lightbox="roadtrip" data-title="Your Guide To Ssi And Ssdi What Are Social Security S Disability Programs What Is Social Social Security Disability Ssi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/6e/ca/306eca09ade696df714a4ce1d8b9ad54.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGUP_Iol3EezIeXPxCz85KjO-BdCy9gpdKtA';" alt="Your Guide To Ssi And Ssdi What Are Social Security S Disability Programs What Is Social Social Security Disability Ssi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Your Guide To Ssi And Ssdi What Are Social Security S Disability Programs What Is Social Social Security Disability Ssi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3c/75/6e/3c756ebd44e66e4aa758f6d9634c9b5d.jpg" data-lightbox="roadtrip" data-title="Pin On Https Veteranappeal Com">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3c/75/6e/3c756ebd44e66e4aa758f6d9634c9b5d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBJF-C-DtgGvRvWBobo6_S2bW7ndRKxPcMIw';" alt="Pin On Https Veteranappeal Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Https Veteranappeal Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/95/44/4895444deecbdf9adb790021240da84e.jpg" data-lightbox="roadtrip" data-title="Do Social Security Disability Benefits Switch To Retirement Benefits When Yo Social Security Disability Benefits Social Security Disability Retirement Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/95/44/4895444deecbdf9adb790021240da84e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTmZ6KmZ3P28m9OfL7fyKCz6Gjp4-33ZGCRQ';" alt="Do Social Security Disability Benefits Switch To Retirement Benefits When Yo Social Security Disability Benefits Social Security Disability Retirement Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Do Social Security Disability Benefits Switch To Retirement Benefits When Yo Social Security Disability Benefits Social Security Disability Retirement Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/0b/a9/310ba9ab18a889dc3b5b7a6975ec8ab4.jpg" data-lightbox="roadtrip" data-title="Social Security And Va Veterans Disability Disability Secrets Disabled Veterans Benefits Social Security Benefits Retirement Disability Benefit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/0b/a9/310ba9ab18a889dc3b5b7a6975ec8ab4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJQVteE3nZgXgCAfhARPNBBxHaQBB3ybLx1A';" alt="Social Security And Va Veterans Disability Disability Secrets Disabled Veterans Benefits Social Security Benefits Retirement Disability Benefit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Social Security And Va Veterans Disability Disability Secrets Disabled Veterans Benefits Social Security Benefits Retirement Disability Benefit</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/b5/a1/b7/b5a1b787c7e0aa114b3c271599f5a4a8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJQVteE3nZgXgCAfhARPNBBxHaQBB3ybLx1A';" alt="Social Security And Va Veterans Disability Disability Secrets Disabled Veterans Benefits Social Security Benefits Retirement Disability Benefit">
+										<div class="card-body">
+						<h3 class="h5"><b>Do SSDI And Veteran Disability Benefits Affect Each Other.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How much is social security disability for veterans</strong>. 
+								
+																	Both Social Security and VA pay disability benefits. 
+																	Since youre a disabled veteran with a 100 PT rating your monthly VA benefit payments dont apply towards that limit. 
+																	Currently only applicants earning less than 1170 per month can qualify for SSDI. 
+																	On the other hand SSDI benefits are based on your work earnings record prior to disability much like Social Security retirement. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However their programs processes and criteria for receiving benefits are very different. 
+																	The veterans claim was pre-2017 therefore the old law applied. 
+																	Under this rule if your VA disability pay is 250 minus the 20 general exclusion your SSI benefits would be reduced by 230. 
+																	According to the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans who did not but who have low income and low assets can collect Supplemental Security Income unless their VA benefits put them over the income limit for SSI. 
+																	The amount you receive in Social Security Disability benefits is dependent upon how much you paid into the system while working. 
+																	The main difference is that the VA system allows for partial disability benefits in percentages 10 20 30 up to 100 and awards benefits based on the determination. 
+																	Particularly it is below the threshold that disqualifies an applicant from being eligible for benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If Im already receiving Social Security Disability Insurance why bother But there are many reasons filing for VA disability is worth the struggle. 
+																	What is VA Unemployability. 
+																	Here are some questions vets frequently ask about applying for Social Security disability. 
+																	VA benefits are classified by the Social Security Administration as unearned income that does not come from a paying job. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In 2020 the range was about 800 to 1800 with an average of about 1200. 
+																	Some wounded warriors and Veterans who have a compensation rating of 100 PT are unaware that Social Security may expedite the processing of their disability claims. 
+																	Though the SSA offers a disability program their system is an all or nothing evaluation scale. 
+																	SSDI recipients typically receive 700 to 1700 per month. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA Unemployability and Social Security Disabled Veterans. 
+																	The second type is Social Security Disability Insurance SSDI. 
+																	If a veteran is rated 100 percent they will receive about 3000 a month. 
+																	SSA does not even consider the VAs rating when deciding whether someone qualifies for Social Security Disability benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	More specifically applicants must still meet the SSAs definition of disability in. 
+																	SSDI Payments Are NOT Affected By Your VA Disability Payments. 
+																	Unfortunately the VAs 100 rating means NOTHING to SSA when deciding a claim. 
+																	A VA compensation rating of 100 Permanent and Total does not guarantee that you will receive Social Security disability benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans who worked and paid Social Security taxes long enough in either military or nonmilitary jobs can collect Social Security Disability Insurance SSDI. 
+																	You are only eligible for disability benefits from Social Security called Social Security Disability Insurance or SSDI if you have worked full-time at least five of the last ten years. 
+																	The VA disability system when it works is a beautiful thing says Mr. 
+																	This is a part of the Veterans AffairsVA disability compensation program where certain Veterans get paid 100 of their disability. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Social Security may also use VA or DOD evidence to expedite processing of claims for Wounded Warriors and veterans with a 100. 
+																	Regardless the SSA must determine that a veterans income. 
+																	The Noble case involved a veteran with an 80 disability rating and who was on his third application for Social Security disability. 
+																	The VA and the Department of Defense DoD share medical records electronically with Social Security which will use the evidence in evaluating its applications for Social Security disability insurance and SSI. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The SSA looks at how much your health problems limit your ability to work when determining your eligibility for monthly SSD benefits. 
+																	Even though the old law applied he and Social Security disagreed about how much weight his VA disability should get. 
+																	Check these tables on the VA website to see how much you may receive. 
+																	If you were given a 100 PT rating you can have an expedited claim though this will not guarantee you will receive Social Security disability benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The applicant must be deemed permanently disabled or 100 disabled by the SSA. 
+																	And even less-than-total disability ratings come with significant benefits. 
+																	Expedited Claims for Veterans. 
+																	When Are Veterans Eligible for Social Security Disability. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Social Security disability for veterans is available solely for claimants whose impairments last 12 months or longer. 
+																	SSDI is granted to those who have earned enough work credits by paying taxes into Social Security. 
+																	Many veterans come to us with a VA Rating of 100 Permanent and Total Disability and expect to easily win an SSA claim for disability. 
+																	In addition Veterans may not realize they can sometimes qualify for both VA and Social Security benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Other disability payments can reduce the amount of SSDI that you receive however SSI and VA benefits will not reduce your SSDI benefit. 
+																	Veterans can receive over 3400 a month if they have dependents and obtain a 100 VA Disability rating. 
+																	Evaluating the Severity of the PTSD. 
+																	Department of Veterans Affairs VA Unemployability is also known as Individual Unemployability. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans may be eligible for Supplemental Security Income SSI or Social Security Disability Insurance SSDI in conjunction with or as an alternative to VA disability payments. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/85/f6/6085f6261edac156b9c959d291120379.png" data-lightbox="roadtrip" data-title="Social Security Disability Application And Information Vets Disability Guide Disability Application Social Security Disability Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/85/f6/6085f6261edac156b9c959d291120379.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD_3eYF9XBo63mRhIffIfE0_Oz2NQhQl4atg';" alt="Social Security Disability Application And Information Vets Disability Guide Disability Application Social Security Disability Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Social Security Disability Application And Information Vets Disability Guide Disability Application Social Security Disability Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/56/3f/87563fab1e8e1e57e5f97c85ee5e84c9.png" data-lightbox="roadtrip" data-title="Social Security Disability Benefits And Income Social Security Disability Benefits Social Security Disability Disability Benefit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/56/3f/87563fab1e8e1e57e5f97c85ee5e84c9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlSQvVPLwKwUpxFEh4l9aEtrvaVIFZ-ZzKxA';" alt="Social Security Disability Benefits And Income Social Security Disability Benefits Social Security Disability Disability Benefit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Social Security Disability Benefits And Income Social Security Disability Benefits Social Security Disability Disability Benefit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/60/c8/f1/60c8f1a59b9cc4334822207efc0eda8c.jpg" data-lightbox="roadtrip" data-title="How Does Va Disability Pay Affect Social Security Payments The Answer Depends Greatly On Va Disability Disability Benefit Social Security Disability Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/60/c8/f1/60c8f1a59b9cc4334822207efc0eda8c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Md2Z9brvN6bcgrM0umGbJmy1464qMgEB8Q';" alt="How Does Va Disability Pay Affect Social Security Payments The Answer Depends Greatly On Va Disability Disability Benefit Social Security Disability Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Does Va Disability Pay Affect Social Security Payments The Answer Depends Greatly On Va Disability Disability Benefit Social Security Disability Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/e9/d3/46e9d3760496a532dfaaea439bd054fe.jpg" data-lightbox="roadtrip" data-title="Ssdi Disability Benefits Regardless Of Income Ssi Disability Benef Social Security Disability Social Security Disability Benefits Social Security Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/e9/d3/46e9d3760496a532dfaaea439bd054fe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT58UcdE7h3QzCFtKzl0p4lMH6NSm9xulhvtw';" alt="Ssdi Disability Benefits Regardless Of Income Ssi Disability Benef Social Security Disability Social Security Disability Benefits Social Security Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ssdi Disability Benefits Regardless Of Income Ssi Disability Benef Social Security Disability Social Security Disability Benefits Social Security Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/a1/b7/b5a1b787c7e0aa114b3c271599f5a4a8.png" data-lightbox="roadtrip" data-title="Disability Secrets For Getting Your Application Approved Coconut Health Benefits Health Lemon Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/a1/b7/b5a1b787c7e0aa114b3c271599f5a4a8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1Gst-m32KiJUKuHe4kgnvH3xgKIM1OFvotA';" alt="Disability Secrets For Getting Your Application Approved Coconut Health Benefits Health Lemon Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Disability Secrets For Getting Your Application Approved Coconut Health Benefits Health Lemon Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/ce/bd/c2cebd14d9913535936287d262f7374a.png" data-lightbox="roadtrip" data-title="Veterans Who Have A Va Compensation Rating Of 100 P T May Or May Not Qualify For Social Security Disabil Va Disability Social Security Disability Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/ce/bd/c2cebd14d9913535936287d262f7374a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzYJhv1an0zfGDYdbOdmBu_HtnUDYWtzudyA';" alt="Veterans Who Have A Va Compensation Rating Of 100 P T May Or May Not Qualify For Social Security Disabil Va Disability Social Security Disability Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Who Have A Va Compensation Rating Of 100 P T May Or May Not Qualify For Social Security Disabil Va Disability Social Security Disability Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/03/f6/c803f6fc39b4a00a2c5a9d3e0345def6.png" data-lightbox="roadtrip" data-title="Getting Both Social Security And Va Veterans Disability Benefits Disabilitysecrets Social Security Disability Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/03/f6/c803f6fc39b4a00a2c5a9d3e0345def6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4_QKdOEOvNOdy2WGNBjepvAxT_pM5g-vHHg';" alt="Getting Both Social Security And Va Veterans Disability Benefits Disabilitysecrets Social Security Disability Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Getting Both Social Security And Va Veterans Disability Benefits Disabilitysecrets Social Security Disability Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/59/ad/c459adfaca557196bfe6e68b8c54a8c2.png" data-lightbox="roadtrip" data-title="Qualifying Veterans Can Receive Social Security Disability Benefits Ssdi Ev Social Security Disability Social Security Disability Benefits Disability Benefit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/59/ad/c459adfaca557196bfe6e68b8c54a8c2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB_dXUPv5x4e-vUo1upUvLO21zv4E9CWGF3g';" alt="Qualifying Veterans Can Receive Social Security Disability Benefits Ssdi Ev Social Security Disability Social Security Disability Benefits Disability Benefit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Qualifying Veterans Can Receive Social Security Disability Benefits Ssdi Ev Social Security Disability Social Security Disability Benefits Disability Benefit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/64/5d/75/645d752e9d91a65d751de83ec7de07c8.png" data-lightbox="roadtrip" data-title="How To Qualify For Temporary Presumptive Disability Checks Supplemental Security Income Content Insurance Social Security Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/64/5d/75/645d752e9d91a65d751de83ec7de07c8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1f-87OcC-B6o0xf3HU3oks46mFotgzOgUwQ';" alt="How To Qualify For Temporary Presumptive Disability Checks Supplemental Security Income Content Insurance Social Security Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Qualify For Temporary Presumptive Disability Checks Supplemental Security Income Content Insurance Social Security Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/d2/de/75d2de313cc948cb957cadd18cab5dad.jpg" data-lightbox="roadtrip" data-title="Nashville Social Security Disability Lawyers Ssd Benefits In Tennessee Social Security Disability Social Security Disability Benefits Disability Lawyer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/d2/de/75d2de313cc948cb957cadd18cab5dad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIAOp30MyhHHsE6_CZRu1pp6VG3GtCGqK7mQ';" alt="Nashville Social Security Disability Lawyers Ssd Benefits In Tennessee Social Security Disability Social Security Disability Benefits Disability Lawyer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nashville Social Security Disability Lawyers Ssd Benefits In Tennessee Social Security Disability Social Security Disability Benefits Disability Lawyer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/d9/a1/bcd9a119a0b92cbe41a2ad163b17f6aa.jpg" data-lightbox="roadtrip" data-title="Ssdi Payments Come From Socialsecurity Trustfunds Ssi Comes From T Social Security Disability Benefits Social Security Disability Social Security Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/d9/a1/bcd9a119a0b92cbe41a2ad163b17f6aa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8Nrqha4bDN88JLehSO03MCX_0HTkFpQ4i0w';" alt="Ssdi Payments Come From Socialsecurity Trustfunds Ssi Comes From T Social Security Disability Benefits Social Security Disability Social Security Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ssdi Payments Come From Socialsecurity Trustfunds Ssi Comes From T Social Security Disability Benefits Social Security Disability Social Security Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/52/84/845284180a8c83b71d6d289deb0aab77.jpg" data-lightbox="roadtrip" data-title="Eligibility For Social Security Disability Benefits Disability Secrets Social Security Disability Benefits Social Security Disability Disability Benefit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/52/84/845284180a8c83b71d6d289deb0aab77.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScqDjacd3Lg4hL6iW7Gl6L8dWhjudqO51D2w';" alt="Eligibility For Social Security Disability Benefits Disability Secrets Social Security Disability Benefits Social Security Disability Disability Benefit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Eligibility For Social Security Disability Benefits Disability Secrets Social Security Disability Benefits Social Security Disability Disability Benefit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/91/8e/1d918e366ba5a1c6d90a95a740c3e905.png" data-lightbox="roadtrip" data-title="Getting Approved For Disability Benefits What To Know Social Security Disability Benefits Disability Benefit Social Security Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/91/8e/1d918e366ba5a1c6d90a95a740c3e905.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcLAmIIkjkWAxHH62DIe8KTAjP49xaBLFMsw';" alt="Getting Approved For Disability Benefits What To Know Social Security Disability Benefits Disability Benefit Social Security Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Getting Approved For Disability Benefits What To Know Social Security Disability Benefits Disability Benefit Social Security Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-disability-percentage-for-each-disabling-condition.html">Va Disability Percentage For Each Disabling Condition</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-for-melanoma.html">Va Disability Percentage For Melanoma</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentages-for-asthma.html">Va Disability Percentages For Asthma</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentages-for-sleep-apnea.html">Va Disability Percentages For Sleep Apnea</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-hypertension.html">Va Disability Percentage Hypertension</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-for-nerve-damage.html">Va Disability Percentage For Nerve Damage</a></li>
+													<li class="list-group-item"><a href="/va-disability-rates-2021.html">Va Disability Rates 2021</a></li>
+													<li class="list-group-item"><a href="/va-disability-rate-calculator-2020.html">Va Disability Rate Calculator 2020</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-for-conditions.html">Va Disability Percentage For Conditions</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-for-vertigo.html">Va Disability Percentage For Vertigo</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentages-for-hip.html">Va Disability Percentages For Hip</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentages-chart.html">Va Disability Percentages Chart</a></li>
+													<li class="list-group-item"><a href="/va-disability-rates-2018.html">Va Disability Rates 2018</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-for-ocd.html">Va Disability Percentage For Ocd</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-money.html">Va Disability Percentage Money</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-ptsd.html">Va Disability Percentage Ptsd</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-for-eyes.html">Va Disability Percentage For Eyes</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentages-for-heart-conditions.html">Va Disability Percentages For Heart Conditions</a></li>
+													<li class="list-group-item"><a href="/va-disability-rate-chart.html">Va Disability Rate Chart</a></li>
+													<li class="list-group-item"><a href="/va-disability-percentage-for-restless-leg-syndrome.html">Va Disability Percentage For Restless Leg Syndrome</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

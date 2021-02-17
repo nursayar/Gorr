@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Will Gi Bill Pay For Crossfit Certification - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Will Gi Bill Pay For Crossfit Certification",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/68/7c/49/687c49312241e116b282d2c267351d43.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=will+gi+bill+pay+for+crossfit+certification",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Will Gi Bill Pay For Crossfit Certification</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">GI Bill for certifications. CrossFits education and training offerings are designed in accordance with the highest standard of efficacy and excellence in human physical development. Typically to qualify the student must be receiving VA. <br>				
+			</p>
+										<a class="badge badge-info" href="/college-graduation-gifts-for-your-sister.html">college graduation gifts for your sister</a>
+											<a class="badge badge-success" href="/check-post-911-gi-bill-payment-status.html">check post 911 gi bill payment status</a>
+											<a class="badge badge-danger" href="/common-northern-virginia-trees.html">common northern virginia trees</a>
+											<a class="badge badge-secondary" href="/college-girls-basketball-rankings.html">college girls basketball rankings</a>
+											<a class="badge badge-secondary" href="/college-essay-guy-why-essay.html">college essay guy why essay</a>
+											<a class="badge badge-light" href="/college-girls-seldom-wear-sarees-these-days-do-they.html">college girls seldom wear sarees these days do they</a>
+											<a class="badge badge-light" href="/college-major-gifts.html">college major gifts</a>
+											<a class="badge badge-success" href="/columbia-university-gi-bill.html">columbia university gi bill</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you have come to visit the right site.  Our website gives you hints for viewing the maximum quality video and picture content, hunt and locate more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, particularly Youtube, therefore we recommend this video that you view.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://d1s2fu91rxnpt4.cloudfront.net/legacy/CesarBravoHSBravoCrossFitWestchesterNY.jpg" data-lightbox="roadtrip" data-title="Crossfit Forging Elite Fitness Tuesday 100921">
+											<img class="card-img v-image ads-img " src="https://d1s2fu91rxnpt4.cloudfront.net/legacy/CesarBravoHSBravoCrossFitWestchesterNY.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs4_LlDFkYxc-XXCYPa8E4o6iK7VFneUPWIA';" alt="Crossfit Forging Elite Fitness Tuesday 100921">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Crossfit Forging Elite Fitness Tuesday 100921</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.nestacertified.com/wp-content/uploads/2020/08/build-a-home-gym-for-personal-training-business.jpg" data-lightbox="roadtrip" data-title="Home Gym Profit Center Personal Trainer Certification Nutrition Courses Fitness Education">
+											<img class="card-img v-image ads-img " src="https://www.nestacertified.com/wp-content/uploads/2020/08/build-a-home-gym-for-personal-training-business.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGMH-EUcLvz7ZLqjonkHPQRiW9XyuwbOFQzA';" alt="Home Gym Profit Center Personal Trainer Certification Nutrition Courses Fitness Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Gym Profit Center Personal Trainer Certification Nutrition Courses Fitness Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/2d/35/832d35f183a2eabfa3d0de54f802f0fb.jpg" data-lightbox="roadtrip" data-title="Pin By Darius Montel Norwood On Fitness Group Fitness Instructor Fitness Instructor Group Fitness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/2d/35/832d35f183a2eabfa3d0de54f802f0fb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0XJ80QwD1FCUS7PYcK1x9Mv1Am0U0rLNJ8Q';" alt="Pin By Darius Montel Norwood On Fitness Group Fitness Instructor Fitness Instructor Group Fitness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Darius Montel Norwood On Fitness Group Fitness Instructor Fitness Instructor Group Fitness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6d/65/0a/6d650ae7ea51846dec04412f8e23ec26--bodybuilding-motivation-bodybuilding-fitness.jpg" data-lightbox="roadtrip" data-title="Nice D Fitness Motivation Workout Memes Arnold Schwarzenegger Bodybuilding">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6d/65/0a/6d650ae7ea51846dec04412f8e23ec26--bodybuilding-motivation-bodybuilding-fitness.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUIMUx12ttTi8M7P_byrT3Vfbfqj9vwZAjQg';" alt="Nice D Fitness Motivation Workout Memes Arnold Schwarzenegger Bodybuilding">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nice D Fitness Motivation Workout Memes Arnold Schwarzenegger Bodybuilding</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://profilepicsbucket.crossfit.com/4669b-P771421_4-184.jpg" data-lightbox="roadtrip" data-title="Crossfit Forging Elite Fitness Sunday 170716">
+											<img class="card-img v-image ads-img " src="https://profilepicsbucket.crossfit.com/4669b-P771421_4-184.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX4P1_OK0qxAJyKZNCECv1vguAITY3q1zfyA';" alt="Crossfit Forging Elite Fitness Sunday 170716">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Crossfit Forging Elite Fitness Sunday 170716</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/d6/3e/70/d63e7092208964d9ac14d9408b71c636.jpg" data-lightbox="roadtrip" data-title="Pin On Just For Me">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/d6/3e/70/d63e7092208964d9ac14d9408b71c636.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxM7BO7xRBO4TE28GPpvYc5mePOF8TBWldgg';" alt="Pin On Just For Me">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Just For Me</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i2.wp.com/www.militaryprintables.com/wp-content/uploads/2019/01/3999454.jpg?fit=980%2C700&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxM7BO7xRBO4TE28GPpvYc5mePOF8TBWldgg';" alt="Pin On Just For Me">
+										<div class="card-body">
+						<h3 class="h5"><b>Orlando FL Chicago IL Vienna VA Richmond Heights OH Norwalk CT Rochester Hills MI Philadelphia PA Waltham MA and Lyndhurst NJ.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Will gi bill pay for crossfit certification</strong>. 
+								
+																	GI Bill certificate of eligibility. 
+																	With the discount your fees will be 800 instead of 1000. 
+																	The Level 2 builds upon the Level 1 Certificate Course and is designed for any CrossFit trainer who wants to refine their coaching skills and acquire a deeper understanding of CrossFit methodology and its practical application as a trainer including program design lesson planning and implementation. 
+																	However what i have found is that the MGIB will pay or assist for vocational schools or classes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	CrossFit Level 2 Certificate Course. 
+																	Education and Training Home Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+																	Definitely worth looking into these locations if you have the GI Bill - thats a 630000 tuition paid for. 
+																	Service Members Now Eligible for Reimbursement October 30 2017 Colorado Springs CO Service members seeking a strength and conditioning certification to train their peers can now utilize the Post 911 GI Bill to obtain the only nationally-accredited certification dedicated to the challenges and demands specific to tactical communities. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you dont have one hit me up and i will put you in contact with our Base. 
+																	Conditions apply but necessary tutoring is available as a supplement to those receiving educational assistance. 
+																	Im afraid the GI Bill Tuition Assistance and VA were not accepted for the CrossFit Level 1 Course because it is an accredited course and not a certification. 
+																	Im a 4 year Marine Corps active duty veteran currently recieving. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I heard back from CrossFit HQ. 
+																	I am wondering if anyone out there knows the answer to this since I am having trouble searching through the pain that is the VAs website. 
+																	How you go about processing it Im not sure and your base education office might have a better idea. 
+																	Avoid Scams and Work Only with VA-Approved Companies A sad fact in our country is that there is a lot of money to be unethically made my ripping off veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In addition to entry-level courses such as the Level 1 Certificate Course intermediate-level courses such as the Level 2 Certificate Course and age-specific courses such as the CrossFit Kids Certificate Course CrossFit offers two. 
+																	Reimbursement for licensing and certification tests that have been specifically approved for the GI Bill is provided by the VA. 
+																	This percentage can change and it is important to consult the VA on a situational basis. 
+																	Once you apply for your benefits the VA will send you a certificate of eligibility that spells out exactly what you are eligible to receive. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can search for the approved certification tests with the Weams LicensesCertifications Search. 
+																	If youd still like to attend a level 1 course then you will qualify for a military discount. 
+																	With the discount your fees will be 800 instead of 1000. 
+																	If you fill out these forms for reimbursement for a License School or College you will experience approval delays. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	GI Bill for certifications Running a CrossFit Facility CrossFit Discussion Board Community Running a CrossFit. 
+																	GI Bill for CrossFit certifications - UPDATE. 
+																	The GI Bill provides educational assistance to servicemembers veterans and their dependents. 
+																	CrossFit Discussion Board Community Running a CrossFit Facility GI Bill for certifications. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Thankfully the GI Bill at least reimburses the cost of certification tests. 
+																	The GI Bill can reimburse you for licensing and certification tests that have been specifically approved for the GI Bill. 
+																	VA can pay you for the cost of the test as well as any preparatory course. 
+																	You can use part of your entitlement to cover the cost of certain tests you need to take to become a licensed or certified professionalor to apply for college or a training course. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For more information on GI. 
+																	Make sure to select Both in the LAC Category Type drop-down before. 
+																	Bill reimbursement and other FAQ visit the VA. 
+																	If you are using the Post 911 GI Bill the VA will pay a 50 housing allowance based on a national average. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Candidate must have a current CrossFit Level 2 Trainer certificate and 750 hours of coaching CrossFit for. 
+																	Im afraid the GI Bill Tuition Assistance and VA were not accepted for the CrossFit Level 1 Course because it is an accredited course and not a certification. 
+																	Reimbursement for exam fees has been approved for payment through the GI Bill. 
+																	We only cover tests approved for the GI Bill under this benefit so find out whats approved before you take any tests. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The National Personal Training Institute NPTI accepts the GI bill for the following locations. 
+																	For the latest information visit the WEAMS LicensesCertifications Search page. 
+																	Like the Montgomery GI Bill this bill will reimburse up to 2000 per certification test up to the cost of the test. 
+																	But the benefits should apply to the educational part the training and not the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Be sure to request reimbursement for the NFPT Certified Personal Fitness Trainer CERTIFICATION Test. 
+																	VA can pay only for the cost of the tests not any other fees. 
+																	The GI Bill 20 pays for all in-state tuition and fees at public trade schools vocational schools and certificate programs and up to 2516214 per year at private and foreign institutions. 
+																	GI Bill approval data is updated quarterly. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is the. 
+																	View Full Version. 
+																	The GI Bill covers more than just tuition. 
+																	If youd still like to attend a level 1 course then you will qualify for a military discount. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Remember the GI Bill covers the cost of certain certification tests not all. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i2.wp.com/www.militaryprintables.com/wp-content/uploads/2019/01/3999454.jpg?fit=980%2C700&amp;ssl=1" data-lightbox="roadtrip" data-title="The Best Health And Fitness Military Discounts For Gym Lovers">
+											<img class="card-img v-image ads-img " src="https://i2.wp.com/www.militaryprintables.com/wp-content/uploads/2019/01/3999454.jpg?fit=980%2C700&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5zVtvPbJS5-4uey_ApWSfzyqTVl_1iaFVWw';" alt="The Best Health And Fitness Military Discounts For Gym Lovers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Best Health And Fitness Military Discounts For Gym Lovers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/04/mycaa-faqs-military-benefits.jpg" data-lightbox="roadtrip" data-title="Mycaa Faq Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/04/mycaa-faqs-military-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNXiEV-G4QXc20Cp6LFJMmH5_rCsn9pbxpsA';" alt="Mycaa Faq Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mycaa Faq Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/fd/f2/d5/fdf2d5949d3f896e5cd7e03d0563cf5e.jpg" data-lightbox="roadtrip" data-title="Pin On Inner Peace Mind Body Soul">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/fd/f2/d5/fdf2d5949d3f896e5cd7e03d0563cf5e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRojjT9zRWA9B_PQje1x1XRFYPxIelXTpU1jA';" alt="Pin On Inner Peace Mind Body Soul">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Inner Peace Mind Body Soul</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/8UT0j80jkds/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Archive">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/8UT0j80jkds/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf7tcBfs9QfaI2ymDKOGTWqrvJwrw_PAP3qA';" alt="Archive">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Archive</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/16/c0/1a16c0085c614a213d2cfee5bbb093ae.png" data-lightbox="roadtrip" data-title="30 Inspirational Quotes On Sales Coaching Coach Quotes Inspirational Quotes Coach Quotes Inspiration">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/16/c0/1a16c0085c614a213d2cfee5bbb093ae.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJL9MUQlTxLBc7IDQLiuop_w9_g-UoF6OpNg';" alt="30 Inspirational Quotes On Sales Coaching Coach Quotes Inspirational Quotes Coach Quotes Inspiration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">30 Inspirational Quotes On Sales Coaching Coach Quotes Inspirational Quotes Coach Quotes Inspiration</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/52/f3/3152f3a111f8cf204356e4dd1a495dcc.jpg" data-lightbox="roadtrip" data-title="Iamw Where Men Can Come To Be Manly Stuff Diy Workout Medicine Ball No Equipment Workout">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/52/f3/3152f3a111f8cf204356e4dd1a495dcc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0zI9VuiS1R4NmNdJM2608wE4TucGPs5m5TQ';" alt="Iamw Where Men Can Come To Be Manly Stuff Diy Workout Medicine Ball No Equipment Workout">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iamw Where Men Can Come To Be Manly Stuff Diy Workout Medicine Ball No Equipment Workout</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/f9/cb/d0f9cb6bbb37f36baf36661a0086deb6.jpg" data-lightbox="roadtrip" data-title="Yugioh Nerd Anime Memes Funny Memes Stupid Funny Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/f9/cb/d0f9cb6bbb37f36baf36661a0086deb6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUz5F_k8YEu8c8l3XUgPZ8JGN3TZA5chWakg';" alt="Yugioh Nerd Anime Memes Funny Memes Stupid Funny Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Yugioh Nerd Anime Memes Funny Memes Stupid Funny Memes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="UAEqNBIN9HedTM" data-lightbox="roadtrip" data-title="Https Nwcommons Nwciowa Edu Cgi Viewcontent Cgi Article 1000 Context Classic2020">
+											<img class="card-img v-image ads-img " src="UAEqNBIN9HedTM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX1PfkagrgFg_ZkAO4izD5lOt-tpfQ5pEMLg';" alt="Https Nwcommons Nwciowa Edu Cgi Viewcontent Cgi Article 1000 Context Classic2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Nwcommons Nwciowa Edu Cgi Viewcontent Cgi Article 1000 Context Classic2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2018/10/Basic-Training.jpg" data-lightbox="roadtrip" data-title="Preparing For Basic Training Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2018/10/Basic-Training.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX5MZUgVDHHz_R7YwhV3FnexHVj4QfYGoPdA';" alt="Preparing For Basic Training Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Preparing For Basic Training Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/favicons/32557dbaf06165d0e773307d1cf77eb6cc8b8a75f61879bffff57f0a.png?e5f4efb62a9e2d44b19553ae20e1c4e9" data-lightbox="roadtrip" data-title="30 Inspirational Quotes On Sales Coaching Coach Quotes Inspirational Quotes Coach Quotes Inspiration">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/favicons/32557dbaf06165d0e773307d1cf77eb6cc8b8a75f61879bffff57f0a.png?e5f4efb62a9e2d44b19553ae20e1c4e9" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDrODD1AD1Lflnz5OFXIAorp2kXShjxX5XNw';" alt="30 Inspirational Quotes On Sales Coaching Coach Quotes Inspirational Quotes Coach Quotes Inspiration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">30 Inspirational Quotes On Sales Coaching Coach Quotes Inspirational Quotes Coach Quotes Inspiration</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/7c/49/687c49312241e116b282d2c267351d43.jpg" data-lightbox="roadtrip" data-title="Earl David Of Huntington 1152 1219 A Study In Anglo Scottish History By K J Stringer Since The Book Is Out Of Prin Outfit Accessories Game Dresses Books">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/7c/49/687c49312241e116b282d2c267351d43.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNF17SoaoH-F6mQM4EYWqKiDOMfiijyDpO-w';" alt="Earl David Of Huntington 1152 1219 A Study In Anglo Scottish History By K J Stringer Since The Book Is Out Of Prin Outfit Accessories Game Dresses Books">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Earl David Of Huntington 1152 1219 A Study In Anglo Scottish History By K J Stringer Since The Book Is Out Of Prin Outfit Accessories Game Dresses Books</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/c3/94/f5c394cc01b506684b5b4ea60dcd97c7.jpg" data-lightbox="roadtrip" data-title="Darce Choke System From Sidecontrol Bottom Jui Jitsu Bjj Jiu Jitsu">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/c3/94/f5c394cc01b506684b5b4ea60dcd97c7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl0iN28jvTq_zO33ePkdVsndet24mj_1uP2A';" alt="Darce Choke System From Sidecontrol Bottom Jui Jitsu Bjj Jiu Jitsu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Darce Choke System From Sidecontrol Bottom Jui Jitsu Bjj Jiu Jitsu</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/200x150/e4/33/ab/e433ab4f7b126297dafb6d209a7ffeae.jpg" data-lightbox="roadtrip" data-title="Yugioh Nerd Anime Memes Funny Memes Stupid Funny Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/200x150/e4/33/ab/e433ab4f7b126297dafb6d209a7ffeae.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK-eXBm_4D5k29NDxJUY2iADDDcPXrQGs80A';" alt="Yugioh Nerd Anime Memes Funny Memes Stupid Funny Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Yugioh Nerd Anime Memes Funny Memes Stupid Funny Memes</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/montgomery-law-passed.html">Montgomery Law Passed</a></li>
+													<li class="list-group-item"><a href="/montgomery-ward-payment-chart.html">Montgomery Ward Payment Chart</a></li>
+													<li class="list-group-item"><a href="/most-common-disability-claims-military.html">Most Common Disability Claims Military</a></li>
+													<li class="list-group-item"><a href="/most-popular-virginia-hike.html">Most Popular Virginia Hike</a></li>
+													<li class="list-group-item"><a href="/mumbai-top-30-gurukulam.html">Mumbai Top 30 Gurukulam</a></li>
+													<li class="list-group-item"><a href="/most-common-snakes-in-west-virginia.html">Most Common Snakes In West Virginia</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-vs-gi-bill.html">Montgomery Gi Bill Vs Gi Bill</a></li>
+													<li class="list-group-item"><a href="/most-popular-virginia-woolf-book.html">Most Popular Virginia Woolf Book</a></li>
+													<li class="list-group-item"><a href="/most-popular-va-disability-claims.html">Most Popular Va Disability Claims</a></li>
+													<li class="list-group-item"><a href="/musculoskeletal-va-disability.html">Musculoskeletal Va Disability</a></li>
+													<li class="list-group-item"><a href="/my-go-view-bills.html">My Go View Bills</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-to-post-911-gi-bill.html">Montgomery Gi Bill To Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/montgomery-water-works-bill-pay.html">Montgomery Water Works Bill Pay</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-qualifications.html">Montgomery Gi Bill Qualifications</a></li>
+													<li class="list-group-item"><a href="/most-popular-virginia-state-parks.html">Most Popular Virginia State Parks</a></li>
+													<li class="list-group-item"><a href="/montgomery-pa-tax-bill.html">Montgomery Pa Tax Bill</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-plus-kicker.html">Montgomery Gi Bill Plus Kicker</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-payment-amounts.html">Montgomery Gi Bill Payment Amounts</a></li>
+													<li class="list-group-item"><a href="/montgomery-ward-online-bill-pay.html">Montgomery Ward Online Bill Pay</a></li>
+													<li class="list-group-item"><a href="/montgomery-go-mart.html">Montgomery Go Mart</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

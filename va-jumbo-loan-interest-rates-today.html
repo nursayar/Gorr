@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Jumbo Loan Interest Rates Today - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Jumbo Loan Interest Rates Today",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/fb/9e/39/fb9e399667ec2e548e8b1d8b3fbc4a97.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+jumbo+loan+interest+rates+today",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Jumbo Loan Interest Rates Today</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">According to Andy Walden Economist and. If the down payment is less than 20 mortgage insurance may be required which could increase the monthly payment and the APR. Call us today to speak with a Low VA Rates VA Jumbo mortgage expert at 855-223-0705. <br>				
+			</p>
+										<a class="badge badge-success" href="/difference-between-gi-bill-and-911.html">difference between gi bill and 911</a>
+											<a class="badge badge-danger" href="/disability-rating-scale-for-depression.html">disability rating scale for depression</a>
+											<a class="badge badge-secondary" href="/do-100-disabled-veterans-pay-property-tax-in-ga.html">do 100 disabled veterans pay property tax in ga</a>
+											<a class="badge badge-success" href="/did-the-bills-go-to-4-straight-super-bowls.html">did the bills go to 4 straight super bowls</a>
+											<a class="badge badge-danger" href="/disabled-american-vet-donation-pick-up.html">disabled american vet donation pick up</a>
+											<a class="badge badge-light" href="/do-electric-bills-go-up-in-the-winter.html">do electric bills go up in the winter</a>
+											<a class="badge badge-dark" href="/didi-geal.html">didi geal</a>
+											<a class="badge badge-light" href="/digi-xbee.html">digi xbee</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you have come to pay a visit to the ideal blog.  Our website gives you suggestions for viewing the maximum quality video and image content, search and locate more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, especially Youtube, therefore we recommend this movie for you to view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/c1/29/9dc129240c44fdecf98451f96dd8c843.png" data-lightbox="roadtrip" data-title="Va Loan Pros And Cons Va Loan Loan Rates Lowest Mortgage Rates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/c1/29/9dc129240c44fdecf98451f96dd8c843.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUDyMYgCuBHyVXLDqpYgG3RBNob2yfo4Oj5w';" alt="Va Loan Pros And Cons Va Loan Loan Rates Lowest Mortgage Rates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Loan Pros And Cons Va Loan Loan Rates Lowest Mortgage Rates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f0/6e/fd/f06efdb8aede2ce902b45d987fcf076b.jpg" data-lightbox="roadtrip" data-title="What Is Better 15 Year Vs 30 Year The Loans Are Structurally Similar The Main Difference Is The Term Of Years A Sh 30 Year Mortgage Mortgage Mortgage Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f0/6e/fd/f06efdb8aede2ce902b45d987fcf076b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuYcjKEQGdetDUa5At-PFhAi_bOrVIohXoJA';" alt="What Is Better 15 Year Vs 30 Year The Loans Are Structurally Similar The Main Difference Is The Term Of Years A Sh 30 Year Mortgage Mortgage Mortgage Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Better 15 Year Vs 30 Year The Loans Are Structurally Similar The Main Difference Is The Term Of Years A Sh 30 Year Mortgage Mortgage Mortgage Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/0c/8b/07/0c8b07acad382968884349505a33ede0.jpg" data-lightbox="roadtrip" data-title="What Is Va Loan An Overview Of Va Home Loan 2019 Va Mortgage Loans Va Mortgages Refinance Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/0c/8b/07/0c8b07acad382968884349505a33ede0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJX45hHqTcAv6tkjdQ1WZnBpifAUYXrKPQkg';" alt="What Is Va Loan An Overview Of Va Home Loan 2019 Va Mortgage Loans Va Mortgages Refinance Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Va Loan An Overview Of Va Home Loan 2019 Va Mortgage Loans Va Mortgages Refinance Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/f9/06/40f9060739393f72d6e37899b0844d96.jpg" data-lightbox="roadtrip" data-title="Wednesday Word Of The Week Interest Rate Mortgage Interest Is The Percentage Charged On A Mortgage Tha Mortgage Interest Rates Lowest Mortgage Rates Loan Rates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/f9/06/40f9060739393f72d6e37899b0844d96.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMU1tHyTVR40Q-mSMqfhbMaZibUKAxkpnltA';" alt="Wednesday Word Of The Week Interest Rate Mortgage Interest Is The Percentage Charged On A Mortgage Tha Mortgage Interest Rates Lowest Mortgage Rates Loan Rates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wednesday Word Of The Week Interest Rate Mortgage Interest Is The Percentage Charged On A Mortgage Tha Mortgage Interest Rates Lowest Mortgage Rates Loan Rates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/47/0e/9a470e4b7057496e4ffe7aac30aaf037.png" data-lightbox="roadtrip" data-title="Check Out How Interest Rates Have Changed Since 1970 Now Is The Best Time To Buy Or Refinanc Paying Off Mortgage Faster Refinance Mortgage Home Buying Process">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/47/0e/9a470e4b7057496e4ffe7aac30aaf037.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4AztHRUim0mh1-PdbGqLVIVMAz5oeIlgZ3Q';" alt="Check Out How Interest Rates Have Changed Since 1970 Now Is The Best Time To Buy Or Refinanc Paying Off Mortgage Faster Refinance Mortgage Home Buying Process">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Check Out How Interest Rates Have Changed Since 1970 Now Is The Best Time To Buy Or Refinanc Paying Off Mortgage Faster Refinance Mortgage Home Buying Process</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/a6/d5/28a6d5edbe39e6116f85907e050cce1a.png" data-lightbox="roadtrip" data-title="Va Interest Rate Reduction Refinance Flyer For Veterans Greg Mattern Loan Officer At Academy Mortgage Chandler Refinance Loans Marketing Flyers Loan Officer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/a6/d5/28a6d5edbe39e6116f85907e050cce1a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSESJZmEE7R4ZczlzE3B0kfGRAlbl4JSutWCQ';" alt="Va Interest Rate Reduction Refinance Flyer For Veterans Greg Mattern Loan Officer At Academy Mortgage Chandler Refinance Loans Marketing Flyers Loan Officer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Interest Rate Reduction Refinance Flyer For Veterans Greg Mattern Loan Officer At Academy Mortgage Chandler Refinance Loans Marketing Flyers Loan Officer</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/0c/8b/07/0c8b07acad382968884349505a33ede0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSESJZmEE7R4ZczlzE3B0kfGRAlbl4JSutWCQ';" alt="Va Interest Rate Reduction Refinance Flyer For Veterans Greg Mattern Loan Officer At Academy Mortgage Chandler Refinance Loans Marketing Flyers Loan Officer">
+										<div class="card-body">
+						<h3 class="h5"><b>Select product to see detail.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va jumbo loan interest rates today</strong>. 
+								
+																	These offer low interest rates for loans between 510400 and 2 million Calculate Your Mortgage Payments See what your mortgage payment could be with todays rates. 
+																	The VAs backing of these loans make them a safe loan product for banks. 
+																	On Monday January 25 2021 according to Bankrates latest survey of the nations largest mortgage lenders the average 30-year VA loan rate is 3100 with an. 
+																	The first of these is the daily market fluctuations in mortgage loan interest rates and another is the participating lenders choices on what rates to offer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The average APR on a 15-year fixed-rate mortgage rose 9 basis points to 2390 and the average APR for a 51 adjustable-rate mortgage ARM remained at 2968 according to rates provided to. 
+																	The 71 ARM jumbo mortgage rate is 3000 with an APR of 3860. 
+																	Lower risk means the Veteran pays a lower rate. 
+																	The average 15-year fixed jumbo mortgage rate is 2380 with an APR of 2450. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA Jumbo Loan Interest Rates There are a number of variables that will affect the interest rate you are offered on a VA Jumbo Loan. 
+																	Interest rates may be slightly higher for a VA jumbo loan in some instances but whatever the difference in rate its still much lower compared to a conventional jumbo mortgage requiring a 10. 
+																	Use annual percentage rate APR which includes fees and costs to compare rates across lendersRates and APR below may include up to 50 in discount points as an upfront cost to borrowers and assume no cash out. 
+																	Just like other mortgages jumbo rates move up and down every day. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If the down payment is less than 20 mortgage insurance may be required which could increase the monthly payment and the APR. 
+																	The 51 arm jumbo mortgage rate is 2950 with an APR. 
+																	The 71 ARM jumbo mortgage rate is 2970 with an APR of 3830. 
+																	The average 15-year fixed jumbo mortgage rate is 2380 with an APR of 2450. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sometimes theyre higher than 30-year conforming loan rates and sometimes theyre lower. 
+																	On Thursday January 28 2021 according to Bankrates latest survey of the nations largest mortgage lenders the average 30-year VA refinance rate is 3000 with an APR of 3260. 
+																	That compares against the following standard deduction amounts. 
+																	Compare current interest rates to determine if a VA home loan is right for you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Low VA Rates LLC is proud to offer VA Jumbo Mortgage loans and we are here to help with any questions that you might have regarding Jumbo loan limits and guidelines. 
+																	At a 425 interest rate a homeowner would pay 4217413 in interest during the first 12 months on 1 million in mortgage debt. 
+																	Use our Compare Home Mortgage Loans Calculator for rates customized to your specific home financing need. 
+																	VA Jumbo Loan Rates. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jumbo Loans- Annual Percentage Rate APR calculation assumes a 600000 loan with a 20 down payment and borrower-paid finance charges of 0862 of the loan amount plus origination fees if applicable. 
+																	2250 2605 APR with 1500 discount points on a 45-day lock period for a 30-Year Fixed VA Jumbo 2625 2815 APR with 1000 discount point on a 60-day lock period for a 30-Year Streamline IRRRL Jumbo and 2750 3049 APR and 0625 discount points on a 60-day lock period for a 30-Year VA Cash-Out Jumbo. 
+																	Click here to check your VA jumbo loan eligibility. 
+																	The average APR on a 15-year fixed-rate mortgage remained at 2329 and the average APR for a 51 adjustable-rate mortgage ARM fell 1 basis point to 2959 according to rates provided to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 51 arm jumbo mortgage rate is 2970 with an APR. 
+																	Heres what todays VA mortgage rates look like. 
+																	What are todays VA mortgage rates. 
+																	Jumbo Loans- Annual Percentage Rate APR calculation assumes a 600000 loan with a 20 down payment and borrower-paid finance charges of 0862 of the loan amount plus origination fees if applicable. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Click here to check todays VA jumbo rates. 
+																	VA jumbo rates are competitive with those of standard jumbo loans and require much lower down payments. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/d1/68/fad1681c9138bb53b817638dbf1bcf95.jpg" data-lightbox="roadtrip" data-title="Jumbo Loans Jumbo Loans Loan Jumbo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/d1/68/fad1681c9138bb53b817638dbf1bcf95.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_bmplfnSTeWBNQZDxzwJwU7TFCFEJt_tlaQ';" alt="Jumbo Loans Jumbo Loans Loan Jumbo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jumbo Loans Jumbo Loans Loan Jumbo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ca/d4/7d/cad47d97d4ec1faba51e2f5ffde6b76d.jpg" data-lightbox="roadtrip" data-title="What Is Va Loan An Overview Of Va Home Loan 2019 Va Mortgage Loans Mortgage Loans Va Mortgages">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ca/d4/7d/cad47d97d4ec1faba51e2f5ffde6b76d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtG-RHt5k8jpZHiTBHaJP4WQoIDskC-KZN1A';" alt="What Is Va Loan An Overview Of Va Home Loan 2019 Va Mortgage Loans Mortgage Loans Va Mortgages">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Va Loan An Overview Of Va Home Loan 2019 Va Mortgage Loans Mortgage Loans Va Mortgages</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/36/19/7c36196a458627c6807651097e2fb848.jpg" data-lightbox="roadtrip" data-title="Time To Refinance Jumbo Loans Current Mortgage Rates Loan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/36/19/7c36196a458627c6807651097e2fb848.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxa7DbOm0MqYD9xGwSMnErHYA5iiS_hylDWg';" alt="Time To Refinance Jumbo Loans Current Mortgage Rates Loan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Time To Refinance Jumbo Loans Current Mortgage Rates Loan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/a1/b7/d1/a1b7d17fa43a1f34acc0998475daf223.jpg" data-lightbox="roadtrip" data-title="Va Loan Benefits 5 Things You Need To Know Home Loans For All Va Home Loan Va Mortgage Watch This To Know More Va Loan Va Mortgages Va Mortgage Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/a1/b7/d1/a1b7d17fa43a1f34acc0998475daf223.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU8GoEnbTY_LJCLX9Xt7o3DiJ98juRDt66yQ';" alt="Va Loan Benefits 5 Things You Need To Know Home Loans For All Va Home Loan Va Mortgage Watch This To Know More Va Loan Va Mortgages Va Mortgage Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Loan Benefits 5 Things You Need To Know Home Loans For All Va Home Loan Va Mortgage Watch This To Know More Va Loan Va Mortgages Va Mortgage Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/45/5d/3f/455d3f58d6dd13128e3cdd86915f62c9.jpg" data-lightbox="roadtrip" data-title="What Causes Rates To Rise And Fall Mortgage Interest Rates Depend On A Great Deal On The Expectations Of In Mortgage Interest Rates Jumbo Loans Mortgage Rates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/45/5d/3f/455d3f58d6dd13128e3cdd86915f62c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsXNgRCFxtBPEZxqDcqmind6ITCisqN0vbFA';" alt="What Causes Rates To Rise And Fall Mortgage Interest Rates Depend On A Great Deal On The Expectations Of In Mortgage Interest Rates Jumbo Loans Mortgage Rates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Causes Rates To Rise And Fall Mortgage Interest Rates Depend On A Great Deal On The Expectations Of In Mortgage Interest Rates Jumbo Loans Mortgage Rates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/27/08/e6/2708e621ad0e6f6acf89fae117a16b0f.jpg" data-lightbox="roadtrip" data-title="Was Your Home A Full Nest And Now It S An Empty Nest Refinancing With An Arm Might Be Right For Yo Jumbo Loans Adjustable Rate Mortgage Current Mortgage Rates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/27/08/e6/2708e621ad0e6f6acf89fae117a16b0f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwXFXRV_ptajiNgghzX85qZNZ2yAot0yqTZQ';" alt="Was Your Home A Full Nest And Now It S An Empty Nest Refinancing With An Arm Might Be Right For Yo Jumbo Loans Adjustable Rate Mortgage Current Mortgage Rates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Was Your Home A Full Nest And Now It S An Empty Nest Refinancing With An Arm Might Be Right For Yo Jumbo Loans Adjustable Rate Mortgage Current Mortgage Rates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/76/5d/c8/765dc84bf59c8bde64c7c32095be0321.jpg" data-lightbox="roadtrip" data-title="Current Fha Mortgage Rates Va Mortgages Refinance Mortgage Mortgage Rates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/76/5d/c8/765dc84bf59c8bde64c7c32095be0321.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaNnZ79tRVfXNlFlJtUmF8vbowJyj8tJmACQ';" alt="Current Fha Mortgage Rates Va Mortgages Refinance Mortgage Mortgage Rates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Current Fha Mortgage Rates Va Mortgages Refinance Mortgage Mortgage Rates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/38/c1/c338c10a4fdd5400e28a65417abff316.png" data-lightbox="roadtrip" data-title="We Are Mortgage Brokers Mortgage Brokers Best Mortgage Rates Today Mortgage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/38/c1/c338c10a4fdd5400e28a65417abff316.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQFq1kqHdy4mu6O_3S3UEs9vd1IGrlMsdOrg';" alt="We Are Mortgage Brokers Mortgage Brokers Best Mortgage Rates Today Mortgage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Are Mortgage Brokers Mortgage Brokers Best Mortgage Rates Today Mortgage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3c/9d/a6/3c9da6c606ac7d7d057cf6d1b246b6ce.png" data-lightbox="roadtrip" data-title="Jumbo Loans The Definitive Guide Jumbo Loans Mortgage Info Top Mortgage Lenders">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3c/9d/a6/3c9da6c606ac7d7d057cf6d1b246b6ce.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0nIDOfkAFPtRiBnApKTz11zYuHEL0R4qJxg';" alt="Jumbo Loans The Definitive Guide Jumbo Loans Mortgage Info Top Mortgage Lenders">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jumbo Loans The Definitive Guide Jumbo Loans Mortgage Info Top Mortgage Lenders</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fb/9e/39/fb9e399667ec2e548e8b1d8b3fbc4a97.jpg" data-lightbox="roadtrip" data-title="Va Home Loan Benefits Home Loans Loan Lowest Mortgage Rates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fb/9e/39/fb9e399667ec2e548e8b1d8b3fbc4a97.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQimNENkMi4KJ-FtjpEf9xSxpzWQY850AI1gg';" alt="Va Home Loan Benefits Home Loans Loan Lowest Mortgage Rates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Home Loan Benefits Home Loans Loan Lowest Mortgage Rates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/9f/48/fc9f4897a1cf80634514c3bed1388eb2.jpg" data-lightbox="roadtrip" data-title="Pin On Ohana Mortgage Group Simple And Affordable Refinance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/9f/48/fc9f4897a1cf80634514c3bed1388eb2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK6bmXPktA4b1GUC45PXJfKxSKBiB7bM7iEQ';" alt="Pin On Ohana Mortgage Group Simple And Affordable Refinance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ohana Mortgage Group Simple And Affordable Refinance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/e0/ba/36e0ba39aa8ebbb3d6271a9960f0ea76.jpg" data-lightbox="roadtrip" data-title="Va Home Loans Are The Specialty At Creekside Mortgage Inc For More Information Go To Www Valoanspeciali Home Loans Mortgage Loan Calculator Mortgage Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/e0/ba/36e0ba39aa8ebbb3d6271a9960f0ea76.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf1ZlG-tEwpJDqBEJR8DDE1bR9Wz_iVaKuFg';" alt="Va Home Loans Are The Specialty At Creekside Mortgage Inc For More Information Go To Www Valoanspeciali Home Loans Mortgage Loan Calculator Mortgage Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Home Loans Are The Specialty At Creekside Mortgage Inc For More Information Go To Www Valoanspeciali Home Loans Mortgage Loan Calculator Mortgage Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/74/27/387427d812a934cf49421d83d15beb21.jpg" data-lightbox="roadtrip" data-title="Va Irrrl Quickest And Easiest Refinance Loan Refinance Loans Refinance Mortgage Va Loan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/74/27/387427d812a934cf49421d83d15beb21.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-tRsmh4YdPLmSDwY936-oFMByEfg7gdrIeQ';" alt="Va Irrrl Quickest And Easiest Refinance Loan Refinance Loans Refinance Mortgage Va Loan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Irrrl Quickest And Easiest Refinance Loan Refinance Loans Refinance Mortgage Va Loan</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/billie-eilish-bad-guy-black-outfit.html">Billie Eilish Bad Guy Black Outfit</a></li>
+													<li class="list-group-item"><a href="/billie-xxtenations.html">Billie Xxtenations</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-realty-east-liverpool-ohio.html">Bill Montgomery Realty East Liverpool Ohio</a></li>
+													<li class="list-group-item"><a href="/billie-eilish-birthday.html">Billie Eilish Birthday</a></li>
+													<li class="list-group-item"><a href="/billie-purple.html">Billie Purple</a></li>
+													<li class="list-group-item"><a href="/bill-gillard.html">Bill Gillard</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-dies.html">Bill Montgomery Dies</a></li>
+													<li class="list-group-item"><a href="/billie-max-will-agama.html">Billie Max Will Agama</a></li>
+													<li class="list-group-item"><a href="/billie-personality.html">Billie Personality</a></li>
+													<li class="list-group-item"><a href="/billie-album.html">Billie Album</a></li>
+													<li class="list-group-item"><a href="/billagio-puri-indah-sidoarjo.html">Billagio Puri Indah Sidoarjo</a></li>
+													<li class="list-group-item"><a href="/billiards-in-montgomery-al.html">Billiards In Montgomery Al</a></li>
+													<li class="list-group-item"><a href="/billie-ig.html">Billie Ig</a></li>
+													<li class="list-group-item"><a href="/billie-jean-lirik.html">Billie Jean Lirik</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-invest-northern-ireland.html">Bill Montgomery Invest Northern Ireland</a></li>
+													<li class="list-group-item"><a href="/bill-gilmore.html">Bill Gilmore</a></li>
+													<li class="list-group-item"><a href="/bill-ingalls-photography-montgomery-al.html">Bill Ingalls Photography Montgomery Al</a></li>
+													<li class="list-group-item"><a href="/bill-gifford-attorney.html">Bill Gifford Attorney</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-realty-east-palestine-ohio.html">Bill Montgomery Realty East Palestine Ohio</a></li>
+													<li class="list-group-item"><a href="/billie-uke-chords.html">Billie Uke Chords</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

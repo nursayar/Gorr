@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Did Hoffa Go To Jail - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Did Hoffa Go To Jail",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/b1/ee/52/b1ee527379aacb40a423d686f1cdd6e8.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=did+hoffa+go+to+jail",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Did Hoffa Go To Jail</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">After spending three years attempting to appeal the charges Hoffa was sentenced to 13 years in prison starting in 1967 for bribery and fraud. He received an eight-year prison sentence and a 10000 fine. Hoffas ties with organized crime figures were well-documented and publicized and for most of his life he was able to leverage these associations to strengthen the Teamsters Union growing it into one of the most powerful unions if not the most powerful in the country. <br>				
+			</p>
+										<a class="badge badge-light" href="/zero-percent-disability-rating.html">zero percent disability rating</a>
+											<a class="badge badge-light" href="/yu-gi-oh-35-boeluem-tuerkce-dublaj-izle.html">yu gi oh 35 boeluem tuerkce dublaj izle</a>
+											<a class="badge badge-info" href="/will-i-get-a-stimulus-check-if-im-on-va-disability.html">will i get a stimulus check if im on va disability</a>
+											<a class="badge badge-warning" href="/yu-gi-oh-9-boeluem-tuerkce-dublaj-izle.html">yu gi oh 9 boeluem tuerkce dublaj izle</a>
+											<a class="badge badge-warning" href="/wv-code-chapter-36.html">wv code chapter 36</a>
+											<a class="badge badge-light" href="/why-does-a-bill-go-to-the-floor.html">why does a bill go to the floor</a>
+											<a class="badge badge-secondary" href="/wi-gi-bill-faq.html">wi gi bill faq</a>
+											<a class="badge badge-info" href="/yuku-veteran-benefits-network.html">yuku veteran benefits network</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to pay a visit to the ideal blog.  Our website gives you suggestions for seeing the maximum quality video and picture content, hunt and find more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, especially Youtube, so we recommend this movie for you to view.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/96/94/7a/96947a28a2bf1ec772f90988722bcf39.jpg" data-lightbox="roadtrip" data-title="July 30 1975 Jimmy Hoffa Disappears From The Parking Lot Of The Machus Red Fox Restaurant In Bloomfield Hills Michigan Interesting History Mobster History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/96/94/7a/96947a28a2bf1ec772f90988722bcf39.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKl5zhoVSY1_jQ8RZn45TsBvB1gev3Y8VQJA';" alt="July 30 1975 Jimmy Hoffa Disappears From The Parking Lot Of The Machus Red Fox Restaurant In Bloomfield Hills Michigan Interesting History Mobster History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">July 30 1975 Jimmy Hoffa Disappears From The Parking Lot Of The Machus Red Fox Restaurant In Bloomfield Hills Michigan Interesting History Mobster History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/96/94/7a/96947a28a2bf1ec772f90988722bcf39.jpg" data-lightbox="roadtrip" data-title="July 30 1975 Jimmy Hoffa Disappears From The Parking Lot Of The Machus Red Fox Restaurant In Bloomfield Hills Michigan Interesting History Mobster History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/96/94/7a/96947a28a2bf1ec772f90988722bcf39.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlOnXDgcjExhTcn7RT6_snzqjd2TEY1UtlKA';" alt="July 30 1975 Jimmy Hoffa Disappears From The Parking Lot Of The Machus Red Fox Restaurant In Bloomfield Hills Michigan Interesting History Mobster History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">July 30 1975 Jimmy Hoffa Disappears From The Parking Lot Of The Machus Red Fox Restaurant In Bloomfield Hills Michigan Interesting History Mobster History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8f/5d/f2/8f5df23f95252f9f4d4c1c86f4d09a3b.jpg" data-lightbox="roadtrip" data-title="1957 Union Boss Jimmy Hoffa Gives Attorney Robert Kennedy A Sly Bird Interesting History Mobster History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8f/5d/f2/8f5df23f95252f9f4d4c1c86f4d09a3b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7uLQiTX4jsgheRHjy7EGZweyj0dOqZ1Mx8A';" alt="1957 Union Boss Jimmy Hoffa Gives Attorney Robert Kennedy A Sly Bird Interesting History Mobster History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1957 Union Boss Jimmy Hoffa Gives Attorney Robert Kennedy A Sly Bird Interesting History Mobster History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/ee/52/b1ee527379aacb40a423d686f1cdd6e8.jpg" data-lightbox="roadtrip" data-title="Jimmy Hoffa Gives The Finger To Attorney General Bobby Kennedy At A Hearing Interesting History Mobster History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/ee/52/b1ee527379aacb40a423d686f1cdd6e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw3ysOlxUqkwW-g9t2THnAgqGrdAD-g4VZbw';" alt="Jimmy Hoffa Gives The Finger To Attorney General Bobby Kennedy At A Hearing Interesting History Mobster History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jimmy Hoffa Gives The Finger To Attorney General Bobby Kennedy At A Hearing Interesting History Mobster History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/b9/37/f5b937f141606c18c681dbd3b5d28b56.jpg" data-lightbox="roadtrip" data-title="Jimmy Hoffa Gives The Finger To Inquisitor Bobby Kennedy At A Hearing Interesting History Mobster History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/b9/37/f5b937f141606c18c681dbd3b5d28b56.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDgdsKcIlZz0j58aWUT49Y--aO0z-34cwSdg';" alt="Jimmy Hoffa Gives The Finger To Inquisitor Bobby Kennedy At A Hearing Interesting History Mobster History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jimmy Hoffa Gives The Finger To Inquisitor Bobby Kennedy At A Hearing Interesting History Mobster History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/c9/c2/ffc9c2a28d36780db184904bb70d567f.jpg" data-lightbox="roadtrip" data-title="Everything You Need To Know About The True Story That Inspired The Irishman Mafia Crime Crime Family Detroit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/c9/c2/ffc9c2a28d36780db184904bb70d567f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDczvkJZWJTTRQ_jkYd2Z8xd4hQLN2hsHZfA';" alt="Everything You Need To Know About The True Story That Inspired The Irishman Mafia Crime Crime Family Detroit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Everything You Need To Know About The True Story That Inspired The Irishman Mafia Crime Crime Family Detroit</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/4b/39/f1/4b39f138c2bda29d95fbe6b974d36f35.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDczvkJZWJTTRQ_jkYd2Z8xd4hQLN2hsHZfA';" alt="Everything You Need To Know About The True Story That Inspired The Irishman Mafia Crime Crime Family Detroit">
+										<div class="card-body">
+						<h3 class="h5"><b>Jimmy Hoffa may be buried in a steel drum beneath other metal barrels at a New Jersey landfill site where excavators say there is proof a pit was once dug and filled in after the union leaders.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Did hoffa go to jail</strong>. 
+								
+																	Richard Nixon commuted the sentence in 1971 and Hoffa quickly began. 
+																	After being convicted of jury tampering fraud and attempted bribery the union leader began serving a 13-year prison sentence in 1967. 
+																	But thanks to Hoffas powerful anti-Kennedy presence. 
+																	At the time of Hoffas disappearance the Teamsters leader was trying to wrest back control of the union after serving long prison stints for jury tampering and fraud. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Later he eats more. 
+																	Hoffa refused to resign as president of the Teamsters while in prison and kept his position until 1971. 
+																	Known to have long associated with organized crime figures Hoffa nevertheless survived a series of governmental prosecutions until 1967 when he entered the federal prison in Lewisburg Pennsylvania to begin a 13-year sentence for jury tampering fraud and conspiracy. 
+																	He says this did happen. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Pro went to prison in 1963 for extortion and Hoffa went to prison in 1967 for bribery and fraud and they both ended up serving time at the Lewisburg Federal Penitentiary in Pennsylvania. 
+																	Hoffa was sent to prison in 1967 for jury tampering fraud and conspiracy though his sentence was commuted by President Richard Nixon. 
+																	His appeals ran out in 1967 and he entered Lewiston Prison to serve a combined 13 year sentence. 
+																	He was sentenced to 13 years in prison but only served four years because he was pardoned by President Nixon in 1971. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Fiery foul-mouthed Hoffa played by Al Pacino is rarely without a spoon in his hand in The Irishman. 
+																	Hoffa was convicted on two counts of jury tampering which he committed during a 1962 case that charged him with extorting a million-dollar union payoff from a haulage company. 
+																	The chapters on the trials show Hoffa as master strategist and as a brazen crook who used threats and bribes routinely. 
+																	In 1967 he was convicted of bribery and sentenced to 13. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jimmy Hoffa was lured to a. 
+																	Bufalino Sheeran says decided that Jimmy Hoffa had to go and asked him a friend to carry out the hit because Hoffa would be unsuspecting. 
+																	Convicted first of obstruction of justice and later of attempted bribery Hoffa began a 13-year prison sentence in March 1957. 
+																	Hoffa himself had relationships with high-ranking mobsters and was the target of several government investigations throughout the 1960s. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Wikimedia Commons Jimmy Hoffa and his son James P. 
+																	While seeking to regain the union presidency Hoffa abruptly. 
+																	Early on he bonds with Sheerans daughter Peggy over a couple of sundaes. 
+																	Why Hoffa Was Murdered. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hoffa who passed his Teamsters presidency to Frank. 
+																	Later that year he was convicted of fraud in a separate case receiving another five years. 
+																	Hoffa was sentenced to prison for thirteen years for jury tampering mail fraud and bribery but was pardoned by President Richard Nixon in 1971 on the condition that he would not stay involved with union activities. 
+																	Federal investigators have long stated that Hoffa was murdered in Detroit when he disappeared on July 30th 1975 and reported transported to New Jersey by the Genovese crime family mobsters. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Even so by the time of his disappearance Hoffa had already begun trying to rebuild his Teamster support base in Detroit angering those who had come to power in his absence. 
+																	As part of the pardon he agreed to step down as president of the Teamsters. 
+																	31 27 32 While on bail during his appeal Hoffa was convicted in a second trial held in Chicago on July 26 1964 on one count of conspiracy and three counts of mail and wire fraud for improper use of the Teamsters pension fund and sentenced to five years in prison. 
+																	And they show that his famous ego could be his weakness. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hoffa was convicted on March 4 1964 and subsequently sentenced to eight years in prison and a 10000 fine. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/88/b4/01/88b4015f8f08b158018895ea59b7b991.jpg" data-lightbox="roadtrip" data-title="Frank Sheeran Jimmy Hoffa Gangster Movies Gangster Mafia Gangster">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/88/b4/01/88b4015f8f08b158018895ea59b7b991.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyFb769hePLxIc7Il37SpbxPKck4UpCnsBBg';" alt="Frank Sheeran Jimmy Hoffa Gangster Movies Gangster Mafia Gangster">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Frank Sheeran Jimmy Hoffa Gangster Movies Gangster Mafia Gangster</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/9f/70/459f701a87feb788dff48c7817e87d50.jpg" data-lightbox="roadtrip" data-title="Mobster Claims Jimmy Hoffa Was Buried In A New Jersey Toxic Waste Dump Mafia Crime Mobster Mafia Gangster">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/9f/70/459f701a87feb788dff48c7817e87d50.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0BvFiEVQQEVdsnsUBZ8VTxNMdc0TeM5xxRA';" alt="Mobster Claims Jimmy Hoffa Was Buried In A New Jersey Toxic Waste Dump Mafia Crime Mobster Mafia Gangster">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mobster Claims Jimmy Hoffa Was Buried In A New Jersey Toxic Waste Dump Mafia Crime Mobster Mafia Gangster</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/db/e2/d6dbe25492169a6d3dd18ecf05a1a124.png" data-lightbox="roadtrip" data-title="Jimmy Hoffa Explains The U S In 1960 Nobody In This Country Respects What S Weak Believe Me Flashbak In 2020 Irish Men True Crime Stories Martin Scorsese">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/db/e2/d6dbe25492169a6d3dd18ecf05a1a124.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_cOloatUc3RCzG45XPN6sTu1Mr5Oz6BXnLg';" alt="Jimmy Hoffa Explains The U S In 1960 Nobody In This Country Respects What S Weak Believe Me Flashbak In 2020 Irish Men True Crime Stories Martin Scorsese">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jimmy Hoffa Explains The U S In 1960 Nobody In This Country Respects What S Weak Believe Me Flashbak In 2020 Irish Men True Crime Stories Martin Scorsese</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/78/9e/a1789e5f97f602e7364fc5d467a8ad06.jpg" data-lightbox="roadtrip" data-title="Jimmy Hoffa Interesting History Mobster History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/78/9e/a1789e5f97f602e7364fc5d467a8ad06.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-sXw8FwM21AfB5B-4HOZufpVr0W4LiNXYxg';" alt="Jimmy Hoffa Interesting History Mobster History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jimmy Hoffa Interesting History Mobster History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/35/88/da/3588dae5c09b8c54cf2d6a1f6b2ba187--mobsters-detroit-michigan.jpg" data-lightbox="roadtrip" data-title="Pin On So What Gives">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/35/88/da/3588dae5c09b8c54cf2d6a1f6b2ba187--mobsters-detroit-michigan.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzeOLd7bA9DRvAXbW7kGoePNwupvl0WYA1Kw';" alt="Pin On So What Gives">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On So What Gives</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/00/8a/c9/008ac92e5a40f5a3f040d3ce35e7951f--ethel-kennedy-vegan-beauty.jpg" data-lightbox="roadtrip" data-title="How Rfk Was Seduced By Marilyn Monroe And Hated Jimmy Hoffa Robert Kennedy Ethel Kennedy Kennedy Family">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/00/8a/c9/008ac92e5a40f5a3f040d3ce35e7951f--ethel-kennedy-vegan-beauty.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF0Ui89KoI-Rkf_MiglvlhsUnpkfGZp96T6w';" alt="How Rfk Was Seduced By Marilyn Monroe And Hated Jimmy Hoffa Robert Kennedy Ethel Kennedy Kennedy Family">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Rfk Was Seduced By Marilyn Monroe And Hated Jimmy Hoffa Robert Kennedy Ethel Kennedy Kennedy Family</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/18/ab/a818ab30cf51f02db3e62072c0f465bd.jpg" data-lightbox="roadtrip" data-title="Pin On News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/18/ab/a818ab30cf51f02db3e62072c0f465bd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5AFp53Ph11ZVWEQLf0KnM4gn7_Hxt4KsS8Q';" alt="Pin On News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/15/1e/39/151e396866bac80b1711d5b84ba844dd--robert-kennedy-vendetta.jpg" data-lightbox="roadtrip" data-title="How Rfk Was Seduced By Marilyn Monroe And Hated Jimmy Hoffa Kennedy Vendetta Robert Kennedy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/15/1e/39/151e396866bac80b1711d5b84ba844dd--robert-kennedy-vendetta.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT60OsU78BDaGwNnfdHEljMvvMTGMX0oY5bjg';" alt="How Rfk Was Seduced By Marilyn Monroe And Hated Jimmy Hoffa Kennedy Vendetta Robert Kennedy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Rfk Was Seduced By Marilyn Monroe And Hated Jimmy Hoffa Kennedy Vendetta Robert Kennedy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/77/59/af77596d6d06382ffa1cea0c74c3afee.png" data-lightbox="roadtrip" data-title="Genovese Soldier Phillip Brother Moscato 1934 2014 He Was The Owner Of A Toxic Site And Had Told Fellow Mobsters Hoffa Mobster Mafia Gangster Crime Family">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/77/59/af77596d6d06382ffa1cea0c74c3afee.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeSrUuJNpGebIYO_LLfs4edPrP4QDT_Uqjqw';" alt="Genovese Soldier Phillip Brother Moscato 1934 2014 He Was The Owner Of A Toxic Site And Had Told Fellow Mobsters Hoffa Mobster Mafia Gangster Crime Family">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Genovese Soldier Phillip Brother Moscato 1934 2014 He Was The Owner Of A Toxic Site And Had Told Fellow Mobsters Hoffa Mobster Mafia Gangster Crime Family</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/39/f1/4b39f138c2bda29d95fbe6b974d36f35.jpg" data-lightbox="roadtrip" data-title="Jimmy Hoffa You Are The Father Gangsta Quotes Gangster Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/39/f1/4b39f138c2bda29d95fbe6b974d36f35.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV-5w7cC88s1AWqeGGXaAvZKJsdA78I788UQ';" alt="Jimmy Hoffa You Are The Father Gangsta Quotes Gangster Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jimmy Hoffa You Are The Father Gangsta Quotes Gangster Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/c5/0b/d7c50bade7de7f49a7201f9d39050873.jpg" data-lightbox="roadtrip" data-title="How Rfk Was Seduced By Marilyn Monroe And Hated Jimmy Hoffa John Kennedy Kennedy Jackie Kennedy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/c5/0b/d7c50bade7de7f49a7201f9d39050873.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWsG1eo6z9iMG6jax6iSEbM7nnolUzy-w_Ng';" alt="How Rfk Was Seduced By Marilyn Monroe And Hated Jimmy Hoffa John Kennedy Kennedy Jackie Kennedy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Rfk Was Seduced By Marilyn Monroe And Hated Jimmy Hoffa John Kennedy Kennedy Jackie Kennedy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/c0/e4/32/c0e432e565e1fded0ee777587f5929cc--charlie-brown-and-snoopy-life-cover.jpg" data-lightbox="roadtrip" data-title="Charlie Brown Life Magazine United States 17 March 1967 Life Magazine Covers Charlie Brown And Snoopy Life Magazine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/c0/e4/32/c0e432e565e1fded0ee777587f5929cc--charlie-brown-and-snoopy-life-cover.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH1aQ_5GjlkYRCzhZSIEH3pMvrDT8b-bX8kA';" alt="Charlie Brown Life Magazine United States 17 March 1967 Life Magazine Covers Charlie Brown And Snoopy Life Magazine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Charlie Brown Life Magazine United States 17 March 1967 Life Magazine Covers Charlie Brown And Snoopy Life Magazine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/80/b2/1a/80b21aa45040799bb14992981ec3779a.jpg" data-lightbox="roadtrip" data-title="Dutch Schultz All Smiles 1900s 8x10 Reprint Of Old Photo Historical People Mobster Mafia Gangster">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/80/b2/1a/80b21aa45040799bb14992981ec3779a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv80Cwv53VMo0e5NWihGiJ0eCYVEpi-r68gg';" alt="Dutch Schultz All Smiles 1900s 8x10 Reprint Of Old Photo Historical People Mobster Mafia Gangster">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dutch Schultz All Smiles 1900s 8x10 Reprint Of Old Photo Historical People Mobster Mafia Gangster</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/does-post-9-11-gi-bill-pay-for-room-and-board.html">Does Post 9 11 Gi Bill Pay For Room And Board</a></li>
+													<li class="list-group-item"><a href="/does-bipolar-qualify-for-disability.html">Does Bipolar Qualify For Disability</a></li>
+													<li class="list-group-item"><a href="/does-ptsd-qualify-you-for-disability.html">Does Ptsd Qualify You For Disability</a></li>
+													<li class="list-group-item"><a href="/does-major-depressive-disorder-qualify-for-social-security-disability.html">Does Major Depressive Disorder Qualify For Social Security Disability</a></li>
+													<li class="list-group-item"><a href="/do-you-get-the-gi-bill-in-the-coast-guard.html">Do You Get The Gi Bill In The Coast Guard</a></li>
+													<li class="list-group-item"><a href="/does-chevrolet-give-military-discount.html">Does Chevrolet Give Military Discount</a></li>
+													<li class="list-group-item"><a href="/do-spouses-of-deceased-veterans-get-benefits.html">Do Spouses Of Deceased Veterans Get Benefits</a></li>
+													<li class="list-group-item"><a href="/does-post-911-gi-bill-pay-for-masters-degree.html">Does Post 911 Gi Bill Pay For Masters Degree</a></li>
+													<li class="list-group-item"><a href="/do-spouses-of-deceased-veterans-get-medical-benefits.html">Do Spouses Of Deceased Veterans Get Medical Benefits</a></li>
+													<li class="list-group-item"><a href="/does-amvets-pick-up-furniture.html">Does Amvets Pick Up Furniture</a></li>
+													<li class="list-group-item"><a href="/does-disabled-american-veterans-pick-up-furniture.html">Does Disabled American Veterans Pick Up Furniture</a></li>
+													<li class="list-group-item"><a href="/does-military-give-you-health-insurance.html">Does Military Give You Health Insurance</a></li>
+													<li class="list-group-item"><a href="/does-gm-have-a-veterans-discount.html">Does Gm Have A Veterans Discount</a></li>
+													<li class="list-group-item"><a href="/does-chevy-offer-military-discount.html">Does Chevy Offer Military Discount</a></li>
+													<li class="list-group-item"><a href="/does-gi-bill-pay-fees.html">Does Gi Bill Pay Fees</a></li>
+													<li class="list-group-item"><a href="/do-veterans-wives-get-medical-benefits.html">Do Veterans Wives Get Medical Benefits</a></li>
+													<li class="list-group-item"><a href="/does-severe-depression-qualify-for-short-term-disability.html">Does Severe Depression Qualify For Short Term Disability</a></li>
+													<li class="list-group-item"><a href="/does-a-bill-go-to-congress-or-senate-first.html">Does A Bill Go To Congress Or Senate First</a></li>
+													<li class="list-group-item"><a href="/does-the-gi-bill-cover-a-phd.html">Does The Gi Bill Cover A Phd</a></li>
+													<li class="list-group-item"><a href="/does-a-bill-go-to-the-house-or-senate-first.html">Does A Bill Go To The House Or Senate First</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

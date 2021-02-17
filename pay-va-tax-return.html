@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Pay Va Tax Return - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Pay Va Tax Return",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/ab/f7/a5/abf7a5c0549d25b04b3fb91f05081dd4.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=pay+va+tax+return",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Pay Va Tax Return</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Overview You usually submit a VAT Return to HM Revenue and Customs HMRC every 3 months. This means most taxpayers in Virginia will pay the top rate of 575 on at least part of their income. Up to 8 weeks. <br>				
+			</p>
+										<a class="badge badge-light" href="/university-of-south-florida-gi-bill.html">university of south florida gi bill</a>
+											<a class="badge badge-dark" href="/usf-gi-bill.html">usf gi bill</a>
+											<a class="badge badge-light" href="/types-of-evergreen-trees-in-virginia.html">types of evergreen trees in virginia</a>
+											<a class="badge badge-light" href="/university-of-houston-post-911-gi-bill.html">university of houston post 911 gi bill</a>
+											<a class="badge badge-light" href="/transfer-gi-bill-to-spouse-bah.html">transfer gi bill to spouse bah</a>
+											<a class="badge badge-light" href="/using-gi-bill-in-different-state.html">using gi bill in different state</a>
+											<a class="badge badge-warning" href="/ups-va-rating-meaning.html">ups va rating meaning</a>
+											<a class="badge badge-warning" href="/transformer-va-rating-primary-or-secondary.html">transformer va rating primary or secondary</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you've come to pay a visit to the right blog.  Our site gives you hints for seeing the highest quality video and picture content, hunt and find more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, so we recommend this video that you see.  It is also possible to contribute to supporting this site by sharing videos and graphics that you enjoy on this blog on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information you get on this website.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/7a/78/24/7a7824eb2949330bca8ce9b0a38281c8.jpg" data-lightbox="roadtrip" data-title="Penalties And Interest Md Va Pa Strategic Tax Resolution Tax Tax Debt Tax Return">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/7a/78/24/7a7824eb2949330bca8ce9b0a38281c8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMo6F1eOS0IeCBLVlTgoDPi0vm_X38845utg';" alt="Penalties And Interest Md Va Pa Strategic Tax Resolution Tax Tax Debt Tax Return">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Penalties And Interest Md Va Pa Strategic Tax Resolution Tax Tax Debt Tax Return</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/c0/a7/00c0a770bb9a187d907cda7829d4b9a8.jpg" data-lightbox="roadtrip" data-title="Pin On Online Mortgage Calc">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/c0/a7/00c0a770bb9a187d907cda7829d4b9a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKFsW8aLpC8OjE8_-52jEVNsGZR5rp7MNIRA';" alt="Pin On Online Mortgage Calc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Online Mortgage Calc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/47/3c/32/473c3252d74c5ac935ff610a9384db4f.jpg" data-lightbox="roadtrip" data-title="The Aarp Foundation Is Offering Free Income Tax Preparation For Low To Moderate Income Persons At Va Tax Write Offs Tax Services Tax Preparation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/47/3c/32/473c3252d74c5ac935ff610a9384db4f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhiPN3C6IvE3QxJfoIsNytTObwedGDEzaOew';" alt="The Aarp Foundation Is Offering Free Income Tax Preparation For Low To Moderate Income Persons At Va Tax Write Offs Tax Services Tax Preparation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Aarp Foundation Is Offering Free Income Tax Preparation For Low To Moderate Income Persons At Va Tax Write Offs Tax Services Tax Preparation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/c7/98/e2c798b1973cfbda7de062c063404e2d.jpg" data-lightbox="roadtrip" data-title="Military Tax Tips Tricks Filing Benefits Tax Time Tax Debt Tax Write Offs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/c7/98/e2c798b1973cfbda7de062c063404e2d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvaOIzTRFnBYfqVk9kfiSCN7jeeQFHYNAAIw';" alt="Military Tax Tips Tricks Filing Benefits Tax Time Tax Debt Tax Write Offs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Tax Tips Tricks Filing Benefits Tax Time Tax Debt Tax Write Offs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/1e/b3/b71eb367e5c1681f13263e0e10d13809.jpg" data-lightbox="roadtrip" data-title="12 Smart Ways To Spend Your Tax Refund Tax Refund Income Tax Return Income Tax">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/1e/b3/b71eb367e5c1681f13263e0e10d13809.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZq-wmCtgFuVWGzyHDNTvQZ3Pe7knafdyPYA';" alt="12 Smart Ways To Spend Your Tax Refund Tax Refund Income Tax Return Income Tax">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">12 Smart Ways To Spend Your Tax Refund Tax Refund Income Tax Return Income Tax</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b3/18/0e/b3180e964a14863068500324b3ec6206.jpg" data-lightbox="roadtrip" data-title="Smaller Refund It S Not The Government S Fault It S Yours Tax Return Tax Refund Income Tax">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b3/18/0e/b3180e964a14863068500324b3ec6206.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkdDiorhQuwYUoy5qCS-OB1tLvc5Prho26oA';" alt="Smaller Refund It S Not The Government S Fault It S Yours Tax Return Tax Refund Income Tax">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Smaller Refund It S Not The Government S Fault It S Yours Tax Return Tax Refund Income Tax</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/23/20/3c/23203ca78ecbd2437119b0fc259b2ec3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkdDiorhQuwYUoy5qCS-OB1tLvc5Prho26oA';" alt="Smaller Refund It S Not The Government S Fault It S Yours Tax Return Tax Refund Income Tax">
+										<div class="card-body">
+						<h3 class="h5"><b>And you are filing a Form.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Pay va tax return</strong>. 
+								
+																	The table below shows the tax brackets for Virginia filers. 
+																	Up to 4 weeks. 
+																	People and businesses with other income must report it in a tax return. 
+																	While low earners pay lower marginal rates the top bracket begins at just 17000 in taxable income. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Citizens and do not meet Virginias legal presence requirements if theyve met certain tax filing requirements. 
+																	Based on the type of payment s you want to make you can choose to pay by these options. 
+																	Virginia Department of Taxation PO. 
+																	Box 1478 Richmond VA 23218-1478. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Tax is usually deducted automatically from wages pensions and savings. 
+																	You will choose your state payment method during the filing stage of your return. 
+																	A service fee is added to each payment you make with your card. 
+																	You can use the VAT payment deadline. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However the Virginia Department of Revenue offers two payment methods. 
+																	HMRC can charge you a penalty of up to. 
+																	You may have to pay a surcharge if you do not pay on time. 
+																	Returns sent by certified mail. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sign in and submit your VAT Return ESL RCSL and EU VAT refund application and get help with lost username password or account activation codes. 
+																	When weve finished processing your return the application will show you the date your refund was sent. 
+																	Check or money order. 
+																	Check or money order. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Make sure your payment will reach HM Revenue and Customs HMRC bank account by the deadline. 
+																	If your total VA rating was 60 and your CRSC was at 60 then you should have received all of your waived retirement pay as CRSC and any remaining retirement pay as taxable retirement pay I recall that you are a longevity retiree so medical retirement issues do not pertain. 
+																	Mail the 760-PMT voucher with check or money order payable to Virginia Department of Taxation to. 
+																	Httpwwwtaxvirginiagovincome-tax-calculator Va Taxable Income Tax Calculation 0 - 3000 2 3001 - 5000 60 3 of excess over 3000 5001 - 17000 120 5 of excess over 5000 17001 - 720 575 of excess over 17000. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you need to send one you fill it in after the end. 
+																	Allow an additional 3 weeks The Wheres my Refund application shows where in the process your refund is. 
+																	Virginia Tax requires businesses to file and pay most sales taxes electronically - we offer 3 free options to meet this requirement. 
+																	This period of time is known as your accounting period This guide is also available in Welsh Cymraeg. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Available sales tax eForms. 
+																	An Agency of the Commonwealth of Virginia. 
+																	Simply fill in the required fields and pay any tax due using direct debit. 
+																	31 2020 can be e-Filed together with the IRS Income Tax Return by April 15 2021. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you file a tax extension you can e-File your Taxes until October 15 2021 and Nov. 
+																	In Virginia the maximum tax rate on income is 575 which is the same as the capital gains rate. 
+																	New Driver Privilege Card Starting January 1 2021 Virginia will offer a Driver Privilege Card for individuals who are non-US. 
+																	Directly from your bank account direct debit ACH credit initiated from your bank account. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	EForms - eForms look similar to the paper versions of returns. 
+																	Up to 7 extra calendar days to submit your return and pay any VAT due compared with the due date for paper returns and cheques sent by post and if you pay by Direct Debit online at least 10. 
+																	How long will it take to get your refund. 
+																	No login or password required. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These Where to File addresses are to be used ONLY by TAXPAYERS AND TAX PROFESSIONALS filing individual federal tax returns in Virginia during Calendar Year 2021. 
+																	General refund processing times during filing season. 
+																	Credit or debit card additional fee Make a return payment choose Personal Income Tax through Official Payments Corporation. 
+																	There are four tax brackets for filers in Virginia. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1 2021 if you file by mail without a late filing penalties. 
+																	Make a return payment choose Individual Tax Return Payments through Paymentus. 
+																	30 of an assessment if. 
+																	The 2020 Virginia State Income Tax Return for Tax Year 2020 Jan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you live in VIRGINIA. 
+																	And you ARE NOT ENCLOSING A PAYMENT then use th. 
+																	100 of any tax under-stated or over-claimed if you send a return that contains a careless or deliberate inaccuracy. 
+																	Credit or debit card. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Virginia Tax Individual Online Account Application. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/77/af/e977af746bed25747c5d7166c554cef1.jpg" data-lightbox="roadtrip" data-title="Pin By Justin Vasquez On Tax Tips Small Business Tax Business Tax Business Help">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/77/af/e977af746bed25747c5d7166c554cef1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTedJuk9AcFXek5fhR-cElfuHViYKJGM7-HoA';" alt="Pin By Justin Vasquez On Tax Tips Small Business Tax Business Tax Business Help">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Justin Vasquez On Tax Tips Small Business Tax Business Tax Business Help</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/4b/96/164b96a5de74816a22cac74a7fe974b2.jpg" data-lightbox="roadtrip" data-title="Challan 280 How To Pay Income Tax Online With Challan 280 In 2021 Income Tax Tax Payment Income Tax Return">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/4b/96/164b96a5de74816a22cac74a7fe974b2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKNioEuZw8YXRpR_FKpuFkmPbfIX7m26JlOg';" alt="Challan 280 How To Pay Income Tax Online With Challan 280 In 2021 Income Tax Tax Payment Income Tax Return">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Challan 280 How To Pay Income Tax Online With Challan 280 In 2021 Income Tax Tax Payment Income Tax Return</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/fa/06/f4fa06751e3ec4933a1bab558ff7aba4.png" data-lightbox="roadtrip" data-title="Pin On Cloud Accounting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/fa/06/f4fa06751e3ec4933a1bab558ff7aba4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDkppOSEudh3Ya6E7-kVkMiidM9XfAlmsZ6Q';" alt="Pin On Cloud Accounting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Cloud Accounting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/44/c5/9e44c5abee24281e12f007159e3a9469.jpg" data-lightbox="roadtrip" data-title="Stash Long Term Keepers Such As Tax Returns The Irs Can Audit You Up To Six Years Back By Year In Sturdy Expandable Folders Inside P Irs Taxes Tax Debt Irs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/44/c5/9e44c5abee24281e12f007159e3a9469.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3Y5L1VDI4Gg8DZ326FZs9fjA0L8QTNCvQbQ';" alt="Stash Long Term Keepers Such As Tax Returns The Irs Can Audit You Up To Six Years Back By Year In Sturdy Expandable Folders Inside P Irs Taxes Tax Debt Irs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stash Long Term Keepers Such As Tax Returns The Irs Can Audit You Up To Six Years Back By Year In Sturdy Expandable Folders Inside P Irs Taxes Tax Debt Irs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/4f/68/9d4f6806e44b633b54d72b94db629708.png" data-lightbox="roadtrip" data-title="What Is Income Tax Income Tax Return Income Tax Tax Refund">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/4f/68/9d4f6806e44b633b54d72b94db629708.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyCcXUHmGT6ef60vttW6xtSyeReg5KWIN5Hg';" alt="What Is Income Tax Income Tax Return Income Tax Tax Refund">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Income Tax Income Tax Return Income Tax Tax Refund</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/b2/b6/bcb2b6d4f95cdb17d76c07a90a2036ff.png" data-lightbox="roadtrip" data-title="Small Business Loan Prep 101 Be Diligent About Tax Return Documents Business Loans Small Business Loans Start Own Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/b2/b6/bcb2b6d4f95cdb17d76c07a90a2036ff.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ16CzSWySNW0peUyB4toTgAaQkDmK1UUVBAg';" alt="Small Business Loan Prep 101 Be Diligent About Tax Return Documents Business Loans Small Business Loans Start Own Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Small Business Loan Prep 101 Be Diligent About Tax Return Documents Business Loans Small Business Loans Start Own Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ad/f5/91/adf59108b229200db8ce8a4604750d37.jpg" data-lightbox="roadtrip" data-title="To Claim A Charitable Deduction You Need To Have The Proper Documentation What That Looks Like Will Depend On Whether Y Business Tax Tax Write Offs Irs Taxes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ad/f5/91/adf59108b229200db8ce8a4604750d37.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6xmklLAgQbu-vNdka2AQhw8s_UVweMHtDbg';" alt="To Claim A Charitable Deduction You Need To Have The Proper Documentation What That Looks Like Will Depend On Whether Y Business Tax Tax Write Offs Irs Taxes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">To Claim A Charitable Deduction You Need To Have The Proper Documentation What That Looks Like Will Depend On Whether Y Business Tax Tax Write Offs Irs Taxes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/4a/70/ac4a7080ef9bf7a988a64a9b03c791c7.jpg" data-lightbox="roadtrip" data-title="Como Elegir A Un Peparador De Impuestos Aqui Les Comparto Un Articulo Que Les Va A Yudar A Encontrar Su Mejor Opcion Income Tax Return Tax Return Income Tax">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/4a/70/ac4a7080ef9bf7a988a64a9b03c791c7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRft9ykTZuWdYAC0PsbDSqKVCchD-6LGfFL_g';" alt="Como Elegir A Un Peparador De Impuestos Aqui Les Comparto Un Articulo Que Les Va A Yudar A Encontrar Su Mejor Opcion Income Tax Return Tax Return Income Tax">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Como Elegir A Un Peparador De Impuestos Aqui Les Comparto Un Articulo Que Les Va A Yudar A Encontrar Su Mejor Opcion Income Tax Return Tax Return Income Tax</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/64/82/c46482cb718bef725b3758c608834940.jpg" data-lightbox="roadtrip" data-title="What To Know About Filing A Business Tax Extension Businessnewsdaily Com Tax Extension Tax Refund Tax Forms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/64/82/c46482cb718bef725b3758c608834940.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3RdV3O44nvLGw9dUeZKDF3dzthsgzEU1Z2Q';" alt="What To Know About Filing A Business Tax Extension Businessnewsdaily Com Tax Extension Tax Refund Tax Forms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What To Know About Filing A Business Tax Extension Businessnewsdaily Com Tax Extension Tax Refund Tax Forms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/c8/65/13c86552da5b2127d02235529259630f.jpg" data-lightbox="roadtrip" data-title="Unfiled Taxes Md Va Pa Strategic Tax Resolution Tax Return Online Taxes Tax Refund">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/c8/65/13c86552da5b2127d02235529259630f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5lV1rOGI6g_oUmU5vbyP9egsHRaMb-p5szw';" alt="Unfiled Taxes Md Va Pa Strategic Tax Resolution Tax Return Online Taxes Tax Refund">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unfiled Taxes Md Va Pa Strategic Tax Resolution Tax Return Online Taxes Tax Refund</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/20/3c/23203ca78ecbd2437119b0fc259b2ec3.jpg" data-lightbox="roadtrip" data-title="The 6 Best Tax Software Programs Of 2021 Best Tax Software Tax Preparation Tax Software">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/20/3c/23203ca78ecbd2437119b0fc259b2ec3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT20Gul2RHrPo0ELcS-bJzzQ33-sC_sYCnprQ';" alt="The 6 Best Tax Software Programs Of 2021 Best Tax Software Tax Preparation Tax Software">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 6 Best Tax Software Programs Of 2021 Best Tax Software Tax Preparation Tax Software</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/dc/f3/b5dcf3f27b2771eded3ee228f101edfd.gif" data-lightbox="roadtrip" data-title="The Work We Do To Pay Taxes Visual Ly Paying Taxes Day Work Infographic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/dc/f3/b5dcf3f27b2771eded3ee228f101edfd.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUy2ngT9JpQw5oM9vyrJFQhaUSYbJ_BAe9Kw';" alt="The Work We Do To Pay Taxes Visual Ly Paying Taxes Day Work Infographic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Work We Do To Pay Taxes Visual Ly Paying Taxes Day Work Infographic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/f7/a5/abf7a5c0549d25b04b3fb91f05081dd4.png" data-lightbox="roadtrip" data-title="Form 656 Ppv Offer In Compromise Periodic Payment Voucher Offer In Compromise Tax Debt Irs Forms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/f7/a5/abf7a5c0549d25b04b3fb91f05081dd4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS02JpXEbyeYBnmHoQQXm0sKXmgHUwI7L4GEQ';" alt="Form 656 Ppv Offer In Compromise Periodic Payment Voucher Offer In Compromise Tax Debt Irs Forms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Form 656 Ppv Offer In Compromise Periodic Payment Voucher Offer In Compromise Tax Debt Irs Forms</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-rating-for-cervical-spine-arthritis.html">Va Rating For Cervical Spine Arthritis</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-obesity.html">Va Rating For Obesity</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-shoulder-replacement.html">Va Rating For Shoulder Replacement</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-leg-radiculopathy.html">Va Rating For Leg Radiculopathy</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-post-traumatic-arthritis.html">Va Rating For Post Traumatic Arthritis</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-chronic-gastritis.html">Va Rating For Chronic Gastritis</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-shoulder-surgery.html">Va Rating For Shoulder Surgery</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-male-infertility.html">Va Rating For Male Infertility</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-kidney-cyst.html">Va Rating For Kidney Cyst</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-transformer.html">Va Rating For Transformer</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-degenerative-joint-disease.html">Va Rating For Degenerative Joint Disease</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-moderate-to-severe-depression.html">Va Rating For Moderate To Severe Depression</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-shoulder-bursitis.html">Va Rating For Shoulder Bursitis</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-trigeminal-neuralgia.html">Va Rating For Trigeminal Neuralgia</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-radiculopathy-left-lower-extremity.html">Va Rating For Radiculopathy Left Lower Extremity</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-spinal-cord-injury.html">Va Rating For Spinal Cord Injury</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-severe-neuropathy.html">Va Rating For Severe Neuropathy</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-lumbar-degenerative-disc-disease.html">Va Rating For Lumbar Degenerative Disc Disease</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-joint-dysfunction.html">Va Rating For Joint Dysfunction</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-shoulder-sprain.html">Va Rating For Shoulder Sprain</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

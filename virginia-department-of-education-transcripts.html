@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Virginia Department Of Education Transcripts - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Virginia Department Of Education Transcripts",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/56/68/8e/56688e0192f86bcc4ba5de6346cadc48.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=virginia+department+of+education+transcripts",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Virginia Department Of Education Transcripts</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">If you have any questions about how to obtain a copy of your GED credentials please contact either the Office of. Education records can be used when students apply for college or enter into other types of education programs such as career training programs. The Official Site of The Commonwealth of Virginia. <br>				
+			</p>
+										<a class="badge badge-danger" href="/college-of-wooster-gifts.html">college of wooster gifts</a>
+											<a class="badge badge-success" href="/college-go-or-not.html">college go or not</a>
+											<a class="badge badge-info" href="/college-hbo-go.html">college hbo go</a>
+											<a class="badge badge-danger" href="/college-guys-christmas-gifts.html">college guys christmas gifts</a>
+											<a class="badge badge-light" href="/common-trees-of-northern-virginia.html">common trees of northern virginia</a>
+											<a class="badge badge-warning" href="/college-graduation-gift-ideas-for-sister.html">college graduation gift ideas for sister</a>
+											<a class="badge badge-secondary" href="/college-graduation-gift-for-her.html">college graduation gift for her</a>
+											<a class="badge badge-primary" href="/common-pine-trees-in-virginia.html">common pine trees in virginia</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you've come to visit the right site.  Our website provides you with hints for seeing the maximum quality video and picture content, search and locate more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, particularly Youtube, so we recommend this video for you to see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/17/58/351758d28686ac28358a05eab7b98958.png" data-lightbox="roadtrip" data-title="Pin On Fake United States Degree">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/17/58/351758d28686ac28358a05eab7b98958.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScPfF4G6PFVpiJ_taYyRYgpf9BkNjyzbPB8g';" alt="Pin On Fake United States Degree">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Fake United States Degree</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/da/e2/b3dae219dc9b064d513fa91f37ad585f.png" data-lightbox="roadtrip" data-title="Pin On Us University Diploma">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/da/e2/b3dae219dc9b064d513fa91f37ad585f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTptc2xPiTukPT4evf1UPFEcICvGMobB94wsA';" alt="Pin On Us University Diploma">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Us University Diploma</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/0e/74/c30e74ef9937aeae25b86f86b359b638.jpg" data-lightbox="roadtrip" data-title="Pin On Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/0e/74/c30e74ef9937aeae25b86f86b359b638.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ0PvAD9GvYEb3Evaj36Lda3leagG8DETh3w';" alt="Pin On Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8f/98/80/8f9880ff9a46659b4fdb1a7603223f66.png" data-lightbox="roadtrip" data-title="How Fast To Get A Fake Boston University Degree Fakeadiploma Com University Degree Boston University University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8f/98/80/8f9880ff9a46659b4fdb1a7603223f66.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt3DGeRUrS62qWtdgh-fMmpGLyItikE26xEA';" alt="How Fast To Get A Fake Boston University Degree Fakeadiploma Com University Degree Boston University University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Fast To Get A Fake Boston University Degree Fakeadiploma Com University Degree Boston University University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/ac/ac/50acacd273bb1b399acb3f3f64550f03.png" data-lightbox="roadtrip" data-title="Fake Ged Diploma Sample Fakeadiploma Com Diploma High School Equivalency High School Diploma">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/ac/ac/50acacd273bb1b399acb3f3f64550f03.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLAP-0ea1OlBuBDW-1ET11R-JzPc1HtWWliw';" alt="Fake Ged Diploma Sample Fakeadiploma Com Diploma High School Equivalency High School Diploma">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fake Ged Diploma Sample Fakeadiploma Com Diploma High School Equivalency High School Diploma</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/9b/14/e1/9b14e13e0fa2296a27459f4e73a4c359.jpg" data-lightbox="roadtrip" data-title="Get A Certificate From Regent University Quickly Buy The Best Fake College University Degrees Transcripts And In 2020 University Certificate University Online Mba">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/9b/14/e1/9b14e13e0fa2296a27459f4e73a4c359.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROn7CoWHYHZ5XJCmUVldkR1vXz7Pl_DUjEJQ';" alt="Get A Certificate From Regent University Quickly Buy The Best Fake College University Degrees Transcripts And In 2020 University Certificate University Online Mba">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get A Certificate From Regent University Quickly Buy The Best Fake College University Degrees Transcripts And In 2020 University Certificate University Online Mba</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/92/02/82/9202827b5a9c13f2878de00d5e0d57c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROn7CoWHYHZ5XJCmUVldkR1vXz7Pl_DUjEJQ';" alt="Get A Certificate From Regent University Quickly Buy The Best Fake College University Degrees Transcripts And In 2020 University Certificate University Online Mba">
+										<div class="card-body">
+						<h3 class="h5"><b>An individual shall meet licensure requirements set forth in the Code of Virginia.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Virginia department of education transcripts</strong>. 
+								
+																	Courts Criminal Justice Law. 
+																	Status reports and school improvement plans. 
+																	Visit COVID-19 Virginia Public Schools for access to the latest information. 
+																	Transcripts may be requested 247. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Treasury Programs. 
+																	Paying for Higher Education. 
+																	Search Financial Service Providers. 
+																	The Virginia Department of Education Office of provides adult literacy services adult high school equivalency completion Adult Education and Literacy Second Language services to Virginias adults. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Virginia education and teacher licenses. 
+																	Currently the only Virginia board-approved HSE examination in Virginia is the General Educational Development GED test which was developed to enable persons who have not graduated from high school to demonstrate the attainment of abilities normally associated with completion of a high school program of study. 
+																	High School The Virginia Department of Education does not have student high school transcripts public or private. 
+																	The National Student Clearinghouse NSC is the official provider of transcripts for the University of Virginia. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you are a state corrections facility and need to verify that an inmate has taken the GED test. 
+																	Graduates and Former Students of DoDEA High Schools may request Transcripts by contacting the DoDEA Records Center which currently maintains High School Transcripts and Master Class Lists dependent upon the Students graduation date or last date of attendance. 
+																	Order electronic transcript Printed mailed transcripts Order online through Parchment Cost. 
+																	One form must be filled out per request under one name if requesting search under multiple names please fill out separate forms and include appropriate fee for each form. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	SCHEV can only search for transcripts for closed institutionsPlease contact your institutions registrar for current transcripts. 
+																	This series may include but is not limited to. 
+																	Please note that the operational status is subject to change as public health conditions evolve. 
+																	Contact information on Virginia school divisions and schools is available on the Virginia Schools Directory webpage. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Accreditation Records 008095 5 Years after end of academic year Non-confidential Destruction This series documents a district or schools preparation for accreditation by the Virginia Department of Education. 
+																	The State Council of Higher Education for Virginia does not act in the capacity of registrar. 
+																	The Virginia Department of Education VDOE has been working closely with the Governors Office the Virginia Department of Health and other state agencies to ensure our schools and communities have the most up-to-date information and resources. 
+																	Use the toggle on the map below to see the operational status of each division throughout the 2020-2021 school year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Licenses. 
+																	The mission of the Virginia Department of Education VDOE is to lead and facilitate the development and implementation of a quality public education system that meets the needs of students and assists them in becoming educated productive and responsible citizens. 
+																	Students requesting consideration of Deferred Action for Childhood Arrivals DACA can submit their education records to show that they were enrolled in school or to help. 
+																	The Virginia Department of Professional and Occupational Regulation and Virginia Department of Education do not accept electronic transcripts. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	New information from the VDOE this week includes. 
+																	An individual seeking licensure shall establish a file in the Virginia Department of Education by submitting a complete application packet that includes official student transcripts. 
+																	On January 14. 
+																	250 for the first copy 550 for additional copies Processing time. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Virginia Department of Educations Virtual Virginia program offers online courses digital content and professional development opportunities to schools students and educators across the Commonwealth. 
+																	Your original diploma and transcript will be mailed to you at no charge. 
+																	The Virginia Department of Education is tracking school divisions operating status for the 2020-2021 school year in response to the COVID-19 pandemic. 
+																	The transcript is a record of all academic work attempted at the University. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Education records can be used for a number of different purposes. 
+																	Doevirginiagov Virginia Department of Education. 
+																	Virtual Virginia offers online Advanced Placement world language elective and core academic courses to students across the Commonwealth the nation and throughout the world. 
+																	It is not possible to segregate individual courses or semesters or to print only undergraduate or graduate work. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For third party requests. 
+																	The board has contracted with Pearson VUE to administer the CE program. 
+																	Consequently we provide copies of the records we have in storage not official transcripts. 
+																	Transcript of Official TASC Scores or GED Scores Official scores of your TASC results or GED results are kept by the West Virginia Department of Education High School Equivalency Records. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 2014 GED test series measures not only high school equivalency but also. 
+																	Fax a Consent for Release of Information form to 804-530-4517. 
+																	Vital. 
+																	The Virginia Insurance Continuing Education Board is an insurance industry board created by the Virginia General Assembly to oversee the Virginia Continuing Education CE Program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Go to the GED Credentialing Website to order duplicate transcripts or official Virginia GED certificates. 
+																	Colleges universities and employers require a transcript of your official scores. 
+																	Approximately 5 business days plus shipping time Order transcript online Order in. 
+																	To obtain copies of school records contact your local school divisions administrative offices. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Bureau of Insurance is not involved in the day-to-day operation of the CE program. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/55/af/4555af062b7800e13e8415ede3710029.jpg" data-lightbox="roadtrip" data-title="Notice Of Intent For State Of Va Send In By 8 15 2014 Intentions Homeschool Instruction">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/55/af/4555af062b7800e13e8415ede3710029.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo2acA8sG15yELpp6DtZM987Nq8SBjvzGhtg';" alt="Notice Of Intent For State Of Va Send In By 8 15 2014 Intentions Homeschool Instruction">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Notice Of Intent For State Of Va Send In By 8 15 2014 Intentions Homeschool Instruction</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/6e/df/416edf3f659dc4c678d83be7515b510f.png" data-lightbox="roadtrip" data-title="Pin On Us University Diploma">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/6e/df/416edf3f659dc4c678d83be7515b510f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtc_OGyPKPh26fSU4oJ-q7EWAWGD4LiKkWJg';" alt="Pin On Us University Diploma">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Us University Diploma</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/92/02/82/9202827b5a9c13f2878de00d5e0d57c9.jpg" data-lightbox="roadtrip" data-title="Pin Di Diagram Alimy For Us">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/92/02/82/9202827b5a9c13f2878de00d5e0d57c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwApRr2aeLSofAyY2uYCfjeHhmSK64RMhrtA';" alt="Pin Di Diagram Alimy For Us">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Di Diagram Alimy For Us</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/4b/8e/654b8e7627f628260b86c01b03d9614a.png" data-lightbox="roadtrip" data-title="How To Buy The University Of Iowa Fake Diploma Get Fake Iowa Degree Fakeadiploma Com The University Of Iowa Public University Degree Certificate">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/4b/8e/654b8e7627f628260b86c01b03d9614a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCaJFFoGwn4zQdbPUTh_IbRkcvQxmf5wKXEw';" alt="How To Buy The University Of Iowa Fake Diploma Get Fake Iowa Degree Fakeadiploma Com The University Of Iowa Public University Degree Certificate">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Buy The University Of Iowa Fake Diploma Get Fake Iowa Degree Fakeadiploma Com The University Of Iowa Public University Degree Certificate</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fb/eb/a6/fbeba67f75ac7b0acec83973ae0e33dc.png" data-lightbox="roadtrip" data-title="How To Get A Fake Nau Degree Buy Fake Northern Arizona University Diplomas University Diploma Northern Arizona University Educational Psychology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fb/eb/a6/fbeba67f75ac7b0acec83973ae0e33dc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGi02qcjXBYP7eXSSak5igYS9j52vp32CQdg';" alt="How To Get A Fake Nau Degree Buy Fake Northern Arizona University Diplomas University Diploma Northern Arizona University Educational Psychology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Get A Fake Nau Degree Buy Fake Northern Arizona University Diplomas University Diploma Northern Arizona University Educational Psychology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/ca/84/7dca845add9d3c433158561752e1a40b.png" data-lightbox="roadtrip" data-title="I Want To Get Fake Psu Transcript Where To Buy Fake Penn State California Institute Of Technology School Of Engineering Massachusetts Institute Of Technology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/ca/84/7dca845add9d3c433158561752e1a40b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsmIkAOW1dAQ3BEMMV-RvEe7NrC71CfCkhkg';" alt="I Want To Get Fake Psu Transcript Where To Buy Fake Penn State California Institute Of Technology School Of Engineering Massachusetts Institute Of Technology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Want To Get Fake Psu Transcript Where To Buy Fake Penn State California Institute Of Technology School Of Engineering Massachusetts Institute Of Technology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/20/90/40/20904012bf238b434de5e87aa6152fce.png" data-lightbox="roadtrip" data-title="How To Buy Fake Unlv Transcripts Unlv Management Information Systems University Diploma">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/20/90/40/20904012bf238b434de5e87aa6152fce.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkfMRk6ZMi6Azmj1lyNXeTcxvCmz7PZ8kQ1Q';" alt="How To Buy Fake Unlv Transcripts Unlv Management Information Systems University Diploma">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Buy Fake Unlv Transcripts Unlv Management Information Systems University Diploma</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/8c/fb/83/8cfb83ee28b9957eaf160c05852c1fd5.jpg" data-lightbox="roadtrip" data-title="We Make You A High Quality Faux Professional License Card Or Membership Card Can Be For Professional License Certificate Of Completion Template Doctors Note">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/8c/fb/83/8cfb83ee28b9957eaf160c05852c1fd5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX7d75Nm-DDpfsnWEEHhgYTe7g_cQ-BnNDSg';" alt="We Make You A High Quality Faux Professional License Card Or Membership Card Can Be For Professional License Certificate Of Completion Template Doctors Note">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Make You A High Quality Faux Professional License Card Or Membership Card Can Be For Professional License Certificate Of Completion Template Doctors Note</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8f/f8/da/8ff8da796eff2003fa42b7d243694c8f.png" data-lightbox="roadtrip" data-title="How To Get A Fake Temple University Diploma In A Week Fakeadiploma Com University Diploma Temple University Clinical Psychology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8f/f8/da/8ff8da796eff2003fa42b7d243694c8f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY1a8E-HAjrzY_j3carYl8KIIyo9A1YO7ykA';" alt="How To Get A Fake Temple University Diploma In A Week Fakeadiploma Com University Diploma Temple University Clinical Psychology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Get A Fake Temple University Diploma In A Week Fakeadiploma Com University Diploma Temple University Clinical Psychology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/ed/14/beed14857794ea7dbc7ddc072f159cb4.jpg" data-lightbox="roadtrip" data-title="How Much To Buy A Csu Northridge Transcript Buy Fake Transcript Buy University Transcript Buy College Transcript Northridge College Degree Spring Semester">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/ed/14/beed14857794ea7dbc7ddc072f159cb4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-GgBS4Kp22x8L4k6Vaj5yzNuaqKjA41FZJg';" alt="How Much To Buy A Csu Northridge Transcript Buy Fake Transcript Buy University Transcript Buy College Transcript Northridge College Degree Spring Semester">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Much To Buy A Csu Northridge Transcript Buy Fake Transcript Buy University Transcript Buy College Transcript Northridge College Degree Spring Semester</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8c/4e/83/8c4e83f8e4224eda89e916e56c10a586.png" data-lightbox="roadtrip" data-title="Buy Fake Harvard University Transcript Fakeadiploma Com Harvard University University Harvard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8c/4e/83/8c4e83f8e4224eda89e916e56c10a586.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7NOy4YpYSayDSGNrsFuPNw5mNBvolszEWxw';" alt="Buy Fake Harvard University Transcript Fakeadiploma Com Harvard University University Harvard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Buy Fake Harvard University Transcript Fakeadiploma Com Harvard University University Harvard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/68/8e/56688e0192f86bcc4ba5de6346cadc48.png" data-lightbox="roadtrip" data-title="Which Country Provides Fake Nyu Diplomas Fakeadiploma Com University Diploma College Diploma Diploma">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/68/8e/56688e0192f86bcc4ba5de6346cadc48.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToPXCN_91cTOThI3mQRBZ-N4gN3uAKtEnY-A';" alt="Which Country Provides Fake Nyu Diplomas Fakeadiploma Com University Diploma College Diploma Diploma">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Which Country Provides Fake Nyu Diplomas Fakeadiploma Com University Diploma College Diploma Diploma</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/89/75/418975486cdc669701a191b1ec920943.png" data-lightbox="roadtrip" data-title="Pin On Buy Australia Degree">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/89/75/418975486cdc669701a191b1ec920943.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEiMEox1ejrW6ZbSbWrdYzFd7n08wPyX0X4A';" alt="Pin On Buy Australia Degree">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Buy Australia Degree</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-compensation-dependent-requirements.html">Va Compensation Dependent Requirements</a></li>
+													<li class="list-group-item"><a href="/va-compensation-rating-adjustment.html">Va Compensation Rating Adjustment</a></li>
+													<li class="list-group-item"><a href="/va-compensation-for-cervicalgia.html">Va Compensation For Cervicalgia</a></li>
+													<li class="list-group-item"><a href="/va-compensation-tax.html">Va Compensation Tax</a></li>
+													<li class="list-group-item"><a href="/va-compensation-medical-exam.html">Va Compensation Medical Exam</a></li>
+													<li class="list-group-item"><a href="/va-compensation-for-heart-conditions.html">Va Compensation For Heart Conditions</a></li>
+													<li class="list-group-item"><a href="/va-compensation-department-phone-number.html">Va Compensation Department Phone Number</a></li>
+													<li class="list-group-item"><a href="/va-compensation-for-housing-loan.html">Va Compensation For Housing Loan</a></li>
+													<li class="list-group-item"><a href="/va-compensation-money.html">Va Compensation Money</a></li>
+													<li class="list-group-item"><a href="/va-compensation-sleep-apnea-cpap.html">Va Compensation Sleep Apnea Cpap</a></li>
+													<li class="list-group-item"><a href="/va-compensation-for-mild-hearing-loss.html">Va Compensation For Mild Hearing Loss</a></li>
+													<li class="list-group-item"><a href="/va-compensation-for-knee.html">Va Compensation For Knee</a></li>
+													<li class="list-group-item"><a href="/va-compensation-for-dependents.html">Va Compensation For Dependents</a></li>
+													<li class="list-group-item"><a href="/va-compensation-disability-rating.html">Va Compensation Disability Rating</a></li>
+													<li class="list-group-item"><a href="/va-compensation-physical-exam.html">Va Compensation Physical Exam</a></li>
+													<li class="list-group-item"><a href="/va-compensation-stimulus-checks.html">Va Compensation Stimulus Checks</a></li>
+													<li class="list-group-item"><a href="/va-compensation-table-for-2021.html">Va Compensation Table For 2021</a></li>
+													<li class="list-group-item"><a href="/va-compensation-rules.html">Va Compensation Rules</a></li>
+													<li class="list-group-item"><a href="/va-compensation-for-secondary-neuropathy.html">Va Compensation For Secondary Neuropathy</a></li>
+													<li class="list-group-item"><a href="/va-compensation-for-knee-arthritis.html">Va Compensation For Knee Arthritis</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

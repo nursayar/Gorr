@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>William Montgomery Attorney Glens Falls Ny - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "William Montgomery Attorney Glens Falls Ny",
+  "datePublished": "2021-02-17",
+  "image": "MaJ9HQh8c-w2LM",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=william+montgomery+attorney+glens+falls+ny",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>William Montgomery Attorney Glens Falls Ny</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">September 17 2020 Get expert legal advice from William E Montgomery III Glens Falls because we are located at the address PO Box 228 New-York 12801 and we are listed in the category Lawyers Attorneys and you can contact us via email or phone at 518798-6885 and the county is Warren and William E Montgomery III has 1-10 employees which means for estimates questions and expert advice please. DUI DWI Attorneys Attorneys Criminal Law Attorneys 3 518 798-6885. Law Office of William Nikas. <br>				
+			</p>
+										<a class="badge badge-danger" href="/va-combined-ratings-table-chart.html">va combined ratings table chart</a>
+											<a class="badge badge-light" href="/va-compensation-and-property-tax.html">va compensation and property tax</a>
+											<a class="badge badge-danger" href="/va-compensated-work-therapy-pay.html">va compensated work therapy pay</a>
+											<a class="badge badge-info" href="/va-comp-stimulus-check.html">va comp stimulus check</a>
+											<a class="badge badge-info" href="/va-claims-and-compensation.html">va claims and compensation</a>
+											<a class="badge badge-info" href="/va-claim-for-knee-pain.html">va claim for knee pain</a>
+											<a class="badge badge-warning" href="/va-chapter-4.html">va chapter 4</a>
+											<a class="badge badge-warning" href="/va-ch33.html">va ch33</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you have come to visit the ideal site.  Our site provides you with suggestions for viewing the maximum quality video and picture content, search and locate more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, particularly Youtube, therefore we recommend this movie for you to see.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bloximages.chicago2.vip.townnews.com/poststar.com/content/tncms/assets/v3/editorial/b/7e/b7e6b761-e381-5a55-bba6-cc7eb9239682/580682152b01b.image.jpg?crop=177%2C177%2C46%2C0&amp;resize=1200%2C1200&amp;order=crop%2Cresize" data-lightbox="roadtrip" data-title="Man Sues Glens Falls City Attorney For Alleged Legal Malpractice Local Poststar Com">
+											<img class="card-img v-image ads-img " src="https://bloximages.chicago2.vip.townnews.com/poststar.com/content/tncms/assets/v3/editorial/b/7e/b7e6b761-e381-5a55-bba6-cc7eb9239682/580682152b01b.image.jpg?crop=177%2C177%2C46%2C0&amp;resize=1200%2C1200&amp;order=crop%2Cresize" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7b1CC72Lq_JQ2awQ5IGQA1_49QerGcDQSRQ';" alt="Man Sues Glens Falls City Attorney For Alleged Legal Malpractice Local Poststar Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Man Sues Glens Falls City Attorney For Alleged Legal Malpractice Local Poststar Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.lawyers.com/assets/v1/images/profiles/no-photo.png" data-lightbox="roadtrip" data-title="William E Montgomery Iii Glens Falls Ny Law Firm Lawyers Com">
+											<img class="card-img v-image ads-img " src="http://www.lawyers.com/assets/v1/images/profiles/no-photo.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReB5Riv23xGZ7370FsgfIopyUnvIckv3zOOw';" alt="William E Montgomery Iii Glens Falls Ny Law Firm Lawyers Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">William E Montgomery Iii Glens Falls Ny Law Firm Lawyers Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bloximages.chicago2.vip.townnews.com/poststar.com/content/tncms/assets/v3/editorial/7/cd/7cda7176-870b-5cf9-be8b-21c10b8487ca/5de82bb072e66.image.jpg?resize=1200%2C900" data-lightbox="roadtrip" data-title="Glens Falls Man Rejects Plea Deal In Child Rape Case Crime And Courts Poststar Com">
+											<img class="card-img v-image ads-img " src="https://bloximages.chicago2.vip.townnews.com/poststar.com/content/tncms/assets/v3/editorial/7/cd/7cda7176-870b-5cf9-be8b-21c10b8487ca/5de82bb072e66.image.jpg?resize=1200%2C900" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3XBxzdh95ve83nZSNd4OxbxkP5y8PyFp8YA';" alt="Glens Falls Man Rejects Plea Deal In Child Rape Case Crime And Courts Poststar Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Glens Falls Man Rejects Plea Deal In Child Rape Case Crime And Courts Poststar Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.findlawresources.com/env_prod/type_profile/firmwld_1737223/pid_1/william_e_montgomery_iii.jpg" data-lightbox="roadtrip" data-title="William E Montgomery Iii A Glens Falls New York Ny Law Firm">
+											<img class="card-img v-image ads-img " src="https://images.findlawresources.com/env_prod/type_profile/firmwld_1737223/pid_1/william_e_montgomery_iii.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG2hN2jjMpQ_NKMGxd4uST1aaJffl28ZB_lg';" alt="William E Montgomery Iii A Glens Falls New York Ny Law Firm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">William E Montgomery Iii A Glens Falls New York Ny Law Firm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bloximages.chicago2.vip.townnews.com/poststar.com/content/tncms/assets/v3/editorial/f/12/f1224735-ddb0-5588-82d7-dfb0e81459ce/5deec3a68db0c.preview.jpg?crop=1246%2C1246%2C207%2C0&amp;resize=1246%2C1246&amp;order=crop%2Cresize" data-lightbox="roadtrip" data-title="Day Care Child Abuser Seeks Lower Sex Offender Classification Local Poststar Com">
+											<img class="card-img v-image ads-img " src="https://bloximages.chicago2.vip.townnews.com/poststar.com/content/tncms/assets/v3/editorial/f/12/f1224735-ddb0-5588-82d7-dfb0e81459ce/5deec3a68db0c.preview.jpg?crop=1246%2C1246%2C207%2C0&amp;resize=1246%2C1246&amp;order=crop%2Cresize" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEiZmzey2FY1mT8RAZSwIhyxnlDSea5DNcqg';" alt="Day Care Child Abuser Seeks Lower Sex Offender Classification Local Poststar Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Day Care Child Abuser Seeks Lower Sex Offender Classification Local Poststar Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bloximages.chicago2.vip.townnews.com/poststar.com/content/tncms/assets/v3/editorial/a/c0/ac0ee23c-96c3-11e3-b53a-001a4bcf887a/530047e9db767.preview-699.jpg?crop=681%2C511%2C8%2C0&amp;resize=1200%2C900&amp;order=crop%2Cresize" data-lightbox="roadtrip" data-title="Queensbury Man Alleges Glens Falls Police Officer Who Was Nearly Fired Targeted Him Local Poststar Com">
+											<img class="card-img v-image ads-img " src="https://bloximages.chicago2.vip.townnews.com/poststar.com/content/tncms/assets/v3/editorial/a/c0/ac0ee23c-96c3-11e3-b53a-001a4bcf887a/530047e9db767.preview-699.jpg?crop=681%2C511%2C8%2C0&amp;resize=1200%2C900&amp;order=crop%2Cresize" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQarT2UJ40quNy_Bv-8QBcR14rz8TovonrKjA';" alt="Queensbury Man Alleges Glens Falls Police Officer Who Was Nearly Fired Targeted Him Local Poststar Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Queensbury Man Alleges Glens Falls Police Officer Who Was Nearly Fired Targeted Him Local Poststar Com</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/0a/42/29/0a422905b9bbac97760a5fde966cc887.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQarT2UJ40quNy_Bv-8QBcR14rz8TovonrKjA';" alt="Queensbury Man Alleges Glens Falls Police Officer Who Was Nearly Fired Targeted Him Local Poststar Com">
+										<div class="card-body">
+						<h3 class="h5"><b>Get directions reviews and information for William E Montgomery III in Glens Falls NY.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>William montgomery attorney glens falls ny</strong>. 
+								
+																	Research legal experience education professional associations jurisdictions and contact information on Justia. 
+																	Montgomery was the district attorney when Matte was an. 
+																	15 Pearl St. 
+																	Montgomery III - a Glens Falls New York NY Law Firm Search for legal issues For help near city ZIP code or county. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	William Edgar Montgomery III is a lawyer serving Glens Falls in Criminal Defense Litigation and DUI DWI cases. 
+																	Menu Reservations Make Reservations. 
+																	View attorneys profile for reviews office locations and contact information. 
+																	William E Montgomery III. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Our law firm understands that any legal problem or issue is very important to you and must be handled. 
+																	Attorneys Medical Law Attorneys Transportation Law Attorneys. 
+																	They work very hard to make sure you have winning results 2. 
+																	No matter what you ask us to do on your behalf we will make sure that we represent your interests diligently ethically vigorously and cost effectively. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Montgomery III Glens Falls New York. 
+																	Our law firm understands that any legal problem or issue is very important to you and must be handled with the utmost of care and attention Our law firm understands that any legal problem or issue is very important to you and must be handled with the utmost of care and attention from start to finish. 
+																	I dont have enough words to describe how amazing the experience was with this firm. 
+																	Law offices of William E. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Law offices of William E. 
+																	Practices Criminal defense Personal injury General practice. 
+																	He graduated with honors from Northeastern University in 1979 with a bachelor of science degree in political science. 
+																	Montgomery III graduated cum laude from California Western School of Law in 1982 and was admitted to practice law in New York State in 1983. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Attorney William E Montgomery III. 
+																	Law offices of William E. 
+																	View the law firms profile for reviews office locations and contact information. 
+																	Glens Falls New York Listings. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	At Montgomery William E III we understand that any legal problem or issue is very important to you and must be handled with utmost care and attention from start to finish. 
+																	We recommend using Google Chrome Firefox or Microsoft Edge. 
+																	Attorney at William E Montgomery III Glens Falls New York 1 connection. 
+																	Find New York attorney William Montgomery in their Glens Falls or Glens Falls office. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Order Online Tickets Tickets See Availability Directions locationtagLinevaluetext Sponsored Topics. 
+																	No matter what you ask us to do on. 
+																	Glens Falls NY 12801. 
+																	What is the phone number for William E. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	William E Montgomery Iiis Phone Number is 518-798-6885. 
+																	William E Montgomery III 15 Pearl St Glens Falls NY 12801. 
+																	Bill Montgomery Law Client Reviews of Attorneys law firms Criminal defense attorney from state of New York. 
+																	Montgomery III was born and raised in Warren County and graduated from Glens Falls High School in 1974. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Rate Glens Fallss attorneys or make an appointment at 130 Maple St Glens Falls NY 12801. 
+																	Find reviews educational history and legal experience. 
+																	The Listed Business Address for William E Montgomery Iii is 130 Maple Street Glens Falls NY 12801-0228 USA. 
+																	The allegations were revealed in a state investigation of then-Warren County District Attorney William Montgomery but no charges were filed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	View Bill Montgomerys full. 
+																	Our law firm understands that any legal problem or issue is very important to you and must be handled with the utmost of. 
+																	See reviews photos directions phone numbers and more for William Montgomery Attorney locations in Glens Falls NY. 
+																	Glens Falls New York attorney William Edgar Montgomery III. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	59 likes 1 talking about this. 
+																	Montgomery IIIa Glens Falls New York NY Lawyer Attorney - Personal Injury Criminal Defense General Practice Internet Explorer 11 is no longer supported. 
+																	Montgomery III is a firm serving Glens Falls NY. 
+																	William Edgar Montgomery III is an attorney serving Glens Falls NY. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	William E Montgomery Iiis Area of Business. 
+																	Phone Number Address and Contact Details for William E Montgomery Iii in Glens Falls New York. 
+																	Montgomery III Glens Falls New York. 
+																	Legal practice includes personal injury personal injury and criminal law. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Reviews 518 798-6885 Website. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wnyt.com/apimages/apc40662735c4a40189453c0e8ce67c285.jpg" data-lightbox="roadtrip" data-title="Barr Defends Aggressive Federal Response To Protests Wnyt Com">
+											<img class="card-img v-image ads-img " src="https://wnyt.com/apimages/apc40662735c4a40189453c0e8ce67c285.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1Xli0bA9NAzTwQTLjwbiRnWN1WSOFQVDWUA';" alt="Barr Defends Aggressive Federal Response To Protests Wnyt Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Barr Defends Aggressive Federal Response To Protests Wnyt Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://brbsfuneral.com/tribute-images/240944/Ultra/William-Briggs.jpg" data-lightbox="roadtrip" data-title="Obituary Of William H Briggs Funeral Homes Cremation Services">
+											<img class="card-img v-image ads-img " src="https://brbsfuneral.com/tribute-images/240944/Ultra/William-Briggs.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJQIOZxrDnNYuGlmDIyOYtgtlf11TjW3xd5w';" alt="Obituary Of William H Briggs Funeral Homes Cremation Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Obituary Of William H Briggs Funeral Homes Cremation Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="qwC2VzbKuTuTpM" data-lightbox="roadtrip" data-title="Https Www Co Montgomery Ny Us Sites Public Government Locallaws Locallawscans 013 Pdf">
+											<img class="card-img v-image ads-img " src="qwC2VzbKuTuTpM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiUFJwILpztrhJkvHTZFAFlB_AO5mNjeb07w';" alt="Https Www Co Montgomery Ny Us Sites Public Government Locallaws Locallawscans 013 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Co Montgomery Ny Us Sites Public Government Locallaws Locallawscans 013 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="MaJ9HQh8c-w2LM" data-lightbox="roadtrip" data-title="Https Www Gpo Gov Fdsys Pkg Uscourts Nynd 5 04 Cv 01368 Pdf Uscourts Nynd 5 04 Cv 01368 0 Pdf">
+											<img class="card-img v-image ads-img " src="MaJ9HQh8c-w2LM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlqkwzyLB8mDOzb4sdkOwKhPo1FYqWAf_xFA';" alt="Https Www Gpo Gov Fdsys Pkg Uscourts Nynd 5 04 Cv 01368 Pdf Uscourts Nynd 5 04 Cv 01368 0 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Gpo Gov Fdsys Pkg Uscourts Nynd 5 04 Cv 01368 Pdf Uscourts Nynd 5 04 Cv 01368 0 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="X4vKndp7dc47oM" data-lightbox="roadtrip" data-title="Https Montcopa Org Documentcenter View 16462">
+											<img class="card-img v-image ads-img " src="X4vKndp7dc47oM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy2j-9dyuWN2qg2ZhHxIXF30dksLJ4Szcgzw';" alt="Https Montcopa Org Documentcenter View 16462">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Montcopa Org Documentcenter View 16462</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/41/54/6741543e522892aca8206e387fe789a5.jpg" data-lightbox="roadtrip" data-title="Toronto Mayor Rob Ford Channels His Inner Bates At The Unveiling Of Spadina Museum S Downton Abbey Exhibit Downton Abbey Fashion Rob Ford Downton Abby">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/41/54/6741543e522892aca8206e387fe789a5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ1SaskhAwIDl0LPqdwja21gXVMLVcWBE5Mg';" alt="Toronto Mayor Rob Ford Channels His Inner Bates At The Unveiling Of Spadina Museum S Downton Abbey Exhibit Downton Abbey Fashion Rob Ford Downton Abby">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Toronto Mayor Rob Ford Channels His Inner Bates At The Unveiling Of Spadina Museum S Downton Abbey Exhibit Downton Abbey Fashion Rob Ford Downton Abby</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/42/29/0a422905b9bbac97760a5fde966cc887.png" data-lightbox="roadtrip" data-title="Nbm Exterior View From Police Memorial National Building Museum Wikipedia National Building Museum National Building Building Museum">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/42/29/0a422905b9bbac97760a5fde966cc887.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSf5FKqlPWyC329ZNHCBKDwqdjNmlWnw2FOA';" alt="Nbm Exterior View From Police Memorial National Building Museum Wikipedia National Building Museum National Building Building Museum">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nbm Exterior View From Police Memorial National Building Museum Wikipedia National Building Museum National Building Building Museum</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.pleasantonweekly.com/obituaries/photos/6537/main.jpg" data-lightbox="roadtrip" data-title="Pleasantonweekly Com Lasting Memories">
+											<img class="card-img v-image ads-img " src="https://www.pleasantonweekly.com/obituaries/photos/6537/main.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlLkC6X0UX2rfEvhdeog3NSnDbgVBlpVrGBQ';" alt="Pleasantonweekly Com Lasting Memories">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pleasantonweekly Com Lasting Memories</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/a3/fe/2e/a3fe2ea0be0414c42503f18e6f30cced.jpg" data-lightbox="roadtrip" data-title="Ethiopian Properties Is The Best Place Choice For You Find The Best Residential Properties For Sale Houses Property Real Estate Real Estate Us Real Estate">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/a3/fe/2e/a3fe2ea0be0414c42503f18e6f30cced.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRTzv9DzxqEr0KObQFK_pwJAamuGla3EC_aQ';" alt="Ethiopian Properties Is The Best Place Choice For You Find The Best Residential Properties For Sale Houses Property Real Estate Real Estate Us Real Estate">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ethiopian Properties Is The Best Place Choice For You Find The Best Residential Properties For Sale Houses Property Real Estate Real Estate Us Real Estate</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="c_65DAmw96s16M" data-lightbox="roadtrip" data-title="Http Www Palegalads Org Journals Pdf 649 Lr Issue29 07192018 Pdf">
+											<img class="card-img v-image ads-img " src="c_65DAmw96s16M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT57bH920n8d0BZ5hMjmk0Wf6wqVfVAFB60iQ';" alt="Http Www Palegalads Org Journals Pdf 649 Lr Issue29 07192018 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Palegalads Org Journals Pdf 649 Lr Issue29 07192018 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="eTl-mypoceNdKM" data-lightbox="roadtrip" data-title="Https Www Cacb Uscourts Gov Sites Cacb Files Documents Cases Of Interest American 20suzuki 20motor 20corp Pdf">
+											<img class="card-img v-image ads-img " src="eTl-mypoceNdKM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlNppCNpsWWVn6kOGStfgoJ-CopqjJDXvg-Q';" alt="Https Www Cacb Uscourts Gov Sites Cacb Files Documents Cases Of Interest American 20suzuki 20motor 20corp Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Cacb Uscourts Gov Sites Cacb Files Documents Cases Of Interest American 20suzuki 20motor 20corp Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/21/d0/1f21d0a25e23c758d288ed07a273db8f.jpg" data-lightbox="roadtrip" data-title="Historic Manassas House Closer To Prospect Of Demolition Historic Homes Manassas Demolition">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/21/d0/1f21d0a25e23c758d288ed07a273db8f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPN0PiNyVtAbOkK-QfV1MeHadclsvtw6VlvQ';" alt="Historic Manassas House Closer To Prospect Of Demolition Historic Homes Manassas Demolition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Historic Manassas House Closer To Prospect Of Demolition Historic Homes Manassas Demolition</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="VgGDBxdQQnCBJM" data-lightbox="roadtrip" data-title="Https Cases Primeclerk Com Bonton Home Downloadpdf Id1 Mta0mjgynw Id2 0">
+											<img class="card-img v-image ads-img " src="VgGDBxdQQnCBJM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNDAtSmGuxBG4tciFs4Ym8nAAdYqRx7Fd6gA';" alt="Https Cases Primeclerk Com Bonton Home Downloadpdf Id1 Mta0mjgynw Id2 0">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Cases Primeclerk Com Bonton Home Downloadpdf Id1 Mta0mjgynw Id2 0</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-health-insurance-does-military-have.html">What Health Insurance Does Military Have</a></li>
+													<li class="list-group-item"><a href="/what-does-the-gi-bill-considered-full-time.html">What Does The Gi Bill Considered Full Time</a></li>
+													<li class="list-group-item"><a href="/what-health-insurance-do-va-employees-have.html">What Health Insurance Do Va Employees Have</a></li>
+													<li class="list-group-item"><a href="/what-are-the-requirements-for-post-9-11-gi-bill.html">What Are The Requirements For Post 9 11 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-does-major-depressive-disorder-with-psychotic-features-mean.html">What Does Major Depressive Disorder With Psychotic Features Mean</a></li>
+													<li class="list-group-item"><a href="/what-does-the-va-do-for-homeless-veterans.html">What Does The Va Do For Homeless Veterans</a></li>
+													<li class="list-group-item"><a href="/what-does-40-gi-bill-mean.html">What Does 40 Gi Bill Mean</a></li>
+													<li class="list-group-item"><a href="/what-are-the-most-common-disabilities-for-which-windows-7-provides-solutions.html">What Are The Most Common Disabilities For Which Windows 7 Provides Solutions</a></li>
+													<li class="list-group-item"><a href="/what-does-montgomery-gi-bill-stand-for.html">What Does Montgomery Gi Bill Stand For</a></li>
+													<li class="list-group-item"><a href="/what-does-va-compensation-mean.html">What Does Va Compensation Mean</a></li>
+													<li class="list-group-item"><a href="/what-conditions-qualify-for-va-disability.html">What Conditions Qualify For Va Disability</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-disabled-veterans-get-in-tennessee.html">What Benefits Do Disabled Veterans Get In Tennessee</a></li>
+													<li class="list-group-item"><a href="/what-are-the-va-disability-ratings.html">What Are The Va Disability Ratings</a></li>
+													<li class="list-group-item"><a href="/what-does-the-gi-bill-pay-for-housing.html">What Does The Gi Bill Pay For Housing</a></li>
+													<li class="list-group-item"><a href="/what-does-the-gi-bill-provide.html">What Does The Gi Bill Provide</a></li>
+													<li class="list-group-item"><a href="/what-gi-bill-does-national-guard-get.html">What Gi Bill Does National Guard Get</a></li>
+													<li class="list-group-item"><a href="/what-are-va-survivor-benefits.html">What Are Va Survivor Benefits</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-100-disabled-vets-get-in-washington-state.html">What Benefits Do 100 Disabled Vets Get In Washington State</a></li>
+													<li class="list-group-item"><a href="/what-does-the-gi-bill-pay-for.html">What Does The Gi Bill Pay For</a></li>
+													<li class="list-group-item"><a href="/what-discounts-do-veterans-get.html">What Discounts Do Veterans Get</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

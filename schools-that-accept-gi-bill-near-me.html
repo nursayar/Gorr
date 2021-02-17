@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Schools That Accept Gi Bill Near Me - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Schools That Accept Gi Bill Near Me",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/736x/9e/a7/ad/9ea7ad86635a3aee862bf147371cc6af.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=schools+that+accept+gi+bill+near+me",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Schools That Accept Gi Bill Near Me</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The GI Bill is a series of programs run by the US. Approved program of education and include but are. Just take me to the list of Yellow Ribbon schools. <br>				
+			</p>
+										<a class="badge badge-light" href="/military-disability-ratings-for-spine-conditions.html">military disability ratings for spine conditions</a>
+											<a class="badge badge-info" href="/montgomery-county-water-bill-nc.html">montgomery county water bill nc</a>
+											<a class="badge badge-info" href="/minimum-age-to-go-to-college.html">minimum age to go to college</a>
+											<a class="badge badge-danger" href="/montgomery-gastroenterology-veirs-mill-road-silver-spring-md.html">montgomery gastroenterology veirs mill road silver spring md</a>
+											<a class="badge badge-warning" href="/montgomery-al-tax-bill-search.html">montgomery al tax bill search</a>
+											<a class="badge badge-info" href="/montgomery-county-texas-water-bill-pay.html">montgomery county texas water bill pay</a>
+											<a class="badge badge-light" href="/montgomery-county-tax-bill.html">montgomery county tax bill</a>
+											<a class="badge badge-success" href="/mid-state-gi.html">mid state gi</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to pay a visit to the ideal site.  Our site provides you with hints for seeing the maximum quality video and image content, search and find more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, particularly Youtube, so we recommend this movie for you to view.  You can also contribute to supporting this site by sharing videos and graphics that you enjoy on this site on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e2/fe/99/e2fe99a5041fe1e5e496983c15c0f2d1.jpg" data-lightbox="roadtrip" data-title="Post 9 11 Gi Bill Benefits Right Now Are The Most Generous In The History Of The Gi Bill But In Some Cases It Does N Gi Bill Online College College Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e2/fe/99/e2fe99a5041fe1e5e496983c15c0f2d1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm4xtE_4ALewg2yEjF21d9ukKTeTMrmm2Gwg';" alt="Post 9 11 Gi Bill Benefits Right Now Are The Most Generous In The History Of The Gi Bill But In Some Cases It Does N Gi Bill Online College College Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Post 9 11 Gi Bill Benefits Right Now Are The Most Generous In The History Of The Gi Bill But In Some Cases It Does N Gi Bill Online College College Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e3/85/bf/e385bf9c27c1c56b2112358ccd7de380.jpg" data-lightbox="roadtrip" data-title="Is Jrotc Right For Me Accredited Schools Online Find Top Rated Accredited Programs Online College Fun Student Admissions Interview">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e3/85/bf/e385bf9c27c1c56b2112358ccd7de380.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRucRfJSzEYIUM2HY01QEdQ29kvopuShr-VFw';" alt="Is Jrotc Right For Me Accredited Schools Online Find Top Rated Accredited Programs Online College Fun Student Admissions Interview">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Is Jrotc Right For Me Accredited Schools Online Find Top Rated Accredited Programs Online College Fun Student Admissions Interview</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/88/75/01/887501acde5bf4144b7f06cb22e0acea.jpg" data-lightbox="roadtrip" data-title="Online Colleges That Accept Mycaa Benefits Mycaa Mycaa Programs Army Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/88/75/01/887501acde5bf4144b7f06cb22e0acea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTW6g7sr74WR1t0tHTb4LlDMVu1ydmwdu1zw';" alt="Online Colleges That Accept Mycaa Benefits Mycaa Mycaa Programs Army Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Online Colleges That Accept Mycaa Benefits Mycaa Mycaa Programs Army Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/88/f6/ba88f6683aaa47f38e0ddf5803f16ac8.jpg" data-lightbox="roadtrip" data-title="10 Best States For Post Military Education Gi Bill Military Education Veterans Affairs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/88/f6/ba88f6683aaa47f38e0ddf5803f16ac8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYSysngDohBG5krCqz5OooGBMCqHmXukUylA';" alt="10 Best States For Post Military Education Gi Bill Military Education Veterans Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Best States For Post Military Education Gi Bill Military Education Veterans Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/26/1e/e7/261ee7013b46b9156db2ee2cd220a84d.jpg" data-lightbox="roadtrip" data-title="Vocational School For Veterans Benefits Expert Advice Vocational School Trade School Online School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/26/1e/e7/261ee7013b46b9156db2ee2cd220a84d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGf7NeA8NMRI2OMMYoM-WBXodQHHHbWt7cZg';" alt="Vocational School For Veterans Benefits Expert Advice Vocational School Trade School Online School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vocational School For Veterans Benefits Expert Advice Vocational School Trade School Online School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/83/ca/54/83ca54ddab2fa11888f0364284a92484.jpg" data-lightbox="roadtrip" data-title="Veterans Going To College For The First Time Face A Wide Range Of Challenges Before Classes Begin There S Pressur Online Education Education System Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/83/ca/54/83ca54ddab2fa11888f0364284a92484.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNpddbqAFZ-Bza4697qcf15we-64r_xw7Zug';" alt="Veterans Going To College For The First Time Face A Wide Range Of Challenges Before Classes Begin There S Pressur Online Education Education System Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Going To College For The First Time Face A Wide Range Of Challenges Before Classes Begin There S Pressur Online Education Education System Education</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/eb/2d/9b/eb2d9b2b507d787284dcaacd235eeacc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNpddbqAFZ-Bza4697qcf15we-64r_xw7Zug';" alt="Veterans Going To College For The First Time Face A Wide Range Of Challenges Before Classes Begin There S Pressur Online Education Education System Education">
+										<div class="card-body">
+						<h3 class="h5"><b>Watch our Know Before You Go video to get advice from other Veterans based on their experiences using the GI Bill.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Schools that accept gi bill near me</strong>. 
+								
+																	If a college-bound student needs their university to have a Student Veterans of America SVA chapter on campus. 
+																	Getting Your Degree in Culinary Arts. 
+																	You can also locate institutions of higher education participating in the Yellow Ribbon Program which. 
+																	Air Force photo by Senior Airman Devante Williams Tattoo Schools Approved for GI Bill Montgomery GI Bill. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However this is not always the case. 
+																	Learn more about the Yellow Ribbon Program. 
+																	Ashworth College offers more than 100 career training and degree programs that are GI Bill benefits-eligible and designed for flexible learning. 
+																	If you are a military veteran who wants to obtain your CDL using your Post 911 GI Bill or other veterans educational benefits SAGE Truck Driving Schools has been a trusted nationwide leader in CDL training to vets for over 20 years. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get guidance on choosing and paying for a school. 
+																	Use VAs WEAMS Institution Search tool to locate the colleges and universities vocational institutions flight schools and other educational facilities with programs that are approved for VA benefits. 
+																	Veterans who are qualified can receive up to 2516214 in tuition assistance. 
+																	These funds help cover charges above what is covered by the GI Bill. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Also outlined are the various degrees you can obtain in the culinary field as well as the various veteran support programs these schools feature. 
+																	GI Bill benefits provide living expenses directly to the veteran while in School. 
+																	Epic Flight Academy is proud to be an approved VA GI Bill flight school for use of United States Department of Veterans Affairs military education benefits. 
+																	It is recommended that veterans who choose to pursue flight training attain a VA Certificate of Eligibility to determine. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Here is a list of VA approved Tattoo schools that currently accept GI Bill benefits and other VA benefits programs. 
+																	The Post 911 GI Bill provides substantial. 
+																	Immersive programs get vets ready for careers quickly and the 911 gI Bill schools in the country to recognize the optimal time needed to educate The first in the world to be approved by the renowned. 
+																	Find schools that take part in the Yellow Ribbon Program which can help you pay for school costs not covered by the Post-911 GI Bill. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Unfortunately for-profit schools and swindling programs still exist so veterans and their families need to tread carefully when deciding to sign on the dotted line and hand over their GI Bill benefits. 
+																	The popular GI Bills like the Post-911 GI Bill Montgomery GI Bill and Vocational Rehabilitation are all programs veterans can use to learn a vocational skill. 
+																	All are non-profit va-approved and accept GI Bill funds. 
+																	Bill Benefits Flight Training Please note that currently the GI Bill is not supporting flight training. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Attention-to-detail and the ability to work. 
+																	Veterans enrolling in flight training near Californiawill be able to receive direct payment through the Post-9 11 GI Bill. 
+																	POST 911 GI BILL. 
+																	Our online courses make education possible regardless of your current work schedule or location and our seasoned Military Services Advisors are here to help you achieve your goals. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Use the GI Bill Comparison Tool to see what benefits you can get at the school you want to attend. 
+																	In some cases this covers 100 of any additional cost. 
+																	If youre considering following up your service in the US Military with a career as a commercial pilot but youre not sure about all the details of the new benefits afforded to you by the Post 9 11 GI Bill weve got a rundown of several considerations that should help you understand some of the new benefits and how they can directly benefit your training. 
+																	VA Approved Flight Schools. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The school can cover up to 50 of the tuition expenses that exceed the annual maximum cap. 
+																	The following is a list of GI Bill-approved culinary schools. 
+																	While the US military has policies restricting certain tattoos and where they appear on your body the VA allows training and apprenticeship at approved tattoo schools. 
+																	Use the GI Bill Comparison Tool. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Also year abroad and similar programs. 
+																	Along with ownership of the term GI Bill President Obamas April 2012 executive order puts more rigorous protections in place for veterans and their families who use their GI Bill benefits. 
+																	Right now VA-approved flight schools are eligible for reimbursement through the Montgomery GI Bill. 
+																	From brunch to lunch to dinner parties to bake sales. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For veterans truck driving school can be a great solution. 
+																	Programs at schools located in the United States that offer courses in a foreign country through the Department of Defense dont qualify as foreign training. 
+																	The new Post 911 GI Bill signed into law in July of 2008 is the latest and most comprehensive GI Bill to date. 
+																	The VA then agrees to match the same amount that the school contributed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The CollegeRecon college search incorporates extensive search criteria eg. 
+																	Jump right to the list of GI Bill Approved Culinary Schools. 
+																	May be transferred to spouse or children if veteran meets specific requirements. 
+																	Enter search terms and then click on the map to generate results by state. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Skilled trades like automotive repair and truck driving or building trades such as carpentry plumbing and electrical are just some of the popular trades selected by veterans. 
+																	Department Of Veterans Affairs 0 Welcome To The GI Bill GI Bill must make an irrevocable election if as of August 1 2009 they are. 
+																	Department of Veterans Affairs VA to help military personnel and their families pay for continuing education and career training. 
+																	Location tuition private or public plus the 16 different veteran military programs that exist on campuses. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veteran Military Programming. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/34/c9/3d34c914e5ec899beef2a9892a26ca39.jpg" data-lightbox="roadtrip" data-title="Use Your G I Bill Benefits And Get To School Updated Values Education School Readiness School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/34/c9/3d34c914e5ec899beef2a9892a26ca39.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQL_C01DvYqWphA-KmLHzGeyCvmUIVWLbjow';" alt="Use Your G I Bill Benefits And Get To School Updated Values Education School Readiness School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Use Your G I Bill Benefits And Get To School Updated Values Education School Readiness School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d3/00/cd/d300cd1734243a430aef5ac5bb36d2b2.jpg" data-lightbox="roadtrip" data-title="Making The Most Of Your Gi Bill Benefits Gi Bill Department Of Veterans Affairs Best Online Colleges">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d3/00/cd/d300cd1734243a430aef5ac5bb36d2b2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2QeHpAwT7QjDVpM1AC1wF9dXRoVJZ837qMQ';" alt="Making The Most Of Your Gi Bill Benefits Gi Bill Department Of Veterans Affairs Best Online Colleges">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Making The Most Of Your Gi Bill Benefits Gi Bill Department Of Veterans Affairs Best Online Colleges</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/9e/a7/ad/9ea7ad86635a3aee862bf147371cc6af.jpg" data-lightbox="roadtrip" data-title="Pin On Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/9e/a7/ad/9ea7ad86635a3aee862bf147371cc6af.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5NRe5TVgy8modQiOw9ozoGFfZ_NVgO3h-EA';" alt="Pin On Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/85/9f/41859fd7d6282cd1cbf763b3bf3f9c0f.jpg" data-lightbox="roadtrip" data-title="Kris Will Be Going Back To School Using Your Gi Bill Lol Gi Bill Going Back To College Billy Madison">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/85/9f/41859fd7d6282cd1cbf763b3bf3f9c0f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH3UyC76vTnt1vNZEBXh0MW1ORFyi4mzr0AA';" alt="Kris Will Be Going Back To School Using Your Gi Bill Lol Gi Bill Going Back To College Billy Madison">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kris Will Be Going Back To School Using Your Gi Bill Lol Gi Bill Going Back To College Billy Madison</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/58/36/795836d152bd862e1d4743031e199afe.png" data-lightbox="roadtrip" data-title="What To Look For In An Online School Mom Of The Moment Online School School Mom Going Back To School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/58/36/795836d152bd862e1d4743031e199afe.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyCvDZrAfUmjR0MEFCHJPG1kPoZirSyurHOQ';" alt="What To Look For In An Online School Mom Of The Moment Online School School Mom Going Back To School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What To Look For In An Online School Mom Of The Moment Online School School Mom Going Back To School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/eb/2d/9b/eb2d9b2b507d787284dcaacd235eeacc.png" data-lightbox="roadtrip" data-title="Veteran Education Military Education Money Management School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/eb/2d/9b/eb2d9b2b507d787284dcaacd235eeacc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRglHaT3kQAk-M1qxFYrmCxVA-7fk7WVbOklw';" alt="Veteran Education Military Education Money Management School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Education Military Education Money Management School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/bd/ab/c2/bdabc217039f5678b9867568f709feb0.jpg" data-lightbox="roadtrip" data-title="Find Schools With Rotc Programs Near You Accredited Schools Online Find Top Rated Accredited Programs Online Rotc Scholarships Reserve Officer Training Corps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/bd/ab/c2/bdabc217039f5678b9867568f709feb0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVYGyDobmUuiWzZb3ZLuP1OYuJi4xoZtcelw';" alt="Find Schools With Rotc Programs Near You Accredited Schools Online Find Top Rated Accredited Programs Online Rotc Scholarships Reserve Officer Training Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Find Schools With Rotc Programs Near You Accredited Schools Online Find Top Rated Accredited Programs Online Rotc Scholarships Reserve Officer Training Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f1/37/a7/f137a7b61efb8e37ba2c77b502a4f6f4.jpg" data-lightbox="roadtrip" data-title="Certificate Programs Are Short Term Programs That Take Less Time To Complete Than A Degree Online Degree Programs Advanced Cardiac Life Support College Guide">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f1/37/a7/f137a7b61efb8e37ba2c77b502a4f6f4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjvOINozfghfJPFS9J1mmY4u1YXUXf9oTYrw';" alt="Certificate Programs Are Short Term Programs That Take Less Time To Complete Than A Degree Online Degree Programs Advanced Cardiac Life Support College Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Certificate Programs Are Short Term Programs That Take Less Time To Complete Than A Degree Online Degree Programs Advanced Cardiac Life Support College Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/5c/ce/c45ccee6c45143acb67aea59e9d2d577.jpg" data-lightbox="roadtrip" data-title="You Deserve A Free Education Edchat Edtech Elearning Student Leaders Collegedegree Collegemoney Scholarsh Online Student Education Major Free Tuition">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/5c/ce/c45ccee6c45143acb67aea59e9d2d577.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7wlc1bjz3ZVbG3j5dnDkcIRDrp5jAjRhT7A';" alt="You Deserve A Free Education Edchat Edtech Elearning Student Leaders Collegedegree Collegemoney Scholarsh Online Student Education Major Free Tuition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">You Deserve A Free Education Edchat Edtech Elearning Student Leaders Collegedegree Collegemoney Scholarsh Online Student Education Major Free Tuition</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/93/3e/a6/933ea658989b38192fee1a74f5b6f863.jpg" data-lightbox="roadtrip" data-title="Finance Can Be A Rewarding Career Field Particularly For Those Who Step Up To An Mba Education For Some It May Be Har Online Mba Mba Wharton Business School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/93/3e/a6/933ea658989b38192fee1a74f5b6f863.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM74E-IDbeUQed0a9O2xvMbKbeSrQevB4-iQ';" alt="Finance Can Be A Rewarding Career Field Particularly For Those Who Step Up To An Mba Education For Some It May Be Har Online Mba Mba Wharton Business School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Finance Can Be A Rewarding Career Field Particularly For Those Who Step Up To An Mba Education For Some It May Be Har Online Mba Mba Wharton Business School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a9/4f/64/a94f646fdac185b3cf617243f88060cd.jpg" data-lightbox="roadtrip" data-title="Learn About Vocational Schools Choose Vocational Education For Specialized Training To Smoothly And Quickly Make T Vocational School Online School School Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a9/4f/64/a94f646fdac185b3cf617243f88060cd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL6gJTQwxq80qrmLCAPiANRK6ucnPob0cUfA';" alt="Learn About Vocational Schools Choose Vocational Education For Specialized Training To Smoothly And Quickly Make T Vocational School Online School School Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Learn About Vocational Schools Choose Vocational Education For Specialized Training To Smoothly And Quickly Make T Vocational School Online School School Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/71/f6/bb/71f6bb9dd645d5725a4e4ba81279a320.jpg" data-lightbox="roadtrip" data-title="Financial Aid 25 Scholarships For Veterans Scholarships Financial Aid Veteran Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/71/f6/bb/71f6bb9dd645d5725a4e4ba81279a320.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVcHw46-vuCHeRqr_Xc4vs9LemcHvkK1PHkw';" alt="Financial Aid 25 Scholarships For Veterans Scholarships Financial Aid Veteran Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Financial Aid 25 Scholarships For Veterans Scholarships Financial Aid Veteran Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d3/13/e9/d313e9494b4c347983da81b264cbfce5.jpg" data-lightbox="roadtrip" data-title="Today S Military Branches Know The Value Of Education And As A Result Have Taken Steps To Assist With Getting Online College Values Education College Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d3/13/e9/d313e9494b4c347983da81b264cbfce5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST28-wnb7CKLWPOdec_1Vc5rNW5YbJT4yjOA';" alt="Today S Military Branches Know The Value Of Education And As A Result Have Taken Steps To Assist With Getting Online College Values Education College Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Today S Military Branches Know The Value Of Education And As A Result Have Taken Steps To Assist With Getting Online College Values Education College Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-linkedin.html">West Virginia Department Of Education Linkedin</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-rate-bls.html">Virginia Unemployment Rate Bls</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-special-education-forms.html">West Virginia Department Of Education Special Education Forms</a></li>
+													<li class="list-group-item"><a href="/west-virginia-state-university-education-department.html">West Virginia State University Education Department</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-percentage-of-income.html">Virginia Unemployment Percentage Of Income</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-jobs.html">West Virginia Department Of Education Jobs</a></li>
+													<li class="list-group-item"><a href="/virginia-state-university-education-department.html">Virginia State University Education Department</a></li>
+													<li class="list-group-item"><a href="/virginia-tech-department-of-education.html">Virginia Tech Department Of Education</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-payment-rate.html">Virginia Unemployment Payment Rate</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-office-of-child-nutrition.html">West Virginia Department Of Education Office Of Child Nutrition</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-staff-directory.html">West Virginia Department Of Education Staff Directory</a></li>
+													<li class="list-group-item"><a href="/virginia-tree-species.html">Virginia Tree Species</a></li>
+													<li class="list-group-item"><a href="/water-bill-montgomery-county-md.html">Water Bill Montgomery County Md</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-retirement-board.html">West Virginia Department Of Education Retirement Board</a></li>
+													<li class="list-group-item"><a href="/ways-to-use-your-gi-bill.html">Ways To Use Your Gi Bill</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-rate-table.html">Virginia Unemployment Rate Table</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-benefits-rate.html">Virginia Unemployment Benefits Rate</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-rate-chart.html">Virginia Unemployment Rate Chart</a></li>
+													<li class="list-group-item"><a href="/virginia-teacher-education-programs.html">Virginia Teacher Education Programs</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-guidance-lessons.html">West Virginia Department Of Education Guidance Lessons</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

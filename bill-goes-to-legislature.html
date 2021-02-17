@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Bill Goes To Legislature - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Bill Goes To Legislature",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/474x/2f/35/2b/2f352b00d2139edcafd5a258115c9fc0.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=bill+goes+to+legislature",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Bill Goes To Legislature</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Speaker of the House and House Majority Leader decide the order in which reported bills are debated. The Legislative Process The following describes how a bill in the US. Get involved with legislation. <br>				
+			</p>
+										<a class="badge badge-primary" href="/va-dept-of-education-sol-released-tests.html">va dept of education sol released tests</a>
+											<a class="badge badge-danger" href="/va-couldn-t-fully-grant-your-appeal-meaning.html">va couldn t fully grant your appeal meaning</a>
+											<a class="badge badge-light" href="/va-disability-appeal.html">va disability appeal</a>
+											<a class="badge badge-info" href="/va-disability-bilateral-knee.html">va disability bilateral knee</a>
+											<a class="badge badge-primary" href="/va-disability-appeal-deadline.html">va disability appeal deadline</a>
+											<a class="badge badge-light" href="/va-disability-bulging-disc.html">va disability bulging disc</a>
+											<a class="badge badge-success" href="/va-disability-check-calculator.html">va disability check calculator</a>
+											<a class="badge badge-dark" href="/va-compensation-taxable-income.html">va compensation taxable income</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you've come to pay a visit to the ideal blog.  Our website gives you suggestions for seeing the maximum quality video and image content, search and locate more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this video that you view.  It is also possible to bring about supporting this site by sharing videos and graphics that you like on this blog on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/af/34/e4af342c2ae97f55f595d2de34025ba4.jpg" data-lightbox="roadtrip" data-title="How A Bill Becomes A Law How A Bill Becomes Law Introduction To Legislative Histories Teaching Government Teaching Social Studies Social Studies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/af/34/e4af342c2ae97f55f595d2de34025ba4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe2bCa_BOitjIfMLVFy5cnsBRsBC_fWLXwwg';" alt="How A Bill Becomes A Law How A Bill Becomes Law Introduction To Legislative Histories Teaching Government Teaching Social Studies Social Studies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How A Bill Becomes A Law How A Bill Becomes Law Introduction To Legislative Histories Teaching Government Teaching Social Studies Social Studies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/2b/d5/1d2bd5c161056a3cb050a594c7d43cd2.jpg" data-lightbox="roadtrip" data-title="We Can Work Towards More 4th Grade Social Studies Teaching Social Studies Homeschool Social Studies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/2b/d5/1d2bd5c161056a3cb050a594c7d43cd2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNPqNx2DRn4GEcIO41Jnh4UoSryqJXCoWdrA';" alt="We Can Work Towards More 4th Grade Social Studies Teaching Social Studies Homeschool Social Studies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Can Work Towards More 4th Grade Social Studies Teaching Social Studies Homeschool Social Studies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/ed/6a/b0ed6a682916542843550dd5f6e8cd96.gif" data-lightbox="roadtrip" data-title="How A Bill Becomes Law In Mississippi Via Ms Legislature Mississippi Lettering Legislature">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/ed/6a/b0ed6a682916542843550dd5f6e8cd96.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCAo_FaH07cEhwYV1fAYBCUPcYqhOnEw7ImA';" alt="How A Bill Becomes Law In Mississippi Via Ms Legislature Mississippi Lettering Legislature">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How A Bill Becomes Law In Mississippi Via Ms Legislature Mississippi Lettering Legislature</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/b8/ab/f0b8ab63ee3055be6bd1058883fa372f.png" data-lightbox="roadtrip" data-title="How A Bill Becomes A Law Flowchart Draw Anywhere How A Bill Becomes A Law Create Flow Chart Online Flow Chart Twisting Balloons How To Become">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/b8/ab/f0b8ab63ee3055be6bd1058883fa372f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfQaNTCIpl9j2l_vuxT8uGuSKeCBhtPUjrwQ';" alt="How A Bill Becomes A Law Flowchart Draw Anywhere How A Bill Becomes A Law Create Flow Chart Online Flow Chart Twisting Balloons How To Become">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How A Bill Becomes A Law Flowchart Draw Anywhere How A Bill Becomes A Law Create Flow Chart Online Flow Chart Twisting Balloons How To Become</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/0c/a2/140ca241fc0d1dca256a2dbbd2f6f559.jpg" data-lightbox="roadtrip" data-title="Pin On Yessss">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/0c/a2/140ca241fc0d1dca256a2dbbd2f6f559.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4sTVqkcwB-mqo-oHEzk3cd-p_Z2OGllRMQA';" alt="Pin On Yessss">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Yessss</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/ea/b2/26eab248068db641fc714c9ca2141347.jpg" data-lightbox="roadtrip" data-title="Infographic How A Bill Becomes A Law Texas Law Work Infographic Infographic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/ea/b2/26eab248068db641fc714c9ca2141347.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ntwA8gOuVrXUii-F05Md0pfLbLKtUaaLDA';" alt="Infographic How A Bill Becomes A Law Texas Law Work Infographic Infographic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Infographic How A Bill Becomes A Law Texas Law Work Infographic Infographic</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/26/ea/b2/26eab248068db641fc714c9ca2141347.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ntwA8gOuVrXUii-F05Md0pfLbLKtUaaLDA';" alt="Infographic How A Bill Becomes A Law Texas Law Work Infographic Infographic">
+										<div class="card-body">
+						<h3 class="h5"><b>How a Bill Becomes a Law.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Bill goes to legislature</strong>. 
+								
+																	The bill appropriates 30387 million from constitutionally dedicated corporate business tax CBT revenues to DEP for State acquisition of lands for recreation and conservation purposes including Blue Acres projects. 
+																	View Original Bill Jan 22. 
+																	Petitioning period Starting on or about 22 January and ending about 8 or 10 days later in the Commons and a about fortnight in the Lords When the bill goes to the second House the petitioning period in either Houses is 10 days and begins on the day of first reading. 
+																	A bill can begin the process in either the House of Representatives or the Senate although all tax bills are required to be introduced in the House. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Public hearing in the House Committee on Rural Development Agriculture. 
+																	The UK Parliament Outreach and Engagement Service offers free events and. 
+																	Any Bills which start in the Lords have HL in their title. 
+																	Explanatory Notes and Amendments are on each Bills individual page. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All legislation starts off as an idea. 
+																	A Bill is a proposal for a new law or a proposal to change an existing law presented for debate before Parliament. 
+																	Today the Senate and Assembly passed S3230 GreensteinA5115 Moriarty. 
+																	Want to learn how you can engage with legislation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Again a simple majority 51 of 100 passes the bill. 
+																	It was out of the political frying pan and into the fire Monday for the Trudeau governments bill to expand access to medically assisted dying. 
+																	A bill can be drafted by anyone but must be sponsored and introduced by a member of Congress then presented in either the House or Senate. 
+																	If the bill passes by simple majority 218 of 435 the bill moves to the Senate. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A bill does not become law until it is passed by the legislature and in most cases approved by the executive. 
+																	In the Senate the bill is assigned to another committee and if released debated and voted on. 
+																	A Bill can start in the Commons or the Lords and must be approved in the same form by both Houses before becoming an Act law. 
+																	If a Senator is the sponsor the bill is introduced in the Senate. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The bill is then placed on the legislative calendar of the House or Senate and scheduled in chronological order for floor action or debate before the full membership. 
+																	This resolution passed in the House on January 4 2021 and goes to the Senate next for consideration. 
+																	Once a bill has been debated and then approved by each House of Parliament and has received Royal Assent it becomes law and is known. 
+																	A bill is a proposed law which is introduced into Parliament. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If a Representative is the sponsor the bill is introduced in the House. 
+																	There are 839 bills and resolutions that have been introduced or reported by committee and await. 
+																	Congress goes through the legislative process. 
+																	These ideas can come from anybody and the process begins when either an individual or group persuades a Member of the Legislature to author a bill. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some of these readings may be formalities rather than actual debate. 
+																	Where available these are listed on the relevant bill page. 
+																	Once the bill is drafted it must be introduced. 
+																	Bills before Parliament 2019-21 Listed below are all Bills currently before Parliament. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The House has several legislative calendars. 
+																	The bill is drafted. 
+																	Opening debate on Bill C-7 began in the Senate where. 
+																	Blue Acres Bill Passes Senate and Assembly Goes to Govs Desk. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A reading of a bill is a debate on the bill held by a general body of a legislature. 
+																	The Member then sends the idea and the language for the bill to the Legislative Counsels Office where it is drafted into the actual bill. 
+																	First reading referred to Rural Development Agriculture Natural Resources. 
+																	If released by the committee the bill is put on a calendar to be voted on debated or amended. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In the Westminster legislative system developed in the United Kingdom there are often several readings of a bill as it passes through the stages becoming or failing to become legislation. 
+																	Once a bill has been enacted into law it is called an act of the legislature or a statute. 
+																	It was passed in the Senate with. 
+																	The president or a member of the cabinet may also draft a bill but a member of Congress must introduce it. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Passed Legislature On Governors Desk Governor Acted Session Law. 
+																	Search for another bill or initiative. 
+																	This bill passed in the House on January 5 2021 and goes to the Senate next for consideration. 
+																	Bills are introduced in the legislature and are discussed debated and voted upon. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Most states will have similar models. 
+																	Once a bill is introduced it can be found on Congressgov which is the official government website that tracks federal legislation. 
+																	Regarding consent to assemble outside the seat of government. 
+																	The Republican chair of Arizonas state House Ways and Means Committee introduced a bill Wednesday that would give the Legislature authority to override the secretary of states certification of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The House of Commons and House of Lords Libraries publish legislative briefings on Government bills and some private Members bills before second reading and report stage. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/3c/ac/793cacf5546bb1ac0f6e1ad0fcb0a7c3.jpg" data-lightbox="roadtrip" data-title="Bill Proposal Example Luxury Legislative Worksheet Sbar Format How A Bill Be Es A Law Proposal Example Business Proposal Letter Proposal">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/3c/ac/793cacf5546bb1ac0f6e1ad0fcb0a7c3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2pfmOTwnZkgKwS6lqeKNHIT9WGp8A_hmXpA';" alt="Bill Proposal Example Luxury Legislative Worksheet Sbar Format How A Bill Be Es A Law Proposal Example Business Proposal Letter Proposal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Proposal Example Luxury Legislative Worksheet Sbar Format How A Bill Be Es A Law Proposal Example Business Proposal Letter Proposal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/b1/45/b2b145020902505aa6d18a773b0a482f.jpg" data-lightbox="roadtrip" data-title="California Legislature Passes Yes Means Yes Bill Feminism Online Degree Programs Usa University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/b1/45/b2b145020902505aa6d18a773b0a482f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5VtMS7uIuI2TO3rRHPYclrOqYUKOJh_9LWg';" alt="California Legislature Passes Yes Means Yes Bill Feminism Online Degree Programs Usa University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">California Legislature Passes Yes Means Yes Bill Feminism Online Degree Programs Usa University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/fe/48/f4fe48c334b61c3a360b825455cf85ff.jpg" data-lightbox="roadtrip" data-title="How Texas Laws Are Made Sort Of Nothing In Tx Politics Is This Simple Or Linear But It S A Start 0 Texas Law Work Infographic Infographic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/fe/48/f4fe48c334b61c3a360b825455cf85ff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0hePF967YHtHmQupDhlcRvmhnpJy0nwsFGw';" alt="How Texas Laws Are Made Sort Of Nothing In Tx Politics Is This Simple Or Linear But It S A Start 0 Texas Law Work Infographic Infographic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Texas Laws Are Made Sort Of Nothing In Tx Politics Is This Simple Or Linear But It S A Start 0 Texas Law Work Infographic Infographic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/12/7b/5a/127b5a679c45af40fc65881b7662141e.jpg" data-lightbox="roadtrip" data-title="End Of Legislature 2014 Ajc Newspaper Mostly Sunny Constitution Legislature">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/12/7b/5a/127b5a679c45af40fc65881b7662141e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeWb8uvghOxh5PwMmxqEkDiHE9S4OA5x71MA';" alt="End Of Legislature 2014 Ajc Newspaper Mostly Sunny Constitution Legislature">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">End Of Legislature 2014 Ajc Newspaper Mostly Sunny Constitution Legislature</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/76/48/017648c3efe273565196e89b544f70a6.jpg" data-lightbox="roadtrip" data-title="Infographic How A Bill Becomes A Law Kids Discover Social Studies Middle School Teaching Government Teaching History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/76/48/017648c3efe273565196e89b544f70a6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5QW4p5Feb_uaCUVgyDX8SRnrBIiIwTrpCMA';" alt="Infographic How A Bill Becomes A Law Kids Discover Social Studies Middle School Teaching Government Teaching History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Infographic How A Bill Becomes A Law Kids Discover Social Studies Middle School Teaching Government Teaching History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/c4/c7/f6/c4c7f65e1ac7c7af69426277c52f12d3.jpg" data-lightbox="roadtrip" data-title="Pin On Supporting Those Who Serve People With Disabilities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/c4/c7/f6/c4c7f65e1ac7c7af69426277c52f12d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN_7Cj_WWVEsngXJDOvzl0fj_1RG-I_bofEw';" alt="Pin On Supporting Those Who Serve People With Disabilities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Supporting Those Who Serve People With Disabilities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/93/94/c8/9394c847ea0b44ad4f0cc6a2b963d730--constitution-law.jpg" data-lightbox="roadtrip" data-title="Malaysian Constitution Legislature 15 Dewan Constitution Legislature Malaysian">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/93/94/c8/9394c847ea0b44ad4f0cc6a2b963d730--constitution-law.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1StniqhkgoXO9rLibEdR1M8MRbsgAsF2_BQ';" alt="Malaysian Constitution Legislature 15 Dewan Constitution Legislature Malaysian">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Malaysian Constitution Legislature 15 Dewan Constitution Legislature Malaysian</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/18/13/671813d0e547dd01c79d3fe6288a33ed.jpg" data-lightbox="roadtrip" data-title="Urgent Action Needed A Bill To Ban The Toxic Nerve Agent Pesticide Chlorpyrifos Is Being Considered By The Ct State Legislature Nerve Agent Ct State Pesticide">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/18/13/671813d0e547dd01c79d3fe6288a33ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqO9rB4Z9wOddPFyLOvT7r5sEWMHK5J7BPFQ';" alt="Urgent Action Needed A Bill To Ban The Toxic Nerve Agent Pesticide Chlorpyrifos Is Being Considered By The Ct State Legislature Nerve Agent Ct State Pesticide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Urgent Action Needed A Bill To Ban The Toxic Nerve Agent Pesticide Chlorpyrifos Is Being Considered By The Ct State Legislature Nerve Agent Ct State Pesticide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/2f/35/2b/2f352b00d2139edcafd5a258115c9fc0.jpg" data-lightbox="roadtrip" data-title="Bill Blockchain California Crypto Establish Group Legislature Passes State Working Blockchain Disaster Relief Healthcare Companies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/2f/35/2b/2f352b00d2139edcafd5a258115c9fc0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF78jRIhxDsbf8e13-LKydEWWj_uX5AcUr6A';" alt="Bill Blockchain California Crypto Establish Group Legislature Passes State Working Blockchain Disaster Relief Healthcare Companies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Blockchain California Crypto Establish Group Legislature Passes State Working Blockchain Disaster Relief Healthcare Companies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/22/8b/73228b582fa10791d2c9973013bee78c.png" data-lightbox="roadtrip" data-title="Yesterday The California Legislature Passed Sb 327 A Bill Intended To Regulate The Security Of Internet Connected Devices Connected Devices Security Bills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/22/8b/73228b582fa10791d2c9973013bee78c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmnbak-tlrIRA64kBagkIRbvdIOJpj8kpsJw';" alt="Yesterday The California Legislature Passed Sb 327 A Bill Intended To Regulate The Security Of Internet Connected Devices Connected Devices Security Bills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Yesterday The California Legislature Passed Sb 327 A Bill Intended To Regulate The Security Of Internet Connected Devices Connected Devices Security Bills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/4c/e1/a24ce1d331f4fb3d4f81cc1abbcd1eab.jpg" data-lightbox="roadtrip" data-title="Forget Schoolhouse Rock How Alabama Bills Become Law School House Rock Homeschool Bills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/4c/e1/a24ce1d331f4fb3d4f81cc1abbcd1eab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzA-AtCOH4A7o-QBLt2V71_gOh4GNVG2ABmA';" alt="Forget Schoolhouse Rock How Alabama Bills Become Law School House Rock Homeschool Bills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Forget Schoolhouse Rock How Alabama Bills Become Law School House Rock Homeschool Bills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/96/fe/1a/96fe1a9c78d115ab2c9a2cfca6c9686b.jpg" data-lightbox="roadtrip" data-title="Historic Boston Capitol Building Moving To Boston Massachusetts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/96/fe/1a/96fe1a9c78d115ab2c9a2cfca6c9686b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSc6z8zt3EoK0y932WcvB7D23uGOdd0VcZmQ';" alt="Historic Boston Capitol Building Moving To Boston Massachusetts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Historic Boston Capitol Building Moving To Boston Massachusetts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/bf/1e/35bf1ed80d772abe03ccd73d612a2a00.jpg" data-lightbox="roadtrip" data-title="Nevada Passed Regulatory Sandbox Legislation Aimed At Continuing Blockchain Investment And Entrepreneurism In The State Governor U S States Nevada Blockchain">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/bf/1e/35bf1ed80d772abe03ccd73d612a2a00.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAdIJX70HY6OfoIi46l4BubPWpAlQRILPayw';" alt="Nevada Passed Regulatory Sandbox Legislation Aimed At Continuing Blockchain Investment And Entrepreneurism In The State Governor U S States Nevada Blockchain">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nevada Passed Regulatory Sandbox Legislation Aimed At Continuing Blockchain Investment And Entrepreneurism In The State Governor U S States Nevada Blockchain</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-compensation-aa-spouse.html">Va Compensation Aa Spouse</a></li>
+													<li class="list-group-item"><a href="/va-claim-psych-exam.html">Va Claim Psych Exam</a></li>
+													<li class="list-group-item"><a href="/va-claim-exam-tips.html">Va Claim Exam Tips</a></li>
+													<li class="list-group-item"><a href="/va-claims-and-compensation.html">Va Claims And Compensation</a></li>
+													<li class="list-group-item"><a href="/va-combined-ratings-table.html">Va Combined Ratings Table</a></li>
+													<li class="list-group-item"><a href="/va-benefits-w2.html">Va Benefits W2</a></li>
+													<li class="list-group-item"><a href="/va-combined-disability-rating.html">Va Combined Disability Rating</a></li>
+													<li class="list-group-item"><a href="/va-claim-5-year-rule.html">Va Claim 5 Year Rule</a></li>
+													<li class="list-group-item"><a href="/va-claim-moved-to-evidence-gathering-review-and-decision.html">Va Claim Moved To Evidence Gathering Review And Decision</a></li>
+													<li class="list-group-item"><a href="/va-chapter-35-reimbursement.html">Va Chapter 35 Reimbursement</a></li>
+													<li class="list-group-item"><a href="/va-claim-erectile-dysfunction.html">Va Claim Erectile Dysfunction</a></li>
+													<li class="list-group-item"><a href="/va-compensation-chart-2018.html">Va Compensation Chart 2018</a></li>
+													<li class="list-group-item"><a href="/va-ch-30-rates.html">Va Ch 30 Rates</a></li>
+													<li class="list-group-item"><a href="/va-claim-for-glaucoma.html">Va Claim For Glaucoma</a></li>
+													<li class="list-group-item"><a href="/va-chapter-35-file-number.html">Va Chapter 35 File Number</a></li>
+													<li class="list-group-item"><a href="/va-claim-restless-leg-syndrome.html">Va Claim Restless Leg Syndrome</a></li>
+													<li class="list-group-item"><a href="/va-benefits-transfer-gi-bill.html">Va Benefits Transfer Gi Bill</a></li>
+													<li class="list-group-item"><a href="/va-compensation-chart-2017.html">Va Compensation Chart 2017</a></li>
+													<li class="list-group-item"><a href="/va-compensation-breakdown.html">Va Compensation Breakdown</a></li>
+													<li class="list-group-item"><a href="/va-compensation-and-dependents.html">Va Compensation And Dependents</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

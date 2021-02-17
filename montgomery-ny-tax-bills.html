@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Montgomery Ny Tax Bills - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Montgomery Ny Tax Bills",
+  "datePublished": "2021-02-17",
+  "image": "https://www.mcrealestate.org/images/custom/cityscape_combined.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=montgomery+ny+tax+bills",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Montgomery Ny Tax Bills</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Taxes are paid at the tax collectors office or by on-line payment. The staff of the Treasurers Office will make every effort to answer your questions about delinquent taxes or county finances in a complete direct and. Please contact them after April 6th at 518 853-8175 for penalty and payment information. <br>				
+			</p>
+										<a class="badge badge-danger" href="/va-disability-rate-2018.html">va disability rate 2018</a>
+											<a class="badge badge-dark" href="/va-disability-percentages-for-foot.html">va disability percentages for foot</a>
+											<a class="badge badge-dark" href="/va-disability-percentages-for-shoulder.html">va disability percentages for shoulder</a>
+											<a class="badge badge-primary" href="/va-disability-percentages-for-asthma.html">va disability percentages for asthma</a>
+											<a class="badge badge-success" href="/va-disability-percentage-for-shoulder-injury.html">va disability percentage for shoulder injury</a>
+											<a class="badge badge-light" href="/va-disability-percentages-calculator.html">va disability percentages calculator</a>
+											<a class="badge badge-warning" href="/va-disability-percentage-for-headaches.html">va disability percentage for headaches</a>
+											<a class="badge badge-success" href="/va-disability-percentages-for-hip.html">va disability percentages for hip</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you have come to pay a visit to the right blog.  Our site provides you with hints for seeing the highest quality video and picture content, search and find more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, particularly Youtube, so we recommend this movie for you to see.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/87/2d/1a872d01e8da00550ddbb679ae0eaccb.jpg" data-lightbox="roadtrip" data-title="Rolling Stones Studio Bill For Wild Horses 1969 Muscle Shoals Muscle Shoals Sound Studio Rolling Stones">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/87/2d/1a872d01e8da00550ddbb679ae0eaccb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWitqaiBIjDv8_TsnuEtQr3cCZfG5fXPvnVA';" alt="Rolling Stones Studio Bill For Wild Horses 1969 Muscle Shoals Muscle Shoals Sound Studio Rolling Stones">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rolling Stones Studio Bill For Wild Horses 1969 Muscle Shoals Muscle Shoals Sound Studio Rolling Stones</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/5d/e5/675de520110f0ea8251aee2fff95bdbf.jpg" data-lightbox="roadtrip" data-title="Does A For Sale Sign Help Sell A House Buyersbroker Massachusetts Association Of Buyer Agents Sell My House Real Estate Salesperson Sell My House Fast">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/5d/e5/675de520110f0ea8251aee2fff95bdbf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGhg1_TUaK-lIASBBh5eE891OHc4TKJbArcw';" alt="Does A For Sale Sign Help Sell A House Buyersbroker Massachusetts Association Of Buyer Agents Sell My House Real Estate Salesperson Sell My House Fast">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Does A For Sale Sign Help Sell A House Buyersbroker Massachusetts Association Of Buyer Agents Sell My House Real Estate Salesperson Sell My House Fast</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.villageofmontgomery.org/images/stories/VM-FB.jpg" data-lightbox="roadtrip" data-title="Village Of Montgomery">
+											<img class="card-img v-image ads-img " src="https://www.villageofmontgomery.org/images/stories/VM-FB.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrvM3bCPifrF15fcfbHtyU7bSM_AyryMwPpw';" alt="Village Of Montgomery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Village Of Montgomery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.townofmontgomery.com/templates/rt_photon/custom/images/logo/Montgomery_Logo.png" data-lightbox="roadtrip" data-title="Town Of Montgomery Home">
+											<img class="card-img v-image ads-img " src="https://www.townofmontgomery.com/templates/rt_photon/custom/images/logo/Montgomery_Logo.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpx3_HBl-j7SMmPgjuPQnAY_nwPagPSGPAvA';" alt="Town Of Montgomery Home">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Town Of Montgomery Home</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/dd/3e/0c/dd3e0cf08ddc716ded92aac1f932b66d.jpg" data-lightbox="roadtrip" data-title="Pin On Vintage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/dd/3e/0c/dd3e0cf08ddc716ded92aac1f932b66d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ3UKzOQ1nkF7IKIjMvvHb5CfGbiWhhld_FA';" alt="Pin On Vintage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Vintage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/17/ba/20/17ba204d4818092e5455e05aef0eee4f.jpg" data-lightbox="roadtrip" data-title="Township Spraygrounds Are Now Open For The Season Hello Woodlands In 2020 Township Woodlands Valley Park">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/17/ba/20/17ba204d4818092e5455e05aef0eee4f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfD8oRJEBw4ZgImIufvsY6ch8ZqoctRHaxrw';" alt="Township Spraygrounds Are Now Open For The Season Hello Woodlands In 2020 Township Woodlands Valley Park">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Township Spraygrounds Are Now Open For The Season Hello Woodlands In 2020 Township Woodlands Valley Park</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/bc/cd/df/bccddfe3848e82843a76aa87621d6599.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfD8oRJEBw4ZgImIufvsY6ch8ZqoctRHaxrw';" alt="Township Spraygrounds Are Now Open For The Season Hello Woodlands In 2020 Township Woodlands Valley Park">
+										<div class="card-body">
+						<h3 class="h5"><b>Interest will be charged on all payments made more than ten 10 days after the due date.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Montgomery ny tax bills</strong>. 
+								
+																	Payments made directly to Montgomery County will not be posted as paid on this website. 
+																	If you have any questions or concerns please do not hesitate to reach out to me. 
+																	View Tax Bills Online. 
+																	The median property tax in Montgomery County New York is 2713 per year for a home worth the median value of 95000. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Montgomery County collects on average 286 of a propertys assessed fair market value as property tax. 
+																	The Real Property Tax Law does not allow for the forgiving of taxes interest or penalties due to the non-receipt by the property owner. 
+																	If you have any questions related to paying your tax bill please call 845-457-2600 - extension 9 then press 1. 
+																	Laurel Eriksen Root Tax Collector 1048 Carlisle Rd Sprakers NY 12166 from January 1st March 31st. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you have any questions related to paying your tax bill please call 845-457-2600 - extension 9 then press 1. 
+																	March 31st is the last day to pay at the Town of Montgomery. 
+																	Welcome to the Village of Montgomery Online Tax Search Payment System Village Taxes will be received at the Village Offices 133 Clinton St Montgomery New York from June 1st to June 30th without penalty. 
+																	Montgomery County Tax Bill Search and View Enter the following information. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These records can include Montgomery County property tax assessments and assessment challenges appraisals and income taxes. 
+																	February 2nd thru March 1st there will be a 1 penalty. 
+																	This is the sample home page for the wbcommerce server. 
+																	All tax bills are turned over to the Montgomery County Treasurers Office on April 1st. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Delete Combine Request PDF RP5217 Transfer Reports Contest Your Assessment Real Property. 
+																	Property Owners Info New Property Owners. 
+																	Other Tax Bills Please note that this is an external site not maintained by Montgomery County. 
+																	As of April 1 2021 unpaid tax bills are returned to the Montgomery County Treasurer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	March 2nd thru March 31st there will be a 2 penalty. 
+																	No partial payments will be accepted. 
+																	Delete Combine Request PDF RP5217 Transfer Reports Contest Your Assessment Real Property. 
+																	Beginning July 1st a 5 penalty will be added to all unpaid taxes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In-depth Montgomery County NY Property Tax Information In order to determine the tax bill your local tax assessors office takes into account the propertys assessed value the current assessment rate as well as any tax exemptions or abatements for that property. 
+																	Tax bills are payable quarterly typically on the 1st day of February May August and November after which date they are delinquent and subject to interest. 
+																	Please note that this information is on a time-delay and is provided for your convenience only. 
+																	Property Owners Info New Property Owners. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	GIS System Parcel Data Parcel History. 
+																	City of Amsterdam Assessment Dates. 
+																	If you have any questions related to paying your tax bill please call 845-457-2600 - extension 9 then press 1. 
+																	We are not responsible for. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2020 Taxes Payment Deadline Extended Hours December 15 2020 Governor Abbott Lifts Temporary Waiver of Vehicle Title Registration Requirements Read More. 
+																	If you have any questions or concerns please do not hesitate to reach out to me. 
+																	Montgomery County is not responsible for which bills are available or the accuracy of payment and other data. 
+																	If you have any questions related to paying your tax bill please call 845-457-2600 - extension 9 then press 1. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Real Property Tax Bills If you are a new owner in Montgomery County you should know when to expect to receive your property tax bills. 
+																	It is provided for your convenience only. 
+																	If you want to serve additional pages using wbcommerce place them in the wwwwbcommercehtdocs directory. 
+																	Montgomery County Town Assessment Dates. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Our mission is to provide the people of Montgomery County with professional services in a courteous friendly manner. 
+																	Property Owners Information. 
+																	If you have any questions or concerns please do not hesitate to reach out to me. 
+																	2021 Town and County Tax payments are now due and payable beginning January 1st thru February 1st without penalty. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Montgomery County Town Assessment Dates. 
+																	City of Amsterdam Assessment Dates. 
+																	Our town website is. 
+																	PAYMENTS MADE AT THE COUNTY TREASURERS OFFICE WILL NOT BE POSTED TO THIS WEBSITE Please call Kim Sullivan Tax Collector at 518-853-3031 with any additional questions from 9-3 daily Monday Friday. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sullivan Town ClerkTax Collector. 
+																	If you have any questions or concerns please do not hesitate to reach out to me. 
+																	Montgomery County Tax Records are documents related to property taxes employment taxes taxes on goods and services and a range of other taxes in Montgomery County New York. 
+																	Welcome to the Montgomery County Treasurer Department Mission Statement. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	GIS System Parcel Data Parcel History. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.mcrealestate.org/images/custom/cityscape_combined.jpg" data-lightbox="roadtrip" data-title="Montgomery County">
+											<img class="card-img v-image ads-img " src="https://www.mcrealestate.org/images/custom/cityscape_combined.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbo9rQAoflX_3GmiWygAnoPJVrcYlC66hn0Q';" alt="Montgomery County">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Montgomery County</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/70/8e/1c708e6ed36164723b4a4c89989d291f.png" data-lightbox="roadtrip" data-title="Painted On Front Pages Lisa Torner S Evocative Animals Astutely Comment On Major News Stories In 2020 Poetry Painting Wall Street Journal Pensive">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/70/8e/1c708e6ed36164723b4a4c89989d291f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgdC-3swvvqJkp8_Dkng6Ah36HyWnPMo50yw';" alt="Painted On Front Pages Lisa Torner S Evocative Animals Astutely Comment On Major News Stories In 2020 Poetry Painting Wall Street Journal Pensive">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Painted On Front Pages Lisa Torner S Evocative Animals Astutely Comment On Major News Stories In 2020 Poetry Painting Wall Street Journal Pensive</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/6a/9e/186a9eb4c72a0d753253212ca85061e8.jpg" data-lightbox="roadtrip" data-title="The National Weather Service Has Issued A Winter Weather Advisory And Hazardous Weather Outlook For Long Island Winter Weather Advisory Weather Winter Weather">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/6a/9e/186a9eb4c72a0d753253212ca85061e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpLoFfRDWojjAyRmZW_CaGzyXQ2X8Mq3P0GQ';" alt="The National Weather Service Has Issued A Winter Weather Advisory And Hazardous Weather Outlook For Long Island Winter Weather Advisory Weather Winter Weather">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The National Weather Service Has Issued A Winter Weather Advisory And Hazardous Weather Outlook For Long Island Winter Weather Advisory Weather Winter Weather</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/64/a2/2a64a2cd02024493150b0f02066f60b9.png" data-lightbox="roadtrip" data-title="Pin On World Politics Economies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/64/a2/2a64a2cd02024493150b0f02066f60b9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1X2N7LkmbMZuBb3rUm7eVpuSk-_XEvxmDBw';" alt="Pin On World Politics Economies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On World Politics Economies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.co.montgomery.ny.us/sites/public/pressreleases/PressReleaseAttachments/Montgomery%20County%20Public%20Health%20Update%20July%2019.png" data-lightbox="roadtrip" data-title="Montgomery County Ny">
+											<img class="card-img v-image ads-img " src="https://www.co.montgomery.ny.us/sites/public/pressreleases/PressReleaseAttachments/Montgomery%20County%20Public%20Health%20Update%20July%2019.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQJ0ocVdH4fS8ZKApiYFguukKgInH__koleA';" alt="Montgomery County Ny">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Montgomery County Ny</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="paO7VnilcA0XXM" data-lightbox="roadtrip" data-title="Https Www Co Montgomery Ny Us Sites Public Government Government Development Countydirectory Pdf">
+											<img class="card-img v-image ads-img " src="paO7VnilcA0XXM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe1IYiiR_TpN-Na9emiKJJQBa7qN9sUaoVlA';" alt="Https Www Co Montgomery Ny Us Sites Public Government Government Development Countydirectory Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Co Montgomery Ny Us Sites Public Government Government Development Countydirectory Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/06/d3/9906d37d5ee5d51485fa7539369300b4.jpg" data-lightbox="roadtrip" data-title="The Residential Renewable Energy Tax Credit Is A Little Known Government Program That Helps Put Solar On Your Home Fo Solar Renewable Energy Alternative Energy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/06/d3/9906d37d5ee5d51485fa7539369300b4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRscbIs3yDCj1SZvJc_BWs6L7_NkVRqs1PH-g';" alt="The Residential Renewable Energy Tax Credit Is A Little Known Government Program That Helps Put Solar On Your Home Fo Solar Renewable Energy Alternative Energy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Residential Renewable Energy Tax Credit Is A Little Known Government Program That Helps Put Solar On Your Home Fo Solar Renewable Energy Alternative Energy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/fc/83/77fc83ed5f59dee864aa8d1ee113c1ee.jpg" data-lightbox="roadtrip" data-title="Alabama State Capitol Montgomery Al Jais Capitol Building Sweet Home Alabama Alabama">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/fc/83/77fc83ed5f59dee864aa8d1ee113c1ee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzxCLs46hSuLzNuXWJck8iV__6SE8GBG_36w';" alt="Alabama State Capitol Montgomery Al Jais Capitol Building Sweet Home Alabama Alabama">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alabama State Capitol Montgomery Al Jais Capitol Building Sweet Home Alabama Alabama</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/cd/df/bccddfe3848e82843a76aa87621d6599.jpg" data-lightbox="roadtrip" data-title="Real Estate Agents Mobilize To Shield Homeowners On Tax Plan Published 2017 Real Estate Real Estate Agent Real Estate Marketing Plan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/cd/df/bccddfe3848e82843a76aa87621d6599.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROIY2OOcmRExJRHXAvBmawzxBnY4KfdIoKWw';" alt="Real Estate Agents Mobilize To Shield Homeowners On Tax Plan Published 2017 Real Estate Real Estate Agent Real Estate Marketing Plan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Real Estate Agents Mobilize To Shield Homeowners On Tax Plan Published 2017 Real Estate Real Estate Agent Real Estate Marketing Plan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/f7/84/d9f784ec4927e2ad30f81d346df0d9c0.jpg" data-lightbox="roadtrip" data-title="Dc Rental Property Commands 37m Multifamily Rental Property Multifamily Property Management Property">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/f7/84/d9f784ec4927e2ad30f81d346df0d9c0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNjOAIYu8J9PquSU8KPLv1Q5ar_igqhrv68g';" alt="Dc Rental Property Commands 37m Multifamily Rental Property Multifamily Property Management Property">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dc Rental Property Commands 37m Multifamily Rental Property Multifamily Property Management Property</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6a/42/8c/6a428c7c37f86c302b494376da5813d3--spaghetti-factory-vintage-menu.jpg" data-lightbox="roadtrip" data-title="Pin On 1940s Bar Inspiration">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6a/42/8c/6a428c7c37f86c302b494376da5813d3--spaghetti-factory-vintage-menu.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH7oQGHS5ciHn1SM9Z1DonlszBNa58VA1_EA';" alt="Pin On 1940s Bar Inspiration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On 1940s Bar Inspiration</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/6a/cd/24/6acd2455a72af0f1613854278e7979b6.jpg" data-lightbox="roadtrip" data-title="Malcolm Montgomery Presents Mod A Letter To The Authorities Intro In 2020 Amazon Ceo Jeff Bezos Bezos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/6a/cd/24/6acd2455a72af0f1613854278e7979b6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYIDmHqPrva4caI1lbHNdjNn4DoeOhD9pkTw';" alt="Malcolm Montgomery Presents Mod A Letter To The Authorities Intro In 2020 Amazon Ceo Jeff Bezos Bezos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Malcolm Montgomery Presents Mod A Letter To The Authorities Intro In 2020 Amazon Ceo Jeff Bezos Bezos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/67/60/686760701c606099f953357640a433f9.jpg" data-lightbox="roadtrip" data-title="30 Things You Ll Never See Again In Sonoma County Montgomery Village Sonoma County Sonoma">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/67/60/686760701c606099f953357640a433f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvvCFIGrqpzcQSMTIxWfyg-pQO8g6bnyphIg';" alt="30 Things You Ll Never See Again In Sonoma County Montgomery Village Sonoma County Sonoma">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">30 Things You Ll Never See Again In Sonoma County Montgomery Village Sonoma County Sonoma</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-much-does-va-pay-for-40-disability.html">How Much Does Va Pay For 40 Disability</a></li>
+													<li class="list-group-item"><a href="/how-to-apply-gi-bill-to-college.html">How To Apply Gi Bill To College</a></li>
+													<li class="list-group-item"><a href="/how-much-does-the-montgomery-gi-bill-pay.html">How Much Does The Montgomery Gi Bill Pay</a></li>
+													<li class="list-group-item"><a href="/how-much-does-va-pay-for-home-health-care.html">How Much Does Va Pay For Home Health Care</a></li>
+													<li class="list-group-item"><a href="/how-to-calculate-va-disability-rating.html">How To Calculate Va Disability Rating</a></li>
+													<li class="list-group-item"><a href="/how-often-does-the-gi-bill-pay-you.html">How Often Does The Gi Bill Pay You</a></li>
+													<li class="list-group-item"><a href="/how-much-pay-for-50-va-disability.html">How Much Pay For 50 Va Disability</a></li>
+													<li class="list-group-item"><a href="/how-much-tuition-does-the-reserve-gi-bill-cover.html">How Much Tuition Does The Reserve Gi Bill Cover</a></li>
+													<li class="list-group-item"><a href="/how-to-apply-for-va-service-connected-disability.html">How To Apply For Va Service Connected Disability</a></li>
+													<li class="list-group-item"><a href="/how-much-is-50-va-disability.html">How Much Is 50 Va Disability</a></li>
+													<li class="list-group-item"><a href="/how-to-apply-for-gi-bill-housing-allowance.html">How To Apply For Gi Bill Housing Allowance</a></li>
+													<li class="list-group-item"><a href="/how-much-is-the-gi-bill-for-air-force.html">How Much Is The Gi Bill For Air Force</a></li>
+													<li class="list-group-item"><a href="/how-much-does-the-montgomery-gi-bill-cover-for-tuition.html">How Much Does The Montgomery Gi Bill Cover For Tuition</a></li>
+													<li class="list-group-item"><a href="/how-to-apply-for-the-gi-bill-stem-extension.html">How To Apply For The Gi Bill Stem Extension</a></li>
+													<li class="list-group-item"><a href="/how-to-access-the-gi-bill.html">How To Access The Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-much-does-the-gi-bill-cover-per-year.html">How Much Does The Gi Bill Cover Per Year</a></li>
+													<li class="list-group-item"><a href="/how-much-is-va-employee-retirement-pay.html">How Much Is Va Employee Retirement Pay</a></li>
+													<li class="list-group-item"><a href="/how-much-is-40-va-disability-pay.html">How Much Is 40 Va Disability Pay</a></li>
+													<li class="list-group-item"><a href="/how-much-of-my-donation-goes-to-disabled-american-veterans.html">How Much Of My Donation Goes To Disabled American Veterans</a></li>
+													<li class="list-group-item"><a href="/how-much-is-monthly-va-benefits.html">How Much Is Monthly Va Benefits</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

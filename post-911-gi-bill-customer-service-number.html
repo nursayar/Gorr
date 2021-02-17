@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Post 911 Gi Bill Customer Service Number - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Post 911 Gi Bill Customer Service Number",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/564x/87/e2/80/87e280c7bc86d29980ee4c8bd93d4e83--video-news-technology.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=post+911+gi+bill+customer+service+number",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Post 911 Gi Bill Customer Service Number</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Any veteran who has served at least 90 days of active duty with the US. Please make sure to quote your PO Box number or our Reference when processing payment. To qualify for the maximum amount of benefits payable you have to have served for at least 3 years on active duty. <br>				
+			</p>
+										<a class="badge badge-primary" href="/30-gt-boat.html">30 gt boat</a>
+											<a class="badge badge-info" href="/1606-gi-bill.html">1606 gi bill</a>
+											<a class="badge badge-danger" href="/30-go-internet-mobile-combien-de-temps.html">30 go internet mobile combien de temps</a>
+											<a class="badge badge-light" href="/30-gram-margarin-berapa-sendok-makan.html">30 gram margarin berapa sendok makan</a>
+											<a class="badge badge-light" href="/30-gt-boat-meaning.html">30 gt boat meaning</a>
+											<a class="badge badge-secondary" href="/1800-gi-bill.html">1800 gi bill</a>
+											<a class="badge badge-light" href="/40-percent-va-disability-2018.html">40 percent va disability 2018</a>
+											<a class="badge badge-warning" href="/30-gym-70-diet.html">30 gym 70 diet</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you have come to pay a visit to the ideal site.  Our website provides you with suggestions for viewing the highest quality video and image content, hunt and locate more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, especially Youtube, therefore we recommend this video that you see.  It is also possible to contribute to supporting this website by sharing videos and images that you like on this site on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information you get on this website.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/71/f3/4871f3346595c3df6cbac5df7665c1e8.jpg" data-lightbox="roadtrip" data-title="Post 9 11 Gi Bill Overview Military Benefits Gi Bill Military Benefits Bills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/71/f3/4871f3346595c3df6cbac5df7665c1e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJlbsQeOpNet48Wg3FbT16O4kAyhnObMuVgA';" alt="Post 9 11 Gi Bill Overview Military Benefits Gi Bill Military Benefits Bills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Post 9 11 Gi Bill Overview Military Benefits Gi Bill Military Benefits Bills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/79/96/b0799697b37d508691497b8d405b4415.jpg" data-lightbox="roadtrip" data-title="Your Benefits Explained Post 9 11 Gi Bill Veterans Affairs Gi Bill Military Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/79/96/b0799697b37d508691497b8d405b4415.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFZ-hhEE3cUl7R_2MfmBarTKASx6usIy_ibw';" alt="Your Benefits Explained Post 9 11 Gi Bill Veterans Affairs Gi Bill Military Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Your Benefits Explained Post 9 11 Gi Bill Veterans Affairs Gi Bill Military Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/4d/f0/564df0249eab5398b6f56915e8d9e0af.png" data-lightbox="roadtrip" data-title="Check Your Current Post 9 11 Gi Bill Enrollment Status On Ebenefits Gi Bill Military Benefits Va Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/4d/f0/564df0249eab5398b6f56915e8d9e0af.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhjIDBB6_GdHJ1EMMHgZpUrZVXhD4xUqw1Vg';" alt="Check Your Current Post 9 11 Gi Bill Enrollment Status On Ebenefits Gi Bill Military Benefits Va Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Check Your Current Post 9 11 Gi Bill Enrollment Status On Ebenefits Gi Bill Military Benefits Va Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/76/e7/f1/76e7f121b33302fe2c70de53cc98a906.jpg" data-lightbox="roadtrip" data-title="New Gi Bill Doubles Education Dollars For Post 9 11 Veterans Gi Bill Education Bills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/76/e7/f1/76e7f121b33302fe2c70de53cc98a906.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2PIkESLlucoVqUX2VuAFqRsAKLKTcqgA3iA';" alt="New Gi Bill Doubles Education Dollars For Post 9 11 Veterans Gi Bill Education Bills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Gi Bill Doubles Education Dollars For Post 9 11 Veterans Gi Bill Education Bills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/2d/63/bc2d636f85ef3400f88389b2cd8b266d.png" data-lightbox="roadtrip" data-title="Post 9 11 Gi Bill Housing Allowance Veteran And Military Education Suny Empire State College In 2021 Military Education Gi Bill Housing Allowance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/2d/63/bc2d636f85ef3400f88389b2cd8b266d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_SAymdYYGSEK4uyoHFipREN-xBvSE25Wjgg';" alt="Post 9 11 Gi Bill Housing Allowance Veteran And Military Education Suny Empire State College In 2021 Military Education Gi Bill Housing Allowance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Post 9 11 Gi Bill Housing Allowance Veteran And Military Education Suny Empire State College In 2021 Military Education Gi Bill Housing Allowance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/21/15/882115f39a7c705f8a9a7b27983d91ae.png" data-lightbox="roadtrip" data-title="Pin By Joshua Tanner On Organise Cleaning In 2020 Personal Finance Finance Financial">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/21/15/882115f39a7c705f8a9a7b27983d91ae.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNzEwzTWj84Udk8zTxCwwUjUoSix8swE7Muw';" alt="Pin By Joshua Tanner On Organise Cleaning In 2020 Personal Finance Finance Financial">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Joshua Tanner On Organise Cleaning In 2020 Personal Finance Finance Financial</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/7e/15/85/7e158514aec2b60cd8819089aebdb53a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNzEwzTWj84Udk8zTxCwwUjUoSix8swE7Muw';" alt="Pin By Joshua Tanner On Organise Cleaning In 2020 Personal Finance Finance Financial">
+										<div class="card-body">
+						<h3 class="h5"><b>Graduate and undergraduate degrees vocationaltechnical training on-the-job training flight training correspondence training licensing and national testing programs entrepreneurship.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Post 911 gi bill customer service number</strong>. 
+								
+																	The Post-911 GI Bill provides education benefits for those who have served on active duty for 90 or more days after September 10 2001. 
+																	I used the post-911 GI Bill for school and yes clinical hours are used when figuring percentages for reimbursement. 
+																	You can use your Post-911 GI Bill for approved training including. 
+																	Additional tuition at more expensive private schools. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Call between 7 am. 
+																	Has 13 years experience. 
+																	You must have received an honorable discharge to be eligible for the Post-911 GI Bill. 
+																	Log into DMDC website. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In July the DOD announced that there would be changes with who can transfer their Post 911 GI Bill. 
+																	So if you go to school full time youll receive the full benefit rates for 36 months. 
+																	PixieRN MSN RN EMT-P. 
+																	If you have at least 90 days of aggregate active duty service after Sept. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Use this link to pay your annual PO Box rental fees 20202021 of 5000. 
+																	If your service ended before January 1 2013 your Post-911 GI Bill Chapter 33 benefits will expire 15 years after your last separation date from active service. 
+																	The rate depends on the length of your post-911 active duty service your state of residence and the number of courses you take. 
+																	The Post-911 GI Bill Montgomery GI Bill and dependent GI Bill programs help service members veterans and families reach. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Without this electronic submission from your school to VA you will not get paid regardless of whether or not you received your. 
+																	Transfer your past 911 benefits. 
+																	If youre receiving the Montgomery GI Bill Active Duty or MGIB - Selected Reserve GI Bill use the Web Automated Verification of Enrollment WAVE or call our toll free Interactive Voice Response IVR telephone line at 1-877-VA-ECERT. 
+																	The Post-911 GI Bill provides financial support for education and housing to individuals with at least 90 days of aggregate service after September 10 2001 or individuals discharged with a service-connected disability after 30 days. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You must use all of your benefits by that time or youll lose whatevers left. 
+																	URGENT UPDATE TO POST-911 GI BILL TEB. 
+																	I have only used my GI Bill for grad school which only needs 6 credits per semester to be considered. 
+																	Department of Veteran Affairs Online Application for all educational benefits VONAPP How to obtain your official letter from the Defense Management Data Center. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Number of hours certified by the school VA University reports that Joe Veteran is charged 2400 tuition for 15 credit hours The in-State maximum per credit hour is 1oo Joe may receive 1500 for tuition. 
+																	Call Us If you wish you can call us at 1-888-442-4551 1 888 GI BILL 1 from 7AM - 7PM Central Time. 
+																	At various times the new education benefits have been referred to as the Post-911 GI Bill. 
+																	Post 911 GI Bill Updates. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With the post 911 GI Bill payment all depends on when youre school certifiying offiical submitts your enrollment to VA. 
+																	Policy outlining Post 911 benefits. 
+																	They should be able to certify you as full time. 
+																	If you as a service member can receive the Post 911 GI Bill you might be able to transfer all or part of the bill to your spouse or your children or both. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Like the MGIB the Post-911 GI Bill pays 36 months of full-time education benefits. 
+																	If you go to school half-time youll receive half of your monthly entitlement for 72 months. 
+																	The minimum requirement is service of at least 90 days which entitles the veteran to 40 of the educational benefit. 
+																	10 2001 and are still on active duty or if you are an honorably discharged Veteran or were discharged with a service-connected disability after 30 days you may be eligible for this VA-administered program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Click on the approval form at the top of the page. 
+																	Post 911 GI Bill Basics. 
+																	Call Us From Overseas Students and School Certifying Officials calling from outside the United States can contact us by phone at 001-918-781-5678 during business hours 7 am. 
+																	Armed Forces starting after 91001 and received an honorable discharge qualifies for Post 911 GI Bill benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	CST Monday - Friday. 
+																	Specializes in EMS ED Trauma CNE CEN CPEN TCRN. 
+																	Here is what you need to. 
+																	The amount received depends on the number of months the veteran served on active-duty service on or after September 11 2001. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This electronic submission tells VA how many credits you are taking and if you are going to an actual campus or taking online classes. 
+																	Post 911 Service and previous use of GI Bill Post 911 Service and previous use of GI Bill. 
+																	If you are eligible for the Post 911 GI Bill and other GI Bill benefits such as the Montgomery GI Bill MGIB you will at some point be required to make an. 
+																	March 2009 5 FEES Any mandatory charges other than tuition room and board that are applied by the IHL for pursuit of a program of education. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Includes health premiums. 
+																	This depends on when you were discharged from active duty. 
+																	This new benefit went into effect August 1 2009. 
+																	The new GI Bill Chapter 33 or Post 911 GI Bill boasts the most comprehensive military education benefits package since the original GI Bill was signed into law in 1944. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The GI Bill is one of the best benefits of being a military member. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/b5/bd/11b5bd271b2f472044b373df87724ddd.png" data-lightbox="roadtrip" data-title="Veterans And Gi Bill For Small Business Gi Bill Debt Counseling Loan Company">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/b5/bd/11b5bd271b2f472044b373df87724ddd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSYQqK1BE157m97o4fEbYGl-ZSB9R1M9lSzQ';" alt="Veterans And Gi Bill For Small Business Gi Bill Debt Counseling Loan Company">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans And Gi Bill For Small Business Gi Bill Debt Counseling Loan Company</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1c/b0/6e/1cb06ed1f3e1fbbce7f20768bd128e8a.jpg" data-lightbox="roadtrip" data-title="Chapter 33 Benefits For Veterans Chapter 33 Of The Gi Bill Also Commonly Called The Post 9 11 Gi Bill Is The Most In 2020 Smart Money Chapter 33 Tuition Assistance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1c/b0/6e/1cb06ed1f3e1fbbce7f20768bd128e8a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAH2q22M1SZGUbm9kgsUt1yyIqR5kIQit8vw';" alt="Chapter 33 Benefits For Veterans Chapter 33 Of The Gi Bill Also Commonly Called The Post 9 11 Gi Bill Is The Most In 2020 Smart Money Chapter 33 Tuition Assistance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chapter 33 Benefits For Veterans Chapter 33 Of The Gi Bill Also Commonly Called The Post 9 11 Gi Bill Is The Most In 2020 Smart Money Chapter 33 Tuition Assistance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/fe/a2/3afea2b1ea79eaa6fdc436635499b15d.png" data-lightbox="roadtrip" data-title="Pin On Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/fe/a2/3afea2b1ea79eaa6fdc436635499b15d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRidMvi_vCn1nzbL5qEyFKXmeT3sHs6FX35Eg';" alt="Pin On Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/41/d6/3f41d6f20ca46635dbdc0d7a37b9f3d8.png" data-lightbox="roadtrip" data-title="Pin On Blogging Board">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/41/d6/3f41d6f20ca46635dbdc0d7a37b9f3d8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFVt2l97bv1QDp3aObdrnQW3CPq4x5RSdcmA';" alt="Pin On Blogging Board">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Blogging Board</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/86/19/0b86198d71cbe9f5c15ad8d85ba16245.jpg" data-lightbox="roadtrip" data-title="Student Veterans And The Nontraditional Path To Higher Ed Student Veteran Nontraditional">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/86/19/0b86198d71cbe9f5c15ad8d85ba16245.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuKCN-fgFQRqbp53kY1aJ1Qp623tIIJLmlxw';" alt="Student Veterans And The Nontraditional Path To Higher Ed Student Veteran Nontraditional">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Student Veterans And The Nontraditional Path To Higher Ed Student Veteran Nontraditional</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/15/85/7e158514aec2b60cd8819089aebdb53a.png" data-lightbox="roadtrip" data-title="Monthly Housing Allowance Mha For Post 9 11 Gi Bill Military Benefits Gi Bill Housing Allowance Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/15/85/7e158514aec2b60cd8819089aebdb53a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPdxNNK-Vhj5OyMpL3AqyqCX4M9fu7AgJFbA';" alt="Monthly Housing Allowance Mha For Post 9 11 Gi Bill Military Benefits Gi Bill Housing Allowance Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Monthly Housing Allowance Mha For Post 9 11 Gi Bill Military Benefits Gi Bill Housing Allowance Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e2/fe/99/e2fe99a5041fe1e5e496983c15c0f2d1.jpg" data-lightbox="roadtrip" data-title="Post 9 11 Gi Bill Benefits Right Now Are The Most Generous In The History Of The Gi Bill But In Some Cases It Does N Gi Bill Online College College Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e2/fe/99/e2fe99a5041fe1e5e496983c15c0f2d1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm4xtE_4ALewg2yEjF21d9ukKTeTMrmm2Gwg';" alt="Post 9 11 Gi Bill Benefits Right Now Are The Most Generous In The History Of The Gi Bill But In Some Cases It Does N Gi Bill Online College College Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Post 9 11 Gi Bill Benefits Right Now Are The Most Generous In The History Of The Gi Bill But In Some Cases It Does N Gi Bill Online College College Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/84/ae/4f/84ae4f017a04b714619083495273976d.jpg" data-lightbox="roadtrip" data-title="Pin On Budgeting Money">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/84/ae/4f/84ae4f017a04b714619083495273976d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVqMouEUBs8XEprX3Wh-GfewIftx28l7CKdQ';" alt="Pin On Budgeting Money">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Budgeting Money</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5d/b1/37/5db1378148b9f9721ca73cc59b83e759.jpg" data-lightbox="roadtrip" data-title="2020 Gi Bill For Surviving Spouses Children Of Those Kia Milspouse Education Gi Bill">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5d/b1/37/5db1378148b9f9721ca73cc59b83e759.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi8LWLZ99pgJOG1SI_PxHSxWQlxjOVf6JREg';" alt="2020 Gi Bill For Surviving Spouses Children Of Those Kia Milspouse Education Gi Bill">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2020 Gi Bill For Surviving Spouses Children Of Those Kia Milspouse Education Gi Bill</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/76/e3/8876e333aa9ef72ddcc7d071f0ca0aac.png" data-lightbox="roadtrip" data-title="Gi Bill Comparison Tool Vets Gov Gi Bill Bills Comparison">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/76/e3/8876e333aa9ef72ddcc7d071f0ca0aac.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_N5GfmLW8rf6RbrnOaiT0Ih9lbDYBOxq7BQ';" alt="Gi Bill Comparison Tool Vets Gov Gi Bill Bills Comparison">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gi Bill Comparison Tool Vets Gov Gi Bill Bills Comparison</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/87/e2/80/87e280c7bc86d29980ee4c8bd93d4e83--video-news-technology.jpg" data-lightbox="roadtrip" data-title="Http Acot Edu Pages Veterans Retraining Assistance Program Who S Eligible For Vrap Gi Bill Education And Training American Colleges">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/87/e2/80/87e280c7bc86d29980ee4c8bd93d4e83--video-news-technology.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJACRnc5vmIFb8ReG3LVD8h6dcZbZftmGszQ';" alt="Http Acot Edu Pages Veterans Retraining Assistance Program Who S Eligible For Vrap Gi Bill Education And Training American Colleges">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Acot Edu Pages Veterans Retraining Assistance Program Who S Eligible For Vrap Gi Bill Education And Training American Colleges</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/26/1e/e7/261ee7013b46b9156db2ee2cd220a84d.jpg" data-lightbox="roadtrip" data-title="Vocational School For Veterans Benefits Expert Advice Vocational School Trade School Online School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/26/1e/e7/261ee7013b46b9156db2ee2cd220a84d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGf7NeA8NMRI2OMMYoM-WBXodQHHHbWt7cZg';" alt="Vocational School For Veterans Benefits Expert Advice Vocational School Trade School Online School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vocational School For Veterans Benefits Expert Advice Vocational School Trade School Online School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/9b/31/759b31888e91a548813de6921adba27d.jpg" data-lightbox="roadtrip" data-title="Generation Progress Fast Facts Veteran Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/9b/31/759b31888e91a548813de6921adba27d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQut0eWMz_Pvx_e2n5b7Q5_YBmEgaPbkKw01w';" alt="Generation Progress Fast Facts Veteran Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Generation Progress Fast Facts Veteran Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-rating-for-hyperthyroidism.html">Va Rating For Hyperthyroidism</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-diabetic-retinopathy.html">Va Rating For Diabetic Retinopathy</a></li>
+													<li class="list-group-item"><a href="/va-rating-in-transformer.html">Va Rating In Transformer</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-ptsd-chart.html">Va Rating For Ptsd Chart</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-blurred-vision.html">Va Rating For Blurred Vision</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-bilateral-neuropathy.html">Va Rating For Bilateral Neuropathy</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-bilateral-hip-pain.html">Va Rating For Bilateral Hip Pain</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-eczema.html">Va Rating For Eczema</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-left-ear-hearing-loss.html">Va Rating For Left Ear Hearing Loss</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-male-infertility.html">Va Rating For Male Infertility</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-obesity.html">Va Rating For Obesity</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-hip-injury.html">Va Rating For Hip Injury</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-graves-disease.html">Va Rating For Graves Disease</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-psoriatic-arthritis.html">Va Rating For Psoriatic Arthritis</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-ringing-in-ears.html">Va Rating For Ringing In Ears</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-chemo-induced-neuropathy.html">Va Rating For Chemo Induced Neuropathy</a></li>
+													<li class="list-group-item"><a href="/va-rating-headache.html">Va Rating Headache</a></li>
+													<li class="list-group-item"><a href="/va-rating-hip.html">Va Rating Hip</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-sinus.html">Va Rating For Sinus</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-prediabetes.html">Va Rating For Prediabetes</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

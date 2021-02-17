@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Go Build Specify Output Name - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Go Build Specify Output Name",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/b8/33/fb/b833fbe73a03a3439e1ef740ffbd8078.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=go+build+specify+output+name",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Go Build Specify Output Name</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">For example if you wished to compile it for Windows with 64-bit ARM architecture you would make the name of the file filename_windows_arm64go. This naming convention helps keep code neatly organized. The presets configured in buildbabelpresets will be applied to both the client and the server build. <br>				
+			</p>
+										<a class="badge badge-light" href="/how-does-the-gi-bill-pay-for-housing.html">how does the gi bill pay for housing</a>
+											<a class="badge badge-secondary" href="/how-do-va-disability-ratings-work.html">how do va disability ratings work</a>
+											<a class="badge badge-warning" href="/how-is-the-post-9-11-gi-bill-book-stipend-paid.html">how is the post 9 11 gi bill book stipend paid</a>
+											<a class="badge badge-success" href="/how-do-i-know-if-i-paid-into-the-montgomery-gi-bill.html">how do i know if i paid into the montgomery gi bill</a>
+											<a class="badge badge-info" href="/how-can-nurses-help-veterans-with-ptsd.html">how can nurses help veterans with ptsd</a>
+											<a class="badge badge-info" href="/how-does-the-post-9-11-gi-bill-bah-work.html">how does the post 9 11 gi bill bah work</a>
+											<a class="badge badge-info" href="/how-does-the-gi-bill-work-for-reserves.html">how does the gi bill work for reserves</a>
+											<a class="badge badge-warning" href="/how-do-i-know-if-my-va-disability-rating-is-permanent.html">how do i know if my va disability rating is permanent</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you've come to visit the ideal site.  Our website gives you suggestions for seeing the maximum quality video and picture content, hunt and find more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, especially Youtube, so we recommend this movie that you view.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/cc/5f/13cc5fa61ae9ce39c522f52085a11573.jpg" data-lightbox="roadtrip" data-title="The Standard Input Stream Cin The Cin Object In C Is An Object Of Class Istream It Is Used C Programming Tutorials Programming Tutorial Python Programming">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/cc/5f/13cc5fa61ae9ce39c522f52085a11573.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiLdLSx9zeoGuDjYYL7RJQhW6DrFraj8tYqw';" alt="The Standard Input Stream Cin The Cin Object In C Is An Object Of Class Istream It Is Used C Programming Tutorials Programming Tutorial Python Programming">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Standard Input Stream Cin The Cin Object In C Is An Object Of Class Istream It Is Used C Programming Tutorials Programming Tutorial Python Programming</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/ca/67/b6ca6727226ae2a585be5740f258c80c.png" data-lightbox="roadtrip" data-title="Convert Exe To Msi Wrap Exe Installer In Msi Package Full Parameter Support This Tool Can Convert Your Setup Executable To An Msi Packa Msi Wrapper Software">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/ca/67/b6ca6727226ae2a585be5740f258c80c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcrQIYHovmvYJYVubkUej6j25QR_8-YCcWmA';" alt="Convert Exe To Msi Wrap Exe Installer In Msi Package Full Parameter Support This Tool Can Convert Your Setup Executable To An Msi Packa Msi Wrapper Software">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Convert Exe To Msi Wrap Exe Installer In Msi Package Full Parameter Support This Tool Can Convert Your Setup Executable To An Msi Packa Msi Wrapper Software</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/6a/7a/8a6a7a2c41c0531d196f3ddc46c6cfaa.png" data-lightbox="roadtrip" data-title="Csc1251 Advanced Programming Assignment 3 Solved Ankitcodinghub In 2020 Email Subject Lines Assignments Solving">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/6a/7a/8a6a7a2c41c0531d196f3ddc46c6cfaa.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHOcb0ZPn4HHa21QNrRqRNpT9hAHfeBfakZg';" alt="Csc1251 Advanced Programming Assignment 3 Solved Ankitcodinghub In 2020 Email Subject Lines Assignments Solving">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Csc1251 Advanced Programming Assignment 3 Solved Ankitcodinghub In 2020 Email Subject Lines Assignments Solving</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/da/07/49da07530062592eeb5658c5fff6eda3.png" data-lightbox="roadtrip" data-title="Pin On Ankitcodinghub Com">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/da/07/49da07530062592eeb5658c5fff6eda3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3rZgZ7paN0APWHyGe0zNo1LxcsYUXHuwW2w';" alt="Pin On Ankitcodinghub Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ankitcodinghub Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4d/72/85/4d7285bf453f041369bc55e0855a7cb8.png" data-lightbox="roadtrip" data-title="Clusterd Application Server Attack Toolkit Server Hosting Application">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4d/72/85/4d7285bf453f041369bc55e0855a7cb8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRowEYaSDNpaoNw43lUZDtHvHACaK87RM5Z6Q';" alt="Clusterd Application Server Attack Toolkit Server Hosting Application">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Clusterd Application Server Attack Toolkit Server Hosting Application</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/e3/1f/aee31f2e6df931b5421610807f518f13.png" data-lightbox="roadtrip" data-title="Solved Universe Knowledge Base Logicprohub Solving Yes Or No Questions Binary Tree">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/e3/1f/aee31f2e6df931b5421610807f518f13.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYm00z8rpU81TYXLnwNGTP-UC6wna2U2Ygwg';" alt="Solved Universe Knowledge Base Logicprohub Solving Yes Or No Questions Binary Tree">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Solved Universe Knowledge Base Logicprohub Solving Yes Or No Questions Binary Tree</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/fe/51/51/fe515144a7e60f62bc337d194744100a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYm00z8rpU81TYXLnwNGTP-UC6wna2U2Ygwg';" alt="Solved Universe Knowledge Base Logicprohub Solving Yes Or No Questions Binary Tree">
+										<div class="card-body">
+						<h3 class="h5"><b>If you had a Go file named filenamego you could specify the OS and architecture by changing the filename to filename_ GOOS _ GOARCHgo.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Go build specify output name</strong>. 
+								
+																	As of Go 15 those strings no longer vary by architecture. 
+																	Delve takes care of all the building necessary. 
+																	The name of the completed build. 
+																	How to specify where output files go The location of project output settings can be found in the projects Property Pages. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Once again no output indicates that the operation was successful. 
+																	Add_subdirectoryKernel Kernel add_executableMyExe Kernelmaincpp The resulting directory structure after a build is. 
+																	May greet you with an error message as far as I understood the go build command. 
+																	To change this right-click the project node in Solution Explorer select Edit Project File and add the following. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I am rather confused about how to specify the output directory. 
+																	You should have caddyexe file in your current directory which you can verify with the ls command. 
+																	In these cases the label format. 
+																	For projects with multiple target frameworks via the TargetFrameworks property you also need to define --framework when you specify this option-r--runtime. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Using go build with only the mains package name when the build checkbox is checked would work but not the directory path so. 
+																	In earlier versions of Go the returned string was used to derive the compiler and linker tool names the default object file suffix and the default linker output name. 
+																	-o--output Directory in which to place the built binaries. 
+																	You may pass packages to go build packages you want to build. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Each output file will be marked with the GENERATED source file property automatically. 
+																	You may also pass a list ofgo files from a single directory which is then treated as the list of source files specifying a single package. 
+																	--- Makefile ---- This how we want to name the binary output BINARYgomake These are the values we want to pass for VERSION and BUILD git tag 101 git commit -am One more change after the tags VERSIONgit describe --tags BUILDdate FTTz Setup the -ldflags option for go build here interpolate the variable values LDFLAGS_f1-ldflags -w -s -X mainVersionVERSION -X mainBuildBUILD -X mainEntryf1 LDFLAGS_f2-ldflags -w -s -X mainVersionVERSION -X main. 
+																	I am working on Windows with the Ninja generator and Microsoft toolset. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Specify the output files the command is expected to produce. 
+																	I am building a library and an executable. 
+																	One thing you can try is to debug using a binary itself. 
+																	Some projects will by default include framework and runtime in the build path. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The output location is specified next to Output Directory. 
+																	Something like this cargo build --output-file-name my_libso or dylib Doing it via Cargotoml or cargoconfig wont work for me. 
+																	The extension doesnt build any binaries for delve to use. 
+																	This value can contain whitespace or other invalid label characters. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The exe suffix is added when writing a Windows executable. 
+																	The target will be set by Nuxt accordingly clientserver. 
+																	They are compile link o and aout respectively. 
+																	An import path may contain one or more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A typical use of this variable is to make it part of the label format which you specify on the repository tab. 
+																	Use go build yourself to create the binary in the right place And then update the debug configuration in the launchjson file to use the binary. 
+																	If no packages import paths are provided the build is applied on the current directory. 
+																	The name of the file that will be used as the clean cache The clean cache is a list of generated files to be deleted during the cleaning operation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If not specified the default path is bin. 
+																	The executable will be created in the current directory using the package name as its name. 
+																	The file is put in the intermediate output path by the build process. 
+																	The Go extension uses delve for debugging. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Type in the path to generate output to absolute or relative to the root project directory or choose Browse to browse to that folder instead. 
+																	This property specifies only file names that do not have path information. 
+																	You can specify the build number format that generates this value in the pipeline options. 
+																	Bazel maintains a database of all work previously done and will only omit a build step if it finds that the set of input files and their timestamps to that build step and the compilation command for that build step exactly match one in the database and that the set of output files and their timestamps for the database entry exactly match the timestamps of the files on disk. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Go help build says. 
+																	If an output name is a relative path it will be interpreted relative to the build tree directory corresponding to the current source directory. 
+																	My default build type is Debug. 
+																	Go build -o output build flags packages. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When compiling a single main package build writes the resulting executable to an output file named after the first source file go build edgo rxgo writes ed or edexe or the source code directory go build unixsam writes sam or samexe. 
+																	How to specify an output file name dynamically via a command line for a library. 
+																	Expand the node next to Configuration Properties and select General. 
+																	However since we built this executable for Windows the name ends with the suffixexe. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you want configure the preset differently for the client or the server build please use presets as a. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/61/bb/13/61bb13f9fd63d4cdd6719f688beb760a.jpg" data-lightbox="roadtrip" data-title="Pin On Blogging For Beginners">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/61/bb/13/61bb13f9fd63d4cdd6719f688beb760a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6mELip1sXJmn_Qzchvvb5CMKlAie2FWIVzg';" alt="Pin On Blogging For Beginners">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Blogging For Beginners</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/ac/2a/11ac2a20d65884084e3124f4d1398890.png" data-lightbox="roadtrip" data-title="Pin On Esp8266">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/ac/2a/11ac2a20d65884084e3124f4d1398890.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN6KM7h0aELLD4QHnMb5JAqH33xnJi3ht91g';" alt="Pin On Esp8266">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Esp8266</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/21/bc/0421bca300c4bdaaf1fef46f511e56ea.png" data-lightbox="roadtrip" data-title="Program In C C That Can Read Mp3 Logicprohub Programming Tutorial C Tutorials Reading">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/21/bc/0421bca300c4bdaaf1fef46f511e56ea.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwtrZ2trN6AL8WGFXYSewQWcaZK_1pR0MhcA';" alt="Program In C C That Can Read Mp3 Logicprohub Programming Tutorial C Tutorials Reading">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Program In C C That Can Read Mp3 Logicprohub Programming Tutorial C Tutorials Reading</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/3d/fe/da3dfe4c8f31c50a548b820e47591455.jpg" data-lightbox="roadtrip" data-title="Riri A Remporte 10 M 5 M Rgb Led Bande Impermeable A L Eau 5050 Colore Led Lumiere 10 M 600 Led Rgb Bande Ruban 60led M 44 Touches Ir Contr Led Ruban Lumiere">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/3d/fe/da3dfe4c8f31c50a548b820e47591455.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToPZZDZADL6dYRRVfUat3KaZEa4oV3jkpK9g';" alt="Riri A Remporte 10 M 5 M Rgb Led Bande Impermeable A L Eau 5050 Colore Led Lumiere 10 M 600 Led Rgb Bande Ruban 60led M 44 Touches Ir Contr Led Ruban Lumiere">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Riri A Remporte 10 M 5 M Rgb Led Bande Impermeable A L Eau 5050 Colore Led Lumiere 10 M 600 Led Rgb Bande Ruban 60led M 44 Touches Ir Contr Led Ruban Lumiere</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/56/09/495609dbf49075bdc8ba1fa6e02126c7.jpg" data-lightbox="roadtrip" data-title="8 Diagramming Apps For Better Brainstorming On The Go Thought Process And App">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/56/09/495609dbf49075bdc8ba1fa6e02126c7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoAjgZO_mvhxMbxy13IrIEivtUWMTFNzUZsA';" alt="8 Diagramming Apps For Better Brainstorming On The Go Thought Process And App">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">8 Diagramming Apps For Better Brainstorming On The Go Thought Process And App</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/f7/19/3ff719fb958b4a46d65654d09d1b1625.png" data-lightbox="roadtrip" data-title="How To Block Or Open A Specific Port In Windows Firewall Firewall Security Port Windows Defender">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/f7/19/3ff719fb958b4a46d65654d09d1b1625.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCQ2v5HGy1ooI4KNsvyZVAEGezkTAAEHKdkg';" alt="How To Block Or Open A Specific Port In Windows Firewall Firewall Security Port Windows Defender">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Block Or Open A Specific Port In Windows Firewall Firewall Security Port Windows Defender</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/ae/e3/1f/aee31f2e6df931b5421610807f518f13.jpg" data-lightbox="roadtrip" data-title="Solved Universe Knowledge Base Logicprohub Solving Yes Or No Questions Binary Tree">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/ae/e3/1f/aee31f2e6df931b5421610807f518f13.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeYDSaM5AHAl1AhtXKkWwFUig5aDbAFFW1mA';" alt="Solved Universe Knowledge Base Logicprohub Solving Yes Or No Questions Binary Tree">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Solved Universe Knowledge Base Logicprohub Solving Yes Or No Questions Binary Tree</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/f6/5d/dbf65d02d8b02ee98a9107edc6423eed.png" data-lightbox="roadtrip" data-title="Cpsc 331 Hw2 Codes Solved Ankitcodinghub Coding Bubble Sort Solving">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/f6/5d/dbf65d02d8b02ee98a9107edc6423eed.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRakaRgSdSF0FxLYYbyCrgkhwbF-ql5DDHG0g';" alt="Cpsc 331 Hw2 Codes Solved Ankitcodinghub Coding Bubble Sort Solving">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cpsc 331 Hw2 Codes Solved Ankitcodinghub Coding Bubble Sort Solving</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/07/1e/8d071e860b0682a47599704398794719.jpg" data-lightbox="roadtrip" data-title="4847material Vinyl Pvc Wall Stickercustomized C O L O R If You Like Another Color Please Choose From The Color In 2020 Wall Stickers Playroom Pvc Wall Vinyl Signs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/07/1e/8d071e860b0682a47599704398794719.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Js29M23TPh1gwbiz2kkYN-U8ZriDaxS86g';" alt="4847material Vinyl Pvc Wall Stickercustomized C O L O R If You Like Another Color Please Choose From The Color In 2020 Wall Stickers Playroom Pvc Wall Vinyl Signs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4847material Vinyl Pvc Wall Stickercustomized C O L O R If You Like Another Color Please Choose From The Color In 2020 Wall Stickers Playroom Pvc Wall Vinyl Signs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/64/fd/1864fd1f4bb8e05bdb5dd33667ad814a.png" data-lightbox="roadtrip" data-title="Sequelize Relationships And Magic Methods Relationship Method First Relationship">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/64/fd/1864fd1f4bb8e05bdb5dd33667ad814a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1gCRD42v7WiZJ4jCjx9jtzx7oaM8vm98puA';" alt="Sequelize Relationships And Magic Methods Relationship Method First Relationship">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sequelize Relationships And Magic Methods Relationship Method First Relationship</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/33/fb/b833fbe73a03a3439e1ef740ffbd8078.jpg" data-lightbox="roadtrip" data-title="Are Magic Numbers Acceptable In Unit Tests If The Numbers Don T Mean Anything The Unit This Or That Questions Anything">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/33/fb/b833fbe73a03a3439e1ef740ffbd8078.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcbkKJ3rkNb47BEro3Zc0ia5XnL9eozPHIAA';" alt="Are Magic Numbers Acceptable In Unit Tests If The Numbers Don T Mean Anything The Unit This Or That Questions Anything">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are Magic Numbers Acceptable In Unit Tests If The Numbers Don T Mean Anything The Unit This Or That Questions Anything</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/17/8f/48178ffe0b1a7bc9b9e9b5667238453b.jpg" data-lightbox="roadtrip" data-title="Schiit Audio Headphone Amps And Dacs Made In Usa Headphone Amp Headphone Amplifiers Audio">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/17/8f/48178ffe0b1a7bc9b9e9b5667238453b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUi0zZwD3DugfXUxWMvW0MrhmUJXP_tY3uiQ';" alt="Schiit Audio Headphone Amps And Dacs Made In Usa Headphone Amp Headphone Amplifiers Audio">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Schiit Audio Headphone Amps And Dacs Made In Usa Headphone Amp Headphone Amplifiers Audio</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fe/51/51/fe515144a7e60f62bc337d194744100a.jpg" data-lightbox="roadtrip" data-title="Safe Pin Album Pin Collection Displays Displaying Collections Disney Pin Collections">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fe/51/51/fe515144a7e60f62bc337d194744100a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5OMeHVV2w5sf_OaMBVzYsMhTTHbKpJ5380w';" alt="Safe Pin Album Pin Collection Displays Displaying Collections Disney Pin Collections">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Safe Pin Album Pin Collection Displays Displaying Collections Disney Pin Collections</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-rating-disability-scale.html">Va Rating Disability Scale</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-arthritis-in-the-right-shoulder.html">Va Rating For Arthritis In The Right Shoulder</a></li>
+													<li class="list-group-item"><a href="/va-rating-5003.html">Va Rating 5003</a></li>
+													<li class="list-group-item"><a href="/va-rating-degenerative-arthritis-of-the-spine.html">Va Rating Degenerative Arthritis Of The Spine</a></li>
+													<li class="list-group-item"><a href="/va-rating-diabetic-neuropathy.html">Va Rating Diabetic Neuropathy</a></li>
+													<li class="list-group-item"><a href="/va-percentage-for-ptsd.html">Va Percentage For Ptsd</a></li>
+													<li class="list-group-item"><a href="/va-quality-of-care-ratings.html">Va Quality Of Care Ratings</a></li>
+													<li class="list-group-item"><a href="/va-ptsd-percentage-ratings.html">Va Ptsd Percentage Ratings</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-arthritis-in-hand.html">Va Rating For Arthritis In Hand</a></li>
+													<li class="list-group-item"><a href="/va-ptsd-percentage-chart.html">Va Ptsd Percentage Chart</a></li>
+													<li class="list-group-item"><a href="/va-rated-transformer.html">Va Rated Transformer</a></li>
+													<li class="list-group-item"><a href="/va-rating-ankle-arthritis.html">Va Rating Ankle Arthritis</a></li>
+													<li class="list-group-item"><a href="/va-rate-compensation-table.html">Va Rate Compensation Table</a></li>
+													<li class="list-group-item"><a href="/va-post-9-11-gi-bill-calculator.html">Va Post 9 11 Gi Bill Calculator</a></li>
+													<li class="list-group-item"><a href="/va-rating-and-ptsd.html">Va Rating And Ptsd</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-arthritis-in-shoulder.html">Va Rating For Arthritis In Shoulder</a></li>
+													<li class="list-group-item"><a href="/va-qtc.html">Va Qtc</a></li>
+													<li class="list-group-item"><a href="/va-physician-pay-tables-2021.html">Va Physician Pay Tables 2021</a></li>
+													<li class="list-group-item"><a href="/va-quality-motors-reviews.html">Va Quality Motors Reviews</a></li>
+													<li class="list-group-item"><a href="/va-rating-10-percent.html">Va Rating 10 Percent</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

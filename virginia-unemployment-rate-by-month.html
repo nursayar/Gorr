@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Virginia Unemployment Rate By Month - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Virginia Unemployment Rate By Month",
+  "datePublished": "2021-02-17",
+  "image": "https://fred.stlouisfed.org/graph/fredgraph.png?width=880&amp;height=440&amp;id=VABRIS0URN",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=virginia+unemployment+rate+by+month",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Virginia Unemployment Rate By Month</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">According to household survey data in November the labor force expanded by 16323 or 04 percent to 4286658 as the number of unemployed residents fell by 12464. Virginia nonagricultural wage and salary employment from the monthly establishment survey rose by 9200 jobs in September to 3857100. The national unemployment rate decreased to 69 percent in October meaning West Virginias jobs rate is currently better than the national average. <br>				
+			</p>
+										<a class="badge badge-primary" href="/can-i-transfer-gi-bill-while-in-reserves.html">can i transfer gi bill while in reserves</a>
+											<a class="badge badge-dark" href="/can-the-gi-bill-be-transferred-to-grandchildren.html">can the gi bill be transferred to grandchildren</a>
+											<a class="badge badge-warning" href="/can-reservist-use-post-911-gi-bill.html">can reservist use post 911 gi bill</a>
+											<a class="badge badge-warning" href="/can-a-wife-of-a-veteran-get-health-insurance.html">can a wife of a veteran get health insurance</a>
+											<a class="badge badge-warning" href="/can-i-get-the-gi-bill-with-a-general-discharge.html">can i get the gi bill with a general discharge</a>
+											<a class="badge badge-light" href="/can-i-use-both-montgomery-gi-bill-and-post-911.html">can i use both montgomery gi bill and post 911</a>
+											<a class="badge badge-dark" href="/can-i-transfer-post-911-gi-bill-after-retirement.html">can i transfer post 911 gi bill after retirement</a>
+											<a class="badge badge-warning" href="/can-i-use-my-gi-bill-to-pay-off-my-spouses-student-loans.html">can i use my gi bill to pay off my spouses student loans</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to pay a visit to the right blog.  Our site gives you hints for viewing the maximum quality video and image content, hunt and locate more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, particularly Youtube, so we recommend this video that you see.  You can also contribute to supporting this site by sharing videos and images that you enjoy on this site on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information that you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.statcdn.com/Statistic/190000/190812-blank-355.png" data-lightbox="roadtrip" data-title="Virginia Unemployment Rate 2019 Statista">
+											<img class="card-img v-image ads-img " src="https://cdn.statcdn.com/Statistic/190000/190812-blank-355.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeWvV9b_ThqUxvRNtHLd3LYvVLpOkTJ-Nklw';" alt="Virginia Unemployment Rate 2019 Statista">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Unemployment Rate 2019 Statista</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.vec.virginia.gov/sites/default/files/images/11-12-2020-1.png" data-lightbox="roadtrip" data-title="Virginia S Unemployment Insurance Weekly Claims For Week Ending November 7th Virginia Employment Commission">
+											<img class="card-img v-image ads-img " src="https://www.vec.virginia.gov/sites/default/files/images/11-12-2020-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSBRv1sQ_sR4rnNyy_3TFRNkbeTT7OWJ5ijQ';" alt="Virginia S Unemployment Insurance Weekly Claims For Week Ending November 7th Virginia Employment Commission">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia S Unemployment Insurance Weekly Claims For Week Ending November 7th Virginia Employment Commission</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vaperforms.virginia.gov/Graphics/UnemploymentRate-byRegion.png" data-lightbox="roadtrip" data-title="Virginia Performs Measuring What Matters To Virginians">
+											<img class="card-img v-image ads-img " src="https://vaperforms.virginia.gov/Graphics/UnemploymentRate-byRegion.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMCeg0i0dT0LrCO3Ey26iNCqcu5Am2TPhuCQ';" alt="Virginia Performs Measuring What Matters To Virginians">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Performs Measuring What Matters To Virginians</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fred.stlouisfed.org/graph/fredgraph.png?id=VAARLI0URN&amp;nsh=1&amp;width=600&amp;height=400" data-lightbox="roadtrip" data-title="Unemployment Rate In Arlington County Va Vaarli0urn Fred St Louis Fed">
+											<img class="card-img v-image ads-img " src="https://fred.stlouisfed.org/graph/fredgraph.png?id=VAARLI0URN&amp;nsh=1&amp;width=600&amp;height=400" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSLB-Ga7IGx2GWQgVDrxym-nCyBuzYdx4GeA';" alt="Unemployment Rate In Arlington County Va Vaarli0urn Fred St Louis Fed">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment Rate In Arlington County Va Vaarli0urn Fred St Louis Fed</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fred.stlouisfed.org/graph/fredgraph.png?id=RICH051URN&amp;nsh=1&amp;type=image/png&amp;width=600&amp;height=400" data-lightbox="roadtrip" data-title="Unemployment Rate In Richmond Va Msa Rich051urn Fred St Louis Fed">
+											<img class="card-img v-image ads-img " src="https://fred.stlouisfed.org/graph/fredgraph.png?id=RICH051URN&amp;nsh=1&amp;type=image/png&amp;width=600&amp;height=400" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYNy_WFoPz7GEGco2xKBasY38EidFjnZRQXQ';" alt="Unemployment Rate In Richmond Va Msa Rich051urn Fred St Louis Fed">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment Rate In Richmond Va Msa Rich051urn Fred St Louis Fed</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fred.stlouisfed.org/graph/fredgraph.png?id=VANORF5URN&amp;nsh=1&amp;type=image/png&amp;width=600&amp;height=400" data-lightbox="roadtrip" data-title="Unemployment Rate In Norfolk City Va Vanorf5urn Fred St Louis Fed">
+											<img class="card-img v-image ads-img " src="https://fred.stlouisfed.org/graph/fredgraph.png?id=VANORF5URN&amp;nsh=1&amp;type=image/png&amp;width=600&amp;height=400" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnRnGT_F7oPrvhZk80dP0eW4T9aNVFpRYaBA';" alt="Unemployment Rate In Norfolk City Va Vanorf5urn Fred St Louis Fed">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment Rate In Norfolk City Va Vanorf5urn Fred St Louis Fed</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.bls.gov/regions/mid-atlantic/images/72822.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnRnGT_F7oPrvhZk80dP0eW4T9aNVFpRYaBA';" alt="Unemployment Rate In Norfolk City Va Vanorf5urn Fred St Louis Fed">
+										<div class="card-body">
+						<h3 class="h5"><b>The employment commission says there are currently 500000 available jobs on.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Virginia unemployment rate by month</strong>. 
+								
+																	Virginias unemployment rate was 49 up from 47. 
+																	RICHMOND Virginias seasonally adjusted unemployment rate fell 03 percentage points in November to 49 percent which is 22 percentage points above the rate from a year ago. 
+																	Augusts preliminary estimate was revised downward by 2300 subtracting from that months job gains. 
+																	Compared to a year ago the number of unemployed increased by 106325 household employment decreased by 273784 and the labor force decreased by 167459. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Estimates for the current month are subject to revision the following month. 
+																	Unemployment rates continued to fall further in 19 states in December including Maryland although Virginias statewide unemployment rate was higher. 
+																	If Virginias unemployment rate goes back up job seekers could then be eligible for those extended benefits again. 
+																	The Center Square West Virginias unemployment rate dropped for the sixth consecutive month decreasing by more than two full percentage points and standing at 64 in October. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Data refer to place of residence. 
+																	Rates shown are a percentage of the labor force. 
+																	Governor Ralph Northam today announced temporary changes to the Commonwealths Unemployment Insurance UI program that will support Virginia workers and businesses whose livelihoods have been affected by the ongoing COVID-19 crisis. 
+																	Graph and download economic data for Unemployment Rate in Alexandria City VA VAALEX5URN from Jan 1990 to Nov 2020 about Alexandria City VA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The monthly unemployment rate in Virginia fell nearly a full percentage point from 62 in September to 53 in October but that came with a smaller labor force. 
+																	West Virginia has now had a better unemployment rate than the national average for four of the last six months. 
+																	Virginias not seasonally adjusted unemployment rate continues to be below the national unadjusted rate which fell by 11 percentage points in October to 66 percent. 
+																	For the month of October the unemployment rate in Virginia fell from 61 to 51 when compared to September and was 15 lower than the national rate according to the VEC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ralph Northam announced. 
+																	The unemployment rate in Maryland last month was 63 down from 68 in November according to the departments Bureau of Labor Statistics. 
+																	The unemployment rate in Virginia ticked up in December by less than one-tenth of a percent to 49 as the labor force remained 173618 workers short of where it was in February 2020 according to. 
+																	The national unemployment rate decreased to 69 in October after record-high rates due to the COVID-19 pandemic. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	RICHMOND Virginias seasonally adjusted unemployment rate fell 03 percentage points in November to 49 percent which is 22 percentage points above the rate from a year ago. 
+																	Virginias unadjusted unemployment rate decreased 10 percentage point in October to 51 percent but was up 26 percentage points from a year ago. 
+																	Virginias seasonally adjusted unemployment rate continues to be below the national rate which fell to 79 percent. 
+																	Executive Order Seventy-Four requires the Virginia Employment Commission VEC to mitigate a potential rise in the UI experience rating tax for businesses by. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	That wont happen Gov. 
+																	West Virginia has now had a better unemployment rate than the national average for four of the last six months Gov. 
+																	According to household survey data in November the labor force expanded by 16323 or 04 percent to 4286658 as the number of unemployed residents fell by 12464. 
+																	The Bureau of Labor Statistics reports Virginias seasonally-adjusted unemployment rate in November was 49 down from 52 in October but still higher than its 27 unemployment rate a year ago. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	According to household survey data in November the labor force expanded by 16323 or 04 percent to 4286658 as the number of unemployed residents fell by 12464. 
+																	RICHMOND Virginias seasonally adjusted unemployment rate fell 03 percentage points in November to 49 percent which is 22 percentage points above the rate from a year ago. 
+																	The states workforce increased by 8100 workers from September and the total number of unemployed West Virginians decreased by 18100 reaching 48800. 
+																	Virginias unemployment trust fund is all but depleted and the state could have turned to businesses to replenish it with a tax rate spike in 2021. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Unemployment Rate Virginia Unemployment Rate Virginia Unemployed. 
+																	This means West Virginias job rate is currently better than the national average. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fred.stlouisfed.org/graph/fredgraph.png?id=VAURN&amp;nsh=1" data-lightbox="roadtrip" data-title="Unemployment Rate In Virginia Vaur Fred St Louis Fed">
+											<img class="card-img v-image ads-img " src="https://fred.stlouisfed.org/graph/fredgraph.png?id=VAURN&amp;nsh=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMfKW1j-k9zsv_ABQFaeQtoXX5eEA5ACT3zw';" alt="Unemployment Rate In Virginia Vaur Fred St Louis Fed">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment Rate In Virginia Vaur Fred St Louis Fed</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.statcdn.com/Statistic/190000/190813-blank-355.png" data-lightbox="roadtrip" data-title="West Virginia Unemployment Rate 2019 Statista">
+											<img class="card-img v-image ads-img " src="https://cdn.statcdn.com/Statistic/190000/190813-blank-355.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwzbJtoVnbNc0G_7LqR1nOwg-SaEeRb0TGEg';" alt="West Virginia Unemployment Rate 2019 Statista">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">West Virginia Unemployment Rate 2019 Statista</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fred.stlouisfed.org/graph/fredgraph.png?id=LAUMT511682000000003A&amp;nsh=1" data-lightbox="roadtrip" data-title="Unemployment Rate In Charlottesville Va Msa Char851urn Fred St Louis Fed">
+											<img class="card-img v-image ads-img " src="https://fred.stlouisfed.org/graph/fredgraph.png?id=LAUMT511682000000003A&amp;nsh=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUVHQyyJ5Cr_cERs35FqjiJKJjnwYAkWxnVA';" alt="Unemployment Rate In Charlottesville Va Msa Char851urn Fred St Louis Fed">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment Rate In Charlottesville Va Msa Char851urn Fred St Louis Fed</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fred.stlouisfed.org/graph/fredgraph.png?width=880&amp;height=440&amp;id=VAALEX5URN" data-lightbox="roadtrip" data-title="Unemployment Rate In Alexandria City Va Vaalex5urn Fred St Louis Fed">
+											<img class="card-img v-image ads-img " src="https://fred.stlouisfed.org/graph/fredgraph.png?width=880&amp;height=440&amp;id=VAALEX5URN" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqojiRjIhOIflwLoRZ42XOvCnOr70NYPW1sg';" alt="Unemployment Rate In Alexandria City Va Vaalex5urn Fred St Louis Fed">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment Rate In Alexandria City Va Vaalex5urn Fred St Louis Fed</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fred.stlouisfed.org/graph/fredgraph.png?width=880&amp;height=440&amp;id=VALOUD5URN" data-lightbox="roadtrip" data-title="Unemployment Rate In Loudoun County Va Valoud5urn Fred St Louis Fed">
+											<img class="card-img v-image ads-img " src="https://fred.stlouisfed.org/graph/fredgraph.png?width=880&amp;height=440&amp;id=VALOUD5URN" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRhOxtYotbkUQsM5JyOzK2-JMSe_847V_7Yw';" alt="Unemployment Rate In Loudoun County Va Valoud5urn Fred St Louis Fed">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment Rate In Loudoun County Va Valoud5urn Fred St Louis Fed</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fred.stlouisfed.org/graph/fredgraph.png?id=WVURN&amp;nsh=1" data-lightbox="roadtrip" data-title="Unemployment Rate In West Virginia Wvur Fred St Louis Fed">
+											<img class="card-img v-image ads-img " src="https://fred.stlouisfed.org/graph/fredgraph.png?id=WVURN&amp;nsh=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx500dkdINRXFc_LlyxH8ueb4wjjrX6qNOsA';" alt="Unemployment Rate In West Virginia Wvur Fred St Louis Fed">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment Rate In West Virginia Wvur Fred St Louis Fed</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.bls.gov/regions/mid-atlantic/images/72822.gif" data-lightbox="roadtrip" data-title="County Employment And Wages In Virginia First Quarter 2020 Mid Atlantic Information Office U S Bureau Of Labor Statistics">
+											<img class="card-img v-image ads-img " src="https://www.bls.gov/regions/mid-atlantic/images/72822.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYEMBIWTVih1rHTROnnuIFHPRxOf1UXlDjWQ';" alt="County Employment And Wages In Virginia First Quarter 2020 Mid Atlantic Information Office U S Bureau Of Labor Statistics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">County Employment And Wages In Virginia First Quarter 2020 Mid Atlantic Information Office U S Bureau Of Labor Statistics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fred.stlouisfed.org/graph/fredgraph.png?width=880&amp;height=440&amp;id=VABRIS0URN" data-lightbox="roadtrip" data-title="Unemployment Rate In Bristol City Va Vabris0urn Fred St Louis Fed">
+											<img class="card-img v-image ads-img " src="https://fred.stlouisfed.org/graph/fredgraph.png?width=880&amp;height=440&amp;id=VABRIS0URN" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7SyS8MhlqzSZU57HGo0MwKz-_L8Ccr16Qbg';" alt="Unemployment Rate In Bristol City Va Vabris0urn Fred St Louis Fed">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment Rate In Bristol City Va Vabris0urn Fred St Louis Fed</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://alfred.stlouisfed.org/graph/alfredgraph.png?mode=alfred&amp;nsh=1&amp;type=image/png&amp;chart_type=column&amp;width=600&amp;height=400&amp;id=VIRG251URN,VIRG251URN&amp;vintage_date=2020-12-03,2021-01-05&amp;cosd=2020-10-01,2020-10-01&amp;coed=2020-10-01,2020-11-01&amp;key=489c32602fc413c2d03d9a6db510ea11" data-lightbox="roadtrip" data-title="Unemployment Rate In Virginia Beach Norfolk Newport News Va Nc Msa Virg251urn Fred St Louis Fed">
+											<img class="card-img v-image ads-img " src="https://alfred.stlouisfed.org/graph/alfredgraph.png?mode=alfred&amp;nsh=1&amp;type=image/png&amp;chart_type=column&amp;width=600&amp;height=400&amp;id=VIRG251URN,VIRG251URN&amp;vintage_date=2020-12-03,2021-01-05&amp;cosd=2020-10-01,2020-10-01&amp;coed=2020-10-01,2020-11-01&amp;key=489c32602fc413c2d03d9a6db510ea11" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP7UpW3Ot0OAArTSm3XteMGmHs5P-bx7nQiQ';" alt="Unemployment Rate In Virginia Beach Norfolk Newport News Va Nc Msa Virg251urn Fred St Louis Fed">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment Rate In Virginia Beach Norfolk Newport News Va Nc Msa Virg251urn Fred St Louis Fed</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fred.stlouisfed.org/graph/fredgraph.png?id=WVMCDO5URN&amp;nsh=1&amp;width=600&amp;height=400" data-lightbox="roadtrip" data-title="Unemployment Rate In Mcdowell County Wv Wvmcdo5urn Fred St Louis Fed">
+											<img class="card-img v-image ads-img " src="https://fred.stlouisfed.org/graph/fredgraph.png?id=WVMCDO5URN&amp;nsh=1&amp;width=600&amp;height=400" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT07abvonKma-4PKgvmMpssSohYqNrFFWQPRw';" alt="Unemployment Rate In Mcdowell County Wv Wvmcdo5urn Fred St Louis Fed">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment Rate In Mcdowell County Wv Wvmcdo5urn Fred St Louis Fed</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.bls.gov/regions/mid-atlantic/images/83061.gif" data-lightbox="roadtrip" data-title="Hkzvc 270xzomm">
+											<img class="card-img v-image ads-img " src="https://www.bls.gov/regions/mid-atlantic/images/83061.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6SV9FbkV8J4LZMwDLcyy-WGyNeCU4dHL4Ew';" alt="Hkzvc 270xzomm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hkzvc 270xzomm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.statcdn.com/Statistic/190000/193935-blank-355.png" data-lightbox="roadtrip" data-title="U S Male Unemployment Rate Seasonally Adjusted December 2020 Statista">
+											<img class="card-img v-image ads-img " src="https://cdn.statcdn.com/Statistic/190000/193935-blank-355.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRqbxG2I91ibyE3HhmwWFFZGSNrOaxnZR2dA';" alt="U S Male Unemployment Rate Seasonally Adjusted December 2020 Statista">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Male Unemployment Rate Seasonally Adjusted December 2020 Statista</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fred.stlouisfed.org/graph/fredgraph.png?id=VAFAIR5URN&amp;nsh=1&amp;width=600&amp;height=400" data-lightbox="roadtrip" data-title="Estimate Median Age By Sex Total Population 5 Year Estimate In Fairfax County Va B01002001e051059 Fred St Louis Fed">
+											<img class="card-img v-image ads-img " src="https://fred.stlouisfed.org/graph/fredgraph.png?id=VAFAIR5URN&amp;nsh=1&amp;width=600&amp;height=400" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj2RE3tkq9bx6xgqN9VqlJ5N_IYuHrx4HAVA';" alt="Estimate Median Age By Sex Total Population 5 Year Estimate In Fairfax County Va B01002001e051059 Fred St Louis Fed">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Estimate Median Age By Sex Total Population 5 Year Estimate In Fairfax County Va B01002001e051059 Fred St Louis Fed</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/opm-title-38-pay-scale.html">Opm Title 38 Pay Scale</a></li>
+													<li class="list-group-item"><a href="/post-9-11-gi-bill-bah-pay-dates.html">Post 9 11 Gi Bill Bah Pay Dates</a></li>
+													<li class="list-group-item"><a href="/post-9-11-gi-bill-internship.html">Post 9 11 Gi Bill Internship</a></li>
+													<li class="list-group-item"><a href="/post-9-11-gi-bill-air-national-guard.html">Post 9 11 Gi Bill Air National Guard</a></li>
+													<li class="list-group-item"><a href="/pay-va-individual-tax.html">Pay Va Individual Tax</a></li>
+													<li class="list-group-item"><a href="/online-certifications-gi-bill.html">Online Certifications Gi Bill</a></li>
+													<li class="list-group-item"><a href="/new-gi-bill-regulations.html">New Gi Bill Regulations</a></li>
+													<li class="list-group-item"><a href="/new-gi-bill-transfer-to-dependents.html">New Gi Bill Transfer To Dependents</a></li>
+													<li class="list-group-item"><a href="/post-9-11-gi-bill-helicopter-flight-training.html">Post 9 11 Gi Bill Helicopter Flight Training</a></li>
+													<li class="list-group-item"><a href="/post-9-11-gi-bill-how-many-months-of-benefits.html">Post 9 11 Gi Bill How Many Months Of Benefits</a></li>
+													<li class="list-group-item"><a href="/peso-bill-bi-fold-wallet.html">Peso Bill Bi Fold Wallet</a></li>
+													<li class="list-group-item"><a href="/post-9-11-gi-bill-bah-for-part-time-students.html">Post 9 11 Gi Bill Bah For Part Time Students</a></li>
+													<li class="list-group-item"><a href="/popular-virginia-trees.html">Popular Virginia Trees</a></li>
+													<li class="list-group-item"><a href="/new-gi-bill-for-unemployed-veterans.html">New Gi Bill For Unemployed Veterans</a></li>
+													<li class="list-group-item"><a href="/new-gi-bill-transfer.html">New Gi Bill Transfer</a></li>
+													<li class="list-group-item"><a href="/post-9-11-gi-bill-housing-allowance-for-part-time-student.html">Post 9 11 Gi Bill Housing Allowance For Part Time Student</a></li>
+													<li class="list-group-item"><a href="/new-horizons-gi-bill.html">New Horizons Gi Bill</a></li>
+													<li class="list-group-item"><a href="/post-9-11-gi-bill-how-many-credits-for-bah.html">Post 9 11 Gi Bill How Many Credits For Bah</a></li>
+													<li class="list-group-item"><a href="/post-9-11-gi-bill-attendance-policy.html">Post 9 11 Gi Bill Attendance Policy</a></li>
+													<li class="list-group-item"><a href="/pay-va-business-tax.html">Pay Va Business Tax</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Bi Weekly Bill Payment Schedule Printable - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Bi Weekly Bill Payment Schedule Printable",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/6c/ec/14/6cec1425ec381c18d31370b460a4f22e.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=bi+weekly+bill+payment+schedule+printable",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Bi Weekly Bill Payment Schedule Printable</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Download 27345 KB 23. Finally all pictures we have been displayed in this site will inspire you all. Use the bill tracker template to track due dates payment amounts and dates paid for a variety of recurring expenses including rent or mortgage utilities car or student loans insurance premiums and more. <br>				
+			</p>
+										<a class="badge badge-info" href="/10-most-common-va-disability-claims.html">10 most common va disability claims</a>
+											<a class="badge badge-success" href="/0-va-disability-rating-benefits.html">0 va disability rating benefits</a>
+											<a class="badge badge-info" href="/30-go-internet-correspond-a-combien-dheure.html">30 go internet correspond a combien dheure</a>
+											<a class="badge badge-success" href="/30-gtt.html">30 gtt</a>
+											<a class="badge badge-danger" href="/30g-sterling.html">30g sterling</a>
+											<a class="badge badge-light" href="/30-gram-mentega-berapa-sendok-makan.html">30 gram mentega berapa sendok makan</a>
+											<a class="badge badge-warning" href="/30-gb-berapa-mb.html">30 gb berapa mb</a>
+											<a class="badge badge-info" href="/30g-silver-price.html">30g silver price</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you have come to visit the ideal blog.  Our website provides you with suggestions for viewing the highest quality video and picture content, hunt and find more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, so we recommend this movie for you to view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/f6/b6/73f6b61d51e4ced34a7464fc8f55e606.jpg" data-lightbox="roadtrip" data-title="Printable Bi Weekly Bill Pay Orgzanizer New Calendar Template Site Budgeting Finances Paying Bills Budgeting Money">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/f6/b6/73f6b61d51e4ced34a7464fc8f55e606.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVWfznTO43P0k45b0hDdtkP17mlDummf0L9A';" alt="Printable Bi Weekly Bill Pay Orgzanizer New Calendar Template Site Budgeting Finances Paying Bills Budgeting Money">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Printable Bi Weekly Bill Pay Orgzanizer New Calendar Template Site Budgeting Finances Paying Bills Budgeting Money</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/ba/b1/acbab11ad0074c17505c0366deb32ec8.jpg" data-lightbox="roadtrip" data-title="Budget Worksheet Printable Get Paid Weekly And Charlie Gets Paid Bi Weekly So There S Several Monthly Budget Template Budgeting Worksheets Budgeting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/ba/b1/acbab11ad0074c17505c0366deb32ec8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2xvFHOFjcExpC1r0kKEcq354eei9w0NDGbg';" alt="Budget Worksheet Printable Get Paid Weekly And Charlie Gets Paid Bi Weekly So There S Several Monthly Budget Template Budgeting Worksheets Budgeting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Budget Worksheet Printable Get Paid Weekly And Charlie Gets Paid Bi Weekly So There S Several Monthly Budget Template Budgeting Worksheets Budgeting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/14/99/54/14995404df172431e184f79f34592831.jpg" data-lightbox="roadtrip" data-title="Awesome Free Printable Bill Payment Calendar Encouraged To My Own Blog Site Within This Period I Bill Organization Printables Paying Bills Bill Organization">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/14/99/54/14995404df172431e184f79f34592831.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUMpoJIL0mmCVQQILRXC9pPLU1-nJPNd-V5g';" alt="Awesome Free Printable Bill Payment Calendar Encouraged To My Own Blog Site Within This Period I Bill Organization Printables Paying Bills Bill Organization">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Awesome Free Printable Bill Payment Calendar Encouraged To My Own Blog Site Within This Period I Bill Organization Printables Paying Bills Bill Organization</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c1/3b/45/c13b45b1ed29ae6b138d37be51e025c1.jpg" data-lightbox="roadtrip" data-title="Bi Weekly Budget Printable Do You Get Paid Twice A Month Personally I Have Certain Bills I Pay A Weekly Budget Template Monthly Budget Template Weekly Budget">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c1/3b/45/c13b45b1ed29ae6b138d37be51e025c1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo7dPFbRapselKckCYMp5RyHN5NjcbnWj9Ug';" alt="Bi Weekly Budget Printable Do You Get Paid Twice A Month Personally I Have Certain Bills I Pay A Weekly Budget Template Monthly Budget Template Weekly Budget">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bi Weekly Budget Printable Do You Get Paid Twice A Month Personally I Have Certain Bills I Pay A Weekly Budget Template Monthly Budget Template Weekly Budget</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5a/27/e5/5a27e55c78300423bb4bd68c7211ec7c.jpg" data-lightbox="roadtrip" data-title="What Makes Bi Weekly Budget Template Beneficial For Us In Our Life Have You Been Having Trouble Budget Planner Template Budget Template Weekly Budget Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5a/27/e5/5a27e55c78300423bb4bd68c7211ec7c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8qPi_wLlC9j1DejtsZ_yNik_WPJ6J5Wpciw';" alt="What Makes Bi Weekly Budget Template Beneficial For Us In Our Life Have You Been Having Trouble Budget Planner Template Budget Template Weekly Budget Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Makes Bi Weekly Budget Template Beneficial For Us In Our Life Have You Been Having Trouble Budget Planner Template Budget Template Weekly Budget Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/31/0f/6f310f51db406d9364502413c45228fe.jpg" data-lightbox="roadtrip" data-title="Life On Kirkland Avenue We Have One Car Weekly Budget Printable Weekly Budget Template Budget Printables">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/31/0f/6f310f51db406d9364502413c45228fe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp693E455vvT_sl6qbSyn_WrhAhuN-kaDQXg';" alt="Life On Kirkland Avenue We Have One Car Weekly Budget Printable Weekly Budget Template Budget Printables">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Life On Kirkland Avenue We Have One Car Weekly Budget Printable Weekly Budget Template Budget Printables</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/87/ca/b0/87cab02ac22d81d2a153ffcc07bb61ec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp693E455vvT_sl6qbSyn_WrhAhuN-kaDQXg';" alt="Life On Kirkland Avenue We Have One Car Weekly Budget Printable Weekly Budget Template Budget Printables">
+										<div class="card-body">
+						<h3 class="h5"><b>You can get a bill payment schedule template here free of cost.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Bi weekly bill payment schedule printable</strong>. 
+								
+																	Keep a check on bill payments just the right way by using this bill payment schedule sample template. 
+																	A bill payment checklist makes it easy to track your bill payment every month. 
+																	It is well organized and allows you to enter important and useful details such as the name of the payee amount due minimum payment mode of payment etc. 
+																	40 biweekly pay schedule template in 2020 payroll calendar with images templates addictionary 2019 fresh sharyland isd desalas. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2021 payroll printable biweekly payment schedule 2021 pay periods printable biweekly payment schedule 2021 pay schedule 3 printable biweekly payment schedule gsa opm federal pay scale. 
+																	The monthly payments you make are calculated with the assumption that you will be paying your loan off over a fixed period. 
+																	If you are also facing this problem and wan to get rid of bill payment schedule will definitely a good idea to keep track of your paid and unpaid bills. 
+																	Useful Tips for Handling Problems with Bi-weekly Budget. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	006 Monthly Bill Organizer Template Excel Ideas Spreadsheet within Free Printable Bi-Weekly Bill Organizer 11780 How To Budget Biweekly Paychecks Paying Monthly Bills for Free Printable Bi-Weekly Bill Organizer 11781 Monthly Bill Schedule Template Camisonline in Free Printable Bi-Weekly Bill Organizer 11776 Easy To Use Personal. 
+																	Never be late with a payment again with this handy bill paying checklist template. 
+																	Adopting a Schedule with Bi-week Income. 
+																	We may wind up stuck in an unfortunate situation without paying bills. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bill payment checklist - organizer printable - instant download Printable bill payment checklist to keep your payments organized. 
+																	40 Biweekly Pay Schedule Template. 
+																	The planned date of payment per bill. 
+																	Print the checklist and keep it handy so you can easily refer to it when you pay bills each month. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For example you might keep it with your checkbook in a life planner or a home organization binder. 
+																	The list of all the recipients of the bill payment. 
+																	Simply put the date the bill is due in the left box followed by the bill item and cost. 
+																	Download 18821 KB 22. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bi Weekly Bill Payment Schedule Template And Payment Schedule Template Word can be valuable inspiration for people who seek an image according specific categories you will find it in this site. 
+																	As soon as you get your pay always set aside your payment for your household bills. 
+																	The combined amount of all the bills. 
+																	Nowadays with a busy work routine it is very easy to lose track of which bills you have paid and which is still unpaid. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You have two bi-weekly payments in the month on days 1 and 15. 
+																	Paying bills each month is an essential part of our daily life. 
+																	The amount that is needed to be paid per bill. 
+																	This Excel checklist template helps you budget more efficiently and gives you more control over your. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The due date of all the bills that are needed to be paid. 
+																	Use this printable bill pay checklist to check off your bills as you pay them each month. 
+																	Inclusions of a Bill Payment Schedule. 
+																	However on day 5 you have to pay the rent which is equivalent to half of all income for the month on day 10 you have to pay public services and you must have money for transportation and food. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are maximum 20 bills that can be displayed at the same date using this bill payment calendar. 
+																	Bill payment schedule template. 
+																	Then check off each monthly payment as it happens. 
+																	A longer or shorter payment schedule would change how much interest in total you will owe on the loan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The form is fully editable so you can customize it with all of your bill pay information before you hit print. 
+																	Thank you for visiting. 
+																	It would actually help you clear your mind on your expenses if you gradually get your bills covered as soon as you have the money to pay for it. 
+																	When you want to adjust your bi-weekly budget the most important and first thing is to forget that you are paid twice a month and you receive the bills once a month. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you spend too much on unnecessary things you might be left with nothing. 
+																	Download 11364 KB 21. 
+																	With this tactic you need to pay the bills as soon they arrive. 
+																	Its an easy way to catch oversights before they result in late fees and added interest. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Advanced Bill Payment Planner Due to plenty of requests about more advanced bill payment calendar where people can plan their payment as well as plan their cash flow within one fiscal year I decided to fulfill it by creating the paid version of this spreadsheet. 
+																	Bill payment schedule is a document that allows you to enter necessary details about your bills like type of bill payable amount due date status and bill. 
+																	ATT Phone Bill 10th 15th Total for 1st check 24th 4th 2nd 26th Electric 3rd Total from 2nd check Monthly Total Tithe Student Loan Internet Access Vacation Fund Emergency Fund Mortgage or Rent Credit Card Cell Phone Renters Insurance Car Insurance Car Loan Gas Water Bill Trash Bill 12th 16th Bill Payment Schedule 45000 8500 4000 2000. 
+																	Without a valid bill-paying framework set up you can gather obligation increase stress and put your accounts and FICO assessment in danger. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you also want to include the bills which dont come regularly then you may have to print out monthly bill payment logs for all months of the year. 
+																	Download 20737 KB 20. 
+																	This document makes use of business standard fonts and the contents in it can be edited. 
+																	A basic bill payment schedule includes the following information. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A shorter payment period means larger monthly payments but overall you pay less interest. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/1e/4e/351e4e2e74033829d61859b65ac9e3cd.jpg" data-lightbox="roadtrip" data-title="Monthly Bill Payment Checklist Printable Million Ways To Mother Bill Payment Checklist Bill Pay Checklist Paying Bills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/1e/4e/351e4e2e74033829d61859b65ac9e3cd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMYvFjwZCnsTn-P40J2ZLbnGsH89IK3zgzzA';" alt="Monthly Bill Payment Checklist Printable Million Ways To Mother Bill Payment Checklist Bill Pay Checklist Paying Bills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Monthly Bill Payment Checklist Printable Million Ways To Mother Bill Payment Checklist Bill Pay Checklist Paying Bills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/24/e9/ee/24e9ee5acc5fd879e112ac9bd07d01bc.jpg" data-lightbox="roadtrip" data-title="Bi Weekly Budget Template Business Weekly Budget Template Paycheck Budget Weekly Budget Printable">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/24/e9/ee/24e9ee5acc5fd879e112ac9bd07d01bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRK2vPiSe4rHquhUBEWrbgtDX-ebc2jVNxmg';" alt="Bi Weekly Budget Template Business Weekly Budget Template Paycheck Budget Weekly Budget Printable">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bi Weekly Budget Template Business Weekly Budget Template Paycheck Budget Weekly Budget Printable</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/21/cf/68/21cf684e4d8556a71bfbe4f0949262a9.jpg" data-lightbox="roadtrip" data-title="Free Printable Bi Weekly Bill Organizer Budgeting Worksheets Weekly Budget Template Monthly Budget Worksheet">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/21/cf/68/21cf684e4d8556a71bfbe4f0949262a9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScsqwG_83-YeLYcZqkwaN7exuqRaoM46xgxg';" alt="Free Printable Bi Weekly Bill Organizer Budgeting Worksheets Weekly Budget Template Monthly Budget Worksheet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Printable Bi Weekly Bill Organizer Budgeting Worksheets Weekly Budget Template Monthly Budget Worksheet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/0a/46/2c0a46c38816afee8e2f8722ae4a34f7.jpg" data-lightbox="roadtrip" data-title="Free Printable Bill Payment Checklist You Can Download Now Bill Payment Checklist Paying Bills Bill Organization">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/0a/46/2c0a46c38816afee8e2f8722ae4a34f7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv1606fEGgiEIa3xx1FMrXvGOUq2P4PFqk5A';" alt="Free Printable Bill Payment Checklist You Can Download Now Bill Payment Checklist Paying Bills Bill Organization">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Printable Bill Payment Checklist You Can Download Now Bill Payment Checklist Paying Bills Bill Organization</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/97/65/2f/97652f7f8cdc9ef4bb7ab9abac909f1e.jpg" data-lightbox="roadtrip" data-title="Awesome Free Printable Bill Payment Calendar Free Printable Calendar Monthly Budget Calendar Bill Calendar Finance Organization Printables">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/97/65/2f/97652f7f8cdc9ef4bb7ab9abac909f1e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuPodjlbNL-hTGxXrt5X79Y7YztklrJAtYSQ';" alt="Awesome Free Printable Bill Payment Calendar Free Printable Calendar Monthly Budget Calendar Bill Calendar Finance Organization Printables">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Awesome Free Printable Bill Payment Calendar Free Printable Calendar Monthly Budget Calendar Bill Calendar Finance Organization Printables</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/7e/56/2a7e563ff17cd5306eec91122c7c393b.png" data-lightbox="roadtrip" data-title="Keep Your Bill Due Dates Straight With These Free Calendar Templates Bill Payment Checklist Bills Checklist Bill Calendar">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/7e/56/2a7e563ff17cd5306eec91122c7c393b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUXHUVXLTjjNHjztn5DoTYSBCKpCTUSQOshQ';" alt="Keep Your Bill Due Dates Straight With These Free Calendar Templates Bill Payment Checklist Bills Checklist Bill Calendar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Keep Your Bill Due Dates Straight With These Free Calendar Templates Bill Payment Checklist Bills Checklist Bill Calendar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/ec/14/6cec1425ec381c18d31370b460a4f22e.jpg" data-lightbox="roadtrip" data-title="Free Printable Bi Weekly Planner Cute Colorful Template Weekly Planner Template Weekly Planner Free Printable Weekly Planner Free">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/ec/14/6cec1425ec381c18d31370b460a4f22e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTjvD9HrZvWz359m4z4-xG7d5S0oIF0dz5mw';" alt="Free Printable Bi Weekly Planner Cute Colorful Template Weekly Planner Template Weekly Planner Free Printable Weekly Planner Free">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Printable Bi Weekly Planner Cute Colorful Template Weekly Planner Template Weekly Planner Free Printable Weekly Planner Free</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/36/ce/6836ce630b5c4dc27d2889306537cadc.jpg" data-lightbox="roadtrip" data-title="Free Printable Bill Tracker Manage Your Monthly Expenses Bill Tracker Printable Budgeting Budgeting Finances">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/36/ce/6836ce630b5c4dc27d2889306537cadc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSznDt6KlPxn_PeJwR0qM5ysZVGyjnrAWQCA';" alt="Free Printable Bill Tracker Manage Your Monthly Expenses Bill Tracker Printable Budgeting Budgeting Finances">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Printable Bill Tracker Manage Your Monthly Expenses Bill Tracker Printable Budgeting Budgeting Finances</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/d0/2c/43d02cefe1d391f4ad73436e9afe10da.jpg" data-lightbox="roadtrip" data-title="Monthly Bills Template Monthly Bills Template Organizing Monthly Bills Paying Bills Bills Printable">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/d0/2c/43d02cefe1d391f4ad73436e9afe10da.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_dkMEvX-0iQvB0kIheqcG-JF6wvz4QwcXKw';" alt="Monthly Bills Template Monthly Bills Template Organizing Monthly Bills Paying Bills Bills Printable">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Monthly Bills Template Monthly Bills Template Organizing Monthly Bills Paying Bills Bills Printable</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/ca/b0/87cab02ac22d81d2a153ffcc07bb61ec.jpg" data-lightbox="roadtrip" data-title="Bi Weekly Budget Printable Google Search Weekly Budget Printable Weekly Budget Budget Printables">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/ca/b0/87cab02ac22d81d2a153ffcc07bb61ec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZYj27CkUbBQsZ_x5LdmpBYYbx7EXPOFTOqw';" alt="Bi Weekly Budget Printable Google Search Weekly Budget Printable Weekly Budget Budget Printables">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bi Weekly Budget Printable Google Search Weekly Budget Printable Weekly Budget Budget Printables</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/a6/84/11a68457cdca1de27eb7c8f6f9b88123.jpg" data-lightbox="roadtrip" data-title="Free Printables For Newsletter Subscribers Paying Bills Budgeting Free Budget Printables">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/a6/84/11a68457cdca1de27eb7c8f6f9b88123.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfq-PEi8x80P0sH4DhD-wkMgTLDVcX9qyaKg';" alt="Free Printables For Newsletter Subscribers Paying Bills Budgeting Free Budget Printables">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Printables For Newsletter Subscribers Paying Bills Budgeting Free Budget Printables</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/ae/a4/bfaea4a3c0d4d7bdab66a6bd42657e68.png" data-lightbox="roadtrip" data-title="Juggling Your Monthly Bills On A Bi Weekly Pay Schedule Bi Weekly Pay Weekly Pay Monthly Bill">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/ae/a4/bfaea4a3c0d4d7bdab66a6bd42657e68.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwx2Ci5eAq8o28KJit89RiAub_sf241XpiHQ';" alt="Juggling Your Monthly Bills On A Bi Weekly Pay Schedule Bi Weekly Pay Weekly Pay Monthly Bill">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Juggling Your Monthly Bills On A Bi Weekly Pay Schedule Bi Weekly Pay Weekly Pay Monthly Bill</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/7e/02/067e02cef0940a504f352d80a13e8a8c.png" data-lightbox="roadtrip" data-title="Work Schedule Template For Excel Schedule Templates Schedule Template Cleaning Schedule Templates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/7e/02/067e02cef0940a504f352d80a13e8a8c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjFhiGcWMD838h3zsjbvTzL2GxOWSKDLOEYA';" alt="Work Schedule Template For Excel Schedule Templates Schedule Template Cleaning Schedule Templates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Work Schedule Template For Excel Schedule Templates Schedule Template Cleaning Schedule Templates</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/who-qualifies-for-forever-gi-bill.html">Who Qualifies For Forever Gi Bill</a></li>
+													<li class="list-group-item"><a href="/who-plays-bill-montgomery-on-orange-is-the-new-black.html">Who Plays Bill Montgomery On Orange Is The New Black</a></li>
+													<li class="list-group-item"><a href="/wi-gi-bill-eligibility.html">Wi Gi Bill Eligibility</a></li>
+													<li class="list-group-item"><a href="/why-i-want-to-go-to-a-college-essay.html">Why I Want To Go To A College Essay</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-height-requirements.html">Womens College Basketball Height Requirements</a></li>
+													<li class="list-group-item"><a href="/who-pays-va-disability-back-pay.html">Who Pays Va Disability Back Pay</a></li>
+													<li class="list-group-item"><a href="/yuku-va-benefits.html">Yuku Va Benefits</a></li>
+													<li class="list-group-item"><a href="/will-the-gi-bill-cover-flight-training.html">Will The Gi Bill Cover Flight Training</a></li>
+													<li class="list-group-item"><a href="/wisconsin-gi-bill-questions.html">Wisconsin Gi Bill Questions</a></li>
+													<li class="list-group-item"><a href="/wi-gi-bill-faq.html">Wi Gi Bill Faq</a></li>
+													<li class="list-group-item"><a href="/will-post-9-11-gi-bill-pay-for-cdl.html">Will Post 9 11 Gi Bill Pay For Cdl</a></li>
+													<li class="list-group-item"><a href="/wisconsin-gi-bill-reddit.html">Wisconsin Gi Bill Reddit</a></li>
+													<li class="list-group-item"><a href="/will-the-gi-bill-pay-for-previous-student-loans.html">Will The Gi Bill Pay For Previous Student Loans</a></li>
+													<li class="list-group-item"><a href="/wisconsin-gi-bill-for-reservists.html">Wisconsin Gi Bill For Reservists</a></li>
+													<li class="list-group-item"><a href="/yuku-va-disability-forum.html">Yuku Va Disability Forum</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-final-four-2019.html">Womens College Basketball Final Four 2019</a></li>
+													<li class="list-group-item"><a href="/why-i-want-to-go-to-college-essay-sample.html">Why I Want To Go To College Essay Sample</a></li>
+													<li class="list-group-item"><a href="/wisconsin-gi-bill-housing-allowance.html">Wisconsin Gi Bill Housing Allowance</a></li>
+													<li class="list-group-item"><a href="/yu-gi-oh-display-guenstig-kaufen.html">Yu Gi Oh Display Guenstig Kaufen</a></li>
+													<li class="list-group-item"><a href="/will-the-gi-bill-pay-student-loans.html">Will The Gi Bill Pay Student Loans</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>How Much Do Va Social Workers Make - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "How Much Do Va Social Workers Make",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/736x/00/7f/3f/007f3f0012b965ba3ce8d7187510c380.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+much+do+va+social+workers+make",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>How Much Do Va Social Workers Make</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">When factoring in bonuses and additional compensation a Licensed Clinical Social Worker at VA Health can expect to make an average total pay of 80763. The typical US Department of Veterans Affairs Social Worker salary is 70786. Florida is the lowest paying State for LCSW jobs. <br>				
+			</p>
+										<a class="badge badge-warning" href="/va-rating-for-lower-back-strain.html">va rating for lower back strain</a>
+											<a class="badge badge-dark" href="/va-rating-for-mild-obstructive-sleep-apnea.html">va rating for mild obstructive sleep apnea</a>
+											<a class="badge badge-info" href="/va-rating-for-visual-impairment.html">va rating for visual impairment</a>
+											<a class="badge badge-info" href="/va-rating-for-hand-arthritis.html">va rating for hand arthritis</a>
+											<a class="badge badge-danger" href="/va-rating-for-bilateral-shoulder-pain.html">va rating for bilateral shoulder pain</a>
+											<a class="badge badge-primary" href="/va-rating-for-ringing-in-ears.html">va rating for ringing in ears</a>
+											<a class="badge badge-success" href="/va-rating-for-hemorrhoids.html">va rating for hemorrhoids</a>
+											<a class="badge badge-secondary" href="/va-rating-for-lumbar-radiculopathy.html">va rating for lumbar radiculopathy</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you have come to visit the right blog.  Our site provides you with suggestions for viewing the highest quality video and image content, search and locate more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, particularly Youtube, therefore we recommend this movie for you to view.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/55/be/5d/55be5d2eb1c08358526b3d5e945b605e.jpg" data-lightbox="roadtrip" data-title="4 Real Reasons Your Va Obm Or Smm Business Isn T Working Sara Wiles In 2020 Virtual Assistant Virtual Assistant Business Social Media Management Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/55/be/5d/55be5d2eb1c08358526b3d5e945b605e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpo1tlAp4kYj2eHX7yh4HTpfR9DQH3O60eHw';" alt="4 Real Reasons Your Va Obm Or Smm Business Isn T Working Sara Wiles In 2020 Virtual Assistant Virtual Assistant Business Social Media Management Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4 Real Reasons Your Va Obm Or Smm Business Isn T Working Sara Wiles In 2020 Virtual Assistant Virtual Assistant Business Social Media Management Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/00/7f/3f/007f3f0012b965ba3ce8d7187510c380.jpg" data-lightbox="roadtrip" data-title="4 Real Reasons Your Va Obm Or Smm Business Isn T Working Sara Wiles In 2020 Virtual Assistant Social Media Management Business Virtual Assistant Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/00/7f/3f/007f3f0012b965ba3ce8d7187510c380.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlv9s2vjRNJQtWIJMARquc-OnV4X7jtJ2QDA';" alt="4 Real Reasons Your Va Obm Or Smm Business Isn T Working Sara Wiles In 2020 Virtual Assistant Social Media Management Business Virtual Assistant Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4 Real Reasons Your Va Obm Or Smm Business Isn T Working Sara Wiles In 2020 Virtual Assistant Social Media Management Business Virtual Assistant Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/e8/b7/0be8b7f922ba2c94d7e45f32478326fc.jpg" data-lightbox="roadtrip" data-title="Social Worker Appreciation Social Worker Appreciation Social Worker Quotes Social Work Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/e8/b7/0be8b7f922ba2c94d7e45f32478326fc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Wd3SNHb8dz_hq4XW9SBVBVRVgVa5yyDd9A';" alt="Social Worker Appreciation Social Worker Appreciation Social Worker Quotes Social Work Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Social Worker Appreciation Social Worker Appreciation Social Worker Quotes Social Work Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/95/14/e5951494538d416294a2e607ab808f7e.jpg" data-lightbox="roadtrip" data-title="Many Filipino Professionals Have Experience Working For An Offshore Client Chances Are Your Va Has Worked With Virtual Assistant Staffing Agency Social Media">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/95/14/e5951494538d416294a2e607ab808f7e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBdavHai5MVp7bkZpdnEDWI8_aKTEfuKcNbw';" alt="Many Filipino Professionals Have Experience Working For An Offshore Client Chances Are Your Va Has Worked With Virtual Assistant Staffing Agency Social Media">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Many Filipino Professionals Have Experience Working For An Offshore Client Chances Are Your Va Has Worked With Virtual Assistant Staffing Agency Social Media</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/39/28/c739284d11d1d0f696dbd159ad3da5e8.jpg" data-lightbox="roadtrip" data-title="Pin By Laura Del On Vision Board Social Worker Social Worker">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/39/28/c739284d11d1d0f696dbd159ad3da5e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_yTQ7T-Srlbs8fx_rNsk9O3x7eCcJHP2M2w';" alt="Pin By Laura Del On Vision Board Social Worker Social Worker">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Laura Del On Vision Board Social Worker Social Worker</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/55/e2/4155e25a9f838098149c1838ca3a4141.jpg" data-lightbox="roadtrip" data-title="Before Hiring A Va One Should Know Whether It Is A Requirement For Them Or Not Here Are Top 5 Reasons Why You Should In 2020 Virtual Assistant Hiring Staffing Agency">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/55/e2/4155e25a9f838098149c1838ca3a4141.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8eYIc-Hgx19kfV9_MSCseRccD8bRZoSvTuw';" alt="Before Hiring A Va One Should Know Whether It Is A Requirement For Them Or Not Here Are Top 5 Reasons Why You Should In 2020 Virtual Assistant Hiring Staffing Agency">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Before Hiring A Va One Should Know Whether It Is A Requirement For Them Or Not Here Are Top 5 Reasons Why You Should In 2020 Virtual Assistant Hiring Staffing Agency</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/09/4e/89/094e89642010d23702a8d12eed473f2e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8eYIc-Hgx19kfV9_MSCseRccD8bRZoSvTuw';" alt="Before Hiring A Va One Should Know Whether It Is A Requirement For Them Or Not Here Are Top 5 Reasons Why You Should In 2020 Virtual Assistant Hiring Staffing Agency">
+										<div class="card-body">
+						<h3 class="h5"><b>Select your job title and find out how much you could make at US Department of Veterans Affairs.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How much do va social workers make</strong>. 
+								
+																	An early career Social Worker with 1-4 years of experience earns an average total compensation includes tips bonus and overtime pay of 62738 based on 7 salaries. 
+																	Crisis intervention In a crisis situation social workers can provide counseling services to help you get through the crisis. 
+																	The average Social Worker BSW salary in Virginia is 58762 as of December 28 2020 but the range typically falls between 51984 and 65864. 
+																	Massachusetts is the highest paying state for LCSW jobs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Social Worker salaries at US Department of Veterans Affairs can range from 41283 - 92306. 
+																	Salary ranges can vary widely depending on the city and many other important factors including education certifications additional skills the number of years you have spent in your profession. 
+																	Learn about salaries benefits salary satisfaction and where you could earn the most. 
+																	The average Social Worker BSW salary in Hampton VA is 55185 as of October 28 2020 but the range typically falls between 48819 and 61852. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	While ZipRecruiter is seeing annual salaries as high as 114000 and as low as 20500 the majority of Geriatric Social Worker salaries currently range between 51500 25th percentile to 83500 75th percentile with top earners 90th percentile making 100000 annually across the United States. 
+																	What is the average annual salary for a LCSW job by State. 
+																	Average Department of Veterans Affairs Social Worker yearly pay in the United States is approximately 74137 which is 26 above the national average. 
+																	The average Licensed Clinical Social Worker salary in Virginia is 70990 as of December 28 2020 but the range typically falls between 65431 and 76722. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Salary ranges can vary widely depending on many important factors including education certifications additional skills the number of years you have spent in your profession. 
+																	The Bureau of Labor Statistics indicates that social workers earn a median salary of 47980 or 2307 per hour as of May 2017. 
+																	See all Licensed Clinical Social Worker salaries to learn how this stacks up in the market. 
+																	The average salary for a Social Worker is 60849 per year in Fairfax VA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A mid-career Social Worker. 
+																	Learn about salaries benefits salary satisfaction and where you could earn the most. 
+																	How much should you negotiate. 
+																	7738 US Department of Veterans Affairs employees have shared their salaries on Glassdoor. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Reported salaries range from below 29500 for the bottom paid 10. 
+																	Salary information comes from 855 data points collected directly from employees users and past and present job advertisements on Indeed in the past 36 months. 
+																	Salary ranges can vary widely depending on many important factors including education certifications additional skills the number of years you have spent in your profession. 
+																	LCSW Salaries by State. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Learn about salaries benefits salary satisfaction and where you could earn the most. 
+																	The average salary for a Social Worker is 60796 per year in Virginia Beach VA. 
+																	See how much a LCSW job pays hourly by State. 
+																	The social worker will then write an assessment that will help you and your VA health care team make treatment plans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The average Social Worker MSW salary in Lynchburg VA is 59852 as of September 25 2020 but the range typically falls between 53897 and 66297. 
+																	How much do US Department of Veterans Affairs interns make. 
+																	The average salary for a social worker in Virginia is around 73450 per year. 
+																	The average salary for a Social Worker is 55649 per year in Alexandria VA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The average Medical Social Worker MSW salary in Virginia is 64388 as of December 28 2020 but the range typically falls between 57993 and 70166. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/9a/91/e19a913688e6a3ab4352df5536d545db.png" data-lightbox="roadtrip" data-title="You Don T Just Want To Become A Virtual Assistant You Want A Scalable Business That Challenges Virtual Assistant Business Virtual Assistant Business Downloads">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/9a/91/e19a913688e6a3ab4352df5536d545db.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2X4gD17tBzSYULQ9T6Be5r2oLdRn57BtADA';" alt="You Don T Just Want To Become A Virtual Assistant You Want A Scalable Business That Challenges Virtual Assistant Business Virtual Assistant Business Downloads">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">You Don T Just Want To Become A Virtual Assistant You Want A Scalable Business That Challenges Virtual Assistant Business Virtual Assistant Business Downloads</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/3a/9c/ae3a9c81532e722234ca42a41e8ee783.png" data-lightbox="roadtrip" data-title="Avasw Home Page Social Worker Social Worker">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/3a/9c/ae3a9c81532e722234ca42a41e8ee783.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0rWr-DWCU6MgoLTzEdMWBOImVrn4VnxwtPQ';" alt="Avasw Home Page Social Worker Social Worker">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Avasw Home Page Social Worker Social Worker</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/8f/ff/7c8fff6bab3f59efc86e858c1e698afc.png" data-lightbox="roadtrip" data-title="Are You A Direct Practice Social Worker Who Has Realized How Certain Laws And Policies Community Health Worker Social Worker Resources Community Social Worker">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/8f/ff/7c8fff6bab3f59efc86e858c1e698afc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYrdIIuWmYpxEaJrit-VUa7ytmf5KluHaPkA';" alt="Are You A Direct Practice Social Worker Who Has Realized How Certain Laws And Policies Community Health Worker Social Worker Resources Community Social Worker">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are You A Direct Practice Social Worker Who Has Realized How Certain Laws And Policies Community Health Worker Social Worker Resources Community Social Worker</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b1/da/eb/b1daebcd62e2ee15fc0a7d480cb7fb15.jpg" data-lightbox="roadtrip" data-title="Want To Make Money Working From Home As A Virtual Assistant Or Social Media Manager Join T In 2020 Virtual Assistant Business Virtual Assistant Jobs Virtual Assistant">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b1/da/eb/b1daebcd62e2ee15fc0a7d480cb7fb15.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNh4h3Ivf5qtksHupddNad3OIkng-5rmlchg';" alt="Want To Make Money Working From Home As A Virtual Assistant Or Social Media Manager Join T In 2020 Virtual Assistant Business Virtual Assistant Jobs Virtual Assistant">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Want To Make Money Working From Home As A Virtual Assistant Or Social Media Manager Join T In 2020 Virtual Assistant Business Virtual Assistant Jobs Virtual Assistant</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fb/c5/ac/fbc5ac899ef1648eb085e6908139d30a.png" data-lightbox="roadtrip" data-title="How To Become A Pinterest Virtual Assistant Virtual Assistant Virtual Assistant Business Virtual Assistant Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fb/c5/ac/fbc5ac899ef1648eb085e6908139d30a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-qAwtyM7SaxIU9sSpbjqa4IfjpvVJH0kuAg';" alt="How To Become A Pinterest Virtual Assistant Virtual Assistant Virtual Assistant Business Virtual Assistant Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Become A Pinterest Virtual Assistant Virtual Assistant Virtual Assistant Business Virtual Assistant Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ee/3c/a9/ee3ca9103133a9f5d4461092ed2bcd6e.jpg" data-lightbox="roadtrip" data-title="Pin On Online Work">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ee/3c/a9/ee3ca9103133a9f5d4461092ed2bcd6e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC6-TNb_WbnCB2WXyZPeHL0zsMpTn2pvTDRw';" alt="Pin On Online Work">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Online Work</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/09/4e/89/094e89642010d23702a8d12eed473f2e.jpg" data-lightbox="roadtrip" data-title="4 Reasons Why Now Is The Best Time To Become A Pinterest Va Pinterest Board Names Virtual Assistant Virtual Assistant Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/09/4e/89/094e89642010d23702a8d12eed473f2e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt1CH5jyE62-gEO_thrRfN_XsWsLoQbG7kEA';" alt="4 Reasons Why Now Is The Best Time To Become A Pinterest Va Pinterest Board Names Virtual Assistant Virtual Assistant Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4 Reasons Why Now Is The Best Time To Become A Pinterest Va Pinterest Board Names Virtual Assistant Virtual Assistant Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3c/75/6e/3c756ebd44e66e4aa758f6d9634c9b5d.jpg" data-lightbox="roadtrip" data-title="Pin On Https Veteranappeal Com">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3c/75/6e/3c756ebd44e66e4aa758f6d9634c9b5d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBJF-C-DtgGvRvWBobo6_S2bW7ndRKxPcMIw';" alt="Pin On Https Veteranappeal Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Https Veteranappeal Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/72/e3/1f72e332291f0a2606eeaded909469dd.png" data-lightbox="roadtrip" data-title="Want More Virtual Assistant Clients Steady Work From Home Income Then Make Sure These 4 T Virtual Assistant Virtual Assistant Business Virtual Assistant Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/72/e3/1f72e332291f0a2606eeaded909469dd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnI8rlN3qRLEUFBai1g4s1kVB5gQJ1eV-xDw';" alt="Want More Virtual Assistant Clients Steady Work From Home Income Then Make Sure These 4 T Virtual Assistant Virtual Assistant Business Virtual Assistant Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Want More Virtual Assistant Clients Steady Work From Home Income Then Make Sure These 4 T Virtual Assistant Virtual Assistant Business Virtual Assistant Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/19/2e/50192e31c01466d8ae8ec43decd427e6.jpg" data-lightbox="roadtrip" data-title="Social Work Geek Preparing For The Aswb Social Work License Exam Social Work Exam Social Work License Social Work">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/19/2e/50192e31c01466d8ae8ec43decd427e6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ786m-ER12p0UBV-Rih7wZ6RfYhNTiExrYKQ';" alt="Social Work Geek Preparing For The Aswb Social Work License Exam Social Work Exam Social Work License Social Work">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Social Work Geek Preparing For The Aswb Social Work License Exam Social Work Exam Social Work License Social Work</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1f/e0/01/1fe001085c1d6abfe41fa1083e97b308.jpg" data-lightbox="roadtrip" data-title="How To Add Social Media Management To Your Va Business Social Media Services Virtual Assistant Business Social Media Management Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1f/e0/01/1fe001085c1d6abfe41fa1083e97b308.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe2_ZBZnPM1SnY7TwMTE42xsbCKu96CEsTmA';" alt="How To Add Social Media Management To Your Va Business Social Media Services Virtual Assistant Business Social Media Management Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Add Social Media Management To Your Va Business Social Media Services Virtual Assistant Business Social Media Management Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/14/9b/cd149b676b776c112376b1ad9bb5b2e8.png" data-lightbox="roadtrip" data-title="Social Worker Office Decor School Gift Social Work Door Etsy Social Worker Office Decor Social Workers Office Door Signs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/14/9b/cd149b676b776c112376b1ad9bb5b2e8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7cREzb_CIgITEn-Fw-4Ej0tr6BiVSiBfPIg';" alt="Social Worker Office Decor School Gift Social Work Door Etsy Social Worker Office Decor Social Workers Office Door Signs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Social Worker Office Decor School Gift Social Work Door Etsy Social Worker Office Decor Social Workers Office Door Signs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ad/81/90/ad8190ff1c4e65fa310f74af4c7eb209.jpg" data-lightbox="roadtrip" data-title="Click To Read This Step By Step Guide To Hiring A Virtual Assistant And Where To Find A Good Va Hiring A Virtual Virtual Assistant Employee Onboarding Hiring">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ad/81/90/ad8190ff1c4e65fa310f74af4c7eb209.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbdXq_Wsz06V1evH7ZtrG5YHEw_8j7V7qRsg';" alt="Click To Read This Step By Step Guide To Hiring A Virtual Assistant And Where To Find A Good Va Hiring A Virtual Virtual Assistant Employee Onboarding Hiring">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Click To Read This Step By Step Guide To Hiring A Virtual Assistant And Where To Find A Good Va Hiring A Virtual Virtual Assistant Employee Onboarding Hiring</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/using-post-911-gi-bill-for-certification.html">Using Post 911 Gi Bill For Certification</a></li>
+													<li class="list-group-item"><a href="/transferring-gi-bill-to-family-members.html">Transferring Gi Bill To Family Members</a></li>
+													<li class="list-group-item"><a href="/transformer-va-rating-primary-or-secondary.html">Transformer Va Rating Primary Or Secondary</a></li>
+													<li class="list-group-item"><a href="/using-gi-bill-for-money.html">Using Gi Bill For Money</a></li>
+													<li class="list-group-item"><a href="/using-montgomery-gi-bill-and-post-9-11.html">Using Montgomery Gi Bill And Post 9 11</a></li>
+													<li class="list-group-item"><a href="/transfer-gi-bill-benefits-to-spouse.html">Transfer Gi Bill Benefits To Spouse</a></li>
+													<li class="list-group-item"><a href="/transfer-post-911-gi-bill-to-child.html">Transfer Post 911 Gi Bill To Child</a></li>
+													<li class="list-group-item"><a href="/tuition-assistance-and-gi-bill.html">Tuition Assistance And Gi Bill</a></li>
+													<li class="list-group-item"><a href="/types-of-snakes-in-west-virginia.html">Types Of Snakes In West Virginia</a></li>
+													<li class="list-group-item"><a href="/using-gi-bill-for-second-bachelors.html">Using Gi Bill For Second Bachelors</a></li>
+													<li class="list-group-item"><a href="/using-gi-bill-for-rent.html">Using Gi Bill For Rent</a></li>
+													<li class="list-group-item"><a href="/using-gi-bill-online.html">Using Gi Bill Online</a></li>
+													<li class="list-group-item"><a href="/using-gi-bill-in-different-state.html">Using Gi Bill In Different State</a></li>
+													<li class="list-group-item"><a href="/usc-gi-bill-bah.html">Usc Gi Bill Bah</a></li>
+													<li class="list-group-item"><a href="/university-of-south-florida-gi-bill.html">University Of South Florida Gi Bill</a></li>
+													<li class="list-group-item"><a href="/using-gi-bill-meme.html">Using Gi Bill Meme</a></li>
+													<li class="list-group-item"><a href="/updated-va-compensation-rates.html">Updated Va Compensation Rates</a></li>
+													<li class="list-group-item"><a href="/tri-state-gi-doctors.html">Tri State Gi Doctors</a></li>
+													<li class="list-group-item"><a href="/transfer-gi-bill-to-spouse-bah.html">Transfer Gi Bill To Spouse Bah</a></li>
+													<li class="list-group-item"><a href="/transferring-the-gi-bill-to-a-spouse.html">Transferring The Gi Bill To A Spouse</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>How Do I Know If My Va Rating Is Static - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "How Do I Know If My Va Rating Is Static",
+  "datePublished": "2021-02-17",
+  "image": "https://www.aopa.org/-/media/Images/AOPA-Main/News-and-Media/Publications/Flight-Training-Magazine/1811f/1811f_hiw/1811f_hiw_16x9.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+do+i+know+if+my+va+rating+is+static",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>How Do I Know If My Va Rating Is Static</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">A typical static thermal rating of about 700 amperes is shown at the left tail of the rating distribution. If you have been granted the same disability rating for 20 or more years the VA can only reduce your rating if your claim was approved based on fraud. The answer to this varies among cases. <br>				
+			</p>
+										<a class="badge badge-warning" href="/va-disability-ratings-conditions.html">va disability ratings conditions</a>
+											<a class="badge badge-secondary" href="/va-disability-rating-symptoms.html">va disability rating symptoms</a>
+											<a class="badge badge-success" href="/va-disability-rating-for-sleep-apnea-2019.html">va disability rating for sleep apnea 2019</a>
+											<a class="badge badge-info" href="/va-disability-rating-for-optic-neuritis.html">va disability rating for optic neuritis</a>
+											<a class="badge badge-dark" href="/va-disability-ratings-for-different-conditions.html">va disability ratings for different conditions</a>
+											<a class="badge badge-primary" href="/va-disability-rating-for-prediabetes.html">va disability rating for prediabetes</a>
+											<a class="badge badge-light" href="/va-disability-rating-for-teeth-grinding.html">va disability rating for teeth grinding</a>
+											<a class="badge badge-danger" href="/va-disability-ratings-chart.html">va disability ratings chart</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you've come to visit the ideal blog.  Our website gives you suggestions for seeing the highest quality video and picture content, hunt and find more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this movie that you view.  It is also possible to contribute to supporting this site by sharing videos and images that you like on this blog on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this website.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i2.wp.com/www.woodslawyers.com/wp-content/uploads/permanent-static-veterans-disability-rating.jpg?resize=1024%2C576&amp;ssl=1" data-lightbox="roadtrip" data-title="How Veterans Get A Permanent And Static Va Rating For Their Disability">
+											<img class="card-img v-image ads-img " src="https://i2.wp.com/www.woodslawyers.com/wp-content/uploads/permanent-static-veterans-disability-rating.jpg?resize=1024%2C576&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfIVTU-2Od3qtNo-6NuGTmr5K_GyPYafyKsQ';" alt="How Veterans Get A Permanent And Static Va Rating For Their Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Veterans Get A Permanent And Static Va Rating For Their Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f7/03/87/f70387270a46e295410a98441c7c23a3.jpg" data-lightbox="roadtrip" data-title="Static Vs Dynamic Stretching This Post Took Me Some Time To Put Together Because There Is Tons Of Sta Dynamic Stretching One Song Workouts Running Techniques">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f7/03/87/f70387270a46e295410a98441c7c23a3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBR0dLwv_3Fy7GI9AVeQ5qefBkI9rbZTAK1g';" alt="Static Vs Dynamic Stretching This Post Took Me Some Time To Put Together Because There Is Tons Of Sta Dynamic Stretching One Song Workouts Running Techniques">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Static Vs Dynamic Stretching This Post Took Me Some Time To Put Together Because There Is Tons Of Sta Dynamic Stretching One Song Workouts Running Techniques</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.mcico.com/medias/static-inverter.png" data-lightbox="roadtrip" data-title="Calculating System Load How To Choose The Right Aircraft Inverter">
+											<img class="card-img v-image ads-img " src="https://www.mcico.com/medias/static-inverter.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw8PZscPGEX-ls66ZCPnXBgHGYo9gM3fysow';" alt="Calculating System Load How To Choose The Right Aircraft Inverter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Calculating System Load How To Choose The Right Aircraft Inverter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.aopa.org/-/media/Images/AOPA-Main/News-and-Media/Publications/Flight-Training-Magazine/1811f/1811f_hiw/1811f_hiw_16x9.jpg" data-lightbox="roadtrip" data-title="How It Works Pitot Static System Aopa">
+											<img class="card-img v-image ads-img " src="https://www.aopa.org/-/media/Images/AOPA-Main/News-and-Media/Publications/Flight-Training-Magazine/1811f/1811f_hiw/1811f_hiw_16x9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYumK2zxXTU9qYBQDw3IdGy5eQdQVIPG5HuA';" alt="How It Works Pitot Static System Aopa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How It Works Pitot Static System Aopa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.linearmotiontips.com/wp-content/uploads/2018/07/Dynamic-and-Static-Load-Feature.jpg" data-lightbox="roadtrip" data-title="What S The Difference Between Dynamic Load Capacity And Static Load Capacity">
+											<img class="card-img v-image ads-img " src="https://www.linearmotiontips.com/wp-content/uploads/2018/07/Dynamic-and-Static-Load-Feature.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWI1UEVlMNE3iHWoCIyaMNon7Q45syci6mbA';" alt="What S The Difference Between Dynamic Load Capacity And Static Load Capacity">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What S The Difference Between Dynamic Load Capacity And Static Load Capacity</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.achrnews.com/ext/resources/2016/01-2016/01-25-2016/Photo-2.jpg" data-lightbox="roadtrip" data-title="Duct Dynasty Four Essential Static Pressure Readings For Diagnostics 2016 01 25 Achrnews">
+											<img class="card-img v-image ads-img " src="https://www.achrnews.com/ext/resources/2016/01-2016/01-25-2016/Photo-2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmqsOnQxkn_0srilxeFiwC6pS5k5r9g4cAlw';" alt="Duct Dynasty Four Essential Static Pressure Readings For Diagnostics 2016 01 25 Achrnews">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Duct Dynasty Four Essential Static Pressure Readings For Diagnostics 2016 01 25 Achrnews</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/ee/ad/fd/eeadfd3c017752701a7b58683d92fe98.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmqsOnQxkn_0srilxeFiwC6pS5k5r9g4cAlw';" alt="Duct Dynasty Four Essential Static Pressure Readings For Diagnostics 2016 01 25 Achrnews">
+										<div class="card-body">
+						<h3 class="h5"><b>The most concrete answer is that if service-connection has been awarded for a disability for a period of ten years or more the Department of Veterans Affairs VA may not remove the service.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How do i know if my va rating is static</strong>. 
+								
+																	Generally reexaminations will be required if it is likely that a disability has improved or if evidence indicates there has been a material change in a disability or that the current rating may be. 
+																	The veteran is over age 55. 
+																	We use a method called the whole person theory to determine what we call your combined disability rating. 
+																	In addition the VA must examine all of your medical evidence to prove that your improvement is likely not temporary. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It does not mean that the rating is in fact permanent. 
+																	The law does not say that once you have a given rating that youre stuck with that for life. 
+																	The 20 Year Rule For VA Disability Ratings If a service-connected VA disability has been continuously rated at or above a certain rating percentage for 20 years or more the VA is prohibited from reducing the rating below that level. 
+																	When VA rates a condition as permanent what they really mean is that there are no plans to examine you on a schedule in the future to look for improvements of your condition. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veteran has been receiving disability for longer than 5 years with the same disability rating. 
+																	Clearly the higher the static rating the more frequently the actual real-time rating is less than the static rating. 
+																	The only way to know for sure is to review your VA Rating Decision Letter which is mailed to you in a yellow enveloped via regular US mail. 
+																	The disability is already at a minimum rating for that particular disability. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The only exception for this rule is if the VA discovers that the rating was based on fraud. 
+																	Is my rating protected Its a common question we receive from veterans with service-connected ratings. 
+																	However your VSO may have access to it. 
+																	We do this to make sure that your total VA disability rating doesnt add up to more than 100. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Help us improve GOVUK. 
+																	Your condition has persisted without material improvement for a period of five years or more ie stabilized rating. 
+																	In cases of ratings less than 100 a sudden unexpected review and subsequent attempt to lower the rating is very rare. 
+																	Veteran has been receiving disability for longer than 20 years. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The disability from disease is permanent in character and of such nature that there is no likelihood of improvement You are over 55 years of age although some exceptions may apply. 
+																	The disability is considered permanent and is not expected to improve eg. 
+																	The disability is static such as a loss of limb. 
+																	Thats because a person cant be more than 100 able-bodied. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The rating code sheet is not normally sent to the veteran. 
+																	Reexaminations including periods of hospital observation will be requested whenever VA determines there is a need to verify either the continued existence or the current severity of a disability. 
+																	Service-connected disabilities are injuries or illnesses that were causedor made worseby your active-duty military service. 
+																	The City of Nashville official website reminds veterans If your rating is NOT permanent and total you WILL be re-evaluated and the rating MAY be adjusted based on the VAs determination The Nashville site adds that veterans can tell when a 100 rating is deemed permanent and total because the decision will approve Dependents Educational Assistance and Chapter 35 Benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Many veterans with Sleep Apnea especially those who were diagnosed long after leaving the military might still be eligible if medical evidence shows your Sleep Apnea is proximately due to or aggravated by another service-connected disability such as musculoskeletal conditions andor mental health conditions. 
+																	To help us improve GOVUK wed like to know more about your visit today. 
+																	Once logged in click Manage across the top then Documents and Records then VA Letters and finally Benefit Summary Veteran Benefits. 
+																	If you dont have access to your rating code sheet your representative should. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	What I know is that usually your VA Rating-Decission will say if a Major-Disability is static or if it could change and subject to a future CR andor reviewthe wording on these letters leave some of them a little vague. 
+																	Well send you a link to a feedback form. 
+																	A static disability is a condition that will not improve such as blindness or loss of a limb. 
+																	There are several types of protected ratings including the following. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your condition is static unchanging. 
+																	It will take only 2 minutes to fill in. 
+																	Consistent rating for 20 years or more. 
+																	VA Rating Scale for Sleep Apnea Sleep Apnea and Secondary Service Connection. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Any rating that has remained at the same level for five years or longer is considered stabilized In addition to the general rating. 
+																	Total inability to work. 
+																	5 Years or More. 
+																	We recommend that if you are going to file for PT status you only do it for your disabilities which are not static which means they are scheduled for a future exam. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can find out which disabilities are static or not by reviewing your rating codesheet. 
+																	Each time a decision letter is sent to you a rating code sheet is generated. 
+																	Youll also be able to see which of your individual disability ratings are service-connected. 
+																	The rating code sheet lists each of your ratings and whether or not it is a static disability. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Youll see your VA combined disability rating and a list of your individual disability ratings. 
+																	You can also review your VA Benefit Summary letter by logging into your eBenefits account. 
+																	A protected rating is a VA disability rating that cannot be reduced or revoked by VA in the future. 
+																	I say this only based on my VA-casedisabilities and from the time-period that I have been involved with the VA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In general the dynamic rating allows 1020 increased transmission capacity 9095 of the time. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/55/d7/c855d73858e29d2aa29f8437c7fb318a.jpg" data-lightbox="roadtrip" data-title="Self Defense Assessments Pe Google Search Self Defense Assessment Self">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/55/d7/c855d73858e29d2aa29f8437c7fb318a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMq24RxkeBpZZPA3lplPJzSle-jdO20tqk9Q';" alt="Self Defense Assessments Pe Google Search Self Defense Assessment Self">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Self Defense Assessments Pe Google Search Self Defense Assessment Self</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://circuitglobe.com/wp-content/uploads/2016/06/static-relay-compressor.jpg" data-lightbox="roadtrip" data-title="What Is A Static Relay Definition Advantages Limitations Of Static Relay Circuit Globe">
+											<img class="card-img v-image ads-img " src="https://circuitglobe.com/wp-content/uploads/2016/06/static-relay-compressor.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBj7_cgnlqajFT8fQx9AhbYF0EyTZUVCBtLg';" alt="What Is A Static Relay Definition Advantages Limitations Of Static Relay Circuit Globe">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is A Static Relay Definition Advantages Limitations Of Static Relay Circuit Globe</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c1/e9/f3/c1e9f34692d0095466228ac3da452fa4.jpg" data-lightbox="roadtrip" data-title="Static Shock 1 8 2011 2012 Comix4free Download Marvel Dc Comics Anime Free Static Shock Comics Static Dc">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c1/e9/f3/c1e9f34692d0095466228ac3da452fa4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRrh532hCE9eb_McrCoAkPUoakUdAf3CNW8A';" alt="Static Shock 1 8 2011 2012 Comix4free Download Marvel Dc Comics Anime Free Static Shock Comics Static Dc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Static Shock 1 8 2011 2012 Comix4free Download Marvel Dc Comics Anime Free Static Shock Comics Static Dc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5b/6c/cb/5b6ccbcbe1d6b4ccf8d5442be264c679.png" data-lightbox="roadtrip" data-title="Tadashi Shoji Women S Corded Lace 3 4 Slv V Back Detail Gown Wedding Emergency Kit Wedding Day Wedding Planning Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5b/6c/cb/5b6ccbcbe1d6b4ccf8d5442be264c679.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe9x5yRmBs-CQC4SqQVyHBlwz9NYSVvTZScQ';" alt="Tadashi Shoji Women S Corded Lace 3 4 Slv V Back Detail Gown Wedding Emergency Kit Wedding Day Wedding Planning Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tadashi Shoji Women S Corded Lace 3 4 Slv V Back Detail Gown Wedding Emergency Kit Wedding Day Wedding Planning Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.softwaresecured.com/wp-content/uploads/elementor/thumbs/DASTvsSAST-ogwzf8q7krhykkpwq00hu0xwphh136yxddl4mpmn82.jpeg" data-lightbox="roadtrip" data-title="What Do Sast Dast Iast And Rasp Mean To Developers">
+											<img class="card-img v-image ads-img " src="https://www.softwaresecured.com/wp-content/uploads/elementor/thumbs/DASTvsSAST-ogwzf8q7krhykkpwq00hu0xwphh136yxddl4mpmn82.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA8Qa6z8tHUV-DhmVjwXtVQmfuwP1HzSA93A';" alt="What Do Sast Dast Iast And Rasp Mean To Developers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Do Sast Dast Iast And Rasp Mean To Developers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/aa/27/df/aa27dfa8ebfd97bd4c31b1f8aab5ecb6.jpg" data-lightbox="roadtrip" data-title="There Are Major Benefits For Digital Signs Over Traditional Static Signs Including The Ability To Update Content Re In 2020 Digital Signage Glass Window Store Windows">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/aa/27/df/aa27dfa8ebfd97bd4c31b1f8aab5ecb6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvR2N7M51ILC4RVEed6xHlDL_OQq-aQfrD0A';" alt="There Are Major Benefits For Digital Signs Over Traditional Static Signs Including The Ability To Update Content Re In 2020 Digital Signage Glass Window Store Windows">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">There Are Major Benefits For Digital Signs Over Traditional Static Signs Including The Ability To Update Content Re In 2020 Digital Signage Glass Window Store Windows</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fb/ce/6a/fbce6aafb312c05d2743496a5021002e.jpg" data-lightbox="roadtrip" data-title="Yeezy 350 V2 Static Real Vs Fake Supply By Bomb19509 Boom1950kicks Sneakershouts Niceshoes Sneakersforsale Fashion Yeezy 350 Yeezy Zebra Yeezy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fb/ce/6a/fbce6aafb312c05d2743496a5021002e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjh0rhYB8P2SKjJykXnR3Q3PAPOLj1v7ZkVg';" alt="Yeezy 350 V2 Static Real Vs Fake Supply By Bomb19509 Boom1950kicks Sneakershouts Niceshoes Sneakersforsale Fashion Yeezy 350 Yeezy Zebra Yeezy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Yeezy 350 V2 Static Real Vs Fake Supply By Bomb19509 Boom1950kicks Sneakershouts Niceshoes Sneakersforsale Fashion Yeezy 350 Yeezy Zebra Yeezy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8c/23/62/8c236296b8b3e7fd023660bdeb8b389c.jpg" data-lightbox="roadtrip" data-title="Pin By Nyx Nightrose On Overwatch Overwatch Tips Overwatch Zenyatta Overwatch">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8c/23/62/8c236296b8b3e7fd023660bdeb8b389c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdtW8hktXj09DebnvuNZ0YiMSmmRuoVUtRDg';" alt="Pin By Nyx Nightrose On Overwatch Overwatch Tips Overwatch Zenyatta Overwatch">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Nyx Nightrose On Overwatch Overwatch Tips Overwatch Zenyatta Overwatch</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/29/e8/e5/29e8e5969a05fbc826c4255b21348cfb.jpg" data-lightbox="roadtrip" data-title="Online Brochure By Avon Avon Beauty Beauty Essentials Avon Campaign">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/29/e8/e5/29e8e5969a05fbc826c4255b21348cfb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0SKPmawgwo-VuKFLzh7uv0p_9t9f5NBzIxA';" alt="Online Brochure By Avon Avon Beauty Beauty Essentials Avon Campaign">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Online Brochure By Avon Avon Beauty Beauty Essentials Avon Campaign</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5b/a2/f1/5ba2f104909d5db6fa6ada1c558d7305.png" data-lightbox="roadtrip" data-title="If You Want Complete And Easy Control Over Your Pin It Button You Should Definitely Take A Look At The Pinterest Pin Pinterest Tools Social Media Pinterest">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5b/a2/f1/5ba2f104909d5db6fa6ada1c558d7305.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhHUPQD6DXeXt0mei-q-iiB2HyvmnQO-5UAg';" alt="If You Want Complete And Easy Control Over Your Pin It Button You Should Definitely Take A Look At The Pinterest Pin Pinterest Tools Social Media Pinterest">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Want Complete And Easy Control Over Your Pin It Button You Should Definitely Take A Look At The Pinterest Pin Pinterest Tools Social Media Pinterest</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/37/83/f4/3783f44cc7f6962bd54f039b336b11be.jpg" data-lightbox="roadtrip" data-title="Citadel On The Maginot Line 706 X 500 Thingscutinhalfporn Military Bunkers War Outdoor Activities For Adults">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/37/83/f4/3783f44cc7f6962bd54f039b336b11be.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-n1AOw9ZmOMVO_oYl83cKDfDvzyHOp52pZg';" alt="Citadel On The Maginot Line 706 X 500 Thingscutinhalfporn Military Bunkers War Outdoor Activities For Adults">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Citadel On The Maginot Line 706 X 500 Thingscutinhalfporn Military Bunkers War Outdoor Activities For Adults</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/ae/01/0eae0170b53ae4b047ceb28f1269198f.jpg" data-lightbox="roadtrip" data-title="Google Image Result For Http Static Weddingwire Com Static Wedding 320001 325 Catholic Church Church Catholic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/ae/01/0eae0170b53ae4b047ceb28f1269198f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFPdyi1AYN2J-LhqTEvrxnx5AFCkgNGK3D2w';" alt="Google Image Result For Http Static Weddingwire Com Static Wedding 320001 325 Catholic Church Church Catholic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Google Image Result For Http Static Weddingwire Com Static Wedding 320001 325 Catholic Church Church Catholic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ee/ad/fd/eeadfd3c017752701a7b58683d92fe98.jpg" data-lightbox="roadtrip" data-title="Pin By Colinbach On Poke Evolutions Pokemon Cards Pokemon Pikachu">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ee/ad/fd/eeadfd3c017752701a7b58683d92fe98.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQzuWk-lOxbLPfwcz_cuUDvjbf4ZJ0DDk_PQ';" alt="Pin By Colinbach On Poke Evolutions Pokemon Cards Pokemon Pikachu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Colinbach On Poke Evolutions Pokemon Cards Pokemon Pikachu</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-much-do-va-surgeons-make.html">How Much Do Va Surgeons Make</a></li>
+													<li class="list-group-item"><a href="/how-much-do-va-raters-make.html">How Much Do Va Raters Make</a></li>
+													<li class="list-group-item"><a href="/how-long-is-my-post-911-gi-bill-good-for.html">How Long Is My Post 911 Gi Bill Good For</a></li>
+													<li class="list-group-item"><a href="/how-much-do-va-psychiatrists-make.html">How Much Do Va Psychiatrists Make</a></li>
+													<li class="list-group-item"><a href="/how-much-do-va-hospital-nurses-make.html">How Much Do Va Hospital Nurses Make</a></li>
+													<li class="list-group-item"><a href="/how-much-do-veterans-make-on-disability.html">How Much Do Veterans Make On Disability</a></li>
+													<li class="list-group-item"><a href="/how-many-percent-of-veterans-have-ptsd.html">How Many Percent Of Veterans Have Ptsd</a></li>
+													<li class="list-group-item"><a href="/how-long-does-the-new-va-appeals-process-take.html">How Long Does The New Va Appeals Process Take</a></li>
+													<li class="list-group-item"><a href="/how-long-does-a-va-appraisal-appeal-take.html">How Long Does A Va Appraisal Appeal Take</a></li>
+													<li class="list-group-item"><a href="/how-many-years-to-get-the-gi-bill.html">How Many Years To Get The Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-many-va-appeals-get-approved.html">How Many Va Appeals Get Approved</a></li>
+													<li class="list-group-item"><a href="/how-much-do-va-chiropractors-make.html">How Much Do Va Chiropractors Make</a></li>
+													<li class="list-group-item"><a href="/how-much-do-nurse-practitioners-make-in-virginia.html">How Much Do Nurse Practitioners Make In Virginia</a></li>
+													<li class="list-group-item"><a href="/how-much-can-you-sue-for-eye-injury.html">How Much Can You Sue For Eye Injury</a></li>
+													<li class="list-group-item"><a href="/how-much-do-you-get-for-veterans-disability.html">How Much Do You Get For Veterans Disability</a></li>
+													<li class="list-group-item"><a href="/how-much-do-social-workers-at-the-va-make.html">How Much Do Social Workers At The Va Make</a></li>
+													<li class="list-group-item"><a href="/how-many-years-of-college-does-the-gi-bill-pay-for.html">How Many Years Of College Does The Gi Bill Pay For</a></li>
+													<li class="list-group-item"><a href="/how-much-does-a-va-nurse-practitioner-make.html">How Much Does A Va Nurse Practitioner Make</a></li>
+													<li class="list-group-item"><a href="/how-many-us-veterans-have-ptsd.html">How Many Us Veterans Have Ptsd</a></li>
+													<li class="list-group-item"><a href="/how-long-is-your-gi-bill-good-for.html">How Long Is Your Gi Bill Good For</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Did I Understand You - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Did I Understand You",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/90/a7/36/90a736cce73470f55344b95e1f55ff66.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=did+i+understand+you",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Did I Understand You</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Moltissimi esempi di frasi con did i understand you Dizionario italiano-inglese e motore di ricerca per milioni di traduzioni in italiano. You can use understand in expressions like do you understand. 6 Do you find you still have spelling mistakes in your writing even after Spell Check. <br>				
+			</p>
+										<a class="badge badge-danger" href="/pay-va-litter-tax.html">pay va litter tax</a>
+											<a class="badge badge-success" href="/new-va-disability-rates-2020.html">new va disability rates 2020</a>
+											<a class="badge badge-warning" href="/pay-gophone-bill.html">pay gophone bill</a>
+											<a class="badge badge-primary" href="/post-9-11-gi-bill-helicopter-flight-training.html">post 9 11 gi bill helicopter flight training</a>
+											<a class="badge badge-light" href="/post-9-11-gi-bill-change-of-program-form.html">post 9 11 gi bill change of program form</a>
+											<a class="badge badge-info" href="/optum-health-insurance-for-veterans.html">optum health insurance for veterans</a>
+											<a class="badge badge-warning" href="/new-york-university-gi-bill.html">new york university gi bill</a>
+											<a class="badge badge-dark" href="/new-gi-bill-rates-2019.html">new gi bill rates 2019</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you have come to pay a visit to the right site.  Our website gives you suggestions for viewing the highest quality video and picture content, search and find more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, especially Youtube, so we recommend this movie that you view.  You can also contribute to supporting this website by sharing videos and graphics that you like on this site on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information that you get on this site.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/b7/e3/95/b7e39509e685b01ad18545a62b1cb3df.jpg" data-lightbox="roadtrip" data-title="Use This Sign To Help Students Self Reflect On Their Work Have Students Mark A Color In The Corner Of Their Teacher Prep Metacognition Levels Of Understanding">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/b7/e3/95/b7e39509e685b01ad18545a62b1cb3df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOoETvLrU2LQUJzDgXfKKsw_7SZLUnWEZAMA';" alt="Use This Sign To Help Students Self Reflect On Their Work Have Students Mark A Color In The Corner Of Their Teacher Prep Metacognition Levels Of Understanding">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Use This Sign To Help Students Self Reflect On Their Work Have Students Mark A Color In The Corner Of Their Teacher Prep Metacognition Levels Of Understanding</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/60/a1/c260a1bd9113aa9335bf34d45e90fc8c.jpg" data-lightbox="roadtrip" data-title="Pablo Gerbasi Understanding Quotes Super Quotes Mood Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/60/a1/c260a1bd9113aa9335bf34d45e90fc8c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzpj7jod8PCiyRE22dO7jFUV1xGhfXIxABgg';" alt="Pablo Gerbasi Understanding Quotes Super Quotes Mood Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pablo Gerbasi Understanding Quotes Super Quotes Mood Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/1c/96/e81c96daf20a8452809f93cf9a85903c.jpg" data-lightbox="roadtrip" data-title="I Love People That Can Understand Me When I Dont Even Have To Speak A Word I Really Love Those People A Whole Lot Words Quotes Words Quotable Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/1c/96/e81c96daf20a8452809f93cf9a85903c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsQkjVD4a0HsVL6EN2bT0YFI2o6Mb4yOgv3A';" alt="I Love People That Can Understand Me When I Dont Even Have To Speak A Word I Really Love Those People A Whole Lot Words Quotes Words Quotable Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Love People That Can Understand Me When I Dont Even Have To Speak A Word I Really Love Those People A Whole Lot Words Quotes Words Quotable Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/cd/ca/2fcdcaeaae30e3f20de00226bfb655e8.png" data-lightbox="roadtrip" data-title="As Far As I M Concerned If You Don T Understand Me You Don T Know Me Words Quotes Quotable Quotes Words Of Wisdom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/cd/ca/2fcdcaeaae30e3f20de00226bfb655e8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0q95Gb2jt3desp9NEHQ5Tc-gEktYui3-wpg';" alt="As Far As I M Concerned If You Don T Understand Me You Don T Know Me Words Quotes Quotable Quotes Words Of Wisdom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">As Far As I M Concerned If You Don T Understand Me You Don T Know Me Words Quotes Quotable Quotes Words Of Wisdom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/14/2b/34142bd899d7d374d02d43fe99a0e311.jpg" data-lightbox="roadtrip" data-title="I Do Love You Which Is Why I M Trying To Understand You But Maybe What You Need Is Someone Who Accepts Appreciate You Quotes Be Yourself Quotes Sanity Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/14/2b/34142bd899d7d374d02d43fe99a0e311.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJZTs-a9D0eyP6I7hvh6wnQZlBMP7RDL3q9w';" alt="I Do Love You Which Is Why I M Trying To Understand You But Maybe What You Need Is Someone Who Accepts Appreciate You Quotes Be Yourself Quotes Sanity Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Do Love You Which Is Why I M Trying To Understand You But Maybe What You Need Is Someone Who Accepts Appreciate You Quotes Be Yourself Quotes Sanity Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/d2/99/bad29915df7f683a54d8cf31327f4637.jpg" data-lightbox="roadtrip" data-title="Pin By Chuchu Ny On Thoughts Sayings Words Quotable Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/d2/99/bad29915df7f683a54d8cf31327f4637.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIR_rupUGPlEBvy2szO4CAomtS42GluObxjQ';" alt="Pin By Chuchu Ny On Thoughts Sayings Words Quotable Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Chuchu Ny On Thoughts Sayings Words Quotable Quotes</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/e8/1c/96/e81c96daf20a8452809f93cf9a85903c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIR_rupUGPlEBvy2szO4CAomtS42GluObxjQ';" alt="Pin By Chuchu Ny On Thoughts Sayings Words Quotable Quotes">
+										<div class="card-body">
+						<h3 class="h5"><b>They think theyve understood you even though they havent.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Did i understand you</strong>. 
+								
+																	Terminare el proyecto para lunes. 
+																	Ill have the project finished by MondaySenor Sawyer lo entiendo. 
+																	If you are worried you might have DID you can successfully find out by getting evaluated by a professional identifying your symptoms and warning signs understanding the basics of DID and dispelling common misconceptions about DID. 
+																	Formal singular masculine Mister Sawyer I understand you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You know if you keep repeating the same word I understand I understand to someone who is already very depressed or who is trying to make a point repeating the same word actually makes you feel that you are insincere youre dont really what you are actually saying. 
+																	Do you understand the words that are coming out of my mouth. 
+																	If youre not sure whether you have a yeast infection or something else its important to see a doctor for the right diagnosis and treatment. 
+																	Do you understandis that understood definition. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Need to translate DID I UNDERSTAND YOU CORRECTLY from english and use correctly in a sentence. 
+																	Learn new things with Maddie as she explores the world around us and discovers how stuff works. 
+																	A pretty good rate of return. 
+																	Many translated example sentences containing did i understand you correctly German-English dictionary and search engine for German translations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	From washing machines to ice cream theres always something exciting to learn. 
+																	Can You Understand Lyrics. 
+																	Do you not understand. 
+																	Most people will say Yes I understand or they wont say anything at all because. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Do you understand the. 
+																	Theyre embarrassed especially in a group setting to tell you they have no idea what youre talking about. 
+																	Do you understand me definition in the English Cobuild dictionary for learners do you understand me meaning explained see also do you understandis that understoodgive someone to understanddo you supposedont you dare English vocabulary. 
+																	Do you omit transpose or add letters when you are reading or writing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I do understand you is used when there might be significant reason for the listener to believe that the speaker does not understand and the speaker has noticed this potential source of confusion and wishes to emphasise that this is not the case. 
+																	A word or phrase used to refer to the second person formal usted by their conjugation or implied context eg. 
+																	Maddies Do You Know. 
+																	7 Do you find it difficult to pronounce uncommon multi-syllable words when you are reading. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If I understand you correctly said John White chancellor of the University of Arkansas a 15 million increase in the agencys PR budget could give us a chance to increase NSFs budget by 15 billion. 
+																	If you understand someone or understand what they are saying you know what they mean. 
+																	Dollars down the penny drain Frozen in the clouds Dream away the last of pain In waterfalls of sounds Float across the icy pools Leaves with curl and sway. 
+																	Meaning pronunciation translations and examples. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Its most common uses are. 
+																	Meaning pronunciation translations and examples. 
+																	If I understand correctly you say you and your colleagues in the Dutch Government agree with the content of the Charter and would like to see it become binding but it need not be included in its entirety as long as there is a document in the new Treaty that safeguards this binding character. 
+																	8 Do you choose to read magazines or short articles rather than longer books and novels. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Or is that understood. 
+																	Here are many translated example sentences containing DID I UNDERSTAND YOU CORRECTLY - english-spanish translations and search engine for english translations. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/5b/62/345b62163703f79a1172eff1703e65ef.jpg" data-lightbox="roadtrip" data-title="Some People Will Never Understand You And Some Understand You Before You Even Speak A Word Words Words Quotes Inspirational Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/5b/62/345b62163703f79a1172eff1703e65ef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnZ96fRKSgkCp3h5WbGsO5_3WkEWAn7Ew4Ww';" alt="Some People Will Never Understand You And Some Understand You Before You Even Speak A Word Words Words Quotes Inspirational Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Some People Will Never Understand You And Some Understand You Before You Even Speak A Word Words Words Quotes Inspirational Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/62/12/386212413069700ade19d53869eed76e.jpg" data-lightbox="roadtrip" data-title="Pin By Ginger Sparks On Quotes Lyrics Words Apologizing Quotes Job Quotes Good Thoughts Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/62/12/386212413069700ade19d53869eed76e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRONAbv2Jv40ZziFJNpXbl2-xnUdz0K1Tvycw';" alt="Pin By Ginger Sparks On Quotes Lyrics Words Apologizing Quotes Job Quotes Good Thoughts Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Ginger Sparks On Quotes Lyrics Words Apologizing Quotes Job Quotes Good Thoughts Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/bf/7e/a5bf7e28b1c18325b63c9072f459d2df.jpg" data-lightbox="roadtrip" data-title="I Wish You Could Understand What I Am Going Through And That You Are Being Unfair I Wish You Could Understand My Love For You My Love Understanding I Love You">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/bf/7e/a5bf7e28b1c18325b63c9072f459d2df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBmKnUvDMl1M8BJns8_NrBpHIRJwGmUD7JHw';" alt="I Wish You Could Understand What I Am Going Through And That You Are Being Unfair I Wish You Could Understand My Love For You My Love Understanding I Love You">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Wish You Could Understand What I Am Going Through And That You Are Being Unfair I Wish You Could Understand My Love For You My Love Understanding I Love You</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c1/80/3e/c1803eabd11cc74d5c442a7b1979ce77.jpg" data-lightbox="roadtrip" data-title="Good Life Quote Ru For More Black And White Good Life Quote Ru Good Life Quotes Life Quotes Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c1/80/3e/c1803eabd11cc74d5c442a7b1979ce77.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK3QbaPH88Yxgg0WhaqiacuC3uwtRMqZhbVg';" alt="Good Life Quote Ru For More Black And White Good Life Quote Ru Good Life Quotes Life Quotes Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Good Life Quote Ru For More Black And White Good Life Quote Ru Good Life Quotes Life Quotes Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/65/d7/8165d7a8c72701483e1c27d0f3787736.jpg" data-lightbox="roadtrip" data-title="People Don T Ever Think From The Other Person S Perspective If You Did You Might Understand Someone More Galaxies Vibes Understanding Quotes Be Yourself Quotes Perspective Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/65/d7/8165d7a8c72701483e1c27d0f3787736.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQVjcUERSHKGDY6sNa0kc0G6p5fmr6LJDEqA';" alt="People Don T Ever Think From The Other Person S Perspective If You Did You Might Understand Someone More Galaxies Vibes Understanding Quotes Be Yourself Quotes Perspective Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">People Don T Ever Think From The Other Person S Perspective If You Did You Might Understand Someone More Galaxies Vibes Understanding Quotes Be Yourself Quotes Perspective Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/d6/3c/44d63c5325c151d2312f80948d33771e.jpg" data-lightbox="roadtrip" data-title="I M Only Responsible For What I Say Not What You Understand Thinking Quotes Quotable Quotes Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/d6/3c/44d63c5325c151d2312f80948d33771e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc446nWc8iwpNdhZuQRDKqgdzqy_NP2c6Hwg';" alt="I M Only Responsible For What I Say Not What You Understand Thinking Quotes Quotable Quotes Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I M Only Responsible For What I Say Not What You Understand Thinking Quotes Quotable Quotes Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/51/40/ec5140027c43f78d856dd3b66f1a1ecf.jpg" data-lightbox="roadtrip" data-title="Still Not Understand You Great Friendship Quote Full Dose Words Words Quotes Inspirational Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/51/40/ec5140027c43f78d856dd3b66f1a1ecf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tfP5orXXo1oNCplA8gieAzmXw_xRB-5Vvg';" alt="Still Not Understand You Great Friendship Quote Full Dose Words Words Quotes Inspirational Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Still Not Understand You Great Friendship Quote Full Dose Words Words Quotes Inspirational Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/66/9a/59669af4e21bf4912d30db7781d0286a.jpg" data-lightbox="roadtrip" data-title="You May Not Understand It Now But Eventually God Will Reveal Why You Went Through Everything You Did Inspi Guidance Quotes Gods Guidance Lightworker Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/66/9a/59669af4e21bf4912d30db7781d0286a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQQAi2roy6xVm9fkV9nM7Qa610pa_cGtlGrg';" alt="You May Not Understand It Now But Eventually God Will Reveal Why You Went Through Everything You Did Inspi Guidance Quotes Gods Guidance Lightworker Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">You May Not Understand It Now But Eventually God Will Reveal Why You Went Through Everything You Did Inspi Guidance Quotes Gods Guidance Lightworker Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/a7/36/90a736cce73470f55344b95e1f55ff66.jpg" data-lightbox="roadtrip" data-title="I Wish You Could I Wish You Could Be Me And Feel How I Feel For A Day Or Even A Half Of A Day And You May Understand Me A Lil">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/a7/36/90a736cce73470f55344b95e1f55ff66.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ5LfjN84HW8O_xv0OuInjgdo5DE9CoQcuag';" alt="I Wish You Could I Wish You Could Be Me And Feel How I Feel For A Day Or Even A Half Of A Day And You May Understand Me A Lil">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Wish You Could I Wish You Could Be Me And Feel How I Feel For A Day Or Even A Half Of A Day And You May Understand Me A Lil</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/0d/0a/be0d0adc2463848b6c5f78a8a0e33aa0.jpg" data-lightbox="roadtrip" data-title="I Have Always Loved Everything About You Even What I Didn T Understand Inspirational Quotes Quotes Love Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/0d/0a/be0d0adc2463848b6c5f78a8a0e33aa0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoppWx8RrHQmK9H22w_FMFHxr6BV45Cg-gJA';" alt="I Have Always Loved Everything About You Even What I Didn T Understand Inspirational Quotes Quotes Love Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Have Always Loved Everything About You Even What I Didn T Understand Inspirational Quotes Quotes Love Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/9f/6e/699f6ec3cb0685487eb688c3df10cda0.jpg" data-lightbox="roadtrip" data-title="You Will Never Understand The Damage You Did To Someone Until The Same Thing Is Done To You That S Why I Am Here Karma Karma Cool Words Chalkboard Quote Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/9f/6e/699f6ec3cb0685487eb688c3df10cda0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_afEN74F0KYQbqOTbpomeHLWVaXsmTXstmQ';" alt="You Will Never Understand The Damage You Did To Someone Until The Same Thing Is Done To You That S Why I Am Here Karma Karma Cool Words Chalkboard Quote Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">You Will Never Understand The Damage You Did To Someone Until The Same Thing Is Done To You That S Why I Am Here Karma Karma Cool Words Chalkboard Quote Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/a8/c2/cfa8c2d8e6ee7133e57f80d66019443d.png" data-lightbox="roadtrip" data-title="The Good Vibe Inspirational Picture Quotes Inspirational Quotes Pictures Picture Quotes Me Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/a8/c2/cfa8c2d8e6ee7133e57f80d66019443d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4dz0c9yKEVuRAK-x-kMkBo8K9Cm2SjsPsfA';" alt="The Good Vibe Inspirational Picture Quotes Inspirational Quotes Pictures Picture Quotes Me Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Good Vibe Inspirational Picture Quotes Inspirational Quotes Pictures Picture Quotes Me Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/55/62/c655620c711fc7598d0fcaac98fb7b38.jpg" data-lightbox="roadtrip" data-title="I Sometimes Don T Understand Me But It S Ok I Can Spend The Rest Of My Life Figuring Me Out I Love Me Words Inspirational Quotes Quotable Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/55/62/c655620c711fc7598d0fcaac98fb7b38.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQR1FCaGiPYeXDtjaX10nyxqVHIV7-w3kXyA';" alt="I Sometimes Don T Understand Me But It S Ok I Can Spend The Rest Of My Life Figuring Me Out I Love Me Words Inspirational Quotes Quotable Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Sometimes Don T Understand Me But It S Ok I Can Spend The Rest Of My Life Figuring Me Out I Love Me Words Inspirational Quotes Quotable Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-compensation-disability-pay.html">Va Compensation Disability Pay</a></li>
+													<li class="list-group-item"><a href="/va-compensation-for-knee.html">Va Compensation For Knee</a></li>
+													<li class="list-group-item"><a href="/va-compensation-for-neck-pain.html">Va Compensation For Neck Pain</a></li>
+													<li class="list-group-item"><a href="/va-compensation-rating-adjustment.html">Va Compensation Rating Adjustment</a></li>
+													<li class="list-group-item"><a href="/va-compensation-conditions.html">Va Compensation Conditions</a></li>
+													<li class="list-group-item"><a href="/va-compensation-for-allergies.html">Va Compensation For Allergies</a></li>
+													<li class="list-group-item"><a href="/va-compensation-disability-rating.html">Va Compensation Disability Rating</a></li>
+													<li class="list-group-item"><a href="/va-compensation-for-heart-attack.html">Va Compensation For Heart Attack</a></li>
+													<li class="list-group-item"><a href="/va-compensation-presumptive-condition.html">Va Compensation Presumptive Condition</a></li>
+													<li class="list-group-item"><a href="/va-compensation-form-21-8940.html">Va Compensation Form 21 8940</a></li>
+													<li class="list-group-item"><a href="/va-compensation-rules.html">Va Compensation Rules</a></li>
+													<li class="list-group-item"><a href="/va-compensation-for-disabled-child.html">Va Compensation For Disabled Child</a></li>
+													<li class="list-group-item"><a href="/va-compensation-right-knee.html">Va Compensation Right Knee</a></li>
+													<li class="list-group-item"><a href="/va-compensation-disability-list.html">Va Compensation Disability List</a></li>
+													<li class="list-group-item"><a href="/va-compensation-for-eye-injury.html">Va Compensation For Eye Injury</a></li>
+													<li class="list-group-item"><a href="/va-compensation-letter-example.html">Va Compensation Letter Example</a></li>
+													<li class="list-group-item"><a href="/va-compensation-for-heart-conditions.html">Va Compensation For Heart Conditions</a></li>
+													<li class="list-group-item"><a href="/va-compensation-eye-injury.html">Va Compensation Eye Injury</a></li>
+													<li class="list-group-item"><a href="/va-compensation-neck-injury.html">Va Compensation Neck Injury</a></li>
+													<li class="list-group-item"><a href="/va-compensation-spousal-support.html">Va Compensation Spousal Support</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

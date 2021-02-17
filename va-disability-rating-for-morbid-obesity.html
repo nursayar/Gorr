@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Disability Rating For Morbid Obesity - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Disability Rating For Morbid Obesity",
+  "datePublished": "2021-02-17",
+  "image": "https://veteransbenefitslawfirm.net/wp-content/uploads/2020/02/obesity.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+disability+rating+for+morbid+obesity",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Disability Rating For Morbid Obesity</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">It will be yeomans work and could take the equivalent of 1 Year on Saturn to prove 4 and 5 to the VA. Obesity is not listed on the VAs Table of Impairment Ratings. How Many Americans Receiving Disability Benefits Have Some Level of Obesity. <br>				
+			</p>
+										<a class="badge badge-warning" href="/gi-bill-pay-for-police-academy.html">gi bill pay for police academy</a>
+											<a class="badge badge-primary" href="/gi-bill-to-kids.html">gi bill to kids</a>
+											<a class="badge badge-danger" href="/gi-bill-top-up-application.html">gi bill top up application</a>
+											<a class="badge badge-success" href="/gi-bill-to-purchase-home.html">gi bill to purchase home</a>
+											<a class="badge badge-light" href="/gi-joe-classic-vol-9.html">gi joe classic vol 9</a>
+											<a class="badge badge-danger" href="/gi-bill-question-help.html">gi bill question help</a>
+											<a class="badge badge-success" href="/gi-bill-tax-free.html">gi bill tax free</a>
+											<a class="badge badge-light" href="/gi-bill-transfer-national-guard.html">gi bill transfer national guard</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you have come to visit the right blog.  Our site provides you with hints for seeing the highest quality video and image content, hunt and find more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, particularly Youtube, therefore we recommend this movie for you to see.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.veteranslawblog.org/wp-content/uploads/2017/01/VA_Obesity_AS_VLB.jpeg" data-lightbox="roadtrip" data-title="Va Obesity Claims Can They Be Won Veterans Law Blog">
+											<img class="card-img v-image ads-img " src="https://www.veteranslawblog.org/wp-content/uploads/2017/01/VA_Obesity_AS_VLB.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMfLm3CxZsypG3P3vnyCA5vBm1atNw8WDnFQ';" alt="Va Obesity Claims Can They Be Won Veterans Law Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Obesity Claims Can They Be Won Veterans Law Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hillandponton.com/wp-content/uploads/2020/07/hip-pain.jpg" data-lightbox="roadtrip" data-title="Va Disability Rating For Hip Pain Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://www.hillandponton.com/wp-content/uploads/2020/07/hip-pain.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpnld-Wk_xAiPogbnsld9Xa3nDYI1LVaNVxg';" alt="Va Disability Rating For Hip Pain Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Rating For Hip Pain Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vaclaimsinsider.com/wp-content/uploads/2020/07/Body-Mass-Index-Obesity--scaled.jpg" data-lightbox="roadtrip" data-title="How Obesity Can Be An Intermediate Step For Secondary Service Connection The Definitive Guide Va Claims Insider">
+											<img class="card-img v-image ads-img " src="https://vaclaimsinsider.com/wp-content/uploads/2020/07/Body-Mass-Index-Obesity--scaled.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIxJ-DD0cKF7P-4P-NLnEDLFq0KhoN_EEZVA';" alt="How Obesity Can Be An Intermediate Step For Secondary Service Connection The Definitive Guide Va Claims Insider">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Obesity Can Be An Intermediate Step For Secondary Service Connection The Definitive Guide Va Claims Insider</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/2018.07.09-Obesity-and-VA-Disability-image-768x510.jpg" data-lightbox="roadtrip" data-title="Obesity And Va Disability Benefits Is It Possible Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/2018.07.09-Obesity-and-VA-Disability-image-768x510.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbSTwKPqqoY3uyCYc3t_UuG1EK97nfTy2Jlg';" alt="Obesity And Va Disability Benefits Is It Possible Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Obesity And Va Disability Benefits Is It Possible Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.rgstatic.net/publication/236929470_Morbid_Obesity_and_Optimization_of_Preoperative_Fluid_Therapy/links/57a9d1f808ae0932c96e373b/largepreview.png" data-lightbox="roadtrip" data-title="Pdf Morbid Obesity And Optimization Of Preoperative Fluid Therapy">
+											<img class="card-img v-image ads-img " src="https://i1.rgstatic.net/publication/236929470_Morbid_Obesity_and_Optimization_of_Preoperative_Fluid_Therapy/links/57a9d1f808ae0932c96e373b/largepreview.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM4bGfvHZO3OrVmu1WjYtBPsvZgnhQCBtWdA';" alt="Pdf Morbid Obesity And Optimization Of Preoperative Fluid Therapy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pdf Morbid Obesity And Optimization Of Preoperative Fluid Therapy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="ocF-6iNVeoCH_M" data-lightbox="roadtrip" data-title="Https Www Healthquality Va Gov Guidelines Cd Obesity Vadodobesitycpgfinal5087242020 Pdf">
+											<img class="card-img v-image ads-img " src="ocF-6iNVeoCH_M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1yg1cDU1ad5dYGTU11zsJhzRf0E_WcgFGqg';" alt="Https Www Healthquality Va Gov Guidelines Cd Obesity Vadodobesitycpgfinal5087242020 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Healthquality Va Gov Guidelines Cd Obesity Vadodobesitycpgfinal5087242020 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/2018.07.09-Obesity-and-VA-Disability-image-768x510.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1yg1cDU1ad5dYGTU11zsJhzRf0E_WcgFGqg';" alt="Https Www Healthquality Va Gov Guidelines Cd Obesity Vadodobesitycpgfinal5087242020 Pdf">
+										<div class="card-body">
+						<h3 class="h5"><b>Usually morbid obesity is roughly about 100 lbs.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va disability rating for morbid obesity</strong>. 
+								
+																	Obesity is a term used to describe somebody who is overweight with a high degree of body fat. 
+																	You can be rated for obesity or conditions caused by it. 
+																	Has a BMI of 408 is therefore considered morbidly obese. 
+																	Two of the least common causes of OSA and two of the most common consequences of OSA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	An obese individual will always be at risk for medical conditions like early onset of arthritis of the joints cardiovascular risks and other respiratory issues. 
+																	The VA recognizes obesity as a Chronic Disease. 
+																	For VA benefits purposes a disability is defined as a disease or injury that results in a veterans loss of earning capacity. 
+																	Nearly half the current SSDI and SSI beneficiaries fit into one of the following weight categories. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	No obesity is not considered a VA disability. 
+																	I had a stroke in May and have been off work from my job with the Federal government ever since. 
+																	Obesity and VA Com. 
+																	Obesity increases the chances that you will suffer from sleep apnea arthritis type 2 diabetes mellitus cardiovascular disease and even some cancers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Those with severe obesity are more likely develop other impairments that do qualify for SSD including the ones listed above. 
+																	You can service connect obesity. 
+																	3 For instance a person who is five-feet and five-inches and weighs 245 lbs. 
+																	Sep 13 2011 1. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	CCK cited a precedential opinion to demonstrate that obesity can be an intermediate step between a current disability and a service-connected disability if the Board finds that 1 the service-connected disability caused the Veteran to become obese. 
+																	I lost 50 of my visual field in both eyes. 
+																	It heard evidence of the claimants excessive body mass index 485 sleep apnoea and gout. 
+																	After all morbid obesity is a condition that can severely limit bodily functioning as well as. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To VA Obesity is Not a Disability VA defines a disability for purposes of receiving disability compensation as a disease or injury that results in a veterans loss of earning capacity. 
+																	Obesity IS a disability rules highest EU court after 25st Danish childminder was sacked for being too fat to perform his job properly The European Court of Justice ruled obesity can be classed. 
+																	Once VA grants service connection for a disability it will assign a disability rating based on the symptoms and severity of the veterans condition. 
+																	A commonly asked question is whether or not you can get disability benefits for morbid obesity. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Class 3 obesity also known as morbid obesity. 
+																	Basically blind on the left side regardless of which eye I use. 
+																	And 3 the claimed secondary disability would not have occurred. 
+																	But because the VA likes to blame Obstructive Sleep Apnea on obesity and neck girth. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you can tie your obesity or weight gain to another service-connected condition and then show that the obesity or weight gain caused the OSA you have successfully used a bridge claim. 
+																	Obesity in itself carries with it a lot of health hazards. 
+																	If you are obese or morbidly obese that alone wont qualify you for disability benefits. 
+																	In 2013 VA estimated that more than 165000 Veterans who receive their health care from the department have a BMI of more than 40 which indicates a serious condition called morbid obesity. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I was already rated at 80 for Intervertebral Disc Syndrome Sleep Apnea w CPAP Hypertension Anxiety Disorder PTSD and Morbid Obesity. 
+																	Obesity leads to back pain knee and leg problems and can reduce your lifespan by 6 to 10 years. 
+																	Obesity Is Not a Service-Connected Disability. 
+																	The VA does not define obesity as a disease that qualifies for disability benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA A new Wounded Warrior Project survey of more than 33000 Post-911 veterans found that 517 percent of the respondents were obese according to. 
+																	The Social Security Administration SSA lists obesity as a complex and chronic condition due to excessive body fat. 
+																	2 In the United States a body mass index of 40 or higher is considered morbid obesity. 
+																	Morbid obesity is defined as anyone with a BMI over 40. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Morbid obesity can interfere with basic physical functions and significantly increase the risk of obesity-related conditions. 
+																	The VA does not consider obesity a condition for which service connection can be granted. 
+																	There are different levels of obesity. 
+																	VA News Update 000 Introduction 018 OIG Report on Unwarranted VA Medical Exams 219 HVAC Hearing Is VA ready for Appeals Reform. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Once the VA grants service connection for a disability they will assign a disability rating based on the symptoms and the severity of the veterans service-connected condition. 
+																	Obesity cannot be considered a service-connected disability according to a new ruling by the Department of Veterans Affairs General Counsel expected to be published in the Federal Register. 
+																	An individual is said to be obese when his or her Body Mass Index or BMI is said to be above 30 and morbidly obese when the Body Mass Index or BMI is above 40. 
+																	A person with a BMI between 30 and 40 would be considered to be obese whilst a person with a BMI over 40 would be considered morbidly obese or very obese. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The employment judge said it was satisfied that Mr Butcher had been harassed for a reason which related to his disability namely his morbid obesity condition. 
+																	I took 30-60 mg of Morphine daily to keep pain levels down so I could work. 
+																	If your body mass index BMI is 30 or more you are considered obese. 
+																	2 obesity was a substantial factor in causing the claimed secondary disability. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Being obese increases a persons risk of developing a number of serious and. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.ecfr.gov/graphics/er11my99.006.gif" data-lightbox="roadtrip" data-title="Subpart Disability Ratings">
+											<img class="card-img v-image ads-img " src="http://www.ecfr.gov/graphics/er11my99.006.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlw-iWWanvGQpkkVe4R8rpSJZ536H4yELZFQ';" alt="Subpart Disability Ratings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Subpart Disability Ratings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.va.gov/HEALTHEQUITY/images/WVHealthyLivingBarGraph.png" data-lightbox="roadtrip" data-title="Women Veterans And Healthy Living Office Of Health Equity">
+											<img class="card-img v-image ads-img " src="https://www.va.gov/HEALTHEQUITY/images/WVHealthyLivingBarGraph.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT79hQSmv4iODJZiO0TxLbXOhv_Wi0dz0kTQg';" alt="Women Veterans And Healthy Living Office Of Health Equity">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women Veterans And Healthy Living Office Of Health Equity</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.rgstatic.net/publication/249233436_Best_Practices_for_Safe_Handling_of_the_Morbidly_Obese_Patient/links/556df5cf08aec2268308bf7f/largepreview.png" data-lightbox="roadtrip" data-title="Pdf Best Practices For Safe Handling Of The Morbidly Obese Patient">
+											<img class="card-img v-image ads-img " src="https://i1.rgstatic.net/publication/249233436_Best_Practices_for_Safe_Handling_of_the_Morbidly_Obese_Patient/links/556df5cf08aec2268308bf7f/largepreview.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwHpB2B3jNTo-c8xsAmC3_sZgWhcSEafLWig';" alt="Pdf Best Practices For Safe Handling Of The Morbidly Obese Patient">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pdf Best Practices For Safe Handling Of The Morbidly Obese Patient</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="oXlsIHKFY3zdoM" data-lightbox="roadtrip" data-title="Https Www Cadth Ca Media Pdf Htis Psychological 20interventions 20for 20morbid 20obesity 20clinical 20effectiveness Pdf">
+											<img class="card-img v-image ads-img " src="oXlsIHKFY3zdoM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWout7pK1Lx65gQ_X8mXvkjyoF5tyR7EX3PA';" alt="Https Www Cadth Ca Media Pdf Htis Psychological 20interventions 20for 20morbid 20obesity 20clinical 20effectiveness Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Cadth Ca Media Pdf Htis Psychological 20interventions 20for 20morbid 20obesity 20clinical 20effectiveness Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="xx1q7iwlWZzZSM" data-lightbox="roadtrip" data-title="Http Www Elr Optum Com Content Dam Optum Images Email 7501 7750 7588 January Hqpaf Obesity Detailer Pdf">
+											<img class="card-img v-image ads-img " src="xx1q7iwlWZzZSM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbdb3XLgAhhUselyhm4t5oUqZNsfqCMM0tTw';" alt="Http Www Elr Optum Com Content Dam Optum Images Email 7501 7750 7588 January Hqpaf Obesity Detailer Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Elr Optum Com Content Dam Optum Images Email 7501 7750 7588 January Hqpaf Obesity Detailer Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://veteransbenefitslawfirm.net/wp-content/uploads/2020/02/obesity.jpg" data-lightbox="roadtrip" data-title="Obesity And How It S Related To Va Benefits Mrsb">
+											<img class="card-img v-image ads-img " src="https://veteransbenefitslawfirm.net/wp-content/uploads/2020/02/obesity.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTel0oOMsB_leg_nLJ0iT5e3iU6qNKaEpRWiw';" alt="Obesity And How It S Related To Va Benefits Mrsb">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Obesity And How It S Related To Va Benefits Mrsb</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.rgstatic.net/publication/278259256_Laparoscopic_Sleeve_Gastrectromy_Recommended_Procedure_for_Morbid_Obese_Patients_with_Epilepsy/links/588f3ee445851567c9405dd6/largepreview.png" data-lightbox="roadtrip" data-title="Pdf Laparoscopic Sleeve Gastrectromy Recommended Procedure For Morbid Obese Patients With Epilepsy">
+											<img class="card-img v-image ads-img " src="https://i1.rgstatic.net/publication/278259256_Laparoscopic_Sleeve_Gastrectromy_Recommended_Procedure_for_Morbid_Obese_Patients_with_Epilepsy/links/588f3ee445851567c9405dd6/largepreview.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkZ9z39TKFlFmsXtFL7GQ5Zakinj5-q9J6yQ';" alt="Pdf Laparoscopic Sleeve Gastrectromy Recommended Procedure For Morbid Obese Patients With Epilepsy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pdf Laparoscopic Sleeve Gastrectromy Recommended Procedure For Morbid Obese Patients With Epilepsy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.rgstatic.net/publication/236223391_A_systematic_review_on_physical_therapy_interventions_for_patients_with_binge_eating_disorder/links/5d833cffa6fdcc8fd6f3c950/largepreview.png" data-lightbox="roadtrip" data-title="Pdf A Systematic Review On Physical Therapy Interventions For Patients With Binge Eating Disorder">
+											<img class="card-img v-image ads-img " src="https://i1.rgstatic.net/publication/236223391_A_systematic_review_on_physical_therapy_interventions_for_patients_with_binge_eating_disorder/links/5d833cffa6fdcc8fd6f3c950/largepreview.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBVXwdVI6WEOXjWfVzalKvJq3keqyJcNpdPQ';" alt="Pdf A Systematic Review On Physical Therapy Interventions For Patients With Binge Eating Disorder">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pdf A Systematic Review On Physical Therapy Interventions For Patients With Binge Eating Disorder</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="YaDutj_vLsSfPM" data-lightbox="roadtrip" data-title="Https Www Gpo Gov Fdsys Pkg Cfr 2003 Title38 Vol1 Pdf Cfr 2003 Title38 Vol1 Part4 Pdf">
+											<img class="card-img v-image ads-img " src="YaDutj_vLsSfPM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyISf5oimA8LUt_p4g6YeyojWSGxc8WMdW3A';" alt="Https Www Gpo Gov Fdsys Pkg Cfr 2003 Title38 Vol1 Pdf Cfr 2003 Title38 Vol1 Part4 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Gpo Gov Fdsys Pkg Cfr 2003 Title38 Vol1 Pdf Cfr 2003 Title38 Vol1 Part4 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncbi.nlm.nih.gov/books/NBK279167/bin/define-classfy-obese_etx-obesity-ch1-fig2.jpg" data-lightbox="roadtrip" data-title="Definitions Classification And Epidemiology Of Obesity Endotext Ncbi Bookshelf">
+											<img class="card-img v-image ads-img " src="https://www.ncbi.nlm.nih.gov/books/NBK279167/bin/define-classfy-obese_etx-obesity-ch1-fig2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjSlK3-1Ai-cGm0Rh5nU5qKuAdXoCqkmAu0w';" alt="Definitions Classification And Epidemiology Of Obesity Endotext Ncbi Bookshelf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Definitions Classification And Epidemiology Of Obesity Endotext Ncbi Bookshelf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://onlinelibrary.wiley.com/cms/asset/6ca139cd-0695-4067-87a9-e33f259e9a2e/obr.v20.9.cover.jpg" data-lightbox="roadtrip" data-title="Management Of Overweight And Obesity In Primary Care A Systematic Overview Of International Evidence Based Guidelines Semlitsch 2019 Obesity Reviews Wiley Online Library">
+											<img class="card-img v-image ads-img " src="https://onlinelibrary.wiley.com/cms/asset/6ca139cd-0695-4067-87a9-e33f259e9a2e/obr.v20.9.cover.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUKwn1LwFa3-c1pQmic59rlqKdBsZVrqBo5A';" alt="Management Of Overweight And Obesity In Primary Care A Systematic Overview Of International Evidence Based Guidelines Semlitsch 2019 Obesity Reviews Wiley Online Library">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Management Of Overweight And Obesity In Primary Care A Systematic Overview Of International Evidence Based Guidelines Semlitsch 2019 Obesity Reviews Wiley Online Library</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.rgstatic.net/publication/280390827_The_association_between_chronic_pain_and_obesity/links/55b6d19d08aed621de043c8a/largepreview.png" data-lightbox="roadtrip" data-title="Pdf The Association Between Chronic Pain And Obesity">
+											<img class="card-img v-image ads-img " src="https://i1.rgstatic.net/publication/280390827_The_association_between_chronic_pain_and_obesity/links/55b6d19d08aed621de043c8a/largepreview.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR41KBUjUr0W9zaBTsr70rEkThl0f4T01WDtA';" alt="Pdf The Association Between Chronic Pain And Obesity">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pdf The Association Between Chronic Pain And Obesity</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="qO0euOFsyrCciM" data-lightbox="roadtrip" data-title="Https Www Gpo Gov Fdsys Pkg Cfr 2004 Title38 Vol1 Pdf Cfr 2004 Title38 Vol1 Part4 Pdf">
+											<img class="card-img v-image ads-img " src="qO0euOFsyrCciM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSngOXNfxYnAfUNSL3iXbruQTD959DnFjlCIg';" alt="Https Www Gpo Gov Fdsys Pkg Cfr 2004 Title38 Vol1 Pdf Cfr 2004 Title38 Vol1 Part4 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Gpo Gov Fdsys Pkg Cfr 2004 Title38 Vol1 Pdf Cfr 2004 Title38 Vol1 Part4 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/can-my-spouse-use-my-post-9-11-gi-bill.html">Can My Spouse Use My Post 9 11 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/can-post-911-gi-bill-be-transferred-to-a-child.html">Can Post 911 Gi Bill Be Transferred To A Child</a></li>
+													<li class="list-group-item"><a href="/can-i-use-my-gi-bill-for-a-certification.html">Can I Use My Gi Bill For A Certification</a></li>
+													<li class="list-group-item"><a href="/can-bipolar-qualify-for-disability.html">Can Bipolar Qualify For Disability</a></li>
+													<li class="list-group-item"><a href="/can-i-get-va-benefits-with-an-oth-discharge.html">Can I Get Va Benefits With An Oth Discharge</a></li>
+													<li class="list-group-item"><a href="/can-spouse-receive-bah-post-911-gi-bill.html">Can Spouse Receive Bah Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/can-i-claim-allergies-for-va-disability.html">Can I Claim Allergies For Va Disability</a></li>
+													<li class="list-group-item"><a href="/can-i-use-my-gi-bill-in-the-summer.html">Can I Use My Gi Bill In The Summer</a></li>
+													<li class="list-group-item"><a href="/can-my-spouse-transfer-gi-bill.html">Can My Spouse Transfer Gi Bill</a></li>
+													<li class="list-group-item"><a href="/can-spouse-veteran-use-gi-bill.html">Can Spouse Veteran Use Gi Bill</a></li>
+													<li class="list-group-item"><a href="/can-veterans-get-health-insurance-through-the-va.html">Can Veterans Get Health Insurance Through The Va</a></li>
+													<li class="list-group-item"><a href="/can-va-disability-be-used-in-divorce.html">Can Va Disability Be Used In Divorce</a></li>
+													<li class="list-group-item"><a href="/can-i-use-the-gi-bill-to-pay-off-student-loans.html">Can I Use The Gi Bill To Pay Off Student Loans</a></li>
+													<li class="list-group-item"><a href="/can-the-gi-bill-be-used-for-a-second-bachelors-degree.html">Can The Gi Bill Be Used For A Second Bachelors Degree</a></li>
+													<li class="list-group-item"><a href="/can-gi-bill-be-used-to-calculate-child-support.html">Can Gi Bill Be Used To Calculate Child Support</a></li>
+													<li class="list-group-item"><a href="/can-i-get-va-disability-for-rheumatoid-arthritis.html">Can I Get Va Disability For Rheumatoid Arthritis</a></li>
+													<li class="list-group-item"><a href="/can-i-transfer-gi-bill-to-my-spouse.html">Can I Transfer Gi Bill To My Spouse</a></li>
+													<li class="list-group-item"><a href="/can-i-transfer-gi-bill-after-retirement.html">Can I Transfer Gi Bill After Retirement</a></li>
+													<li class="list-group-item"><a href="/can-i-use-my-gi-bill-to-pay-off-my-spouses-student-loans.html">Can I Use My Gi Bill To Pay Off My Spouses Student Loans</a></li>
+													<li class="list-group-item"><a href="/can-i-get-fafsa-and-gi-bill.html">Can I Get Fafsa And Gi Bill</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

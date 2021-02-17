@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Samsung Galaxy 9 - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Samsung Galaxy 9",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/564x/c8/9a/7e/c89a7efe4f7075c65f759a701449711b.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=samsung+galaxy+9",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Samsung Galaxy 9</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Samsung Galaxy S9 release date was March 16 2018. The 12MP Dual Lens camera shoots sharp photos even in low light conditions and with optical image stabilisation you can be sure for high quality photos every time. If your phone is still protected under warranty and in need of repairs you should call Samsungs Customer Service or take it to the officially licensed retailer where you purchased the phone so it can be repaired by professional technicians. <br>				
+			</p>
+										<a class="badge badge-primary" href="/gi-bill-part-time-online-bah.html">gi bill part time online bah</a>
+											<a class="badge badge-warning" href="/gi-build-corp.html">gi build corp</a>
+											<a class="badge badge-warning" href="/gi-joe-billy-arboc.html">gi joe billy arboc</a>
+											<a class="badge badge-light" href="/gi-bill-world-war-2.html">gi bill world war 2</a>
+											<a class="badge badge-primary" href="/gi-bill-transfer-of-eligibility.html">gi bill transfer of eligibility</a>
+											<a class="badge badge-light" href="/gi-bill-of-rights-definition-social-studies.html">gi bill of rights definition social studies</a>
+											<a class="badge badge-dark" href="/gi-bill-transfer-benefits-to-spouse.html">gi bill transfer benefits to spouse</a>
+											<a class="badge badge-danger" href="/gi-bill-new-york-city.html">gi bill new york city</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you have come to pay a visit to the ideal site.  Our website gives you suggestions for seeing the highest quality video and image content, hunt and find more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, so we recommend this movie for you to view.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/b0/31/ab/b031ab139b262bc27439aac0213c6aeb.jpg" data-lightbox="roadtrip" data-title="We Take It Back Samsungs Galaxy S9 Looks Gorgeous Samsung Galaxy S9 Samsung Samsung Galaxy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/b0/31/ab/b031ab139b262bc27439aac0213c6aeb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjlcaK1VA1IF8dq-Lh72zDfpoqaTUvPe8tqQ';" alt="We Take It Back Samsungs Galaxy S9 Looks Gorgeous Samsung Galaxy S9 Samsung Samsung Galaxy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Take It Back Samsungs Galaxy S9 Looks Gorgeous Samsung Galaxy S9 Samsung Samsung Galaxy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/54/40/04/5440049c1ec27e14f659e55b3d3446cc.png" data-lightbox="roadtrip" data-title="Samsung Galaxy S9 And S9 Plus All Colors 2 New Colors Samsung Galaxy S9 Samsung Galaxy Samsung">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/54/40/04/5440049c1ec27e14f659e55b3d3446cc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEvUFA1iC1WCAWGNpDpra35CnTaJou4m2AHw';" alt="Samsung Galaxy S9 And S9 Plus All Colors 2 New Colors Samsung Galaxy S9 Samsung Galaxy Samsung">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Samsung Galaxy S9 And S9 Plus All Colors 2 New Colors Samsung Galaxy S9 Samsung Galaxy Samsung</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/5f/a5/cc5fa50b0fd66c9a8388c7aab36850e1.jpg" data-lightbox="roadtrip" data-title="Samsung Galaxy S9 Hands On Camera Specification Mwc 2018 Mighty Gadget Blog Uk Technology News And Reviews Samsung Galaxy Samsung Cell Phone Booster">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/5f/a5/cc5fa50b0fd66c9a8388c7aab36850e1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIMOBBoyJRLnKveGDoysTCSRUdXcVMEqER6Q';" alt="Samsung Galaxy S9 Hands On Camera Specification Mwc 2018 Mighty Gadget Blog Uk Technology News And Reviews Samsung Galaxy Samsung Cell Phone Booster">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Samsung Galaxy S9 Hands On Camera Specification Mwc 2018 Mighty Gadget Blog Uk Technology News And Reviews Samsung Galaxy Samsung Cell Phone Booster</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/c8/9a/7e/c89a7efe4f7075c65f759a701449711b.jpg" data-lightbox="roadtrip" data-title="Tabcult Com Galaxy Note 9 Samsung Galaxy Note">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/c8/9a/7e/c89a7efe4f7075c65f759a701449711b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Bh0DqTcs0PyUG8Sn5I3ODTX8ROtKD89T-Q';" alt="Tabcult Com Galaxy Note 9 Samsung Galaxy Note">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tabcult Com Galaxy Note 9 Samsung Galaxy Note</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/d5/3c/1bd53c5248b57416f082c1d2581fa35a.jpg" data-lightbox="roadtrip" data-title="Samsung Galaxy Note 9 Brown Samsung Galaxy Note Samsung Galaxy Samsung">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/d5/3c/1bd53c5248b57416f082c1d2581fa35a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgHJS4tlFm1N7jLMf570_-j5Ds3dtVNdHlxQ';" alt="Samsung Galaxy Note 9 Brown Samsung Galaxy Note Samsung Galaxy Samsung">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Samsung Galaxy Note 9 Brown Samsung Galaxy Note Samsung Galaxy Samsung</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/ea/da/85eada47a5e93d4cb791d0e93b2949d1.png" data-lightbox="roadtrip" data-title="Want To Take 50 Off The Samsung Galaxy S9 S9 Plus Here S Where To Pre Order It Samsung Galaxy S9 Samsung Galaxy 9 Samsung Galaxy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/ea/da/85eada47a5e93d4cb791d0e93b2949d1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL3kOyBOtC-_0zNt699bHdQ_e6r2uTwb4YZw';" alt="Want To Take 50 Off The Samsung Galaxy S9 S9 Plus Here S Where To Pre Order It Samsung Galaxy S9 Samsung Galaxy 9 Samsung Galaxy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Want To Take 50 Off The Samsung Galaxy S9 S9 Plus Here S Where To Pre Order It Samsung Galaxy S9 Samsung Galaxy 9 Samsung Galaxy</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/5e/f1/c8/5ef1c8d664256872ff5d168bff41f3e1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL3kOyBOtC-_0zNt699bHdQ_e6r2uTwb4YZw';" alt="Want To Take 50 Off The Samsung Galaxy S9 S9 Plus Here S Where To Pre Order It Samsung Galaxy S9 Samsung Galaxy 9 Samsung Galaxy">
+										<div class="card-body">
+						<h3 class="h5"><b>The Galaxy series has blazed a trail for Android devices and it only gets better when you buy Samsung Galaxy S9.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Samsung galaxy 9</strong>. 
+								
+																	Browse deals and shop our full range of. 
+																	The Samsung Galaxy S9 has a 58 edge-to-edge Infinity Display which is perfect for displaying photos and watching movies on. 
+																	With an edge-to-edge display a seriously powerful camera and a sleek ergonomic design this Samsung phone is a must-have device for any tech enthusiast. 
+																	Pay the cash price for your device or spread the cost over 3 to 48 months for the iPad Pro 129 2018 iPad Pro 11 2018 iPad Pro 105 and iPad Air 105 excluding like new devices or 3 to 36 months for all other devices excluding dongles. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Galaxy S9 Galaxy S9. 
+																	Plus our most powerful battery yet will keep going as long as you need. 
+																	Released at the same time as the lar Show More. 
+																	From Samsungs flagship S series We currently have the best deals on the Samsung Galaxy S20 Samsung Galaxy S20 Ultra Samsung Galaxy S20 Plus Samsung A42 5G Samsung S10 and Samsung S20 Fan Edition. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Installed on the rear camera Galaxy S9rear wide camera Galaxy S9. 
+																	However the Galaxy S9 is also available in a super-sized version the S9 which features a 62-inch display and dual cameras. 
+																	Galaxy S9 and S9 introduced the revolutionary Dual Aperture phone camera that adapts to light like the human eye. 
+																	This beautiful display paired is paired with AKG speakers for dual stereo sound that is truly immersive. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Giving you the best specs at incredible prices The S10 and S10 also have dual sim so you can use it as your Note10 work and personal device. 
+																	Shop the Samsung Galaxy S21 5G. 
+																	You need a monthly rolling Airtime Plan for the length of the. 
+																	Samsung Phone Deals Contracts Famed for their durability crisp displays and game-changing camera tech Samsung Galaxy mobiles redefine what phones can do every. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Discover the latest Samsung phones and learn about the features including revolutionary camera technology super-fast speeds with 5G One UI for an immersive experience and battery sharing capabilities. 
+																	Our reinvented Bluetooth enabled S Pen allows you to control features remotely up to 10m while an impressive 128GB or 512GB of internal storage means youll never run out of space. 
+																	Thats a whopping 300 less than the equivalent 128GB Galaxy S10 from the same source. 
+																	The device cost will be the same whatever you choose. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	While the Galaxy S8 and S9 share the same screen size battery power and. 
+																	The 512GB Galaxy S10 will set you. 
+																	Samsung Galaxy S9 64GB Purple UNLOCKED. 
+																	The Samsung Galaxy S9 is an advanced addition to the brands flagship smartphone range. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This product is in very good cosmetic condition with only light signs of use. 
+																	There may be an upfront cost. 
+																	The stunning Samsung Galaxy S9. 
+																	The devices were revealed at the Mobile World Congress in Barcelona on 25 February 2018 as the successors to the Samsung Galaxy S8 and S8. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Galaxy S9 and S9 introduced the revolutionary Dual Aperture phone camera that adapts to light like the human eye. 
+																	Features 58 display Exynos 9810 chipset 12 MP primary camera 8 MP front camera 3000 mAh battery 256 GB storage 4 GB RAM Corning. 
+																	Samsung Galaxy Note9 Meet the phone made to keep up with you. 
+																	In fact you can. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We also embrace the phablet users with. 
+																	So if gaming streaming and being at the cutting-edge of phone technology matters to you a Samsung is the perfect fit. 
+																	The Galaxy S9 price at launch was 739 71999 or AU1199 SIM-free directly from Samsung but its much much cheaper now. 
+																	Samsung Galaxy S9 Screen Like all of Samsungs recent flagships the S9s display draws you in instantly with its rich colours and fantastic contrast. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Our latest range Explore features Why Samsung. 
+																	Samsung Galaxy S9 and S9 are Android -based smartphones unveiled manufactured released and marketed by Samsung Electronics as part of the Samsung Galaxy S series. 
+																	Samsung Galaxy S9 Android smartphone. 
+																	The S9 retains some of the features of the Samsung Galaxy S8 with a glass back and a front thats rounded at the edges to give more of an edge-to-edge impression. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Galaxy S9 Galaxy S9 Lilac Purple Midnight Black Titanium Gray Coral Blue Sunrise Gold Lilac Purple Midnight Black Titanium Gray Coral Blue Sunrise Gold. 
+																	Removing the back cover of your Samsung Galaxy phone will void your warranty. 
+																	It has been fully tested and works perfectly. 
+																	What is the difference between the Samsung Galaxy S9 and Samsung Galaxy S8. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This advanced smartphone uses an ultra-modern Infinity Display that curves around the edge of the phone. 
+																	Its still a slightly curved 58-inch AMOLED. 
+																	Samsung Galaxy S9 Single SIM 64 GB 58-Inch Android 80 Oreo UK Version SIM-Free Smartphone - Midnight Black Renewed 26449 222 Works and looks like new and backed by a warranty Claim up to 400 when you trade in your phone You are leaving the Amazoncouk site and headed to another company. 
+																	Samsung is currently selling the 64GB Galaxy S9 for 499 on its UK website. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Samsung Galaxy S21 5G and S21 5G. 
+																	Dual Aperture supports F15 and F24 modes. 
+																	Refurbished Very Good Very good. 
+																	The Samsung Galaxy S9 and S8 share similar designs both sporting a cool curved body and 58-inch Infinity Display. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bucking the trend of the latest iPhones and also the Google Pixel 2 the Samsung Galaxy S9 hasnt ditched its headphone jack. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/d5/dc/81d5dc82bcfba338fa72cd9c11e47bc2.png" data-lightbox="roadtrip" data-title="Samsung Galaxy Note 9 All Colors Concept Galaxy Note 9 Samsung Galaxy Note Galaxy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/d5/dc/81d5dc82bcfba338fa72cd9c11e47bc2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzmKgDxx4GWgER35hXxUo8Lo7TbVo-d9KdIA';" alt="Samsung Galaxy Note 9 All Colors Concept Galaxy Note 9 Samsung Galaxy Note Galaxy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Samsung Galaxy Note 9 All Colors Concept Galaxy Note 9 Samsung Galaxy Note Galaxy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/8a/f0/618af07457a0eafe79fa8c38900a1c01.jpg" data-lightbox="roadtrip" data-title="Samsung Galaxy Note 9 All Colors Samsung Galaxy Samsung Galaxy Note Samsung">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/8a/f0/618af07457a0eafe79fa8c38900a1c01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Qa5AlBpzwnBy3u7smm27ZkdXdWUYxUIn5Q';" alt="Samsung Galaxy Note 9 All Colors Samsung Galaxy Samsung Galaxy Note Samsung">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Samsung Galaxy Note 9 All Colors Samsung Galaxy Samsung Galaxy Note Samsung</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/68/8d/39688db851909e0a6c18b4a45fc737e1.jpg" data-lightbox="roadtrip" data-title="Samsung Galaxy Note 9 Ocean Blue Galaxy Note 9 Galaxy Note Samsung Galaxy Note">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/68/8d/39688db851909e0a6c18b4a45fc737e1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM9JZ3xLZ0zQM6QhBfrUVBBd5Zxs7uP5kMgQ';" alt="Samsung Galaxy Note 9 Ocean Blue Galaxy Note 9 Galaxy Note Samsung Galaxy Note">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Samsung Galaxy Note 9 Ocean Blue Galaxy Note 9 Galaxy Note Samsung Galaxy Note</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/f0/a8/78f0a88a1c5e2f1a6c6a8b5be1c2ee91.jpg" data-lightbox="roadtrip" data-title="Samsung Galaxy Note 9 Colors Samsungnote9review Samsunggalaxynote9price Samsung Galaxynote9 Note9specs Samsung Samsung Galaxy Samsung Galaxy Phone">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/f0/a8/78f0a88a1c5e2f1a6c6a8b5be1c2ee91.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzuOHMCflMVcye0nReb47Q41F3dVEX31o09g';" alt="Samsung Galaxy Note 9 Colors Samsungnote9review Samsunggalaxynote9price Samsung Galaxynote9 Note9specs Samsung Samsung Galaxy Samsung Galaxy Phone">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Samsung Galaxy Note 9 Colors Samsungnote9review Samsunggalaxynote9price Samsung Galaxynote9 Note9specs Samsung Samsung Galaxy Samsung Galaxy Phone</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1a/f7/49/1af749aefe1753ca24e26f14931fe0a1.jpg" data-lightbox="roadtrip" data-title="Leak More Images Of The Samsung Galaxy S9 Plus Samsung Galaxy Samsung Galaxy S9 Samsung">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1a/f7/49/1af749aefe1753ca24e26f14931fe0a1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgYuZm_EH5hNvC4YBkhOWO9m274o2nNBQ0RA';" alt="Leak More Images Of The Samsung Galaxy S9 Plus Samsung Galaxy Samsung Galaxy S9 Samsung">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Leak More Images Of The Samsung Galaxy S9 Plus Samsung Galaxy Samsung Galaxy S9 Samsung</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a5/07/be/a507be7f38a89f9f403aa2f6525f04b1.jpg" data-lightbox="roadtrip" data-title="الصفحة غير متاحه Samsung Galaxy 9 Galaxy Note Galaxy Note 9">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a5/07/be/a507be7f38a89f9f403aa2f6525f04b1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSaV2WS1FXx4cp3eC1h9EqBxN-EMyFuVTpuQ';" alt="الصفحة غير متاحه Samsung Galaxy 9 Galaxy Note Galaxy Note 9">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">الصفحة غير متاحه Samsung Galaxy 9 Galaxy Note Galaxy Note 9</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/7c/c0/387cc0648c9b654473caaee9b4f68e42.jpg" data-lightbox="roadtrip" data-title="Samsung Galaxy Note 9 All Colors Galaxy Note 9 Galaxy Note Samsung Galaxy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/7c/c0/387cc0648c9b654473caaee9b4f68e42.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIOVMD_j4DuOFkFnpKDRsCuyUIWyCuWc2lTQ';" alt="Samsung Galaxy Note 9 All Colors Galaxy Note 9 Galaxy Note Samsung Galaxy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Samsung Galaxy Note 9 All Colors Galaxy Note 9 Galaxy Note Samsung Galaxy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/5d/eb/935deb3780711a4e94b12d1d1d0a9e8f.jpg" data-lightbox="roadtrip" data-title="Pin On Ulzzang">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/5d/eb/935deb3780711a4e94b12d1d1d0a9e8f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrPd8_PtG2P64x02gAUHvHrbSI-KOEuEOZ9w';" alt="Pin On Ulzzang">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ulzzang</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1e/db/e4/1edbe4fcb78e9616bd7080849984d925.jpg" data-lightbox="roadtrip" data-title="Samsung Galaxy Note 9 Galaxy Note 9 Samsung Galaxy Samsung">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1e/db/e4/1edbe4fcb78e9616bd7080849984d925.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5YROpUL8MWSCd9icR143Oh1Yg8A_cYf7i6w';" alt="Samsung Galaxy Note 9 Galaxy Note 9 Samsung Galaxy Samsung">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Samsung Galaxy Note 9 Galaxy Note 9 Samsung Galaxy Samsung</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/f1/c8/5ef1c8d664256872ff5d168bff41f3e1.jpg" data-lightbox="roadtrip" data-title="40 Samsung Galaxy Note 9 Tips Tricks Galaxy Note 9 Samsung Galaxy Galaxy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/f1/c8/5ef1c8d664256872ff5d168bff41f3e1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMnOrVaPbGv79hhA3Px-6tDkz-6TycaheSYw';" alt="40 Samsung Galaxy Note 9 Tips Tricks Galaxy Note 9 Samsung Galaxy Galaxy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">40 Samsung Galaxy Note 9 Tips Tricks Galaxy Note 9 Samsung Galaxy Galaxy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/f3/6d/87f36d17ca9ec26df46bd8ac04bc7de9.png" data-lightbox="roadtrip" data-title="Samsung Galaxy Note 9 Blue Concept Galaxy Note 9 Samsung Galaxy Note Samsung Galaxy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/f3/6d/87f36d17ca9ec26df46bd8ac04bc7de9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyc_3VbRXtTRJD9_OW889abzNjUVxj6qI0pQ';" alt="Samsung Galaxy Note 9 Blue Concept Galaxy Note 9 Samsung Galaxy Note Samsung Galaxy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Samsung Galaxy Note 9 Blue Concept Galaxy Note 9 Samsung Galaxy Note Samsung Galaxy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b7/c8/b0/b7c8b045ee5d03d2f9932020a02c003e.jpg" data-lightbox="roadtrip" data-title="Two Days Before Its Launch These Are The Specifications Expected لـgalaxy S9 Galaxy Galaxy S 9 Galaxy S 9 Plus Galax Samsung Galaxy Samsung Samsung Galaxy S9">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b7/c8/b0/b7c8b045ee5d03d2f9932020a02c003e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKcoxF6GNO39rTvfxv-V5Jgij2U3FGf6Tiqg';" alt="Two Days Before Its Launch These Are The Specifications Expected لـgalaxy S9 Galaxy Galaxy S 9 Galaxy S 9 Plus Galax Samsung Galaxy Samsung Samsung Galaxy S9">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Two Days Before Its Launch These Are The Specifications Expected لـgalaxy S9 Galaxy Galaxy S 9 Galaxy S 9 Plus Galax Samsung Galaxy Samsung Samsung Galaxy S9</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/85/fe/77/85fe77a038848ddf1fb563f48c1d64b1.jpg" data-lightbox="roadtrip" data-title="Programming Languages Software Illustration Design Interface Engineer Free Business Inspiration Developer Samsung Samsung Galaxy Samsung Galaxy Note">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/85/fe/77/85fe77a038848ddf1fb563f48c1d64b1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzS3AxZvdi5ts8lq7HyiF4jUXweUpujGEx_g';" alt="Programming Languages Software Illustration Design Interface Engineer Free Business Inspiration Developer Samsung Samsung Galaxy Samsung Galaxy Note">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Programming Languages Software Illustration Design Interface Engineer Free Business Inspiration Developer Samsung Samsung Galaxy Samsung Galaxy Note</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-benefits-payment-phone-number.html">Va Benefits Payment Phone Number</a></li>
+													<li class="list-group-item"><a href="/va-compensation-allergic-rhinitis.html">Va Compensation Allergic Rhinitis</a></li>
+													<li class="list-group-item"><a href="/va-board-of-nursing-approved-schools.html">Va Board Of Nursing Approved Schools</a></li>
+													<li class="list-group-item"><a href="/va-comp-stimulus-check.html">Va Comp Stimulus Check</a></li>
+													<li class="list-group-item"><a href="/va-ch33.html">Va Ch33</a></li>
+													<li class="list-group-item"><a href="/va-comp-table-2019.html">Va Comp Table 2019</a></li>
+													<li class="list-group-item"><a href="/va-benefits-percentage-for-ptsd.html">Va Benefits Percentage For Ptsd</a></li>
+													<li class="list-group-item"><a href="/va-claim-for-joint-pain.html">Va Claim For Joint Pain</a></li>
+													<li class="list-group-item"><a href="/va-claim-hemorrhoids.html">Va Claim Hemorrhoids</a></li>
+													<li class="list-group-item"><a href="/va-comp-headaches.html">Va Comp Headaches</a></li>
+													<li class="list-group-item"><a href="/va-benefits-payment-number.html">Va Benefits Payment Number</a></li>
+													<li class="list-group-item"><a href="/va-chapter-35-reimbursement.html">Va Chapter 35 Reimbursement</a></li>
+													<li class="list-group-item"><a href="/va-compensation-adding-dependents.html">Va Compensation Adding Dependents</a></li>
+													<li class="list-group-item"><a href="/va-compensation-change-of-address.html">Va Compensation Change Of Address</a></li>
+													<li class="list-group-item"><a href="/va-compensation-based-on-unemployability.html">Va Compensation Based On Unemployability</a></li>
+													<li class="list-group-item"><a href="/va-chapter-4.html">Va Chapter 4</a></li>
+													<li class="list-group-item"><a href="/va-claim-for-knee-pain.html">Va Claim For Knee Pain</a></li>
+													<li class="list-group-item"><a href="/va-compensation-and-stimulus-check.html">Va Compensation And Stimulus Check</a></li>
+													<li class="list-group-item"><a href="/va-chapter-7.html">Va Chapter 7</a></li>
+													<li class="list-group-item"><a href="/va-chapter-35-payment-schedule.html">Va Chapter 35 Payment Schedule</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

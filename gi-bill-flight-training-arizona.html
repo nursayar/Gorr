@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Gi Bill Flight Training Arizona - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Gi Bill Flight Training Arizona",
+  "datePublished": "2021-02-17",
+  "image": "http://www.pelicanflighttraining.com/image/alsim_wats-invitation_2016.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=gi+bill+flight+training+arizona",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Gi Bill Flight Training Arizona</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">This training would be accomplished through enrollment in the Dodge City Community College Flight Instructor degree program. Students can complete their flight programs in a shorter duration having the funds available to continue training ensuring there are no training delays. January 12 2011 at 415 PM Sean said. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/using-the-post-911-gi-bill.html">using the post 911 gi bill</a>
+											<a class="badge badge-warning" href="/va-benefits-for-heart-disease-agent-orange.html">va benefits for heart disease agent orange</a>
+											<a class="badge badge-primary" href="/va-approved-flight-schools-in-washington-state.html">va approved flight schools in washington state</a>
+											<a class="badge badge-warning" href="/uti-gi-bill.html">uti gi bill</a>
+											<a class="badge badge-dark" href="/va-40-percent-disability-payment.html">va 40 percent disability payment</a>
+											<a class="badge badge-secondary" href="/va-approved-culinary-schools.html">va approved culinary schools</a>
+											<a class="badge badge-danger" href="/using-voc-rehab-and-gi-bill.html">using voc rehab and gi bill</a>
+											<a class="badge badge-danger" href="/va-benefits-for-heart-problems.html">va benefits for heart problems</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to visit the right site.  Our site gives you suggestions for seeing the maximum quality video and image content, search and locate more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this video for you to see.  You can also bring about supporting this site by sharing videos and graphics that you like on this site on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information that you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://epicflightacademy.com/wp-content/uploads/2012/09/Ryan-James-Wright-United-States-Marine-Corps.jpg" data-lightbox="roadtrip" data-title="Gi Bill Epic Flight Academy">
+											<img class="card-img v-image ads-img " src="https://epicflightacademy.com/wp-content/uploads/2012/09/Ryan-James-Wright-United-States-Marine-Corps.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE7sOPJu8Qztws_0jKBiUloJbe3H3zx6Tnjw';" alt="Gi Bill Epic Flight Academy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gi Bill Epic Flight Academy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/e4/6f/32e46f0ed128d639cbcb81e25853e165.png" data-lightbox="roadtrip" data-title="Jeremy Hartt Congrats On Earning Your Cfi Rating Helicopters Helicopter Flight Training Train">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/e4/6f/32e46f0ed128d639cbcb81e25853e165.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPpoGZUGUE3-aBrw4HHaKWHKzJs1wnXjH4SQ';" alt="Jeremy Hartt Congrats On Earning Your Cfi Rating Helicopters Helicopter Flight Training Train">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jeremy Hartt Congrats On Earning Your Cfi Rating Helicopters Helicopter Flight Training Train</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.aviationschoolsonline.com/img/search/articles/10-ways-to-finance-flight-school.jpg" data-lightbox="roadtrip" data-title="Flight Training Financing 10 Ways To Get Money For Pilot Training Aviation Schools Online">
+											<img class="card-img v-image ads-img " src="https://www.aviationschoolsonline.com/img/search/articles/10-ways-to-finance-flight-school.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA4sYyqeqFiMUNV3ckYRA8_WBEHURuVMpReg';" alt="Flight Training Financing 10 Ways To Get Money For Pilot Training Aviation Schools Online">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Flight Training Financing 10 Ways To Get Money For Pilot Training Aviation Schools Online</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://atpflightschool.com/img/section/erj-175-archer-seminole.jpg" data-lightbox="roadtrip" data-title="How Much To Become A Pilot In 2021 Total Cost How To Pay Atp Flight School">
+											<img class="card-img v-image ads-img " src="https://atpflightschool.com/img/section/erj-175-archer-seminole.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKYnOZQKayB1cWFXCu_-5cItW6OiKf7AZYxg';" alt="How Much To Become A Pilot In 2021 Total Cost How To Pay Atp Flight School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Much To Become A Pilot In 2021 Total Cost How To Pay Atp Flight School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i0.wp.com/sandersaviation.com/wp-content/uploads/2018/11/IMG_4573.jpg?resize=4032%2C3024&amp;ssl=1" data-lightbox="roadtrip" data-title="Sanders Flight Training Sanders Aviation">
+											<img class="card-img v-image ads-img " src="https://i0.wp.com/sandersaviation.com/wp-content/uploads/2018/11/IMG_4573.jpg?resize=4032%2C3024&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDPjBPW1_b8vBQxpSghIy9ywZoQhaDx0-7bQ';" alt="Sanders Flight Training Sanders Aviation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sanders Flight Training Sanders Aviation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/7f/cf/817fcfb9c71f16eb8b917d2eb04e1d3c.jpg" data-lightbox="roadtrip" data-title="Nick Monroe Commercial Checkride Congrats Http Www Guidance Aero Flight Training Helicopter Train">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/7f/cf/817fcfb9c71f16eb8b917d2eb04e1d3c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDwPUllF-kl3S8A19_tr-RrCWrkZk0eeoH_A';" alt="Nick Monroe Commercial Checkride Congrats Http Www Guidance Aero Flight Training Helicopter Train">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nick Monroe Commercial Checkride Congrats Http Www Guidance Aero Flight Training Helicopter Train</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.cae.com/images/made/69438bbdfc03cca3/CAE_two_cadets_Phoenix_Flight_Training_2048x1365_960_640_s.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDwPUllF-kl3S8A19_tr-RrCWrkZk0eeoH_A';" alt="Nick Monroe Commercial Checkride Congrats Http Www Guidance Aero Flight Training Helicopter Train">
+										<div class="card-body">
+						<h3 class="h5"><b>Using this GI Bill for flight training entitlement is charged at the rate of one month used for each 185700 paid out meaning vocational flight training can burn up 36 months of GI Bill entitlement much faster than in 36 months.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Gi bill flight training arizona</strong>. 
+								
+																	As its fair-weather conditions make it the perfect place to learn how to fly pilot dreams become a reality for hundreds of CAE aspiring pilots each year who take to the sky for the first time at CAE Phoenix. 
+																	The only thing I can find as far as the 911 GI BILL goes is that it pays 100 of tuition and fees for public schools. 
+																	Use VAs WEAMS Institution Search tool to locate the colleges and universities vocational institutions flight schools and other educational facilities with programs that are approved for VA benefits. 
+																	If using the Montgomery GI Bill Active Duty it pays a full-time student up to 185700 per month. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Benefits vary from veteran to veteran so please contact Quantum Helicopters or Dodge City Community College. 
+																	The founders of AFTC noticed that there existed a void that the truly customized flight schools had once filled. 
+																	Payment Amounts Under the Montgomery GI Bill If you are training under the Montgomery GI Bill we will reimburse you for 60 percent of the approved charges. 
+																	They were places where a student or renter. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Maximum Flight Training Benefit. 
+																	For those covered under the previous Montgomery GI Bill the VA will reimburse up to 60 of eligible training costs. 
+																	All of these must be true. 
+																	When it comes to pilot training the issues regarding Veterans Benefits under either the Post 9 11 GI Bill can be complicated and confusing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However Canyon State Aero has put this certification for the VA on hold indefinitely at this time. 
+																	Our recommendation is that you get all the facts research and only move forward once you know for certain that the school you choose will advance your career pursuits. 
+																	View payment information by benefit program. 
+																	Per academic year pays the actual net costs for in-state tuition and fees assessed by the school or 10000 whichever is less. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Equipped with over 60 aircraft CAE. 
+																	You can also locate institutions of higher education participating in the Yellow Ribbon Program which. 
+																	Students completing flight training at Guidance Academy independent of our collegiate partners are eligible for lesser of the actual net costs for in-state tuition and fees assessed by the school or 10000 per academic year. 
+																	I want to attend Arizona State University with the 911 GI Bill. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Enter search terms and then click on the map to generate results by state. 
+																	CAE Phoenix - Aviation Academy. 
+																	Again no surprise there. 
+																	I want get my BS in Aeronautical Management Technology Professional Flight. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	GI Bill Eligible ATPs Type Rating ATP Certification Training and Aircraft Dispatcher Training Programs in Texas are approved to train veterans under the GI Bill. 
+																	General Information on VA Educational Benefits. 
+																	Qualify for the Post-911 GI Bill or Montgomery GI Bill and Have a private pilots license and Have a second-class medical certificate valid for second-class privilegesor a first-class medical certificate if you want to pursue the Airline Transport Pilot. 
+																	If you are enrolled in a. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Post 9 11 GI Bill for Flight Training. 
+																	AFTC was established in 2008 as an alternative to the large mostly international flight schools that were dotting the Southwest. 
+																	The Veterans Administration requires veterans who are using their post-911 GI Bill benefits for flight training to attend a FAA part 141 certified school. 
+																	For those covered under the Post 9-11 GI Bill the VA will reimburse a maximum of 12554 in flight training costs per academic year August to July. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The flight training costs 68088 in addition to tuition. 
+																	The GI Bill can provide reimbursements and benefits for your helicopter flight training. 
+																	Answers to a Couple of Questions. 
+																	Montgomery Post 911 GI Bills Arizona Flight Training Center is Approved for the education and training of veterans and their eligible dependents using United States Department of Veterans Affairs educational benefits in the State of Arizona in accordance with Section 3676 Title 38 United States Code. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Flight training financing programs enable students to finance their Mesa flight training for rates as low as 93 a month. 
+																	If you look at the latest update on the VA website under Effective Oct 1 2011 and then flight programs it states. 
+																	CAE Phoenix - Aviation Academy. 
+																	Helicopter pilot training. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is possible for a veteran who has benefits under the Post 911 GI Bill to receive benefits covering part or all of the Private Pilot Certificate training. 
+																	The Valleys premier custom flight training provider. 
+																	Phoenix East Aviations professional flight training program link to course is approved for Veterans training for reimbursement under the Chapter 30 33 1606 and 1607 for veterans eligible for GI Bill educational benefits. 
+																	Payment Amounts Under the Post-911 GI Bill Payments for flight training vary based on which type of flight training course and what kind of school you are enrolled in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Welcome to Arizona Flight Training Center AFTC. 
+																	Will the GI Bill pay. 
+																	You may be eligible for flight training benefits if you meet all of the requirements listed below. 
+																	Aviation recruitment offices. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VA wants to pay the least sum of money for the best flight training possible. 
+																	Flight Training New GI Bill Concerns. 
+																	Please call 904 595-7995 for details. 
+																	First of all your Chapter 30 GI Bill. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Veteran GI Bill benefits described above are only available to flight students enrolled in one of our collegiate programs. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/eb/58/6feb5885242654682892000ce1cf3be6.jpg" data-lightbox="roadtrip" data-title="What If Your Classroom Looks Like This Heli Yeah Classroom Flight Training Aviation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/eb/58/6feb5885242654682892000ce1cf3be6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs9lWFgCXxyKzqy7XMLreBWALNYaC7SlcMig';" alt="What If Your Classroom Looks Like This Heli Yeah Classroom Flight Training Aviation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What If Your Classroom Looks Like This Heli Yeah Classroom Flight Training Aviation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://atpflightschool.com/img/gallery/piper-seminole/2012-piper-seminole-garmin-g1000-instrument-panel.jpg" data-lightbox="roadtrip" data-title="Scottsdale Arizona Flight Training At Sdl Atp Flight School">
+											<img class="card-img v-image ads-img " src="https://atpflightschool.com/img/gallery/piper-seminole/2012-piper-seminole-garmin-g1000-instrument-panel.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWQmkSEmHC7TycCaO3rytM1lr94n-IdEAB0g';" alt="Scottsdale Arizona Flight Training At Sdl Atp Flight School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Scottsdale Arizona Flight Training At Sdl Atp Flight School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.pelicanflighttraining.com/image/alsim_wats-invitation_2016.jpg" data-lightbox="roadtrip" data-title="Pelican Flight Training Helicopter Training Airplane Training Flight School">
+											<img class="card-img v-image ads-img " src="http://www.pelicanflighttraining.com/image/alsim_wats-invitation_2016.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ07mPkKIEQ7Cks9LlEkcM6xUciGC8x5t0DnA';" alt="Pelican Flight Training Helicopter Training Airplane Training Flight School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pelican Flight Training Helicopter Training Airplane Training Flight School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/0b/b7/ed0bb73d4512b42a6a54a55e74808895.jpg" data-lightbox="roadtrip" data-title="Throwback To Some Canyon Flying Down South Fly8ma Aviatortraining Avgeek Aviation Flying Airplanel In 2020 Bush Pilot Private Pilot Flight Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/0b/b7/ed0bb73d4512b42a6a54a55e74808895.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBQCNYpDVK_yqgmjhKKw6kB45NcGPRR79rNQ';" alt="Throwback To Some Canyon Flying Down South Fly8ma Aviatortraining Avgeek Aviation Flying Airplanel In 2020 Bush Pilot Private Pilot Flight Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Throwback To Some Canyon Flying Down South Fly8ma Aviatortraining Avgeek Aviation Flying Airplanel In 2020 Bush Pilot Private Pilot Flight Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/47/5c/40/475c402507a9c9028f60542a17e2c496.jpg" data-lightbox="roadtrip" data-title="Pin On Guidance Aviation Tv">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/47/5c/40/475c402507a9c9028f60542a17e2c496.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR91aTStTx0OPeGekPfLCLC66O1-mOOLDMg4Q';" alt="Pin On Guidance Aviation Tv">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guidance Aviation Tv</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://sterlingflight.com/wp-content/uploads/2019/02/sterling-flight-training-logo-1.png" data-lightbox="roadtrip" data-title="Sterling Flight Training Flight School">
+											<img class="card-img v-image ads-img " src="https://sterlingflight.com/wp-content/uploads/2019/02/sterling-flight-training-logo-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvOAX1zRqFYJOoSzhU2Gt1Vg9HW_Qs4-S2Gg';" alt="Sterling Flight Training Flight School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sterling Flight Training Flight School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.aviationschoolsonline.com/img/search/geos/Fixed-Wing-Flight-Schools.jpg" data-lightbox="roadtrip" data-title="Fixed Wing Flight Schools Delaware De Aviation Schools Online">
+											<img class="card-img v-image ads-img " src="https://www.aviationschoolsonline.com/img/search/geos/Fixed-Wing-Flight-Schools.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8VbixLIHQ7HTQ66AnSJsoUXQzpNdY25XIoA';" alt="Fixed Wing Flight Schools Delaware De Aviation Schools Online">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fixed Wing Flight Schools Delaware De Aviation Schools Online</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://atpflightschool.com/images/aopa-flight-training-magazine-spread.png" data-lightbox="roadtrip" data-title="Use Of The Gi Bill For Flight Training Atp Flight School">
+											<img class="card-img v-image ads-img " src="https://atpflightschool.com/images/aopa-flight-training-magazine-spread.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROItYni5yeJyvdLvAxAlOxD0MwS--NSpq6Lg';" alt="Use Of The Gi Bill For Flight Training Atp Flight School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Use Of The Gi Bill For Flight Training Atp Flight School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://usaeroflight.net/wp-content/uploads/2017/02/Professional-flight-training-can-put-you-here.-1024x683.jpg" data-lightbox="roadtrip" data-title="Finding The Best Flight School For You Usaeroflight">
+											<img class="card-img v-image ads-img " src="https://usaeroflight.net/wp-content/uploads/2017/02/Professional-flight-training-can-put-you-here.-1024x683.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6je6YeMuu_N5iB74npZ5a9ARw-eeW6e2KLg';" alt="Finding The Best Flight School For You Usaeroflight">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Finding The Best Flight School For You Usaeroflight</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/4BBON0LkFvU/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Arizona State Flight School Reviewed Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/4BBON0LkFvU/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpp1RVWZeWsq5V1h4XWFRLLpxWROy5oHjRYw';" alt="Arizona State Flight School Reviewed Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Arizona State Flight School Reviewed Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://4d0q7u11k31p1qnkosal8q2e-wpengine.netdna-ssl.com/wp-content/uploads/2016/01/Helos-landing-US-Army-photo-720x400.png" data-lightbox="roadtrip" data-title="The Ups And Downs Of Using Your Gi Bill To Pay For Flight Training Clearancejobs">
+											<img class="card-img v-image ads-img " src="https://4d0q7u11k31p1qnkosal8q2e-wpengine.netdna-ssl.com/wp-content/uploads/2016/01/Helos-landing-US-Army-photo-720x400.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6KMHsBXQXlQ-GbUVcsXC4az8AXuf9Wi7n8w';" alt="The Ups And Downs Of Using Your Gi Bill To Pay For Flight Training Clearancejobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Ups And Downs Of Using Your Gi Bill To Pay For Flight Training Clearancejobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://redrockflightschool.com/wp-content/uploads/Red-Rock-Logo-Web.svg" data-lightbox="roadtrip" data-title="Red Rock Flight School Professional Arizona Flight School Take Flight With Us">
+											<img class="card-img v-image ads-img " src="http://redrockflightschool.com/wp-content/uploads/Red-Rock-Logo-Web.svg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-y_MB4TGgFf0xTApzq2555zrC0Ur0Eu45IA';" alt="Red Rock Flight School Professional Arizona Flight School Take Flight With Us">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Red Rock Flight School Professional Arizona Flight School Take Flight With Us</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.cae.com/images/made/69438bbdfc03cca3/CAE_two_cadets_Phoenix_Flight_Training_2048x1365_960_640_s.jpg" data-lightbox="roadtrip" data-title="Cae Phoenix Aviation Academy">
+											<img class="card-img v-image ads-img " src="https://www.cae.com/images/made/69438bbdfc03cca3/CAE_two_cadets_Phoenix_Flight_Training_2048x1365_960_640_s.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQpWZs-3pEpiWpSi4Zl_QiwmouhMooJNbgxQ';" alt="Cae Phoenix Aviation Academy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cae Phoenix Aviation Academy</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/apc-ups-va-rating.html">Apc Ups Va Rating</a></li>
+													<li class="list-group-item"><a href="/apply-to-use-montgomery-gi-bill.html">Apply To Use Montgomery Gi Bill</a></li>
+													<li class="list-group-item"><a href="/ask-a-question-va-gi-bill.html">Ask A Question Va Gi Bill</a></li>
+													<li class="list-group-item"><a href="/average-water-bill-in-montgomery-al.html">Average Water Bill In Montgomery Al</a></li>
+													<li class="list-group-item"><a href="/are-veterans-eligible-for-nursing-home-care.html">Are Veterans Eligible For Nursing Home Care</a></li>
+													<li class="list-group-item"><a href="/are-va-the-same-as-watts.html">Are Va The Same As Watts</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-congress-2019.html">American College Of Gastroenterology Congress 2019</a></li>
+													<li class="list-group-item"><a href="/air-force-reserve-post-9-11-gi-bill.html">Air Force Reserve Post 9 11 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/allergic-rhinitis-and-sleep-apnea-va-disability.html">Allergic Rhinitis And Sleep Apnea Va Disability</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-guideline-management-of-acute-pancreatitis.html">American College Of Gastroenterology Guideline Management Of Acute Pancreatitis</a></li>
+													<li class="list-group-item"><a href="/approved-driving-schools-in-virginia.html">Approved Driving Schools In Virginia</a></li>
+													<li class="list-group-item"><a href="/are-gi-bill-payments-taxable.html">Are Gi Bill Payments Taxable</a></li>
+													<li class="list-group-item"><a href="/air-force-gym-shoes.html">Air Force Gym Shoes</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-practice-guidelines-on-lower-gi-bleeding.html">American College Of Gastroenterology Practice Guidelines On Lower Gi Bleeding</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-stress-ulcer-prophylaxis-guidelines.html">American College Of Gastroenterology Stress Ulcer Prophylaxis Guidelines</a></li>
+													<li class="list-group-item"><a href="/are-there-snakes-in-west-virginia.html">Are There Snakes In West Virginia</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-2016-guideline-on-acute-diarrhea.html">American College Of Gastroenterology 2016 Guideline On Acute Diarrhea</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-management-of-crohns-disease-in-adults.html">American College Of Gastroenterology Management Of Crohns Disease In Adults</a></li>
+													<li class="list-group-item"><a href="/allergic-rhinitis-and-sinusitis-va-disability.html">Allergic Rhinitis And Sinusitis Va Disability</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-gerd.html">American College Of Gastroenterology Gerd</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

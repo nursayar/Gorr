@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Gi Bill Mitigating - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Gi Bill Mitigating",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/70/0a/d9/700ad96521b390d9c4348b0f9bfec27d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+gi+bill+mitigating",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Gi Bill Mitigating</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Youll need to meet all of the requirements listed below. An illness or death in. These laws give VA temporary authority to pay education benefits and Monthly Housing Allowance MHA payments to GI Bill students at the resident rate when their programs are converted to online learning solely due to COVID-19. <br>				
+			</p>
+										<a class="badge badge-primary" href="/college-graduation-gift-for-her.html">college graduation gift for her</a>
+											<a class="badge badge-info" href="/common-trees-in-west-virginia.html">common trees in west virginia</a>
+											<a class="badge badge-primary" href="/college-graduation-party-giveaways.html">college graduation party giveaways</a>
+											<a class="badge badge-light" href="/college-graduation-gift-ideas-for-boyfriend.html">college graduation gift ideas for boyfriend</a>
+											<a class="badge badge-secondary" href="/common-trees-of-west-virginia.html">common trees of west virginia</a>
+											<a class="badge badge-light" href="/common-trees-of-virginia.html">common trees of virginia</a>
+											<a class="badge badge-success" href="/college-gymnastics-photo-gallery.html">college gymnastics photo gallery</a>
+											<a class="badge badge-warning" href="/college-gymnastics-division-1.html">college gymnastics division 1</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you have come to visit the ideal blog.  Our website provides you with suggestions for seeing the maximum quality video and picture content, search and find more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, especially Youtube, therefore we recommend this movie for you to see.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://savivets.wpengine.com/wp-content/uploads/2018/10/shutterstock_555572386.jpg" data-lightbox="roadtrip" data-title="Understanding Your Gi Bill Montgomery Vs Post 9 11 Savi">
+											<img class="card-img v-image ads-img " src="http://savivets.wpengine.com/wp-content/uploads/2018/10/shutterstock_555572386.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxLvdV6k5Cg61ven6nV3eEHhEiBqLk5bTnOQ';" alt="Understanding Your Gi Bill Montgomery Vs Post 9 11 Savi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Understanding Your Gi Bill Montgomery Vs Post 9 11 Savi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://veterans.fsu.edu/sites/g/files/upcbnu1541/files/alliance_3.png" data-lightbox="roadtrip" data-title="Faqs Student Veterans Center">
+											<img class="card-img v-image ads-img " src="https://veterans.fsu.edu/sites/g/files/upcbnu1541/files/alliance_3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxjnFInUkm8stMYLMl7Xvl3RRuAhSw8e7eBg';" alt="Faqs Student Veterans Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Faqs Student Veterans Center</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="oqGQFoKQdBTFMM" data-lightbox="roadtrip" data-title="Https Www Csusb Edu Sites Default Files Covid 2019 20faqs 20va 20educational 20benefits Pdf">
+											<img class="card-img v-image ads-img " src="oqGQFoKQdBTFMM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuMJIXd1wUaKhWjQkbUkaHDqXJ_UeWUbKjZg';" alt="Https Www Csusb Edu Sites Default Files Covid 2019 20faqs 20va 20educational 20benefits Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Csusb Edu Sites Default Files Covid 2019 20faqs 20va 20educational 20benefits Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.mccneb.edu/getattachment/Prospective-Students/Tuition-Financial-Assistance/Financial-Aid/Veteran-Services/COVIC-19_student-help_btn.png.aspx?lang=en-US" data-lightbox="roadtrip" data-title="Metropolitan Community College Financial Aid">
+											<img class="card-img v-image ads-img " src="https://www.mccneb.edu/getattachment/Prospective-Students/Tuition-Financial-Assistance/Financial-Aid/Veteran-Services/COVIC-19_student-help_btn.png.aspx?lang=en-US" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS19q-zB9_WXbGCr_4YrkbxAiLjmuioOcEFAg';" alt="Metropolitan Community College Financial Aid">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Metropolitan Community College Financial Aid</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.cem.va.gov/CEM/images/history/NCA_America_WWII_Burial_Program.png" data-lightbox="roadtrip" data-title="History Publications And Outreach National Cemetery Administration">
+											<img class="card-img v-image ads-img " src="https://www.cem.va.gov/CEM/images/history/NCA_America_WWII_Burial_Program.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2o39r36zRZj89C-sO9OpquoPrb9KF4oyFsw';" alt="History Publications And Outreach National Cemetery Administration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">History Publications And Outreach National Cemetery Administration</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.northeaststate.edu/uploadedImages/Admissions_and_Records/Veterans_Affairs/Academic%20Progress.jpg" data-lightbox="roadtrip" data-title="Academic Progress">
+											<img class="card-img v-image ads-img " src="https://www.northeaststate.edu/uploadedImages/Admissions_and_Records/Veterans_Affairs/Academic%20Progress.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX5wbkx3sFW9Az6G6e-B7lzn76klUtPGDfYg';" alt="Academic Progress">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Academic Progress</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ca/98/69/ca9869bf9b5ad9bb88c28b819cfbf841.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX5wbkx3sFW9Az6G6e-B7lzn76klUtPGDfYg';" alt="Academic Progress">
+										<div class="card-body">
+						<h3 class="h5"><b>Any withdrawal with a mitigating circumstance selected will require additional documentation of the mitigating circumstance to be submitted to FIU prior to the mitigating circumstance being reported.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va gi bill mitigating</strong>. 
+								
+																	If you withdraw from a course after the end of the drop period you may have to repay all benefits for the course unless you can show that the change was due to mitigating circumstances. 
+																	See how VA is responding to COVID-19 and supporting GI Bill beneficiaries. 
+																	Examples of mitigating circumstances are. 
+																	Acceptable mitigating circumstances must be provided in order to pay benefits for the period of attendance prior to the drop date. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Navigating Your GI Bill - Education and Training. 
+																	If youre using the Post-911 GI Bill you cant get an advance payment. 
+																	An illness or injury afflicting the student during the enrollment period. 
+																	This depends on which GI Bill program youre using. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If a student drops a course or withdraws from school after the dropadd period and receives a non-punitive grade VA must reduce benefits effective the first day of the term unless the student provides evidence of mitigating circumstances. 
+																	According to VAs GI Bill website. 
+																	Handouts and Forms - Education and Training Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+																	Attention A T users. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The GI Bill provides education benefits to veterans and their dependents. 
+																	If you drop classes or drop out altogether VA is required by law to retroactively stop payments as if you never attended - unless you give us a reasonable explanation usually something that happened beyond your control - that caused you to drop one or more classes mitigating circumstances. 
+																	To enter and activate the submenu links hit the down arrow. 
+																	From the beginning of COVID-19 we have been working with Congress to preserve GI Bill benefits for those impacted by COVID-19. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA One-Time Exception OTE for Mitigating Circumstances One-time exception intended to lessen the financial impact on a student withdrawing from a course. 
+																	Department of Veterans Affairs. 
+																	You can contact our call center at 1-888-442-4451 or ask a question pertaining to benefits or your claim. 
+																	If VA does not receive prompt notice of a change you could be liable for an overpayment of benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Post-911 GI Bill US. 
+																	The VA defines mitigating circumstances as unavoidable and unexpected events that directly interfere with your pursuit of a course and are beyond your control. 
+																	If they are not provided and. 
+																	The VA requires that students using GI Bill benefits excluding Post 911 GI Bill verify their enrollment monthly. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	No Ch33 GI Bill is always considered the last payer on your account outside of Financial Aid. 
+																	VA automatically grantsmitigating circumstancesfor up to 6 credits the first time a student reduces or terminates and mitigating circumstances must be. 
+																	Hit enter to expand a main menu option Health Benefits etc. 
+																	Request that the certifying official notify the appropriate VA RPO of the change. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Also notify your RPO by using the Ask a Question tab in the Questions and Answers section of the GI BILL web site. 
+																	The VA requires students using the Post-911 GI Bill to provide mitigating circumstances when they withdraw from or drop a course after the dropadd period and receive a non-punitive grade. 
+																	Realizing that sometimes situations arise that result in you dropping classes the VA automatically grants mitigating circumstances for up to 6 credits the first time you drop a class or classes. 
+																	If youre using a GI Bill program other than the Post-911 GI Bill you may be able to get an advance payment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To access the menus on this page please perform the following steps. 
+																	It is also highly recommended that you follow up with the TESU Office of Military Veteran Affairs OMVE at 609-777-5696 to develop a game plan to minimize the financial impact. 
+																	In the Spring of 2020 the President signed Public Law 116-128 then Public Law 116-140 Student Veteran Coronavirus Response Act of 2020. 
+																	The VA calls these things mitigating circumstances in fact they list several on their website. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Currently VA is processing the majority of original enrollments within 24 days and the majority of re-enrollments within 12 days. 
+																	Please switch auto forms mode to off. 
+																	Mitigating circumstances are circumstances beyond the students control that cause the student to make changes in their enrollment. 
+																	This payment priority is required by the VA and UCCS will notify other TA sponsors of any Ch33 benefits being received. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.beautyschools.org/site/wp-content/uploads/2020/03/1200px-Seal_of_the_U.S._Department_of_Veterans_Affairs.svg-e1584989268861.png" data-lightbox="roadtrip" data-title="Coronavirus Resource Center American Association Of Cosmetology Schools">
+											<img class="card-img v-image ads-img " src="https://www.beautyschools.org/site/wp-content/uploads/2020/03/1200px-Seal_of_the_U.S._Department_of_Veterans_Affairs.svg-e1584989268861.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXtGoPkSQhACTaZMqyj-uGvZt7Ihb1lVSp1Q';" alt="Coronavirus Resource Center American Association Of Cosmetology Schools">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coronavirus Resource Center American Association Of Cosmetology Schools</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/65/79/a96579b18e80762157cf69832b41b6a2.png" data-lightbox="roadtrip" data-title="Chsi International Medical Careers Military Civilian Medical Careers Medical Job Career">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/65/79/a96579b18e80762157cf69832b41b6a2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Zq-0f44Ark0X8gYcKpTmF7uEpXVMMmSXBA';" alt="Chsi International Medical Careers Military Civilian Medical Careers Medical Job Career">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chsi International Medical Careers Military Civilian Medical Careers Medical Job Career</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/ad/5e/6fad5e6ff321d66db925c728b0ac80e8.jpg" data-lightbox="roadtrip" data-title="Error Page Not Found The Movie Times Actors Military Base Vietnam War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/ad/5e/6fad5e6ff321d66db925c728b0ac80e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlhgpHfRyUMUwCTKcHLCeWjnGHfhKI4sft-Q';" alt="Error Page Not Found The Movie Times Actors Military Base Vietnam War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Error Page Not Found The Movie Times Actors Military Base Vietnam War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/9b/66/2d9b662ab41008d1ed95b428eaf17d2f.jpg" data-lightbox="roadtrip" data-title="Pin On History Ww I">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/9b/66/2d9b662ab41008d1ed95b428eaf17d2f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyOMuxWPpCrQ6Vp73LhlOQ_fU08IvSAqjrhQ';" alt="Pin On History Ww I">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On History Ww I</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/98/69/ca9869bf9b5ad9bb88c28b819cfbf841.jpg" data-lightbox="roadtrip" data-title="Douglas Macarthur Wikipedia The Free Encyclopedia Douglas Macarthur Philippine Army World War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/98/69/ca9869bf9b5ad9bb88c28b819cfbf841.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQedChVqT6r1vqhtoJnkH6TIriGp9bPnTnTZg';" alt="Douglas Macarthur Wikipedia The Free Encyclopedia Douglas Macarthur Philippine Army World War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Douglas Macarthur Wikipedia The Free Encyclopedia Douglas Macarthur Philippine Army World War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/0a/d9/700ad96521b390d9c4348b0f9bfec27d.jpg" data-lightbox="roadtrip" data-title="Coasthills Credit Union In Lompoc Ca 93436 Is Seeking A Mis Support Operator 1 Must Have Knowledge Of Branch Operational Activiti Lompoc Supportive Job Career">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/0a/d9/700ad96521b390d9c4348b0f9bfec27d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtoslxA_8BAdJd2owgGOa0LGy3efkYvHyamA';" alt="Coasthills Credit Union In Lompoc Ca 93436 Is Seeking A Mis Support Operator 1 Must Have Knowledge Of Branch Operational Activiti Lompoc Supportive Job Career">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coasthills Credit Union In Lompoc Ca 93436 Is Seeking A Mis Support Operator 1 Must Have Knowledge Of Branch Operational Activiti Lompoc Supportive Job Career</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/e7/bb/d8e7bb3bd84b4d6f9725489d4b59a852.png" data-lightbox="roadtrip" data-title="Pin On Wwii">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/e7/bb/d8e7bb3bd84b4d6f9725489d4b59a852.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwAZ-WJ5LsZBrRi2rQTBQ_ULoN2PSLYZxhGQ';" alt="Pin On Wwii">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Wwii</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/59/68/3a596889595d3ab24600669ad57b3f26.jpg" data-lightbox="roadtrip" data-title="Admiral Chester Nimitz World War Two World War Navy Admiral">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/59/68/3a596889595d3ab24600669ad57b3f26.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqUkwD1htabz57Q-1jytY1eEmJ5hH2CxGcnA';" alt="Admiral Chester Nimitz World War Two World War Navy Admiral">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Admiral Chester Nimitz World War Two World War Navy Admiral</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/1d/4a/6a1d4a845aacbd01e6a1fff6b468c31a.jpg" data-lightbox="roadtrip" data-title="Pin On Pancakes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/1d/4a/6a1d4a845aacbd01e6a1fff6b468c31a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw9qzjPcI6-D1O3S-fzaJ0AZaYMjx4g3O-CQ';" alt="Pin On Pancakes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Pancakes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/ae/9a/ffae9a7cd0a79dd94cc55014ab749767.jpg" data-lightbox="roadtrip" data-title="Advanced Combat Helmet Ach 101st Sustainment Brigade Camo Cover Nvg Mount Ess Combat Helmet Helmet Combat">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/ae/9a/ffae9a7cd0a79dd94cc55014ab749767.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2NKXncU7-kZOCjTgF9Zqc5ZipIrDJh_CiLQ';" alt="Advanced Combat Helmet Ach 101st Sustainment Brigade Camo Cover Nvg Mount Ess Combat Helmet Helmet Combat">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Advanced Combat Helmet Ach 101st Sustainment Brigade Camo Cover Nvg Mount Ess Combat Helmet Helmet Combat</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/28/6d/11286d654f39821f41425f965ef9b3d9.jpg" data-lightbox="roadtrip" data-title="How To Become A Hospital Administrator A Brief Rundown Of A Hospital Administration Lea Healthcare Administration Healthcare Administration Career Health Care">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/28/6d/11286d654f39821f41425f965ef9b3d9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6qdcveroP6BFndOAjzwayDxhQUbzeUykGZw';" alt="How To Become A Hospital Administrator A Brief Rundown Of A Hospital Administration Lea Healthcare Administration Healthcare Administration Career Health Care">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Become A Hospital Administrator A Brief Rundown Of A Hospital Administration Lea Healthcare Administration Healthcare Administration Career Health Care</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/is-major-depressive-disorder-a-disability-under-the-ada.html">Is Major Depressive Disorder A Disability Under The Ada</a></li>
+													<li class="list-group-item"><a href="/is-va-disability-non-taxable-income.html">Is Va Disability Non Taxable Income</a></li>
+													<li class="list-group-item"><a href="/is-vietnam-veterans-of-america-picking-up-donations.html">Is Vietnam Veterans Of America Picking Up Donations</a></li>
+													<li class="list-group-item"><a href="/kill-bill-box-office.html">Kill Bill Box Office</a></li>
+													<li class="list-group-item"><a href="/kidney-va-disability-rating.html">Kidney Va Disability Rating</a></li>
+													<li class="list-group-item"><a href="/is-recurrent-depressive-disorder-a-disability.html">Is Recurrent Depressive Disorder A Disability</a></li>
+													<li class="list-group-item"><a href="/kill-bill-chapter-3.html">Kill Bill Chapter 3</a></li>
+													<li class="list-group-item"><a href="/is-anyone-picking-up-donations.html">Is Anyone Picking Up Donations</a></li>
+													<li class="list-group-item"><a href="/is-the-gi-bill-housing-allowance-taxable.html">Is The Gi Bill Housing Allowance Taxable</a></li>
+													<li class="list-group-item"><a href="/joint-pain-va-disability.html">Joint Pain Va Disability</a></li>
+													<li class="list-group-item"><a href="/is-covid-increasing-in-virginia.html">Is Covid Increasing In Virginia</a></li>
+													<li class="list-group-item"><a href="/java-vs-go.html">Java Vs Go</a></li>
+													<li class="list-group-item"><a href="/kill-bill-deadly-viper-assassination-squad.html">Kill Bill Deadly Viper Assassination Squad</a></li>
+													<li class="list-group-item"><a href="/kill-bill-cold-war-skin.html">Kill Bill Cold War Skin</a></li>
+													<li class="list-group-item"><a href="/is-the-post-911-gi-bill-considered-a-scholarship.html">Is The Post 911 Gi Bill Considered A Scholarship</a></li>
+													<li class="list-group-item"><a href="/is-the-post-9-11-gi-bill-considered-a-scholarship.html">Is The Post 9 11 Gi Bill Considered A Scholarship</a></li>
+													<li class="list-group-item"><a href="/is-major-depressive-disorder-an-ada-disability.html">Is Major Depressive Disorder An Ada Disability</a></li>
+													<li class="list-group-item"><a href="/is-anyone-picking-up-donations-during-covid.html">Is Anyone Picking Up Donations During Covid</a></li>
+													<li class="list-group-item"><a href="/is-the-gi-bill-considered-financial-aid.html">Is The Gi Bill Considered Financial Aid</a></li>
+													<li class="list-group-item"><a href="/is-depression-a-disability-in-australia.html">Is Depression A Disability In Australia</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

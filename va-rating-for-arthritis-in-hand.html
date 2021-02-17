@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Rating For Arthritis In Hand - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Rating For Arthritis In Hand",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/474x/e3/e1/49/e3e1495c189801d29090ec9774362805.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+rating+for+arthritis+in+hand",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Rating For Arthritis In Hand</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The VA official site states that 20 and 10 ratings mentioned above cannot be combined with ratings based on limitation of motion. Hands are one of the common areas in which people develop OA. Lower ratings will be assigned for occasional incapacitating episodes. <br>				
+			</p>
+										<a class="badge badge-info" href="/hi-bill-full-movie-sub-indo.html">hi bill full movie sub indo</a>
+											<a class="badge badge-info" href="/housing-go-fund-me.html">housing go fund me</a>
+											<a class="badge badge-dark" href="/house-bill-of-lading-nghia-la-gi.html">house bill of lading nghia la gi</a>
+											<a class="badge badge-dark" href="/health-benefits-for-disabled-veterans.html">health benefits for disabled veterans</a>
+											<a class="badge badge-danger" href="/health-insurance-cost-veteran.html">health insurance cost veteran</a>
+											<a class="badge badge-warning" href="/health-insurance-for-military-reserve.html">health insurance for military reserve</a>
+											<a class="badge badge-success" href="/health-insurance-for-va-caregivers.html">health insurance for va caregivers</a>
+											<a class="badge badge-warning" href="/home-health-care-benefits-for-veterans.html">home health care benefits for veterans</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you've come to visit the ideal blog.  Our site gives you hints for viewing the maximum quality video and image content, hunt and find more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, therefore we recommend this video for you to see.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/88/b1/61/88b16174b252be00fbb8dc30f9657bff.jpg" data-lightbox="roadtrip" data-title="Pin On Arthritis Living">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/88/b1/61/88b16174b252be00fbb8dc30f9657bff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwYR_KBb6dIXbYKmBDBAXh7NU6LCxX8m2KjQ';" alt="Pin On Arthritis Living">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Arthritis Living</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/7c/35/b2/7c35b2e945dcad81b1a10a8612cb6e22.jpg" data-lightbox="roadtrip" data-title="Rheumatoid Arthritis Symptoms Arthritis Symptoms Rheumatoid Arthritis Symptoms Arthritis Relief">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/7c/35/b2/7c35b2e945dcad81b1a10a8612cb6e22.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_WUGSO0pOXAAwhDN4b2iJw99kcJNeE7pmxw';" alt="Rheumatoid Arthritis Symptoms Arthritis Symptoms Rheumatoid Arthritis Symptoms Arthritis Relief">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rheumatoid Arthritis Symptoms Arthritis Symptoms Rheumatoid Arthritis Symptoms Arthritis Relief</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/f6/14/93/f6149322613f221b912125043ba4a9d9.jpg" data-lightbox="roadtrip" data-title="Pin On Arthritis Supplements">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/f6/14/93/f6149322613f221b912125043ba4a9d9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgKamVNaSKVIGam1O6570HqWjE32un760V-w';" alt="Pin On Arthritis Supplements">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Arthritis Supplements</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/72/74/c272749eec60935f58151915621cbec2.jpg" data-lightbox="roadtrip" data-title="Osteoarthritis Late Stage In The Hand Arthritis Remedies Home Remedies For Arthritis Arthritis In Fingers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/72/74/c272749eec60935f58151915621cbec2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQ8_wZ9qeAJVxeT6rEUpY_dXyfOvyWBoCKw';" alt="Osteoarthritis Late Stage In The Hand Arthritis Remedies Home Remedies For Arthritis Arthritis In Fingers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Osteoarthritis Late Stage In The Hand Arthritis Remedies Home Remedies For Arthritis Arthritis In Fingers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/c2/4f/92/c24f9260c876e8546965f85445c0df0e.jpg" data-lightbox="roadtrip" data-title="Pin On Ease Your Arthritis">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/c2/4f/92/c24f9260c876e8546965f85445c0df0e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF3b4IcXxJEupgkp6KYcfFNhFnXu0zKAMdsA';" alt="Pin On Ease Your Arthritis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ease Your Arthritis</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/91/1c/e9911c55a7f822d9c18f8fe0bf766fc8.png" data-lightbox="roadtrip" data-title="Pin On Va Claim">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/91/1c/e9911c55a7f822d9c18f8fe0bf766fc8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS7oWKbrGWHJv-HzVJKRuVXy5pFvWKUv6e4g';" alt="Pin On Va Claim">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Va Claim</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/c2/72/74/c272749eec60935f58151915621cbec2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS7oWKbrGWHJv-HzVJKRuVXy5pFvWKUv6e4g';" alt="Pin On Va Claim">
+										<div class="card-body">
+						<h3 class="h5"><b>Rheumatoid Arthritis is rated under Diagnostic Code 5002.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va rating for arthritis in hand</strong>. 
+								
+																	Im rated at 10 for my left wrist due to an injury that has developed into arthritis. 
+																	They rated this at zero due to my not asking for it. 
+																	Slight 10 moderate 20 or severe 30 under Diagnostic Code 5257. 
+																	One or two painful flare-ups a year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Im one of the 60 psoriasis guys. 
+																	Important Information On Combined Ratings For The Degenerative Arthritis Condition. 
+																	These rating systems offer rating options for Musculoskeletal Diseases that are intended to reflect the amount of impact the condition has on the veterans ability to work andor function in daily life. 
+																	Also not everything is automatic. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You cant hold down a steady job that supports you financially known as substantially gainful employment because of. 
+																	That is assuming youve already been diagnosed as having RA. 
+																	VA math can be a mess when you are adding a 10 rating for your left elbow and a 30 rating for your right hand. 
+																	Have your doctor specifically use this language when heshe explains your limitations due to knee arthritis. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VA awards disability compensation for each Hand condition that is service-connectedThe DoD will also rate service-connected conditions as long as they also make the service member Unfit for DutyFor Reservists the condition must have occurred in or resulted from an injury in the Line of Duty to qualify. 
+																	This is a higher rate than among the civilian population and it is one of the leading causes of physical disability. 
+																	Additionally he should explain why your condition falls into that particular category. 
+																	Several rating criteria affect the total rating decision. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Look in 38 CFR for schedule of ratings for Code 7816 and youll see how ratings are determined. 
+																	The VA policy in this area includes a prohibition on combining ratings. 
+																	To receive a 20 percent rating for degenerative arthritis X-ray evidence must show that two or more major joints or two or more groups of minor joints have degenerative arthritis and produce occasional incapacitating episodes. 
+																	VA Disability Rating for Arthritis in Hands 1. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The rating schedule is as follows. 
+																	Knowing how the VA determines benefits for arthritis can also help Veterans get their condition service-connected. 
+																	Its important that your doctor use these three terms to explain your limitations due to arthritis. 
+																	OA is commonly known as degenerative arthritis because it causes a steady decline in the cartilage between the bones. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VA Ratings Schedule for Rheumatoid Arthritis. 
+																	Arthritis and a meniscus condition in your knee you can only receive a rating for one of the two conditions whichever gives the higher rating. 
+																	That means that a rheumatoid arthritis disability rating wont be permanent. 
+																	The VA has 3 ways to categorize this aspect when rating arthritis of the knee. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I currently receive a 70 disability rating from the VA but on the rating report they noted I had degenerative arthritis in both hands verified by xrays. 
+																	If it was right hand the most they would give is 40. 
+																	RA can be evaluated at up to a 100 percent disability rating if it results in the veteran becoming bedridden or complete incapacitation. 
+																	Slight 10 moderate 20 or severe 30. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You have at least 1 service-connected disability rated at 60 or more disabling or 2 or more service-connected. 
+																	Veterans suffering from osteoarthritis may be eligible for disability benefits from the Department of Veterans Affairs VA. 
+																	To be rated at 10 percent for degenerative arthritis veterans must have X-ray evidence revealing two or more major joints or two or more groups of minor joints are afflicted by degenerative arthritis. 
+																	The VA rating specialist will categorize instability of the joint in three ways. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Musculoskeletal System is vast and complex consisting of muscles tendons. 
+																	Since flare-ups come and go the minimum rating is 20 if you have 2 bad times a year. 
+																	A Vet Might Get VA Disability Benefits for Knee Pain from a Variety of Different Conditions. 
+																	The first rating system for Diseases of the Musculoskeletal System is Degenerative Arthritis. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Osteoarthritis OA is the most common form of arthritis and is defined by Mayo Clinic as a degenerative condition in which the protective cartilage that cushions the ends of your bones wears down over time. 
+																	Im not sure how they rate both wrists as mine only effects my left. 
+																	Rheumatoid arthritis as an active condition may receive a 100 VA disability rating if you experience constitutional manifestations associated with active joint involvement and is totally incapacitating. 
+																	However both are still rated under the musculoskeletal system conditions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VA has their way of looking at the systemic therapy - methotrexate adalimumab etc are included any topical applications are not. 
+																	The 100 rating for all over pain in movement from rheumatoid arthritis might make more sense to your doctor too. 
+																	Im right hand dominate so the most they will ever give me 30. 
+																	Hand osteoarthritis OA happens when the cartilage in the finger bones wears down where two bones meet. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	So if your arthritis gives a higher rating than the meniscus condition then it is rated Only one rating per joint. 
+																	Under the schedule of ratings in the VA regulations arthritis may be rated under degenerative arthritis or rheumatoid arthritis. 
+																	In fact the Center for Disease Control CDC estimates the rate of arthritis in veterans to be 256 although other estimates have the rate as high as 35. 
+																	They base it on your dominance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The key was continuity of care and immunosuppressive biological drugs for a year. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/be/18/09/be180960ff7bb03112cdd5be7da4133d.jpg" data-lightbox="roadtrip" data-title="16 Brilliant Neuropathy Shoes Ideas Lupus Hacks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/be/18/09/be180960ff7bb03112cdd5be7da4133d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYgwvwRLbB50D3iOO7ay5tP4eFNKcMMdH6cg';" alt="16 Brilliant Neuropathy Shoes Ideas Lupus Hacks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">16 Brilliant Neuropathy Shoes Ideas Lupus Hacks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/63/7f/cd637f26197bbc5102b9e3ea17919905.png" data-lightbox="roadtrip" data-title="Agent Orange And Your Va Claim Receiving Compensation For Agent Orange Exposure Can Be A Complicated Experience Here Are Agent Orange Beginning Reading Orange">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/63/7f/cd637f26197bbc5102b9e3ea17919905.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvywOWV9H0CM2opg_Lpz8Yrgoc2fB3UX2j7A';" alt="Agent Orange And Your Va Claim Receiving Compensation For Agent Orange Exposure Can Be A Complicated Experience Here Are Agent Orange Beginning Reading Orange">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Agent Orange And Your Va Claim Receiving Compensation For Agent Orange Exposure Can Be A Complicated Experience Here Are Agent Orange Beginning Reading Orange</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/90/45/839045c3b69aa7124fc261ccafe128fc.png" data-lightbox="roadtrip" data-title="Military Disability Ratings For Genitourinary System Conditions Military Disability Chronic Cystitis Renal Disease">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/90/45/839045c3b69aa7124fc261ccafe128fc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOz4fym4QO3plqO5PdihWWRucStBA_g3HNGw';" alt="Military Disability Ratings For Genitourinary System Conditions Military Disability Chronic Cystitis Renal Disease">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Disability Ratings For Genitourinary System Conditions Military Disability Chronic Cystitis Renal Disease</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/36/b2/25/36b225b86f72130eb7a6dc2e30a928a6.jpg" data-lightbox="roadtrip" data-title="Epingle Sur Small Fiber Neuropathy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/36/b2/25/36b225b86f72130eb7a6dc2e30a928a6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1y6Dr_p6GptA7xnZUE0cyMyeWLNSa78skmg';" alt="Epingle Sur Small Fiber Neuropathy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Epingle Sur Small Fiber Neuropathy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/1d/e6/77/1de677d02669f7c786f307ac2a1e77f6.jpg" data-lightbox="roadtrip" data-title="Pin On Small Fiber Neuropathy Progression">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/1d/e6/77/1de677d02669f7c786f307ac2a1e77f6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm2225c_31GGsTDyySKzpu9DQ10rMmyzV52Q';" alt="Pin On Small Fiber Neuropathy Progression">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Small Fiber Neuropathy Progression</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/62/2f/4c622f6507828d63318b8a6197c7e828.png" data-lightbox="roadtrip" data-title="Military Disability Ratings For Knee And Lower Leg Conditions Military Disability Lower Leg Knee">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/62/2f/4c622f6507828d63318b8a6197c7e828.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIYoIC1Sm1o9LFX3t1dogOmTNi-oqlXlLzLg';" alt="Military Disability Ratings For Knee And Lower Leg Conditions Military Disability Lower Leg Knee">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Disability Ratings For Knee And Lower Leg Conditions Military Disability Lower Leg Knee</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/9d/d3/f8/9dd3f8aef15c86456909a984d58a7436.jpg" data-lightbox="roadtrip" data-title="Pin On Natural Cures For Neuropathy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/9d/d3/f8/9dd3f8aef15c86456909a984d58a7436.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmFQvQpWVfl714q4-Fk8UnYMEiSKMWqVJTUg';" alt="Pin On Natural Cures For Neuropathy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Natural Cures For Neuropathy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/2c/8c/142c8c6fa17ef6a3d9cf3afdabedb947.jpg" data-lightbox="roadtrip" data-title="Pin On Arthritis Info">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/2c/8c/142c8c6fa17ef6a3d9cf3afdabedb947.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdWdXuMT-kTMs60GLrnIjq9bneOwf8ICUgmg';" alt="Pin On Arthritis Info">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Arthritis Info</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/e3/e1/49/e3e1495c189801d29090ec9774362805.jpg" data-lightbox="roadtrip" data-title="11 Fabulous Neuropathy Workout Ideas Acupuncture">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/e3/e1/49/e3e1495c189801d29090ec9774362805.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBVE360kSfvIBUc8fDkYB71HM6D8Rf3rhi4Q';" alt="11 Fabulous Neuropathy Workout Ideas Acupuncture">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">11 Fabulous Neuropathy Workout Ideas Acupuncture</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/86/e9/d986e9c96757b21253a93f3cfe00b779.jpg" data-lightbox="roadtrip" data-title="Do The Right Thangg And Follow Me Im The Wave Bro Pinns Be Litt Lovegne Don T Be Takingg My Pinns And Don T Give M Outfit Shoes Shoes Sock Shoes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/86/e9/d986e9c96757b21253a93f3cfe00b779.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXbJaDMmhx2MWPvWrlcrzwJcVH4B0mJH6_Lg';" alt="Do The Right Thangg And Follow Me Im The Wave Bro Pinns Be Litt Lovegne Don T Be Takingg My Pinns And Don T Give M Outfit Shoes Shoes Sock Shoes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Do The Right Thangg And Follow Me Im The Wave Bro Pinns Be Litt Lovegne Don T Be Takingg My Pinns And Don T Give M Outfit Shoes Shoes Sock Shoes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/be/c5/37/bec537f244bbb7a9babc08d8dd1d5140.jpg" data-lightbox="roadtrip" data-title="11 Amazing Benefits Of Turmeric Golden Milk How To Prepare Foods For Arthritis Arthritis Chia Seeds Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/be/c5/37/bec537f244bbb7a9babc08d8dd1d5140.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRigPK4nUwH5IwdipDDOpxWbwQZoqsSwU9WlQ';" alt="11 Amazing Benefits Of Turmeric Golden Milk How To Prepare Foods For Arthritis Arthritis Chia Seeds Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">11 Amazing Benefits Of Turmeric Golden Milk How To Prepare Foods For Arthritis Arthritis Chia Seeds Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/f1/b3/53f1b35d74f6079f528d9e04d73bdbcd.png" data-lightbox="roadtrip" data-title="217 How To Win Your Va Claim With Lay Evidence Live With Va Claims Insider Youtube Exam Prep Exams Tips Exam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/f1/b3/53f1b35d74f6079f528d9e04d73bdbcd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThXzZeckCxH9GBiGcd5dluDRlzJ4AsttlWeQ';" alt="217 How To Win Your Va Claim With Lay Evidence Live With Va Claims Insider Youtube Exam Prep Exams Tips Exam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">217 How To Win Your Va Claim With Lay Evidence Live With Va Claims Insider Youtube Exam Prep Exams Tips Exam</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/eb/8b/ee/eb8bee65efc74a51ccad192b78b6ced3.jpg" data-lightbox="roadtrip" data-title="Kidney Disease Quotes Autoimmune Kidney Disease Stages Kidney Disease Kidney Disease Diet">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/eb/8b/ee/eb8bee65efc74a51ccad192b78b6ced3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlbRdkdVWirwag2PoGS1QkKoEb056-Hfn9gA';" alt="Kidney Disease Quotes Autoimmune Kidney Disease Stages Kidney Disease Kidney Disease Diet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kidney Disease Quotes Autoimmune Kidney Disease Stages Kidney Disease Kidney Disease Diet</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-to-help-a-combat-veteran-with-ptsd.html">How To Help A Combat Veteran With Ptsd</a></li>
+													<li class="list-group-item"><a href="/how-to-check-your-montgomery-gi-bill-status.html">How To Check Your Montgomery Gi Bill Status</a></li>
+													<li class="list-group-item"><a href="/how-to-change-montgomery-gi-bill-to-post-911-gi-bill.html">How To Change Montgomery Gi Bill To Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-to-determine-va-disability-rating-for-ptsd.html">How To Determine Va Disability Rating For Ptsd</a></li>
+													<li class="list-group-item"><a href="/how-to-get-ssdi-for-ptsd.html">How To Get Ssdi For Ptsd</a></li>
+													<li class="list-group-item"><a href="/how-to-get-a-va-rating-for-tinnitus.html">How To Get A Va Rating For Tinnitus</a></li>
+													<li class="list-group-item"><a href="/how-to-get-coe-for-gi-bill.html">How To Get Coe For Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-to-help-a-veteran-with-ptsd.html">How To Help A Veteran With Ptsd</a></li>
+													<li class="list-group-item"><a href="/how-to-get-gi-bill-for-college.html">How To Get Gi Bill For College</a></li>
+													<li class="list-group-item"><a href="/how-to-cure-benign-paroxysmal-positional-vertigo-bppv.html">How To Cure Benign Paroxysmal Positional Vertigo Bppv</a></li>
+													<li class="list-group-item"><a href="/how-to-get-disability-benefits-for-ptsd.html">How To Get Disability Benefits For Ptsd</a></li>
+													<li class="list-group-item"><a href="/how-to-get-your-gi-bill-back.html">How To Get Your Gi Bill Back</a></li>
+													<li class="list-group-item"><a href="/how-to-help-dog-with-ptsd.html">How To Help Dog With Ptsd</a></li>
+													<li class="list-group-item"><a href="/how-to-calculate-va-employee-pension.html">How To Calculate Va Employee Pension</a></li>
+													<li class="list-group-item"><a href="/how-to-get-gi-bill-extension.html">How To Get Gi Bill Extension</a></li>
+													<li class="list-group-item"><a href="/how-to-estimate-va-disability-rating.html">How To Estimate Va Disability Rating</a></li>
+													<li class="list-group-item"><a href="/how-to-get-your-montgomery-gi-bill-money-back.html">How To Get Your Montgomery Gi Bill Money Back</a></li>
+													<li class="list-group-item"><a href="/how-to-get-50-disability-for-ptsd.html">How To Get 50 Disability For Ptsd</a></li>
+													<li class="list-group-item"><a href="/how-to-increase-a-0-va-disability-rating.html">How To Increase A 0 Va Disability Rating</a></li>
+													<li class="list-group-item"><a href="/how-to-get-your-gi-bill-money.html">How To Get Your Gi Bill Money</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

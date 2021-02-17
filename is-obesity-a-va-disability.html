@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Is Obesity A Va Disability - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Is Obesity A Va Disability",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/236x/95/00/d2/9500d2f47639893417da49db3b5b4272.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=is+obesity+a+va+disability",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Is Obesity A Va Disability</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Given that obesity is a diagnosable disease you may be wondering if you could get disability compensation for obesity. Obesity And Social Security Disability Disability Benefits Help Obesity A Disability Fit For Work Obesity Is Not A Disability And It S Time Fat People Started Taking Responsibility For Themselves Carole Malone Mirror Online How America S Obesity Epidemic Became The New Face Of Disability Quartz Obesity As A Disability What Does This Mean For. You cannot get direct service connection for obesity. <br>				
+			</p>
+										<a class="badge badge-info" href="/did-zales-go-out-of-business.html">did zales go out of business</a>
+											<a class="badge badge-success" href="/did-i-understand-you.html">did i understand you</a>
+											<a class="badge badge-secondary" href="/difference-between-gi-bill-and-hazlewood.html">difference between gi bill and hazlewood</a>
+											<a class="badge badge-secondary" href="/didi-kempot-chord.html">didi kempot chord</a>
+											<a class="badge badge-info" href="/disabled-american-vets-donation.html">disabled american vets donation</a>
+											<a class="badge badge-info" href="/didi-games-cooking.html">didi games cooking</a>
+											<a class="badge badge-light" href="/did-shanks-go-to-raftel.html">did shanks go to raftel</a>
+											<a class="badge badge-warning" href="/digi-x.html">digi x</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to pay a visit to the right blog.  Our site provides you with suggestions for viewing the highest quality video and image content, hunt and find more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie that you view.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7c/c7/a3/7cc7a343eacd894bf0edf90de872076c.jpg" data-lightbox="roadtrip" data-title="Health Illustration Malfunction Obesity Risks Stock Vector Download Health Risks Of Obesity Stock Vector In 2020 Obesity Art Obesity Infographics Health Risks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7c/c7/a3/7cc7a343eacd894bf0edf90de872076c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPlVHzxf3Z6hrUQli4p6B2kJr8MQT2ANf_8w';" alt="Health Illustration Malfunction Obesity Risks Stock Vector Download Health Risks Of Obesity Stock Vector In 2020 Obesity Art Obesity Infographics Health Risks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Health Illustration Malfunction Obesity Risks Stock Vector Download Health Risks Of Obesity Stock Vector In 2020 Obesity Art Obesity Infographics Health Risks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/15/b0/c1/15b0c15f3408d2911e04c5c995cd46e9.jpg" data-lightbox="roadtrip" data-title="Pin On Obesity">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/15/b0/c1/15b0c15f3408d2911e04c5c995cd46e9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKvZmscVie9fXnncNXDNY7zNuTE0JP9WpT3A';" alt="Pin On Obesity">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Obesity</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1a/3f/28/1a3f28fe155687b8e83bf1b6f1a136cb--infographic-templates-free-cliparts.jpg" data-lightbox="roadtrip" data-title="Obesity Infographic Template Fast Food Healthy Habits And Obesity Awareness Healthy Habits Obesity">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1a/3f/28/1a3f28fe155687b8e83bf1b6f1a136cb--infographic-templates-free-cliparts.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTNBI7npeh9AbABrC5xbjH_nLEDI1Sov8Waw';" alt="Obesity Infographic Template Fast Food Healthy Habits And Obesity Awareness Healthy Habits Obesity">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Obesity Infographic Template Fast Food Healthy Habits And Obesity Awareness Healthy Habits Obesity</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i2.wp.com/www.woodslawyers.com/wp-content/uploads/obesity-va-benefits.jpg?resize=1024%2C576&amp;ssl=1" data-lightbox="roadtrip" data-title="The Roundabout Way To Get Va Disability For Obesity">
+											<img class="card-img v-image ads-img " src="https://i2.wp.com/www.woodslawyers.com/wp-content/uploads/obesity-va-benefits.jpg?resize=1024%2C576&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStjPmtCU-RQCwx2vwnx9MO4BpMnXVHWi3gJA';" alt="The Roundabout Way To Get Va Disability For Obesity">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Roundabout Way To Get Va Disability For Obesity</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/1a/92/411a922bdfa68177956855989b3d21e4.jpg" data-lightbox="roadtrip" data-title="Pin On Childhood Obesity">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/1a/92/411a922bdfa68177956855989b3d21e4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOmDxTbelQ4O6WR-xSd94xlpNpVRu8FPH9PA';" alt="Pin On Childhood Obesity">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Childhood Obesity</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/35/7d/c3357d23e6d8aff38424e6142dbc72f6.jpg" data-lightbox="roadtrip" data-title="Vector Obesity Image Obesity Infographics Obesity Facts Medical Posters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/35/7d/c3357d23e6d8aff38424e6142dbc72f6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStoGXf9ucRzsUoUwf-IoQBIbP3C0Z97tasLQ';" alt="Vector Obesity Image Obesity Infographics Obesity Facts Medical Posters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vector Obesity Image Obesity Infographics Obesity Facts Medical Posters</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/7c/c7/a3/7cc7a343eacd894bf0edf90de872076c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStoGXf9ucRzsUoUwf-IoQBIbP3C0Z97tasLQ';" alt="Vector Obesity Image Obesity Infographics Obesity Facts Medical Posters">
+										<div class="card-body">
+						<h3 class="h5"><b>Obesity can however be considered an extra-schedular rating or a factor that can be considered when weighing existing disabilities according to the VA.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Is obesity a va disability</strong>. 
+								
+																	Morbid obesity much like alcoholism and substance abuse is a disability that has come under scrutiny. 
+																	No there is no VA disability rating for Obesity weight gain under the law. 
+																	Obesity is a common condition for Veterans. 
+																	No obesity is not considered a VA disability. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Many employers are opposed to obesity being recognized as a medical disability in the same way that disabilities like blindness or quadriplegia are treated. 
+																	However the Walsh case established that Obesity may be an intermediate step for secondary service connection between a service-connected primary disability and a non-service connected disability when the current service-connected condition aggravates the. 
+																	The VA does not consider obesity a condition for which service connection can be granted. 
+																	Obesity cannot be considered a service-connected disability according to a new ruling by the Department of Veterans Affairs General Counsel expected to be published in the Federal Register. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	One type of claimed disability that is increasingly the subject of litigation is obesity. 
+																	Unfortunately the VA does not cover obesity as a compensable disease or condition. 
+																	An individual can also get Disability Benefits due to Obesity if the individual gets a medical condition which is caused due to obesity like a heart condition stroke diabetes or severe arthritis of the weight bearing joints which may preclude the individual from sitting standing walking or do any sitting type of job as well. 
+																	The adverse effect must also be substantial and long term. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you served in the military and now have a diagnosable disease or condition you may be eligible for monthly compensation. 
+																	It can also be an intermediate step. 
+																	If you applied for disability benefits related to obesity and were denied Berry Law can help. 
+																	No there is no VA disability rating for Obesity weight gain under the law. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Obesity is now a disability according to actual doctors at the American Medical Association The VA recognizes obesity as a Chronic Disease Obesity is not listed on the VAs Table of Impairment Ratings You can service connect obesity. 
+																	If your obesity is related to a service-connected condition and causing other disabilities you are entitled to disability compensation. 
+																	In this condition you can use a residual functional capacity RFC analysis to be approved for disability. 
+																	A disability under the Equality Act 2010 is a physical or mental impairment that affects a persons ability to carry out normal day-to-day activities. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Obesity can be a disability as defined by the Equality Act 2010. 
+																	However what if your conditions are not listed in the Blue Book. 
+																	To VA Obesity is Not a Disability. 
+																	The VA contends that obesity is only a condition and at most a symptom See this case for an example. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA A new Wounded Warrior Project survey of more than 33000 Post-911 veterans found that 517 percent of the respondents were obese according to. 
+																	Obesity itself is not a disability but the related complications can be. 
+																	Once VA grants service connection for a disability it will assign a disability rating based on the symptoms and severity of the veterans condition. 
+																	VA defines a disability for purposes of receiving disability compensation as a disease or injury that results in a veterans loss of earning capacity. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Berry Law helps Veterans appeal unfavorable VA decisions to get the full disability compensation they deserve. 
+																	Although courts initially were reluctant to recognize obesity as a qualifying disability for purposes of ADA protection courts are increasingly willing to consider obesity as a disability giving plaintiffs status to raise ADA claims. 
+																	In itself obesity does not count as a disability although being obese particularly being very obese will increase the likelihood of a person suffering from related issues that might fall within the definition of obesity in legislation. 
+																	Obesity Is Not a Service-Connected Disability. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Thats what the Court of Appeals for Veterans Claims has held and that is that obesity is not a disability for the purposes of disability compensation. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/f9/1b/6f/f91b6fc92c75e147502f377d75c107ce.jpg" data-lightbox="roadtrip" data-title="Ujhiqm6dbae7pm">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/f9/1b/6f/f91b6fc92c75e147502f377d75c107ce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx3782MrICnRZbdE_LbhGppz_KHgeMMQ8IiA';" alt="Ujhiqm6dbae7pm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ujhiqm6dbae7pm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://fc03.deviantart.net/fs71/i/2010/093/e/4/Obesity_Poster_by_beautribe.jpg" data-lightbox="roadtrip" data-title="Obesity Poster By Beautribe Jpg 900 1273 Obesity Infographic Poster Infographic">
+											<img class="card-img v-image ads-img " src="http://fc03.deviantart.net/fs71/i/2010/093/e/4/Obesity_Poster_by_beautribe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTYAI15fea3dcFsFvXUThd-nYZ9PLnJ2QyWQ';" alt="Obesity Poster By Beautribe Jpg 900 1273 Obesity Infographic Poster Infographic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Obesity Poster By Beautribe Jpg 900 1273 Obesity Infographic Poster Infographic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/09/ac/3e/09ac3e1b3ca2f22e2567465698735be4.jpg" data-lightbox="roadtrip" data-title="Obesity Is A Disease Of A Modern Age It Can Be Very Dangerous For Your Health Read More About Causes Of Obesity Co Infographic Healthy Work Snacks Fast Food">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/09/ac/3e/09ac3e1b3ca2f22e2567465698735be4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRbj0DBWCv7YPqDXPiD12zTT7kDc-XHdNgdA';" alt="Obesity Is A Disease Of A Modern Age It Can Be Very Dangerous For Your Health Read More About Causes Of Obesity Co Infographic Healthy Work Snacks Fast Food">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Obesity Is A Disease Of A Modern Age It Can Be Very Dangerous For Your Health Read More About Causes Of Obesity Co Infographic Healthy Work Snacks Fast Food</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/2018.07.09-Obesity-and-VA-Disability-image-768x510.jpg" data-lightbox="roadtrip" data-title="Obesity And Va Disability Benefits Is It Possible Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/2018.07.09-Obesity-and-VA-Disability-image-768x510.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbSTwKPqqoY3uyCYc3t_UuG1EK97nfTy2Jlg';" alt="Obesity And Va Disability Benefits Is It Possible Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Obesity And Va Disability Benefits Is It Possible Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/8f/d6/e98fd6e61d0249f71daecfcf7487b00c.png" data-lightbox="roadtrip" data-title="Pin On Health Fitness Foods Infographics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/8f/d6/e98fd6e61d0249f71daecfcf7487b00c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUatOU2Sksdsy1QcjlkQsvYj2Bw_tp0QyqGA';" alt="Pin On Health Fitness Foods Infographics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Health Fitness Foods Infographics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vaclaimsinsider.com/wp-content/uploads/2020/07/Body-Mass-Index-Obesity--scaled.jpg" data-lightbox="roadtrip" data-title="How Obesity Can Be An Intermediate Step For Secondary Service Connection The Definitive Guide Va Claims Insider">
+											<img class="card-img v-image ads-img " src="https://vaclaimsinsider.com/wp-content/uploads/2020/07/Body-Mass-Index-Obesity--scaled.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIxJ-DD0cKF7P-4P-NLnEDLFq0KhoN_EEZVA';" alt="How Obesity Can Be An Intermediate Step For Secondary Service Connection The Definitive Guide Va Claims Insider">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Obesity Can Be An Intermediate Step For Secondary Service Connection The Definitive Guide Va Claims Insider</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/170x/1d/17/9d/1d179d2178e72566c747a4070f9ddb4c--diet-supplements-healthy-food.jpg" data-lightbox="roadtrip" data-title="Pin En Diet">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/170x/1d/17/9d/1d179d2178e72566c747a4070f9ddb4c--diet-supplements-healthy-food.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ59RCCnOL8j_jx9s_yuRVhE4p9I3K3WdyC4w';" alt="Pin En Diet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin En Diet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/95/00/d2/9500d2f47639893417da49db3b5b4272.jpg" data-lightbox="roadtrip" data-title="Arrest Cardiac Image Obesity Vector Arrest Cardiac Image Obesity Vector Obesity Cardiac Arrest Or Vector Image In 2020 Baby Workout Baby Development Cardiac">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/95/00/d2/9500d2f47639893417da49db3b5b4272.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD9OCFB3ImhyR1QX0XNC_qZJE1_C-clDbEhA';" alt="Arrest Cardiac Image Obesity Vector Arrest Cardiac Image Obesity Vector Obesity Cardiac Arrest Or Vector Image In 2020 Baby Workout Baby Development Cardiac">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Arrest Cardiac Image Obesity Vector Arrest Cardiac Image Obesity Vector Obesity Cardiac Arrest Or Vector Image In 2020 Baby Workout Baby Development Cardiac</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/1a/ae/ff1aae1972ebe48733305c0ccbb5f2b0.png" data-lightbox="roadtrip" data-title="Transitioning Back And Forth Between Military And Civilian Life Can Be Tricky Some Who Enlist Aren T Able To Handle The Challeng Military Veteran Transitional">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/1a/ae/ff1aae1972ebe48733305c0ccbb5f2b0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMq1N-bWc21sU_12EfntoUwr2BthSujClkoQ';" alt="Transitioning Back And Forth Between Military And Civilian Life Can Be Tricky Some Who Enlist Aren T Able To Handle The Challeng Military Veteran Transitional">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Transitioning Back And Forth Between Military And Civilian Life Can Be Tricky Some Who Enlist Aren T Able To Handle The Challeng Military Veteran Transitional</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f7/46/54/f746542d44fa071b97e7e8b06fe96fa3.jpg" data-lightbox="roadtrip" data-title="5 11 World Anti Obesity Day Orange Background Poster Anti Obesity Obesity Awareness Orange Background">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f7/46/54/f746542d44fa071b97e7e8b06fe96fa3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcexg5-udz5yvgCFMdLA4an0a_ylFTtPUFbg';" alt="5 11 World Anti Obesity Day Orange Background Poster Anti Obesity Obesity Awareness Orange Background">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 11 World Anti Obesity Day Orange Background Poster Anti Obesity Obesity Awareness Orange Background</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/32/14/933214b447f1a97c8694013208082c62.jpg" data-lightbox="roadtrip" data-title="Think Your Absentee Ballot Doesn T Matter Here S Proof It Does Task Purpose Vietnam War The Incredibles Marine Corps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/32/14/933214b447f1a97c8694013208082c62.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRohYjmhKW2KqkpFIZ9QOvLAY47PmdLpLiWFA';" alt="Think Your Absentee Ballot Doesn T Matter Here S Proof It Does Task Purpose Vietnam War The Incredibles Marine Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Think Your Absentee Ballot Doesn T Matter Here S Proof It Does Task Purpose Vietnam War The Incredibles Marine Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/49/4d/ff494d882cdbc83c7f612d3c9f93a995.jpg" data-lightbox="roadtrip" data-title="Pin On Coverage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/49/4d/ff494d882cdbc83c7f612d3c9f93a995.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDGgBnDdb6VnAiTOgkQ4ymDFixhX4CXYBQ6A';" alt="Pin On Coverage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Coverage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/Depositphotos_14883741_s-2019-1000x720.jpg" data-lightbox="roadtrip" data-title="Can You Service Connect Obesity Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/Depositphotos_14883741_s-2019-1000x720.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz1rLvXcD-sqPUVYYUUkMjwilJDXSKdeIcxg';" alt="Can You Service Connect Obesity Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Can You Service Connect Obesity Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/gs-pay-scale-norfolk.html">Gs Pay Scale Norfolk</a></li>
+													<li class="list-group-item"><a href="/gxx2-9.html">Gxx2 9</a></li>
+													<li class="list-group-item"><a href="/gs-scale-2020-va-beach.html">Gs Scale 2020 Va Beach</a></li>
+													<li class="list-group-item"><a href="/gopost-online.html">Gopost Online</a></li>
+													<li class="list-group-item"><a href="/go-post-urlvalues.html">Go Post Urlvalues</a></li>
+													<li class="list-group-item"><a href="/gohealth-billing-email.html">Gohealth Billing Email</a></li>
+													<li class="list-group-item"><a href="/go-with-benefits.html">Go With Benefits</a></li>
+													<li class="list-group-item"><a href="/gs-pay-scale-for-richmond-va.html">Gs Pay Scale For Richmond Va</a></li>
+													<li class="list-group-item"><a href="/gomedicare-benefits-help-center.html">Gomedicare Benefits Help Center</a></li>
+													<li class="list-group-item"><a href="/go-university-benefits-advantages.html">Go University Benefits Advantages</a></li>
+													<li class="list-group-item"><a href="/gs-pay-scale-hampton-roads-va.html">Gs Pay Scale Hampton Roads Va</a></li>
+													<li class="list-group-item"><a href="/go-tv-pay-bill-number.html">Go Tv Pay Bill Number</a></li>
+													<li class="list-group-item"><a href="/go-post-url.html">Go Post Url</a></li>
+													<li class="list-group-item"><a href="/gs-pay-scale-arlington-va.html">Gs Pay Scale Arlington Va</a></li>
+													<li class="list-group-item"><a href="/gs-pay-scale-alexandria-va.html">Gs Pay Scale Alexandria Va</a></li>
+													<li class="list-group-item"><a href="/go-post-urlencode.html">Go Post Urlencode</a></li>
+													<li class="list-group-item"><a href="/go-post-minerva.html">Go Post Minerva</a></li>
+													<li class="list-group-item"><a href="/go-post-manuel-acuna.html">Go Post Manuel Acuna</a></li>
+													<li class="list-group-item"><a href="/go-vault-college-dorm-safe.html">Go Vault College Dorm Safe</a></li>
+													<li class="list-group-item"><a href="/go-to-education-city.html">Go To Education City</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Go Build Library - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Go Build Library",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/9a/b8/80/9ab8803360f34a6f9b39d033b31176ed.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=go+build+library",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Go Build Library</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">This historic building is now the centrepiece of the Creeksea Caravan Park the 1960s BBC series of Great Expectations was filmed here. In the previous post I implemented a Go shim layer that enables c codes to use Go functionalitiesThis post dives a little bit deeper into CMake build system for this interaction. This is a library that aims to provide simple GUI software development in Go. <br>				
+			</p>
+										<a class="badge badge-success" href="/does-usaa-offer-va-home-loans.html">does usaa offer va home loans</a>
+											<a class="badge badge-primary" href="/does-virginia-have-palm-trees.html">does virginia have palm trees</a>
+											<a class="badge badge-light" href="/donate-household-items-to-disabled-american-veterans.html">donate household items to disabled american veterans</a>
+											<a class="badge badge-success" href="/does-va-benefits-cover-home-health-care.html">does va benefits cover home health care</a>
+											<a class="badge badge-info" href="/does-the-post-9-11-gi-bill-cover-community-college.html">does the post 9 11 gi bill cover community college</a>
+											<a class="badge badge-secondary" href="/does-the-va-review-disability-ratings.html">does the va review disability ratings</a>
+											<a class="badge badge-danger" href="/does-va-disability-count-as-income-in-divorce.html">does va disability count as income in divorce</a>
+											<a class="badge badge-secondary" href="/dr-bill-montgomery-dallas.html">dr bill montgomery dallas</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you've come to visit the ideal blog.  Our website provides you with hints for seeing the maximum quality video and image content, search and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, particularly Youtube, so we recommend this video that you see.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/12/97/b91297efc6ac6e7c2fd51df3d5157803.jpg" data-lightbox="roadtrip" data-title="Bibliotheque In 2020 Home Library Home Library Design Home Libraries">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/12/97/b91297efc6ac6e7c2fd51df3d5157803.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSJQy_OPFX7mGmmcndZ028vp2yXJ_RKHZrmA';" alt="Bibliotheque In 2020 Home Library Home Library Design Home Libraries">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bibliotheque In 2020 Home Library Home Library Design Home Libraries</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/d4/2d/e6d42d9558ad1e07fe5aa37d476fe7fb.jpg" data-lightbox="roadtrip" data-title="Joke All You Want But The Library Is The Best Place For Kids The Good Place Good Parenting Library Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/d4/2d/e6d42d9558ad1e07fe5aa37d476fe7fb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf4pJCHpqbg7MfWWv6hmRC29oap-VsGsRlBA';" alt="Joke All You Want But The Library Is The Best Place For Kids The Good Place Good Parenting Library Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Joke All You Want But The Library Is The Best Place For Kids The Good Place Good Parenting Library Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/2b/d7/c32bd746c1d58fe17de0b85aed0f5b76.jpg" data-lightbox="roadtrip" data-title="Standout Fireplace Designs Distinctive Plans And Ideas Home Library Fireplace Design Home Libraries">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/2b/d7/c32bd746c1d58fe17de0b85aed0f5b76.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKlE9Dhdz5FYA1YGdPp-9C7Rf79hv7_QKmEA';" alt="Standout Fireplace Designs Distinctive Plans And Ideas Home Library Fireplace Design Home Libraries">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Standout Fireplace Designs Distinctive Plans And Ideas Home Library Fireplace Design Home Libraries</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/4e/82/f44e82a3d9a8f6f7a274b3543255e37e.png" data-lightbox="roadtrip" data-title="One Great Tip To Keep Kids Reading All Summer Long Build A Great Home Library Go To Used Book Stores Exchange Favori Home Library Kids Reading Learn To Read">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/4e/82/f44e82a3d9a8f6f7a274b3543255e37e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLrdklesA3ZdxTbHpcZcL9lqetsy1N5OV_xw';" alt="One Great Tip To Keep Kids Reading All Summer Long Build A Great Home Library Go To Used Book Stores Exchange Favori Home Library Kids Reading Learn To Read">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">One Great Tip To Keep Kids Reading All Summer Long Build A Great Home Library Go To Used Book Stores Exchange Favori Home Library Kids Reading Learn To Read</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/e3/08/43e3083f1eb744580a2a57c7351275af.jpg" data-lightbox="roadtrip" data-title="15 Best Go Libraries And Packages Top Golang Developers India Usa In 2020 Library Development Software Development">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/e3/08/43e3083f1eb744580a2a57c7351275af.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDfNqwZjEifxw8opWgyxLulIBfzkQs2ff3cA';" alt="15 Best Go Libraries And Packages Top Golang Developers India Usa In 2020 Library Development Software Development">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">15 Best Go Libraries And Packages Top Golang Developers India Usa In 2020 Library Development Software Development</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/dd/27/5fdd27ee3c1fee0867ed652673291f07.png" data-lightbox="roadtrip" data-title="Pin On Wayfaring Views Travel Posts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/dd/27/5fdd27ee3c1fee0867ed652673291f07.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqxKR2xQqAcxzK9MYgl9DZgUORu44cFBrtFQ';" alt="Pin On Wayfaring Views Travel Posts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Wayfaring Views Travel Posts</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/44/ee/8a/44ee8a48100ef5576a27772ec8635dfa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqxKR2xQqAcxzK9MYgl9DZgUORu44cFBrtFQ';" alt="Pin On Wayfaring Views Travel Posts">
+										<div class="card-body">
+						<h3 class="h5"><b>1 How much can I afford.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Go build library</strong>. 
+								
+																	A shared library and a C header. 
+																	In the 1500s the Harris Family were the dominant local force. 
+																	Package build gathers information about Go packages. 
+																	The header file contains type definitions that marshall and unmarshall data between Go and C. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	First youll want to get an idea of how much you can afford or want to spend. 
+																	This generates two files. 
+																	As c-shared library go build -buildmodec-shared -o nautilusa nautilusgo as c-archive go build -buildmodec-archive -o nautilusa nautilusgo As result the GO compiler will produce a staticdynamic C library nautilusa and header file nautilush. 
+																	The Harris Family and Creeksea Place. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Building a Go package involves at least two steps compiling the go files then packing the results into an archive. 
+																	Overview Package build gathers information about Go packages. 
+																	Extern char ImgutilGetImageSize char p0 GoUint p1 GoUint p2. 
+																	In this example Im going to use cryptohmac as it is a small package only one source and one test file. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Cgo Windows Vista SP2 with Platform Update and newer. 
+																	Edward Harris built Creeksea Place which remained in the family until the 19th century. 
+																	The following CMakeListstxt provides a binary compilation altogether with compiling Go based static library. 
+																	Go build -o libdoublerso -buildmodec-shared doubler This puts libdoublerso in your current directory. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you have not activated your subscription on the AJ website you will need to do so to access the AJ Buildings Library. 
+																	They must be marked with magic comment export no space because go build will call cgo. 
+																	Pwd rootgoworksrchello go build -o he ls he hellogo Now the command is he not hello. 
+																	Using the -x option Ive asked go build to print out every step as it executes them. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Cgo Mac OS X 108 and newer. 
+																	The exported symbols the functions the shared library provides must be in a main package with a required but ignored main function. 
+																	Without a library a center or some kind of institute to shore up his reputation his legacy as a. 
+																	Go build -o libimgutilso -buildmodec-shared imgutilgo. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Package doc extracts source code documentation from a Go AST. 
+																	Platform-native GUI library for Go. 
+																	When you opened the ospath_unixgo file there was a build tag that listed all of the possible combinations that are considered Unix-like platforms. 
+																	Except a hello command in srchello directory a greeta library is also generated in pkglinux_amd64 too. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Package format implements standard formatting of Go source. 
+																	Building a home library on a budget is definitely doable but youll want to figure out what you want the most. 
+																	The consequences of this failure for Trump and his supporters will go beyond just a building. 
+																	The AJ Buildings Library is available as a subscription benefit to AJ subscribers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The prototype of the exported function is. 
+																	Build Go package as C shared library or shared object Every Go main package can be built as a C shared library. 
+																	So far so good. 
+																	Not an Architects Journal subscriber. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If youve activated your online subscription on TheAJcouk you can use the same credentials to sign in on AJBL. 
+																	4 By default the go build uses the directorys name as the compiled binarys name to modify it you can use -o flag. 
+																	As you saw earlier the Go standard library makes heavy use of build tags to simplify code by separating out different platform implementations into different files. 
+																	The Go path is a list of directory trees containing Go source code. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	BBC Radio 3s Building a Library offers an expert comparison of the available recordings of some of the cornerstones of the classical repertoire with a First Choice and other recommendations made of a particular work each week. 
+																	Running go build -i in golangsrcmyapp will build myliba and store it in vendorpkglinux_amd64 and then build the main application. 
+																	Now lets suppose theres a change to file1go and I again run go build -i in golangsrcmyapp. 
+																	Below you can view their most recent recommendations as well as browse through the full library of selected recordings. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Latest release v1742 - Updated 14 days ago - 49 stars. 
+																	Go build -go build -buildmode c-shared -o so. 
+																	It is based on my libui a simple cross-platform library that does the same thing but written in C. 
+																	It is consulted to resolve imports that cannot be found in the standard Go tree. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The sword of Sir William Harris is displayed in the Church of Creeksea. 
+																	Golang library with POSIX-compliant command-line UI CLI and Hierarchical-configuration. 
+																	Package constant implements Values representing untyped Go constants and their corresponding operations. 
+																	Theres a library in vendorsrcmylibfile1go that is imported by golangsrcmyappmaingo. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Go through these prompts and create a wishlist to help you formulate a plan to build a home library of your dreams. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/4d/8f/f74d8f8cbf365d494a71516fa590444b.jpg" data-lightbox="roadtrip" data-title="How To Go To The Famous Coex Mall S Starfield Library In Gangnam Seoul Her Brave Soul Coex Mall Seoul Beautiful Places To Visit South Korea Travel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/4d/8f/f74d8f8cbf365d494a71516fa590444b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0mWHz-JUc6jS2JlkYRxITSv2RqCXMC2DjQQ';" alt="How To Go To The Famous Coex Mall S Starfield Library In Gangnam Seoul Her Brave Soul Coex Mall Seoul Beautiful Places To Visit South Korea Travel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Go To The Famous Coex Mall S Starfield Library In Gangnam Seoul Her Brave Soul Coex Mall Seoul Beautiful Places To Visit South Korea Travel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/87/20/e287208ee56fa133c35740beaa372ccc.jpg" data-lightbox="roadtrip" data-title="Modular Library Lego Furniture Lego Design Lego Library">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/87/20/e287208ee56fa133c35740beaa372ccc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNnnTg5WMoc7SG9C55ju2xA76nmAecgfWinA';" alt="Modular Library Lego Furniture Lego Design Lego Library">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Modular Library Lego Furniture Lego Design Lego Library</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/40/43/4e/40434e8a24df08b7ae6f151191e636f8.jpg" data-lightbox="roadtrip" data-title="Corporate Office Spaces Design Ideas Office Design Images Meeting Room In 2020 Bookstore Design Library Design Library Architecture">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/40/43/4e/40434e8a24df08b7ae6f151191e636f8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmCkzEb-3sRDoJYiWezpIhNx7ud75IibOqNQ';" alt="Corporate Office Spaces Design Ideas Office Design Images Meeting Room In 2020 Bookstore Design Library Design Library Architecture">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Corporate Office Spaces Design Ideas Office Design Images Meeting Room In 2020 Bookstore Design Library Design Library Architecture</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/2b/c2/312bc26dfb9040e922cc37d9b6a95adc.jpg" data-lightbox="roadtrip" data-title="These 20 Libraries Around The World Look Like A Harry Potter Set Beautiful Library Dream Library Old Libraries">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/2b/c2/312bc26dfb9040e922cc37d9b6a95adc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFzxL7EXEho8BdpnjzF2TRoqEC7b4X-9yZug';" alt="These 20 Libraries Around The World Look Like A Harry Potter Set Beautiful Library Dream Library Old Libraries">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">These 20 Libraries Around The World Look Like A Harry Potter Set Beautiful Library Dream Library Old Libraries</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/ee/8a/44ee8a48100ef5576a27772ec8635dfa.jpg" data-lightbox="roadtrip" data-title="35 Things To Do With All Those Books Home Libraries Home Library Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/ee/8a/44ee8a48100ef5576a27772ec8635dfa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcmz0caivQSOmLWSVdJgGd-QhBnF9--hkQYQ';" alt="35 Things To Do With All Those Books Home Libraries Home Library Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">35 Things To Do With All Those Books Home Libraries Home Library Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/71/4d/80/714d80bf57dc1298d2e4a1843e004885.jpg" data-lightbox="roadtrip" data-title="Library Makeover What We Gained By Letting Go Library Quotes Library Quotes Librarians Librarian Quote">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/71/4d/80/714d80bf57dc1298d2e4a1843e004885.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ81Jc-zFOkt_OoxAZdgOInrY2N1eIhNGghw';" alt="Library Makeover What We Gained By Letting Go Library Quotes Library Quotes Librarians Librarian Quote">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Library Makeover What We Gained By Letting Go Library Quotes Library Quotes Librarians Librarian Quote</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/5e/a5/e95ea5bfd76ae6cb45e5ab849030427b.jpg" data-lightbox="roadtrip" data-title="Wow Nice Lots Of Good Options In Small Space Home Library Home Libraries Trendy Home">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/5e/a5/e95ea5bfd76ae6cb45e5ab849030427b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMKkLXmpA55JlqHgdcs8Cv69_HXH9p7t-sqA';" alt="Wow Nice Lots Of Good Options In Small Space Home Library Home Libraries Trendy Home">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wow Nice Lots Of Good Options In Small Space Home Library Home Libraries Trendy Home</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/23/db/1c23db7c49ce774e48b17b13bb802b65.jpg" data-lightbox="roadtrip" data-title="Pin On Essential Classroom Library">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/23/db/1c23db7c49ce774e48b17b13bb802b65.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMxtOnzqX8WxFEcRpL5O8VnxhkShsznxq77w';" alt="Pin On Essential Classroom Library">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Essential Classroom Library</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/30/dc/0230dca1bb853e94f466acdb0c313824.jpg" data-lightbox="roadtrip" data-title="Library No Matter Where I Live I Will Always Have A Place For All Of My Books But I Library Would Be Awesome Home Library Design Traditional Family Rooms Home Libraries">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/30/dc/0230dca1bb853e94f466acdb0c313824.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD57QPFCbKjEpWtNuBVYKkFHUxwL958Ye2CA';" alt="Library No Matter Where I Live I Will Always Have A Place For All Of My Books But I Library Would Be Awesome Home Library Design Traditional Family Rooms Home Libraries">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Library No Matter Where I Live I Will Always Have A Place For All Of My Books But I Library Would Be Awesome Home Library Design Traditional Family Rooms Home Libraries</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/09/21/2309216c1c20ccf17d6aec0d76afaead.jpg" data-lightbox="roadtrip" data-title="Build Your Own Little Free Library Free Plans Included Little Free Library Plans Little Free Libraries Library Plan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/09/21/2309216c1c20ccf17d6aec0d76afaead.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEp-CBLLwafmdwzZ4h6KRhNmyqAX96XrVTZQ';" alt="Build Your Own Little Free Library Free Plans Included Little Free Library Plans Little Free Libraries Library Plan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Build Your Own Little Free Library Free Plans Included Little Free Library Plans Little Free Libraries Library Plan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/e2/e9/b2e2e96f7da7923c300542fa2ae787a9.jpg" data-lightbox="roadtrip" data-title="How To Build A Rolling Library Ladder Library Ladder Home Library Built In Bookcase">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/e2/e9/b2e2e96f7da7923c300542fa2ae787a9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfH8aRItF3zJK-IE1WzFs1Mf4WTeiX6-iXuA';" alt="How To Build A Rolling Library Ladder Library Ladder Home Library Built In Bookcase">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Build A Rolling Library Ladder Library Ladder Home Library Built In Bookcase</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/1c/00/231c006b9753193b79893c94c53c8df8.png" data-lightbox="roadtrip" data-title="How To Build Oxford Library In Ue4 Beautiful Library Old Libraries Reading Room">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/1c/00/231c006b9753193b79893c94c53c8df8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYE9Za1fjfKkoqHKoSnkKcAoWK55qpO_O4eA';" alt="How To Build Oxford Library In Ue4 Beautiful Library Old Libraries Reading Room">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Build Oxford Library In Ue4 Beautiful Library Old Libraries Reading Room</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/b8/80/9ab8803360f34a6f9b39d033b31176ed.jpg" data-lightbox="roadtrip" data-title="University Of Dublin Library I Love This And I Need To Build Something Like This In Minecraft Trinity College Library Trinity Library Beautiful Library">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/b8/80/9ab8803360f34a6f9b39d033b31176ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7yWd7vAM_IK9KNfcqDVnpxYEl8HsF0Ygxag';" alt="University Of Dublin Library I Love This And I Need To Build Something Like This In Minecraft Trinity College Library Trinity Library Beautiful Library">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">University Of Dublin Library I Love This And I Need To Build Something Like This In Minecraft Trinity College Library Trinity Library Beautiful Library</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/post-911-gi-bill-part-time-student.html">Post 911 Gi Bill Part Time Student</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-vs-forever-gi-bill.html">Post 911 Gi Bill Vs Forever Gi Bill</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-rates-online.html">Post 911 Gi Bill Rates Online</a></li>
+													<li class="list-group-item"><a href="/post-911-vs-forever-gi-bill.html">Post 911 Vs Forever Gi Bill</a></li>
+													<li class="list-group-item"><a href="/post-911-gi.html">Post 911 Gi</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-mha-2020.html">Post 911 Gi Bill Mha 2020</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-online-course.html">Post 911 Gi Bill Online Course</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-montgomery-gi-bill.html">Post 911 Gi Bill Montgomery Gi Bill</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-mha-calculator-2019.html">Post 911 Gi Bill Mha Calculator 2019</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-or-mgib.html">Post 911 Gi Bill Or Mgib</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-max-benefit.html">Post 911 Gi Bill Max Benefit</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-transfer-requirements.html">Post 911 Gi Bill Transfer Requirements</a></li>
+													<li class="list-group-item"><a href="/promo-go-bills-juli-2019.html">Promo Go Bills Juli 2019</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-masters.html">Post 911 Gi Bill Masters</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-rules-and-regulations.html">Post 911 Gi Bill Rules And Regulations</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-transfer-to-spouse.html">Post 911 Gi Bill Transfer To Spouse</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-rate-calculator.html">Post 911 Gi Bill Rate Calculator</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-transfer-statement-of-understanding.html">Post 911 Gi Bill Transfer Statement Of Understanding</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-policy-update.html">Post 911 Gi Bill Policy Update</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-stipend-rates.html">Post 911 Gi Bill Stipend Rates</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

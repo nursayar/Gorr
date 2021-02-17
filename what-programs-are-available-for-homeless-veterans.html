@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Programs Are Available For Homeless Veterans - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Programs Are Available For Homeless Veterans",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/a2/93/38/a2933824f84ea45b5e271d1452b5b5fb.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+programs+are+available+for+homeless+veterans",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Programs Are Available For Homeless Veterans</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">This collaborative program between HUD and VA combines HUD housing vouchers with VA supportive services to help Veterans who are homeless and their families find and sustain permanent housing. The outreach staff provides counseling and linkage with VA medical and psychiatric appointments. Clinical assessment and referral for treatment of physical and psychiatric disorders including substance abuse. <br>				
+			</p>
+										<a class="badge badge-danger" href="/va-gi-bill-monthly-stipend.html">va gi bill monthly stipend</a>
+											<a class="badge badge-danger" href="/va-gi-bill-yellow-ribbon-schools.html">va gi bill yellow ribbon schools</a>
+											<a class="badge badge-danger" href="/va-gi-bill-percentage.html">va gi bill percentage</a>
+											<a class="badge badge-info" href="/va-home-loan-rate-history.html">va home loan rate history</a>
+											<a class="badge badge-warning" href="/va-home-loan-rate-now.html">va home loan rate now</a>
+											<a class="badge badge-success" href="/va-gi-bill-reserve.html">va gi bill reserve</a>
+											<a class="badge badge-secondary" href="/va-hearing-compensation.html">va hearing compensation</a>
+											<a class="badge badge-info" href="/va-granted-my-appeal-now-what.html">va granted my appeal now what</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to visit the right site.  Our website provides you with suggestions for viewing the highest quality video and image content, search and find more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie that you see.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/de/01/61de01bfca36fa332f19b9fe3a83cd82.jpg" data-lightbox="roadtrip" data-title="Pin On Infographics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/de/01/61de01bfca36fa332f19b9fe3a83cd82.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcprl_5I6TdUxCkIYX_xOUFDYDnod9pwK1FQ';" alt="Pin On Infographics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Infographics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/97/94/e49794eb66974cd7d4944295a0db6ffe.jpg" data-lightbox="roadtrip" data-title="Homeless Vets Infographic Homeless Veterans Quotes Veteran Quotes Help Homeless People">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/97/94/e49794eb66974cd7d4944295a0db6ffe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0DcOEUJQ6dUL8uuQmxGZJNZxogtrjsVjT-A';" alt="Homeless Vets Infographic Homeless Veterans Quotes Veteran Quotes Help Homeless People">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Homeless Vets Infographic Homeless Veterans Quotes Veteran Quotes Help Homeless People</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/cf/fb/d1cffbf3387e6b21f9d37d394f36d322.png" data-lightbox="roadtrip" data-title="Homeless Veterans Homeless Veterans Homelessness Awareness Helping The Homeless">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/cf/fb/d1cffbf3387e6b21f9d37d394f36d322.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp-HuxdbvFvHqQZJdR9AIWZ8hsouiGcYwgRA';" alt="Homeless Veterans Homeless Veterans Homelessness Awareness Helping The Homeless">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Homeless Veterans Homeless Veterans Homelessness Awareness Helping The Homeless</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/66/3a/6c663ace82a682223dbd05314e16086a.jpg" data-lightbox="roadtrip" data-title="Pin By Balgooyen Law On Vets 2 Hiring Veterans Hiring Homelessness Awareness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/66/3a/6c663ace82a682223dbd05314e16086a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCA_Bpv75_HSU65gB6dT2tAlBf4NUQHO3WXA';" alt="Pin By Balgooyen Law On Vets 2 Hiring Veterans Hiring Homelessness Awareness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Balgooyen Law On Vets 2 Hiring Veterans Hiring Homelessness Awareness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/2d/d0/572dd0b75fffba0a44e57018ac7aca6e.jpg" data-lightbox="roadtrip" data-title="The Homeless Veterans In America You Have Plenty Of Courage There Is No Living Thing That Is Not Afraid When It Faces Homeless Veterans War Vet Homeless">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/2d/d0/572dd0b75fffba0a44e57018ac7aca6e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRByM5Ay-QKbQjnJr6LpwRD1SaIV_F0j5OsMQ';" alt="The Homeless Veterans In America You Have Plenty Of Courage There Is No Living Thing That Is Not Afraid When It Faces Homeless Veterans War Vet Homeless">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Homeless Veterans In America You Have Plenty Of Courage There Is No Living Thing That Is Not Afraid When It Faces Homeless Veterans War Vet Homeless</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/bd/e0/dfbde0ae0b6ac9fa5eeef2179b58ee36.jpg" data-lightbox="roadtrip" data-title="Homeless Homeless Veterans Homeless Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/bd/e0/dfbde0ae0b6ac9fa5eeef2179b58ee36.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRGDIFarMQoyU6Uw-FAMkOdDH200MswQSOeA';" alt="Homeless Homeless Veterans Homeless Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Homeless Homeless Veterans Homeless Veteran</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/236x/a2/12/92/a21292d77a498489fcf5cd1570b86dc7--homeless-veterans-bumper-stickers.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRGDIFarMQoyU6Uw-FAMkOdDH200MswQSOeA';" alt="Homeless Homeless Veterans Homeless Veteran">
+										<div class="card-body">
+						<h3 class="h5"><b>Conducting coordinated outreach to proactively seek out Veterans in need of assistance.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What programs are available for homeless veterans</strong>. 
+								
+																	The HCHV Program provides outreach and case management services to veterans in homeless shelters and drop-in centers. 
+																	The Homeless Veterans Reintegration Program HVRP is an employment focused competitive grant program of the Department of Labor Veterans Employment and Training Service DOL-VETS the only federal grant to focus exclusively on competitive employment for homeless veterans. 
+																	Stand Down is an organization that provides a secure base camp for Veterans giving them food hygiene products clean clothes medical and dental care food company and a place to lay their heads at night. 
+																	Department of Housing and Urban Development and VA Supportive Housing Program HUD-VASH partner to provide permanent supportive housing and treatment services for homeless Veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The plan to address this urgent national priority is outlined in Home Together the federal strategic plan to prevent and end homelessnessAs a result of VAs close collaboration with local and national stakeholder organizations success is occurring community by community. 
+																	Armed Services who are homeless or at risk of becoming homeless due to struggles with alcohol drugs or other life-controlling problems. 
+																	VA is committed to ending homelessness among Veterans. 
+																	VA Programs For Homeless Veterans Housing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	30 2015 HUD had allocated more than 78000 vouchers to help house Veterans across the country. 
+																	Veterans Affairs Canada VAC has provided information on its programs and services to approximately 200 community organizations that work with the homeless in more than 50 cities across the country. 
+																	VAs Health Care for Homeless Veterans Program HCHV operates at 133 sites where extensive outreach physical and psychiatric health exams treatment referrals and ongoing case management are provided to homeless veterans with mental health problems including substance abuse. 
+																	This collaborative program between HUD and VA combines HUD housing vouchers with VA supportive services to help. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Acquired property sales for homeless providers Program -- makes available properties VA obtains through foreclosures on VA-insured mortgages for sale to homeless provider organizations at a discount of 20 to 50 percent. 
+																	VAs Fiduciary Program provides specialized case management to over 67000 veterans many of whom might be homeless without the services it provides. 
+																	Find an event near you or call to ask how you can help. 
+																	Housing Assistance There are many federal housing programs that can support homeless Veterans and their families. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Learn more about HUD-VASH. 
+																	Houses for Warriors is a tax-exempt 5013 nonprofit organization dedicated to supporting our nations military veterans who are in need. 
+																	We offer real estate solutions and resources to homeless and injured veterans to include. 
+																	The White House While there are many independent charities the US Department of Veterans Affairs VA provides 18 billion to programs supporting veterans homelessness as well as comprehensive mental health care and support for those abusing substances. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In late 2009 VA announced an ambitious goal to end Veteran homelessness. 
+																	The Warrior House Program is a residential program in Denver CO that houses veterans of the US. 
+																	VAs Health Care for Homeless Veterans Program HCHV operates at 133 sites where extensive outreach physical and psychiatric health exams treatment referrals and ongoing case management are. 
+																	Under this program each VA Medical Center VAMC has received funding to hire new vocational development. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VA provides 18 billion for homeless veterans programs Source. 
+																	Homeless Veterans Dental Program This other important resource provides Veterans who are homeless with dental treatment through programs such as Domiciliary Residential Rehabilitation Treatment VA Grant and Per Diem Compensated Work TherapyTransitional Residence Health Care for Homeless Veterans contract bed and Community Residential Care. 
+																	Connecting homeless and at-risk Veterans with housing solutions health care community employment services and other required supports. 
+																	Long-term transitional residential assistance case. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A community residential contract program is available to help veterans leave the streets and prepare for treatment programs. 
+																	Aggressive outreach to veterans living on the streets and in shelters who otherwise would not seek assistance. 
+																	Our focus is threefold. 
+																	The Veterans Employment Training Transitions Assistance Program VET-TAP is dedicated to assisting homeless veterans and those at risk of being homeless to find new employment opportunities and strengthen their employability. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Transitional housing and life skills programs affordable housing options and assisting our Warriors connect to the resources available to them. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/50/54/d450548ef1faf06059dc45eec31f0e0f.jpg" data-lightbox="roadtrip" data-title="Help Homeless During Bitter Cold By Providing Supplies Assistance And A Sense Of Dignity Homeless Veterans Veterans Affairs Helping The Homeless">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/50/54/d450548ef1faf06059dc45eec31f0e0f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6kckhLx8ok-8RH20kaRlLHXzKDtOWvarGQg';" alt="Help Homeless During Bitter Cold By Providing Supplies Assistance And A Sense Of Dignity Homeless Veterans Veterans Affairs Helping The Homeless">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Help Homeless During Bitter Cold By Providing Supplies Assistance And A Sense Of Dignity Homeless Veterans Veterans Affairs Helping The Homeless</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/a9/84/a5a98498ad0b12ca2346e33cb1fe1159.jpg" data-lightbox="roadtrip" data-title="Pin On Military Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/a9/84/a5a98498ad0b12ca2346e33cb1fe1159.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXNNPY4usBB016iBnYfyRXVEjGoBiZHn2BFg';" alt="Pin On Military Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/3a/d2/c73ad2aa293be44abb5b8a52f9ff5b62.jpg" data-lightbox="roadtrip" data-title="New Grants Help Homeless Veterans Veterans Affordable Housing Program Homeless Veterans Worlds Of Fun Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/3a/d2/c73ad2aa293be44abb5b8a52f9ff5b62.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTklvaD6M1Z6S-YbwHdKvXLRwdq1Qg5gQq1Iw';" alt="New Grants Help Homeless Veterans Veterans Affordable Housing Program Homeless Veterans Worlds Of Fun Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Grants Help Homeless Veterans Veterans Affordable Housing Program Homeless Veterans Worlds Of Fun Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/99/55/f79955438511dd5ecfe6a1c119f9d385.jpg" data-lightbox="roadtrip" data-title="The Patriot Club Is A Program That Allows Good Hearted People Like You To Make A Monthly Pledge To Support Apo S Mar Veterans Programs Veteran Veterans Village">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/99/55/f79955438511dd5ecfe6a1c119f9d385.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpbB4z_l1wE9UOYy3T2WP8MW8Wdjwo5Fdvjg';" alt="The Patriot Club Is A Program That Allows Good Hearted People Like You To Make A Monthly Pledge To Support Apo S Mar Veterans Programs Veteran Veterans Village">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Patriot Club Is A Program That Allows Good Hearted People Like You To Make A Monthly Pledge To Support Apo S Mar Veterans Programs Veteran Veterans Village</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/86/fd/7f86fd80204bb5f26ec849b5571c8c98.jpg" data-lightbox="roadtrip" data-title="Pin On Veteran Services Miami Fl">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/86/fd/7f86fd80204bb5f26ec849b5571c8c98.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT64KiR4EAH0hjukL4jQCVJOZ09kQ-cPpmjSQ';" alt="Pin On Veteran Services Miami Fl">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Veteran Services Miami Fl</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/93/38/a2933824f84ea45b5e271d1452b5b5fb.jpg" data-lightbox="roadtrip" data-title="Formerly Homeless Veterans Have Their House Made Into A Home Homeless Veterans Veteran Sleep On The Floor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/93/38/a2933824f84ea45b5e271d1452b5b5fb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVeH7YUtmbc3sHyqQHcBgWB7NLMfoA2_h4_A';" alt="Formerly Homeless Veterans Have Their House Made Into A Home Homeless Veterans Veteran Sleep On The Floor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Formerly Homeless Veterans Have Their House Made Into A Home Homeless Veterans Veteran Sleep On The Floor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/4b/4f/f24b4f1e3ae6cc0a1f20f2b49e68dd27.jpg" data-lightbox="roadtrip" data-title="Proven Solutions Coalition For The Homeless Solutions Homeless Veterans Homeless">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/4b/4f/f24b4f1e3ae6cc0a1f20f2b49e68dd27.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv1Jv4wYJ4U5snP-abbA2NWrvsVdUBVef4dQ';" alt="Proven Solutions Coalition For The Homeless Solutions Homeless Veterans Homeless">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Proven Solutions Coalition For The Homeless Solutions Homeless Veterans Homeless</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/e9/d0/32e9d0868fb631f18e422f64ad98a069.png" data-lightbox="roadtrip" data-title="City Builds Tiny Village For Homeless Veterans With 50 Tiny Houses So They Could Live There For Free Homeless Veterans Ghost City Homes For Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/e9/d0/32e9d0868fb631f18e422f64ad98a069.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1RRuYN8O5A3KY97GRfBqXAvkviIKZ_DNMhg';" alt="City Builds Tiny Village For Homeless Veterans With 50 Tiny Houses So They Could Live There For Free Homeless Veterans Ghost City Homes For Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">City Builds Tiny Village For Homeless Veterans With 50 Tiny Houses So They Could Live There For Free Homeless Veterans Ghost City Homes For Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/a2/12/92/a21292d77a498489fcf5cd1570b86dc7--homeless-veterans-bumper-stickers.jpg" data-lightbox="roadtrip" data-title="No Woman Veteran Should Be Homeless Support Our Women Veterans Finalsaluteinc Msveteranamerica Mva Homel Army Veteran Homeless Veterans Military Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/a2/12/92/a21292d77a498489fcf5cd1570b86dc7--homeless-veterans-bumper-stickers.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCG-bZMNGqh-LL8Ltyuof3rNtaY1yYR-rsOQ';" alt="No Woman Veteran Should Be Homeless Support Our Women Veterans Finalsaluteinc Msveteranamerica Mva Homel Army Veteran Homeless Veterans Military Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">No Woman Veteran Should Be Homeless Support Our Women Veterans Finalsaluteinc Msveteranamerica Mva Homel Army Veteran Homeless Veterans Military Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/20/b7/4c/20b74c49616c151575bbddb29095b9d4.jpg" data-lightbox="roadtrip" data-title="Pin On Homeless Military Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/20/b7/4c/20b74c49616c151575bbddb29095b9d4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgIYBBKNaleBdJeH18Gogia0GLvnpKg4tslw';" alt="Pin On Homeless Military Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Homeless Military Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/0d/ee/85/0dee85aa710763028de1dea16dccaa05.jpg" data-lightbox="roadtrip" data-title="Homeless Veterans Veteran Quotes Homeless Veterans Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/0d/ee/85/0dee85aa710763028de1dea16dccaa05.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNjpXbiliQLsdbtJEptuCrDz2hvHTKg9ovUg';" alt="Homeless Veterans Veteran Quotes Homeless Veterans Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Homeless Veterans Veteran Quotes Homeless Veterans Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/c1/c6/53c1c6b6c5a21f0da2ca2079fce07548.jpg" data-lightbox="roadtrip" data-title="Our Mission Is Homeless Intervention And Prevention With Over 40 000 Homeless Veterans Nationwide A Constant Need Is In 2020 Military Veterans Homeless Fight Hunger">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/c1/c6/53c1c6b6c5a21f0da2ca2079fce07548.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYwAGC-kCYRYpxVFYhaazQg8aIJxwYm4gvJA';" alt="Our Mission Is Homeless Intervention And Prevention With Over 40 000 Homeless Veterans Nationwide A Constant Need Is In 2020 Military Veterans Homeless Fight Hunger">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Our Mission Is Homeless Intervention And Prevention With Over 40 000 Homeless Veterans Nationwide A Constant Need Is In 2020 Military Veterans Homeless Fight Hunger</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/91/7c/45917c0aeaa8e5c083e4db38db2b1d9d.jpg" data-lightbox="roadtrip" data-title="Homeless Veterans On The Streets Of America Youtube Homeless Veterans Veteran Homeless">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/91/7c/45917c0aeaa8e5c083e4db38db2b1d9d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9sNW2miJSJqzO5WbG7tqRX6lWCyF1ATVq0w';" alt="Homeless Veterans On The Streets Of America Youtube Homeless Veterans Veteran Homeless">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Homeless Veterans On The Streets Of America Youtube Homeless Veterans Veteran Homeless</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/when-does-the-brexit-bill-go-to-parliament.html">When Does The Brexit Bill Go To Parliament</a></li>
+													<li class="list-group-item"><a href="/when-does-the-gi-bill-pay-book-stipend.html">When Does The Gi Bill Pay Book Stipend</a></li>
+													<li class="list-group-item"><a href="/when-will-i-receive-my-post-911-gi-bill-payments.html">When Will I Receive My Post 911 Gi Bill Payments</a></li>
+													<li class="list-group-item"><a href="/where-do-i-send-va-claims.html">Where Do I Send Va Claims</a></li>
+													<li class="list-group-item"><a href="/which-is-better-va-loan-or-conventional.html">Which Is Better Va Loan Or Conventional</a></li>
+													<li class="list-group-item"><a href="/when-does-gi-bill-pay-tuition.html">When Does Gi Bill Pay Tuition</a></li>
+													<li class="list-group-item"><a href="/what-was-the-gi-bill-and-how-did-it-help-veterans.html">What Was The Gi Bill And How Did It Help Veterans</a></li>
+													<li class="list-group-item"><a href="/when-do-i-get-my-first-gi-bill-payment.html">When Do I Get My First Gi Bill Payment</a></li>
+													<li class="list-group-item"><a href="/which-is-better-post-9-11-gi-bill-or-montgomery.html">Which Is Better Post 9 11 Gi Bill Or Montgomery</a></li>
+													<li class="list-group-item"><a href="/who-is-eligible-for-military-health-insurance.html">Who Is Eligible For Military Health Insurance</a></li>
+													<li class="list-group-item"><a href="/whats-the-definition-of-a-gi-bill.html">Whats The Definition Of A Gi Bill</a></li>
+													<li class="list-group-item"><a href="/when-do-new-bills-go-into-effect.html">When Do New Bills Go Into Effect</a></li>
+													<li class="list-group-item"><a href="/where-do-i-find-my-va-rating-decision-letter.html">Where Do I Find My Va Rating Decision Letter</a></li>
+													<li class="list-group-item"><a href="/where-do-i-send-va-form-21-4138.html">Where Do I Send Va Form 21 4138</a></li>
+													<li class="list-group-item"><a href="/when-will-the-bill-go-to-the-house.html">When Will The Bill Go To The House</a></li>
+													<li class="list-group-item"><a href="/where-to-use-gi-bill.html">Where To Use Gi Bill</a></li>
+													<li class="list-group-item"><a href="/when-does-the-gi-bill-pay.html">When Does The Gi Bill Pay</a></li>
+													<li class="list-group-item"><a href="/when-to-use-montgomery-gi-bill.html">When To Use Montgomery Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-were-the-effects-of-the-gi-bill-quizlet.html">What Were The Effects Of The Gi Bill Quizlet</a></li>
+													<li class="list-group-item"><a href="/when-does-the-gi-bill-pay-each-month.html">When Does The Gi Bill Pay Each Month</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

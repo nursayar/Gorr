@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Covid Infection Rate Percentage - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Covid Infection Rate Percentage",
+  "datePublished": "2021-02-17",
+  "image": "https://vtnews.vt.edu/content/vtnews_vt_edu/en/articles/2020/08/unirel-dashboardupdate/_jcr_content/article-image.transform/m-medium/image.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+covid+infection+rate+percentage",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Covid Infection Rate Percentage</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Thats roughly the same chance as rolling a four with two dice. There were 547 new COVID-19 infections confirmed in Nassau on Tuesday Feb. The infection figures are from the seven days to January 13 compared with the rate in the seven days. <br>				
+			</p>
+										<a class="badge badge-primary" href="/post-9-11-gi-bill-how-many-months-of-benefits.html">post 9 11 gi bill how many months of benefits</a>
+											<a class="badge badge-warning" href="/post-9-11-gi-bill-class-requirements.html">post 9 11 gi bill class requirements</a>
+											<a class="badge badge-primary" href="/other-than-honorable-va-benefits.html">other than honorable va benefits</a>
+											<a class="badge badge-success" href="/new-gi-bill-transfer-to-dependents.html">new gi bill transfer to dependents</a>
+											<a class="badge badge-dark" href="/pay-va-business-tax.html">pay va business tax</a>
+											<a class="badge badge-warning" href="/post-9-11-gi-bill-bah-for-part-time-students.html">post 9 11 gi bill bah for part time students</a>
+											<a class="badge badge-primary" href="/permanent-disability-rating-chart-washington-state.html">permanent disability rating chart washington state</a>
+											<a class="badge badge-dark" href="/nys-montgomery-bill-passed.html">nys montgomery bill passed</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you have come to visit the ideal site.  Our site provides you with suggestions for seeing the highest quality video and picture content, search and locate more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, particularly Youtube, so we recommend this video that you view.  You can also bring about supporting this site by sharing videos and graphics that you like on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.sanity.io/images/0vv8moc6/psychtimes/38d724636cbdf96b9eb4ea702cb3d2f5b83c9b81-1068x657.jpg?auto=format" data-lightbox="roadtrip" data-title="Covid 19 Has The Mortality Rate Declined Psychiatric Times">
+											<img class="card-img v-image ads-img " src="https://cdn.sanity.io/images/0vv8moc6/psychtimes/38d724636cbdf96b9eb4ea702cb3d2f5b83c9b81-1068x657.jpg?auto=format" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROaNiw89fZz-fhNnLzOAgLx_OokjxO15tcRA';" alt="Covid 19 Has The Mortality Rate Declined Psychiatric Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Covid 19 Has The Mortality Rate Declined Psychiatric Times</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.statcdn.com/Statistic/1115000/1119412-blank-355.png" data-lightbox="roadtrip" data-title="Zwdy Ldddfebsm">
+											<img class="card-img v-image ads-img " src="https://cdn.statcdn.com/Statistic/1115000/1119412-blank-355.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMh46qie2572ATKuEYqxIH9V7vnitLfBsWZg';" alt="Zwdy Ldddfebsm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Zwdy Ldddfebsm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.alexandriava.gov/webshots/covid-daily/2021/02/20210202.png" data-lightbox="roadtrip" data-title="Yhsajxzelr 6zm">
+											<img class="card-img v-image ads-img " src="https://media.alexandriava.gov/webshots/covid-daily/2021/02/20210202.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR235NCvg6oKPeUQJt16qGto9KFHSjxzlXdTA';" alt="Yhsajxzelr 6zm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Yhsajxzelr 6zm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.insider.com/5e5fc740fee23d14eb3dd212?width=1100&amp;format=jpeg&amp;auto=webp" data-lightbox="roadtrip" data-title="Coronavirus Compared To Flu Shared Symptoms Different Death Rates Business Insider">
+											<img class="card-img v-image ads-img " src="https://i.insider.com/5e5fc740fee23d14eb3dd212?width=1100&amp;format=jpeg&amp;auto=webp" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjvuoanumaOHerjcZ3lqK_XKUrzwZZ5oQDpQ';" alt="Coronavirus Compared To Flu Shared Symptoms Different Death Rates Business Insider">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coronavirus Compared To Flu Shared Symptoms Different Death Rates Business Insider</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.localdvm.com/wp-content/uploads/sites/14/2020/12/FCFT.jpg?w=720" data-lightbox="roadtrip" data-title="A Teachers Union Is Urging Governor Northam To Close Va Schools Until The State Has Covid 19 Under Control Wdvm25 Dcw50 Washington Dc">
+											<img class="card-img v-image ads-img " src="https://www.localdvm.com/wp-content/uploads/sites/14/2020/12/FCFT.jpg?w=720" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-35OBU0NMXziX-Mq9ZNIqrf8JP6qfmqyLuQ';" alt="A Teachers Union Is Urging Governor Northam To Close Va Schools Until The State Has Covid 19 Under Control Wdvm25 Dcw50 Washington Dc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Teachers Union Is Urging Governor Northam To Close Va Schools Until The State Has Covid 19 Under Control Wdvm25 Dcw50 Washington Dc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://specials-images.forbesimg.com/imageserve/5e86328aa1a0ef00060519a2/960x0.jpg?fit=scale" data-lightbox="roadtrip" data-title="Coronavirus Death Rate Is Increasing In The U S These Are The Worst Hit States">
+											<img class="card-img v-image ads-img " src="https://specials-images.forbesimg.com/imageserve/5e86328aa1a0ef00060519a2/960x0.jpg?fit=scale" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV4fX4ErhdyTxMtQmPHfv_br53FTWTXmvxSQ';" alt="Coronavirus Death Rate Is Increasing In The U S These Are The Worst Hit States">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coronavirus Death Rate Is Increasing In The U S These Are The Worst Hit States</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/COVID-19_restrictions_NI_November_2020.png/500px-COVID-19_restrictions_NI_November_2020.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV4fX4ErhdyTxMtQmPHfv_br53FTWTXmvxSQ';" alt="Coronavirus Death Rate Is Increasing In The U S These Are The Worst Hit States">
+										<div class="card-body">
+						<h3 class="h5"><b>Israel is currently leading the.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va covid infection rate percentage</strong>. 
+								
+																	WDBJ - The Virginia Department of Health is reporting 148721 total cases of COVID-19 in the commonwealth as of. 
+																	An Israeli healthcare group on Friday said coronavirus infections had plunged among people aged over 60 who had been vaccinated with the Pfizer Biontech vaccine. 
+																	Percent positive rate in Virginia remains steady Thursday. 
+																	The results are staggering. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The positivity rate is the percentage of people who have tested positive for COVID-19 at a point in time. 
+																	A systematic review of the accuracy of covid-19 tests reported false negative rates of between 2 and 29 equating to sensitivity of 71-98 based on negative RT-PCR tests which were positive on repeat testing6 The use of repeat RT-PCR testing as gold standard is likely to underestimate the true rate of false negatives as not all patients in the included studies received repeat testing and those with clinically diagnosed covid-19 were not considered as actually having covid-196. 
+																	This section of the bulletin provides a short summary of the study data sample design and data collection methods. 
+																	We use current COVID-19 infections to mean testing positive for SARS-CoV-2 with or without having symptoms on a swab taken from the nose and throat. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Data presented in this bulletin are from Round 1 of the COVID-19 Schools Infection Survey which looks to identify the percentage of pupils and staff testing positive for the coronavirus COVID-19. 
+																	The positivity rate is the percentage of people who have tested positive for COVID-19 at a point in time. 
+																	The positive COVID-19 infection rate on Long Island dropped below 6 percent for the first time in weeks though it remains the hottest spot for the virus in the state. 
+																	Third the virus discriminates. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A decrease in the number of cases and tests reported on January 31 and an increase in the number of cases and tests reported on February 1 is anticipated because of these upgrades. 
+																	Professor Tim Spector who led the research from Kings College London said the. 
+																	COVID vaccines have slashed infection rates in NHS staff by 50 per cent within 12 days a study has shown. 
+																	Race and ethnicity data for COVID cases isnt widely available at the county level so were using two numbers we do have. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	ONS found in recent weeks there has been increased infection rates in all age groups except among older teenagers and young adults where rates appear to be levelling off. 
+																	We use current COVID-19 infections to mean testing positive for SARS-CoV-2 with or without having symptoms on a swab taken from the nose and throat. 
+																	Surveillance system upgrades occurring on Saturday January 30 2021 will affect the data on the COVID-19 Cases Testing Dashboards on January 31 and February 1 2021. 
+																	In January the country tested 424131 samples and 21619 came out positive which means the average infection rate in the month was 509 percent. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The latest infection and death rates for each county from a New York Times dataset paired with the largest racial or ethnic group in that county based on the Census Bureaus 2019 ACS 5-Year estimates. 
+																	Anyone experiencing anxiety or stress related to COVID-19 may call or text VA COPES a free and confidential COVID-19 response warmline at 877-349-6428 Mon-Fri 900am to 900pm and Sat - Sun. 
+																	07 to 11 with a daily infection growth rate range of -5 to 0 as of 29 January 2021. 
+																	Nationally the overall percentage of respiratory specimens testing positive for SARS-CoV-2 the virus causing COVID-19 decreased from 120 during week 2 to 110 during week 3. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Spanish speakers are available. 
+																	It is thought the infection rate was much higher than. 
+																	How the Covid-19 infection rate compares in your part of the region - in order of percentage. 
+																	2 bringing the total to 130933 since the pandemic began last year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	According to the latest figures the infection rate in Tendring in Essex has fallen to 4899 cases per 100000 people which is the 20th-highest rate in England in the week to 25 January. 
+																	Between Friday October 23 and October 30 the percentage of Year 7 to Year 11 pupils testing positive for Covid fell from 172 per cent to 159 per cent. 
+																	Percent positivity decreased in all ten Health and Human Services HHS regions external icon and decreased among all age groups. 
+																	People in the 75-79 age group have more than a 3 chance of dying if infected with coronavirus while people aged 80 and over have more than an 8 chance of dying. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There have been more than 38 million confirmed cases of coronavirus in the UK and over 100000 people have died government figures show. 
+																	The rate was 1136 percent in October 2020 1312. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.chesterfield.gov/ImageRepository/Document?documentID=15220" data-lightbox="roadtrip" data-title="County Response To Covid 19 Chesterfield County Va">
+											<img class="card-img v-image ads-img " src="https://www.chesterfield.gov/ImageRepository/Document?documentID=15220" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6aVXltWjc6WobxlhwjqmhmEACkiJ9HgkJHQ';" alt="County Response To Covid 19 Chesterfield County Va">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">County Response To Covid 19 Chesterfield County Va</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://public.tableau.com/static/images/YW/YWZH9RXNZ/1_rss.png" data-lightbox="roadtrip" data-title="Virginia June 8 Covid 19 Update Statewide Positive Rate Down To 10 570 New Cases 5 New Deaths Reported Wavy Com">
+											<img class="card-img v-image ads-img " src="https://public.tableau.com/static/images/YW/YWZH9RXNZ/1_rss.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnBxllonxPiZ4wzPHsRqLWfZwrX7mDbhzmWg';" alt="Virginia June 8 Covid 19 Update Statewide Positive Rate Down To 10 570 New Cases 5 New Deaths Reported Wavy Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia June 8 Covid 19 Update Statewide Positive Rate Down To 10 570 New Cases 5 New Deaths Reported Wavy Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://public.tableau.com/static/images/Pa/PandemicMetrics_16013864146400/CDCSchoolMetrics/1_rss.png" data-lightbox="roadtrip" data-title="Public Information Office Covid 19 Case Data">
+											<img class="card-img v-image ads-img " src="https://public.tableau.com/static/images/Pa/PandemicMetrics_16013864146400/CDCSchoolMetrics/1_rss.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBvbzUtgVcwTzMBgtsA-nNePiOTSu0swyupQ';" alt="Public Information Office Covid 19 Case Data">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Public Information Office Covid 19 Case Data</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/commons/6/6b/U.S._COVID-19_Deaths_Could_Be_Far_Higher_Than_Reported.jpg" data-lightbox="roadtrip" data-title="Statistics Of The Covid 19 Pandemic In The United States Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/commons/6/6b/U.S._COVID-19_Deaths_Could_Be_Far_Higher_Than_Reported.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmy2eTx_DKqbuj37IQ3tKUEmtR8zX7TleVOg';" alt="Statistics Of The Covid 19 Pandemic In The United States Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Statistics Of The Covid 19 Pandemic In The United States Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ourworldindata.org/uploads/2020/04/total-covid-cases-region.svg" data-lightbox="roadtrip" data-title="Thailand Coronavirus Pandemic Country Profile Our World In Data">
+											<img class="card-img v-image ads-img " src="https://ourworldindata.org/uploads/2020/04/total-covid-cases-region.svg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyg8Zd6Iti6spHU2MLhTCptTTgjEpd3yxE-Q';" alt="Thailand Coronavirus Pandemic Country Profile Our World In Data">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thailand Coronavirus Pandemic Country Profile Our World In Data</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ourworldindata.org/grapher/exports/covid-19-death-rate-vs-population-density.svg" data-lightbox="roadtrip" data-title="O9ikv032cf1dzm">
+											<img class="card-img v-image ads-img " src="https://ourworldindata.org/grapher/exports/covid-19-death-rate-vs-population-density.svg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsmJJa_jFbGm48PZfj7pPgzmTlnz80nKF1nQ';" alt="O9ikv032cf1dzm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">O9ikv032cf1dzm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vtnews.vt.edu/content/vtnews_vt_edu/en/articles/2020/08/unirel-dashboardupdate/_jcr_content/article-image.transform/m-medium/image.jpg" data-lightbox="roadtrip" data-title="Dashboard Designed To Convey Snapshot Of Campus Health Virginia Tech Daily Virginia Tech">
+											<img class="card-img v-image ads-img " src="https://vtnews.vt.edu/content/vtnews_vt_edu/en/articles/2020/08/unirel-dashboardupdate/_jcr_content/article-image.transform/m-medium/image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2qrvNx1kNCtIx-6qormKusRFivPLJMYbHwA';" alt="Dashboard Designed To Convey Snapshot Of Campus Health Virginia Tech Daily Virginia Tech">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dashboard Designed To Convey Snapshot Of Campus Health Virginia Tech Daily Virginia Tech</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://newsroom.uw.edu/sites/default/files/styles/feature/public/covid_emergency_gettyimages2-1215574227.jpg?itok=KGRQXI6y&amp;c=34043d3fc01de931f45a051e43316c6b" data-lightbox="roadtrip" data-title="Early Study Of Covid 19 Patients Shows High Mortality Rate Newsroom">
+											<img class="card-img v-image ads-img " src="https://newsroom.uw.edu/sites/default/files/styles/feature/public/covid_emergency_gettyimages2-1215574227.jpg?itok=KGRQXI6y&amp;c=34043d3fc01de931f45a051e43316c6b" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4BELKC3oIEq3Q8ps351eD53AvbyECXmRSPQ';" alt="Early Study Of Covid 19 Patients Shows High Mortality Rate Newsroom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Early Study Of Covid 19 Patients Shows High Mortality Rate Newsroom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://health.mcleancountyil.gov/ImageRepository/Document?documentID=4872" data-lightbox="roadtrip" data-title="Ihmpy6fblwagqm">
+											<img class="card-img v-image ads-img " src="https://health.mcleancountyil.gov/ImageRepository/Document?documentID=4872" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Ewvtnub471P-8pNd_Cy_bG-qOB67ojigbA';" alt="Ihmpy6fblwagqm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ihmpy6fblwagqm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.statcdn.com/Statistic/1110000/1114375-blank-754.png" data-lightbox="roadtrip" data-title="Masks In Europe 2020 Statista">
+											<img class="card-img v-image ads-img " src="https://cdn.statcdn.com/Statistic/1110000/1114375-blank-754.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEWVSCEadI1cGvzCmZf4sKBNULfo6BsgGmFQ';" alt="Masks In Europe 2020 Statista">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Masks In Europe 2020 Statista</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.suffolkva.us/ImageRepository/Document?documentID=5309" data-lightbox="roadtrip" data-title="Suffolk Coronavirus Covid 19 Updates Suffolk Va">
+											<img class="card-img v-image ads-img " src="http://www.suffolkva.us/ImageRepository/Document?documentID=5309" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxKw2FbUyC_zMMbe3x6spme7fdsaMBTq8iKg';" alt="Suffolk Coronavirus Covid 19 Updates Suffolk Va">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Suffolk Coronavirus Covid 19 Updates Suffolk Va</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/COVID-19_restrictions_NI_November_2020.png/500px-COVID-19_restrictions_NI_November_2020.png" data-lightbox="roadtrip" data-title="Covid 19 Pandemic In Northern Ireland Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/COVID-19_restrictions_NI_November_2020.png/500px-COVID-19_restrictions_NI_November_2020.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSflVmGLAloQQKW00S1RtJhBYQOpbjFbMKSA';" alt="Covid 19 Pandemic In Northern Ireland Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Covid 19 Pandemic In Northern Ireland Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.bannerhealth.com/healthcareblog/-/media/images/project/healthcareblog/hero-images/2020/06/herd-immunity-infographic.ashx?h=1764&amp;w=750&amp;hash=48DC0B4A3212EE7127E03F23D1F0D096" data-lightbox="roadtrip" data-title="How Is Herd Immunity Achieved At Scale Banner Health">
+											<img class="card-img v-image ads-img " src="https://www.bannerhealth.com/healthcareblog/-/media/images/project/healthcareblog/hero-images/2020/06/herd-immunity-infographic.ashx?h=1764&amp;w=750&amp;hash=48DC0B4A3212EE7127E03F23D1F0D096" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsgbbexjtwzTMwTrx8yvGqMFOb44xp9od6fw';" alt="How Is Herd Immunity Achieved At Scale Banner Health">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Is Herd Immunity Achieved At Scale Banner Health</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/student-loan-with-gi-bill.html">Student Loan With Gi Bill</a></li>
+													<li class="list-group-item"><a href="/status-of-post-911-gi-bill-application.html">Status Of Post 911 Gi Bill Application</a></li>
+													<li class="list-group-item"><a href="/the-gi-bill-guaranteed-every-former-soldier-a-job.html">The Gi Bill Guaranteed Every Former Soldier A Job</a></li>
+													<li class="list-group-item"><a href="/stateto-external-url.html">Stateto External Url</a></li>
+													<li class="list-group-item"><a href="/the-gi-bill-after-wwii.html">The Gi Bill After Wwii</a></li>
+													<li class="list-group-item"><a href="/student-loans-and-post-911-gi-bill.html">Student Loans And Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/the-virginia-department-of-education.html">The Virginia Department Of Education</a></li>
+													<li class="list-group-item"><a href="/teb-gi-bill.html">Teb Gi Bill</a></li>
+													<li class="list-group-item"><a href="/the-musculoskeletal-system-va-rating.html">The Musculoskeletal System Va Rating</a></li>
+													<li class="list-group-item"><a href="/the-gi-bill-provided-returning-soldiers-with-all-of-the-following-except.html">The Gi Bill Provided Returning Soldiers With All Of The Following Except</a></li>
+													<li class="list-group-item"><a href="/the-gi-bill-of-rights-guaranteed-a-job-to-every-former-soldier-who-had-served-in-world-war-ii.html">The Gi Bill Of Rights Guaranteed A Job To Every Former Soldier Who Had Served In World War Ii</a></li>
+													<li class="list-group-item"><a href="/statego-jasmine.html">Statego Jasmine</a></li>
+													<li class="list-group-item"><a href="/the-bill-going-down-in-flames.html">The Bill Going Down In Flames</a></li>
+													<li class="list-group-item"><a href="/the-gi-bill-provided-all-of-the-following-except.html">The Gi Bill Provided All Of The Following Except</a></li>
+													<li class="list-group-item"><a href="/statego-in-new-tab-angularjs.html">Statego In New Tab Angularjs</a></li>
+													<li class="list-group-item"><a href="/transfer-benefits-post-911-gi-bill.html">Transfer Benefits Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/supplemental-insurance-for-veterans.html">Supplemental Insurance For Veterans</a></li>
+													<li class="list-group-item"><a href="/symptoms-of-major-depression-with-psychotic-features.html">Symptoms Of Major Depression With Psychotic Features</a></li>
+													<li class="list-group-item"><a href="/the-meaning-of-gi-bill-of-rights.html">The Meaning Of Gi Bill Of Rights</a></li>
+													<li class="list-group-item"><a href="/strategi-question-student-have.html">Strategi Question Student Have</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

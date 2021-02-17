@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Billi Billi - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Billi Billi",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/c4/91/23/c491235fad0dc8e58b943db36353bb16.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=billi+billi",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Billi Billi</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Coronavirus restrictions extended in Scotland for another week. Royal Mail launches 72p parcel collection service. This level actually compares pretty favorably with the market at large as the PE for the SP 500 compares in at about 2449. <br>				
+			</p>
+										<a class="badge badge-dark" href="/changing-schools-with-the-gi-bill.html">changing schools with the gi bill</a>
+											<a class="badge badge-warning" href="/can-you-get-disability-for-post-traumatic-stress-disorder.html">can you get disability for post traumatic stress disorder</a>
+											<a class="badge badge-danger" href="/can-you-use-the-gi-bill-for-a-second-masters-degree.html">can you use the gi bill for a second masters degree</a>
+											<a class="badge badge-primary" href="/ch-33-vs-ch-35.html">ch 33 vs ch 35</a>
+											<a class="badge badge-success" href="/can-you-use-the-post-9-11-gi-bill-overseas.html">can you use the post 9 11 gi bill overseas</a>
+											<a class="badge badge-primary" href="/chapter-1606-gi-bill-pay-chart.html">chapter 1606 gi bill pay chart</a>
+											<a class="badge badge-secondary" href="/can-you-get-a-va-rating-for-hemorrhoids.html">can you get a va rating for hemorrhoids</a>
+											<a class="badge badge-success" href="/can-you-pass-your-gi-bill-to-your-child.html">can you pass your gi bill to your child</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you've come to pay a visit to the right site.  Our site provides you with suggestions for viewing the highest quality video and image content, hunt and locate more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, therefore we recommend this video for you to view.  It is also possible to contribute to supporting this site by sharing videos and graphics that you like on this blog on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/f0/c1/37f0c12492fd543a4baea0ffc79e5b39.jpg" data-lightbox="roadtrip" data-title="Funawake Com Cute Cat Wallpaper Kittens Cutest Pets Cats">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/f0/c1/37f0c12492fd543a4baea0ffc79e5b39.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV3K6jYFNVrKLzLXLvetn20b0E1mP_XCazjw';" alt="Funawake Com Cute Cat Wallpaper Kittens Cutest Pets Cats">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Funawake Com Cute Cat Wallpaper Kittens Cutest Pets Cats</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/91/23/c491235fad0dc8e58b943db36353bb16.jpg" data-lightbox="roadtrip" data-title="Billi Hd Wallpaper Cats Cat Profile Cute Cats">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/91/23/c491235fad0dc8e58b943db36353bb16.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3cHDE4pvCW9rGVbjffkHlXv-efg92FPPQ7g';" alt="Billi Hd Wallpaper Cats Cat Profile Cute Cats">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Billi Hd Wallpaper Cats Cat Profile Cute Cats</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b9/f5/58/b9f558ae10035267003d1c6376805f06.jpg" data-lightbox="roadtrip" data-title="Pin By Linda Smith On Kittens Cats 2 Kittens Cutest Cute Cats Cute Baby Animals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b9/f5/58/b9f558ae10035267003d1c6376805f06.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHrYHNPsmy-tyOd2XkNP8D0kn0j79kJkt5dg';" alt="Pin By Linda Smith On Kittens Cats 2 Kittens Cutest Cute Cats Cute Baby Animals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Linda Smith On Kittens Cats 2 Kittens Cutest Cute Cats Cute Baby Animals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/10/5c/a3/105ca3bd7ca7c25006ec134a227aca54.jpg" data-lightbox="roadtrip" data-title="Cat Billi Ka Rona Jinnat Jin Billi Ka Rasta Kaatna Kali Billi Horror Youtube Cat Crying Cats Youtube">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/10/5c/a3/105ca3bd7ca7c25006ec134a227aca54.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-myr93seIO-TuKUob_88elFpFNBNSeo9zew';" alt="Cat Billi Ka Rona Jinnat Jin Billi Ka Rasta Kaatna Kali Billi Horror Youtube Cat Crying Cats Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cat Billi Ka Rona Jinnat Jin Billi Ka Rasta Kaatna Kali Billi Horror Youtube Cat Crying Cats Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/64/32/ac64325720f0365c52e14c2ebf3ed9d4.jpg" data-lightbox="roadtrip" data-title="Junglee Billi Black Jaguar Animal Black Panther Cat Jaguar Animal">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/64/32/ac64325720f0365c52e14c2ebf3ed9d4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_xvM9r7bGkFuCRiAK1N5Icit3N1EqtNgUcA';" alt="Junglee Billi Black Jaguar Animal Black Panther Cat Jaguar Animal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Junglee Billi Black Jaguar Animal Black Panther Cat Jaguar Animal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/42/4a/77/424a7747bcac19f4af0775a0b41e23d7.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/42/4a/77/424a7747bcac19f4af0775a0b41e23d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT24OnTeqhW8aeuGzJII_yDgjG2FDvzp1CM6Q';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/c4/91/23/c491235fad0dc8e58b943db36353bb16.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT24OnTeqhW8aeuGzJII_yDgjG2FDvzp1CM6Q';" alt="">
+										<div class="card-body">
+						<h3 class="h5"><b>Baidu Bilibili and NetEase Have a Lot to Prove This Week Rick Munarriz Nov 16 2020 Three of Chinas most compelling growth stocks are reporting quarterly results later this week.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Billi billi</strong>. 
+								
+																	Puts current PE ratio above its midpoint which is 851 over the past five years. 
+																	Is a holding company which represents the iconic brand of online entertainment for young generations in China. 
+																	If we focus on the stocks long-term PE trend the current level Group 1 Automotive. 
+																	Bo Burnham - The Me Generation简介. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	7 days 7am - 10pm. 
+																	The Arctic wolf or white wolf is unique among wolves in its light coloring. 
+																	Bilibili offers videos of various fields including anime music dancing science and technology entertainment movie drama fashion video game strategy daily life and advertisement films but is also known for the extensive kuso -style parodies by subcultural content creators. 
+																	Daniel Sloss is an internationally acclaimed and award-winning Scottish comedian has appeared on USA TVs Conan a record number of 8 times as well as other TV shows including Drunk History and Roast Battle Comedy Central The late Late Show With Craig Ferguson CBS and Sunday Night at the London. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	3 Reasons Bilibili Can Grow Its Business Over the Next Few Years. 
+																	British shipbuilding gets boost as new support ships to be built by UK-led teams. 
+																	FREE Insured Delivery. 
+																	Supremely adapted to the tundra where it lives its coloration helps it blend into the landscape as it hunts the caribou moose muskox and Arctic hare that make up its diet. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Company operates its business through four segments. 
+																	Shares of Bilibili NASDAQBILI Chinas Gen Z-oriented platform for anime comics and gaming ACG content surged more than 400 over the past 12 months as the company dazzled investors with. 
+																	Daniel Sloss DARK Jigsaw streaming on Netflix 11 Sept 2018. 
+																	I watched Bo Burnhams Make Happy special and. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The most popular video sharing website and community themed around animation comic and game ACG based in China NASDAQBILI. 
+																	Is a China-based company principally engaged in the Internet and other related businesses. 
+																	Egypt and even the guide-books speak of the Billi in the valley of the NileThe Land of Midian Volume 2. 
+																	Can you catch the coronavirus twice. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	LONDON Reuters - European shares closed the day higher in choppy trade on Friday but notched up their second straight week of losses as concerns about slowing global growth weak earnings and a US-China trade war drove investors away from the regions equities. 
+																	Busta Rhymes Talks to Bangladesh About Jay-Zs Billi MomentWhudat The Latest Black Celebrity News and Views sprinkled with flavors. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/b9/cd/0bb9cd53d5a6b8dffccde33885d07f73.jpg" data-lightbox="roadtrip" data-title="Pin On Jugnu Kids English Rhymes Nursery Rhymes Educational And Learning Video Collection For Kids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/b9/cd/0bb9cd53d5a6b8dffccde33885d07f73.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbUfmgmYZgZ7MfqjR4QITbUG3TYIz6FJjBCg';" alt="Pin On Jugnu Kids English Rhymes Nursery Rhymes Educational And Learning Video Collection For Kids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Jugnu Kids English Rhymes Nursery Rhymes Educational And Learning Video Collection For Kids</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/8e/46/8d8e4657f8548237d7346c53ed44d684.jpg" data-lightbox="roadtrip" data-title="Chili And Billi Two Little Cats Kissing Each Other Beautiful Cat Cats Fur Babies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/8e/46/8d8e4657f8548237d7346c53ed44d684.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRgASGK5tM9E3GXwCq4IslrESl62_aodAt5w';" alt="Chili And Billi Two Little Cats Kissing Each Other Beautiful Cat Cats Fur Babies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chili And Billi Two Little Cats Kissing Each Other Beautiful Cat Cats Fur Babies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/96/97/f896974ee81b48e4cb3822d471b695b1.jpg" data-lightbox="roadtrip" data-title="Meri Billi Kittens Cutest Kitten Wallpaper Cats">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/96/97/f896974ee81b48e4cb3822d471b695b1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIM6ZxfgYwssMFgRdzuWDrqgbFZ6V52f8SVQ';" alt="Meri Billi Kittens Cutest Kitten Wallpaper Cats">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meri Billi Kittens Cutest Kitten Wallpaper Cats</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/aa/34/c4aa34aa1886fa8b4dcb7d978be4d799.jpg" data-lightbox="roadtrip" data-title="Billi Ke Jer Billi Ki Naal Nal Cat S Naval Chord Cat Umbilical Cord For Wealth Prosperity Antique Item Cats Antique Items Kittens">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/aa/34/c4aa34aa1886fa8b4dcb7d978be4d799.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7oZi3C_ysmL58sEutoAGdo_bLbd96WSmwyQ';" alt="Billi Ke Jer Billi Ki Naal Nal Cat S Naval Chord Cat Umbilical Cord For Wealth Prosperity Antique Item Cats Antique Items Kittens">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Billi Ke Jer Billi Ki Naal Nal Cat S Naval Chord Cat Umbilical Cord For Wealth Prosperity Antique Item Cats Antique Items Kittens</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/07/4d/b9/074db9028a99bc4fe6a187e36fc6559d.jpg" data-lightbox="roadtrip" data-title="Cat Billi Cute Animals Cute Animal Pictures Kittens Cutest">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/07/4d/b9/074db9028a99bc4fe6a187e36fc6559d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVZEh9WDocIXBCyDvQeE2rjjjPc6pL0YEfyQ';" alt="Cat Billi Cute Animals Cute Animal Pictures Kittens Cutest">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cat Billi Cute Animals Cute Animal Pictures Kittens Cutest</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/e3/b0/fae3b04c6f518fce8a7c8ff684bd3059.jpg" data-lightbox="roadtrip" data-title="Pin En Raaztv">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/e3/b0/fae3b04c6f518fce8a7c8ff684bd3059.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrrRvPb2qEyN6wmdCim6GNeK1A_K57gHt-3g';" alt="Pin En Raaztv">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin En Raaztv</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/97/ef/a697efbdc537d5e9958ba48f1ebf19b1.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/97/ef/a697efbdc537d5e9958ba48f1ebf19b1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUoh6qmKKCC6G1tc7VUlo5y08lSbkKVSQW5A';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/6b/0b/d56b0bd1eed036cabfd25b4995dc45d8.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/6b/0b/d56b0bd1eed036cabfd25b4995dc45d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRicACrJyP4ZgUw6gGKiq94DyoVJWTqQoNl6w';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/af/74/ee/af74ee14b60e86c27bdf8b64b8dca030.jpg" data-lightbox="roadtrip" data-title="Billi Rani Hindi Nursery Rhymes For Children Kidsone Billi Rani Enjoy The Most Popular Hindi 3d Animati Kids Nursery Rhymes Rhymes For Kids Nursery Rhymes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/af/74/ee/af74ee14b60e86c27bdf8b64b8dca030.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQow98TDSrflT4Lcb856Oy5tRq1Yu86-ks0jA';" alt="Billi Rani Hindi Nursery Rhymes For Children Kidsone Billi Rani Enjoy The Most Popular Hindi 3d Animati Kids Nursery Rhymes Rhymes For Kids Nursery Rhymes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Billi Rani Hindi Nursery Rhymes For Children Kidsone Billi Rani Enjoy The Most Popular Hindi 3d Animati Kids Nursery Rhymes Rhymes For Kids Nursery Rhymes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/91/99/dc/9199dc23b1d14df6894c4c062fd2ba11.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/91/99/dc/9199dc23b1d14df6894c4c062fd2ba11.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQizC57wqBhJVFZ3y5Cta_KIYc2GShbJPHD4A';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/a1/71/81/a171813a64e8ce995c4fba17fd3b6774.jpg" data-lightbox="roadtrip" data-title="Download Main Tera Billu Tu Meri Billi Song Talking Tom Version Main Tera Boyfriend Tu Meri Girlfriend On Vidmate Com My Talking Tom Tom Love Talking Tom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/a1/71/81/a171813a64e8ce995c4fba17fd3b6774.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDogxdh0_eritt-L5BfYFiRTWioMBCtNmOJg';" alt="Download Main Tera Billu Tu Meri Billi Song Talking Tom Version Main Tera Boyfriend Tu Meri Girlfriend On Vidmate Com My Talking Tom Tom Love Talking Tom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Download Main Tera Billu Tu Meri Billi Song Talking Tom Version Main Tera Boyfriend Tu Meri Girlfriend On Vidmate Com My Talking Tom Tom Love Talking Tom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/6c/29/cf/6c29cf268949e1a6c1c3d670ef9efc27.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/6c/29/cf/6c29cf268949e1a6c1c3d670ef9efc27.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKVV35OQrboCFByTuW7KolzZSZkZ1OK3S3Ew';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/b4/88/21/b4882141beb2dccc1c78150d5bd48fbb.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/b4/88/21/b4882141beb2dccc1c78150d5bd48fbb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8fiEWmu415m-2oCqzeo_olzF1NcWdeK6H1A';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/schools-that-accept-gi-bill-near-me.html">Schools That Accept Gi Bill Near Me</a></li>
+													<li class="list-group-item"><a href="/state-government-organize-their-own-court-system-except.html">State Government Organize Their Own Court System Except</a></li>
+													<li class="list-group-item"><a href="/real-estate-courses-gi-bill.html">Real Estate Courses Gi Bill</a></li>
+													<li class="list-group-item"><a href="/ssi-for-veterans.html">Ssi For Veterans</a></li>
+													<li class="list-group-item"><a href="/state-go-to-url.html">State Go To Url</a></li>
+													<li class="list-group-item"><a href="/short-definition-of-gi-bill-of-rights.html">Short Definition Of Gi Bill Of Rights</a></li>
+													<li class="list-group-item"><a href="/qtc-va-exam-reviews.html">Qtc Va Exam Reviews</a></li>
+													<li class="list-group-item"><a href="/spouse-using-gi-bill.html">Spouse Using Gi Bill</a></li>
+													<li class="list-group-item"><a href="/requirements-to-transfer-gi-bill-benefits.html">Requirements To Transfer Gi Bill Benefits</a></li>
+													<li class="list-group-item"><a href="/stage-2-kidney-disease-va-disability-rating.html">Stage 2 Kidney Disease Va Disability Rating</a></li>
+													<li class="list-group-item"><a href="/smc-va-disability.html">Smc Va Disability</a></li>
+													<li class="list-group-item"><a href="/right-knee-instability-va-rating.html">Right Knee Instability Va Rating</a></li>
+													<li class="list-group-item"><a href="/spf-30-la-gi.html">Spf 30 La Gi</a></li>
+													<li class="list-group-item"><a href="/ssdi-for-military-ptsd.html">Ssdi For Military Ptsd</a></li>
+													<li class="list-group-item"><a href="/social-security-disability-benefits-va.html">Social Security Disability Benefits Va</a></li>
+													<li class="list-group-item"><a href="/ptsd-100-percent-criteria.html">Ptsd 100 Percent Criteria</a></li>
+													<li class="list-group-item"><a href="/rheumatoid-arthritis-service-connected-disability.html">Rheumatoid Arthritis Service Connected Disability</a></li>
+													<li class="list-group-item"><a href="/right-ankle-va-rating.html">Right Ankle Va Rating</a></li>
+													<li class="list-group-item"><a href="/simple-definition-gi-bill-of-rights.html">Simple Definition Gi Bill Of Rights</a></li>
+													<li class="list-group-item"><a href="/qualifying-service-for-post-911-gi-bill.html">Qualifying Service For Post 911 Gi Bill</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

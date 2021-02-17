@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>How To Check Va Rating - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "How To Check Va Rating",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/736x/3f/80/e8/3f80e8556cb858b7fcd4888cfc5e7a17.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+to+check+va+rating",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>How To Check Va Rating</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Also see current voltage power reactance and watt. See the results below. VA makes a determination about the severity of your disability based on the evidence you submit as part of your claim or that VA obtains from your military records. <br>				
+			</p>
+										<a class="badge badge-primary" href="/goji-benefits.html">goji benefits</a>
+											<a class="badge badge-info" href="/go-to-education-galaxy.html">go to education galaxy</a>
+											<a class="badge badge-primary" href="/gophone-bill-payment.html">gophone bill payment</a>
+											<a class="badge badge-success" href="/gs-scale-2020-va-beach.html">gs scale 2020 va beach</a>
+											<a class="badge badge-light" href="/gobills-gojek.html">gobills gojek</a>
+											<a class="badge badge-light" href="/gohealth-billing.html">gohealth billing</a>
+											<a class="badge badge-danger" href="/go-together-housing.html">go together housing</a>
+											<a class="badge badge-secondary" href="/go-utility-billing-long-beach.html">go utility billing long beach</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to visit the right site.  Our website provides you with suggestions for seeing the highest quality video and image content, hunt and locate more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this video for you to see.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/2a/4f/732a4f135a1978df8f9667c1cb819813.png" data-lightbox="roadtrip" data-title="6 C P Exam Success Tips For Disabled Veterans Exam Success Disability Disabled Veterans Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/2a/4f/732a4f135a1978df8f9667c1cb819813.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLgm573HhhAbJZcbY0ZAeXGYi-LuBGFCL3uw';" alt="6 C P Exam Success Tips For Disabled Veterans Exam Success Disability Disabled Veterans Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 C P Exam Success Tips For Disabled Veterans Exam Success Disability Disabled Veterans Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/27/78/e0/2778e0bbd9e09e9ce15c3241753697f6.jpg" data-lightbox="roadtrip" data-title="Va C And P Exam Do S And Don Ts Va Compensation Pension Exam Exam Medical Information Compensation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/27/78/e0/2778e0bbd9e09e9ce15c3241753697f6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXBKqI73W8CVwE_3JDFu9LlXWnTz4MZCVLVA';" alt="Va C And P Exam Do S And Don Ts Va Compensation Pension Exam Exam Medical Information Compensation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va C And P Exam Do S And Don Ts Va Compensation Pension Exam Exam Medical Information Compensation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/a3/36/f4a33604ae77a2e0a87ecd3917771b78.jpg" data-lightbox="roadtrip" data-title="Military Medical Retirement Pay Chart 2020 Va Disability Medical Retirement Va Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/a3/36/f4a33604ae77a2e0a87ecd3917771b78.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTphECfRFvMLwnCtQbvqVb6zI8zQdL1sUnUlw';" alt="Military Medical Retirement Pay Chart 2020 Va Disability Medical Retirement Va Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Medical Retirement Pay Chart 2020 Va Disability Medical Retirement Va Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/89/e8/a5/89e8a5d7e90eef5677901f2b0e1d2835.jpg" data-lightbox="roadtrip" data-title="Va Disability Letter Sle Nod 2 Ideal Accordingly Award Lettering Business Letter Template Formal Business Letter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/89/e8/a5/89e8a5d7e90eef5677901f2b0e1d2835.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvNZHLttNzAwQZrk3s4FpPx0W63lHkdI_HNw';" alt="Va Disability Letter Sle Nod 2 Ideal Accordingly Award Lettering Business Letter Template Formal Business Letter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Letter Sle Nod 2 Ideal Accordingly Award Lettering Business Letter Template Formal Business Letter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/fd/a9/6cfda9abf9d435371a73500fe58a84da.png" data-lightbox="roadtrip" data-title="Pin On Va">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/fd/a9/6cfda9abf9d435371a73500fe58a84da.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaaCLjsF4NpD6NMHsRKQfsDTAf0jwMgYVB5g';" alt="Pin On Va">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Va</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/a0/0d/82a00d3acfaec6e5f261c300489b8956.png" data-lightbox="roadtrip" data-title="Steps To Apply For Veterans Benefits From The Va Veterans Benefits Military Benefits Va Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/a0/0d/82a00d3acfaec6e5f261c300489b8956.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQ1r5MIMvV1_cvKzXA4Qcv8csm6UsFlMmoA';" alt="Steps To Apply For Veterans Benefits From The Va Veterans Benefits Military Benefits Va Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Steps To Apply For Veterans Benefits From The Va Veterans Benefits Military Benefits Va Disability</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/3c/3d/d2/3c3dd25b9779f1bfb86c9da15c4a60fc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQ1r5MIMvV1_cvKzXA4Qcv8csm6UsFlMmoA';" alt="Steps To Apply For Veterans Benefits From The Va Veterans Benefits Military Benefits Va Disability">
+										<div class="card-body">
+						<h3 class="h5"><b>If you are out of town you could also stop by a VA center and ask for the Freedom of Information Office and they might be able to assist you in getting that info.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How to check va rating</strong>. 
+								
+																	Whether you choose to contact the VA office online or via phone you can quickly get the status of your claim. 
+																	Go to your My VA dashboard. 
+																	Find out how to add eligible dependents. 
+																	The VA figure is nominally 167 times 167 percent of the power consumption in watts. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	20 40 60. 
+																	Determine the effect of different gauge wire on the CT circuit. 
+																	Then find the part of the percentage table that applies to your situation. 
+																	Waiting to hear the result of a VA disability claim can be eased with a status update. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you dont get a payment after 15 days please call the Veterans help line at 800-827-1000 Monday through Friday 800 am. 
+																	Determine what VA rating you would need for a CT given a required distance. 
+																	At the end of a VA Rating Decision there is a final document called a rating code sheet. 
+																	Well pay you either by direct deposit or check. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Use our VA disability calculator to determine your combined disability rating and annual or monthly compensation. 
+																	Select the veteran status and enter other necessary details if needed. 
+																	On your computer go to VAgov and on their site you can find the nearest VA center to where you are visiting. 
+																	VA rates disability from 0 to 100 in 10 increments eg. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can check the rateable value of your property - this is set by the Valuation Office Agency VOA and used by your local council to calculate your business rates bill. 
+																	Alternatively you can multiply the VA rating of the power supply by 06 60 percent to get a good idea of its power-delivering capability in watts. 
+																	The rate tables that the VA uses to calculate benefits can be found online on the VAs website. 
+																	If you have a disability rating of 30 or higher you may be able to add eligible dependents to your VA disability compensation to get a higher payment also called a benefit rate. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If your disability gets worse you can file a claim for an increase in benefits. 
+																	Scroll down to the Track Claims section. 
+																	Look for your highest disability rating or highest combined rating in the left column and your next lowest disability rating in the top row. 
+																	Youll find the link for this dashboard in the top right corner of the page once youre. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	So lets take a minute to explore the law regarding the symptoms and impairment required to warrant a VA disability rating for GERD. 
+																	Once Im signed in how do I check my VA claim or appeal status. 
+																	Find out what support is. 
+																	Using your disability percentage rating you can calculate approximately how much you are owed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In this post we will be exploring the GERD VA rating criteria in detail. 
+																	Veterans Administration ratings are percentages and it ca. 
+																	See a list of each of your rated disabilities and your VA combined disability rating. 
+																	If your decision notice shows at least a 10 disability rating youll get your first payment within 15 days. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The rating code sheet will display all of the veterans conditions that are subject to compensation. 
+																	Sign in to view your VA disability ratings online. 
+																	First find the table that applies to your disability percentage. 
+																	10 20 30 etc. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A rating for multiple disabilities is called a combined rating and a major misconception is that combined simply means add the conditions together eg. 
+																	Enter the total number of rated disabilities and then provide an appropriate disability rating for each of the conditions. 
+																	In 2021 a veterans VA rating for GERD can be 10 30 or 60. 
+																	This document is another resource that veterans can use to find out what their specific disability rating is for each condition. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All necessary data for calculations are taken from the US. 
+																	File for a VA disability increase. 
+																	Department of Veterans Affairs Effective 12120. 
+																	There youll see a summary of the latest status information for any. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Determine the max length of wire you can use with a meter wo losing accuracy. 
+																	Mitchell Hockenbury explains in plain English the method to determng your VA disability rating. 
+																	This rating which moves in 10 increments is based on service treatment records VA medical records and private medical records directly relating to the disability. 
+																	Your combined rating is the number where the 2 intersect on the chart rounded to the nearest 10. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The amount of compensation veterans are entitled to depends on the combined rating and the combined rating may be different from the sum of the individual ratings. 
+																	Determine the minimum VA Rating required for your CT. 
+																	For every disability claim the Department of Veterans Affairs assigns a severity rating ranging from 0-100. 
+																	This was last updated in March 2011. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Gather your claim information Before contacting VA for a status make sure you have your claim and account information available. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/38/1e/81381eecefba1b2222c0efe2803fa441.png" data-lightbox="roadtrip" data-title="Understanding How The Veterans Disability Process Works Veterans Http Www Veteransbenefitslawfirm Military Life Quotes Veterans Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/38/1e/81381eecefba1b2222c0efe2803fa441.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN07tz3ZxpEwThdeajruhPSMSsx0HCXq7g-Q';" alt="Understanding How The Veterans Disability Process Works Veterans Http Www Veteransbenefitslawfirm Military Life Quotes Veterans Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Understanding How The Veterans Disability Process Works Veterans Http Www Veteransbenefitslawfirm Military Life Quotes Veterans Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/59/4d/d8594d4f9640a30bc6b0f8361eac20fb.png" data-lightbox="roadtrip" data-title="Learn About Gerd S Causes How The Va Rates Gerd And What You Can Do To Get The Highest Possible Va Disability Rating You Are Va Disability Gerd Reflux Disease">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/59/4d/d8594d4f9640a30bc6b0f8361eac20fb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6vv6q1GOnxgnzbywToEtn13BVFnMzwNjttg';" alt="Learn About Gerd S Causes How The Va Rates Gerd And What You Can Do To Get The Highest Possible Va Disability Rating You Are Va Disability Gerd Reflux Disease">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Learn About Gerd S Causes How The Va Rates Gerd And What You Can Do To Get The Highest Possible Va Disability Rating You Are Va Disability Gerd Reflux Disease</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/9f/3a/02/9f3a02de093af4c3d77003dc52dc8bd9.jpg" data-lightbox="roadtrip" data-title="How Va Determines Effective Dates For Disability Compensation When Veterans Back Pay Starts Nolo Com Disability Compensation Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/9f/3a/02/9f3a02de093af4c3d77003dc52dc8bd9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdk8zDv_XvQ0ubWSFgodyp80KTLUWOFv9kXQ';" alt="How Va Determines Effective Dates For Disability Compensation When Veterans Back Pay Starts Nolo Com Disability Compensation Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Va Determines Effective Dates For Disability Compensation When Veterans Back Pay Starts Nolo Com Disability Compensation Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/CCKInfographic-How-VA-Rates-Sleep-Apnea-2.png" data-lightbox="roadtrip" data-title="Sleep Apnea Va Disability Ratings And Benefits Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/CCKInfographic-How-VA-Rates-Sleep-Apnea-2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRm8H5WrrjAdlVBy2PU2iIA0J72YJnei_8fA';" alt="Sleep Apnea Va Disability Ratings And Benefits Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sleep Apnea Va Disability Ratings And Benefits Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/31/48/1e/31481e616dd9f28025cbe2eda925c56f.jpg" data-lightbox="roadtrip" data-title="The Ultimate Choice About Drill Pay Versus Va Compensation Is Really Up To You But Remember That There Are R In 2020 Department Of Veterans Affairs Compensation Drill">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/31/48/1e/31481e616dd9f28025cbe2eda925c56f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeyOBeDdroUQvQ2D6V5Il6quZCDsL2lE476w';" alt="The Ultimate Choice About Drill Pay Versus Va Compensation Is Really Up To You But Remember That There Are R In 2020 Department Of Veterans Affairs Compensation Drill">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Ultimate Choice About Drill Pay Versus Va Compensation Is Really Up To You But Remember That There Are R In 2020 Department Of Veterans Affairs Compensation Drill</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/22/5b/f7225b4127db612455a9882069738dd8.png" data-lightbox="roadtrip" data-title="6 C P Exam Success Tips For Disabled Veterans Disabled Veterans Benefits Disabled Veterans Va Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/22/5b/f7225b4127db612455a9882069738dd8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkFb4QRCnF7lvrrEWSBcdL_gcr7ixLCuJLuA';" alt="6 C P Exam Success Tips For Disabled Veterans Disabled Veterans Benefits Disabled Veterans Va Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 C P Exam Success Tips For Disabled Veterans Disabled Veterans Benefits Disabled Veterans Va Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d9/d0/c4/d9d0c4fa89f56a4a8062e562e0d3b1a7.jpg" data-lightbox="roadtrip" data-title="14 Actual Va Raters Reveal 3 Secret Va Claim Tips Youtube Personal Statement Veterans Benefits Va Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d9/d0/c4/d9d0c4fa89f56a4a8062e562e0d3b1a7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQHGRyYc_8qdnl3JKhzK4zDLkciiyv0_mMBA';" alt="14 Actual Va Raters Reveal 3 Secret Va Claim Tips Youtube Personal Statement Veterans Benefits Va Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">14 Actual Va Raters Reveal 3 Secret Va Claim Tips Youtube Personal Statement Veterans Benefits Va Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/e7/29/bae729f3ad7ef74f9c5be18f16e6b99c.png" data-lightbox="roadtrip" data-title="Additional Benefits Available For Service Connected Va Disability Benefits Disabled Veterans Benefits Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/e7/29/bae729f3ad7ef74f9c5be18f16e6b99c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrstUqbOOjCMM__xkaCWVhXUzTKP80ndJ6Og';" alt="Additional Benefits Available For Service Connected Va Disability Benefits Disabled Veterans Benefits Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Additional Benefits Available For Service Connected Va Disability Benefits Disabled Veterans Benefits Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/42/3c/4f423c56fbb20fd8461df059fa8dab5f.jpg" data-lightbox="roadtrip" data-title="Top 3 Hacks For Lower Back Va Claims Insider Lower Back Veterans Benefits Helping Others">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/42/3c/4f423c56fbb20fd8461df059fa8dab5f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM9dWUbbw4tVGXTK_WwxB9tMWQkYWNglHw-A';" alt="Top 3 Hacks For Lower Back Va Claims Insider Lower Back Veterans Benefits Helping Others">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 3 Hacks For Lower Back Va Claims Insider Lower Back Veterans Benefits Helping Others</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3f/80/e8/3f80e8556cb858b7fcd4888cfc5e7a17.jpg" data-lightbox="roadtrip" data-title="The Va Uses Fuzzy Math To Determine Your Combined Disability Rating Start With The Greatest Disability An With Images Va Disability Benefits Disability Disability Benefit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3f/80/e8/3f80e8556cb858b7fcd4888cfc5e7a17.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1hqlQPFxIo5Pt9YuIzecyv4suZ-HAzQ-9g';" alt="The Va Uses Fuzzy Math To Determine Your Combined Disability Rating Start With The Greatest Disability An With Images Va Disability Benefits Disability Disability Benefit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Va Uses Fuzzy Math To Determine Your Combined Disability Rating Start With The Greatest Disability An With Images Va Disability Benefits Disability Disability Benefit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hillandponton.com/wp-content/uploads/2020/04/permanent-and-total.jpg" data-lightbox="roadtrip" data-title="What Are Va Permanent And Total Ratings Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://www.hillandponton.com/wp-content/uploads/2020/04/permanent-and-total.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6l1ArFbFxzfFM1eboQWDJUUuxbJPISRhryw';" alt="What Are Va Permanent And Total Ratings Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Are Va Permanent And Total Ratings Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3c/3d/d2/3c3dd25b9779f1bfb86c9da15c4a60fc.jpg" data-lightbox="roadtrip" data-title="Pin By Robert Jackson On Military Information In 2020 Exam Va Disability Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3c/3d/d2/3c3dd25b9779f1bfb86c9da15c4a60fc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4FO9Bq9i_OmYPQ5u16UmEXSAqFY13im3Zog';" alt="Pin By Robert Jackson On Military Information In 2020 Exam Va Disability Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Robert Jackson On Military Information In 2020 Exam Va Disability Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/c2/60/49c2606c0974cb0a3cb994a9fa5eb412.png" data-lightbox="roadtrip" data-title="How Disabled Veterans Can Qualify For Ssd Benefits Social Security Disability Social Security Benefits Retirement Social Security Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/c2/60/49c2606c0974cb0a3cb994a9fa5eb412.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTogif3euNJ5O8QHsRRoCMg2gjKK92082AIbg';" alt="How Disabled Veterans Can Qualify For Ssd Benefits Social Security Disability Social Security Benefits Retirement Social Security Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Disabled Veterans Can Qualify For Ssd Benefits Social Security Disability Social Security Benefits Retirement Social Security Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-rating-5022.html">Va Rating 5022</a></li>
+													<li class="list-group-item"><a href="/va-proposed-rating-reduction.html">Va Proposed Rating Reduction</a></li>
+													<li class="list-group-item"><a href="/va-rating-disability-scale.html">Va Rating Disability Scale</a></li>
+													<li class="list-group-item"><a href="/va-percentage-post-traumatic-stress-disorder.html">Va Percentage Post Traumatic Stress Disorder</a></li>
+													<li class="list-group-item"><a href="/va-rate-pay-chart.html">Va Rate Pay Chart</a></li>
+													<li class="list-group-item"><a href="/va-rating-by-percentage.html">Va Rating By Percentage</a></li>
+													<li class="list-group-item"><a href="/va-rating-criteria-for-prostate-cancer.html">Va Rating Criteria For Prostate Cancer</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-arthritis-in-the-shoulder.html">Va Rating For Arthritis In The Shoulder</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-5-year-rule.html">Va Rating For 5 Year Rule</a></li>
+													<li class="list-group-item"><a href="/va-rating-code-for-acid-reflux.html">Va Rating Code For Acid Reflux</a></li>
+													<li class="list-group-item"><a href="/va-post-9-11-gi-bill-calculator.html">Va Post 9 11 Gi Bill Calculator</a></li>
+													<li class="list-group-item"><a href="/va-rating-diabetic-neuropathy.html">Va Rating Diabetic Neuropathy</a></li>
+													<li class="list-group-item"><a href="/va-ptsd-rating-percentages.html">Va Ptsd Rating Percentages</a></li>
+													<li class="list-group-item"><a href="/va-rating-criteria-for-knee.html">Va Rating Criteria For Knee</a></li>
+													<li class="list-group-item"><a href="/va-percentage-for-tinnitus.html">Va Percentage For Tinnitus</a></li>
+													<li class="list-group-item"><a href="/va-ptsd-rating-cfr.html">Va Ptsd Rating Cfr</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-arthritis-in-lower-back.html">Va Rating For Arthritis In Lower Back</a></li>
+													<li class="list-group-item"><a href="/va-rating-criteria-tbi.html">Va Rating Criteria Tbi</a></li>
+													<li class="list-group-item"><a href="/va-percentage-for-ptsd.html">Va Percentage For Ptsd</a></li>
+													<li class="list-group-item"><a href="/va-rating-combined.html">Va Rating Combined</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

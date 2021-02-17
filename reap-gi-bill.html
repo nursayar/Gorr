@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Reap Gi Bill - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Reap Gi Bill",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/736x/50/73/0a/50730afb69d173515833875cd8588f03.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=reap+gi+bill",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Reap Gi Bill</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">REAP Chapter 1607 was established as a part of the Ronald W. Veterans Educational Assistance Program VEAP You may be able to continue your education by using part of your military pay to help cover the cost of school. The VA has officially announced that the Reserve Educational Assistance Program REAP is ending. <br>				
+			</p>
+										<a class="badge badge-danger" href="/gi-bill-mha-calculator-2020.html">gi bill mha calculator 2020</a>
+											<a class="badge badge-warning" href="/gi-bill-for-trade-schools.html">gi bill for trade schools</a>
+											<a class="badge badge-light" href="/gi-bill-housing-allowance-for-california.html">gi bill housing allowance for california</a>
+											<a class="badge badge-primary" href="/gi-bill-kicker-navy.html">gi bill kicker navy</a>
+											<a class="badge badge-dark" href="/gi-bill-mha-decrease.html">gi bill mha decrease</a>
+											<a class="badge badge-secondary" href="/gi-bill-is.html">gi bill is</a>
+											<a class="badge badge-info" href="/gi-bill-coast-guard-reserve.html">gi bill coast guard reserve</a>
+											<a class="badge badge-dark" href="/gi-bill-help-va.html">gi bill help va</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you've come to pay a visit to the right blog.  Our website provides you with hints for seeing the maximum quality video and image content, hunt and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, especially Youtube, therefore we recommend this movie for you to see.  It is also possible to contribute to supporting this site by sharing videos and graphics that you like on this blog on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/55/ff/f155ff910bfb90c3863b2a3ead0680eb.png" data-lightbox="roadtrip" data-title="Veap Reap Tuition Assistance And Other Financial Aid Tuition Assistance Tuition Financial Aid">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/55/ff/f155ff910bfb90c3863b2a3ead0680eb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF1nWU265caIDsLY8AnJOlrUBX4_dGSL5aBw';" alt="Veap Reap Tuition Assistance And Other Financial Aid Tuition Assistance Tuition Financial Aid">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veap Reap Tuition Assistance And Other Financial Aid Tuition Assistance Tuition Financial Aid</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/09/ca/38/09ca38ae3885c8286fc25ec6095266c5.jpg" data-lightbox="roadtrip" data-title="Gi Bill History Gi Bill Military Benefits Plan For Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/09/ca/38/09ca38ae3885c8286fc25ec6095266c5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvz6YPES_7f5_7mCXLLEgjTpYXodgVc0bKtQ';" alt="Gi Bill History Gi Bill Military Benefits Plan For Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gi Bill History Gi Bill Military Benefits Plan For Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/e2/b0/83e2b0c634fda8c64dc20a5c68f3f4bf.jpg" data-lightbox="roadtrip" data-title="A Snapshot Of The Governments Vrap Veterans Retraining Assistance Program How It Works Who Its For What It Veteran Jobs Support Veterans Hiring Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/e2/b0/83e2b0c634fda8c64dc20a5c68f3f4bf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwzUzdPDQdrBhbwC8wF3VsfAm6KcUelbhbmw';" alt="A Snapshot Of The Governments Vrap Veterans Retraining Assistance Program How It Works Who Its For What It Veteran Jobs Support Veterans Hiring Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Snapshot Of The Governments Vrap Veterans Retraining Assistance Program How It Works Who Its For What It Veteran Jobs Support Veterans Hiring Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/56/ef/db56ef39fa1bdb990a982080e5d00919.png" data-lightbox="roadtrip" data-title="Alternative Ways To Fund College Family Financial Planning Financial Planning Financial">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/56/ef/db56ef39fa1bdb990a982080e5d00919.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTmJtH6kRh673om9iacha3WwYYV1ucX2Naqw';" alt="Alternative Ways To Fund College Family Financial Planning Financial Planning Financial">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alternative Ways To Fund College Family Financial Planning Financial Planning Financial</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/01/7f/28017ffbb8563c9343551484db0dadf0.png" data-lightbox="roadtrip" data-title="Military Tuition Assistance Va Education Benefits Tuition Assistance Tuition College Costs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/01/7f/28017ffbb8563c9343551484db0dadf0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKaDVTaYO7BjRnpMQeKqJD_kwSTSHSNf_sTQ';" alt="Military Tuition Assistance Va Education Benefits Tuition Assistance Tuition College Costs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Tuition Assistance Va Education Benefits Tuition Assistance Tuition College Costs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/86/85/688685ee1725e5c9fe9ebb68f6e2b07f.png" data-lightbox="roadtrip" data-title="To Go Or Not To Go Julie Lythcott Haims Life After High School Online Learning College Experience">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/86/85/688685ee1725e5c9fe9ebb68f6e2b07f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT07XzuWHg-1Ic0VO8mjQue0ESowLxVqpi-A';" alt="To Go Or Not To Go Julie Lythcott Haims Life After High School Online Learning College Experience">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">To Go Or Not To Go Julie Lythcott Haims Life After High School Online Learning College Experience</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/600x315/1e/0a/cc/1e0acc8793f6a80c6485b20d06aed04a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT07XzuWHg-1Ic0VO8mjQue0ESowLxVqpi-A';" alt="To Go Or Not To Go Julie Lythcott Haims Life After High School Online Learning College Experience">
+										<div class="card-body">
+						<h3 class="h5"><b>Am I eligible for Post-911 GI Bill Chapter 33 benefits.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Reap gi bill</strong>. 
+								
+																	Find out if you can get this education benefit. 
+																	The Reserve Educational Assistance Program REAP is a VA education benefit program designed to provide educational assistance to members of the Reserve components called or ordered to active duty. 
+																	If youve served on active duty after September 10 2001 you may qualify for the Post-911 GI Bill Chapter 33. 
+																	Find out if you can get benefits through the Veterans Educational Assistance Program VEAPa 2-to-1 government-match program for educational assistance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Post-911 GI Bill Chapter 33 helps you pay for school or job training. 
+																	REAP served to bridge the education benefit gap between those eligible for the Montgomery GI Bill-Selected Reserve and those serving in the Reserve component who were called to active duty but were not eligible for the Montgomery GI Bill-Selected Reserve. 
+																	The student must be sure of hisher educational goal as once switched to the Post-911 GI Bill the student cannot switch back. 
+																	In an email release Curtis L. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	REAP Chapter 1607 is a GI Bill program that provides up to 36 months of education benefits to members of the Selected Reserve who are called to active service in response to a war or national emergency declared by the President or Congress. 
+																	Established with the intention of also offering the vast educational benefits of the GI Bill for the Reserves the REAP or Reserve Educational Assistance Program can be used for vocational or institutional courses as well as for flight training. 
+																	Colmery Veterans Educational Assistance Act of 2017 Public Law 115-48 commonly known as the Forever GI Bill eliminated the 15-year use-it-or-lose-it constraint associated with the Post 911 GI Bill education benefit. 
+																	REAP Verses the Post-911 GI Bill Depending on a members educational goal the member could also qualify for the Post-911 GI Bill which in most cases pays more than REAP. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Post-911 GI Bill Under the Post-911 GI Bill you can get full tuition coverage at a public university. 
+																	Under REAP with a one-year deployment or less you would get 62560 per month or 250240 for a four-month semester. 
+																	Post 911 GI Bill Military Education Benefits and Veteran Education Benefits are timely and important to you. 
+																	Failing students must reimburse DOD. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military Education Information FAQs come directly from the Veterans Administration GI Bill web site. 
+																	Coy the Deputy Undersecretary for Economic Opportunity at the VA. 
+																	Am I eligible for Post-911 GI Bill Chapter 33 benefits. 
+																	The Post-911 GI Bill Chapter 33 helps you pay for school or job training. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If they used the benefits they received as of 2012 1564 monthly as a full-time student tiered at lower rates for less-than-full-time for a maximum of 36 months of education benefits. 
+																	Fees no longer covered Senate officials acknowledge error that inflated GI Bill money to for-profit schools Tuition assistance slashed by. 
+																	Then it comes down to which GI Bill would put the most money in your pocket 50 of the Post 911 GI Bill Monthly Housing Allowance MHA and book stipend or REAP. 
+																	If youve served on active duty after September 10 2001 you may qualify for the Post-911 GI Bill Chapter 33. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To be eligible for any tuition coverage you need to have accrued one of the following since September 11 2001. 
+																	By that time nearly 8 million World War II veterans had received education or training and 43 million home loans. 
+																	The bill will cover tuition for private and foreign schools check the VA Education Benefits Site for restrictions. 
+																	The Montgomery GI Bill Active Duty MGIB stated that active duty members had to forfeit 100 per month for 12 months. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This benefit could be used for both degree and certificate programs flight training. 
+																	Find out if you can get this education benefit. 
+																	Reagan National Defense Authorization Act for Fiscal Year 2005. 
+																	Out of this amount you would have to pay for your own books. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The GI Bill and the Racial Wealth Gap The original GI Bill ended in July 1956. 
+																	Reserve Educational Assistance Program REAP Chapter 1607 of Title 10 US Code is a Department of Defense education program that provides up to 36 months of education assistance to members of the. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/1e/0a/cc/1e0acc8793f6a80c6485b20d06aed04a.jpg" data-lightbox="roadtrip" data-title="Pin By Terri Knight On Jake Veterans Services Bathroom Upgrades Services Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/1e/0a/cc/1e0acc8793f6a80c6485b20d06aed04a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQojRocDlA3aC9QOU4svAP6V9VjLBcQ06cOLw';" alt="Pin By Terri Knight On Jake Veterans Services Bathroom Upgrades Services Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Terri Knight On Jake Veterans Services Bathroom Upgrades Services Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/50/73/0a/50730afb69d173515833875cd8588f03.jpg" data-lightbox="roadtrip" data-title="Online Degree Programs Are Enabling Students That Could Otherwise Not Pursue An Education To Get The Traini In 2020 Online Degree Programs Degree Program Online Degree">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/50/73/0a/50730afb69d173515833875cd8588f03.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjdLPgNYj_9pt6JBHuLxOfot0XauUqI4y3cw';" alt="Online Degree Programs Are Enabling Students That Could Otherwise Not Pursue An Education To Get The Traini In 2020 Online Degree Programs Degree Program Online Degree">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Online Degree Programs Are Enabling Students That Could Otherwise Not Pursue An Education To Get The Traini In 2020 Online Degree Programs Degree Program Online Degree</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/28/06/58/280658f08bbd367ca3ac619f5ffe7889.jpg" data-lightbox="roadtrip" data-title="Pin By Hal Erickson On The Au Some Audie Murphy In 2020 Anzio War Heroes World War Two">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/28/06/58/280658f08bbd367ca3ac619f5ffe7889.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGYMSNnU4mjfHjkfRAY22xCaVI4Gltq2t-WQ';" alt="Pin By Hal Erickson On The Au Some Audie Murphy In 2020 Anzio War Heroes World War Two">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Hal Erickson On The Au Some Audie Murphy In 2020 Anzio War Heroes World War Two</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/a5/f2/18/a5f21868f76865f5d56cf199756e8157.jpg" data-lightbox="roadtrip" data-title="Pin On Academic Degree">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/a5/f2/18/a5f21868f76865f5d56cf199756e8157.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXOzksy1YH5WwUFZk3QJdWM31-cnZUrDjByQ';" alt="Pin On Academic Degree">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Academic Degree</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/ee/5c/79ee5c81df12ee33bcab49a0e0551c02.jpg" data-lightbox="roadtrip" data-title="Success Will Not Come Fast But It Will Come Be Patient The Results Will Come Dont Be Disappointed If You Aren Motivational Speaker Entrepreneur Quotes Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/ee/5c/79ee5c81df12ee33bcab49a0e0551c02.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBKSLsZphXSqIKyCHtBcnJUM3QXulIowa7kQ';" alt="Success Will Not Come Fast But It Will Come Be Patient The Results Will Come Dont Be Disappointed If You Aren Motivational Speaker Entrepreneur Quotes Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Success Will Not Come Fast But It Will Come Be Patient The Results Will Come Dont Be Disappointed If You Aren Motivational Speaker Entrepreneur Quotes Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/80/29/58/8029585d0e1aba00918a49171529ce0e.jpg" data-lightbox="roadtrip" data-title="What Is Opinion Opinion Quotes Intelligence Quotes Emotional Intelligence Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/80/29/58/8029585d0e1aba00918a49171529ce0e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz0LenG4PNR9ew3DSO7P9xjtWdgC5IfySuGQ';" alt="What Is Opinion Opinion Quotes Intelligence Quotes Emotional Intelligence Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Opinion Opinion Quotes Intelligence Quotes Emotional Intelligence Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/3b/ef/533bef6f179b062ef4f203d541dfd754.jpg" data-lightbox="roadtrip" data-title="A Pdf How To Build A Plastic Bottle Greenhouse From Reap Scotland Plastic Bottle House Bottle House Plastic Bottles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/3b/ef/533bef6f179b062ef4f203d541dfd754.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpsCy5Zl0Q-puW67BqV_9LaM1R1IjwQBY3Eg';" alt="A Pdf How To Build A Plastic Bottle Greenhouse From Reap Scotland Plastic Bottle House Bottle House Plastic Bottles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Pdf How To Build A Plastic Bottle Greenhouse From Reap Scotland Plastic Bottle House Bottle House Plastic Bottles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/ca/12/c4ca12784d9a05b8bb9f0369b8bbc969.jpg" data-lightbox="roadtrip" data-title="23 Unexpected Websites You Can Use For Genealogy Research Genealogy Book Genealogy Genealogy Gems">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/ca/12/c4ca12784d9a05b8bb9f0369b8bbc969.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD_MsWQi2HFb3YgSz4-sP-OGZ1WDwpKr7Ebg';" alt="23 Unexpected Websites You Can Use For Genealogy Research Genealogy Book Genealogy Genealogy Gems">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">23 Unexpected Websites You Can Use For Genealogy Research Genealogy Book Genealogy Genealogy Gems</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/8b/61/2d8b61d29fdb0e33f19d98bf80069ccb.jpg" data-lightbox="roadtrip" data-title="Inspirational Qoute For All Girls We Must Be Fabulous And Classy Girl Qoute Inspirational Qoute Classy Gi Girly Bedroom Decor Inspiration Girly Bedroom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/8b/61/2d8b61d29fdb0e33f19d98bf80069ccb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRx5wdsoNpqZyWjJCPGTLwY6dm-cn8lWHSow';" alt="Inspirational Qoute For All Girls We Must Be Fabulous And Classy Girl Qoute Inspirational Qoute Classy Gi Girly Bedroom Decor Inspiration Girly Bedroom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Inspirational Qoute For All Girls We Must Be Fabulous And Classy Girl Qoute Inspirational Qoute Classy Gi Girly Bedroom Decor Inspiration Girly Bedroom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/47/08/06/4708065cc8d791213223c8ef8f7d6554.jpg" data-lightbox="roadtrip" data-title="The Army S Green To Gold Active Duty Option Ado Allows Eligible Enlisted Active Duty Soldiers The Opportunity To Earn A Degree An Scholarships Army Rotc Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/47/08/06/4708065cc8d791213223c8ef8f7d6554.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9mXXe_OTNqO9wYa5gpTVaQjol5NKO5kElHw';" alt="The Army S Green To Gold Active Duty Option Ado Allows Eligible Enlisted Active Duty Soldiers The Opportunity To Earn A Degree An Scholarships Army Rotc Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Army S Green To Gold Active Duty Option Ado Allows Eligible Enlisted Active Duty Soldiers The Opportunity To Earn A Degree An Scholarships Army Rotc Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/66/4b/9d/664b9d34ef64504244dfed12c53aa467--college-school-colleges.jpg" data-lightbox="roadtrip" data-title="Militaryfriendly Colleges Schools Veterans Student Survey Tuition Assistance Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/66/4b/9d/664b9d34ef64504244dfed12c53aa467--college-school-colleges.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiYGrg1vivxhnJdXrufAnhWUMrKI_oU3oO1g';" alt="Militaryfriendly Colleges Schools Veterans Student Survey Tuition Assistance Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Militaryfriendly Colleges Schools Veterans Student Survey Tuition Assistance Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/82/14/e2821478632129f28ab312b0147b97ac.jpg" data-lightbox="roadtrip" data-title="Academics Who Defend Wall St Reap Reward Nytimes Com House Commodity Trading Academics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/82/14/e2821478632129f28ab312b0147b97ac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo1S_niRWkBn9_u0KwkxN6GlgLSoSgQRwesw';" alt="Academics Who Defend Wall St Reap Reward Nytimes Com House Commodity Trading Academics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Academics Who Defend Wall St Reap Reward Nytimes Com House Commodity Trading Academics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/89/00/f18900f74f0462c907550bc43c044eed.jpg" data-lightbox="roadtrip" data-title="Ramadan Kareem To All My Lovely Followers May Your Deeds Be Accepted You Reap Many Benefits From This Holy Month Insha Allah Ramadan Ramadan Kareem Kareem">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/89/00/f18900f74f0462c907550bc43c044eed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPlzWFGXXiPlWOBSXxXq5AUloiE7AQPv27uQ';" alt="Ramadan Kareem To All My Lovely Followers May Your Deeds Be Accepted You Reap Many Benefits From This Holy Month Insha Allah Ramadan Ramadan Kareem Kareem">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ramadan Kareem To All My Lovely Followers May Your Deeds Be Accepted You Reap Many Benefits From This Holy Month Insha Allah Ramadan Ramadan Kareem Kareem</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-rating-for-ulcerative-colitis.html">Va Rating For Ulcerative Colitis</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-intervertebral-disc-syndrome.html">Va Rating For Intervertebral Disc Syndrome</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-degenerative-arthritis.html">Va Rating For Degenerative Arthritis</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-hand-arthritis.html">Va Rating For Hand Arthritis</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-degenerative-arthritis-of-the-cervical-spine.html">Va Rating For Degenerative Arthritis Of The Cervical Spine</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-post-traumatic-arthritis.html">Va Rating For Post Traumatic Arthritis</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-conjunctivitis.html">Va Rating For Conjunctivitis</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-covid.html">Va Rating For Covid</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-dizziness.html">Va Rating For Dizziness</a></li>
+													<li class="list-group-item"><a href="/va-rating-hearing.html">Va Rating Hearing</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-lower-back-strain.html">Va Rating For Lower Back Strain</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-left-ear-hearing-loss.html">Va Rating For Left Ear Hearing Loss</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-moderate-hearing-loss.html">Va Rating For Moderate Hearing Loss</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-uti.html">Va Rating For Uti</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-neuritis.html">Va Rating For Neuritis</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-respiratory-problems.html">Va Rating For Respiratory Problems</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-lumbar-radiculopathy.html">Va Rating For Lumbar Radiculopathy</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-chemo-induced-neuropathy.html">Va Rating For Chemo Induced Neuropathy</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-bilateral-shoulder-pain.html">Va Rating For Bilateral Shoulder Pain</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-kidney-cancer.html">Va Rating For Kidney Cancer</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Elizabeth Montgomery And William Asher Marriage - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Elizabeth Montgomery And William Asher Marriage",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/00/0f/fb/000ffbfbcce00badd9148d48d59d0a43.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=elizabeth+montgomery+and+william+asher+marriage",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Elizabeth Montgomery And William Asher Marriage</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">She worked with director William Asher and they hit it off. In 2012 Taylor Trade released Twitch Upon A Star my biography of Elizabeth and then one year later The Essential Elizabeth Montgomery my encyclopedia of her life and career. They shared three children Willy Robert and Rebecca Elizabeth. <br>				
+			</p>
+										<a class="badge badge-success" href="/i-cloud-9-jamiroquai.html">i cloud 9 jamiroquai</a>
+											<a class="badge badge-secondary" href="/how-to-stop-va-unemployment-benefits.html">how to stop va unemployment benefits</a>
+											<a class="badge badge-secondary" href="/in-order-for-a-bill-to-go-to-the-governors-desk.html">in order for a bill to go to the governors desk</a>
+											<a class="badge badge-dark" href="/how-to-refinance-out-of-a-va-loan.html">how to refinance out of a va loan</a>
+											<a class="badge badge-success" href="/inflammatory-arthritis-va-disability.html">inflammatory arthritis va disability</a>
+											<a class="badge badge-secondary" href="/icd-9-gi-bleed.html">icd 9 gi bleed</a>
+											<a class="badge badge-primary" href="/how-to-transfer-post-911-gi-bill-benefits.html">how to transfer post 911 gi bill benefits</a>
+											<a class="badge badge-dark" href="/how-to-use-my-montgomery-gi-bill.html">how to use my montgomery gi bill</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you have come to visit the right site.  Our site provides you with hints for viewing the highest quality video and image content, hunt and find more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, particularly Youtube, so we recommend this video for you to view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/fa/a4/3dfaa4f03c7311ae841d3ed75356077f.jpg" data-lightbox="roadtrip" data-title="Bill Asher Elizabeth Montgomery Their Marriage Made Her A Household Name And Gave Her He Elizabeth Montgomery Bewitched Elizabeth Montgomery Famous Couples">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/fa/a4/3dfaa4f03c7311ae841d3ed75356077f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL1Ea8MoXFvE8aX9kh01PAeEMJaahr9opLUQ';" alt="Bill Asher Elizabeth Montgomery Their Marriage Made Her A Household Name And Gave Her He Elizabeth Montgomery Bewitched Elizabeth Montgomery Famous Couples">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Asher Elizabeth Montgomery Their Marriage Made Her A Household Name And Gave Her He Elizabeth Montgomery Bewitched Elizabeth Montgomery Famous Couples</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/56/16/035616bd570eadd6a9b7b7bd0f5e39c6.jpg" data-lightbox="roadtrip" data-title="Pin On Celebrity Families">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/56/16/035616bd570eadd6a9b7b7bd0f5e39c6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9OHxqagyUTujkoL-I_S3nntIk7tWGivk3kg';" alt="Pin On Celebrity Families">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Celebrity Families</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/2c/e0/e02ce02743ae5eff07caf5a3fbde469c.jpg" data-lightbox="roadtrip" data-title="Bill Asher Elizabeth Montgomery Elizabeth Married William Asher 1963 1973">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/2c/e0/e02ce02743ae5eff07caf5a3fbde469c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwOUH4OHx1I7R6JIZ9gT9cu8x9TlKksBFS3A';" alt="Bill Asher Elizabeth Montgomery Elizabeth Married William Asher 1963 1973">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Asher Elizabeth Montgomery Elizabeth Married William Asher 1963 1973</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/e7/a3/73e7a3a23a92fc21a84fa614310da888.jpg" data-lightbox="roadtrip" data-title="Valentino Vamp Elizabeth Montgomery Bewitched Elizabeth Montgomery Robert Montgomery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/e7/a3/73e7a3a23a92fc21a84fa614310da888.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH46Oc3gG6191q70BvD_EYQFkJ7WBIiKra6A';" alt="Valentino Vamp Elizabeth Montgomery Bewitched Elizabeth Montgomery Robert Montgomery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Valentino Vamp Elizabeth Montgomery Bewitched Elizabeth Montgomery Robert Montgomery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/5a/c4/185ac4664789eb791e520edb483e74c9.jpg" data-lightbox="roadtrip" data-title="With Husband William Asher Elizabeth Montgomery Bewitched Elizabeth Montgomery Famous Couples">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/5a/c4/185ac4664789eb791e520edb483e74c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC2N7UqduyXsMnH3KL8dxJfJzdirj1HpJObw';" alt="With Husband William Asher Elizabeth Montgomery Bewitched Elizabeth Montgomery Famous Couples">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">With Husband William Asher Elizabeth Montgomery Bewitched Elizabeth Montgomery Famous Couples</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/0f/fb/000ffbfbcce00badd9148d48d59d0a43.jpg" data-lightbox="roadtrip" data-title="Elizabeth Montgomery And Husband William Asher With Their Kids William And Robert In 1969 Elizabeth Montgomery Bewitched Elizabeth Montgomery Elizabeth">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/0f/fb/000ffbfbcce00badd9148d48d59d0a43.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBlHR2VAVUtAbkwmRDkuaEgJtmZYeWtscBdQ';" alt="Elizabeth Montgomery And Husband William Asher With Their Kids William And Robert In 1969 Elizabeth Montgomery Bewitched Elizabeth Montgomery Elizabeth">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Elizabeth Montgomery And Husband William Asher With Their Kids William And Robert In 1969 Elizabeth Montgomery Bewitched Elizabeth Montgomery Elizabeth</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/9d/1f/36/9d1f36588fafdc1786d4da4426717cbf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBlHR2VAVUtAbkwmRDkuaEgJtmZYeWtscBdQ';" alt="Elizabeth Montgomery And Husband William Asher With Their Kids William And Robert In 1969 Elizabeth Montgomery Bewitched Elizabeth Montgomery Elizabeth">
+										<div class="card-body">
+						<h3 class="h5"><b>He tied the knot with actress Joyce Bulifant in 1976 but their marriage ended in divorce in 1993.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Elizabeth montgomery and william asher marriage</strong>. 
+								
+																	More about Elizabeth Montgomery. 
+																	Elizabeth Montgomery canceled the show. 
+																	Elizabeth Montgomerys former husband was Gig Young Elizabeth Montgomery had an affair with Alexander Godunov Elizabeth Montgomery had an affair with Richard Michaels Elizabeth Montgomerys former husband was William Asher Elizabeth Montgomerys former husband is Frederick Gallatin Cammann. 
+																	His first marriage had ended in divorce. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	That was in 1972. 
+																	Montgomery was pregnant with the first of their three children and she. 
+																	His third marriage was to Joyce Bulifant from 1976 to 1993. 
+																	Asher then married Bewitched star Elizabeth Montgomery in 1963. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	William Jr Robert and Rebecca. 
+																	William Milton Asher August 8. 
+																	Elizabeth and William were both married before they met each other. 
+																	After her divorce with Young Montgomery married Bewitched producer-director William Asher that year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However Montgomerys marriage to Bewitched director William Asher was in difficulties and the couple had separated by the end of the eighth season. 
+																	However their marriage was falling apart when Bewitched finished its run in 1972. 
+																	The Asher marriage resulted in three children for the couple. 
+																	Elizabeth Montgomery was in relationships with Richard Michaels 1971 - 1972 Dean Martin 1963 and Alexander Godunov. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Asher was a film producer whose credits include Dracula 1931 and Frankenstein 1931 and his mother Lillian. 
+																	Married 1954 Frederick Gallatin Cammann marriage dissolved 1955 1956 Gig Young marriage dissolved 1963 1963 William Asher two. 
+																	October 26 1963 - 1973. 
+																	The last two pregnancies were worked into the show so Montgomery wouldnt have to hide them providing children for Samantha and Darrin. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This caused severe friction in their professional relationship and ended any possibility of another season. 
+																	Montgomery and Asher then ended their marriage in 1974. 
+																	He and his older sister were raised in California where his father Ephraim M. 
+																	As a result much was made in the media of the actor having settled down and become a mother. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	She enchanted every man she ever met wrote Pilato but she seemed drawn to troubled men not nice guys. 
+																	Asher met Elizabeth Mongomery in the late 1950s and they married in 1963. 
+																	Geoffrey stated that Bill Asher had a very complicated personal life at the time he met Liz he was separated from his first wife who was the mother of his children from that marriage. 
+																	Young died in a murder-suicide in 1978. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	William Asher and Elizabeth Montgomery Ron ThalTV GuideCourtesy Everett Collection. 
+																	William Asher was born on August 8 1921 in New York. 
+																	He adopted her son actor John Mallory Asher. 
+																	As a consolation to ABC Montgomery and Asher under their company name Ashmont which produced Bewitched offered a half-hour sitcom The. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But she still had a couple of years on her contract and ABC decided to cast her in her first TV movie post- Bewitched The Victim. 
+																	A look at Elizabeth Montgomerys marriage to William Asher their family and their professional collaboration. 
+																	William was married to actress Danny Sue Nolan from 1951 to 1961 before he married Elizabeth. 
+																	Elizabeth Montgomery was previously married to Robert Foxworth 1993 - 1995 William Asher 1963 - 1974 Gig Young 1956 - 1963 and Fred Gallatin Cammann 1954 - 1955. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	During her split with Gig she shot the film Johnny Cool. 
+																	Elizabeth was married four times and had three children with Bewitched producer Bill Asher Montgomery became a star as Samantha Stephens the wholesome bubbly nose-twitching housewife. 
+																	William Asher who was 12 years older than Elizabeth always had troubled romantic relationships much like the woman he would eventually marry. 
+																	In his later years Asher resided in Palm Desert California with Meredith Coffin Asher his fourth and. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The cathode ray classic about a suburban witch hid a sex scandal between the married couple of producerdirector William Asher and star Elizabeth Montgomery. 
+																	Elizabeth soon became pregnant with Bills child and they decided to get married that same year. 
+																	When Bewitched concluded its run in 1972 largely because Elizabeth was ready to move on the marriage between her and William Asher was falling apart. 
+																	However Bill was going through a separation and reportedly had three affairs going. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Shortly after her divorce from Young Montgomery married Asher a famed producer. 
+																	There are conflicting views of exactly why. 
+																	They had three children and divorced in 1973. 
+																	Oct 30 2014 444AM When BEWITCHED producerhubby caught wifestar ELIZABETH MONTGOMERY cheating he pulled the plug on their marriage AND the TV show. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Montgomerys fourth husband Robert Foxworth was with her until she died in 1995. 
+																	Montgomery was married to Asher her third husband after Frederick Cammann and Gig Young. 
+																	This marriage also ended in divorce. 
+																	Born Los Angeles 15 April 1933. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The marriage lasted eight years and while Montgomery never spoke of it it is believed that Young was abusive. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/8f/52/878f528ed82249fec2f0d26861e1d9ea.jpg" data-lightbox="roadtrip" data-title="Mr Mrs William Asher Elizabeth Bill Were Married On 10 26 1963 Together The Created Bewitched The Best Elizabeth Montgomery Bewitching Celebrity Couples">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/8f/52/878f528ed82249fec2f0d26861e1d9ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_IDQpqwGGukyqaXu5od-VOHbzx418foOO-w';" alt="Mr Mrs William Asher Elizabeth Bill Were Married On 10 26 1963 Together The Created Bewitched The Best Elizabeth Montgomery Bewitching Celebrity Couples">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mr Mrs William Asher Elizabeth Bill Were Married On 10 26 1963 Together The Created Bewitched The Best Elizabeth Montgomery Bewitching Celebrity Couples</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/89/31/1a/89311a2c3227ce44ddac44870a8e4dbe.jpg" data-lightbox="roadtrip" data-title="Elizabeth Montgomery Photo Elizabeth Husband Robert Foxworth Elizabeth Montgomery Famous Couples Elizabeth">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/89/31/1a/89311a2c3227ce44ddac44870a8e4dbe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTki770zXb0hPlER8hM2ogWMTfdsxWMra7Lrg';" alt="Elizabeth Montgomery Photo Elizabeth Husband Robert Foxworth Elizabeth Montgomery Famous Couples Elizabeth">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Elizabeth Montgomery Photo Elizabeth Husband Robert Foxworth Elizabeth Montgomery Famous Couples Elizabeth</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/6c/d7/bc6cd705fc3812ac2b88b1de62de6fdc.jpg" data-lightbox="roadtrip" data-title="Elizabeth Montgomery With Her Sons Robert And Bill Asher Elizabeth Montgomery Bewitched Elizabeth Montgomery Agnes Moorehead">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/6c/d7/bc6cd705fc3812ac2b88b1de62de6fdc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAovNDk5U3FK2UXppL8MzrU2WEJnk1gppBsg';" alt="Elizabeth Montgomery With Her Sons Robert And Bill Asher Elizabeth Montgomery Bewitched Elizabeth Montgomery Agnes Moorehead">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Elizabeth Montgomery With Her Sons Robert And Bill Asher Elizabeth Montgomery Bewitched Elizabeth Montgomery Agnes Moorehead</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/96/34/83/963483ffd25d8437f42140311905c181.jpg" data-lightbox="roadtrip" data-title="Elizabeth Montgomery Photo Elizabeth And Sons Elizabeth Montgomery Bewitched Elizabeth Montgomery Elizabeth">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/96/34/83/963483ffd25d8437f42140311905c181.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-dhaaOg-yFmjVKLLYLLCk5D1qzMWMHXxoSg';" alt="Elizabeth Montgomery Photo Elizabeth And Sons Elizabeth Montgomery Bewitched Elizabeth Montgomery Elizabeth">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Elizabeth Montgomery Photo Elizabeth And Sons Elizabeth Montgomery Bewitched Elizabeth Montgomery Elizabeth</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/a7/51/3fa7518a661ee6eaa64a967db6c30812.png" data-lightbox="roadtrip" data-title="Elizabeth Montgomery And Her Son William Asher Jr Elizabeth Montgomery Bewitched Elizabeth Montgomery Agnes Moorehead">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/a7/51/3fa7518a661ee6eaa64a967db6c30812.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcnxINNS61YK19X2zl9890rzIrZL1qg4DYTg';" alt="Elizabeth Montgomery And Her Son William Asher Jr Elizabeth Montgomery Bewitched Elizabeth Montgomery Agnes Moorehead">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Elizabeth Montgomery And Her Son William Asher Jr Elizabeth Montgomery Bewitched Elizabeth Montgomery Agnes Moorehead</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/0d/0f/f2/0d0ff27127c7adab91ecb4f92202f676--elizabeth-montgomery-beautiful-actresses.jpg" data-lightbox="roadtrip" data-title="Elizabeth Montgomery She Was Married Four Times Most Notably To Actor Producer Director Willi Elizabeth Montgomery Bewitched Elizabeth Montgomery Elizabeth">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/0d/0f/f2/0d0ff27127c7adab91ecb4f92202f676--elizabeth-montgomery-beautiful-actresses.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbIwO5Qkk5pZEQdzMmLZEf4EaAt0ZORWBcgw';" alt="Elizabeth Montgomery She Was Married Four Times Most Notably To Actor Producer Director Willi Elizabeth Montgomery Bewitched Elizabeth Montgomery Elizabeth">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Elizabeth Montgomery She Was Married Four Times Most Notably To Actor Producer Director Willi Elizabeth Montgomery Bewitched Elizabeth Montgomery Elizabeth</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/1f/36/9d1f36588fafdc1786d4da4426717cbf.jpg" data-lightbox="roadtrip" data-title="Collectibles Bewitched Harpies Bizarre Elizabeth Montgomery Famous Couples Bewitched Elizabeth Montgomery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/1f/36/9d1f36588fafdc1786d4da4426717cbf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK7UIJlweNeaWFhsfdSbPdqEEYnXaYTsDZ4A';" alt="Collectibles Bewitched Harpies Bizarre Elizabeth Montgomery Famous Couples Bewitched Elizabeth Montgomery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Collectibles Bewitched Harpies Bizarre Elizabeth Montgomery Famous Couples Bewitched Elizabeth Montgomery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fe/25/8a/fe258a0cff8730e3b080e0d525dca6b3.jpg" data-lightbox="roadtrip" data-title="Gig Young And Elizabeth Montgomery Gig Young Hollywood Couples Elizabeth Montgomery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fe/25/8a/fe258a0cff8730e3b080e0d525dca6b3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5OiVqeAarWJn7a2qynQiO8Vt1f9JdRen6KA';" alt="Gig Young And Elizabeth Montgomery Gig Young Hollywood Couples Elizabeth Montgomery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gig Young And Elizabeth Montgomery Gig Young Hollywood Couples Elizabeth Montgomery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/97/c8/79/97c8797c0879a7afbaaaa04e02ae85bc.jpg" data-lightbox="roadtrip" data-title="Elizabeth Montgomery Bewitched Elizabeth Montgomery Elizabeth Montgomery Elizabeth">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/97/c8/79/97c8797c0879a7afbaaaa04e02ae85bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfGppaDat45NYBweFasX7tKJ2l0t7K8WYTuw';" alt="Elizabeth Montgomery Bewitched Elizabeth Montgomery Elizabeth Montgomery Elizabeth">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Elizabeth Montgomery Bewitched Elizabeth Montgomery Elizabeth Montgomery Elizabeth</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/3b/a2/753ba22002b70669ebd7d9ad5ef3bd9d.jpg" data-lightbox="roadtrip" data-title="Bewitched Photo Elizabeth Montgomery In Her Wedding Dress Celebrity Bride Wedding Dresses Wedding Gowns Vintage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/3b/a2/753ba22002b70669ebd7d9ad5ef3bd9d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnnqb_-OVUDBAF_syEitp3gepn8IZPHjWzjw';" alt="Bewitched Photo Elizabeth Montgomery In Her Wedding Dress Celebrity Bride Wedding Dresses Wedding Gowns Vintage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bewitched Photo Elizabeth Montgomery In Her Wedding Dress Celebrity Bride Wedding Dresses Wedding Gowns Vintage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/ed/c1/94edc12ae24024d97a83a614b722ba7a.jpg" data-lightbox="roadtrip" data-title="Young Elizabeth Montgomery Bewitched Elizabeth Montgomery Elizabeth Montgomery Classic Hollywood">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/ed/c1/94edc12ae24024d97a83a614b722ba7a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvxKWXK3eE0s74ryOrlLdDPGmz9zOvoJ0Rng';" alt="Young Elizabeth Montgomery Bewitched Elizabeth Montgomery Elizabeth Montgomery Classic Hollywood">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Young Elizabeth Montgomery Bewitched Elizabeth Montgomery Elizabeth Montgomery Classic Hollywood</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/98/49/1d98495ee1c4b4fafd7d22562f2081ae.jpg" data-lightbox="roadtrip" data-title="Elizabeth Montgomery And Gig Young On Their Wedding Day Gig Young Hollywood Couples Elizabeth Montgomery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/98/49/1d98495ee1c4b4fafd7d22562f2081ae.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJcRZR2IJ5xskJIx0B03KUIHtEBnQQNhhW6w';" alt="Elizabeth Montgomery And Gig Young On Their Wedding Day Gig Young Hollywood Couples Elizabeth Montgomery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Elizabeth Montgomery And Gig Young On Their Wedding Day Gig Young Hollywood Couples Elizabeth Montgomery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/63/2c/87632c85838c978f065453993a03a1b0.jpg" data-lightbox="roadtrip" data-title="Elizabeth Montgomery Elizabeth Montgomery Bewitched Elizabeth Montgomery Elizabeth">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/63/2c/87632c85838c978f065453993a03a1b0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj9kwiHzOITmexQZZaW4f_7f7MzGIUvI42rw';" alt="Elizabeth Montgomery Elizabeth Montgomery Bewitched Elizabeth Montgomery Elizabeth">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Elizabeth Montgomery Elizabeth Montgomery Bewitched Elizabeth Montgomery Elizabeth</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/an-va-uong-gi-de-co-nhieu-sua-cho-con-bu.html">An Va Uong Gi De Co Nhieu Sua Cho Con Bu</a></li>
+													<li class="list-group-item"><a href="/are-va-survivor-benefits-for-life.html">Are Va Survivor Benefits For Life</a></li>
+													<li class="list-group-item"><a href="/atwood-ge-9-ext.html">Atwood Ge 9 Ext</a></li>
+													<li class="list-group-item"><a href="/are-charities-picking-up-donations-during-coronavirus.html">Are Charities Picking Up Donations During Coronavirus</a></li>
+													<li class="list-group-item"><a href="/allergic-rhinitis-with-polyps-va-disability.html">Allergic Rhinitis With Polyps Va Disability</a></li>
+													<li class="list-group-item"><a href="/average-electric-bill-in-montgomery-county-md.html">Average Electric Bill In Montgomery County Md</a></li>
+													<li class="list-group-item"><a href="/american-gi-bill.html">American Gi Bill</a></li>
+													<li class="list-group-item"><a href="/apply-for-post-911-gi-bill-transfer.html">Apply For Post 911 Gi Bill Transfer</a></li>
+													<li class="list-group-item"><a href="/bellagio-pool.html">Bellagio Pool</a></li>
+													<li class="list-group-item"><a href="/apply-for-va-compensation-online.html">Apply For Va Compensation Online</a></li>
+													<li class="list-group-item"><a href="/are-va-loan-rates-higher-than-conventional.html">Are Va Loan Rates Higher Than Conventional</a></li>
+													<li class="list-group-item"><a href="/army-student-loan-repayment-and-gi-bill.html">Army Student Loan Repayment And Gi Bill</a></li>
+													<li class="list-group-item"><a href="/average-va-disability-rating-for-sleep-apnea.html">Average Va Disability Rating For Sleep Apnea</a></li>
+													<li class="list-group-item"><a href="/benefits-go-on.html">Benefits Go On</a></li>
+													<li class="list-group-item"><a href="/ask-a-question-va-gi-bill.html">Ask A Question Va Gi Bill</a></li>
+													<li class="list-group-item"><a href="/bah-for-100-disabled-veterans.html">Bah For 100 Disabled Veterans</a></li>
+													<li class="list-group-item"><a href="/are-veterans-eligible-for-nursing-home-care.html">Are Veterans Eligible For Nursing Home Care</a></li>
+													<li class="list-group-item"><a href="/air-force-gymnastics-roster.html">Air Force Gymnastics Roster</a></li>
+													<li class="list-group-item"><a href="/ankle-instability-va-rating.html">Ankle Instability Va Rating</a></li>
+													<li class="list-group-item"><a href="/are-there-snakes-in-virginia.html">Are There Snakes In Virginia</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

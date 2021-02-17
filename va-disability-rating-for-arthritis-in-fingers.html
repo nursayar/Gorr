@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Disability Rating For Arthritis In Fingers - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Disability Rating For Arthritis In Fingers",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/474x/7c/35/b2/7c35b2e945dcad81b1a10a8612cb6e22.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+disability+rating+for+arthritis+in+fingers",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Disability Rating For Arthritis In Fingers</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Lack of movement in your fingers and numbness can be a symptom of diabetes arthritis fibromyalgia or other ailments. Major joints include the shoulder wrist elbow hip knee and ankle while minor joints include toes fingers spine and sacroiliac. Additionally he should explain why your condition falls into that particular category. <br>				
+			</p>
+										<a class="badge badge-light" href="/mit-gi-bill.html">mit gi bill</a>
+											<a class="badge badge-dark" href="/montgomery-county-estimated-tax-bill.html">montgomery county estimated tax bill</a>
+											<a class="badge badge-secondary" href="/montgomery-county-md-estimated-tax-bill.html">montgomery county md estimated tax bill</a>
+											<a class="badge badge-light" href="/montgomery-county-environmental-services-bill-pay.html">montgomery county environmental services bill pay</a>
+											<a class="badge badge-dark" href="/montgomery-county-payment-ticket.html">montgomery county payment ticket</a>
+											<a class="badge badge-dark" href="/montgomery-county-tn-tax-bill-search.html">montgomery county tn tax bill search</a>
+											<a class="badge badge-success" href="/montgomery-bill-for-inmates-2019.html">montgomery bill for inmates 2019</a>
+											<a class="badge badge-success" href="/montgomery-gi-bill-and-how-it-works.html">montgomery gi bill and how it works</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you've come to visit the ideal site.  Our website gives you hints for seeing the highest quality video and image content, hunt and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, particularly Youtube, therefore we recommend this video that you see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/88/b1/61/88b16174b252be00fbb8dc30f9657bff.jpg" data-lightbox="roadtrip" data-title="Pin On Arthritis Living">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/88/b1/61/88b16174b252be00fbb8dc30f9657bff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwYR_KBb6dIXbYKmBDBAXh7NU6LCxX8m2KjQ';" alt="Pin On Arthritis Living">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Arthritis Living</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/e4/b8/d0/e4b8d0d1f8a087dbfd83fdb0c5e02392.jpg" data-lightbox="roadtrip" data-title="Rheumatoid Arthritis Diagnosis Knee Arthritis Arthritis Cure Severe Arthritis">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/e4/b8/d0/e4b8d0d1f8a087dbfd83fdb0c5e02392.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKC1CaqPBw3njzY8sKsQHvPBf4CwDC-NCzNA';" alt="Rheumatoid Arthritis Diagnosis Knee Arthritis Arthritis Cure Severe Arthritis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rheumatoid Arthritis Diagnosis Knee Arthritis Arthritis Cure Severe Arthritis</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2019/10/Depositphotos_49423637_s-2019-1000x630.jpg" data-lightbox="roadtrip" data-title="How The Va Rates Rheumatoid Arthritis Disability Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2019/10/Depositphotos_49423637_s-2019-1000x630.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqVr4fiPBXdRZIEXTDvjhrtM9gmx47_1sCAg';" alt="How The Va Rates Rheumatoid Arthritis Disability Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How The Va Rates Rheumatoid Arthritis Disability Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/f6/14/93/f6149322613f221b912125043ba4a9d9.jpg" data-lightbox="roadtrip" data-title="Pin On Arthritis Supplements">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/f6/14/93/f6149322613f221b912125043ba4a9d9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgKamVNaSKVIGam1O6570HqWjE32un760V-w';" alt="Pin On Arthritis Supplements">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Arthritis Supplements</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.wp.com/www.woodslawyers.com/wp-content/uploads/increase-va-rating-arthritis.jpg?resize=1024%2C576&amp;ssl=1" data-lightbox="roadtrip" data-title="Increase Your Va Ratings For Joint Pain And Arthritis Disability">
+											<img class="card-img v-image ads-img " src="https://i1.wp.com/www.woodslawyers.com/wp-content/uploads/increase-va-rating-arthritis.jpg?resize=1024%2C576&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy_U6S2wVKmww9Ot-bcBd4lYJRpJHWI3JVfA';" alt="Increase Your Va Ratings For Joint Pain And Arthritis Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Increase Your Va Ratings For Joint Pain And Arthritis Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/arthritis-2-300x200.jpg" data-lightbox="roadtrip" data-title="Va Ratings For Arthritis Explained Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/arthritis-2-300x200.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLiCwoS4o1T7V3eQffLQlDMIRK3erDShzRkQ';" alt="Va Ratings For Arthritis Explained Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Ratings For Arthritis Explained Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://militarybenefits.info/wp-content/uploads/2019/06/How-The-VA-Rates-Arthritis.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLiCwoS4o1T7V3eQffLQlDMIRK3erDShzRkQ';" alt="Va Ratings For Arthritis Explained Hill Ponton P A">
+										<div class="card-body">
+						<h3 class="h5"><b>The General Counsel Opinions related to this topic VAOPGCPREC 23-97 VAOPGCREC 9-98 VAOPGCPREC 9-2004 allow for multiple ratings for arthritis to be assigned to each affected joint this is not considered pyramiding with numerous BVA decisions supporting these ratings Citation Number 1017323 that assign separate diagnostic codes for each condition to accurately describe the disability.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va disability rating for arthritis in fingers</strong>. 
+								
+																	The VA Ratings Schedule for Rheumatoid Arthritis. 
+																	Arthritis can make daily life harder. 
+																	How severe does my arthritis have to be to get disability benefits. 
+																	If it was right hand the most they would give is 40. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hand osteoarthritis OA happens when the cartilage in the finger bones wears down where two bones meet. 
+																	The VA awards disability compensation for each Hand condition that is service-connected. 
+																	The terms osteoarthrosis and osteoarthritis are used interchangeably in the medical community and the general public. 
+																	Rheumatoid Arthritis is rated under Diagnostic Code 5002. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They base it on your dominance. 
+																	To see if your arthritis could qualify for SSDI we must first understand how disabilities are. 
+																	That is assuming youve already been diagnosed as having RA. 
+																	Veterans suffering from osteoarthritis may be eligible for disability benefits from the Department of Veterans Affairs VA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When it comes to arthritis of the knee it is crucial that you have someone experienced in handling VA Disability Benefits claims take a look at the VA Rating Decision especially the code sheet. 
+																	Its also a leading cause of disability. 
+																	Social Security disability insurance SSDI currently benefits millions of Americans and their families. 
+																	RA can be evaluated at up to a 100 percent disability rating if it results in the veteran becoming bedridden or complete incapacitation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hands are one of the common areas in which people develop OA. 
+																	I currently receive a 70 disability rating from the VA but on the rating report they noted I had degenerative arthritis in both hands verified by xrays. 
+																	Individuals experience great pains and stiffness and in addition they can even become incapable of getting around and of performing the simplest movements. 
+																	Under the VA rating schedule there is a standard 20 disability rating if there is x-ray evidence of involvement of two or more major joints or minor joint groups with occasional incapacitating exacerbations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Its important that your doctor use these three terms to explain your limitations due to arthritis. 
+																	However many people who could benefit from the program are either unsure that they qualify or are intimidated by the process. 
+																	The Department of Veterans Affairs does not assign a single disability rating for arthritis. 
+																	In fact the Center for Disease Control CDC estimates the rate of arthritis in veterans to be 256 although other estimates have the rate as high as 35. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA Disability Ratings for Arthritis Degenerative Arthritis Diagnostic Code 5003 Degenerative arthritis is rated based on the limitation of range of motion of the affected joints. 
+																	Lower ratings will be assigned for occasional incapacitating episodes. 
+																	What you read here is current at the time of this writing according to the VA but disability percentage rating procedures criteria and amounts are always subject to change through legislation VA policy etc. 
+																	Your knuckles on both hands might begin by aching and swelling. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Slight 10 moderate 20 or severe 30. 
+																	However if limitation of motion for the involved joints renders a non-compensable rating a 10 percent rating will be assigned for each major or group of minor joints affected by limitation of motion. 
+																	Arthritis causes more than just pain. 
+																	Arthritis is one of the most common conditions affecting those who have served in the military. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The DoD will also rate service-connected conditions as long as they also make the service member Unfit for Duty. 
+																	Im right hand dominate so the most they will ever give me 30. 
+																	They rated this at zero due to my not asking for it. 
+																	VA Disability Rating for Arthritis in Your Hands or Trigger Finger Remember that rheumatoid arthritis starts in smaller joints first. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Since flare-ups come and go the minimum rating is 20 if you have 2 bad times a year. 
+																	Osteoarthritis OA is the most common form of arthritis and is defined by Mayo Clinic as a degenerative condition in which the protective cartilage that cushions the ends of your bones wears down over time. 
+																	One or two painful flare-ups a year. 
+																	It is also known as Degenerative Arthritis Hypertrophic Arthritis and Degenerative Joint Disease. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	OA is commonly known as degenerative arthritis because it causes a steady decline in the cartilage between the bones. 
+																	Va Disability For Arthritis In Hands Rheumatoid arthritis is a debilitating disease characterized by the irritation of the joints. 
+																	This is a higher rate than among the civilian population and it is one of the leading causes of physical disability. 
+																	The VA rating specialist will categorize instability of the joint in three ways. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Im rated at 10 for my left wrist due to an injury that has developed into arthritis. 
+																	The rating schedule is as follows. 
+																	For the purpose of this guideline the terms are considered synonymous and will hereinafter be referred to as OA. 
+																	For Reservists the condition must have occurred in or resulted from an injury in the Line of Duty to qualify. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you dont know what the VAs code sheet is you definitely need to talk to a VSO representative or a VA Disability Benefits attorney. 
+																	According to the Centers for Disease Control CDC more than 50 million. 
+																	That means that a rheumatoid arthritis disability rating wont be permanent. 
+																	Much depends on the nature and severity of the condition. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sep 22 2010 1 Hello all 1st time poster but i have read many of the other posts and i hope someone here can help me. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/7c/35/b2/7c35b2e945dcad81b1a10a8612cb6e22.jpg" data-lightbox="roadtrip" data-title="Rheumatoid Arthritis Symptoms Arthritis Symptoms Rheumatoid Arthritis Symptoms Arthritis Relief">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/7c/35/b2/7c35b2e945dcad81b1a10a8612cb6e22.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_WUGSO0pOXAAwhDN4b2iJw99kcJNeE7pmxw';" alt="Rheumatoid Arthritis Symptoms Arthritis Symptoms Rheumatoid Arthritis Symptoms Arthritis Relief">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rheumatoid Arthritis Symptoms Arthritis Symptoms Rheumatoid Arthritis Symptoms Arthritis Relief</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.woodslawyers.com/wp-content/uploads/Rheumatoid-Arthritis-va-disability-rating-1024x537.jpg" data-lightbox="roadtrip" data-title="Rheumatoid Arthritis Va Ratings Benefits And Conditions">
+											<img class="card-img v-image ads-img " src="https://www.woodslawyers.com/wp-content/uploads/Rheumatoid-Arthritis-va-disability-rating-1024x537.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGlmLh9H27gchxXOgICSt79_FJr5mXdNPV1Q';" alt="Rheumatoid Arthritis Va Ratings Benefits And Conditions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rheumatoid Arthritis Va Ratings Benefits And Conditions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2020/07/is-gout-a-disability-5.jpg" data-lightbox="roadtrip" data-title="Va Disability Ratings For Gout Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2020/07/is-gout-a-disability-5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEYl-KqwU38RZEaP_WX_UgKRUHpmMOiZ_oFw';" alt="Va Disability Ratings For Gout Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Ratings For Gout Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i2.wp.com/www.woodslawyers.com/wp-content/uploads/de-quervains-tenosynovitis-va-disability.jpg?resize=1024%2C576&amp;ssl=1" data-lightbox="roadtrip" data-title="The Va Rating Process For De Quervain S Tenosynovitis">
+											<img class="card-img v-image ads-img " src="https://i2.wp.com/www.woodslawyers.com/wp-content/uploads/de-quervains-tenosynovitis-va-disability.jpg?resize=1024%2C576&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpvDuu2vTh_evBUj-0f07ZY1f0uO1p4dBEgw';" alt="The Va Rating Process For De Quervain S Tenosynovitis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Va Rating Process For De Quervain S Tenosynovitis</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/c2/4f/92/c24f9260c876e8546965f85445c0df0e.jpg" data-lightbox="roadtrip" data-title="Pin On Ease Your Arthritis">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/c2/4f/92/c24f9260c876e8546965f85445c0df0e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF3b4IcXxJEupgkp6KYcfFNhFnXu0zKAMdsA';" alt="Pin On Ease Your Arthritis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ease Your Arthritis</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2019/06/How-The-VA-Rates-Arthritis.jpg" data-lightbox="roadtrip" data-title="How The Va Rates Arthritis Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2019/06/How-The-VA-Rates-Arthritis.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE_OiJo2SH8z7ZNpgICpx7Gndf7nc-2ayzuw';" alt="How The Va Rates Arthritis Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How The Va Rates Arthritis Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hillandponton.com/wp-content/uploads/2020/04/tendonitis.jpg" data-lightbox="roadtrip" data-title="Va Disability Rating For Tendonitis Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://www.hillandponton.com/wp-content/uploads/2020/04/tendonitis.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm9Di1QyGT0yKrKH_RxCCz3tCrrQZDBiEwYw';" alt="Va Disability Rating For Tendonitis Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Rating For Tendonitis Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hillandponton.com/wp-content/uploads/2020/08/rotator-cuff-ratings.jpg" data-lightbox="roadtrip" data-title="Va Disability Rating For Rotator Cuff Repair Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://www.hillandponton.com/wp-content/uploads/2020/08/rotator-cuff-ratings.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl_arh9ejDYbrkhkZewIappxBW3J0NOWaEEw';" alt="Va Disability Rating For Rotator Cuff Repair Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Rating For Rotator Cuff Repair Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/a4/9f/a4/a49fa4a0cb10d482c2f3d2fb811d4bfe.jpg" data-lightbox="roadtrip" data-title="Pin On Gout">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/a4/9f/a4/a49fa4a0cb10d482c2f3d2fb811d4bfe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5ggllYOocRK9mfzEEpytXSFianstQ3YavqA';" alt="Pin On Gout">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Gout</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/blog-Copy-32-768x512.jpg" data-lightbox="roadtrip" data-title="Knee Problems And Your Va Disability Claim Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/blog-Copy-32-768x512.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Sx40jpNjv2ZaO0nz9U2VE6u2YjNASdVuMQ';" alt="Knee Problems And Your Va Disability Claim Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Knee Problems And Your Va Disability Claim Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/23/a7/71/23a7715437e6c401d9117306bf973020.jpg" data-lightbox="roadtrip" data-title="Va Letter Va Letter Of Disability Citybirds Club Letter Templates Lettering Professional Cover Letter Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/23/a7/71/23a7715437e6c401d9117306bf973020.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2bDQrWmGCjwjEAHd_u2jE76LIonctYNYAXQ';" alt="Va Letter Va Letter Of Disability Citybirds Club Letter Templates Lettering Professional Cover Letter Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Letter Va Letter Of Disability Citybirds Club Letter Templates Lettering Professional Cover Letter Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/72/74/c272749eec60935f58151915621cbec2.jpg" data-lightbox="roadtrip" data-title="Osteoarthritis Late Stage In The Hand Arthritis Remedies Home Remedies For Arthritis Arthritis In Fingers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/72/74/c272749eec60935f58151915621cbec2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQ8_wZ9qeAJVxeT6rEUpY_dXyfOvyWBoCKw';" alt="Osteoarthritis Late Stage In The Hand Arthritis Remedies Home Remedies For Arthritis Arthritis In Fingers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Osteoarthritis Late Stage In The Hand Arthritis Remedies Home Remedies For Arthritis Arthritis In Fingers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/be/c5/37/bec537f244bbb7a9babc08d8dd1d5140.jpg" data-lightbox="roadtrip" data-title="11 Amazing Benefits Of Turmeric Golden Milk How To Prepare Foods For Arthritis Arthritis Chia Seeds Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/be/c5/37/bec537f244bbb7a9babc08d8dd1d5140.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRigPK4nUwH5IwdipDDOpxWbwQZoqsSwU9WlQ';" alt="11 Amazing Benefits Of Turmeric Golden Milk How To Prepare Foods For Arthritis Arthritis Chia Seeds Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">11 Amazing Benefits Of Turmeric Golden Milk How To Prepare Foods For Arthritis Arthritis Chia Seeds Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-percentage-table.html">Va Percentage Table</a></li>
+													<li class="list-group-item"><a href="/va-percentages-for-medical-disability.html">Va Percentages For Medical Disability</a></li>
+													<li class="list-group-item"><a href="/va-rating-by-disability.html">Va Rating By Disability</a></li>
+													<li class="list-group-item"><a href="/va-rating-criteria-for-tbi.html">Va Rating Criteria For Tbi</a></li>
+													<li class="list-group-item"><a href="/va-rating-cluster-headaches.html">Va Rating Cluster Headaches</a></li>
+													<li class="list-group-item"><a href="/va-rating-flare-ups.html">Va Rating Flare Ups</a></li>
+													<li class="list-group-item"><a href="/va-rating-diabetic-retinopathy.html">Va Rating Diabetic Retinopathy</a></li>
+													<li class="list-group-item"><a href="/va-rating-chronic-back-pain.html">Va Rating Chronic Back Pain</a></li>
+													<li class="list-group-item"><a href="/va-post-9-11-gi-bill-calculator.html">Va Post 9 11 Gi Bill Calculator</a></li>
+													<li class="list-group-item"><a href="/va-rating-criteria-for-knee.html">Va Rating Criteria For Knee</a></li>
+													<li class="list-group-item"><a href="/va-rating-criteria-for-prostate-cancer.html">Va Rating Criteria For Prostate Cancer</a></li>
+													<li class="list-group-item"><a href="/va-qtc.html">Va Qtc</a></li>
+													<li class="list-group-item"><a href="/va-rating-bilateral-carpal-tunnel.html">Va Rating Bilateral Carpal Tunnel</a></li>
+													<li class="list-group-item"><a href="/va-post-911-gi-bill-contact.html">Va Post 911 Gi Bill Contact</a></li>
+													<li class="list-group-item"><a href="/va-rating-5002.html">Va Rating 5002</a></li>
+													<li class="list-group-item"><a href="/va-point-system-dmv.html">Va Point System Dmv</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-arthritis-in-shoulder.html">Va Rating For Arthritis In Shoulder</a></li>
+													<li class="list-group-item"><a href="/va-rating-5019.html">Va Rating 5019</a></li>
+													<li class="list-group-item"><a href="/va-rating-10.html">Va Rating 10</a></li>
+													<li class="list-group-item"><a href="/va-rate-pay-chart.html">Va Rate Pay Chart</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

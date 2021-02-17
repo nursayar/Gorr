@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Approved Condos In San Diego - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Approved Condos In San Diego",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/43/df/0c/43df0c24cd1ad3aabd6ad183af2a9273.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+approved+condos+in+san+diego",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Approved Condos In San Diego</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">In other words less than 50 of the units are rented out. Search San Diego VA Condos Here. VA does not require any down payment for loans under 417000 and will do loan amounts up to 1m with a down payment. <br>				
+			</p>
+										<a class="badge badge-warning" href="/air-force-guy-kills-cop.html">air force guy kills cop</a>
+											<a class="badge badge-dark" href="/air-force-gore-tex-black.html">air force gore tex black</a>
+											<a class="badge badge-danger" href="/9-gimtadienio-sveikinimai.html">9 gimtadienio sveikinimai</a>
+											<a class="badge badge-info" href="/air-force-gd.html">air force gd</a>
+											<a class="badge badge-secondary" href="/ach-transaction-vaed-treas-310-xxva-ch33.html">ach transaction vaed treas 310 xxva ch33</a>
+											<a class="badge badge-primary" href="/air-force-gd-introduction.html">air force gd introduction</a>
+											<a class="badge badge-success" href="/9gag-meme.html">9gag meme</a>
+											<a class="badge badge-light" href="/air-force-go-sport.html">air force go sport</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to visit the right blog.  Our site provides you with suggestions for seeing the maximum quality video and picture content, search and locate more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, so we recommend this movie that you view.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/d3/ef/abd3ef881a629d675868750fb99298bc.jpg" data-lightbox="roadtrip" data-title="San Diego Va Approved Condo For Sale In 92154 Check Out This 3 Bedroom 2 5 Bath Listing At 6233 Avenida D California Real Estate Sale House Estate Homes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/d3/ef/abd3ef881a629d675868750fb99298bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWX-9FABHNALBUHrTtBKJaUq2rIMPM1vUfeQ';" alt="San Diego Va Approved Condo For Sale In 92154 Check Out This 3 Bedroom 2 5 Bath Listing At 6233 Avenida D California Real Estate Sale House Estate Homes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">San Diego Va Approved Condo For Sale In 92154 Check Out This 3 Bedroom 2 5 Bath Listing At 6233 Avenida D California Real Estate Sale House Estate Homes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/3a/ee/d23aee24534596122f8929947759e74d.jpg" data-lightbox="roadtrip" data-title="San Diego Va Approved Condo For Sale In 92110 Check Out This 3 Bedroom 3 0 Bath Listing At 3537 Sandcastle Ln In Condos For Sale House Search New Homes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/3a/ee/d23aee24534596122f8929947759e74d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTFKGrbD43CEWH6pY5CRiVgKkbpUuFQLMXGA';" alt="San Diego Va Approved Condo For Sale In 92110 Check Out This 3 Bedroom 3 0 Bath Listing At 3537 Sandcastle Ln In Condos For Sale House Search New Homes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">San Diego Va Approved Condo For Sale In 92110 Check Out This 3 Bedroom 3 0 Bath Listing At 3537 Sandcastle Ln In Condos For Sale House Search New Homes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/aa/34/87/aa3487417a3c3958886acc67765f7e9e.jpg" data-lightbox="roadtrip" data-title="San Diego Va Approved Condo For Sale In 92110 Check Out This 2 Bedroom 2 0 Bath Listing At 3466 Sandcastle Ln I Condos For Sale House Search Sand Castle">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/aa/34/87/aa3487417a3c3958886acc67765f7e9e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3xrXwQw2OlmZyQt9qXuMEkEVkD0ZbknLwOQ';" alt="San Diego Va Approved Condo For Sale In 92110 Check Out This 2 Bedroom 2 0 Bath Listing At 3466 Sandcastle Ln I Condos For Sale House Search Sand Castle">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">San Diego Va Approved Condo For Sale In 92110 Check Out This 2 Bedroom 2 0 Bath Listing At 3466 Sandcastle Ln I Condos For Sale House Search Sand Castle</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/17/8f/9d178f58d5244773217ed7f408771a54.jpg" data-lightbox="roadtrip" data-title="San Diego Va Approved Condo For Sale In 92139 Check Out This 3 Bedroom 2 0 Bath Listing At 7316 Tooma St 170 In San Dieg Condos For Sale New Homes Home">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/17/8f/9d178f58d5244773217ed7f408771a54.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMWj08bwTM-v1fGUczc0CIWT4pkKUo50gcfQ';" alt="San Diego Va Approved Condo For Sale In 92139 Check Out This 3 Bedroom 2 0 Bath Listing At 7316 Tooma St 170 In San Dieg Condos For Sale New Homes Home">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">San Diego Va Approved Condo For Sale In 92139 Check Out This 3 Bedroom 2 0 Bath Listing At 7316 Tooma St 170 In San Dieg Condos For Sale New Homes Home</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/2d/43/702d43dba091f40a39b74d1479599f09.jpg" data-lightbox="roadtrip" data-title="San Diego Va Approved Condo For Sale In 92128 Check Out This 3 Bedroom 2 0 Bath Listing At 12518 Call California Real Estate California Homes Sale House">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/2d/43/702d43dba091f40a39b74d1479599f09.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxD61a_7nCOGVtysXjg-wsANpl_W113wp2CQ';" alt="San Diego Va Approved Condo For Sale In 92128 Check Out This 3 Bedroom 2 0 Bath Listing At 12518 Call California Real Estate California Homes Sale House">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">San Diego Va Approved Condo For Sale In 92128 Check Out This 3 Bedroom 2 0 Bath Listing At 12518 Call California Real Estate California Homes Sale House</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/3d/20/dd3d20f27598b3f761bd74da600d4bae.jpg" data-lightbox="roadtrip" data-title="Va Approved Home For Sale In San Diego Ca 92101 Check Out This 1 Bedroom 1 0 Bath Listing At 540 Hawthorn Street 3a In San House Styles Condo Home">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/3d/20/dd3d20f27598b3f761bd74da600d4bae.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmff6pok4zmhLp4dosndIMfQQiWeyJyQXn1Q';" alt="Va Approved Home For Sale In San Diego Ca 92101 Check Out This 1 Bedroom 1 0 Bath Listing At 540 Hawthorn Street 3a In San House Styles Condo Home">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Approved Home For Sale In San Diego Ca 92101 Check Out This 1 Bedroom 1 0 Bath Listing At 540 Hawthorn Street 3a In San House Styles Condo Home</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/78/45/a2/7845a26e95c397bf366bcc57d6d11ddb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmff6pok4zmhLp4dosndIMfQQiWeyJyQXn1Q';" alt="Va Approved Home For Sale In San Diego Ca 92101 Check Out This 1 Bedroom 1 0 Bath Listing At 540 Hawthorn Street 3a In San House Styles Condo Home">
+										<div class="card-body">
+						<h3 class="h5"><b>The builder needs to be VA approved and pass along certain warranties.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va approved condos in san diego</strong>. 
+								
+																	In order to use VA financing on a town home condominium or shared residential complex the property must be VA Approved. 
+																	For the complete list of eligible VA approved condos in San Diego visit the San Diego County VA Home Loan Info page. 
+																	695 SEA VALE ST CHULA VISTA CA 91910 Oct2022 Status. 
+																	VA loans have no Mortgage Insurance Premium and are a great way to buy if you are considering buying in one of these VA approved buildings. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This will help you find condos that you can purchase in the areas you are interested in around San Diego. 
+																	LAS PALMAS CONDOMINIUMS FHA approved condo ID. 
+																	4841 CAMINO ROBERTO BONITA CA 91902 Feb2021 Status. 
+																	Here is your guide to VA Home Loans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	At least 50 of the units must be occupied by the owners. 
+																	Borrowers take advantage of 0 down and low interest rates while using your VA loan to purchase you next home in San Diego. 
+																	For veterans active-duty service members and some spouses VA home loans can be a great way into homeownership. 
+																	If a complex in San Diego County is not on the approved list than unfortunately a Veteran or Active Duty Military will not be able to use their VA Loan to purchase the property. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Building Name A to Z. 
+																	However unlike single-family homes not every condominium is eligible for VA Loan approval. 
+																	FHA approved condo ID. 
+																	Search for VA Approved Condos in San Diego - Veterans Affairs - Active Duty Military - Veterans - Disabled Veterans 1625 Pentecost Way Unit 8 East San Diego 225000 Located just minutes from Euclid Avenues shops restaurants and convenient access to CA-94 this completely remodeled entry level 1 bed 1 bath unit include a spacious. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	San Diego Condos Approved For VA Home Loan Guarantee Letters U-V The following is a list of the condos that are eligible and approved for VA Home Loan financing whose names begin with the letters U V. 
+																	Borrowers take advantage of 0 down and low interest rates while using your VA loan to purchase you next home in San Diego. 
+																	These are the VA Approved buildings around San Diego. 
+																	In order to use a VA Loan on a Condominium or Townhome the Home Owners. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Search VA Approved Condos in San Diego. 
+																	VA Approved Condos in San Diego. 
+																	Building Name Z to A. 
+																	Condo Report - Veterans Affairs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	BOLERO AT RANCHO DEL REY FHA approved condo ID. 
+																	The following projects are VA approved condos for condo buildings in Downtown San Diego. 
+																	Welcome to San Diego Blog May 9 2020. 
+																	Apr 24 2019 - Search the latest homes listed on the market. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Condominiums offer great amenities and low-maintenance lifestyles that make sense for many military members. 
+																	Posted on May 9 2020 updated on May 10 2020 by Robert. 
+																	However they differ from a traditional home loan. 
+																	VAcondos is a free public resource site and is not affiliated with the Federal Housing Administration or any other government agency. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VA Home Loan program is a government insured loan program for borrowers who have served our country in any of the branches of our Armed Services. 
+																	For the complete list of eligible VA approved condos in San Diego visit the San Diego County VA Home Loan Info page. 
+																	San Diego Condos Approved For VA Home Loan Guarantee Letter G The following is a list of the condos that are eligible and approved for VA Home Loan financing whose names begin with the letter G. 
+																	1104 ISLE WAY CHULA VISTA CA 91910 Jun2021 Status. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Looking for a high-rise or mid-rise condo building in San Diego where you can use your VA mortgage benefits. 
+																	Approvals can change quickly and be impacted by HOA issues such as condo litigation. 
+																	We can help you find the right building and right condo and also connect you with a VA lender if youd like. 
+																	Those include either a one-year VA builders warranty or a ten-year insurance-back protection planMost well-known builders are approved and meet the criteria for doing VA loans without any issues. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The buildings have to go through a special process in order to be eligible and they must meet certain requirements as well. 
+																	Condos and Townhomes in San Diego County that are VA Loan Approved Only condos and townhome complexes that are approved by the United States Department of Veterans Affairs will allow for a VA Loan. 
+																	This list below is updated as soon as possible but it is recommended you check with me for the latest. 
+																	To be approved by the VA a condominium project must meet these requirements. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Learn More About VA-Approved Condos. 
+																	Building Name A to Z. 
+																	VA Approved Homes in San Diego. 
+																	To determine if a particular property is eligible for VA Loan approval. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Or lets talk and I can create a custom search alert for you. 
+																	Search VA Approved Condos in San Diego The VA Home Loan program is a government insured loan program for borrowers who have served our country in any of the branches of our Armed Services. 
+																	Are you looking to buy a VA approved condo or home in San Diego. 
+																	Learn More about VA Approved Condos for Sale in Downtown San Diego. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In order to find an approved condo youll first need to search the database on the VA website. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/45/a2/7845a26e95c397bf366bcc57d6d11ddb.jpg" data-lightbox="roadtrip" data-title="San Diego Va Approved Condo For Sale In 92109 Check Out This 3 Bedroom 3 0 Bath Listing At 3957 Riviera Condos For Sale House Search Military Relocation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/45/a2/7845a26e95c397bf366bcc57d6d11ddb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzezhqC2S8wy3jfa_kalaFKy4ybpp1AhQw8w';" alt="San Diego Va Approved Condo For Sale In 92109 Check Out This 3 Bedroom 3 0 Bath Listing At 3957 Riviera Condos For Sale House Search Military Relocation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">San Diego Va Approved Condo For Sale In 92109 Check Out This 3 Bedroom 3 0 Bath Listing At 3957 Riviera Condos For Sale House Search Military Relocation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c0/87/a7/c087a702b1c48b7ada8343fbbed11ec7.jpg" data-lightbox="roadtrip" data-title="San Diego Va Approved Condo For Sale In 92101 Check Out This 3 Bedroom 2 0 Bath Listing At 1441 9th Ave 305 Sale House San Diego Houses Condos For Sale">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c0/87/a7/c087a702b1c48b7ada8343fbbed11ec7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbd9_uzTHfRyt0EXT71PesIxpbG4929f8OLA';" alt="San Diego Va Approved Condo For Sale In 92101 Check Out This 3 Bedroom 2 0 Bath Listing At 1441 9th Ave 305 Sale House San Diego Houses Condos For Sale">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">San Diego Va Approved Condo For Sale In 92101 Check Out This 3 Bedroom 2 0 Bath Listing At 1441 9th Ave 305 Sale House San Diego Houses Condos For Sale</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/d2/6d/23d26d517f097d867542ba8fd9c2ddb2.jpg" data-lightbox="roadtrip" data-title="Va Approved Home For Sale In San Diego Ca 92101 Check Out This 3 Bedroom 2 0 Bath Listing At 1514 7th 702 California Real Estate Condo House Search">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/d2/6d/23d26d517f097d867542ba8fd9c2ddb2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6iAb-aa4zKtQ73Xxt8Jx3bcec9fO1n2uLsQ';" alt="Va Approved Home For Sale In San Diego Ca 92101 Check Out This 3 Bedroom 2 0 Bath Listing At 1514 7th 702 California Real Estate Condo House Search">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Approved Home For Sale In San Diego Ca 92101 Check Out This 3 Bedroom 2 0 Bath Listing At 1514 7th 702 California Real Estate Condo House Search</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/45/64/2845642b8a763652584f391f153b87a1.jpg" data-lightbox="roadtrip" data-title="Va Approved Home For Sale In San Diego Ca 92101 Check Out This 2 Bedroom 2 0 Bath Listing At 1480 Broadway California Real Estate Condo House Search">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/45/64/2845642b8a763652584f391f153b87a1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWjZXNpXtqC3mkb6Nh8rRFdG4FPzJhSK3BmQ';" alt="Va Approved Home For Sale In San Diego Ca 92101 Check Out This 2 Bedroom 2 0 Bath Listing At 1480 Broadway California Real Estate Condo House Search">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Approved Home For Sale In San Diego Ca 92101 Check Out This 2 Bedroom 2 0 Bath Listing At 1480 Broadway California Real Estate Condo House Search</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/a3/0f/02a30f4beff8954c3f89defe78c398d8.jpg" data-lightbox="roadtrip" data-title="Va Approved Home For Sale In San Diego Ca 92101 Check Out This 1 Bedroom 1 0 Bath Listing At 889 Date St Sale House Condos For Sale San Diego Condos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/a3/0f/02a30f4beff8954c3f89defe78c398d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg1AR0PNj34kajt5EpP_2RhHjQ8ExFgi064w';" alt="Va Approved Home For Sale In San Diego Ca 92101 Check Out This 1 Bedroom 1 0 Bath Listing At 889 Date St Sale House Condos For Sale San Diego Condos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Approved Home For Sale In San Diego Ca 92101 Check Out This 1 Bedroom 1 0 Bath Listing At 889 Date St Sale House Condos For Sale San Diego Condos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/32/eb/b932eb9d2c28e0301cb40756c4d6d909.jpg" data-lightbox="roadtrip" data-title="San Diego Fha Approved Condo For Sale In 92128 Check Out This 3 Bedroom 2 0 Bath Listing At 11262 Prove California Real Estate Sale House Condos For Sale">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/32/eb/b932eb9d2c28e0301cb40756c4d6d909.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgMKAwOhDB9CbI6WpSW_udKZkKOkvKN81ibg';" alt="San Diego Fha Approved Condo For Sale In 92128 Check Out This 3 Bedroom 2 0 Bath Listing At 11262 Prove California Real Estate Sale House Condos For Sale">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">San Diego Fha Approved Condo For Sale In 92128 Check Out This 3 Bedroom 2 0 Bath Listing At 11262 Prove California Real Estate Sale House Condos For Sale</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d6/d7/ff/d6d7ffb3ec6aec73702633fd006bc058.jpg" data-lightbox="roadtrip" data-title="Granada Hills Va Approved Condo For Sale In 91344 Check Out This 4 Bedroom 2 5 Bath Listing At 12113 El Oro W Granada Hills Condos For Sale House Search">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d6/d7/ff/d6d7ffb3ec6aec73702633fd006bc058.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO7dYsxSsg0Ia2Z1AlCblpjQGxIO4l4GzV9Q';" alt="Granada Hills Va Approved Condo For Sale In 91344 Check Out This 4 Bedroom 2 5 Bath Listing At 12113 El Oro W Granada Hills Condos For Sale House Search">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Granada Hills Va Approved Condo For Sale In 91344 Check Out This 4 Bedroom 2 5 Bath Listing At 12113 El Oro W Granada Hills Condos For Sale House Search</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/6a/a6/d76aa6f413fea38b2e8e4790d3663b30.jpg" data-lightbox="roadtrip" data-title="Va Approved Home For Sale In Chula Vista Ca 91913 Check Out This 3 Bedroom 2 5 Bath Li California Real Estate San Diego Real Estate San Diego Houses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/6a/a6/d76aa6f413fea38b2e8e4790d3663b30.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBmW-_zhx_Mm__qlHvc6Sh3MNz-8CpvYxtVw';" alt="Va Approved Home For Sale In Chula Vista Ca 91913 Check Out This 3 Bedroom 2 5 Bath Li California Real Estate San Diego Real Estate San Diego Houses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Approved Home For Sale In Chula Vista Ca 91913 Check Out This 3 Bedroom 2 5 Bath Li California Real Estate San Diego Real Estate San Diego Houses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/df/0c/43df0c24cd1ad3aabd6ad183af2a9273.jpg" data-lightbox="roadtrip" data-title="Fha Approved Home For Sale In San Diego Ca 92103 Check Out This 2 Bedroom 2 0 Bath Real Estate Listing At California Real Estate Sale House House Search">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/df/0c/43df0c24cd1ad3aabd6ad183af2a9273.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxCh4ChriwwPuwWYsqtFHbQ81bpvnkDRNipA';" alt="Fha Approved Home For Sale In San Diego Ca 92103 Check Out This 2 Bedroom 2 0 Bath Real Estate Listing At California Real Estate Sale House House Search">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fha Approved Home For Sale In San Diego Ca 92103 Check Out This 2 Bedroom 2 0 Bath Real Estate Listing At California Real Estate Sale House House Search</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/27/cf/29/27cf29cb73aefd5a2c3e7d4dda5bf123.jpg" data-lightbox="roadtrip" data-title="Santee Va Approved Condo For Sale In 92071 Check Out This 3 Bedroom 3 5 Bath Listing At 8796 Aspenglow Pl 2 In Santee Condos For Sale San Diego Houses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/27/cf/29/27cf29cb73aefd5a2c3e7d4dda5bf123.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6_2w1xSauZjcde-_JI1ZoJMC6jAf14WZ2WA';" alt="Santee Va Approved Condo For Sale In 92071 Check Out This 3 Bedroom 3 5 Bath Listing At 8796 Aspenglow Pl 2 In Santee Condos For Sale San Diego Houses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Santee Va Approved Condo For Sale In 92071 Check Out This 3 Bedroom 3 5 Bath Listing At 8796 Aspenglow Pl 2 In Santee Condos For Sale San Diego Houses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c5/da/42/c5da422da39fc6fe6d66bd282d7e7780.jpg" data-lightbox="roadtrip" data-title="San Diego Va Approved Condo For Sale In 92109 Check Out This 2 Bedroom 1 0 Bath Listing At 832 Brighton Ct In Sale House New Homes San Diego Real Estate">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c5/da/42/c5da422da39fc6fe6d66bd282d7e7780.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRarOAM4UUcWUDhL7q4563MUDYl0QZNmwJlVA';" alt="San Diego Va Approved Condo For Sale In 92109 Check Out This 2 Bedroom 1 0 Bath Listing At 832 Brighton Ct In Sale House New Homes San Diego Real Estate">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">San Diego Va Approved Condo For Sale In 92109 Check Out This 2 Bedroom 1 0 Bath Listing At 832 Brighton Ct In Sale House New Homes San Diego Real Estate</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/c4/b6/4ec4b6abd655e0b8988cb9b7c697390e.jpg" data-lightbox="roadtrip" data-title="Va Approved Home For Sale In Chula Vista Ca 91913 Check Out This 2 Bedroom 2 0 Bath Listing At 1546 Valverde Ln 1 In House Search Home House Styles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/c4/b6/4ec4b6abd655e0b8988cb9b7c697390e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbrAcTI_7tuBdHZhA9dvit81My7WmTTx2wtg';" alt="Va Approved Home For Sale In Chula Vista Ca 91913 Check Out This 2 Bedroom 2 0 Bath Listing At 1546 Valverde Ln 1 In House Search Home House Styles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Approved Home For Sale In Chula Vista Ca 91913 Check Out This 2 Bedroom 2 0 Bath Listing At 1546 Valverde Ln 1 In House Search Home House Styles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/29/b5/c5/29b5c584875e19a2febacce66ab32506.jpg" data-lightbox="roadtrip" data-title="Va Approved Home For Sale In Escondido Ca 92026 Check Out This 2 Bedroom 2 0 Bath Listing At 145 W El Norte C 112 In Escondi House Styles Condo Home">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/29/b5/c5/29b5c584875e19a2febacce66ab32506.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgrzTOgO2c3xsX0HMk5c7eMr89cV2RmF8xTg';" alt="Va Approved Home For Sale In Escondido Ca 92026 Check Out This 2 Bedroom 2 0 Bath Listing At 145 W El Norte C 112 In Escondi House Styles Condo Home">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Approved Home For Sale In Escondido Ca 92026 Check Out This 2 Bedroom 2 0 Bath Listing At 145 W El Norte C 112 In Escondi House Styles Condo Home</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/health-insurance-for-military-members.html">Health Insurance For Military Members</a></li>
+													<li class="list-group-item"><a href="/house-waybill-la-gi.html">House Waybill La Gi</a></li>
+													<li class="list-group-item"><a href="/health-insurance-in-veteran.html">Health Insurance In Veteran</a></li>
+													<li class="list-group-item"><a href="/health-insurance-for-military-dependents-over-23.html">Health Insurance For Military Dependents Over 23</a></li>
+													<li class="list-group-item"><a href="/health-care-for-disabled-veterans-families.html">Health Care For Disabled Veterans Families</a></li>
+													<li class="list-group-item"><a href="/home-health-care-for-veterans-widows.html">Home Health Care For Veterans Widows</a></li>
+													<li class="list-group-item"><a href="/hi-billie-eilish.html">Hi Billie Eilish</a></li>
+													<li class="list-group-item"><a href="/housing-allowance-while-using-gi-bill.html">Housing Allowance While Using Gi Bill</a></li>
+													<li class="list-group-item"><a href="/housing-gopro-4.html">Housing Gopro 4</a></li>
+													<li class="list-group-item"><a href="/health-care-provider-veterans.html">Health Care Provider Veterans</a></li>
+													<li class="list-group-item"><a href="/how-are-months-calculated-for-post-911-gi-bill.html">How Are Months Calculated For Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/health-care-for-us-veterans.html">Health Care For Us Veterans</a></li>
+													<li class="list-group-item"><a href="/health-insurance-for-vets-and-families.html">Health Insurance For Vets And Families</a></li>
+													<li class="list-group-item"><a href="/health-insurance-for-veteran-spouses.html">Health Insurance For Veteran Spouses</a></li>
+													<li class="list-group-item"><a href="/health-care-services-veterans.html">Health Care Services Veterans</a></li>
+													<li class="list-group-item"><a href="/health-insurance-for-spouses-of-disabled-veterans.html">Health Insurance For Spouses Of Disabled Veterans</a></li>
+													<li class="list-group-item"><a href="/health-care-for-disabled-veterans.html">Health Care For Disabled Veterans</a></li>
+													<li class="list-group-item"><a href="/health-insurance-for-widows-of-veterans.html">Health Insurance For Widows Of Veterans</a></li>
+													<li class="list-group-item"><a href="/health-insurance-for-military-reserve.html">Health Insurance For Military Reserve</a></li>
+													<li class="list-group-item"><a href="/health-care-for-veterans-traveling-abroad.html">Health Care For Veterans Traveling Abroad</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

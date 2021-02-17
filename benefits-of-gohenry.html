@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Benefits Of Gohenry - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Benefits Of Gohenry",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/736x/ba/f1/53/baf1535c7cc2b94bc6b84e6ccc91cba6.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=benefits+of+gohenry",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Benefits Of Gohenry</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">A few of my friends also now have gohenry cards for their children everyone is really pleased with it. Very friendly people with mixed backgrounds which makes it very versatile. FINAL THOUGHTS ON GOHENRY REVIEW. <br>				
+			</p>
+										<a class="badge badge-danger" href="/va-math-chart.html">va math chart</a>
+											<a class="badge badge-success" href="/va-loan-rate-lock.html">va loan rate lock</a>
+											<a class="badge badge-dark" href="/va-percentage-for-hypertension.html">va percentage for hypertension</a>
+											<a class="badge badge-success" href="/va-medical-rating-manual.html">va medical rating manual</a>
+											<a class="badge badge-danger" href="/va-pay-tax-online.html">va pay tax online</a>
+											<a class="badge badge-primary" href="/va-math-for-compensation.html">va math for compensation</a>
+											<a class="badge badge-secondary" href="/va-loan-interest-rates-by-credit-score.html">va loan interest rates by credit score</a>
+											<a class="badge badge-warning" href="/va-loan-rate-calculator.html">va loan rate calculator</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you have come to pay a visit to the ideal site.  Our website gives you hints for viewing the maximum quality video and picture content, search and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, especially Youtube, therefore we recommend this video that you see.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/65/3b/f2653b08867fdd421be50f5fd6e80d97.png" data-lightbox="roadtrip" data-title="Gohenry Helping Millions Of Kids Be Good With Money Gohenry How To Get Money Kids Money Kids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/65/3b/f2653b08867fdd421be50f5fd6e80d97.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoL-QMm11zSaMnRoxTbA-lQc7rK8NwA9dn5Q';" alt="Gohenry Helping Millions Of Kids Be Good With Money Gohenry How To Get Money Kids Money Kids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gohenry Helping Millions Of Kids Be Good With Money Gohenry How To Get Money Kids Money Kids</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/9e/08/4e9e08a92cbafb7d08990ab912b1ee9a.jpg" data-lightbox="roadtrip" data-title="Get Started With Gohenry With Images Parenting Kids Money Chores For Kids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/9e/08/4e9e08a92cbafb7d08990ab912b1ee9a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTclKVobvTr9ZM5JpMd7j8-wjPawISBjcZgDw';" alt="Get Started With Gohenry With Images Parenting Kids Money Chores For Kids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get Started With Gohenry With Images Parenting Kids Money Chores For Kids</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/a7/d4/4e/a7d44ec0ab99516b910814c1dd3c5d35.jpg" data-lightbox="roadtrip" data-title="Gohenry Visa Card Gohenry Visa Card Activate Cardsolves Com Visa Card Credit Card Machine Cash Rewards Credit Cards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/a7/d4/4e/a7d44ec0ab99516b910814c1dd3c5d35.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLrJApnrUVBiF9bC1msRRf4vmLStooMBPJAA';" alt="Gohenry Visa Card Gohenry Visa Card Activate Cardsolves Com Visa Card Credit Card Machine Cash Rewards Credit Cards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gohenry Visa Card Gohenry Visa Card Activate Cardsolves Com Visa Card Credit Card Machine Cash Rewards Credit Cards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/41/9c/1c/419c1caf3b611c5fa366325a694fb6cd.jpg" data-lightbox="roadtrip" data-title="An Allowance System That Works Greenlight Review In 2020 Allowance System Kids Cash Allowance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/41/9c/1c/419c1caf3b611c5fa366325a694fb6cd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqIk-2JnKjlE5fCPdbNtAQpzoe5r92-J4_0Q';" alt="An Allowance System That Works Greenlight Review In 2020 Allowance System Kids Cash Allowance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">An Allowance System That Works Greenlight Review In 2020 Allowance System Kids Cash Allowance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/7d/80/3a7d809fba006cb83dc29216edc35c33.jpg" data-lightbox="roadtrip" data-title="Introducing A New Kind Of Card For Kids With Advanced Parental Controls You Can Give Your Child The Freedom To Manage Their Kids Money Kids And Parenting Kids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/7d/80/3a7d809fba006cb83dc29216edc35c33.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgFVYT3ALFjk-q2k1n-cD8pT4caMbWwhFbeg';" alt="Introducing A New Kind Of Card For Kids With Advanced Parental Controls You Can Give Your Child The Freedom To Manage Their Kids Money Kids And Parenting Kids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Introducing A New Kind Of Card For Kids With Advanced Parental Controls You Can Give Your Child The Freedom To Manage Their Kids Money Kids And Parenting Kids</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/60/45/f460458244672c108a45f1267a19976b.jpg" data-lightbox="roadtrip" data-title="Term Insurance Calculator Helps You To Calculate Online Term Insurance Premium Payable For Life Life Insurance Policy Term Insurance Life Insurance Calculator">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/60/45/f460458244672c108a45f1267a19976b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQENz5ln5bh702bMyu76oX_JXRl8PdtRuuppQ';" alt="Term Insurance Calculator Helps You To Calculate Online Term Insurance Premium Payable For Life Life Insurance Policy Term Insurance Life Insurance Calculator">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Term Insurance Calculator Helps You To Calculate Online Term Insurance Premium Payable For Life Life Insurance Policy Term Insurance Life Insurance Calculator</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/600x315/3a/7d/80/3a7d809fba006cb83dc29216edc35c33.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQENz5ln5bh702bMyu76oX_JXRl8PdtRuuppQ';" alt="Term Insurance Calculator Helps You To Calculate Online Term Insurance Premium Payable For Life Life Insurance Policy Term Insurance Life Insurance Calculator">
+										<div class="card-body">
+						<h3 class="h5"><b>Pocket money reinforces this teaching children the benefits of saving careful spending and money management.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Benefits of gohenry</strong>. 
+								
+																	We offer 25 days annual leave plus bank holidays. 
+																	What Are The Pros and Cons Of Gohenry Pros of Gohenry. 
+																	A product that would stop us having to make all of our childrens iTunes app store or Amazon purchases. 
+																	Born from a collective grumble on the sidelines of a school football game we joked about creating something that would put an end to card-nag. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Lower Risk of Adult Debt. 
+																	Gohenry benefits and perks including insurance benefits retirement benefits and vacation policy. 
+																	Glassdoor gives you an inside look at what its like to work at gohenry including salaries reviews office photos and more. 
+																	It teaches them independence it teaches them the value of money. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But why did Henry make such a drastic split. 
+																	Free parental controls and real-time notifications to help you monitor your childs spending 3. 
+																	Rewards goHenry offer rewards in exchange for completed tasks. 
+																	View All num of num Close Esc See All Photos See All Photos. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A free inside look at company reviews and salaries posted anonymously by employees. 
+																	Its main benefits are built-in features which will help parents keep control of the account such as real-time spend notifications the ability to freeze and unfreeze the account and to decide. 
+																	And we support flexible and remote working so that unmovable appointment doesnt have to mean one less day. 
+																	IDT Financial Services Limited is a regulated bank licensed by the Financial Services Commission Gibraltar. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	King Henry VIIIs break with the Catholic Church is one of the most far-reaching events in English history. 
+																	Gohenry was grown by us. 
+																	The gohenry card is issued by IDT Financial Services Limited a principal member of Visa Europe. 
+																	A free standard gohenry card for each of your children 2. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	So if you were to ask us is GoHenry worth the time and money what would our answer be. 
+																	- Debit cards from the age of 6 rather than age 11 - An easy app with a separate portal where parents set up all the parental limits and controls to be applied to each child account. 
+																	Here are some of the benefits that set us ahead of your high street bank. 
+																	The gohenry allowance card is a smart solution for managing your childs money and giving money to children through an allowance card. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	During the Reformation the King replaced the Pope as the Head of the Church in England causing a bitter divide between Catholics and Protestants. 
+																	My daughter benefits in learning how to manage her allowance and I keep an eye on her spending. 
+																	A small group of friends who wanted a simple meaningful and common-sense solution for kids money management. 
+																	Also all GoHenry accounts are FDIC-insured of up to 250000. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Reported anonymously by gohenry employees. 
+																	This is the gohenry company profile. 
+																	Included in your membership fee youll receive. 
+																	Kids can set up a micro donation of between 5p and 20p which is deducted on the day their pocket money arrives in their account. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Gohenry provides much of the functionality of a high street bank account plus lots of educational features on top. 
+																	Two months free to test out the service. 
+																	View Jobs at gohenry. 
+																	There is a lot of opportunities to initiate new methods so long as you can justify them. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Furthermore GoHenry makes sure there is no risk of overspending and in case your card is lost you can easily block it so no one gets to use it. 
+																	One included load to the parent account per calendar. 
+																	For example for birthdays or Christmas. 
+																	All content is posted anonymously by employees working at gohenry. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Gohenry is a subscription service with a monthly membership fee of 299 per child. 
+																	According to the ING survey of 12000 parents across Europe giving children pocket money reduces the risk of them getting in to debt as adults. 
+																	Teach and encourage good money management skills from an early age. 
+																	The gohenry giving feature makes it possible for children to donate a small amount of their pocket money to the NSPCC direct from their gohenry account. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Instant Notifications Parents will receive notifications via the goHenry app each time their child uses their bank account. 
+																	Spending Limits These can be placed to ensure your child does not spend more than a set figure per week. 
+																	Manage up to 4 child accounts per parent account all from one app. 
+																	Money can be paid directly into an account once they have done their homework or listen to instructions etc. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Gohenry is a place created from passion of its Founders and it can be felt at every step. 
+																	Family members can sendreceive money. 
+																	Perks benefits nice-to-haves. 
+																	57-63 Line Wall Road Gibraltar. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Love everything about gohenry. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/ea/e5/afeae51eb34244c7e02cd359537fa12c.png" data-lightbox="roadtrip" data-title="The Only Tool You Need For Your Family S Budget In 2020 Budgeting Family Budget Budgeting System">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/ea/e5/afeae51eb34244c7e02cd359537fa12c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqrEY-C34lIKwZmyHm8bdoWnsSbDky2CEYsA';" alt="The Only Tool You Need For Your Family S Budget In 2020 Budgeting Family Budget Budgeting System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Only Tool You Need For Your Family S Budget In 2020 Budgeting Family Budget Budgeting System</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/a8/7d/eda87dcae9d0c2bfbef5a58d29d85d57.gif" data-lightbox="roadtrip" data-title="Child Card Kids Cards Unique Cards Kids Money">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/a8/7d/eda87dcae9d0c2bfbef5a58d29d85d57.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDuWeYWMoot2Khrs2S4HujzP-AGxylrcEXfg';" alt="Child Card Kids Cards Unique Cards Kids Money">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Child Card Kids Cards Unique Cards Kids Money</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/6e/31/4c6e318dc1ab9d8224426bbebf1f201e.png" data-lightbox="roadtrip" data-title="Monkey Business Kids Cards Unique Cards Custom Cards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/6e/31/4c6e318dc1ab9d8224426bbebf1f201e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOGa41DU-9Ap8CpLVRj20rfr1CRs34Yn0hmg';" alt="Monkey Business Kids Cards Unique Cards Custom Cards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Monkey Business Kids Cards Unique Cards Custom Cards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/bf/2c/43/bf2c4365c902f9dfc603b79342c778cf.jpg" data-lightbox="roadtrip" data-title="Glossary Of Personal Finance Terms Personal Finance Finance Money Management">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/bf/2c/43/bf2c4365c902f9dfc603b79342c778cf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTumHnpWcuDGQIhr9G6M9Qcl7Y1UMwsYSIYWQ';" alt="Glossary Of Personal Finance Terms Personal Finance Finance Money Management">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Glossary Of Personal Finance Terms Personal Finance Finance Money Management</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/65/27/556527c022e7514fda22d6610b37ab49.jpg" data-lightbox="roadtrip" data-title="Soul Inspo Home Life Is Like Life Life Experiences">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/65/27/556527c022e7514fda22d6610b37ab49.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8w6vby4fVx1AEVnTMZhgmPwH5Z5MT-ef7bw';" alt="Soul Inspo Home Life Is Like Life Life Experiences">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soul Inspo Home Life Is Like Life Life Experiences</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ba/f1/53/baf1535c7cc2b94bc6b84e6ccc91cba6.jpg" data-lightbox="roadtrip" data-title="Pin On Work At Home How To">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ba/f1/53/baf1535c7cc2b94bc6b84e6ccc91cba6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWoAOyqCJOlYqkEKP-Sn9bi1DI-TLKCcocsw';" alt="Pin On Work At Home How To">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Work At Home How To</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/3d/49/5e3d498056716a441d38a7ae28c3f18b.png" data-lightbox="roadtrip" data-title="Pin By Alyssa Tucker On Focus Life Henry Rollins Free Time">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/3d/49/5e3d498056716a441d38a7ae28c3f18b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUup07vtKSy6MkSaHDCM4AzjMUIK-wPRUcRQ';" alt="Pin By Alyssa Tucker On Focus Life Henry Rollins Free Time">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Alyssa Tucker On Focus Life Henry Rollins Free Time</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/41/24/5f4124cd0498f2bb50584e0db884d24d.jpg" data-lightbox="roadtrip" data-title="Bradentons Biggest And Best Tiki Bar Wine Jokes Health Benefits Sign I">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/41/24/5f4124cd0498f2bb50584e0db884d24d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ukBK8E_MjXXhWcIeTZRUvwdjJ07F1qTnFA';" alt="Bradentons Biggest And Best Tiki Bar Wine Jokes Health Benefits Sign I">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bradentons Biggest And Best Tiki Bar Wine Jokes Health Benefits Sign I</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/8a/be/a18abee0bb560fcb64725fc0eb36348f.png" data-lightbox="roadtrip" data-title="Chime Visa Debit Card Visa Debit Card Banking App Member Card">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/8a/be/a18abee0bb560fcb64725fc0eb36348f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaBHpdP-tzwgSWPc1M-8lLeUHKT8TDV1dwjg';" alt="Chime Visa Debit Card Visa Debit Card Banking App Member Card">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chime Visa Debit Card Visa Debit Card Banking App Member Card</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/dd/f1/a3/ddf1a35970cf7ca18ee9e10f2d3f7ac4.jpg" data-lightbox="roadtrip" data-title="Best Money Games And Activities For Kids Kids Money Management Teaching Kids Money Money Games">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/dd/f1/a3/ddf1a35970cf7ca18ee9e10f2d3f7ac4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKN1kJkvPckvZx7grPksdl-NDmgDf3M5Jj8A';" alt="Best Money Games And Activities For Kids Kids Money Management Teaching Kids Money Money Games">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Money Games And Activities For Kids Kids Money Management Teaching Kids Money Money Games</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/70/51/237051f6c82ad19ad7be9fb38c15d22d.jpg" data-lightbox="roadtrip" data-title="Because Bursitis Renders The Shoulder Restricted And Painful It Can Often Be Confused With Frozen Shoulder Syndrome Shoulder Impingement Bursitis Impingement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/70/51/237051f6c82ad19ad7be9fb38c15d22d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgzWhC5Y_avs6vr58fXI5eXZAf5bRFSu42KA';" alt="Because Bursitis Renders The Shoulder Restricted And Painful It Can Often Be Confused With Frozen Shoulder Syndrome Shoulder Impingement Bursitis Impingement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Because Bursitis Renders The Shoulder Restricted And Painful It Can Often Be Confused With Frozen Shoulder Syndrome Shoulder Impingement Bursitis Impingement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/30/72/8a30723206b3ffa426be0058fba01734.jpg" data-lightbox="roadtrip" data-title="Jump In Positive Energy Life Is Like Feelings">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/30/72/8a30723206b3ffa426be0058fba01734.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_8GXZmPkGOT8EZvHEJF1HZo3FSK1-TvFIqw';" alt="Jump In Positive Energy Life Is Like Feelings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jump In Positive Energy Life Is Like Feelings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/3a/7d/80/3a7d809fba006cb83dc29216edc35c33.jpg" data-lightbox="roadtrip" data-title="Introducing A New Kind Of Card For Kids With Advanced Parental Controls You Can Give Your Child The Freedom To Manage Their Kids Money Kids And Parenting Kids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/3a/7d/80/3a7d809fba006cb83dc29216edc35c33.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROiMx-ei7pAQ4-LHcmhYc6sGuQrFlHliVfog';" alt="Introducing A New Kind Of Card For Kids With Advanced Parental Controls You Can Give Your Child The Freedom To Manage Their Kids Money Kids And Parenting Kids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Introducing A New Kind Of Card For Kids With Advanced Parental Controls You Can Give Your Child The Freedom To Manage Their Kids Money Kids And Parenting Kids</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-to-apply-for-gi-bill-1606.html">How To Apply For Gi Bill 1606</a></li>
+													<li class="list-group-item"><a href="/how-much-is-va-employee-retirement-pay.html">How Much Is Va Employee Retirement Pay</a></li>
+													<li class="list-group-item"><a href="/how-much-money-does-the-gi-bill-pay-for-college.html">How Much Money Does The Gi Bill Pay For College</a></li>
+													<li class="list-group-item"><a href="/how-to-apply-for-va-disability-rating.html">How To Apply For Va Disability Rating</a></li>
+													<li class="list-group-item"><a href="/how-much-does-the-va-rate-sleep-apnea.html">How Much Does The Va Rate Sleep Apnea</a></li>
+													<li class="list-group-item"><a href="/how-to-apply-for-gi-bill-certificate-of-eligibility.html">How To Apply For Gi Bill Certificate Of Eligibility</a></li>
+													<li class="list-group-item"><a href="/how-much-va-rating-for-anxiety.html">How Much Va Rating For Anxiety</a></li>
+													<li class="list-group-item"><a href="/how-to-access-the-gi-bill.html">How To Access The Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-much-percent-is-sleep-apnea-va-disability.html">How Much Percent Is Sleep Apnea Va Disability</a></li>
+													<li class="list-group-item"><a href="/how-much-does-the-montgomery-gi-bill-pay-per-month.html">How Much Does The Montgomery Gi Bill Pay Per Month</a></li>
+													<li class="list-group-item"><a href="/how-much-does-workers-comp-pay-for-ankle-injury.html">How Much Does Workers Comp Pay For Ankle Injury</a></li>
+													<li class="list-group-item"><a href="/how-much-will-the-va-give-me-for-a-home-loan.html">How Much Will The Va Give Me For A Home Loan</a></li>
+													<li class="list-group-item"><a href="/how-much-does-the-va-pay-for-caregivers.html">How Much Does The Va Pay For Caregivers</a></li>
+													<li class="list-group-item"><a href="/how-to-apply-for-va-disability-online.html">How To Apply For Va Disability Online</a></li>
+													<li class="list-group-item"><a href="/how-painful-is-intercostal-neuralgia.html">How Painful Is Intercostal Neuralgia</a></li>
+													<li class="list-group-item"><a href="/how-much-does-the-montgomery-gi-bill-pay-monthly.html">How Much Does The Montgomery Gi Bill Pay Monthly</a></li>
+													<li class="list-group-item"><a href="/how-often-are-va-disability-ratings-reviews.html">How Often Are Va Disability Ratings Reviews</a></li>
+													<li class="list-group-item"><a href="/how-much-is-the-military-gi-bill.html">How Much Is The Military Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-much-does-va-pay-rn.html">How Much Does Va Pay Rn</a></li>
+													<li class="list-group-item"><a href="/how-to-add-a-dependent-to-va-compensation.html">How To Add A Dependent To Va Compensation</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

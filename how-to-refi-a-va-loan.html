@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>How To Refi A Va Loan - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "How To Refi A Va Loan",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/c3/aa/0f/c3aa0f6e183d0f77bc750550e82717f1.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+to+refi+a+va+loan",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>How To Refi A Va Loan</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">If you have a VA home loan be careful when considering home loan refinance offers. Bundrick CFP Barbara Marquand. A VA cash-out refinance is a loan that replaces an existing loan with a VA loan and pulls equity out of the subject property in the form of cash. <br>				
+			</p>
+										<a class="badge badge-info" href="/hi-bill.html">hi bill</a>
+											<a class="badge badge-dark" href="/health-insurance-for-veterans-spouse.html">health insurance for veterans spouse</a>
+											<a class="badge badge-info" href="/home-health-care-for-veterans-with-dementia.html">home health care for veterans with dementia</a>
+											<a class="badge badge-info" href="/highest-va-rating-for-acid-reflux.html">highest va rating for acid reflux</a>
+											<a class="badge badge-info" href="/health-insurance-broker-veterans.html">health insurance broker veterans</a>
+											<a class="badge badge-primary" href="/health-insurance-for-vets-and-families.html">health insurance for vets and families</a>
+											<a class="badge badge-dark" href="/history-of-the-gi-bill.html">history of the gi bill</a>
+											<a class="badge badge-success" href="/health-insurance-for-widows-of-veterans.html">health insurance for widows of veterans</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you have come to pay a visit to the ideal blog.  Our site provides you with hints for viewing the highest quality video and picture content, search and find more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, especially Youtube, therefore we recommend this movie for you to see.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/ee/28/d5ee28de3cbd72d6978c28b19b8359c4.jpg" data-lightbox="roadtrip" data-title="How To Refinance A Va Loan In 2020 Va Loan Loan Refinancing Mortgage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/ee/28/d5ee28de3cbd72d6978c28b19b8359c4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThqqxsmHWPJHBBx6mBSzPPfS6Y6irEFaRf4Q';" alt="How To Refinance A Va Loan In 2020 Va Loan Loan Refinancing Mortgage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Refinance A Va Loan In 2020 Va Loan Loan Refinancing Mortgage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a0/40/be/a040bec0236326c1204896df5e45b477.jpg" data-lightbox="roadtrip" data-title="How A Cash Out Refinance Works Freeandclear Refinance Mortgage Home Equity Loan Cash Out Refinance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a0/40/be/a040bec0236326c1204896df5e45b477.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnnlLV8dpo1ubjH4aAWzbPtxn7-52hBQ8bow';" alt="How A Cash Out Refinance Works Freeandclear Refinance Mortgage Home Equity Loan Cash Out Refinance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How A Cash Out Refinance Works Freeandclear Refinance Mortgage Home Equity Loan Cash Out Refinance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1d/34/bf/1d34bf5964f2fe959c1807032c036055.jpg" data-lightbox="roadtrip" data-title="Va Mortgage Refinancing Is A Streamlined Process Allowing Veterans To Refinance Refinance House Watch Refinancing Mortgage Va Mortgages Refinance Mortgage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1d/34/bf/1d34bf5964f2fe959c1807032c036055.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy2fwlH0BT-j4Y6CfBl358iJO3OvZNrIsDFg';" alt="Va Mortgage Refinancing Is A Streamlined Process Allowing Veterans To Refinance Refinance House Watch Refinancing Mortgage Va Mortgages Refinance Mortgage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Mortgage Refinancing Is A Streamlined Process Allowing Veterans To Refinance Refinance House Watch Refinancing Mortgage Va Mortgages Refinance Mortgage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/c7/05/cdc705a062ebf7619527508b0e6cc26f.jpg" data-lightbox="roadtrip" data-title="Loan Info Va Mortgages Va Mortgage Loans Refinancing Mortgage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/c7/05/cdc705a062ebf7619527508b0e6cc26f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu7jroHkO3r_R1ZSG5S_4qcBn8zpaXnwKLiw';" alt="Loan Info Va Mortgages Va Mortgage Loans Refinancing Mortgage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Loan Info Va Mortgages Va Mortgage Loans Refinancing Mortgage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/45/87/a8458726ee61f959da94ffa4bb7f7725.jpg" data-lightbox="roadtrip" data-title="Start Va Loan Refinance Loans Va Mortgage Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/45/87/a8458726ee61f959da94ffa4bb7f7725.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqpUlv2j56He02bP4SNuZ-d5tmGOMmqSNHAQ';" alt="Start Va Loan Refinance Loans Va Mortgage Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Start Va Loan Refinance Loans Va Mortgage Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/6e/ce/f86ecea316014f5b0874b0c2a4682586.jpg" data-lightbox="roadtrip" data-title="Ready To Refinance 8 Steps For Success Trulia S Blog Refinance Mortgage Refinancing Mortgage Mortgage Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/6e/ce/f86ecea316014f5b0874b0c2a4682586.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTWcG19-XKVPeuxFqZgNq7G6jI_rg1_6ku3g';" alt="Ready To Refinance 8 Steps For Success Trulia S Blog Refinance Mortgage Refinancing Mortgage Mortgage Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ready To Refinance 8 Steps For Success Trulia S Blog Refinance Mortgage Refinancing Mortgage Mortgage Quotes</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/fb/55/24/fb55240be37380e3ebef53d64435eb12.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTWcG19-XKVPeuxFqZgNq7G6jI_rg1_6ku3g';" alt="Ready To Refinance 8 Steps For Success Trulia S Blog Refinance Mortgage Refinancing Mortgage Mortgage Quotes">
+										<div class="card-body">
+						<h3 class="h5"><b>In fact in many ways it mirrors the process for obtaining a VA purchase loan.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How to refi a va loan</strong>. 
+								
+																	There are three different ways you can get a VA refinance. 
+																	If you currently have any other type of mortgage including FHA VA and conventional your only option for refinancing to a VA loan is through the VA-backed cash-out refinance loan. 
+																	The VA cash-out program can also help veterans and service members with non-VA loans refinance into a VA home loan. 
+																	The Cash-Out refinance is one of the VAs two refinance options. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Again youll work with a private lender that can originate VA loans. 
+																	By comparison the Cash-Out refinance is much more involved. 
+																	You dont need to go through an appraisal or show your credit score or debt-to-income ratio. 
+																	Terms and fees may vary so contact several lenders to check out your options. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A VA Interest Rate Reduction Refinance Loan is for refinancing from one VA mortgage into another. 
+																	In other words if a borrower stops paying back a conventional loan the government isnt going to reimburse the lender. 
+																	Youll need to show your COE to your lender as proof that you qualify. 
+																	With this option you refinance a VA or conventional loan and take cash out with the new VA loan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Be sure to evaluate how the fees will affect your monthly payment and determine if it is worth your effort. 
+																	This involves less paperwork and allows a qualified borrower to access a lower interest rate and pay less in costs. 
+																	For example a homeowner with an FHA loan who has VA loan eligibility could use. 
+																	You cant skip the underwriting process during this type of refinance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Reduce the interest rate with a VA streamline refinance VA IRRRL or extract equity with a cash-out refi. 
+																	Youll go through a private bank mortgage company or credit unionnot directly through usto get a. 
+																	Apply for your Certificate of Eligibility COE. 
+																	Reduce the interest rate or extract equity with a cash-out refi. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The other the VA Streamline is an interest rate reduction loan thats available only to those with VA-backed mortgages. 
+																	Then you can turn around and use your VA eligibility to purchase a new primary home. 
+																	VA Loan Refinance Option 2. 
+																	You have two options for refinancing a VA loan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Refinancing can lower your interest rate and monthly payments. 
+																	Refinancing a VA Loan usually involves fees though in some cases you can roll the refinancing costs into the new loan instead of paying anything out of pocket you can do this with a VA Streamline refinance. 
+																	You have two options for refinancing a VA loan. 
+																	Youre using the IRRRL to refinance this existing VA loan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However before explaining why a veteran would want to refinance from a VA loan to conventional one we need to actually define conventional loans. 
+																	To refinance a VA loan you need to get a new mortgage. 
+																	If you have a VA loan on your current home you can refinance it into a conventional loan-- but it might only make sense in a few very particular situationsSince conventional loans typically have higher interest rates and charge monthly private mortgage insurance PMI premiums you probably wouldnt want to refinance your VA loan just to save money on your mortgage payments. 
+																	A common reason for refinancing a VA loan to a conventional loan is to purchase a rental property. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The benefits of a mortgage thats backed by the Department of Veterans Affairs continue beyond the day your loan closes. 
+																	The first is to take out an interest rate reduction refinance loan IRRRL. 
+																	If youve gained equity in your home a conventional or VA cash-out refinance may be better. 
+																	You can certify that you currently live in or used to live in the home youll be refinancing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Youll go through a private bank mortgage company or credit unionnot directly through usto get an IRRRL. 
+																	VA loans dont allow you to use your eligibility to buy a second property for just any purpose. 
+																	This was signed into law in May 2018. 
+																	Plus lenders are refinancing these VA loans much too quickly. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Disadvantages of a VA Loan Refinance. 
+																	Even though this is a helpful rule to safeguard Veteran homeowners there is some confusion in the seasoning requirement. 
+																	Its a streamlined process and doesnt require proof of income. 
+																	It can have other benefits too. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Refinance Your VA Loan to Obtain Rental Property. 
+																	This type of loan can be used to refinance an existing VA loan or a conventional mortgage and the VA will guarantee loans worth up to 100 percent of the value of the home. 
+																	Heres how the cash-out concept works. 
+																	Whereas VA loans are backed by a government agency conventional loans are not. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How can I get a VA-backed cash-out refinance loan. 
+																	You can take your existing VA loan and turn it into a conventional loan so that you can use the property for rental. 
+																	So VA has seasoning requirements in place through the Economic Growth Regulatory Relief and Consumer Protection Act. 
+																	You replace your current VA home loan with a new loan that has better rates or better terms. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Unlike the IRRRL a cash-out loan is fully. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/cb/6f/94cb6f77f6059dab9308c6872d9697da.jpg" data-lightbox="roadtrip" data-title="Va Funding Fee Table Refinance Mortgage Home Improvement Loans Va Mortgages">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/cb/6f/94cb6f77f6059dab9308c6872d9697da.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6XsMOUgoVghvLnqRIm6EDC2HLtO7ad-cT4w';" alt="Va Funding Fee Table Refinance Mortgage Home Improvement Loans Va Mortgages">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Funding Fee Table Refinance Mortgage Home Improvement Loans Va Mortgages</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/8c/ad/86/8cad86b37438ee5bcc12c489ac02fba0.jpg" data-lightbox="roadtrip" data-title="Do You Want To Get Your Home Loan Refinanced In El Paso Tx Consider Options Of Va Home Loan Watch This Be Refinance Loans Va Mortgages Refinance Mortgage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/8c/ad/86/8cad86b37438ee5bcc12c489ac02fba0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJBIhlm_xf1-PTdd5D6xjPa3cDsmI2cQa3vA';" alt="Do You Want To Get Your Home Loan Refinanced In El Paso Tx Consider Options Of Va Home Loan Watch This Be Refinance Loans Va Mortgages Refinance Mortgage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Do You Want To Get Your Home Loan Refinanced In El Paso Tx Consider Options Of Va Home Loan Watch This Be Refinance Loans Va Mortgages Refinance Mortgage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/56/77/3e5677a71b7d76b2f7f838142c224ea1.jpg" data-lightbox="roadtrip" data-title="Infographic The Loan Process Simplified Mortgage Infographic Mortgage Loan Officer Mortgage Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/56/77/3e5677a71b7d76b2f7f838142c224ea1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuvo09WsW8N0wAGolP4TqW1g4sNNu4qDAZWQ';" alt="Infographic The Loan Process Simplified Mortgage Infographic Mortgage Loan Officer Mortgage Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Infographic The Loan Process Simplified Mortgage Infographic Mortgage Loan Officer Mortgage Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/74/27/387427d812a934cf49421d83d15beb21.jpg" data-lightbox="roadtrip" data-title="Pin On Va Loan Refinance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/74/27/387427d812a934cf49421d83d15beb21.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-tRsmh4YdPLmSDwY936-oFMByEfg7gdrIeQ';" alt="Pin On Va Loan Refinance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Va Loan Refinance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/a6/d5/28a6d5edbe39e6116f85907e050cce1a.png" data-lightbox="roadtrip" data-title="Va Interest Rate Reduction Refinance Flyer For Veterans Greg Mattern Loan Officer At Academy Mortgage Chandler Refinance Loans Marketing Flyers Loan Officer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/a6/d5/28a6d5edbe39e6116f85907e050cce1a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSESJZmEE7R4ZczlzE3B0kfGRAlbl4JSutWCQ';" alt="Va Interest Rate Reduction Refinance Flyer For Veterans Greg Mattern Loan Officer At Academy Mortgage Chandler Refinance Loans Marketing Flyers Loan Officer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Interest Rate Reduction Refinance Flyer For Veterans Greg Mattern Loan Officer At Academy Mortgage Chandler Refinance Loans Marketing Flyers Loan Officer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/bb/91/d5bb91e48ae36e054bfdb9639b6b298a.jpg" data-lightbox="roadtrip" data-title="Nikitas Kouimanis Mortgage Expert Total Mortgage Va Loan Refinance Loans Loan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/bb/91/d5bb91e48ae36e054bfdb9639b6b298a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6b_0wwTryWjJwIkTsYPrfvCq2KfsHsZwhHg';" alt="Nikitas Kouimanis Mortgage Expert Total Mortgage Va Loan Refinance Loans Loan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nikitas Kouimanis Mortgage Expert Total Mortgage Va Loan Refinance Loans Loan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/68/42/f168426762980ba5d1741ac0d1a49c1d.png" data-lightbox="roadtrip" data-title="Mortgage Refinance Considerations Refinance Mortgage Refinancing Mortgage Refinance Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/68/42/f168426762980ba5d1741ac0d1a49c1d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXUxf7oti9LulqLep2O8vVEJnKgjO7Tx6p9A';" alt="Mortgage Refinance Considerations Refinance Mortgage Refinancing Mortgage Refinance Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mortgage Refinance Considerations Refinance Mortgage Refinancing Mortgage Refinance Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/6c/51/f16c51d5f11ffac644a603db553cbba4.jpg" data-lightbox="roadtrip" data-title="If You Are Looking For Home Loans Broker Then You Can Go For Wedohomeloansforyou We Are Home Loan Specialists Mortgage Loans Refinance Mortgage Home Mortgage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/6c/51/f16c51d5f11ffac644a603db553cbba4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjy312P4GlVRLz6L38Z6nR5mM4N66-4azdZg';" alt="If You Are Looking For Home Loans Broker Then You Can Go For Wedohomeloansforyou We Are Home Loan Specialists Mortgage Loans Refinance Mortgage Home Mortgage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Are Looking For Home Loans Broker Then You Can Go For Wedohomeloansforyou We Are Home Loan Specialists Mortgage Loans Refinance Mortgage Home Mortgage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/fd/07/aefd07e5f96d9f7c27ff3051180f154a.jpg" data-lightbox="roadtrip" data-title="Va Refinancing Benefits Refinance Loans Va Loan Loan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/fd/07/aefd07e5f96d9f7c27ff3051180f154a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1-6f_pnYOQ9nIbxjlp0y41ysw0hETlo8eGg';" alt="Va Refinancing Benefits Refinance Loans Va Loan Loan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Refinancing Benefits Refinance Loans Va Loan Loan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/aa/0f/c3aa0f6e183d0f77bc750550e82717f1.jpg" data-lightbox="roadtrip" data-title="Va Loan Process A Graphic Road Map To Your Home Loan Benefits Va Loan Process Va Loan Home Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/aa/0f/c3aa0f6e183d0f77bc750550e82717f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZbRiIDKwwBzI8y4cs1p92CGYMo5TFNN-VNQ';" alt="Va Loan Process A Graphic Road Map To Your Home Loan Benefits Va Loan Process Va Loan Home Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Loan Process A Graphic Road Map To Your Home Loan Benefits Va Loan Process Va Loan Home Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/c7/ad/3ec7ad9384d2de43089096cdda26b003.png" data-lightbox="roadtrip" data-title="Pin On Kentucky Va Mortgage Guidelines For Credit Scores Income Mortgage Qualifying">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/c7/ad/3ec7ad9384d2de43089096cdda26b003.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5hWcFFOeskvF_imQq0nV88rx3DirA0nsXw';" alt="Pin On Kentucky Va Mortgage Guidelines For Credit Scores Income Mortgage Qualifying">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Kentucky Va Mortgage Guidelines For Credit Scores Income Mortgage Qualifying</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/80/8b/78808b9c3b0334f559261feb17866bca.png" data-lightbox="roadtrip" data-title="Infographic For Va Home Loan Benefits Infographic Home Loans Free Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/80/8b/78808b9c3b0334f559261feb17866bca.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4mfNjbFTmv1dzMoy0V8BqJIolIbLvyTLiOg';" alt="Infographic For Va Home Loan Benefits Infographic Home Loans Free Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Infographic For Va Home Loan Benefits Infographic Home Loans Free Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fb/55/24/fb55240be37380e3ebef53d64435eb12.png" data-lightbox="roadtrip" data-title="Pros And Cons Of Using A Mortgage Bank Freeandclear Fha Streamline Refinance Mortgage Banking Mortgage Brokers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fb/55/24/fb55240be37380e3ebef53d64435eb12.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6sjgoZzuC6Us26-TkqCjpZOZiG2P4HgVsCA';" alt="Pros And Cons Of Using A Mortgage Bank Freeandclear Fha Streamline Refinance Mortgage Banking Mortgage Brokers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pros And Cons Of Using A Mortgage Bank Freeandclear Fha Streamline Refinance Mortgage Banking Mortgage Brokers</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-pay-stub-disability.html">Va Pay Stub Disability</a></li>
+													<li class="list-group-item"><a href="/va-percentage-for-chronic-depression.html">Va Percentage For Chronic Depression</a></li>
+													<li class="list-group-item"><a href="/va-percentage-for-headaches.html">Va Percentage For Headaches</a></li>
+													<li class="list-group-item"><a href="/va-loan-interest-rates-by-credit-score.html">Va Loan Interest Rates By Credit Score</a></li>
+													<li class="list-group-item"><a href="/va-pay-chart-for-2019.html">Va Pay Chart For 2019</a></li>
+													<li class="list-group-item"><a href="/va-percentage-for-acid-reflux.html">Va Percentage For Acid Reflux</a></li>
+													<li class="list-group-item"><a href="/va-loan-while-using-gi-bill.html">Va Loan While Using Gi Bill</a></li>
+													<li class="list-group-item"><a href="/va-math-chart.html">Va Math Chart</a></li>
+													<li class="list-group-item"><a href="/va-loan-rate-forecast.html">Va Loan Rate Forecast</a></li>
+													<li class="list-group-item"><a href="/va-loan-rate-in-texas.html">Va Loan Rate In Texas</a></li>
+													<li class="list-group-item"><a href="/va-pay-scale-for-ptsd.html">Va Pay Scale For Ptsd</a></li>
+													<li class="list-group-item"><a href="/va-pay-chart-smc.html">Va Pay Chart Smc</a></li>
+													<li class="list-group-item"><a href="/va-loan-rate-change.html">Va Loan Rate Change</a></li>
+													<li class="list-group-item"><a href="/va-loan-rate-for-today.html">Va Loan Rate For Today</a></li>
+													<li class="list-group-item"><a href="/va-pay-chart-with-dependents.html">Va Pay Chart With Dependents</a></li>
+													<li class="list-group-item"><a href="/va-percentage-for-back-problems.html">Va Percentage For Back Problems</a></li>
+													<li class="list-group-item"><a href="/va-mild-tbi-rating.html">Va Mild Tbi Rating</a></li>
+													<li class="list-group-item"><a href="/va-pay-rate-tables.html">Va Pay Rate Tables</a></li>
+													<li class="list-group-item"><a href="/va-loan-rate-texas.html">Va Loan Rate Texas</a></li>
+													<li class="list-group-item"><a href="/va-loan-rate-table.html">Va Loan Rate Table</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

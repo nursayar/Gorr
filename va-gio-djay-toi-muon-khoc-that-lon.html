@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Gio Djay Toi Muon Khoc That Lon - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Gio Djay Toi Muon Khoc That Lon",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/65/f5/0d/65f50d4cd09dfb6f5af098eee4c7c732.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+gio+djay+toi+muon+khoc+that+lon",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Gio Djay Toi Muon Khoc That Lon</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Va gio djay toi muon khoc that lon. Va cu the au tho van tron vao nhung giac mo toi tung djem the thoi Va tieng cuoi ngay au tho gio dja bien mat Nhuong lai cho nhung au lo ve djay. Va gio djay toi muon khoc that lon Nhu chua lon bao gio nhu ngay tho Mang theo nhung uoc mo oi mong mo Djoi cho voi long tin ngay tho Ca mot thoi tho au mong djuoc lon. <br>				
+			</p>
+										<a class="badge badge-info" href="/va-disability-percentage-asthma.html">va disability percentage asthma</a>
+											<a class="badge badge-dark" href="/va-disability-percentage-epicondylitis.html">va disability percentage epicondylitis</a>
+											<a class="badge badge-dark" href="/va-disability-knee-effusion.html">va disability knee effusion</a>
+											<a class="badge badge-danger" href="/va-disability-for-knee-bursitis.html">va disability for knee bursitis</a>
+											<a class="badge badge-primary" href="/va-disability-pay-calculator-2021.html">va disability pay calculator 2021</a>
+											<a class="badge badge-light" href="/va-disability-percentage-for-ankle-injury.html">va disability percentage for ankle injury</a>
+											<a class="badge badge-light" href="/va-disability-pay-taxable-income.html">va disability pay taxable income</a>
+											<a class="badge badge-primary" href="/va-disability-payback-calculator.html">va disability payback calculator</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you've come to pay a visit to the ideal site.  Our website gives you hints for seeing the maximum quality video and picture content, hunt and locate more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, especially Youtube, so we recommend this movie for you to view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lyric.tkaraoke.com/45698/muon_khoc_that_to.jpg" data-lightbox="roadtrip" data-title="Muốn Khoc Thật To Co Nhạc Nghe Co Karaoke">
+											<img class="card-img v-image ads-img " src="https://lyric.tkaraoke.com/45698/muon_khoc_that_to.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBNndQpqcCUJRmz9rWf6i9zJ3NVNC5VNFZ9Q';" alt="Muốn Khoc Thật To Co Nhạc Nghe Co Karaoke">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Muốn Khoc Thật To Co Nhạc Nghe Co Karaoke</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/36/f9/0336f9d53100786026bfc41cbc22d4ec.png" data-lightbox="roadtrip" data-title="Ghim Tren Tam Trạng Của Ai đo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/36/f9/0336f9d53100786026bfc41cbc22d4ec.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcnKmZTppGWOiinXB50IkeQa16fIR3Z5QoQA';" alt="Ghim Tren Tam Trạng Của Ai đo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ghim Tren Tam Trạng Của Ai đo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/09/7f/36097fadfd4e34cc8353bc9ac809534e.png" data-lightbox="roadtrip" data-title="Sign In Cham Ngon Cuộc Sống Lời Trich">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/09/7f/36097fadfd4e34cc8353bc9ac809534e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyJWPFnf32PUvGQeTyY5ohOf9-fkoF18IqPw';" alt="Sign In Cham Ngon Cuộc Sống Lời Trich">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sign In Cham Ngon Cuộc Sống Lời Trich</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/47/d7/58/47d75878100a9574535b9c68c0b9005e.jpg" data-lightbox="roadtrip" data-title="Ghim Của Chanh Chua Tren Buồn Trong 2020">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/47/d7/58/47d75878100a9574535b9c68c0b9005e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqkf2Rro5gEwdetmDDUbDZ7iHLd4NHHCsw_Q';" alt="Ghim Của Chanh Chua Tren Buồn Trong 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ghim Của Chanh Chua Tren Buồn Trong 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/cd/de/5c/cdde5cdf181019186f9975e76f588446.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/cd/de/5c/cdde5cdf181019186f9975e76f588446.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPpCEFbX7N_GVRNcw6FSlh36s-VHDsLzOWKA';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/82/d5/b8/82d5b82f05abda1327072bf6d61c5228.jpg" data-lightbox="roadtrip" data-title="Lớn Rồi đoi Luc Muốn Khoc Chỉ để Cho Nhẹ Khoc Va Lợn">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/82/d5/b8/82d5b82f05abda1327072bf6d61c5228.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSghuwmDm5DygQJUpeJ15yW-_vpUX1smsjAg';" alt="Lớn Rồi đoi Luc Muốn Khoc Chỉ để Cho Nhẹ Khoc Va Lợn">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lớn Rồi đoi Luc Muốn Khoc Chỉ để Cho Nhẹ Khoc Va Lợn</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/9b/e0/56/9be056f29ce4a5be27da3acf840015e8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSghuwmDm5DygQJUpeJ15yW-_vpUX1smsjAg';" alt="Lớn Rồi đoi Luc Muốn Khoc Chỉ để Cho Nhẹ Khoc Va Lợn">
+										<div class="card-body">
+						<h3 class="h5"><b>Va gio djay toi muon khoc that lon Nhu chua lon bao gio nhu ngay tho Mang theo nhung uoc mo oi mong mo Djoi cho voi long tin ngay tho.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va gio djay toi muon khoc that lon</strong>. 
+								
+																	Va gio djay toi muon khoc that lon Nhu chua lon bao gio nhu ngay tho. 
+																	Va gio djay toi muon khoc that lon Nhu chua lon bao gio nhu ngay tho Mang theo nhung uoc mo oi mong mo Djoi cho voi long tin ngay tho Ca mot thoi tho au mong djuoc lon Djau co biet lon len chi buon them Bao nhieu nhung em djem tan vao djem Oi trai tim tram lan yeu. 
+																	Djon toi luc tan truong nu cuoi ay mang au tho toi ve noi xa xoi Va cu the au tho van tron vao nhung giac mo toi tung djem the thoi Va tieng cuoi ngay au tho gio dja bien mat Nhuong lai cho nhung au lo ve djay Chorus. 
+																	Va cu the au tho van tron vao nhung giac mo toi tung djem the thoi Va tieng cuoi ngay au tho gio dja bien mat Nhuong lai cho nhung buon lo voi theo con gio djen djay Chorus. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Va gio djay toi muon khoc that lon Nhu chua lon bao gio nhu ngay tho Mang theo nhung uoc mo oi mong mo. 
+																	Ca mot thoi tho au mong djuoc lon. 
+																	Neu ban tim thay lyric loi bai hat Muon khoc that to va cac thong tin ve ten tac gia nhac si sang tac anh ban nhac ngon ngu thoi gian sang tac hay ca si the hien bai hat Muon khoc. 
+																	Ca mot thoi tho au mong djuoc lon. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Nho ung ho kenh minhminh cam on rat nhieuNho like video cho minh. 
+																	Tai download 320 nhac cho. 
+																	Va gio djay toi muon khoc that lon. 
+																	DjK Va gio djay toi muon khoc that lon Nhu chua lon bao gio nhu ngay tho Mang theo nhung uoc mo oi mong mo Djoi cho voi long tin ngay tho. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Muon Khoc That To - Truc Nhan Toi voi vang niu lay canh tay cua cha tuong nhu qua xa Moi om choang lay toi la mo djay thoi djung buon toi oi Toi chay theo anh sang cuoi con djuong noi me toi van djung Djon toi luc tan truong nu cuoi ay mang au tho toi ve noi xa xoi Va cu the. 
+																	Va gio djay toi muon khoc that lon Nhu chua lon bao gio nhu ngay tho Mang theo nhung uoc mo oi mong mo Djoi cho voi long tin ngay tho Ca mot thoi tho au mong djuoc lon Djau co biet lon len chi buon them Bao nhieu nhung em djem tan vao djem. 
+																	Hop am cua ban se djuoc hien thi tren trang chu cho tat ca moi nguoi tra cuu. 
+																	About Press Copyright Contact us Creators Advertise Developers Terms Privacy Policy Safety How YouTube works Test new features Press Copyright Contact us Creators. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Minh cam on cai ban rat nhieu. 
+																	Nhuong lai cho nhung au lo ve djay Chorus. 
+																	Mang theo nhung uoc mo oi mong mo. 
+																	Va tieng cuoi ngay au tho gio dja bien mat Nhuong lai cho nhung au lo ve djay. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Nhu chua lon bao Fm gio nhu ngay th. 
+																	Djoi cho voi long tin ngay tho. 
+																	Va gio djay toi muon khoc that lon. 
+																	Va gio djay toi F muon khoc that lon. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Listen to Muon Khoc That To - Truc Nhan online with high quality and lyric Download Muon Khoc That To - Truc Nhan mp3 320 lossless for free. 
+																	Va gio djay toi F muon khoc that lon nhu chua lon bao Em gio nhu ngay tho Mang theo nhung uoc Dm mo oi mong mo djoi cho voi long C tin ngay tho Ca mot thoi tho F au mong djuoc lon djau co biet lon Em len chi buon them. 
+																	Va gio djay toi F muon khoc that lon nhu chua lon bao Em7 gio nhu ngay tho Mang theo nhung uoc Dm mo oi mong G mo djoi cho voi long C tin ngay tho Ca mot thoi tho F au mong djuoc lon djau co biet lon Em7 len chi buon them. 
+																	Neu ban thich Hop Am Chuan va muon djong gop ban co the djang hop am moi hoac gui yeu cau hop am. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Va gio djay toi muon khoc that lon Nhu chua lon bao gio nhu ngay tho Mang theo nhung uoc mo oi mong mo Djoi cho voi long tin ngay tho Ca mot thoi tho au mong djuoc lon Djau co biet lon len chi buon them. 
+																	Djau co biet lon len chi buon them. 
+																	Nhuong lai cho nhung au lo ve djay. 
+																	Va gio djay toi muon khoc that lon Nhu chua lon bao gio nhu ngay tho Mang theo nhung uoc mo oi mong mo Djoi cho voi long tin ngay tho Ca mot thoi tho au mong djuoc lon Djau co biet lon len chi buon them Bao nhieu nhung em djem tan vao djem Oi trai tim tram lan yeu. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Nhu chua lon bao gio nhu ngay tho. 
+																	Va cu the au tho van tron vao nhung giac mo toi tung djem the thoi Va tieng cuoi ngay au tho gio dja bien mat Nhuong lai cho nhung au lo ve djay. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://109cdf7de.vws.vegacdn.vn/kv0puCNE4oNNfn7YhOpK/1466674297/v1/album/s2/0/0/182/186434.jpg?v=1466674297" data-lightbox="roadtrip" data-title="Muốn Khoc Thật To Truc Nhan Nhac Vn">
+											<img class="card-img v-image ads-img " src="https://109cdf7de.vws.vegacdn.vn/kv0puCNE4oNNfn7YhOpK/1466674297/v1/album/s2/0/0/182/186434.jpg?v=1466674297" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0hKNvoEdF1tq3OMIK4CUWqny3hvI9_Y5Ctg';" alt="Muốn Khoc Thật To Truc Nhan Nhac Vn">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Muốn Khoc Thật To Truc Nhan Nhac Vn</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lyric.tkaraoke.com/50223/muon_khoc_that_to.jpg" data-lightbox="roadtrip" data-title="Lời Bai Hat Muốn Khoc Thật To Tăng Nhật Tuệ Co Nhạc Nghe">
+											<img class="card-img v-image ads-img " src="https://lyric.tkaraoke.com/50223/muon_khoc_that_to.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRitr-M3fuJSwWxbSEeNRKyTQVtzXXOgZQbDw';" alt="Lời Bai Hat Muốn Khoc Thật To Tăng Nhật Tuệ Co Nhạc Nghe">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lời Bai Hat Muốn Khoc Thật To Tăng Nhật Tuệ Co Nhạc Nghe</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/ca/12/4e/ca124ed91130207bab912471dc0b0135.jpg" data-lightbox="roadtrip" data-title="Sign In">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/ca/12/4e/ca124ed91130207bab912471dc0b0135.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYNMCi7KglFMXGOQfXiuqFUlDWd8S8MZlv2g';" alt="Sign In">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sign In</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3.bp.blogspot.com/-mVMxCe-v1Ks/W0B7Ip3uV9I/AAAAAAAAEoI/GrRPTcUsECMX8IfCL0gyCj4RU-t_c8oLgCLcBGAs/s320/Untitled-1.jpg" data-lightbox="roadtrip" data-title="Lyrics Muốn Khoc Thật To Của Truc Nhan Lời Bai Hat">
+											<img class="card-img v-image ads-img " src="https://3.bp.blogspot.com/-mVMxCe-v1Ks/W0B7Ip3uV9I/AAAAAAAAEoI/GrRPTcUsECMX8IfCL0gyCj4RU-t_c8oLgCLcBGAs/s320/Untitled-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzJz44082RYurT9PRk4p8EwhvU-2-0fR6jIg';" alt="Lyrics Muốn Khoc Thật To Của Truc Nhan Lời Bai Hat">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lyrics Muốn Khoc Thật To Của Truc Nhan Lời Bai Hat</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/3a/1a/0a/3a1a0a401fb170c1025f03d78e5f210f.jpg" data-lightbox="roadtrip" data-title="Ghim Tren Cham Ngon Buồn">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/3a/1a/0a/3a1a0a401fb170c1025f03d78e5f210f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2W6FzmiD_hvJ_t8yC-iq0UQo7suwUkJ1spA';" alt="Ghim Tren Cham Ngon Buồn">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ghim Tren Cham Ngon Buồn</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/f5/0d/65f50d4cd09dfb6f5af098eee4c7c732.png" data-lightbox="roadtrip" data-title="Lớn Rồi Nen Cũng Chẳng Muốn Trải Qua Những Mối Tinh Chập Chờn Nay Hợp Mai Tan Nữa Chỉ Muốn Yeu Một Lần đung Người Va Lau Dai Lời Trich Nhật">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/f5/0d/65f50d4cd09dfb6f5af098eee4c7c732.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcKz7natPjKOSgUq8_0WoU_LyNl9ko3ZZ6wg';" alt="Lớn Rồi Nen Cũng Chẳng Muốn Trải Qua Những Mối Tinh Chập Chờn Nay Hợp Mai Tan Nữa Chỉ Muốn Yeu Một Lần đung Người Va Lau Dai Lời Trich Nhật">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lớn Rồi Nen Cũng Chẳng Muốn Trải Qua Những Mối Tinh Chập Chờn Nay Hợp Mai Tan Nữa Chỉ Muốn Yeu Một Lần đung Người Va Lau Dai Lời Trich Nhật</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/d4/0a/9a/d40a9ac52ab18936636b412d4bce94d3.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/d4/0a/9a/d40a9ac52ab18936636b412d4bce94d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-rA70hNfPkArimS9w6Jx6NHgw2cn07YZizw';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/19/de/6819de24339092e8f8c01f330bc7c5aa.png" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/19/de/6819de24339092e8f8c01f330bc7c5aa.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwKfFO0mVXA4FPiPaCI0FBr8dDDS0hkEyW1A';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://taimienphi.vn/tmp/cf/aut/d7jq-loi-bai-hat-muon-khoc-that-to-1.jpg" data-lightbox="roadtrip" data-title="Lời Bai Hat Muốn Khoc Thật To Truc Nhan Tăng Nhật Tuệ Nhạc Trẻ Lyr">
+											<img class="card-img v-image ads-img " src="https://taimienphi.vn/tmp/cf/aut/d7jq-loi-bai-hat-muon-khoc-that-to-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSddk1FSVhwqaZjJaTyCBidRkYU_Mv3kBYtmg';" alt="Lời Bai Hat Muốn Khoc Thật To Truc Nhan Tăng Nhật Tuệ Nhạc Trẻ Lyr">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lời Bai Hat Muốn Khoc Thật To Truc Nhan Tăng Nhật Tuệ Nhạc Trẻ Lyr</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/99/f0/70/99f0706c84a1736d77bffa665608c844.jpg" data-lightbox="roadtrip" data-title="Thang 12 Chim đắm Trong Lười Biếng Bước Vao Thang 5 Chuẩn Bị Tốt Nghiệp Cậu Noi Ngay Mai Nhất định Sẽ Tươi đẹp Rạng Rỡ Giờ đa Tuổi Trẻ Cham">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/99/f0/70/99f0706c84a1736d77bffa665608c844.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxVinzdjJ1TDy_EI4AEPB6saqW7xZSilxdkA';" alt="Thang 12 Chim đắm Trong Lười Biếng Bước Vao Thang 5 Chuẩn Bị Tốt Nghiệp Cậu Noi Ngay Mai Nhất định Sẽ Tươi đẹp Rạng Rỡ Giờ đa Tuổi Trẻ Cham">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thang 12 Chim đắm Trong Lười Biếng Bước Vao Thang 5 Chuẩn Bị Tốt Nghiệp Cậu Noi Ngay Mai Nhất định Sẽ Tươi đẹp Rạng Rỡ Giờ đa Tuổi Trẻ Cham</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/bd/c8/f4/bdc8f401d317090ae8eaa69741e603a7.jpg" data-lightbox="roadtrip" data-title="Ghim Của Wolf Tren Vương Nhất Bac Yibo Cham Ngon Diễn Vien Vương">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/bd/c8/f4/bdc8f401d317090ae8eaa69741e603a7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Yd9hhYMS_rXq76O6ChbbO7VWBhX90Tpb2w';" alt="Ghim Của Wolf Tren Vương Nhất Bac Yibo Cham Ngon Diễn Vien Vương">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ghim Của Wolf Tren Vương Nhất Bac Yibo Cham Ngon Diễn Vien Vương</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/e0/56/9be056f29ce4a5be27da3acf840015e8.png" data-lightbox="roadtrip" data-title="An Tinh Bạc Bẽo Nuoi Toi Lớn Song Gio Cuộc đời Dạy Toi Khon Khong Khoc">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/e0/56/9be056f29ce4a5be27da3acf840015e8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLQoRVzmIySigPizrav9ODQQzS2ITQDEP5VA';" alt="An Tinh Bạc Bẽo Nuoi Toi Lớn Song Gio Cuộc đời Dạy Toi Khon Khong Khoc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">An Tinh Bạc Bẽo Nuoi Toi Lớn Song Gio Cuộc đời Dạy Toi Khon Khong Khoc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/f8/8c/05f88cd9d61221f8581ca02f37668c3d.png" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/f8/8c/05f88cd9d61221f8581ca02f37668c3d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHRxR8HRB5Frei_D7ecJrz-ApOIyjH6y4euw';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-can-i-use-my-montgomery-gi-bill-for.html">What Can I Use My Montgomery Gi Bill For</a></li>
+													<li class="list-group-item"><a href="/what-are-the-gi-bill-of-rights.html">What Are The Gi Bill Of Rights</a></li>
+													<li class="list-group-item"><a href="/what-benefit-was-provided-through-the-gi-bill-quizlet.html">What Benefit Was Provided Through The Gi Bill Quizlet</a></li>
+													<li class="list-group-item"><a href="/what-does-0-va-disability-rating-mean.html">What Does 0 Va Disability Rating Mean</a></li>
+													<li class="list-group-item"><a href="/what-can-your-gi-bill-be-used-for.html">What Can Your Gi Bill Be Used For</a></li>
+													<li class="list-group-item"><a href="/what-are-my-va-disability-ratings.html">What Are My Va Disability Ratings</a></li>
+													<li class="list-group-item"><a href="/what-funds-the-gi-bill.html">What Funds The Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-is-a-0-disability-rating-with-va.html">What Is A 0 Disability Rating With Va</a></li>
+													<li class="list-group-item"><a href="/what-are-the-civil-service-pay-grades.html">What Are The Civil Service Pay Grades</a></li>
+													<li class="list-group-item"><a href="/what-health-insurance-do-va-employees-have.html">What Health Insurance Do Va Employees Have</a></li>
+													<li class="list-group-item"><a href="/what-does-total-service-connected-disability-permanent-in-nature.html">What Does Total Service Connected Disability Permanent In Nature</a></li>
+													<li class="list-group-item"><a href="/what-does-it-mean-to-be-100-disabled-veteran.html">What Does It Mean To Be 100 Disabled Veteran</a></li>
+													<li class="list-group-item"><a href="/what-does-intercostal-neuralgia-feel-like.html">What Does Intercostal Neuralgia Feel Like</a></li>
+													<li class="list-group-item"><a href="/what-does-40-gi-bill-mean.html">What Does 40 Gi Bill Mean</a></li>
+													<li class="list-group-item"><a href="/what-health-insurance-does-military-have.html">What Health Insurance Does Military Have</a></li>
+													<li class="list-group-item"><a href="/what-does-tricare-cover-for-military-spouses.html">What Does Tricare Cover For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/what-does-the-gi-bill-cover-for-spouses.html">What Does The Gi Bill Cover For Spouses</a></li>
+													<li class="list-group-item"><a href="/what-does-a-gi-bill-mean.html">What Does A Gi Bill Mean</a></li>
+													<li class="list-group-item"><a href="/what-does-total-service-connected-disability-permanent-in-nature-mean.html">What Does Total Service Connected Disability Permanent In Nature Mean</a></li>
+													<li class="list-group-item"><a href="/what-is-a-50-va-rating.html">What Is A 50 Va Rating</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

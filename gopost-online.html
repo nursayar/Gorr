@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Gopost Online - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Gopost Online",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/a7/ce/8a/a7ce8a98f52f019f6bf29fb5a81f15af.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=gopost+online",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Gopost Online</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">GoPost is an online forum for class discussion. By logging in youre accepting cookies for this site. If you have signed up in branch and havent accessed your online account yet you can link your card to access your current card balance account history and all the other Drop Go features online. <br>				
+			</p>
+										<a class="badge badge-success" href="/va-education-bah-rates-2020.html">va education bah rates 2020</a>
+											<a class="badge badge-info" href="/va-disability-total-knee-replacement.html">va disability total knee replacement</a>
+											<a class="badge badge-dark" href="/va-education-benefits-hours.html">va education benefits hours</a>
+											<a class="badge badge-warning" href="/va-education-benefits-pay-rates.html">va education benefits pay rates</a>
+											<a class="badge badge-secondary" href="/va-education-benefits-check-status.html">va education benefits check status</a>
+											<a class="badge badge-danger" href="/va-disability-shoulder-rating.html">va disability shoulder rating</a>
+											<a class="badge badge-danger" href="/va-gi-bill-attendance-policy.html">va gi bill attendance policy</a>
+											<a class="badge badge-danger" href="/va-dmv-approved-driver-improvement-course-online.html">va dmv approved driver improvement course online</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you've come to visit the ideal site.  Our site gives you suggestions for viewing the maximum quality video and image content, search and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, especially Youtube, so we recommend this movie that you view.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/90/47/409047c04f618ec4ce4e80b63540ef05.jpg" data-lightbox="roadtrip" data-title="Pwn3d By Green Hat Lockers Parcel Parcel Delivery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/90/47/409047c04f618ec4ce4e80b63540ef05.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdtKFqFnCK2kmBqDUPDmmWcbVIsBU_F_B97w';" alt="Pwn3d By Green Hat Lockers Parcel Parcel Delivery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pwn3d By Green Hat Lockers Parcel Parcel Delivery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7d/b6/93/7db693c3bb56a9e216d591e4e4b857b5.jpg" data-lightbox="roadtrip" data-title="Pin On Popular Trending">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7d/b6/93/7db693c3bb56a9e216d591e4e4b857b5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN5vN5HQ15s05d-giPkL2_nzH-D1M1QoDyqw';" alt="Pin On Popular Trending">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Popular Trending</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/4f/83/a5/4f83a509c867509f4edab4c8d1aa56d6.jpg" data-lightbox="roadtrip" data-title="Let S Go Post Jobs Free For The Next Three Months Https Handson Ai Download The App On Google Play Store And Apple Store Clip Art Online Art Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/4f/83/a5/4f83a509c867509f4edab4c8d1aa56d6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy4C1NreU2KGmXY10_H0V-hIrdTFbtkM5V4w';" alt="Let S Go Post Jobs Free For The Next Three Months Https Handson Ai Download The App On Google Play Store And Apple Store Clip Art Online Art Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Let S Go Post Jobs Free For The Next Three Months Https Handson Ai Download The App On Google Play Store And Apple Store Clip Art Online Art Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/d7/b5/d6d7b522f8a63b5e78faa0f49e35e9a5.jpg" data-lightbox="roadtrip" data-title="Dynamic Alliance Website Design By Innotech Security Solutions Online Backup Design Clients">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/d7/b5/d6d7b522f8a63b5e78faa0f49e35e9a5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU4LZg8rW3jrtSxvarLoUvqNfioHzEBLnqag';" alt="Dynamic Alliance Website Design By Innotech Security Solutions Online Backup Design Clients">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dynamic Alliance Website Design By Innotech Security Solutions Online Backup Design Clients</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/54/8c/b0/548cb020f50b4cf903d54926c2b47b05.jpg" data-lightbox="roadtrip" data-title="One Of The Best Snacks Breakfasts To Go Post Workout Meals Or Sweettooth Des Weightlossrecip Post Workout Food Workout Food Smoothie Recipes Healthy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/54/8c/b0/548cb020f50b4cf903d54926c2b47b05.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMHym_3l7qdCsZdBVvCj41qWpI6RkuhIFy6Q';" alt="One Of The Best Snacks Breakfasts To Go Post Workout Meals Or Sweettooth Des Weightlossrecip Post Workout Food Workout Food Smoothie Recipes Healthy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">One Of The Best Snacks Breakfasts To Go Post Workout Meals Or Sweettooth Des Weightlossrecip Post Workout Food Workout Food Smoothie Recipes Healthy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/80/80/358080949fb5f51f5c97303a22602f0a.jpg" data-lightbox="roadtrip" data-title="Buy Buy Buyas Affordable As Your Pocket Can Take You We Are Available For Delivery Wi In 2020 Best Online Jewelry Store Online Jewelry Store Affordable Fashion Jewelry">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/80/80/358080949fb5f51f5c97303a22602f0a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB5xuLwnUvFuh7yHvqlBQwi6w34fWtGZjSXA';" alt="Buy Buy Buyas Affordable As Your Pocket Can Take You We Are Available For Delivery Wi In 2020 Best Online Jewelry Store Online Jewelry Store Affordable Fashion Jewelry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Buy Buy Buyas Affordable As Your Pocket Can Take You We Are Available For Delivery Wi In 2020 Best Online Jewelry Store Online Jewelry Store Affordable Fashion Jewelry</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ce/19/11/ce1911aaa9c0cf2a43a30b887af577d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB5xuLwnUvFuh7yHvqlBQwi6w34fWtGZjSXA';" alt="Buy Buy Buyas Affordable As Your Pocket Can Take You We Are Available For Delivery Wi In 2020 Best Online Jewelry Store Online Jewelry Store Affordable Fashion Jewelry">
+										<div class="card-body">
+						<h3 class="h5"><b>Save time by stamping posting and sending mail yourself at our self-service kiosks.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Gopost online</strong>. 
+								
+																	GoPost is an online discussion board which allows you to exchange ideas and information with your classmates and with your instructor. 
+																	Since GoPost is Web-based you can access online discussions from any Internet-connected computer. 
+																	Anaheim Public Works pleased to announce the acceptance of online plan submittal using our new Go Post portal. 
+																	Upload Initial and Resubmittals of Plans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	 
+																	Submit Applications and Forms. 
+																	Click Drop integrates with the most popular online stores and supports multiple store accounts. 
+																	There is no cost to the applicants to create a goPost login account. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Gopost online 是一个简易方便以及更优惠节省的在线包囊运输预定系统不管 您是从中国韩国台湾商城购买的商品我们将会以专业客制化快速地为您解决从仓储到公空运与海运从清关报税到快递派送让您无需担心这繁琐的过程. 
+																	Google allows users to search the Web for images news products video and other content. 
+																	Return your unwanted online purchases at any Post Office branch. 
+																	Your class discussion board may have one or several discussion areas each containing any number of conversations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Eplansofts goPost Public Portal will allow Applicants to apply for permits upload and submit plans for review manage document versioning access reviewer comment reports and download deliverable packages either reviewed plans that require corrections or approved plan sets. 
+																	This type of discussion is particularly applicable to composition courses as it engages students in writing to express their ideas about course content assignments or other topics. 
+																	Gopost is a new convenient way to ship and receive packages only from the United States Postal Service. 
+																	Find out more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Its fast free and ideal for online sellers and regular senders. 
+																	Customers can register online to send or receive packages with no fee to register and use the lockers. 
+																	Insurance POST is the most established credible and continuous source of business critical intelligence for the general insurance market. 
+																	Go Post is your one stop place to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you dont already have an account you can create one. 
+																	Find great deals on travel insurance travel money car insurance savings accounts financial services and more here at Post Office. 
+																	They then pick up their package at a time that works for them. 
+																	Instead of using residential addresses customers can have shipments sent to the address of a selected and convenient gopost locker system. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Worshipful Company of Insurers has called on the industry to donate the money and equipment needed to supply 10000 computers to schools so that all children can access online learning. 
+																	University textbooks used textbooks or any second hand books mobile phones laptops and notebooks jobs graduate jobs or even loan and credit card deals electronics computers white goods furniture and much more. 
+																	Your account will house all of your projects. 
+																	Webmail is not compatible with privateincognito browsing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can easily make payments with card PayPal or using your Online Business Account. 
+																	Access your Drop Go account online. 
+																	Find out more Self-service kiosks. 
+																	Pull all the orders from your online stores into your Click Drop account and get your packages out of the door in no time. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find out more Return a parcel. 
+																	Track Status of Plan Review. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/0e/94/cd/0e94cd41aea1a937658c9b7c749b6b24.jpg" data-lightbox="roadtrip" data-title="Pin On Escritura Preescolar">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/0e/94/cd/0e94cd41aea1a937658c9b7c749b6b24.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxo3cNIxMwDymC5gtVYWBs25OBjk1wKNB0KA';" alt="Pin On Escritura Preescolar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Escritura Preescolar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/ce/a2/63cea2ecb1a4bd7fc9e6647dd3723e84.png" data-lightbox="roadtrip" data-title="Bitsler Com Lottery Has Rolled Over Again With A Total Of 0 08 ƀitcoin For Tomorrows Draw Go Post Your Qualifying Bet Btslr Co T Lottery Casino Casino Games">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/ce/a2/63cea2ecb1a4bd7fc9e6647dd3723e84.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyz9Ja06r022rSDYCf7c8OkskbpUqb9BiNIQ';" alt="Bitsler Com Lottery Has Rolled Over Again With A Total Of 0 08 ƀitcoin For Tomorrows Draw Go Post Your Qualifying Bet Btslr Co T Lottery Casino Casino Games">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bitsler Com Lottery Has Rolled Over Again With A Total Of 0 08 ƀitcoin For Tomorrows Draw Go Post Your Qualifying Bet Btslr Co T Lottery Casino Casino Games</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/ce/8a/a7ce8a98f52f019f6bf29fb5a81f15af.png" data-lightbox="roadtrip" data-title="Specialist Classified For Travel Industry Free Classified Ads Classified Ads Online Ads">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/ce/8a/a7ce8a98f52f019f6bf29fb5a81f15af.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0eiqeBRVNvv0a952Le-o_-q7lsuwd4OIfsw';" alt="Specialist Classified For Travel Industry Free Classified Ads Classified Ads Online Ads">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Specialist Classified For Travel Industry Free Classified Ads Classified Ads Online Ads</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ef/42/21/ef4221e76fee54e1b63f469f1f8c7521.jpg" data-lightbox="roadtrip" data-title="Domestic Tourism In Malaysia Places To Visit Post Lockdown Places To Visit Malaysia Travel Cool Places To Visit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ef/42/21/ef4221e76fee54e1b63f469f1f8c7521.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAJZ0XjZPtYTXxSjLLL4pb9IYzAEg4FVWE1Q';" alt="Domestic Tourism In Malaysia Places To Visit Post Lockdown Places To Visit Malaysia Travel Cool Places To Visit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Domestic Tourism In Malaysia Places To Visit Post Lockdown Places To Visit Malaysia Travel Cool Places To Visit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/0c/79/830c7979b0a789228b70ad374596dbce.jpg" data-lightbox="roadtrip" data-title="Only 2 Days To Go Mass Communication Online Student Admissions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/0c/79/830c7979b0a789228b70ad374596dbce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS4cM987l-7NbQfjrpqQ-dpZ4GaZAYv_G3sQ';" alt="Only 2 Days To Go Mass Communication Online Student Admissions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Only 2 Days To Go Mass Communication Online Student Admissions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/38/b9/5e38b9ea920722afde00805df45c76ec.jpg" data-lightbox="roadtrip" data-title="Cute Panda Sketchpanda Bear Thread Gopost All Panda Wallpapers 1366x768 Hd Wallpaper Panda Wallpapers Cute Panda Wallpaper Panda Background">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/38/b9/5e38b9ea920722afde00805df45c76ec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-57A8hBTKriZJFtO0xEbAm-kOemydQqfSPw';" alt="Cute Panda Sketchpanda Bear Thread Gopost All Panda Wallpapers 1366x768 Hd Wallpaper Panda Wallpapers Cute Panda Wallpaper Panda Background">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cute Panda Sketchpanda Bear Thread Gopost All Panda Wallpapers 1366x768 Hd Wallpaper Panda Wallpapers Cute Panda Wallpaper Panda Background</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/19/11/ce1911aaa9c0cf2a43a30b887af577d8.jpg" data-lightbox="roadtrip" data-title="How Can I Get To English Lessons English Primary School English">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/19/11/ce1911aaa9c0cf2a43a30b887af577d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFJFLa1i8M9jiDdhNEyRBQa2q1xlpCrVYi9A';" alt="How Can I Get To English Lessons English Primary School English">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Can I Get To English Lessons English Primary School English</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/62/15/8b/62158b1a4f4fad3065b907582f44addf.jpg" data-lightbox="roadtrip" data-title="20 Print Go Post Reading Activities Work By Texas Teacher Besties Teachers Pay Teachers In 2020 Post Reading Activities Reading Activities Book Response">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/62/15/8b/62158b1a4f4fad3065b907582f44addf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL9TngaAPrQPaf1n9ueCHDn9HL3Zjn-xfG4g';" alt="20 Print Go Post Reading Activities Work By Texas Teacher Besties Teachers Pay Teachers In 2020 Post Reading Activities Reading Activities Book Response">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">20 Print Go Post Reading Activities Work By Texas Teacher Besties Teachers Pay Teachers In 2020 Post Reading Activities Reading Activities Book Response</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/49/fe/48/49fe481b2bb0bdeeb1feeb7bf3bdde85.jpg" data-lightbox="roadtrip" data-title="Figo Away We Go Post Cards Rust In 2020 Post Cards Easy Sewing Away We Go">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/49/fe/48/49fe481b2bb0bdeeb1feeb7bf3bdde85.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZG19zuVp1VlIJG5s5Q7hmsxO1QPcEkmYhZA';" alt="Figo Away We Go Post Cards Rust In 2020 Post Cards Easy Sewing Away We Go">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Figo Away We Go Post Cards Rust In 2020 Post Cards Easy Sewing Away We Go</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/b1/fb/f2b1fb70314eb613e4716cc09f8be583.png" data-lightbox="roadtrip" data-title="Really Good Emails Linkedin Page How To Introduce Yourself Best Email">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/b1/fb/f2b1fb70314eb613e4716cc09f8be583.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAaFQGFxupI9R0SE3q9dmjWNkhTlpo3eH-DQ';" alt="Really Good Emails Linkedin Page How To Introduce Yourself Best Email">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Really Good Emails Linkedin Page How To Introduce Yourself Best Email</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/19/9a/6d199a06e8a362ea5b0559e2e0701546.png" data-lightbox="roadtrip" data-title="Pin By Maicon On Know More Email Marketing Software Health Care Marketing Software">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/19/9a/6d199a06e8a362ea5b0559e2e0701546.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkIpETWeF7B55xWaQJBkoHOrQec5hOKCKang';" alt="Pin By Maicon On Know More Email Marketing Software Health Care Marketing Software">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Maicon On Know More Email Marketing Software Health Care Marketing Software</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/ed/f9/cfedf9b20796f85254b52341aa4d9908.jpg" data-lightbox="roadtrip" data-title="Pin By Youri Konkin On Uix Web Design Mobile Web Design Web Design Inspiration">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/ed/f9/cfedf9b20796f85254b52341aa4d9908.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShLwohf-adCzdWBlJJU0Tj7LjSSGOWdnSM1w';" alt="Pin By Youri Konkin On Uix Web Design Mobile Web Design Web Design Inspiration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Youri Konkin On Uix Web Design Mobile Web Design Web Design Inspiration</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/42/0f/fc/420ffc0c13a703ed8cbd4374a5709f13.jpg" data-lightbox="roadtrip" data-title="Mornings Are A Rush Here S Some Quick And Healthy Post Workout Brekkies Breakfast Healthier Behealthy Hea Post Workout Breakfast Breakfast Post Workout">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/42/0f/fc/420ffc0c13a703ed8cbd4374a5709f13.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStkm3SXR1ITWcI84ayrRKXaF9CQnf1KcYC-A';" alt="Mornings Are A Rush Here S Some Quick And Healthy Post Workout Brekkies Breakfast Healthier Behealthy Hea Post Workout Breakfast Breakfast Post Workout">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mornings Are A Rush Here S Some Quick And Healthy Post Workout Brekkies Breakfast Healthier Behealthy Hea Post Workout Breakfast Breakfast Post Workout</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/wi-gi-bill-eligibility.html">Wi Gi Bill Eligibility</a></li>
+													<li class="list-group-item"><a href="/wisconsin-gi-bill-reddit.html">Wisconsin Gi Bill Reddit</a></li>
+													<li class="list-group-item"><a href="/why-do-you-want-to-go-to-this-college-essay.html">Why Do You Want To Go To This College Essay</a></li>
+													<li class="list-group-item"><a href="/yu-gi-oh-collegehumor.html">Yu Gi Oh Collegehumor</a></li>
+													<li class="list-group-item"><a href="/will-the-bills-go-to-the-playoffs.html">Will The Bills Go To The Playoffs</a></li>
+													<li class="list-group-item"><a href="/youtube-billie-eilish.html">Youtube Billie Eilish</a></li>
+													<li class="list-group-item"><a href="/who-is-eligible-for-the-veterans-choice-program.html">Who Is Eligible For The Veterans Choice Program</a></li>
+													<li class="list-group-item"><a href="/wi-gi-bill-application.html">Wi Gi Bill Application</a></li>
+													<li class="list-group-item"><a href="/will-gi-bill-pay-for-crossfit-certification.html">Will Gi Bill Pay For Crossfit Certification</a></li>
+													<li class="list-group-item"><a href="/yu-gi-oh-karten-billig-kaufen.html">Yu Gi Oh Karten Billig Kaufen</a></li>
+													<li class="list-group-item"><a href="/will-post-9-11-gi-bill-pay-for-masters.html">Will Post 9 11 Gi Bill Pay For Masters</a></li>
+													<li class="list-group-item"><a href="/why-i-want-to-go-to-this-college-essay.html">Why I Want To Go To This College Essay</a></li>
+													<li class="list-group-item"><a href="/wwwschool-gi.html">Wwwschool Gi</a></li>
+													<li class="list-group-item"><a href="/william-asher-jr-elizabeth-montgomery.html">William Asher Jr Elizabeth Montgomery</a></li>
+													<li class="list-group-item"><a href="/yuku-veterans-forum.html">Yuku Veterans Forum</a></li>
+													<li class="list-group-item"><a href="/will-va-compensation-get-a-stimulus-check.html">Will Va Compensation Get A Stimulus Check</a></li>
+													<li class="list-group-item"><a href="/who-qualifies-as-a-va-dependent.html">Who Qualifies As A Va Dependent</a></li>
+													<li class="list-group-item"><a href="/zoe-ball-bio.html">Zoe Ball Bio</a></li>
+													<li class="list-group-item"><a href="/wisconsin-gi-bill-phone-number.html">Wisconsin Gi Bill Phone Number</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-notre-dame-roster.html">Womens College Basketball Notre Dame Roster</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

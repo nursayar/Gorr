@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Did House Go To Jail - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Did House Go To Jail",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/31/08/ed/3108ed9054cc2e05e22b73b19d10c1d8.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=did+house+go+to+jail",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Did House Go To Jail</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The network wasnt looking to let go of House which averages a 35 rating among adults 18-49 and 91 million viewers good numbers for a drama in its eighth season. House presumably picked up his affinity for languages during this period and shows a level of understanding of Chinese Greek Japanese Portuguese Spanish. Adolf Hitler is sentenced for his role in the Beer Hall Putsch of November 8 1923. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/how-to-get-a-va-rating-for-tinnitus.html">how to get a va rating for tinnitus</a>
+											<a class="badge badge-success" href="/how-to-find-your-va-disability-rating.html">how to find your va disability rating</a>
+											<a class="badge badge-primary" href="/how-to-get-gi-bill-extension.html">how to get gi bill extension</a>
+											<a class="badge badge-dark" href="/how-to-get-100-percent-va.html">how to get 100 percent va</a>
+											<a class="badge badge-danger" href="/how-to-get-gi-bill-for-college.html">how to get gi bill for college</a>
+											<a class="badge badge-primary" href="/how-to-get-your-gi-bill-back.html">how to get your gi bill back</a>
+											<a class="badge badge-light" href="/how-to-help-war-veterans-with-ptsd.html">how to help war veterans with ptsd</a>
+											<a class="badge badge-light" href="/how-to-get-your-gi-bill-money.html">how to get your gi bill money</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you've come to visit the right blog.  Our website gives you hints for viewing the maximum quality video and picture content, hunt and locate more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this movie for you to see.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/af/a4/6dafa49377178f0dac953ee8ea2ab00e.jpg" data-lightbox="roadtrip" data-title="Hang On A Second Does Your Voice Always Get That High And Annoying When You Re Angry Do You Want To Go To Jail No Thank House Md Quotes Dr House House">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/af/a4/6dafa49377178f0dac953ee8ea2ab00e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYCymhlvsDGg-uUAQhZNDi1dDckfzncrt1UQ';" alt="Hang On A Second Does Your Voice Always Get That High And Annoying When You Re Angry Do You Want To Go To Jail No Thank House Md Quotes Dr House House">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hang On A Second Does Your Voice Always Get That High And Annoying When You Re Angry Do You Want To Go To Jail No Thank House Md Quotes Dr House House</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/29/8d/40298d94be0f4f51687143d6d5063076.jpg" data-lightbox="roadtrip" data-title="I Said I Was Gonna Go By The Church House Ther Go The Church House Right Now Heller Praisd Da Lord Halleluyer Tyler Perry Movies Tyler Perry Madea Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/29/8d/40298d94be0f4f51687143d6d5063076.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiIT4gxvsaZ3uau4fmbTq_N0-UaElPzFYYjA';" alt="I Said I Was Gonna Go By The Church House Ther Go The Church House Right Now Heller Praisd Da Lord Halleluyer Tyler Perry Movies Tyler Perry Madea Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Said I Was Gonna Go By The Church House Ther Go The Church House Right Now Heller Praisd Da Lord Halleluyer Tyler Perry Movies Tyler Perry Madea Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/fe/8e/0c/fe8e0c19937343a1339d0b51861c347f.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/fe/8e/0c/fe8e0c19937343a1339d0b51861c347f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4tMgOPAiqXyvfu1Onaf_eTju2pGPEph0Hvw';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/d6/af/cbd6af5925c70709132cf114569d841a.jpg" data-lightbox="roadtrip" data-title="Did You Know Did You Know 968 Fun Facts Did You Know Facts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/d6/af/cbd6af5925c70709132cf114569d841a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzoBFstAQNIA5J7Z0xQAagbkO7YobBvBdnfw';" alt="Did You Know Did You Know 968 Fun Facts Did You Know Facts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Did You Know Did You Know 968 Fun Facts Did You Know Facts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/ae/99/37ae99343228cd984e12f2fee5d7d618.png" data-lightbox="roadtrip" data-title="More Than 100 Years Old The Historic Gothic Jail Transforms Into One Of The Spookiest Haunted Houses In Louisiana Haunted Places Haunted Tours Most Haunted Places">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/ae/99/37ae99343228cd984e12f2fee5d7d618.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGxfoze4HgbRYajOKbFqkjDJ6BvADy1VM6AA';" alt="More Than 100 Years Old The Historic Gothic Jail Transforms Into One Of The Spookiest Haunted Houses In Louisiana Haunted Places Haunted Tours Most Haunted Places">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">More Than 100 Years Old The Historic Gothic Jail Transforms Into One Of The Spookiest Haunted Houses In Louisiana Haunted Places Haunted Tours Most Haunted Places</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/17/91/4b1791bfd118d57a8119de164e6f6a46.jpg" data-lightbox="roadtrip" data-title="Picture Of Hugh Laurie House Md Gregory House Hugh Laurie">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/17/91/4b1791bfd118d57a8119de164e6f6a46.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi3FlEoRk7bAihfydKqDguaws7Hm0cbHuPdg';" alt="Picture Of Hugh Laurie House Md Gregory House Hugh Laurie">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Picture Of Hugh Laurie House Md Gregory House Hugh Laurie</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/40/29/8d/40298d94be0f4f51687143d6d5063076.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi3FlEoRk7bAihfydKqDguaws7Hm0cbHuPdg';" alt="Picture Of Hugh Laurie House Md Gregory House Hugh Laurie">
+										<div class="card-body">
+						<h3 class="h5"><b>House has been in prison for a year and the parole committee says they will give him early release in 5 days if he can stay out of trouble.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Did house go to jail</strong>. 
+								
+																	Gino was only 22 years old when he robbed Pauls home in 1998. 
+																	Gregory House was born to John and Blythe House on June 11 1959 or May 15 1959. 
+																	Ronaldinho is under house arrest at the Palmoraga Hotel in Asuncion Credit. 
+																	House got all pissed and walked over to Wilson and Wilson said Just let it out House even though he didnt know what was going on. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Thats when House sped down the street turned the car around and went back. 
+																	Presidents have spent time in prison or jail even including Richard Nixon who received a pardon from President Gerald R. 
+																	Ford in 1974 after resigning in disgrace from the. 
+																	On their road trip Thirteen and House catch up with House continually trying to deduce why she was in jail despite claiming down to excessive prescribing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A 15-year-old came forward claiming that the 20-year-old had been in contact with her using social media apps. 
+																	Dressed in a blue trouser suit that was far more sober than the revealing outfits in which she performs Lil Kim became the first prominent female rap artist to go to jail owing to a fracas. 
+																	Real Housewives of New Jersey star Teresa Giudice and her husband Joe are both free citizens after serving time in prison. 
+																	His father served as a Marine Corps aviator and transferred often to other bases during Houses childhood. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Her husband Joe was recently released from prison after a 41-month sentence. 
+																	A century ago 33 members of the National Womans Party were arrested outside the White House and sent to the Occoquan Workhouse where they were abused by the guards. 
+																	House and Cuddy started dating and once they broke up he kind of made her life miserable and he drove either his motorcycle or a car through a window in her house. 
+																	House is a military brat. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	After risking his parole to save a patient Houses parole is revoked and he is sentenced to another 8 months in prison. 
+																	Monique did not go to jail although that was Candiaces goal. 
+																	When did Gino go to prison. 
+																	The attempted coup in Munich by right-wing members of the army and the Nazi Party was foiled by the government. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It turns out House didnt even try to get a reduced sentence and when his term is up he plans to leave medicine and study dark matter instead which will also isolate him even further from other people. 
+																	Gino reportedly stole Pauls 4000 guitar collection and a platinum disc from his Mill Hill house. 
+																	She was charged with second-degree assault from the District Court of Montgomery County in Maryland and Monique had to appear in court in December 2019. 
+																	House got in the car and demanded Wilson left the car so he did. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	After a hard reveal by House that Cuddy and him were an item and currently arent Thirteen reveals that she killed a man. 
+																	Before the popular television personality and talented chef rose to fame he actually served two years in jail for a crime against Paul Young in 1998. 
+																	Turns out when Olivia Wildes Huntingtons-afflicted Thirteen tendered her leave of absence last May on House she wasnt jetting off to some foreign land to undergo an. 
+																	EPA However Ronaldinho and his brother have now been released from prison and placed under house arrest at the Hotel. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Season 8 premiere Twenty Vicodin opens about a year after this event with House having served eight months of a prison sentence for driving his car into Cuddys house. 
+																	If there was probable cause Monique could have been arrested right then and there. 
+																	Hype House member Tony Lopez has made headlines in the last few weeks for allegedly sending sexually explicit messages to a minor. 
+																	He was sentenced to jail the same year he did the burglary and spent two years in prison. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	While in prison House meets Jessica Adams. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/08/ed/3108ed9054cc2e05e22b73b19d10c1d8.jpg" data-lightbox="roadtrip" data-title="Pin On Original Gangsters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/08/ed/3108ed9054cc2e05e22b73b19d10c1d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8uYz3-BlyAdVAqMcJfPLpBMS26-9Lfzl1XA';" alt="Pin On Original Gangsters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Original Gangsters</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/c4/77/81c477b4c7488e6816f13707b2f5ff67.jpg" data-lightbox="roadtrip" data-title="Inside Teresa And Joe Giudice S Lavish Home As The Real Housewives Stars Face Jail Time Over Fraudulent Mortgage Loans Lavish Home House Teresa Giudice">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/c4/77/81c477b4c7488e6816f13707b2f5ff67.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7yG0waKOCLbGPCVb5M17L2hW90UoEmtYajQ';" alt="Inside Teresa And Joe Giudice S Lavish Home As The Real Housewives Stars Face Jail Time Over Fraudulent Mortgage Loans Lavish Home House Teresa Giudice">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Inside Teresa And Joe Giudice S Lavish Home As The Real Housewives Stars Face Jail Time Over Fraudulent Mortgage Loans Lavish Home House Teresa Giudice</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/8f/37/3d8f379830c92e0ce084df7b43d16d1b.jpg" data-lightbox="roadtrip" data-title="Al Capone Prison Cell In Alcatraz Al Capone Alcatraz Prison Alcatraz">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/8f/37/3d8f379830c92e0ce084df7b43d16d1b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9lMKOoQe_fIj6vVHEnIQ3J7zVaTETYxYuhw';" alt="Al Capone Prison Cell In Alcatraz Al Capone Alcatraz Prison Alcatraz">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Al Capone Prison Cell In Alcatraz Al Capone Alcatraz Prison Alcatraz</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/9c/96/e99c9626997f94d218a86cc386d7caf0.jpg" data-lightbox="roadtrip" data-title="Johnny Cash 1965 Leaving Jail After A Drug Bust Sentence Johnny Cash June Carter Cash Johnny And June">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/9c/96/e99c9626997f94d218a86cc386d7caf0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhFjEQ_Y-GhwXE3YZZ-Pd_0dIUEyUuYSJ48Q';" alt="Johnny Cash 1965 Leaving Jail After A Drug Bust Sentence Johnny Cash June Carter Cash Johnny And June">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Johnny Cash 1965 Leaving Jail After A Drug Bust Sentence Johnny Cash June Carter Cash Johnny And June</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/82/c1/ef82c16df529e86ebaff5bd985c04d8d.jpg" data-lightbox="roadtrip" data-title="Old Morgan County Jail They Are Calling This The Old Jail But This Is New Looking To Me The Old Old Jail W Martinsville Indiana Martinsville House Styles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/82/c1/ef82c16df529e86ebaff5bd985c04d8d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdMQHT7oVVM0qv41XeKwpQ2QtsnE8syXINyA';" alt="Old Morgan County Jail They Are Calling This The Old Jail But This Is New Looking To Me The Old Old Jail W Martinsville Indiana Martinsville House Styles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Old Morgan County Jail They Are Calling This The Old Jail But This Is New Looking To Me The Old Old Jail W Martinsville Indiana Martinsville House Styles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/9a/49/609a499a274b2c4a568c7bbdda1eac11.jpg" data-lightbox="roadtrip" data-title="R1 Old Jail From Crown Point In Where Part Of The Public Enemies Movie Was Filmed Turkey Run State Park Abandoned Prisons Haunted Places">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/9a/49/609a499a274b2c4a568c7bbdda1eac11.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ3ocILK4huYnPGL230bjqO1oQfjBqaIJiAw';" alt="R1 Old Jail From Crown Point In Where Part Of The Public Enemies Movie Was Filmed Turkey Run State Park Abandoned Prisons Haunted Places">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">R1 Old Jail From Crown Point In Where Part Of The Public Enemies Movie Was Filmed Turkey Run State Park Abandoned Prisons Haunted Places</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/18/6d/2b186d0c4ae426d3973dfdf138c88e5b.jpg" data-lightbox="roadtrip" data-title="Pin On S P M">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/18/6d/2b186d0c4ae426d3973dfdf138c88e5b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR78wPtIW30K6X33Czza4o5nXGktOFoHCz1tA';" alt="Pin On S P M">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On S P M</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/29/85/75/2985752e23461f9d6f6ac877ee6fa22c.jpg" data-lightbox="roadtrip" data-title="Robert Sean Leonard High Laurie House And Wilson Hugh Laurie Robert Sean Leonard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/29/85/75/2985752e23461f9d6f6ac877ee6fa22c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbeFj8Qb-wAdvD4vuASaZ3c83MNAloWYHFhg';" alt="Robert Sean Leonard High Laurie House And Wilson Hugh Laurie Robert Sean Leonard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Robert Sean Leonard High Laurie House And Wilson Hugh Laurie Robert Sean Leonard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/07/26/9b/07269b1fd23520d6dbf3e45cc043d8e6.jpg" data-lightbox="roadtrip" data-title="Vintage Monopoly Go To Jail Zazzle Com In 2021 Monopoly Cards Jail Custom Monopoly">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/07/26/9b/07269b1fd23520d6dbf3e45cc043d8e6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe5YHrSo4bJKHaM74TWX21pyVA5IvYlkPfgQ';" alt="Vintage Monopoly Go To Jail Zazzle Com In 2021 Monopoly Cards Jail Custom Monopoly">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vintage Monopoly Go To Jail Zazzle Com In 2021 Monopoly Cards Jail Custom Monopoly</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/7c/04/417c04e019fc8b1106f65113bc2ffef9.jpg" data-lightbox="roadtrip" data-title="That One Time When Jake Almost Lost His Marbles While In Prison Brooklyn Nine Nine Funny Brooklyn Nine Nine Brooklyn">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/7c/04/417c04e019fc8b1106f65113bc2ffef9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsnXALzmcp2bGGpqm1XHe3XyreNwTILCuqzg';" alt="That One Time When Jake Almost Lost His Marbles While In Prison Brooklyn Nine Nine Funny Brooklyn Nine Nine Brooklyn">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">That One Time When Jake Almost Lost His Marbles While In Prison Brooklyn Nine Nine Funny Brooklyn Nine Nine Brooklyn</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/0a/66/7d0a6664b7280f1237baecdcd844dfc3.png" data-lightbox="roadtrip" data-title="I Hope I Never Go To Jail Because I Haven T Memorized A Phone Number Since 2001 Funny Quotes Funny Ecards Funny">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/0a/66/7d0a6664b7280f1237baecdcd844dfc3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPMQITDuHscAMJhFcYIoKnJ5EsJwAGOhdqLQ';" alt="I Hope I Never Go To Jail Because I Haven T Memorized A Phone Number Since 2001 Funny Quotes Funny Ecards Funny">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Hope I Never Go To Jail Because I Haven T Memorized A Phone Number Since 2001 Funny Quotes Funny Ecards Funny</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/92/5d/51925d9b91e0e3a943d2fa7cc4e59867.jpg" data-lightbox="roadtrip" data-title="Western Style Jail Bird House Etsy Roofing Bird House Modern Roofing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/92/5d/51925d9b91e0e3a943d2fa7cc4e59867.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC6iiFo7oo5i7-b4oFFOLAoe9jlbmPSLbVrQ';" alt="Western Style Jail Bird House Etsy Roofing Bird House Modern Roofing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Western Style Jail Bird House Etsy Roofing Bird House Modern Roofing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/c5/0e/0bc50ea39d8699c7d0ef0bbc09d8768f.jpg" data-lightbox="roadtrip" data-title="Forgotten 1924 Was A Jail Fixer Upper Abandoned Houses Abandoned Places Abandoned Buildings">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/c5/0e/0bc50ea39d8699c7d0ef0bbc09d8768f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKEhnqUmXv5PQYQDgZEOp71Q3SIrsd_Nx8JA';" alt="Forgotten 1924 Was A Jail Fixer Upper Abandoned Houses Abandoned Places Abandoned Buildings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Forgotten 1924 Was A Jail Fixer Upper Abandoned Houses Abandoned Places Abandoned Buildings</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/gi-bill-housing-allowance-dates.html">Gi Bill Housing Allowance Dates</a></li>
+													<li class="list-group-item"><a href="/gi-bill-mah.html">Gi Bill Mah</a></li>
+													<li class="list-group-item"><a href="/gi-bill-disabled-veterans.html">Gi Bill Disabled Veterans</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing-allowance-for-california.html">Gi Bill Housing Allowance For California</a></li>
+													<li class="list-group-item"><a href="/gi-bill-in-foreign-schools.html">Gi Bill In Foreign Schools</a></li>
+													<li class="list-group-item"><a href="/gi-bill-flight-training-reddit.html">Gi Bill Flight Training Reddit</a></li>
+													<li class="list-group-item"><a href="/gi-bill-contact-phone-number.html">Gi Bill Contact Phone Number</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing-allowance-colorado.html">Gi Bill Housing Allowance Colorado</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing.html">Gi Bill Housing</a></li>
+													<li class="list-group-item"><a href="/gi-bill-full-time-online-student.html">Gi Bill Full Time Online Student</a></li>
+													<li class="list-group-item"><a href="/gi-bill-college-comparison-tool.html">Gi Bill College Comparison Tool</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-home-improvement.html">Gi Bill For Home Improvement</a></li>
+													<li class="list-group-item"><a href="/gi-bill-kicker-reserves.html">Gi Bill Kicker Reserves</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing-allowance-by-state.html">Gi Bill Housing Allowance By State</a></li>
+													<li class="list-group-item"><a href="/gi-bill-mha-calculator-2020.html">Gi Bill Mha Calculator 2020</a></li>
+													<li class="list-group-item"><a href="/gi-bill-dependents-educational-benefits.html">Gi Bill Dependents Educational Benefits</a></li>
+													<li class="list-group-item"><a href="/gi-bill-in-reserves.html">Gi Bill In Reserves</a></li>
+													<li class="list-group-item"><a href="/gi-bill-international-schools.html">Gi Bill International Schools</a></li>
+													<li class="list-group-item"><a href="/gi-bill-give-to-child.html">Gi Bill Give To Child</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-kids.html">Gi Bill For Kids</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

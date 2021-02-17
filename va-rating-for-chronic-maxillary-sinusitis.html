@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Rating For Chronic Maxillary Sinusitis - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Rating For Chronic Maxillary Sinusitis",
+  "datePublished": "2021-02-17",
+  "image": "https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/06/AdobeStock_242842142-1-768x512.jpeg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+rating+for+chronic+maxillary+sinusitis",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Rating For Chronic Maxillary Sinusitis</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Six months after discontinuance of such treatment the appropriate disability rating shall be determined by mandatory VA examination. Signs and symptoms may include nasal obstruction or congestion that causes difficulty breathing through your nose and pain and swelling around your eyes cheeks nose or forehead. Samples from your nasal and sinus discharge cultures. <br>				
+			</p>
+										<a class="badge badge-success" href="/is-recurrent-depressive-disorder-a-disability.html">is recurrent depressive disorder a disability</a>
+											<a class="badge badge-info" href="/is-knee-arthritis-a-va-disability.html">is knee arthritis a va disability</a>
+											<a class="badge badge-success" href="/is-there-help-for-homeless-veterans.html">is there help for homeless veterans</a>
+											<a class="badge badge-danger" href="/joint-pain-va-disability.html">joint pain va disability</a>
+											<a class="badge badge-info" href="/is-major-depression-considered-a-disability.html">is major depression considered a disability</a>
+											<a class="badge badge-danger" href="/kill-bill-cast.html">kill bill cast</a>
+											<a class="badge badge-dark" href="/is-the-gi-bill-considered-income.html">is the gi bill considered income</a>
+											<a class="badge badge-secondary" href="/is-anyone-picking-up-donations-during-covid.html">is anyone picking up donations during covid</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you have come to visit the ideal site.  Our site provides you with suggestions for seeing the highest quality video and image content, hunt and find more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, especially Youtube, therefore we recommend this video that you see.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.wp.com/www.woodslawyers.com/wp-content/uploads/VA-benefits-for-Chronic-Sinusitis.jpg?fit=1200%2C629&amp;ssl=1" data-lightbox="roadtrip" data-title="Va Disability Benefits For Veterans With Chronic Sinusitis">
+											<img class="card-img v-image ads-img " src="https://i1.wp.com/www.woodslawyers.com/wp-content/uploads/VA-benefits-for-Chronic-Sinusitis.jpg?fit=1200%2C629&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmdDNK-rur3cnOcKXIWDO7C7i1swofUpWSdg';" alt="Va Disability Benefits For Veterans With Chronic Sinusitis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Benefits For Veterans With Chronic Sinusitis</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/09/brittany-colette-CDN2nTKfrA-unsplash-768x512.jpg" data-lightbox="roadtrip" data-title="Va Disability Ratings For Sinusitis Explained Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/09/brittany-colette-CDN2nTKfrA-unsplash-768x512.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNwzp0rYHYazM5nS7CK0DAORiQfwE0JBJ1Gw';" alt="Va Disability Ratings For Sinusitis Explained Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Ratings For Sinusitis Explained Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.houstonent.com/hs-fs/hubfs/blog%20images/sinusitis%20symptoms-1.jpg?width=488&amp;name=sinusitis%20symptoms-1.jpg" data-lightbox="roadtrip" data-title="6 Common Symptoms Of Chronic Sinusitis">
+											<img class="card-img v-image ads-img " src="https://www.houstonent.com/hs-fs/hubfs/blog%20images/sinusitis%20symptoms-1.jpg?width=488&amp;name=sinusitis%20symptoms-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU5AO2-pGzQfXSGAhfImgeDfKb7B_qvM55BQ';" alt="6 Common Symptoms Of Chronic Sinusitis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 Common Symptoms Of Chronic Sinusitis</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://assets.cureus.com/uploads/figure/file/164685/ba00e7a0273a11eb830513a17b7b8fc5-Webp.net-resizeimage.png" data-lightbox="roadtrip" data-title="Cureus Rare Variation Of Accessory Maxillary Ostium">
+											<img class="card-img v-image ads-img " src="https://assets.cureus.com/uploads/figure/file/164685/ba00e7a0273a11eb830513a17b7b8fc5-Webp.net-resizeimage.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5hEXfWlyby0XsIcghP9AUr--T4rxUblw61A';" alt="Cureus Rare Variation Of Accessory Maxillary Ostium">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cureus Rare Variation Of Accessory Maxillary Ostium</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.virginiaent.com/hubfs/iStock-519665588.jpg" data-lightbox="roadtrip" data-title="Can You Cure Chronic Sinusitis Treatment Options To Consider">
+											<img class="card-img v-image ads-img " src="https://www.virginiaent.com/hubfs/iStock-519665588.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-vQtIyZe7zyEU2NOuibwipUmXup4fud_9vg';" alt="Can You Cure Chronic Sinusitis Treatment Options To Consider">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Can You Cure Chronic Sinusitis Treatment Options To Consider</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/4b/3a/814b3adbbcb26e0d39a16dfaea2ca913.jpg" data-lightbox="roadtrip" data-title="Pin By Juanluiscobas On Anat Anatomy Neuro Eye Anatomy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/4b/3a/814b3adbbcb26e0d39a16dfaea2ca913.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScWRIo_6RFtY9B5DOcPxqdF5bjAg89h9SZOQ';" alt="Pin By Juanluiscobas On Anat Anatomy Neuro Eye Anatomy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Juanluiscobas On Anat Anatomy Neuro Eye Anatomy</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.virginiaent.com/hubfs/iStock-519665588.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScWRIo_6RFtY9B5DOcPxqdF5bjAg89h9SZOQ';" alt="Pin By Juanluiscobas On Anat Anatomy Neuro Eye Anatomy">
+										<div class="card-body">
+						<h3 class="h5"><b>6513 Sinusitis maxillary chronic.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va rating for chronic maxillary sinusitis</strong>. 
+								
+																	Swelling of tubes leading to lungs Findings from the New Generation Study The findings are from the National Health Study for a New Generation of US. 
+																	Chronic sinusitis can be caused by an infection growths in the sinuses nasal polyps or swelling of the lining of your sinuses. 
+																	50 is the highest rating you can get for chronic sinusitis because it also involves multiple surgeries and continuing symptoms. 
+																	07-05 274 DATE On appeal from the Department of Veterans Affairs Regional Office in Montgomery Alabama THE ISSUES 1. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When entitled nasal conditions result in. 
+																	Right shoulder osteoarthritis and maxillary sinusitis with retention cyst WITHDRAWN DISMISSED Citation Nr. 
+																	Signs and symptoms are generally expected to persist despite medical attention although they may wax and wane over the 6 month period and thereafter. 
+																	If youre stuck frustrated underrated and currently rated between 0-90 VA Claims Insider Elite is for you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Cultures are generally unnecessary for diagnosing chronic sinusitis. 
+																	Loss of Function - Nose. 
+																	Most sinus disabilities do not warrant a high disability rating. 
+																	Click Go Elite Now below to get started today and a member of our team will be in touch within minutes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans a long-term study on the health of 30000 OEFOIF Veterans and 30000 Veterans from the same era who were not deployed. 
+																	I would ask for the increase if you have had continued medical treatment for headaches pain and tenderness of affected sinus. 
+																	Daily inhalational or oral bronchodilator therapy or. 
+																	I filed a CUE claim on the asthma which was granted in 1988 with an initial rating to date of discharge of 10 and then a 30. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Following radical surgery with chronic osteomyelitis or near constant sinusitis characterized by headaches pain and tenderness of affected sinus and purulent discharge or crusting after repeated surgeries is rated as 50 percent disabling. 
+																	FEV-1 of 71- to 80-percent predicted or. 
+																	The Caldwell-Luc and inferior antrostomy approaches are reserved for rare circumstances such as a case of severe allergic fungal sinusitis in which standard antrostomy alone does not allow complete extirpation of fungal concretions or complete drainage. 
+																	In 1986 the va denied service connection for Asthma and sinusitis. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you require surgery on your sinuses your recovery is the part that affects your VA rating. 
+																	Three or more incapacitating episodes per year of sinusitis requiring prolonged lasting four to six weeks antibiotic treatment or more than six non-incapacitating episodes per year of sinusitis. 
+																	Near constant sinusitis characterized by headaches pain and tenderness of affected sinus and purulent discharge or crusting after repeated surgeries. 
+																	Today endoscopic maxillary antrostomy and uncinectomy are the standard for treatment for refractory chronic maxillary sinusitis. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	6514 Sinusitis sphenoid chronic. 
+																	Sinusitis can warrant up to a 50 percent rating but it is extremely rare to obtain such a percentage because it would require radical surgery with lingering severe complications. 
+																	General Rating Formula for Sinusitis DCs 6510 through 6514. 
+																	The rating criteria includes 10 and 30 percent evaluations based on the following symptomatology. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	6511 Sinusitis ethmoid chronic. 
+																	General Rating Formula for Sinusitis DCs 6510 through 6514. 
+																	If more than one rating is applicable the ratings are compared and the highest selected. 
+																	There is a range of pulmonary function tests PFTs that are essential to properly rating most Respiratory System conditions including spirometry diffusion capacity and exercise testing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Only one rating may be selected. 
+																	The General Rating Formula for Sinusitis provides. 
+																	Intermittent inhalational or oral bronchodilator therapy. 
+																	Any change in evaluation based upon that or any subsequent examination shall. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	30 with polyps 10 without polyps but with greater than 50 percent obstruction of nasal passage on both sides or complete obstruction on one side. 
+																	Sinus polyps can irritate sinusitis and warrant an even higher VA rating or surgery. 
+																	6512 Sinusitis frontal chronic. 
+																	However when the condition fails to respond to treatment or is worsening your doctor may swab inside your nose to collect samples that might help determine the cause such as bacteria or fungi. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The transition of acute sinusitis to the chronic stage which is promoted by the high virulence of the microbiota that caused the inflammatory process weakened immunity concomitant chronic diseases of the upper respiratory tract and bronchopulmonary system a general allergy an unfavorable structure of the anatomical elements of the nose and maxillary sinus curvature of the nasal septum. 
+																	If more than one condition is to be rated from Table 101 the conditions are bracketed for assessment purposes. 
+																	How you recover and the follow-up treatments are what get you into the 50 VA rating zone. 
+																	General Rating Formula for Sinusitis DCs 6510 through 6514. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A deviated septum for instance comes with only one possible rating. 
+																	FEV-1FVC of 56 to 70 percent or. 
+																	FEV-1 of 56- to 70-percent predicted or. 
+																	Following radical surgery with chronic osteomyelitis or. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Table 101 is used to rate impairment of the nose the nasal cavity and the nasopharynx. 
+																	Although the literature defines chronic sinusitis as a condition lasting 3 or more monthschronic sinusitis for VAC pension purposes means that the condition has existed for at least 6 months. 
+																	The VASRD offers rating options for Respiratory System conditions based on how well air is pulled into the lungs oxygen is absorbed into the blood and the remaining air exhaled from the lungs. 
+																	FEV-1FVC of 71 to 80 percent or. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VA allows repeated surgeries so surgery alone most likely wouldnt warrant a higher rating alone. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/06/AdobeStock_242842142-1-768x512.jpeg" data-lightbox="roadtrip" data-title="Va Disability Benefits For Allergic Rhinitis Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/06/AdobeStock_242842142-1-768x512.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtzt5FTVYccLlwhALGMGgg9ixDWlYg9LstGA';" alt="Va Disability Benefits For Allergic Rhinitis Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Benefits For Allergic Rhinitis Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/how-often-va-reevaluate-disability-ratings-768x512.jpg" data-lightbox="roadtrip" data-title="How Often Does Va Reevaluate Disability Ratings Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/how-often-va-reevaluate-disability-ratings-768x512.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvPsqP6qurFCrBXxXYE7cTHkU5eMJP9fKVhw';" alt="How Often Does Va Reevaluate Disability Ratings Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Often Does Va Reevaluate Disability Ratings Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2018/05/testt-1-1-768x548.jpg" data-lightbox="roadtrip" data-title="Va Disability Ratings And Benefits For Asthma Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2018/05/testt-1-1-768x548.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBFfzfAI9HrOidcWecUeTVTa9IZsz07JfyBA';" alt="Va Disability Ratings And Benefits For Asthma Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Ratings And Benefits For Asthma Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://lawyers4veterans.com/wp-content/uploads/2019/06/sleepy-man.jpg" data-lightbox="roadtrip" data-title="8 Conditions Linked To Sleep Apnea Va Disability Attorneys Blog">
+											<img class="card-img v-image ads-img " src="http://lawyers4veterans.com/wp-content/uploads/2019/06/sleepy-man.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtsznSe--llgHhMTu_Eme2nHhrbcHhThe25Q';" alt="8 Conditions Linked To Sleep Apnea Va Disability Attorneys Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">8 Conditions Linked To Sleep Apnea Va Disability Attorneys Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/Court-Wins-graphic-Increased-Rating-1-768x553.png" data-lightbox="roadtrip" data-title="Bva Denial Of Sinusitis Lacked Adquate Reasons Or Bases Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/Court-Wins-graphic-Increased-Rating-1-768x553.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw_dfektMwkzTb3f8Fiy2TtLOOi9bgrcV8FA';" alt="Bva Denial Of Sinusitis Lacked Adquate Reasons Or Bases Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bva Denial Of Sinusitis Lacked Adquate Reasons Or Bases Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="sxbG9pRKJefFTM" data-lightbox="roadtrip" data-title="Https Www Gpo Gov Fdsys Pkg Cfr 2010 Title38 Vol1 Pdf Cfr 2010 Title38 Vol1 Sec4 97 Pdf">
+											<img class="card-img v-image ads-img " src="sxbG9pRKJefFTM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQws_wmCOx_4Br6tcmWk4BVwP0-Y46FhSXExA';" alt="Https Www Gpo Gov Fdsys Pkg Cfr 2010 Title38 Vol1 Pdf Cfr 2010 Title38 Vol1 Sec4 97 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Gpo Gov Fdsys Pkg Cfr 2010 Title38 Vol1 Pdf Cfr 2010 Title38 Vol1 Sec4 97 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="Bi91Q5Y4ZUuBHM" data-lightbox="roadtrip" data-title="Https Www Reginfo Gov Public Do Downloaddocument Objectid 48005701">
+											<img class="card-img v-image ads-img " src="Bi91Q5Y4ZUuBHM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_AlSmlsbCsnT--oksfsja6oJBXphUr7B1eA';" alt="Https Www Reginfo Gov Public Do Downloaddocument Objectid 48005701">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Reginfo Gov Public Do Downloaddocument Objectid 48005701</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="Xv8_CjArLad9eM" data-lightbox="roadtrip" data-title="Https Www Gpo Gov Fdsys Pkg Cfr 2011 Title38 Vol1 Pdf Cfr 2011 Title38 Vol1 Sec4 96 Pdf">
+											<img class="card-img v-image ads-img " src="Xv8_CjArLad9eM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdn4uznYaJ9tTb7OpE7L8w_ETy-17ZPbD-sg';" alt="Https Www Gpo Gov Fdsys Pkg Cfr 2011 Title38 Vol1 Pdf Cfr 2011 Title38 Vol1 Sec4 96 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Gpo Gov Fdsys Pkg Cfr 2011 Title38 Vol1 Pdf Cfr 2011 Title38 Vol1 Sec4 96 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://onlinelibrary.wiley.com/cms/asset/c7ddc261-22bd-42f7-b192-563901b444e0/alr.2019.9.issue-6.cover.jpg" data-lightbox="roadtrip" data-title="Symptom Importance Patient Expectations And Satisfaction In Chronic Rhinosinusitis Mattos 2019 International Forum Of Allergy Amp Rhinology Wiley Online Library">
+											<img class="card-img v-image ads-img " src="https://onlinelibrary.wiley.com/cms/asset/c7ddc261-22bd-42f7-b192-563901b444e0/alr.2019.9.issue-6.cover.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT630Z52hlZpw8vWN0g-AEt1Wu74G3l5FAJJA';" alt="Symptom Importance Patient Expectations And Satisfaction In Chronic Rhinosinusitis Mattos 2019 International Forum Of Allergy Amp Rhinology Wiley Online Library">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Symptom Importance Patient Expectations And Satisfaction In Chronic Rhinosinusitis Mattos 2019 International Forum Of Allergy Amp Rhinology Wiley Online Library</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://journals.plos.org/plosone/article/figure/image?download&amp;size=large&amp;id=info:doi/10.1371/journal.pone.0242804.g002" data-lightbox="roadtrip" data-title="The Role Of Structured Reporting And Structured Operation Planning In Functional Endoscopic Sinus Surgery">
+											<img class="card-img v-image ads-img " src="https://journals.plos.org/plosone/article/figure/image?download&amp;size=large&amp;id=info:doi/10.1371/journal.pone.0242804.g002" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo4zQG2tHYpg55FvM8wfsfWFT36_LCi0jh1Q';" alt="The Role Of Structured Reporting And Structured Operation Planning In Functional Endoscopic Sinus Surgery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Role Of Structured Reporting And Structured Operation Planning In Functional Endoscopic Sinus Surgery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="3XFlWd2nBT1hsM" data-lightbox="roadtrip" data-title="Https Www Jacionline Org Article S0091 6749 01 62488 6 Pdf">
+											<img class="card-img v-image ads-img " src="3XFlWd2nBT1hsM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCDcOe2uuDw0x2xIJRbkbXUS7fDncTb80_zQ';" alt="Https Www Jacionline Org Article S0091 6749 01 62488 6 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Jacionline Org Article S0091 6749 01 62488 6 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="8racR2Gst0y5EM" data-lightbox="roadtrip" data-title="Https Scholarlycommons Henryford Com Cgi Viewcontent Cgi Article 1148 Context Otolaryngology Articles">
+											<img class="card-img v-image ads-img " src="8racR2Gst0y5EM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzikCFlun5thLif_8G2Fm8cp_RVzs8vDtkrw';" alt="Https Scholarlycommons Henryford Com Cgi Viewcontent Cgi Article 1148 Context Otolaryngology Articles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Scholarlycommons Henryford Com Cgi Viewcontent Cgi Article 1148 Context Otolaryngology Articles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.aentassociates.com/wp-content/uploads/2019/01/symptoms-of-a-deviated-septum-1-638.jpg" data-lightbox="roadtrip" data-title="Symptoms Of A Deviated Septum Allergy Ent Associates">
+											<img class="card-img v-image ads-img " src="https://www.aentassociates.com/wp-content/uploads/2019/01/symptoms-of-a-deviated-septum-1-638.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO3ZhE9ocosmZEcA5vIE3sMJFHqXTvgwm4Qg';" alt="Symptoms Of A Deviated Septum Allergy Ent Associates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Symptoms Of A Deviated Septum Allergy Ent Associates</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/virginia-unemployment-employer-rate.html">Virginia Unemployment Employer Rate</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-covid.html">West Virginia Department Of Education Covid</a></li>
+													<li class="list-group-item"><a href="/want-to-go-to-college.html">Want To Go To College</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-map.html">West Virginia Department Of Education Map</a></li>
+													<li class="list-group-item"><a href="/west-virginia-state-university-education-department.html">West Virginia State University Education Department</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-gps.html">West Virginia Department Of Education Gps</a></li>
+													<li class="list-group-item"><a href="/virginia-tech-engineering-education-faculty.html">Virginia Tech Engineering Education Faculty</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-iep.html">West Virginia Department Of Education Iep</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-assessment.html">West Virginia Department Of Education Assessment</a></li>
+													<li class="list-group-item"><a href="/west-virginia-education-department.html">West Virginia Education Department</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-office-of-special-programs.html">West Virginia Department Of Education Office Of Special Programs</a></li>
+													<li class="list-group-item"><a href="/west-virginia-unemployment-rate-history.html">West Virginia Unemployment Rate History</a></li>
+													<li class="list-group-item"><a href="/was-the-gi-bill-part-of-the-new-deal.html">Was The Gi Bill Part Of The New Deal</a></li>
+													<li class="list-group-item"><a href="/want-to-go-to-college-but-cant-afford-it.html">Want To Go To College But Cant Afford It</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-certification-renewal.html">West Virginia Department Of Education Certification Renewal</a></li>
+													<li class="list-group-item"><a href="/west-virginia-state-education-department.html">West Virginia State Education Department</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-vacancies.html">West Virginia Department Of Education Vacancies</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-job-openings.html">West Virginia Department Of Education Job Openings</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-rate-september-2020.html">Virginia Unemployment Rate September 2020</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-rate-by-month.html">Virginia Unemployment Rate By Month</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

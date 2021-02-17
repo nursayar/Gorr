@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Did Zoe Go To Jail - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Did Zoe Go To Jail",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/f7/fd/08/f7fd081c77077262224076608eb5cf14.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=did+zoe+go+to+jail",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Did Zoe Go To Jail</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Charles and Diana Ingram were sentenced to 18 months in prison in 2003 after pleading not guilty in court. Reggie Kray the last surviving member of Britains most infamous gangland family is finally to leave prison this week after Home Secretary Jack Straw ruled yesterday that he should be allowed. JOE Exotic from the hit Netflix docuseries Tiger King was hoping to earn a pardon from Donald Trump before the President leaves the White House. <br>				
+			</p>
+										<a class="badge badge-light" href="/how-much-does-va-cwt-pay.html">how much does va cwt pay</a>
+											<a class="badge badge-dark" href="/how-much-does-va-dea-pay.html">how much does va dea pay</a>
+											<a class="badge badge-info" href="/how-to-apply-for-veterans-health-insurance.html">how to apply for veterans health insurance</a>
+											<a class="badge badge-success" href="/how-much-to-go-to-college-in-europe.html">how much to go to college in europe</a>
+											<a class="badge badge-success" href="/how-much-is-40-va-disability-per-month.html">how much is 40 va disability per month</a>
+											<a class="badge badge-info" href="/how-to-calculate-va-compensation-rates.html">how to calculate va compensation rates</a>
+											<a class="badge badge-info" href="/how-to-calculate-percentages-for-va-disability.html">how to calculate percentages for va disability</a>
+											<a class="badge badge-warning" href="/how-much-va-disability-for-hearing-loss.html">how much va disability for hearing loss</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you've come to pay a visit to the right site.  Our website provides you with hints for viewing the highest quality video and picture content, search and find more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, especially Youtube, so we recommend this movie for you to view.  It is also possible to bring about supporting this site by sharing videos and graphics that you enjoy on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5c/04/f5/5c04f53048d30923f0a443d563818ad0.jpg" data-lightbox="roadtrip" data-title="Pin On Presley">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5c/04/f5/5c04f53048d30923f0a443d563818ad0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeagZDJ8_93gZXFkDNSbZAhjhwRuGXTIGRRA';" alt="Pin On Presley">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Presley</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/6b/42/81/6b4281677fc79e9ba291b1731a6a42a4.jpg" data-lightbox="roadtrip" data-title="63 Dixie Noah Get Cancelled For This Zoe Laverne Speaks Out On Adoption Addison Bodyshamed By Zoe Youtube Laverne Josh Richards Dixie">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/6b/42/81/6b4281677fc79e9ba291b1731a6a42a4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKopOhEhaGvb1u4v7r4n1iL23w8sFQZ8clRA';" alt="63 Dixie Noah Get Cancelled For This Zoe Laverne Speaks Out On Adoption Addison Bodyshamed By Zoe Youtube Laverne Josh Richards Dixie">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">63 Dixie Noah Get Cancelled For This Zoe Laverne Speaks Out On Adoption Addison Bodyshamed By Zoe Youtube Laverne Josh Richards Dixie</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e1/8b/76/e18b769b83e471040eb796dc207b6967.jpg" data-lightbox="roadtrip" data-title="Pin By Zoe Laverne Rares On Zoe Laverne In 2020 Jane The Virgin Laverne Jail">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e1/8b/76/e18b769b83e471040eb796dc207b6967.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrT_Mzx1U2nCLYhmFdLBbtvTP7kxX2jLs5nw';" alt="Pin By Zoe Laverne Rares On Zoe Laverne In 2020 Jane The Virgin Laverne Jail">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Zoe Laverne Rares On Zoe Laverne In 2020 Jane The Virgin Laverne Jail</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/09/14/a50914fa7cc2d36ab4aef8b2dba60269.jpg" data-lightbox="roadtrip" data-title="A Updated Photo Of Gucci Mane In Federal Prison Has Surfaced It Was Taken In December 2015 Gucci Mane Gucci Mane Jail Hip Hop News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/09/14/a50914fa7cc2d36ab4aef8b2dba60269.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH-s4Sly2bTN685jBGKigSMo4y68ypClODDA';" alt="A Updated Photo Of Gucci Mane In Federal Prison Has Surfaced It Was Taken In December 2015 Gucci Mane Gucci Mane Jail Hip Hop News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Updated Photo Of Gucci Mane In Federal Prison Has Surfaced It Was Taken In December 2015 Gucci Mane Gucci Mane Jail Hip Hop News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/ca/bb/81/cabb81d7ce54825f4ed1601f39004fff.jpg" data-lightbox="roadtrip" data-title="Pin On How Do You Want To Go My Phone">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/ca/bb/81/cabb81d7ce54825f4ed1601f39004fff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR9jCZfMHPZY_vNztpybhmFFCq4Tj-HAIjkg';" alt="Pin On How Do You Want To Go My Phone">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On How Do You Want To Go My Phone</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/16/b3/6316b376bfd67c1a1be9960b313bea3b.png" data-lightbox="roadtrip" data-title="Everybody S Gonna End Up In Jail At The Trajectory Z O E Miraculous Ladybug Funny Miraculous Ladybug Comic Miraculous Ladybug Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/16/b3/6316b376bfd67c1a1be9960b313bea3b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDuhdH1le_CHnR0oWXbD9Tby_IzQnPPP8KDg';" alt="Everybody S Gonna End Up In Jail At The Trajectory Z O E Miraculous Ladybug Funny Miraculous Ladybug Comic Miraculous Ladybug Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Everybody S Gonna End Up In Jail At The Trajectory Z O E Miraculous Ladybug Funny Miraculous Ladybug Comic Miraculous Ladybug Memes</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/38/9b/59/389b59c4215ec9ed75d33fa489af9a1a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDuhdH1le_CHnR0oWXbD9Tby_IzQnPPP8KDg';" alt="Everybody S Gonna End Up In Jail At The Trajectory Z O E Miraculous Ladybug Funny Miraculous Ladybug Comic Miraculous Ladybug Memes">
+										<div class="card-body">
+						<h3 class="h5"><b>While Zoe is no stranger to a scandal the one she most recently found herself in could be deemed a bit more serious.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Did zoe go to jail</strong>. 
+								
+																	Connor is just 13 years old. 
+																	Did Charles and Diana Ingram go to prison. 
+																	Well the answer is no. 
+																	Did she really go to Jail. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Flo has to go to jail she committed fraud and theft or human trafficing. 
+																	After a custody battle with Jesse for their daughter in 2008 she went to prison for unpaid taxes. 
+																	She was 20-years-old at the time and she. 
+																	There are rumors that Laverne is arrested after her kissing video went viral in which Zoe Laverne can be seen kissing an underaged fan by the name Connor Joyce. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Did she really go to Jail. 
+																	There are rumors that Laverne is arrested after her kissing video went viral in which Zoe Laverne can be seen kissing an underaged fan by the name Connor Joyce. 
+																	Some Twitter users accused Zoe of allegedly grooming a 13-year-old fan. 
+																	View this post on Instagram A post shared by MusiciansDaily musiciansdaily. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Zoe was involved in many major storylines including coming out as a lesbian the deaths of her father and brotherFrank andChris the betrayal and departure of her. 
+																	When Zoe runs into Wade at a diner while out with Jonah and on the way to Atlanta the two go outside to talk andA Wade tells her that she saw more in him than he did in himself and that it was. 
+																	Zoe Tateis the second child and only daughter of Frank and Jean Tate mother of Jean Tate Jrsister of Chris Tate half-sister of Liam Hammond and James Tate and legal guardian of Joseph as well as Auntie to him and Noah Tate. 
+																	Connor is just 13 years old. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 13-year-old Connor Joyce has regularly appeared alongside Zoe in her TikTok videos and is a friend of Zoes. 
+																	Why did he go to prison. 
+																	While Kyle worked with guns almost non-stop to create content for his YouTube channel the weapons werent the reason why he was sentenced to two months prison in June 2019. 
+																	We assure you fans that Zoe Laverne is not arrested. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We assure you fans that Zoe Laverne is not arrested. 
+																	Heres everything you need to know. 
+																	Zoe Zoella Sugg 24 tweeted that she is taking a few days off the internet This comes after it emerged a ghost-writer helped with her debut novel Girl Online outsold both JK Rowlings and Dan. 
+																	LaVerne who most recently apologized for kissing and catching feelings for a 13-year-old fan has been gaining notoriety online since 2016 when she first attracted a following on lip-sync app Musically. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But the 57-year-old former zoo owner will continue. 
+																	According to the Newton County Jail L og Tasia went to prison on February 9th 2019 and was charged with forgery and possession of methamphetamine. 
+																	She signed the papers in front of an officer of the court with Steffie as a witness. 
+																	The judge also levied 250000 bail allowing Francis to remain out of jail as his case goes through the appellate process if he pays the fine the spokeswoman said. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Well the answer is no. 
+																	Zoe LaVerne is a controversial 19-year-old social media star with more than 17 million TikTok followers. 
+																	Her husband Joe was recently released from prison after a 41-month sentence. 
+																	Zoe Laverne of Indiana who has nearly 18 million followers on the app apologized for her actions in a live stream this week but denied grooming the young fan a fellow TikToker named Connor. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Real Housewives of New Jersey star Teresa Giudice and her husband Joe are both free citizens after serving time in prison. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/35/05/773505e99f7311981061c381ead47abe.jpg" data-lightbox="roadtrip" data-title="Pin On The Costs Of Lockdown">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/35/05/773505e99f7311981061c381ead47abe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvntyjI4aPx9-aubqHEpFbSNbp5XpjxUBPYg';" alt="Pin On The Costs Of Lockdown">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On The Costs Of Lockdown</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/98/b1/bf98b1adcf0f028f0d54bb5f2d0e56ce.jpg" data-lightbox="roadtrip" data-title="They Want To Fly Away Lenny And Zoe Kravitz Travel To The Bahamas In Gorgeous New Tumi Ad Campaign Lenny Kravitz Zoe Kravitz Kravitz">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/98/b1/bf98b1adcf0f028f0d54bb5f2d0e56ce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsHHCdsdnAy_ZlssSYOidVGJ72SPLAUO9CAA';" alt="They Want To Fly Away Lenny And Zoe Kravitz Travel To The Bahamas In Gorgeous New Tumi Ad Campaign Lenny Kravitz Zoe Kravitz Kravitz">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">They Want To Fly Away Lenny And Zoe Kravitz Travel To The Bahamas In Gorgeous New Tumi Ad Campaign Lenny Kravitz Zoe Kravitz Kravitz</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/b0/81/86b081717b77348df571a852f32c9cac.jpg" data-lightbox="roadtrip" data-title="The Salad Days Before The Bubble Burst And Jingles Went To Jail For Insider Trading Girl Humor Smiles And Laughs Insider Trading">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/b0/81/86b081717b77348df571a852f32c9cac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7a2Y4M2cSIdjRC6NvaoftHCorUVq8-1ywOQ';" alt="The Salad Days Before The Bubble Burst And Jingles Went To Jail For Insider Trading Girl Humor Smiles And Laughs Insider Trading">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Salad Days Before The Bubble Burst And Jingles Went To Jail For Insider Trading Girl Humor Smiles And Laughs Insider Trading</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/2d/f0/4f2df06c0426ccf08f54f39c42db818a.jpg" data-lightbox="roadtrip" data-title="Lenny Kravitz Has Creative Desire To Strut Lenny Kravitz Kravitz Zoe Kravitz">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/2d/f0/4f2df06c0426ccf08f54f39c42db818a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1NoCjxIKZ4CrPyZpn54gn8WHK9NLKufU1vg';" alt="Lenny Kravitz Has Creative Desire To Strut Lenny Kravitz Kravitz Zoe Kravitz">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lenny Kravitz Has Creative Desire To Strut Lenny Kravitz Kravitz Zoe Kravitz</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/13/d4/af13d4353f59746b323819a947cc69c6.jpg" data-lightbox="roadtrip" data-title="Lenny Kravitz Reveals Why Walking Daughter Zoe Down The Aisle Will Be Extra Emotional Zoe Kravitz Zoe Kravitz Style Lenny Kravitz">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/13/d4/af13d4353f59746b323819a947cc69c6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlXS07qVs69zwGzphWT1VkwWDPZO5am4Heow';" alt="Lenny Kravitz Reveals Why Walking Daughter Zoe Down The Aisle Will Be Extra Emotional Zoe Kravitz Zoe Kravitz Style Lenny Kravitz">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lenny Kravitz Reveals Why Walking Daughter Zoe Down The Aisle Will Be Extra Emotional Zoe Kravitz Zoe Kravitz Style Lenny Kravitz</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/b3/37/f0b337698ee71ec1d108de38c8fea921.png" data-lightbox="roadtrip" data-title="The Internet Agrees These 50 People Have The Hottest Mugshots Mug Shots Long Hair Styles Cool Hair Color">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/b3/37/f0b337698ee71ec1d108de38c8fea921.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlA9B5K0eR7HIuKvwxzgQL8rpXuEGRQetUaw';" alt="The Internet Agrees These 50 People Have The Hottest Mugshots Mug Shots Long Hair Styles Cool Hair Color">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Internet Agrees These 50 People Have The Hottest Mugshots Mug Shots Long Hair Styles Cool Hair Color</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/eb/52/3c/eb523ccffed335ceb0698861ee3fc268.jpg" data-lightbox="roadtrip" data-title="Zoe Reardon Bio Wiki Age Parents Education Killed Three In An Accident Charges Guilty Plea No Jail Term Jail Woodstock Concert Dark Outfits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/eb/52/3c/eb523ccffed335ceb0698861ee3fc268.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_S7Klzx70XXeVC1k_Nc6Gtesap4PT1A0IXg';" alt="Zoe Reardon Bio Wiki Age Parents Education Killed Three In An Accident Charges Guilty Plea No Jail Term Jail Woodstock Concert Dark Outfits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Zoe Reardon Bio Wiki Age Parents Education Killed Three In An Accident Charges Guilty Plea No Jail Term Jail Woodstock Concert Dark Outfits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/88/e1/6b88e123237bf8ab2818702f310515d2.png" data-lightbox="roadtrip" data-title="Everybody S Gonna End Up In Jail At The Trajectory Z O E">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/88/e1/6b88e123237bf8ab2818702f310515d2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpnwxJeUC-wW6Yk_KyxnmPi6u5x5gvQOQLXg';" alt="Everybody S Gonna End Up In Jail At The Trajectory Z O E">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Everybody S Gonna End Up In Jail At The Trajectory Z O E</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/af/a4/6dafa49377178f0dac953ee8ea2ab00e.jpg" data-lightbox="roadtrip" data-title="Hang On A Second Does Your Voice Always Get That High And Annoying When You Re Angry Do You Want To Go To Jail No Thank House Md Quotes Dr House House">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/af/a4/6dafa49377178f0dac953ee8ea2ab00e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYCymhlvsDGg-uUAQhZNDi1dDckfzncrt1UQ';" alt="Hang On A Second Does Your Voice Always Get That High And Annoying When You Re Angry Do You Want To Go To Jail No Thank House Md Quotes Dr House House">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hang On A Second Does Your Voice Always Get That High And Annoying When You Re Angry Do You Want To Go To Jail No Thank House Md Quotes Dr House House</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/fd/08/f7fd081c77077262224076608eb5cf14.jpg" data-lightbox="roadtrip" data-title="Pin By Zoe Hodgson On Unashamed Geekery Holistic Detective Dirk Gently S Holistic Detective Holistic Detective Agency">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/fd/08/f7fd081c77077262224076608eb5cf14.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBTjCk5cxsOsyuH9jUCKcuNYigC-wKJC6Oww';" alt="Pin By Zoe Hodgson On Unashamed Geekery Holistic Detective Dirk Gently S Holistic Detective Holistic Detective Agency">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Zoe Hodgson On Unashamed Geekery Holistic Detective Dirk Gently S Holistic Detective Holistic Detective Agency</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/9b/59/389b59c4215ec9ed75d33fa489af9a1a.jpg" data-lightbox="roadtrip" data-title="19 7 K Mentions J Aime 280 Commentaires Zoe Kravitz Zoeisabellakravitz Sur Instagram Father S Day Everyday Lenny Kravitz Kravitz Zoe Kravitz">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/9b/59/389b59c4215ec9ed75d33fa489af9a1a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnFJf3R7ppiMmvzJV9h2Xj1LLBWRzNirhWrA';" alt="19 7 K Mentions J Aime 280 Commentaires Zoe Kravitz Zoeisabellakravitz Sur Instagram Father S Day Everyday Lenny Kravitz Kravitz Zoe Kravitz">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">19 7 K Mentions J Aime 280 Commentaires Zoe Kravitz Zoeisabellakravitz Sur Instagram Father S Day Everyday Lenny Kravitz Kravitz Zoe Kravitz</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/cd/8e/e7cd8e363cfe31a3d9ef069ee5945190.jpg" data-lightbox="roadtrip" data-title="Pin On Random To Do">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/cd/8e/e7cd8e363cfe31a3d9ef069ee5945190.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuBBth_0ePZUFwYsHkXyZihju8NAyYdYHniA';" alt="Pin On Random To Do">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Random To Do</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/49/c6/cb49c63d802e017923f9e4818cfd7630.jpg" data-lightbox="roadtrip" data-title="274 Likes 1 Comments Zoe Lister Jones Zoelisterjones On Instagram Mommy Did A Photo Shoot For Her Favorit Short Hair Styles Hair Styles Cute Hairstyles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/49/c6/cb49c63d802e017923f9e4818cfd7630.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpkY8bTx6GjkPNcg8kVyIBU7pcHOjvl9KiAg';" alt="274 Likes 1 Comments Zoe Lister Jones Zoelisterjones On Instagram Mommy Did A Photo Shoot For Her Favorit Short Hair Styles Hair Styles Cute Hairstyles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">274 Likes 1 Comments Zoe Lister Jones Zoelisterjones On Instagram Mommy Did A Photo Shoot For Her Favorit Short Hair Styles Hair Styles Cute Hairstyles</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-disability-rating-herniated-disc.html">Va Disability Rating Herniated Disc</a></li>
+													<li class="list-group-item"><a href="/va-disability-ratings-gerd.html">Va Disability Ratings Gerd</a></li>
+													<li class="list-group-item"><a href="/va-disability-ratings-chart-2020.html">Va Disability Ratings Chart 2020</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-stomach-problems.html">Va Disability Rating For Stomach Problems</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-sjogrens-syndrome.html">Va Disability Rating For Sjogrens Syndrome</a></li>
+													<li class="list-group-item"><a href="/va-disability-ratings-help.html">Va Disability Ratings Help</a></li>
+													<li class="list-group-item"><a href="/va-disability-ratings-back-pain.html">Va Disability Ratings Back Pain</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-male-infertility.html">Va Disability Rating For Male Infertility</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-wrist-sprain.html">Va Disability Rating For Wrist Sprain</a></li>
+													<li class="list-group-item"><a href="/va-disability-ratings-hip.html">Va Disability Ratings Hip</a></li>
+													<li class="list-group-item"><a href="/va-disability-ratings-manual.html">Va Disability Ratings Manual</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-obesity.html">Va Disability Rating For Obesity</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-per-injury.html">Va Disability Rating Per Injury</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-sacroiliac-joint-dysfunction.html">Va Disability Rating For Sacroiliac Joint Dysfunction</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-mild-sleep-apnea.html">Va Disability Rating Mild Sleep Apnea</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-wrist-ganglion-cyst.html">Va Disability Rating For Wrist Ganglion Cyst</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-numbness.html">Va Disability Rating For Numbness</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-hip-pain.html">Va Disability Rating Hip Pain</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-si-joint-dysfunction.html">Va Disability Rating For Si Joint Dysfunction</a></li>
+													<li class="list-group-item"><a href="/va-disability-rating-for-occipital-neuralgia.html">Va Disability Rating For Occipital Neuralgia</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

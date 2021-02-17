@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Gi Bill Approved Dog Trainer Schools - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Gi Bill Approved Dog Trainer Schools",
+  "datePublished": "2021-02-17",
+  "image": "https://internationaldogtrainerschool.com/wp-content/uploads/2018/09/gi-bill-approved-dog-trainer-school.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=gi+bill+approved+dog+trainer+schools",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Gi Bill Approved Dog Trainer Schools</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Secondly we offer financing and this program is approved for the use of GI Bill and VA benefits. Special military benefits for members of the military and their spouses. Turn your love for dogs into a dog training career with Animal Behavior College. <br>				
+			</p>
+										<a class="badge badge-danger" href="/major-depressive-disorder-with-psychotic-features-pdf.html">major depressive disorder with psychotic features pdf</a>
+											<a class="badge badge-secondary" href="/max-va-rating-for-acid-reflux.html">max va rating for acid reflux</a>
+											<a class="badge badge-warning" href="/major-depressive-disorder-with-psychotic-features-differential-diagnosis.html">major depressive disorder with psychotic features differential diagnosis</a>
+											<a class="badge badge-danger" href="/major-depressive-disorder-with-psychotic-features-treatment-plan.html">major depressive disorder with psychotic features treatment plan</a>
+											<a class="badge badge-success" href="/major-depressive-disorder-with-psychotic-features-nami.html">major depressive disorder with psychotic features nami</a>
+											<a class="badge badge-light" href="/major-depressive-disorder-with-psychotic-features-wiki.html">major depressive disorder with psychotic features wiki</a>
+											<a class="badge badge-danger" href="/marie-ireland-virginia-department-education.html">marie ireland virginia department education</a>
+											<a class="badge badge-warning" href="/married-post-911-gi-bill.html">married post 911 gi bill</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you have come to visit the right site.  Our site provides you with suggestions for viewing the maximum quality video and image content, search and find more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, particularly Youtube, so we recommend this movie for you to see.  You can also contribute to supporting this site by sharing videos and graphics that you enjoy on this blog on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/0b/8b/d70b8b461d24480f1a358895897ad4c9.jpg" data-lightbox="roadtrip" data-title="Facts About Heartworms And Heartworm Medication Heartworm Heartworm Medication Natural Pet Care">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/0b/8b/d70b8b461d24480f1a358895897ad4c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzQFfDm_g3kJ6u9z09MCmvyFCWnCcj1uNqGQ';" alt="Facts About Heartworms And Heartworm Medication Heartworm Heartworm Medication Natural Pet Care">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Facts About Heartworms And Heartworm Medication Heartworm Heartworm Medication Natural Pet Care</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.animalbehaviorcollege.com/uploads/abc-dog-trainer-veteran.jpg" data-lightbox="roadtrip" data-title="Gi Bill Approved School For Dog Trainers Animal Behavior College">
+											<img class="card-img v-image ads-img " src="https://www.animalbehaviorcollege.com/uploads/abc-dog-trainer-veteran.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4In3QplTYT5hb8NRsXzj2p-7_oSlT5j5MGg';" alt="Gi Bill Approved School For Dog Trainers Animal Behavior College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gi Bill Approved School For Dog Trainers Animal Behavior College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://internationaldogtrainerschool.com/wp-content/uploads/2018/09/gi-bill-approved-dog-trainer-school.jpg" data-lightbox="roadtrip" data-title="Gi Bill Approved Dog Trainer Program School For Dog Trainers">
+											<img class="card-img v-image ads-img " src="https://internationaldogtrainerschool.com/wp-content/uploads/2018/09/gi-bill-approved-dog-trainer-school.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWC7Ys3aYsIgNe7mHSljhbyF1oi4yp_I9eXw';" alt="Gi Bill Approved Dog Trainer Program School For Dog Trainers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gi Bill Approved Dog Trainer Program School For Dog Trainers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/dc/33/d9/dc33d93c512ef013174e531c5710394d.jpg" data-lightbox="roadtrip" data-title="Watch Out For These Signs And Symptoms Of Liver Disease In Dogs Watch Out For These Signs And Symptoms Of Liver Liver Disease Liver Disease Symptoms Disease">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/dc/33/d9/dc33d93c512ef013174e531c5710394d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNUe1042vghrcEsIwnf8JBiCFZVd-pBEyMZw';" alt="Watch Out For These Signs And Symptoms Of Liver Disease In Dogs Watch Out For These Signs And Symptoms Of Liver Liver Disease Liver Disease Symptoms Disease">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Watch Out For These Signs And Symptoms Of Liver Disease In Dogs Watch Out For These Signs And Symptoms Of Liver Liver Disease Liver Disease Symptoms Disease</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/6f/0f/186f0f35e33adc49259c0851de57ec19.jpg" data-lightbox="roadtrip" data-title="Chihuahua Classic Round Sticker Zazzle Com Puppy Training Puppy Training Guide Puppy Training Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/6f/0f/186f0f35e33adc49259c0851de57ec19.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdWy4uMp423CqVzrPV_PkH0aqsqoZY3W16jQ';" alt="Chihuahua Classic Round Sticker Zazzle Com Puppy Training Puppy Training Guide Puppy Training Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chihuahua Classic Round Sticker Zazzle Com Puppy Training Puppy Training Guide Puppy Training Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/fc/76/b3/fc76b3c066b0081588393a0fd4f5455d.jpg" data-lightbox="roadtrip" data-title="Flanked By Security Their Bodyguard Walked Alongside Them With Their Dog Olive Bodyguardsecurity Metallic Trainers Victoria Beckham Dog Walking">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/fc/76/b3/fc76b3c066b0081588393a0fd4f5455d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThYBqON7FdzAsyORJGILh_mSfYiqqvL9jq4g';" alt="Flanked By Security Their Bodyguard Walked Alongside Them With Their Dog Olive Bodyguardsecurity Metallic Trainers Victoria Beckham Dog Walking">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Flanked By Security Their Bodyguard Walked Alongside Them With Their Dog Olive Bodyguardsecurity Metallic Trainers Victoria Beckham Dog Walking</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://images.squarespace-cdn.com/content/v1/5825d99c9f745688563003e0/1518640246307-J6IFZ4ONNK3FHU54IWP0/ke17ZwdGBToddI8pDm48kLvhqvFWBKWuZh5geReXSbp7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0r9YoV8ytu8SWDj21Bt3yU_A7RdEe7rQhBS2c112kMprPiol64bmKAUWnonoxiPSLw/Levels+1+copy+13.jpg?format=2500w" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThYBqON7FdzAsyORJGILh_mSfYiqqvL9jq4g';" alt="Flanked By Security Their Bodyguard Walked Alongside Them With Their Dog Olive Bodyguardsecurity Metallic Trainers Victoria Beckham Dog Walking">
+										<div class="card-body">
+						<h3 class="h5"><b>An AKC CGC certificate if.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Gi bill approved dog trainer schools</strong>. 
+								
+																	This is one of the only VA approved dog training certifications in the area. 
+																	Foreign Program Approval Information for Schools Foreign Program Approval Information For Schools. 
+																	The Little Rock K-9 Academy currently offers the following courses. 
+																	Lastly our Master Dog Trainer Program has a reputation for providing graduates with the experience knowledge and confidence to start their own career as a professional dog trainer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Use Your GI Bill For K9 Training. 
+																	Programs available to qualified veterans and family members include. 
+																	We video hisher progress during the last week of training and send to you as a training tool. 
+																	GI Bill VA Benefits Accepted Our 12-week Police K9 Instructor Program is approved to accept GI Bill and other VA benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How does a school get a program approved for GI Bill benefits. 
+																	Use VAs WEAMS Institution Search tool to locate the colleges and universities vocational institutions flight schools and other educational facilities with programs that are approved for VA benefits. 
+																	Aaron Myracle Webboard User Reg. 
+																	Our dog trainer school is approved to train veterans and others under the provisions of Title 38 United States Code. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	See which education programs and trade schools covered by the GI Bill participate in the Yellow Ribbon Program which may help pay for school costs that arent covered by the Post-911 GI Bill. 
+																	The Montgomery GI Bill Chapter 30 Post 911 GI Bill Chapter 33. 
+																	This fully accredited K9 handler course package provides 160 hours 4 weeks of training with a dog in the areas of Drug Detection and Tracking or Explosives Detection Only. 
+																	This class is normally for dogs a minimum of 5 months old and up. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As stated above for more information and approval assistance schools and training institutions seeking approval of their training programs for GI Bill benefits should contact their SAA. 
+																	This course offers an eligible US Veteran an opportunity to use their GI Bill to obtain superior K9 Training. 
+																	Starmark Academy for Professional Dog Trainers is a state approved trade school that offers certification in the science of dog training. 
+																	HANDS ON DOG TRAINER SCHOOL with full time classes 22 hrs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find out which GI Bill schools are approved and compare benefits with the GI Bill Comparison Tool. 
+																	This is an approved for VA Veteran Affairs Education Benefits Course. 
+																	If you are eligible and wish to use your VA benefits our staff will be happy to assist you with the paperwork. 
+																	American K-9 Interdiction LLC AK9I has been approved by the Virginia State Approving Agency SAA to provide education and training under all Chapters of the Post - 911 GI Bill Please select the SAA Approved Training menu item for further details. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can also locate institutions of higher education participating in the Yellow Ribbon Program which. 
+																	Our School for Dog Trainers is the first and only of its kind that is licensed by the North Carolina Board of Community Colleges. 
+																	Our master Dog Trainer students also have the option to participate in our Student Excellence Program for even more. 
+																	Whether you have prior experience in dog training or want to learn a new career path our certified instructors can teach you a variety of proven and innovative dog training techniques. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Educational Institutions and Institutions of Higher Learning Accredited Institutions. 
+																	This is a three 3 to four 4 week boot camp program to jump start your dogs training. 
+																	Learn more about our. 
+																	Supervisors Course Overseeing Understanding Canine Handlers Utility Dog Narcotic Detection. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Use your VA benefits such as your Post 911 GI Bill the Montgomery GI Bill andor the Yellow Ribbon Program to pay for your K9 Handler K9 Trainer or Kennel Master education. 
+																	Enter search terms and then click on the map to generate results by state. 
+																	Learn more about the courses AK9I currently offers. 
+																	The programs that are eligible are. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Accredited programs must meet the. 
+																	As a sidenote post-911 combat vets electing to use the new 911 GI Bill which goes into effect. 
+																	GI Bill Approved School for Dog Trainers Would you like to work as a dog trainer and help dogs and their families. 
+																	In order to apply for approval of a program of education an official from the school that is authorized to commit the school to an agreement with the VA should complete and submit VA Form 22-0976 Application for Approval of a Program in a Foreign Country. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Commercial Police K9 Instructor Course Pricing. 
+																	Our School for Dog Trainers is also approved to accept GI Bill and other VA benefits for our Police K9 Instructor Program. 
+																	We offer fast and affordable financing for all of our programs for those who wish to pay for their education over time. 
+																	Limited availability great for big or dominant dogs with unruly behaviors. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Master Dog Trainer Program. 
+																	Our on-campus Dog Obedience Instructor Training Program is a five-month dog training course held at our campus in Santa Clarita CA. 
+																	List of GI Bill approved schools and programs 203224 - 07292008 0600 PM. 
+																	The Little Rock K-9 Academy has been approved by the Arkansas State Approving Agency to provide education and training under Chapter 33 of the Post - 911 GI Bill. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA Approved Dog Trainer School Our School for Dog Trainers is approved through the North Carolina State Approving Agency to accept the GI Bill and VA benefits for some of our programs. 
+																	Weekly APPROVED FOR VA BENEFITS under the GI Bill - Post 9-11 Chapter 31 Chapter 35 and Montgomery MONTHLY SEMINARS open to part time students full time students and online students. 
+																	Its 1 on 1 with your dog daily. 
+																	The following schools offer courses of instruction in dog training that are approvedaccredited by the VA for use with the GI Bill. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Answer ID 1481. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e5/02/ba/e502bad4c29e376084bc0e5ee12fe083.jpg" data-lightbox="roadtrip" data-title="Panda A Song By Kevin Hart On Spotify In 2020 Secret Life Of Pets Secret Life Motion Picture">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e5/02/ba/e502bad4c29e376084bc0e5ee12fe083.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWd23G8D7j3sXKstxelIMhiDO6Pf0kinKIEQ';" alt="Panda A Song By Kevin Hart On Spotify In 2020 Secret Life Of Pets Secret Life Motion Picture">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Panda A Song By Kevin Hart On Spotify In 2020 Secret Life Of Pets Secret Life Motion Picture</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ab/f0/38/abf0384f8d59fdf53437e019a4725ec3.jpg" data-lightbox="roadtrip" data-title="Navy Widow Benefits In 2020 Widow Veterans Administration Group Life Insurance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ab/f0/38/abf0384f8d59fdf53437e019a4725ec3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs1CumvjtctsGZ0vPaEQhp34jBIVWS5t6DHg';" alt="Navy Widow Benefits In 2020 Widow Veterans Administration Group Life Insurance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Widow Benefits In 2020 Widow Veterans Administration Group Life Insurance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.squarespace-cdn.com/content/v1/5825d99c9f745688563003e0/1518640246307-J6IFZ4ONNK3FHU54IWP0/ke17ZwdGBToddI8pDm48kLvhqvFWBKWuZh5geReXSbp7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0r9YoV8ytu8SWDj21Bt3yU_A7RdEe7rQhBS2c112kMprPiol64bmKAUWnonoxiPSLw/Levels+1+copy+13.jpg?format=2500w" data-lightbox="roadtrip" data-title="Ak9i Gi Bill Training Course Ak9ita 005 Patrol Detector Dog Handler">
+											<img class="card-img v-image ads-img " src="https://images.squarespace-cdn.com/content/v1/5825d99c9f745688563003e0/1518640246307-J6IFZ4ONNK3FHU54IWP0/ke17ZwdGBToddI8pDm48kLvhqvFWBKWuZh5geReXSbp7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0r9YoV8ytu8SWDj21Bt3yU_A7RdEe7rQhBS2c112kMprPiol64bmKAUWnonoxiPSLw/Levels+1+copy+13.jpg?format=2500w" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlQN0CnNCABK6mP9kbYOcLQpkzVDsIP2dZLA';" alt="Ak9i Gi Bill Training Course Ak9ita 005 Patrol Detector Dog Handler">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ak9i Gi Bill Training Course Ak9ita 005 Patrol Detector Dog Handler</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/76/1e/f6/761ef69e234959e0215b7e6121ae3828.jpg" data-lightbox="roadtrip" data-title="Pin On Famous Graves">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/76/1e/f6/761ef69e234959e0215b7e6121ae3828.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUOV2Ehy3kmhBU9Dv2dxeX2L25q2rzxlT2WQ';" alt="Pin On Famous Graves">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Famous Graves</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/1d/63/701d630c7ab36f07ec1bf43bb3dd4b1d.jpg" data-lightbox="roadtrip" data-title="Labrador Retriever Is That A Lab Or A Bear Lol Love Him I Always Pick Lab Puppies That Turn Into Beasts Labrador Retriever Lab Puppies Labrador">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/1d/63/701d630c7ab36f07ec1bf43bb3dd4b1d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTyIAAbSJLPzI8bLS-rRueczBXTS4O7o9_fg';" alt="Labrador Retriever Is That A Lab Or A Bear Lol Love Him I Always Pick Lab Puppies That Turn Into Beasts Labrador Retriever Lab Puppies Labrador">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Labrador Retriever Is That A Lab Or A Bear Lol Love Him I Always Pick Lab Puppies That Turn Into Beasts Labrador Retriever Lab Puppies Labrador</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.squarespace-cdn.com/content/v1/5825d99c9f745688563003e0/1518640350079-I9K4VOZ3ULRCNLYOXT4Q/ke17ZwdGBToddI8pDm48kPTrHXgsMrSIMwe6YW3w1AZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0k5fwC0WRNFJBIXiBeNI5fKTrY37saURwPBw8fO2esROAxn-RKSrlQamlL27g22X2A/landingpage-bg.jpg?format=2500w" data-lightbox="roadtrip" data-title="Ak9i Offers K9 Training Courses Approved Under The Gi Bill">
+											<img class="card-img v-image ads-img " src="https://images.squarespace-cdn.com/content/v1/5825d99c9f745688563003e0/1518640350079-I9K4VOZ3ULRCNLYOXT4Q/ke17ZwdGBToddI8pDm48kPTrHXgsMrSIMwe6YW3w1AZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0k5fwC0WRNFJBIXiBeNI5fKTrY37saURwPBw8fO2esROAxn-RKSrlQamlL27g22X2A/landingpage-bg.jpg?format=2500w" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMx9Ouvb_Pb0v810KdP65jr-udHndmajgOhQ';" alt="Ak9i Offers K9 Training Courses Approved Under The Gi Bill">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ak9i Offers K9 Training Courses Approved Under The Gi Bill</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/ee/a3/91eea345822b1aa33332ca0eed3fcd55.jpg" data-lightbox="roadtrip" data-title="Black Beauty Silly Dogs Black Pitbull Pitbull Puppies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/ee/a3/91eea345822b1aa33332ca0eed3fcd55.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBHE4ZCKRa2gYJhwwNrbg0c5F-_zroupEK2Q';" alt="Black Beauty Silly Dogs Black Pitbull Pitbull Puppies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Black Beauty Silly Dogs Black Pitbull Pitbull Puppies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/f2/22/1a/f2221a5ed3da1ea2f8963dd6eb7eab94.jpg" data-lightbox="roadtrip" data-title="Tony Curtis 1925 2010 Hollywood Icon He Starred In Many Many Movies Including Some Like It Hot The D Famous Graves Famous Tombstones Grave Memorials">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/f2/22/1a/f2221a5ed3da1ea2f8963dd6eb7eab94.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL4kuqtYeRjv0tPkUyLbtSqWt8Nwk70aldjw';" alt="Tony Curtis 1925 2010 Hollywood Icon He Starred In Many Many Movies Including Some Like It Hot The D Famous Graves Famous Tombstones Grave Memorials">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tony Curtis 1925 2010 Hollywood Icon He Starred In Many Many Movies Including Some Like It Hot The D Famous Graves Famous Tombstones Grave Memorials</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/xRd8XyGBZdo/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Dog Trainer School Starmark Academy World Class For Professional Dog Trainers">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/xRd8XyGBZdo/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIAOJtihFGmHcQG-cLPGt3mAO8Kl6nrbrpLw';" alt="Dog Trainer School Starmark Academy World Class For Professional Dog Trainers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dog Trainer School Starmark Academy World Class For Professional Dog Trainers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://static.wixstatic.com/media/6e68f7_8cec39da84d94fb495e65985dc07f39e.jpg/v1/fill/w_960,h_464,al_c,lg_1,q_85/6e68f7_8cec39da84d94fb495e65985dc07f39e.webp" data-lightbox="roadtrip" data-title="The Tom Rose School School For Professional Dog Trainers">
+											<img class="card-img v-image ads-img " src="http://static.wixstatic.com/media/6e68f7_8cec39da84d94fb495e65985dc07f39e.jpg/v1/fill/w_960,h_464,al_c,lg_1,q_85/6e68f7_8cec39da84d94fb495e65985dc07f39e.webp" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlnTFjbQG5QstPMDkvnJavpjM92kwg_hCr8Q';" alt="The Tom Rose School School For Professional Dog Trainers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Tom Rose School School For Professional Dog Trainers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/00/bb/7000bb9fd84f4cff56bd9b99c134f952.gif" data-lightbox="roadtrip" data-title="Women Exposed To Rabies After Feeding Stray Cat In Palm Springs Http Www Palmbeachpost Com News News Breaking N Vet Medicine World Rabies Day Nursing Notes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/00/bb/7000bb9fd84f4cff56bd9b99c134f952.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIts2XH4AgGXxfy_A2-1zpRr0Y6AK0w4pmOg';" alt="Women Exposed To Rabies After Feeding Stray Cat In Palm Springs Http Www Palmbeachpost Com News News Breaking N Vet Medicine World Rabies Day Nursing Notes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women Exposed To Rabies After Feeding Stray Cat In Palm Springs Http Www Palmbeachpost Com News News Breaking N Vet Medicine World Rabies Day Nursing Notes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://422eh83b5hpv2tnqmr27zgbf-wpengine.netdna-ssl.com/wp-content/uploads/2020/12/winter-seasonal-homepage-banner.png" data-lightbox="roadtrip" data-title="Animal Behavior College Where Animal Lovers Pursue Animal Careers">
+											<img class="card-img v-image ads-img " src="https://422eh83b5hpv2tnqmr27zgbf-wpengine.netdna-ssl.com/wp-content/uploads/2020/12/winter-seasonal-homepage-banner.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwmZAe1_c9GTtGRcEy31YlhoB0GJzYMuN0oQ';" alt="Animal Behavior College Where Animal Lovers Pursue Animal Careers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Animal Behavior College Where Animal Lovers Pursue Animal Careers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/80/1a/a2/801aa2bda4bb6d916858282e724d67fc.jpg" data-lightbox="roadtrip" data-title="Pin By Marcus Jones On Dog Food Dog Food Recipes Premium Dog Food Mom Coffee">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/80/1a/a2/801aa2bda4bb6d916858282e724d67fc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAsTFAOK1t9xsXtFTDq8ZwI-ZL9xcGMhJH6g';" alt="Pin By Marcus Jones On Dog Food Dog Food Recipes Premium Dog Food Mom Coffee">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Marcus Jones On Dog Food Dog Food Recipes Premium Dog Food Mom Coffee</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/gi-bill-of-rights-in-1950s.html">Gi Bill Of Rights In 1950s</a></li>
+													<li class="list-group-item"><a href="/gi-bill-requirements-for-reserves.html">Gi Bill Requirements For Reserves</a></li>
+													<li class="list-group-item"><a href="/gi-bill-w2.html">Gi Bill W2</a></li>
+													<li class="list-group-item"><a href="/gi-bill-national-guard-kicker.html">Gi Bill National Guard Kicker</a></li>
+													<li class="list-group-item"><a href="/gi-bill-verify-attendance.html">Gi Bill Verify Attendance</a></li>
+													<li class="list-group-item"><a href="/gi-bill-student-housing-allowance.html">Gi Bill Student Housing Allowance</a></li>
+													<li class="list-group-item"><a href="/gi-vs-aa-balance-corona.html">Gi Vs Aa Balance Corona</a></li>
+													<li class="list-group-item"><a href="/gi-bill-wave-verification-phone-number.html">Gi Bill Wave Verification Phone Number</a></li>
+													<li class="list-group-item"><a href="/gi-bill-with-a-general-discharge.html">Gi Bill With A General Discharge</a></li>
+													<li class="list-group-item"><a href="/gi-bill-stipend-for-online-students.html">Gi Bill Stipend For Online Students</a></li>
+													<li class="list-group-item"><a href="/gi-bill-reserve-select-rates.html">Gi Bill Reserve Select Rates</a></li>
+													<li class="list-group-item"><a href="/gi-vital-softgel-benefits.html">Gi Vital Softgel Benefits</a></li>
+													<li class="list-group-item"><a href="/gi-bill-reimbursement-tuition.html">Gi Bill Reimbursement Tuition</a></li>
+													<li class="list-group-item"><a href="/gi-bill-tax-free.html">Gi Bill Tax Free</a></li>
+													<li class="list-group-item"><a href="/gi-bill-schools-list.html">Gi Bill Schools List</a></li>
+													<li class="list-group-item"><a href="/gi-va-d.html">Gi Va D</a></li>
+													<li class="list-group-item"><a href="/gi-bill-summer-semester.html">Gi Bill Summer Semester</a></li>
+													<li class="list-group-item"><a href="/gi-bill-transfer-reserve.html">Gi Bill Transfer Reserve</a></li>
+													<li class="list-group-item"><a href="/gi-bill-real-estate.html">Gi Bill Real Estate</a></li>
+													<li class="list-group-item"><a href="/gi-bill-to-purchase-home.html">Gi Bill To Purchase Home</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

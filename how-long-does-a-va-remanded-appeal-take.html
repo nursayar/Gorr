@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>How Long Does A Va Remanded Appeal Take - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "How Long Does A Va Remanded Appeal Take",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/39/2a/95/392a95346f00f5b30e6696f615b189df.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+long+does+a+va+remanded+appeal+take",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>How Long Does A Va Remanded Appeal Take</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">There are two different paths your claim can take at the VA. When you request a review from a Veterans Law Judge at the Board of Veterans Appeals it could take 5-7 years for you to get a decision. I was medically discharged in 1986. <br>				
+			</p>
+										<a class="badge badge-danger" href="/post-9-11-gi-bill-for-non-degree-programs.html">post 9 11 gi bill for non degree programs</a>
+											<a class="badge badge-light" href="/pay-va-litter-tax.html">pay va litter tax</a>
+											<a class="badge badge-light" href="/online-colleges-with-gi-bill.html">online colleges with gi bill</a>
+											<a class="badge badge-success" href="/post-9-11-gi-bill-class-requirements.html">post 9 11 gi bill class requirements</a>
+											<a class="badge badge-warning" href="/post-9-11-gi-bill-online-housing-allowance.html">post 9 11 gi bill online housing allowance</a>
+											<a class="badge badge-dark" href="/pay-va-individual-tax.html">pay va individual tax</a>
+											<a class="badge badge-dark" href="/new-post-911-gi-bill.html">new post 911 gi bill</a>
+											<a class="badge badge-light" href="/peripheral-nerve-damage-va-rating.html">peripheral nerve damage va rating</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to visit the right site.  Our site provides you with suggestions for seeing the highest quality video and image content, hunt and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, particularly Youtube, so we recommend this video for you to see.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/65/88/1b6588930236a0ad2eb6ce2fd8a39e4a.jpg" data-lightbox="roadtrip" data-title="Va Disability Claim Military Life American Veterans Leadership">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/65/88/1b6588930236a0ad2eb6ce2fd8a39e4a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrvKNxiOGl_VSXncuM0B-lYOc09ZIPQijQQQ&amp;ec=45771800';" alt="Va Disability Claim Military Life American Veterans Leadership">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Claim Military Life American Veterans Leadership</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/58/c8/0258c8a242024a4a62a862805bc16873.png" data-lightbox="roadtrip" data-title="New Tool Launches To Improve The Benefits Claim Appeals Process At The Va Product Launch Appealing Benefit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/58/c8/0258c8a242024a4a62a862805bc16873.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-3GmYV-gulGz9j-zH-miUDYVjGRjQHKPJCg&amp;ec=45771800';" alt="New Tool Launches To Improve The Benefits Claim Appeals Process At The Va Product Launch Appealing Benefit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Tool Launches To Improve The Benefits Claim Appeals Process At The Va Product Launch Appealing Benefit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/4e/35/2d4e35d8d6589b2fd948e19efffa6b3a.png" data-lightbox="roadtrip" data-title="Individual Books Product Types Law Blog Veterans Court Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/4e/35/2d4e35d8d6589b2fd948e19efffa6b3a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC6ivqbLNer4oSol_ZTpbKskbykUiQq8U7gw&amp;ec=45771800';" alt="Individual Books Product Types Law Blog Veterans Court Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Individual Books Product Types Law Blog Veterans Court Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.wp.com/www.woodslawyers.com/wp-content/uploads/cue-claim-vs-va-appeal.jpg?resize=1024%2C576&amp;ssl=1" data-lightbox="roadtrip" data-title="Should I Appeal My Va Rating Or File A Cue Claim">
+											<img class="card-img v-image ads-img " src="https://i1.wp.com/www.woodslawyers.com/wp-content/uploads/cue-claim-vs-va-appeal.jpg?resize=1024%2C576&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxb917scXVGcwUdB4q78nNfQ3gJY-sPjkkUw&amp;ec=45771800';" alt="Should I Appeal My Va Rating Or File A Cue Claim">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Should I Appeal My Va Rating Or File A Cue Claim</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.blogs.va.gov/VAntage/wp-content/uploads/2016/02/Appeal-Life-Cycle-vBLOG-v2-1024x519.png" data-lightbox="roadtrip" data-title="The Appeals Process Appeals At The Regional Office Level Vantage Point">
+											<img class="card-img v-image ads-img " src="http://www.blogs.va.gov/VAntage/wp-content/uploads/2016/02/Appeal-Life-Cycle-vBLOG-v2-1024x519.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6tqZlacn7t7ckx8D12b0b_k1wIMZdHvWO8g&amp;ec=45771800';" alt="The Appeals Process Appeals At The Regional Office Level Vantage Point">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Appeals Process Appeals At The Regional Office Level Vantage Point</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.veteranslaw.com/wp-content/uploads/2019/01/the-va-appeals-process-a-step-by-step-explanation.png" data-lightbox="roadtrip" data-title="The Va Appeals Process A Step By Step Explanation Veterans Law Group">
+											<img class="card-img v-image ads-img " src="https://www.veteranslaw.com/wp-content/uploads/2019/01/the-va-appeals-process-a-step-by-step-explanation.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS285C5Wn1epNSKJuqFHCfZVUUo3BOCB8PvLg&amp;ec=45771800';" alt="The Va Appeals Process A Step By Step Explanation Veterans Law Group">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Va Appeals Process A Step By Step Explanation Veterans Law Group</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/39/2a/95/392a95346f00f5b30e6696f615b189df.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS285C5Wn1epNSKJuqFHCfZVUUo3BOCB8PvLg&amp;ec=45771800';" alt="The Va Appeals Process A Step By Step Explanation Veterans Law Group">
+										<div class="card-body">
+						<h3 class="h5"><b>After this if more evidence was requested this new evidence is gathered.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How long does a va remanded appeal take</strong>. 
+								
+																	If youre wondering how remand procedures fit into the larger VA claims and appeals process check out our post on the topic. 
+																	As a veterans disabiltiy lawyer I have seen cases that have been on appeal for as long as 30 years. 
+																	This form is available on the VAs website. 
+																	Then yesterday a new claim was opened in ebenefits and vagov. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Along the way the VBA has Rated my Disabilities at 60 Combined. 
+																	The Veterans Benefits Administration usually takes 12-18 months to review new appeals and decide whether to grant some or all of the appeal. 
+																	By timely filing a Notice of Disagreement NOD a veteran can appeal his or her claim to the Board of Veterans Appeals BVA. 
+																	The Department of Veterans Affairs intends to resolve all veterans appeals made before February 2019 in about three years. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There is no set amount of time a decision must be made after a VA disability appeal is remanded. 
+																	If new evidence is introduced on appeal or if the Veterans disability worsens a remand may be necessary. 
+																	Facts and Holding of the Case. 
+																	You will have 30 days to submit the new evidence. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We did both forms and faxed them in. 
+																	Continue sending the letter every 30 days noting in that letter any action that is required but that the VA did not take. 
+																	For TDIU increase and Migraine increase. 
+																	Send a letter to the BVA or VARO whichever is appropriate approximately 30 days after the Remand Order reminding the VA andor BVA of its Vargas-Gonzales obligations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some veterans will get a decision fairly quickly after a BVA remand while other veterans claims could still take years. 
+																	VA Plans to Resolve all Legacy Appeals by the End of 2022 Military. 
+																	Luckily these claims examiners at the Regional Office do not have the final say over whether veterans receive benefits. 
+																	How long will all this take. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This has been a LONG time coming but my Appeal is finally in front of a Judge. 
+																	This appeals process can take a long time usually many months or even years. 
+																	Timothy hooey February 24 2016 at 307 pm. 
+																	In reality once a case is remanded by the Board it can take anywhere from 3 to 12 months before the Regional Office issues a new decision. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2 or 3 years minimum or until death. 
+																	Once your claim arrives at the Regional Office it should remain there for a minimum of 30 days which is the time allotted for you to submit new evidence. 
+																	These situations can occur quite frequently due to the length of the appeals process. 
+																	The VA is inconsistent on processing times for benefit claims. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You have 60 days from the date the SOC is mailed to you to file a VA Form 9 Appeal to the Board of Veterans Appeals if you wish to continue your appeal to the Board. 
+																	The VHA takes care of all of my medical needs. 
+																	This is a question that I hear almost daily from veterans around the country. 
+																	Why does VA take so long to resolve an appeal. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How long does a remand take. 
+																	So lets take a look at what Stegall gives us and why we should not Fear the VA Remand. 
+																	Im assuming this means that our remand is being worked. 
+																	In reality once a case is remanded by the Board it can take anywhere from 3 to 12 months before the Regional Office issues a new decision. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You have 60 days from the date of the SOC or the SSOC or the remainder of the one-year period after the VAROs initial notice of its decision whichever is later to file a substantive appeal to the BVA using VA Form 9. 
+																	The number of claims the VA has to deal with is staggering some estimates put it at over 400000 claims. 
+																	There is no set amount of time a decision must be made after a VA disability appeal is remanded. 
+																	Filed my first claim 2005 and now my Appeal is with a Judge. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By the time an appeal reaches the BVA it will be several years after the Veteran filed the initial claim and the disability may have undergone serious changes. 
+																	Some veterans will get a decision fairly quickly after a BVA remand while other veterans claims could still take years. 
+																	Once your claim arrives at the Regional Office it should remain there for a minimum of 30 days which is the time allotted for you to submit new evidence. 
+																	The VA is inconsistent on processing times for benefit claims. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If the vet does not die remand again. 
+																	Getting a remand from the Veterans Court back to the BVA allows a Veteran the chance to fix both of these problems. 
+																	Any time you submit more evidence after the SOC or before the Form 9 VBA must conduct another review of the case and issue another SOC this one called a supplemental statement of the case SSOC that includes the additional evidence or a rating decision if the additional evidence allows VBA to grant the appeal. 
+																	How long will all this take. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I am confused however because the remanded appeal is still open in vagov and now this new claim is opened. 
+																	There is the Legacy Program and theres the Rapid Appeals Modernization Program RAMP which recently went into effect earlier this year this post only covers the Legacy Program Process Timeline. 
+																	The Veteran in this case was rated at 10 for headaches and he sought a higher rating. 
+																	Along with your file the BVA will also send a list of what you your attorney and the RO need to do before the RO makes a new decision. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Click here to view or download form. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cck-law.com/wp-content/uploads/2017/08/laptop-3196481_1920.jpg" data-lightbox="roadtrip" data-title="What Happens When A Va Appeal Is Remanded Cck Law">
+											<img class="card-img v-image ads-img " src="https://cck-law.com/wp-content/uploads/2017/08/laptop-3196481_1920.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpdcWjczWbpu_pHrPsQdTI8dWZguhhsA6Afg&amp;ec=45771800';" alt="What Happens When A Va Appeal Is Remanded Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Happens When A Va Appeal Is Remanded Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/170x/b9/31/bc/b931bc5135f61755c201f2de1c97db08.jpg" data-lightbox="roadtrip" data-title="Va Gave Thousands Of Unnecessary Exams To Veterans Cck Law Legal Help Medical Examination What Is A Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/170x/b9/31/bc/b931bc5135f61755c201f2de1c97db08.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQG2Z9l-h0VPGPU7AL1k7dTZ47AemlSSsnUQ&amp;ec=45771800';" alt="Va Gave Thousands Of Unnecessary Exams To Veterans Cck Law Legal Help Medical Examination What Is A Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Gave Thousands Of Unnecessary Exams To Veterans Cck Law Legal Help Medical Examination What Is A Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/2a/95/392a95346f00f5b30e6696f615b189df.png" data-lightbox="roadtrip" data-title="Va Claims Reduction Defense Field Manual Ebook Coming Soon Veterans Law Blog Law Blog Manual Disability Benefit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/2a/95/392a95346f00f5b30e6696f615b189df.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSInwf2mA50FUe1QAd1g7UNtLvXcQ1-fhuAtQ&amp;ec=45771800';" alt="Va Claims Reduction Defense Field Manual Ebook Coming Soon Veterans Law Blog Law Blog Manual Disability Benefit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Claims Reduction Defense Field Manual Ebook Coming Soon Veterans Law Blog Law Blog Manual Disability Benefit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/45/0d/f2450d94a30e14f0eb1cf33547f2d04c.png" data-lightbox="roadtrip" data-title="Individual Books Product Types Law Blog Veteran Manual">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/45/0d/f2450d94a30e14f0eb1cf33547f2d04c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-0KIXQkbfSpT0ld4unAvI6pk8FM4QzUkZrg&amp;ec=45771800';" alt="Individual Books Product Types Law Blog Veteran Manual">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Individual Books Product Types Law Blog Veteran Manual</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2020/11/EASIEST20CLAIMS20THUMBNAIL-1280x720.jpg" data-lightbox="roadtrip" data-title="Top 5 Easiest Va Disability Claims To Get Approved Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2020/11/EASIEST20CLAIMS20THUMBNAIL-1280x720.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd68zvjlBe8csSCkhEyZdFnMZe4xzGoMrwkg&amp;ec=45771800';" alt="Top 5 Easiest Va Disability Claims To Get Approved Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 5 Easiest Va Disability Claims To Get Approved Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.woodslawyers.com/wp-content/plugins/wp-youtube-lyte/lyteCache.php?origThumbUrl=https%3A%2F%2Fi.ytimg.com%2Fvi%2FctYeLrqhVog%2F0.jpg" data-lightbox="roadtrip" data-title="Legacy Va Appeals Process Timeline Guide For Disabled Veterans">
+											<img class="card-img v-image ads-img " src="https://www.woodslawyers.com/wp-content/plugins/wp-youtube-lyte/lyteCache.php?origThumbUrl=https%3A%2F%2Fi.ytimg.com%2Fvi%2FctYeLrqhVog%2F0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBLawDM7WBO77JXK-h_yR-e36QANOU00Vurw&amp;ec=45771800';" alt="Legacy Va Appeals Process Timeline Guide For Disabled Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Legacy Va Appeals Process Timeline Guide For Disabled Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/2a/16/4b2a16bdc093daf8ad38d4d946d972a6.png" data-lightbox="roadtrip" data-title="Veterans Law Blog Bookstore Law Blog Blog Training Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/2a/16/4b2a16bdc093daf8ad38d4d946d972a6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ82povaHUXIPuKnWXOHNXjZkFjvu7O9vXWMA&amp;ec=45771800';" alt="Veterans Law Blog Bookstore Law Blog Blog Training Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Law Blog Bookstore Law Blog Blog Training Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cck-law.com/wp-content/uploads/2019/09/Appeals-Reform-Graphic_AMA.jpg" data-lightbox="roadtrip" data-title="Va Claims And Appeals Process Interactive Tool Cck Law">
+											<img class="card-img v-image ads-img " src="https://cck-law.com/wp-content/uploads/2019/09/Appeals-Reform-Graphic_AMA.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPslp3DQQ-WZAlkWkbBvh_kPA69WjkDWxzJw&amp;ec=45771800';" alt="Va Claims And Appeals Process Interactive Tool Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Claims And Appeals Process Interactive Tool Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/chuttersnap-1306524-unsplash-1-768x511.jpg" data-lightbox="roadtrip" data-title="Va Disability Claims And Appeals Process Timeline Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/chuttersnap-1306524-unsplash-1-768x511.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZvO5Txrf7SKhNKvi02oMc4rNGGObiqRd3Sw&amp;ec=45771800';" alt="Va Disability Claims And Appeals Process Timeline Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Claims And Appeals Process Timeline Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.veteranslawblog.org/wp-content/uploads/2015/06/Expedite-VA-Remand-Process-DPC.jpg" data-lightbox="roadtrip" data-title="The Va Remand Process How To Get An Expedited Va Decision On Remand Veterans Law Blog">
+											<img class="card-img v-image ads-img " src="https://www.veteranslawblog.org/wp-content/uploads/2015/06/Expedite-VA-Remand-Process-DPC.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL_wIbhaHZLM-wzI08PY2zD73LH9YhoyfikA&amp;ec=45771800';" alt="The Va Remand Process How To Get An Expedited Va Decision On Remand Veterans Law Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Va Remand Process How To Get An Expedited Va Decision On Remand Veterans Law Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2017/10/how-long-do-va-appeals-take-4.png" data-lightbox="roadtrip" data-title="How The Appeals Process Works And Why It Can Take So Long Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2017/10/how-long-do-va-appeals-take-4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlfn0Va7AalW89oL3fEY52hFkxn1CcQgQ-bA&amp;ec=45771800';" alt="How The Appeals Process Works And Why It Can Take So Long Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How The Appeals Process Works And Why It Can Take So Long Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/07/8e/ca078ee197d1de4590c0080e00b42eaa.png" data-lightbox="roadtrip" data-title="Coming Soon Product Types Law Blog Veteran Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/07/8e/ca078ee197d1de4590c0080e00b42eaa.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlgHI68xD6R1EvPZImPHAmBF3dp5W0KTeyOA&amp;ec=45771800';" alt="Coming Soon Product Types Law Blog Veteran Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coming Soon Product Types Law Blog Veteran Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/portrait-3157821_1920-1-768x512.jpg" data-lightbox="roadtrip" data-title="What Is The Va Disability Appeals Success Rate For Veterans Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/portrait-3157821_1920-1-768x512.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgqhrr0ZUg5BmRACGFork4J8PLyd2RGY8K9w&amp;ec=45771800';" alt="What Is The Va Disability Appeals Success Rate For Veterans Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is The Va Disability Appeals Success Rate For Veterans Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-to-use-your-gi-bill-for-college.html">How To Use Your Gi Bill For College</a></li>
+													<li class="list-group-item"><a href="/how-to-use-gi-bill-for-comptia.html">How To Use Gi Bill For Comptia</a></li>
+													<li class="list-group-item"><a href="/i-want-to-go-to-college.html">I Want To Go To College</a></li>
+													<li class="list-group-item"><a href="/is-a-va-loan-0-percent-interest.html">Is A Va Loan 0 Percent Interest</a></li>
+													<li class="list-group-item"><a href="/how-to-pay-back-va-overpayment.html">How To Pay Back Va Overpayment</a></li>
+													<li class="list-group-item"><a href="/how-to-transfer-gi-bill-benefits-to-spouse.html">How To Transfer Gi Bill Benefits To Spouse</a></li>
+													<li class="list-group-item"><a href="/how-to-reduce-va-disability-rating.html">How To Reduce Va Disability Rating</a></li>
+													<li class="list-group-item"><a href="/humana-health-insurance-for-veterans.html">Humana Health Insurance For Veterans</a></li>
+													<li class="list-group-item"><a href="/how-to-treat-benign-paroxysmal-positional-vertigo-at-home.html">How To Treat Benign Paroxysmal Positional Vertigo At Home</a></li>
+													<li class="list-group-item"><a href="/im-scared-to-go-to-college.html">Im Scared To Go To College</a></li>
+													<li class="list-group-item"><a href="/how-to-use-the-gi-bill-for-flight-training.html">How To Use The Gi Bill For Flight Training</a></li>
+													<li class="list-group-item"><a href="/how-to-work-with-veterans-with-ptsd.html">How To Work With Veterans With Ptsd</a></li>
+													<li class="list-group-item"><a href="/how-to-tell-if-va-disability-is-static.html">How To Tell If Va Disability Is Static</a></li>
+													<li class="list-group-item"><a href="/how-to-stop-va-survivor-benefits.html">How To Stop Va Survivor Benefits</a></li>
+													<li class="list-group-item"><a href="/how-to-see-if-i-qualify-for-va-benefits.html">How To See If I Qualify For Va Benefits</a></li>
+													<li class="list-group-item"><a href="/how-to-print-out-va-disability-rating.html">How To Print Out Va Disability Rating</a></li>
+													<li class="list-group-item"><a href="/how-to-use-gi-bill-to-pay-for-certification.html">How To Use Gi Bill To Pay For Certification</a></li>
+													<li class="list-group-item"><a href="/how-to-transfer-gi-bill-to-daughter.html">How To Transfer Gi Bill To Daughter</a></li>
+													<li class="list-group-item"><a href="/how-to-stop-va-disability-benefits.html">How To Stop Va Disability Benefits</a></li>
+													<li class="list-group-item"><a href="/how-to-support-a-veteran-with-ptsd.html">How To Support A Veteran With Ptsd</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

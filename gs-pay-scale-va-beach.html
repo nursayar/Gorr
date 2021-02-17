@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Gs Pay Scale Va Beach - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Gs Pay Scale Va Beach",
+  "datePublished": "2021-02-17",
+  "image": "https://media.ed.edmunds-media.com/for-sale/ca-1c4rjeag9fc742725/img-1-600x400.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gorr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=gs+pay+scale+va+beach",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Gorr" class="navbar-brand mb-1">Gorr</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Gs Pay Scale Va Beach</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Opm gs pay scale 2021 virginia beach 2021 pay periods calendar opm gs pay scale 2021 virginia beach 2021 payroll calendar opm gs pay scale 2021 virginia beach pay period calendar opm gs pay scale 2021 virginia beach biweekly weekly and monthly. 313 EFFECTIVE JANUARY 2020. The average annual salary for full-time non-postal employees has increased to just over 87500 in 2019. <br>				
+			</p>
+										<a class="badge badge-light" href="/depression-exam-va-rating.html">depression exam va rating</a>
+											<a class="badge badge-success" href="/did-gino-dacampo-win-im-a-celebrity.html">did gino dacampo win im a celebrity</a>
+											<a class="badge badge-primary" href="/covid-va-stats.html">covid va stats</a>
+											<a class="badge badge-danger" href="/degenerative-disc-disease-with-radiculopathy-va-disability-rating.html">degenerative disc disease with radiculopathy va disability rating</a>
+											<a class="badge badge-success" href="/culinary-schools-gi-bill.html">culinary schools gi bill</a>
+											<a class="badge badge-secondary" href="/did-gino-dacampo-change-his-name.html">did gino dacampo change his name</a>
+											<a class="badge badge-info" href="/convert-gi-bill-to-post-911.html">convert gi bill to post 911</a>
+											<a class="badge badge-warning" href="/did-hertz-go-out-of-business.html">did hertz go out of business</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you have come to pay a visit to the right blog.  Our site gives you hints for seeing the highest quality video and image content, search and locate more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, so we recommend this movie for you to view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.federalpay.org/resources/pdf/locality/gs-payscale-2021-virginia-beach.png" data-lightbox="roadtrip" data-title="Virginia Beach Pay Locality General Schedule Pay Areas">
+											<img class="card-img v-image ads-img " src="https://www.federalpay.org/resources/pdf/locality/gs-payscale-2021-virginia-beach.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDU_TqZqc0G8MmuBnCOoWJOjGHK52BPl2n-w';" alt="Virginia Beach Pay Locality General Schedule Pay Areas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Beach Pay Locality General Schedule Pay Areas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.vbasc.com/media/images/photos/vbascHome.jpg" data-lightbox="roadtrip" data-title="Virginia Beach Ambulatory Surgery Center Welcome To The Virginia Beach Ambulatory Surgery Center">
+											<img class="card-img v-image ads-img " src="https://www.vbasc.com/media/images/photos/vbascHome.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrY3F-JlhYo-D44Asn4HuLqQUThTEvjgYTUg';" alt="Virginia Beach Ambulatory Surgery Center Welcome To The Virginia Beach Ambulatory Surgery Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Beach Ambulatory Surgery Center Welcome To The Virginia Beach Ambulatory Surgery Center</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://federalnewsnetwork.com/wp-content/uploads/2019/04/pay-raise-2019-infographic-2-2.png" data-lightbox="roadtrip" data-title="Is Securing A New Federal Locality Pay Area Worth It Federal News Network">
+											<img class="card-img v-image ads-img " src="https://federalnewsnetwork.com/wp-content/uploads/2019/04/pay-raise-2019-infographic-2-2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8A_YDCaSPZOdupX6t0U0YdspKwzBwYhYr4Q';" alt="Is Securing A New Federal Locality Pay Area Worth It Federal News Network">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Is Securing A New Federal Locality Pay Area Worth It Federal News Network</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/47/a4/b247a4294833f73f626be128e4e02c08.jpg" data-lightbox="roadtrip" data-title="Chicks Beach Bayfront Virginia Beach Va Chesapeake Bay Bridge Chesapeake Beach Virginia Is For Lovers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/47/a4/b247a4294833f73f626be128e4e02c08.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSZnRxe8Q5YyQjJlzYXZEEf8sJCFs9zElUTw';" alt="Chicks Beach Bayfront Virginia Beach Va Chesapeake Bay Bridge Chesapeake Beach Virginia Is For Lovers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chicks Beach Bayfront Virginia Beach Va Chesapeake Bay Bridge Chesapeake Beach Virginia Is For Lovers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/75/e0/a275e0077f6910f0e067b05f7b5b7cca.jpg" data-lightbox="roadtrip" data-title="Sandbridge Beach Virginia Beach Photo Sandbridge Beach Virginia Sandbridge Beach Virginia Beach">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/75/e0/a275e0077f6910f0e067b05f7b5b7cca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-qaFzd8x8pZFO_DTeL85__RVz0q0yCYEUSw';" alt="Sandbridge Beach Virginia Beach Photo Sandbridge Beach Virginia Sandbridge Beach Virginia Beach">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sandbridge Beach Virginia Beach Photo Sandbridge Beach Virginia Sandbridge Beach Virginia Beach</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.pilotonline.com/resizer/7sW9CVgc0ZW-vXo2RBAHp4fE25g=/fit-in/800x533/smart/filters:fill(black)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/MR7MYPCL2BDUHKC4MB4ZCOCZ6U.jpg" data-lightbox="roadtrip" data-title="Feds Drug Dealer Used Virginia Beach Cake Shop To Launder Money The Virginian Pilot">
+											<img class="card-img v-image ads-img " src="https://www.pilotonline.com/resizer/7sW9CVgc0ZW-vXo2RBAHp4fE25g=/fit-in/800x533/smart/filters:fill(black)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/MR7MYPCL2BDUHKC4MB4ZCOCZ6U.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmUU1SIndSABfsyMHhj6rLhOqkfqav_WLb2Q';" alt="Feds Drug Dealer Used Virginia Beach Cake Shop To Launder Money The Virginian Pilot">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Feds Drug Dealer Used Virginia Beach Cake Shop To Launder Money The Virginian Pilot</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.federalpay.org/resources/pdf/locality/gs-payscale-2021-virginia-beach.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmUU1SIndSABfsyMHhj6rLhOqkfqav_WLb2Q';" alt="Feds Drug Dealer Used Virginia Beach Cake Shop To Launder Money The Virginian Pilot">
+										<div class="card-body">
+						<h3 class="h5"><b>Locality raise which is applied to all Federal employees.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Gs pay scale va beach</strong>. 
+								
+																	2021 gs pay scale with locality virginia beach 2021 pay periods calendar 2021 gs pay scale with locality virginia beach 2021 payroll calendar 2021 gs pay scale with locality virginia beach pay period calendar 2021 gs pay scale with locality virginia beach biweekly weekly and monthly. 
+																	Opm gs pay scale virginia beach 2021 pay periods calendar opm gs pay scale virginia beach 2021 payroll calendar opm gs pay scale virginia beach pay period calendar opm gs pay scale virginia beach biweekly weekly and monthly. 
+																	All federal employees in Naval Weapons Station Yorktown are paid under the adjusted General Schedule pay table for the Virginia Beach GS Locality which provides for a 1651 pay increase above the base GS pay rates. 
+																	For the locality pay area of virginia beach-norfolk va-nc. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VIRGINIA BEACH-NORFOLK VA-NC General Schedule locality region applies to government employees who work in Virginia Beach and surrounding areas. 
+																	Locality Adjustments are used to account for higher costs of living in Joint Bases Langley-Eustis and to keep government salaries competitive with comparable private sector jobs. 
+																	Opm gs pay scale 2020 virginia beachpage2 2021 pay periods calendar opm gs pay scale 2020 virginia beachpage2 2021 payroll calendar opm gs pay scale 2020 virginia beachpage2 pay period calendar opm gs pay scale 2020 virginia beachpage2 biweekly weekly and monthly. 
+																	Distribution of GS Employees in Virginia There are approximately 3989 federal employees on the General Schedule payscale located within Virginia. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	General Schedule GS base pay varies from the GS-1 level at 19738 per annum to 143598 per annum at step 10 of the GS-15 grade not including locality pay adjustments. 
+																	Annual rates by grade and step. 
+																	The lodging per-diem rate of 10600 is intended to cover the costs of one nights lodging at a hotel in Virginia Beach based on the average daily rate in the local lodging industry. 
+																	Virginia Beach has a fixed per-diem rate set by the General Services Administration GSA which is used to reimburse overnight travel expenses within the area for Federal employees as well as employees of private companies which also use the GSAs per diem rates. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	GS scale pay is capped at 155500 year which is the Senior Executive Services Level 4 pay for the current year 5 USC. 
+																	The VIRGINIA BEACH-NORFOLK VA-NC General Schedule locality region applies to government employees who work in Virginia Beach and surrounding areas. 
+																	General Schedule employees who work within this region are paid 1651 more than the GS base pay rates to account for local cost of living. 
+																	Distribution of GS Employees in Charleston There are approximately 552 federal employees on the General Schedule payscale located within Charleston. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Federal employees who work within the Virginia Beach locality area receive a locality adjustment of 1651 which is applied to the base General Schedule payscale. 
+																	SALARY TABLE 2020-VB INCORPORATING THE 26 GENERAL SCHEDULE INCREASE AND A LOCALITY PAYMENT OF 1651 FOR THE LOCALITY PAY AREA OF VIRGINIA BEACH-NORFOLK VA-NC TOTAL INCREASE. 
+																	General Schedule employees who work within this region are paid 1651 more than the GS base pay rates to account for local cost of living. 
+																	The Virginia Beach Locality Area is a General Schedule locality primarily located within Virginia. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Annual Rates by Grade and Step. 
+																	Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+																	REST OF UNITED STATES Consisting of those portions of the United States and its territories and possessions as listed in 5 CFR 591205 not located within another locality pay area STATE OF ALASKA. 
+																	Cities in the VIRGINIA BEACH-NORFOLK VA-NC Locality. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The average federal employee in Virginia earns 95729 per year and the average yearly bonus is 383. 
+																	Locality adjustment rates are set yearly by the OPM to account for higher costs of living within Virginia Beach as compared to the Rest of US. 
+																	Locality Adjustments are used to account for higher costs of living in Naval Weapons Station Yorktown and to keep government salaries competitive with comparable private sector jobs. 
+																	The Senior Executive Service salary tops out at 219200 per annum. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All federal employees in Joint Bases Langley-Eustis are paid under the adjusted General Schedule pay table for the Virginia Beach GS Locality which provides for a 1651 pay increase above the base GS pay rates. 
+																	The average federal employee in Charleston earns 65514 per year and the average yearly bonus is 147. 
+																	The Office of the Chief Human Capital Officer OCHCO administers Title 38 Pay Charts Guidance. 
+																	Grade Step 1 Step 2 Step 3 Step 4 Step 5 Step 6 Step 7 Step 8 Step 9 Step 10 1 22770 23533 24290 25043 25800 26243 26991 27746 27776 28484 2 25602 26211 27059 27776 28088. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Chesapeake Hampton Newport News Norfolk Portsmouth Virginia Beach Yorktown and other areas within the region. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/3a/19/0b3a1906438a537fde4c26919226dbe7.jpg" data-lightbox="roadtrip" data-title="1950s The Thunderbird Motel Virginia Beach Va Virginia Beach Va Virginia Beach Beach Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/3a/19/0b3a1906438a537fde4c26919226dbe7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFWbE210cho0zfCJlQt3cVXhYuTjVpey_XKA';" alt="1950s The Thunderbird Motel Virginia Beach Va Virginia Beach Va Virginia Beach Beach Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1950s The Thunderbird Motel Virginia Beach Va Virginia Beach Va Virginia Beach Beach Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F36588465%2F108919755319%2F1%2Foriginal.jpg?auto=format%2Ccompress&amp;q=75&amp;sharp=10&amp;s=8a22f84cd92f595dad500e3475dce97d" data-lightbox="roadtrip" data-title="Virginia Beach Va Events Things To Do Eventbrite">
+											<img class="card-img v-image ads-img " src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F36588465%2F108919755319%2F1%2Foriginal.jpg?auto=format%2Ccompress&amp;q=75&amp;sharp=10&amp;s=8a22f84cd92f595dad500e3475dce97d" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOU71YK9ZgUH1rRmz2A5WW6r9yxQKpV_mP-w';" alt="Virginia Beach Va Events Things To Do Eventbrite">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Beach Va Events Things To Do Eventbrite</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/4f/e8/334fe8d5ceec3e366d82c047cde519c8.jpg" data-lightbox="roadtrip" data-title="Model Ryan Wyke Theme Circle Of Life Location Va Beach Mens Tshirts Circle Of Life Mens Tops">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/4f/e8/334fe8d5ceec3e366d82c047cde519c8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf65_10EpUtVineZ_oKqdk3k2fdiuYfgiVIw';" alt="Model Ryan Wyke Theme Circle Of Life Location Va Beach Mens Tshirts Circle Of Life Mens Tops">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Model Ryan Wyke Theme Circle Of Life Location Va Beach Mens Tshirts Circle Of Life Mens Tops</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ad/13/43/ad1343dd0e603f9e65bc78aed15c08df.jpg" data-lightbox="roadtrip" data-title="Don T Miss The Upcoming Member Swap With The Virginia Zoo And The Children S Museum Of Va Http Amp Gs Z6xc Fall Fun Childrens Museum Fun Pumpkins">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ad/13/43/ad1343dd0e603f9e65bc78aed15c08df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAZf4D6mVUuXvuZWZsh-8YgrTDctuVTpoTEQ';" alt="Don T Miss The Upcoming Member Swap With The Virginia Zoo And The Children S Museum Of Va Http Amp Gs Z6xc Fall Fun Childrens Museum Fun Pumpkins">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Don T Miss The Upcoming Member Swap With The Virginia Zoo And The Children S Museum Of Va Http Amp Gs Z6xc Fall Fun Childrens Museum Fun Pumpkins</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/b9/3e/03b93ef0af68576ab90401e48f9b807c.jpg" data-lightbox="roadtrip" data-title="Seafood Restaurant Virginia Beach Norfolk Virginia Virginia History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/b9/3e/03b93ef0af68576ab90401e48f9b807c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF33JwLA_GfAaGK2BYy5ucRidoJ012fIQMgQ';" alt="Seafood Restaurant Virginia Beach Norfolk Virginia Virginia History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Seafood Restaurant Virginia Beach Norfolk Virginia Virginia History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.ed.edmunds-media.com/for-sale/33-2t2bzmca8jc166294/img-1-600x400.jpg" data-lightbox="roadtrip" data-title="Used Lexus Rx 350 For Sale In Virginia Beach Va Edmunds">
+											<img class="card-img v-image ads-img " src="https://media.ed.edmunds-media.com/for-sale/33-2t2bzmca8jc166294/img-1-600x400.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFqtEj_8IixjyV_75Mn2pVP0C3MjancAfHqQ';" alt="Used Lexus Rx 350 For Sale In Virginia Beach Va Edmunds">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Used Lexus Rx 350 For Sale In Virginia Beach Va Edmunds</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a5/e4/39/a5e4399b450460ef761af7a89c3e8c5c.jpg" data-lightbox="roadtrip" data-title="Neptune Statue Virginia Beach Va Tattoo Ideen Beach Neptune Statue Ta Beach Neptune Statue Statue Poseidon Statue">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a5/e4/39/a5e4399b450460ef761af7a89c3e8c5c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTppHm8SSL3mUQ29wuiBHpYgDO2uiy5xgIwAQ';" alt="Neptune Statue Virginia Beach Va Tattoo Ideen Beach Neptune Statue Ta Beach Neptune Statue Statue Poseidon Statue">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Neptune Statue Virginia Beach Va Tattoo Ideen Beach Neptune Statue Ta Beach Neptune Statue Statue Poseidon Statue</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/a0/c2/bca0c2d5b92b75aa64872c19e0b309e6.jpg" data-lightbox="roadtrip" data-title="Virginia Beach Sunrise Sunrise Beach Sunset Surf Beautiful Places Nature">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/a0/c2/bca0c2d5b92b75aa64872c19e0b309e6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpNeqJR5ckuZjeQWOGHyEIWFCzpYduMl5EzQ';" alt="Virginia Beach Sunrise Sunrise Beach Sunset Surf Beautiful Places Nature">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Beach Sunrise Sunrise Beach Sunset Surf Beautiful Places Nature</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.ed.edmunds-media.com/for-sale/dd-1j4ha3h12bl583312/img-1-600x400.jpg" data-lightbox="roadtrip" data-title="Used Jeep Wrangler For Sale In Virginia Beach Va Edmunds">
+											<img class="card-img v-image ads-img " src="https://media.ed.edmunds-media.com/for-sale/dd-1j4ha3h12bl583312/img-1-600x400.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlseXy_CoLTHODfP8fPddbZbgrzTsk89tx2g';" alt="Used Jeep Wrangler For Sale In Virginia Beach Va Edmunds">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Used Jeep Wrangler For Sale In Virginia Beach Va Edmunds</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="kJSekGhdYgkFUM" data-lightbox="roadtrip" data-title="Http Www Vdh Virginia Gov Content Uploads Sites 131 2017 02 2016 Community Health Profile Pdf">
+											<img class="card-img v-image ads-img " src="kJSekGhdYgkFUM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz1GlSY9ekEyhVGcHtDQGGTKFWJ4vJ7pObvg';" alt="Http Www Vdh Virginia Gov Content Uploads Sites 131 2017 02 2016 Community Health Profile Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Vdh Virginia Gov Content Uploads Sites 131 2017 02 2016 Community Health Profile Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.ed.edmunds-media.com/for-sale/ca-1c4rjeag9fc742725/img-1-600x400.jpg" data-lightbox="roadtrip" data-title="Used Jeep Grand Cherokee For Sale In Virginia Beach Va Edmunds">
+											<img class="card-img v-image ads-img " src="https://media.ed.edmunds-media.com/for-sale/ca-1c4rjeag9fc742725/img-1-600x400.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkqGQ0iIrRC2xYBRl-Sc0fVRy7jr2oyR6EAw';" alt="Used Jeep Grand Cherokee For Sale In Virginia Beach Va Edmunds">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Used Jeep Grand Cherokee For Sale In Virginia Beach Va Edmunds</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.vbgov.com/government/departments/human-resources/Human%20Resources/hryouresourceheadline.jpg" data-lightbox="roadtrip" data-title="Human Resources Vbgov Com City Of Virginia Beach">
+											<img class="card-img v-image ads-img " src="https://www.vbgov.com/government/departments/human-resources/Human%20Resources/hryouresourceheadline.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmU8YafQfil6usgqNRhZdFcAZzhmDhGGl4lw';" alt="Human Resources Vbgov Com City Of Virginia Beach">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Human Resources Vbgov Com City Of Virginia Beach</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.isu.pub/200106172831-b64b27805771adb4186b53b317b36fbb/jpg/page_1_thumb_large.jpg" data-lightbox="roadtrip" data-title="2020 Official Virginia Beach Destination Lookbook By Visit Virginia Beach Issuu">
+											<img class="card-img v-image ads-img " src="https://image.isu.pub/200106172831-b64b27805771adb4186b53b317b36fbb/jpg/page_1_thumb_large.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfhqo0hLR6IBSRgUUAwgGmBwe3bcap3m_Usg';" alt="2020 Official Virginia Beach Destination Lookbook By Visit Virginia Beach Issuu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2020 Official Virginia Beach Destination Lookbook By Visit Virginia Beach Issuu</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/a-bill-goes-to-select-committee.html">A Bill Goes To Select Committee</a></li>
+													<li class="list-group-item"><a href="/9-guys-lane-old-westbury.html">9 Guys Lane Old Westbury</a></li>
+													<li class="list-group-item"><a href="/9-gigi-place-conifer-grove.html">9 Gigi Place Conifer Grove</a></li>
+													<li class="list-group-item"><a href="/a-bill-goes-to-the-floor-to-be-voted-on-after-it-makes-it-past.html">A Bill Goes To The Floor To Be Voted On After It Makes It Past</a></li>
+													<li class="list-group-item"><a href="/9-gifts.html">9 Gifts</a></li>
+													<li class="list-group-item"><a href="/9-gi.html">9 Gi</a></li>
+													<li class="list-group-item"><a href="/air-force-gunners-association.html">Air Force Gunners Association</a></li>
+													<li class="list-group-item"><a href="/9-gmt-uk-time.html">9 Gmt Uk Time</a></li>
+													<li class="list-group-item"><a href="/9-gigantic-attack-on-titan.html">9 Gigantic Attack On Titan</a></li>
+													<li class="list-group-item"><a href="/9-inch-to-cm.html">9 Inch To Cm</a></li>
+													<li class="list-group-item"><a href="/af-reserve-post-911-gi-bill.html">Af Reserve Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/9gag-adalah.html">9gag Adalah</a></li>
+													<li class="list-group-item"><a href="/air-force-gd-pilot-test-2020.html">Air Force Gd Pilot Test 2020</a></li>
+													<li class="list-group-item"><a href="/air-force-gore-tex.html">Air Force Gore Tex</a></li>
+													<li class="list-group-item"><a href="/air-force-gunships.html">Air Force Gunships</a></li>
+													<li class="list-group-item"><a href="/9-giro-ingreso-solidario.html">9 Giro Ingreso Solidario</a></li>
+													<li class="list-group-item"><a href="/air-force-g-dragon.html">Air Force G Dragon</a></li>
+													<li class="list-group-item"><a href="/ach-transaction-vaed-treas-310-xxva-ch33.html">Ach Transaction Vaed Treas 310 Xxva Ch33</a></li>
+													<li class="list-group-item"><a href="/air-force-girlfriend-quotes.html">Air Force Girlfriend Quotes</a></li>
+													<li class="list-group-item"><a href="/9-gipsy-lane-kettering.html">9 Gipsy Lane Kettering</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>
